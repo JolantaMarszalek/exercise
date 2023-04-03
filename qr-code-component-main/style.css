@@ -1,0 +1,67 @@
+#root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --rayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  background-color: hsl(212, 45%, 89%);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin: 150px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  width: 250px;
+  height: 375px;
+  border-radius: 10px;
+  justify-content: flex-start;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  height: auto;
+}
+
+img {
+  height: auto;
+  width: 85%;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.describe {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  height: auto;
+  margin: 0%;
+}
+h3 {
+  margin: 0 20px 10px 20px;
+  font-weight: bold;
+}
+p {
+  font-size: 11px;
+  color: hsl(220, 15%, 55%);
+  margin: 0 25px 10px 25px;
+  font-weight: bold;
+}
