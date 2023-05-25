@@ -5,7 +5,11 @@ import {
 } from "react-router-dom";
 
 function App() {
-  return <Routes>{/* <Route path="/" element={<MainPage />} /> */}</Routes>;
+  return (
+    <Layout>
+      <Routes>{/* <Route path="/" element={<MainPage />} /> */}</Routes>;
+    </Layout>
+  );
 }
 
 export default App;
