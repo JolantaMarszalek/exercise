@@ -3,6 +3,7 @@ import {
   Routes,
   // Route
 } from "react-router-dom";
+import { Layout } from "./components/Layout/Layout.component";
 
 function App() {
   return (
