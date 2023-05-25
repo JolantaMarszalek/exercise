@@ -1,6 +1,6 @@
-import { Footer } from "./Footer.styled";
+import { FooterSection } from "./Footer.styled";
 import React from "react";
 
-export const FooterLabel = () => {
-  return <Footer />;
+export const Footer = () => {
+  return <FooterSection />;
 };
