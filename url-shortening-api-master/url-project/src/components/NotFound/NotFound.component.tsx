@@ -5,7 +5,7 @@ interface NotFoundProps {
   message: string;
 }
 
-const NotFound: React.FC<NotFoundProps> = ({ message }) => {
+const NotFound = ({ message }: NotFoundProps) => {
   return (
     <NotFoundSection>
       <h3>{message}</h3>

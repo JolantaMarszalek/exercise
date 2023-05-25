@@ -1,7 +1,6 @@
+import React from "react";
 import NotFound from "../components/NotFound/NotFound.component";
 
-const NotFoundPage = () => {
+export const NotFoundPage = () => {
   return <NotFound message="Not found :(" />;
 };
-
-export default NotFoundPage;

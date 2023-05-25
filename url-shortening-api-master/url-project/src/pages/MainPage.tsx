@@ -1,9 +1,9 @@
 export const MainPage = () => {
-    return (
-    //   <>
-    //     <Products />
-    //     <BottomNavigation />
-    //   </>
-    );
-  };
-  
+  return;
+  // (
+  //   <>
+  //     <Products />
+  //     <BottomNavigation />
+  //   </>
+  // );
+};
