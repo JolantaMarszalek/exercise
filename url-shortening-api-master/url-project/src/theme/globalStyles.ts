@@ -5,11 +5,11 @@ body {
     display: flex;
 		flex-direction: column;
     font-family: 'Nunito Sans', sans-serif;
-    color: var(--color-text);
+    color: black;
     width: 100%;
     margin: auto; 
     min-height: 100%;
-    background-color: var(--backgroundColor);
+    background-color: white;
     overflow-y: auto;
     min-height: 100%;
     position: relative;
