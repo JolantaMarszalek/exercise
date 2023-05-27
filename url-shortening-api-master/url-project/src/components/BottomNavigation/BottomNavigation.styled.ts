@@ -4,12 +4,14 @@ export const BottomNavigationSection = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: auto;
+  margin-bottom: 160px;
   background: hsl(257, 27%, 26%);
   color: white;
   height: 150px;
+  font-weight: bold;
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -24,6 +26,7 @@ export const BottomNavigationText = styled.section`
   justify-content: space-between;
   align-items: center;
   margin: 10px;
+  font-size: 35px;
 
   @media (max-width: 650px) {
     flex-direction: column;

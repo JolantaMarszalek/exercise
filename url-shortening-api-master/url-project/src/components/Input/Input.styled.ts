@@ -2,11 +2,10 @@ import styled from "styled-components";
 
 export const InputField = styled.input`
   border: none;
-  height: 35px;
-  width: 220px;
+  height: 40px;
+  width: 450px;
   outline: none;
   font-size: 16px;
-  /* padding-left: 25px; */
   box-shadow: border-box;
   border-radius: 5px;
   background-color: white;

@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
 html {
   scroll-behavior: smooth;
   height:100%;
-  color: var(--color-footer-text);
+
 }
 
 body {

@@ -23,3 +23,10 @@ export const HeaderSection = styled.section`
     width: 100%;
   }
 `;
+
+export const HeaderSectionLogo = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+`;

@@ -57,3 +57,10 @@ export const TopNavigationDescribe = styled.div`
     margin-bottom: 10px;
   }
 `;
+
+export const TopNavigationImage = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+`;
