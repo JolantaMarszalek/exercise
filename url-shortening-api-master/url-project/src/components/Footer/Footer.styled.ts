@@ -6,7 +6,7 @@ export const FooterSection = styled.footer`
   display: flex;
   justify-content: space-between;
   padding: 5px 0;
-  /* height: 70px; */
+  height: 150px;
   width: 100%;
   margin: 0;
   font-size: 0.6rem;

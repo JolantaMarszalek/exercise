@@ -51,41 +51,28 @@ export const ButtonM = styled.button`
   }
 `;
 
-export const OrangeButton = styled.button`
+export const ButtonSquare = styled.button`
   height: 50px;
   width: 200px;
   outline: none;
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--color-orange);
-  color: var(--color-text);
+  background-color: hsl(180, 66%, 49%);
+  color: white;
   font-weight: 600;
   font-size: 18px;
   font-weight: bold;
 
   :hover {
     cursor: pointer;
-    color: var(--color-orange-button-text);
+    background-color: hsl(180, 66%, 49%);
+    color: white;
   }
 
   @media (max-width: 1024px) {
     height: 30px;
     border-radius: 15px;
-  }
-`;
-
-export const ButtonContainer = styled.section`
-  box-sizing: content-box;
-  width: min(40rem, 100%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  height: 10vh;
-
-  @media (max-width: 650px) {
-    flex-direction: column;
   }
 `;
