@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const TopNavigationSection = styled.section`
-  width: min(40rem, 100%);
+  width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: auto;
@@ -36,6 +36,8 @@ export const TopNavigationTitle = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 10px;
+  font-size: 40px;
+  font-weight: bold;
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -51,6 +53,7 @@ export const TopNavigationDescribe = styled.div`
   align-items: center;
   margin: 10px;
   color: hsl(240, 1%, 63%);
+  font-weight: bold;
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -63,4 +66,13 @@ export const TopNavigationImage = styled.div`
   flex-direction: column;
   display: flex;
   padding: 15px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    margin-bottom: 10px;
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
 `;

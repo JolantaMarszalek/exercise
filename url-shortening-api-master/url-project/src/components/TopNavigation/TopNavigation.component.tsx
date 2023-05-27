@@ -5,20 +5,21 @@ import {
   TopNavigationDescribe,
   TopNavigationImage,
   TopNavigationSection,
+  TopNavigationText,
   TopNavigationTitle,
 } from "./TopNavigation.styled";
 
 export const TopNavigation = () => {
   return (
     <TopNavigationSection>
-      {/* <TopNavigationText> */}
-      <TopNavigationTitle>More than just shorter links</TopNavigationTitle>
-      <TopNavigationDescribe>
-        Build your brand’s recognition and get detailed insights on how your
-        links are performing.
-      </TopNavigationDescribe>
-      {/* </TopNavigationText> */}
-      <ButtonM>Get Started</ButtonM>
+      <TopNavigationText>
+        <TopNavigationTitle>More than just shorter links</TopNavigationTitle>
+        <TopNavigationDescribe>
+          Build your brand’s recognition and get detailed insights on how your
+          links are performing.
+        </TopNavigationDescribe>
+        <ButtonM>Get Started</ButtonM>
+      </TopNavigationText>
       <TopNavigationImage>
         <svg xmlns="http://www.w3.org/2000/svg" width="733" height="482">
           <defs>
