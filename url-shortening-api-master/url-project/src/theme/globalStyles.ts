@@ -1,9 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+
+html {
+  scroll-behavior: smooth;
+  height:100%;
+  color: var(--color-footer-text);
+}
+
 body {
     display: flex;
-		flex-direction: column;
+		/* flex-direction: column; */
     font-family: 'Nunito Sans', sans-serif;
     color: black;
     width: 100%;

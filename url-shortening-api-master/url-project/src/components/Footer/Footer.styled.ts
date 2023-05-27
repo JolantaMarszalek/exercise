@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
 export const FooterSection = styled.footer`
-  /* position: fixed; */
+  position: fixed;
   bottom: 0;
   display: flex;
   justify-content: space-between;
   padding: 5px 0;
   /* height: 70px; */
-  width: auto;
+  width: 100%;
   margin: 0;
   font-size: 0.6rem;
   border-top-style: solid;
   gap: 50px;
   background-color: hsl(266, 10%, 14%);
+  color: white;
 
   @media (max-width: 1024px) {
     font-size: 0.5rem;
