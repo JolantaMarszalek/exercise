@@ -4,18 +4,16 @@ export const FooterSection = styled.footer`
   position: fixed;
   bottom: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 5px 0;
-  height: 70px;
+  height: 150px;
   width: 100%;
-  background-color: var(--color-footer);
+  margin: 0;
   font-size: 0.6rem;
-  color: var(--color-dark-grey);
   border-top-style: solid;
-  border-width: 1px;
-  border-color: var(--color-dark-grey);
   gap: 50px;
+  background-color: hsl(266, 10%, 14%);
+  color: white;
 
   @media (max-width: 1024px) {
     font-size: 0.5rem;
@@ -28,21 +26,23 @@ export const FooterSection = styled.footer`
   }
 `;
 
-export const Author = styled.div`
+export const FooterSectionText = styled.div`
+  display: flex;
   position: static;
   padding: 0px;
   margin: 0%;
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 `;
 
-export const Authors = styled.div`
+export const FooterSectionDescribe = styled.div`
   position: static;
+  flex-direction: column;
   display: flex;
 `;
 
-export const Links = styled.div`
-  display: flex;
-  gap: 10px;
-`;
+// export const Links = styled.div`
+//   display: flex;
+//   gap: 10px;
+// `;
