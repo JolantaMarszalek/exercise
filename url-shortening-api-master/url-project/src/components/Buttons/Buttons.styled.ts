@@ -26,7 +26,7 @@ export const ButtonS = styled.button`
 `;
 
 export const ButtonM = styled.button`
-  height: 60px;
+  height: 50px;
   width: 200px;
   outline: none;
   border: none;

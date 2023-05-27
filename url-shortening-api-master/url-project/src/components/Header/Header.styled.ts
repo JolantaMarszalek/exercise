@@ -8,7 +8,7 @@ export const HeaderSection = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 80px;
   background: white;
   color: black;
   z-index: 1;
