@@ -14,8 +14,10 @@ export const HeaderSection = styled.section`
   z-index: 1;
 
   @media (max-width: 1024px) {
-    position: relative;
+    font-size: 0.5rem;
+    gap: 0px;
   }
+
   @media (max-width: 600px) {
     font-size: 0.5rem;
     width: 100%;

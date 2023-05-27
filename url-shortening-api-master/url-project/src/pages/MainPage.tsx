@@ -1,10 +1,7 @@
 import React from "react";
 
+import { BottomNavigation } from "../components/BottomNavigation/BottomNavigation.component";
+
 export const MainPage = () => {
-  return <h1>Hi</h1>; // (
-  //   <>
-  //     <Products />
-  //     <BottomNavigation />
-  //   </>
-  // );
+  return <BottomNavigation />;
 };

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { HeaderSection } from "./Header.styled";
 import React from "react";
+import { ButtonS } from "../Buttons/Buttons.styled";
 
 export const Header = () => {
   return (
@@ -9,8 +10,8 @@ export const Header = () => {
       <Link to="">Features</Link>
       <Link to="">Pricing</Link>
       <Link to="">Resources</Link>
-      <button>Login</button>
-      <button>Sign Up</button>
+      <ButtonS>Login</ButtonS>
+      <ButtonS>Sign Up</ButtonS>
     </HeaderSection>
   );
 };

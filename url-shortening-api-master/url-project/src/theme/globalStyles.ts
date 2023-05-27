@@ -10,7 +10,7 @@ html {
 
 body {
     display: flex;
-		/* flex-direction: column; */
+		flex-direction: column;
     font-family: 'Nunito Sans', sans-serif;
     color: black;
     width: 100%;
@@ -18,7 +18,6 @@ body {
     min-height: 100%;
     background-color: white;
     overflow-y: auto;
-    min-height: 100%;
     position: relative;
 
     @media (max-width: 650px) {
