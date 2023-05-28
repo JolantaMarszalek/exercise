@@ -22,6 +22,7 @@ export const MiddleSectionText = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 10px;
+  text-align: center;
 
   @media (max-width: 650px) {
     flex-direction: column;
