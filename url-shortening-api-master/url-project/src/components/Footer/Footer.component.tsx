@@ -23,22 +23,42 @@ export const Footer = () => {
       <FooterSectionText>
         <FooterSectionDescribe>
           <h2>Features</h2>
-          <Link to="">Link Shortening</Link>
-          <Link to="">Branded Links</Link>
-          <Link to="">Analytics</Link>
+          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+            Link Shortening
+          </Link>
+          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+            Branded Links
+          </Link>
+          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+            Analytics
+          </Link>
         </FooterSectionDescribe>
         <FooterSectionDescribe>
           <h2>Resources</h2>
-          <Link to="">Blog</Link>
-          <Link to="">Developers</Link>
-          <Link to="">Support</Link>
+          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+            Blog
+          </Link>
+          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+            Developers
+          </Link>
+          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+            Support
+          </Link>
         </FooterSectionDescribe>
         <FooterSectionDescribe>
           <h2>Company</h2>
-          <Link to="">About</Link>
-          <Link to="">Our Team</Link>
-          <Link to="">Careers</Link>
-          <Link to="">Contact</Link>
+          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+            About
+          </Link>
+          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+            Our Team
+          </Link>
+          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+            Careers
+          </Link>
+          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+            Contact
+          </Link>
         </FooterSectionDescribe>
       </FooterSectionText>
       <FooterSectionImages>

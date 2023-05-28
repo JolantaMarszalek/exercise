@@ -14,9 +14,15 @@ export const Header = () => {
           />
         </svg>
       </HeaderSectionLogo>
-      <Link to="">Features</Link>
-      <Link to="">Pricing</Link>
-      <Link to="">Resources</Link>
+      <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+        Features
+      </Link>
+      <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+        Pricing
+      </Link>
+      <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+        Resources
+      </Link>
       <ButtonS>Login</ButtonS>
       <ButtonS>Sign Up</ButtonS>
     </HeaderSection>
