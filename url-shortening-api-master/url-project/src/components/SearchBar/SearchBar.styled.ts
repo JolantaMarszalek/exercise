@@ -27,10 +27,11 @@ export const SearchBarLeft = styled.form`
   align-items: center;
   border: 1px solid #ccc;
   width: 500px;
-  border-radius: 4px;
+  border-radius: 5px;
   padding-left: 20px;
-  margin-bottom: 10px;
   background-color: white;
+  gap: 10px;
+  margin: 0 10px 0 10px;
 
   @media (max-width: 1024px) {
     width: auto;

@@ -10,8 +10,9 @@ export const HeaderSection = styled.section`
   align-items: center;
   height: 100px;
   background: white;
-  color: black;
   z-index: 1;
+  font-weight: bold;
+  color: hsl(240, 1%, 63%);
 
   @media (max-width: 1024px) {
     font-size: 0.5rem;
@@ -22,4 +23,11 @@ export const HeaderSection = styled.section`
     font-size: 0.5rem;
     width: 100%;
   }
+`;
+
+export const HeaderSectionLogo = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
 `;
