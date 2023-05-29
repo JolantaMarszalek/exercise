@@ -5,6 +5,11 @@ import {
   MiddleSectionText,
   MiddleSectionTitle,
 } from "./MiddleSection.styled";
+import { MiddleCard } from "../MiddleCard/MiddleCard.component";
+import {
+  MiddleCardSection,
+  MiddleCardTitle,
+} from "../MiddleCard/MiddleCard.styled";
 
 export const MiddleSection = () => {
   return (
@@ -16,6 +21,7 @@ export const MiddleSection = () => {
           statistics dashboard.
         </MiddleSectionDescribe>
       </MiddleSectionText>
+      <MiddleCard></MiddleCard>
     </MiddleSectionStyled>
   );
 };

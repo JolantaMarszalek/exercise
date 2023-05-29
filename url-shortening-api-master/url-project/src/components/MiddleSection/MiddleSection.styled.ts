@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const MiddleSectionStyled = styled.section`
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin: auto;
   margin-top: 15vh;
+  background: hsl(230, 25%, 95%);
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -75,5 +76,17 @@ export const MiddleSectionImage = styled.div`
       width: auto;
       height: 100%;
     }
+  }
+`;
+export const MiddleCardTitle = styled.div`
+  font-weight: bold;
+  gap: 1.2rem;
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+
+  @media (max-width: 650px) {
+    font-size: 18px;
   }
 `;
