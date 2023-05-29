@@ -33,8 +33,8 @@ export const MiddleCardStyled = styled.div`
   justify-content: space-between;
   align-content: center;
   flex-wrap: nowrap;
-  width: 200px;
-  height: 25vh;
+  width: 275px;
+  height: 27vh;
   border-radius: 5px;
   padding: 0.5rem;
   margin: auto;
@@ -48,12 +48,34 @@ export const MiddleCardStyled = styled.div`
     /* height: 60vh; */
   }
 `;
+export const MiddleCardImage = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: hsl(256, 28%, 26%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    margin-bottom: 10px;
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+`;
+
 export const MiddleCardTitle = styled.div`
   font-weight: bold;
   gap: 1.2rem;
   margin: 10px;
   font-size: 20px;
-  text-align: center;
+  /* text-align: center; */
   justify-content: center;
 
   @media (max-width: 650px) {
@@ -64,7 +86,7 @@ export const MiddleCardTitle = styled.div`
 export const MiddleCardDescribe = styled.div`
   display: flex;
   gap: 1.2rem;
-  text-align: center;
+  /* text-align: center; */
   margin: 10px;
   justify-content: center;
   word-break: break-word;

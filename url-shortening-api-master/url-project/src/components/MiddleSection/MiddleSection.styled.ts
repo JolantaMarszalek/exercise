@@ -78,6 +78,7 @@ export const MiddleSectionImage = styled.div`
     }
   }
 `;
+
 export const MiddleCardTitle = styled.div`
   font-weight: bold;
   gap: 1.2rem;
