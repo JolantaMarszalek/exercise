@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const MiddleSectionStyled = styled.section`
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -56,6 +57,7 @@ export const MiddleSectionDescribe = styled.div`
   margin: 10px;
   color: hsl(240, 1%, 63%);
   font-weight: bold;
+  line-height: 25px;
 
   @media (max-width: 650px) {
     flex-direction: column;

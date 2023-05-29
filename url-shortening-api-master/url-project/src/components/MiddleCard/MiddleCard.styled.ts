@@ -14,18 +14,19 @@ export const MiddleCardSection = styled.section`
 export const MiddleCardContainer = styled.div`
   display: flex;
   align-items: center;
-  height: 50vh;
+  height: 35vh;
   width: 80vw;
   border-radius: 10px;
   transition: 0.2s linear;
   border: none;
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
 
   @media (max-width: 1024px) {
     width: 80%;
     margin-top: 6vh;
   }
 `;
+
 export const MiddleCardStyled = styled.div`
   position: relative;
   display: flex;
@@ -48,6 +49,7 @@ export const MiddleCardStyled = styled.div`
     /* height: 60vh; */
   }
 `;
+
 export const MiddleCardImage = styled.div`
   position: static;
   flex-direction: column;
@@ -86,6 +88,8 @@ export const MiddleCardTitle = styled.div`
 export const MiddleCardDescribe = styled.div`
   display: flex;
   gap: 1.2rem;
+  font-size: 14px;
+  line-height: 25px;
   /* text-align: center; */
   margin: 10px;
   justify-content: center;

@@ -20,7 +20,7 @@ export const TopNavigationText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 10px;
 
   @media (max-width: 650px) {
@@ -54,6 +54,7 @@ export const TopNavigationDescribe = styled.div`
   margin: 10px;
   color: hsl(240, 1%, 63%);
   font-weight: bold;
+  line-height: 25px;
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -66,6 +67,7 @@ export const TopNavigationImage = styled.div`
   flex-direction: column;
   display: flex;
   padding: 15px;
+  /* width: 100%; */
 
   @media (max-width: 1024px) {
     flex-direction: column;
