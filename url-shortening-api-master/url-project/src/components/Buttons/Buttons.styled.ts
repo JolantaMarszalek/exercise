@@ -56,7 +56,7 @@ export const ButtonSquare = styled.button`
   width: 200px;
   outline: none;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 0;
   box-sizing: border-box;
   background-color: hsl(180, 66%, 49%);

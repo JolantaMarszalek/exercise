@@ -19,7 +19,7 @@ body {
     background-color: white;
     overflow-y: auto;
     position: relative;
-    font-weight: bold;
+    /* font-weight: bold; */
 
     @media (max-width: 650px) {
     font-size: 14px;
