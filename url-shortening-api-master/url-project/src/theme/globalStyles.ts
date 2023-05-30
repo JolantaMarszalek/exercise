@@ -11,7 +11,7 @@ html {
 body {
     display: flex;
 		flex-direction: column; 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: black;
     width: 100%;
     margin: auto; 
