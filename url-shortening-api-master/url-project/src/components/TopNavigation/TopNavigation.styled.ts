@@ -36,7 +36,7 @@ export const TopNavigationTitle = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  font-size: 40px;
+  font-size: 80px;
   font-weight: bold;
 
   @media (max-width: 650px) {
@@ -53,8 +53,9 @@ export const TopNavigationDescribe = styled.div`
   align-items: center;
   margin: 10px;
   color: hsl(240, 1%, 63%);
-  font-weight: bold;
-  line-height: 25px;
+  font-size: 25px;
+  /* font-weight: bold; */
+  line-height: 30px;
 
   @media (max-width: 650px) {
     flex-direction: column;
