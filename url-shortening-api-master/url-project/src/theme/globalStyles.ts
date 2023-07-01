@@ -9,8 +9,8 @@ html {
 
 body {
     display: flex;
-		flex-direction: column;
-    font-family: 'Nunito Sans', sans-serif;
+		flex-direction: column; 
+    font-family: 'Montserrat', sans-serif;
     color: black;
     width: 100%;
     margin: auto; 
@@ -18,6 +18,7 @@ body {
     background-color: white;
     overflow-y: auto;
     position: relative;
+    /* font-weight: bold; */
 
     @media (max-width: 650px) {
     font-size: 14px;
