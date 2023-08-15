@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import backgroundImageArrow from "../../../../images/icon-arrow.svg";
 
 export const SearchBarSection = styled.div`
   display: flex;
@@ -43,3 +44,14 @@ export const InputLabel = styled.label`
     height: 10vh;
   }
 `;
+export const Button = styled.button`
+  height: 40px;
+  width: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(${backgroundImageArrow});
+`;
+// console.log("Image path:", backgroundImageArrow);
