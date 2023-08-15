@@ -9,8 +9,7 @@ export const FooterSection = styled.footer`
   height: 150px;
   width: 100%;
   margin: 0;
-  font-size: 0.6rem;
-  border-top-style: solid;
+  font-size: 11px;
   gap: 50px;
   background-color: hsl(266, 10%, 14%);
   color: white;
@@ -26,23 +25,41 @@ export const FooterSection = styled.footer`
   }
 `;
 
+export const FooterSectionLogo = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+`;
+
 export const FooterSectionText = styled.div`
   display: flex;
   position: static;
-  padding: 0px;
+  padding: 0;
   margin: 0%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  color: hsl(240, 1%, 63%);
 `;
 
 export const FooterSectionDescribe = styled.div`
   position: static;
   flex-direction: column;
   display: flex;
+  color: white;
+  padding: 0px 30px 0px 30px;
+  gap: 10px;
 `;
 
-// export const Links = styled.div`
-//   display: flex;
-//   gap: 10px;
-// `;
+export const FooterSectionImages = styled.div`
+  position: static;
+  display: flex;
+`;
+
+export const FooterSectionSingleImage = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+`;
