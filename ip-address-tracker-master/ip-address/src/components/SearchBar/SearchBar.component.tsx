@@ -1,3 +1,11 @@
+import { InputField, InputLabel, SearchBarSection } from "./SearchBar.styled";
+
 export const SearchBar = () => {
-  return <p>Search for any IP address or domain</p>;
+  return (
+    <SearchBarSection>
+      <InputLabel>
+        <InputField placeholder="Search for ny IP address or domain"></InputField>
+      </InputLabel>
+    </SearchBarSection>
+  );
 };
