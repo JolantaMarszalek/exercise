@@ -1,3 +1,3 @@
 export const SearchBar = () => {
-  return;
+  return <p>Search for any IP address or domain</p>;
 };
