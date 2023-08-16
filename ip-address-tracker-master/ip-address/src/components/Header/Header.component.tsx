@@ -1,7 +1,14 @@
-import { Title } from "./Header.styled";
+import { HeaderSection, Title } from "./Header.styled";
 
 const Header = () => {
-  return <Title>IP Address Tracker</Title>;
+  return (
+    <>
+      <HeaderSection>
+        {/* <img src="../../../../images/pattern-bg-desktop.png" /> */}
+        <Title>IP Address Tracker </Title>
+      </HeaderSection>
+    </>
+  );
 };
 
 export default Header;

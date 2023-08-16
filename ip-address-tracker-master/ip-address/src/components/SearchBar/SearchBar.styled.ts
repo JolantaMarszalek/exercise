@@ -21,7 +21,7 @@ export const SearchBarSection = styled.div`
 `;
 
 export const InputField = styled.input`
-  border: 2px solid hsl(0, 0%, 55%);
+  border: 2px solid gray;
   max-width: 100%;
   height: 35px;
   width: 500px;
@@ -29,7 +29,7 @@ export const InputField = styled.input`
   font-size: 16px;
   padding-left: 25px;
   box-shadow: border-box;
-  border-radius: 5px;
+  border-radius: 5px 0 0 5px;
   background-color: white;
   color: gray;
 `;
@@ -49,9 +49,15 @@ export const Button = styled.button`
   width: 40px;
   outline: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 0 5px 5px 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url(${backgroundImageArrow});
+  background-color: black;
+
+  /* img { 
+    height: 20px;
+    width: 20px;
+  } */
+  /* background-image: url(${backgroundImageArrow}); */
 `;
 // console.log("Image path:", backgroundImageArrow);
