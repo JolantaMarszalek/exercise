@@ -17,7 +17,8 @@ export const Title = styled.div`
   width: 100%;
   height: 100%;
   font-size: 30px;
-  color: gray;
+  color: white;
   text-align: center;
+  font-weight: bold;
   /* background-image: url(${backgroundImage}); */
 `;

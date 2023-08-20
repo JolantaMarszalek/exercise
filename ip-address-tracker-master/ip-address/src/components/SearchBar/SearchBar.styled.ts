@@ -29,7 +29,7 @@ export const InputField = styled.input`
   font-size: 16px;
   padding-left: 25px;
   box-shadow: border-box;
-  border-radius: 5px 0 0 5px;
+  border-radius: 10px 0 0 10px;
   background-color: white;
   color: gray;
 `;
@@ -49,7 +49,7 @@ export const Button = styled.button`
   width: 40px;
   outline: none;
   border: none;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 10px 10px 0;
   padding: 0;
   box-sizing: border-box;
   background-color: black;
