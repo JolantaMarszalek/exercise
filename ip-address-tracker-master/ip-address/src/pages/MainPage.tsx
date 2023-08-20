@@ -1,9 +1,14 @@
+import Header from "../components/Header/Header.component";
+import MiddleData from "../components/MiddleData/MiddleData.component";
+// import { Title } from "../components/Header/Header.styled";
+// import { SearchBar } from "../components/SearchBar/SearchBar.component";
+
 export const MainPage = () => {
   return (
     <>
-      <h1>IP Address Tracker</h1>
-      <p>Search for any IP address or domain</p>
-      <p>IP addres | location | timezone | ISP</p>
+      <Header />
+      {/* <SearchBar /> */}
+      <MiddleData />
     </>
   );
 };
