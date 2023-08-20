@@ -5,11 +5,15 @@ export const MiddleDataSection = styled.div`
   flex-direction: row;
   justify-content: center;
   height: 80px;
+  width: 850px;
+  margin: auto;
   outline: none;
-  border: none;
+  /* border: none; */
   padding: 0;
   box-sizing: border-box;
   font-weight: bold;
+  border-radius: 15px;
+  background-color: violet;
 `;
 
 export const MiddleDataStyled = styled.div`
@@ -18,6 +22,7 @@ export const MiddleDataStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: violet;
 `;
 
 export const MiddleDataTitle = styled.div`
@@ -39,11 +44,3 @@ export const MiddleDataData = styled.div`
   color: black;
   font-size: 25px;
 `;
-
-// export const MiddleDataISP = styled.div`
-//   width: 200px;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: center;
-//   align-items: center;
-// `;
