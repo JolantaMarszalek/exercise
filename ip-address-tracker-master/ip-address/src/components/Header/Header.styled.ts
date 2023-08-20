@@ -8,8 +8,11 @@ export const HeaderSection = styled.div`
   height: 200px;
   font-size: 30px;
   background-color: navy;
-  /* background-image: url(../../../../images/pattern-bg-desktop.png); */
-  /* background-image: url(${backgroundImage}); */
+  background-image: url(${backgroundImage});
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
 
   img {
     width: auto;
@@ -21,11 +24,11 @@ export const Title = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   font-size: 30px;
   color: white;
   text-align: center;
   font-weight: bold;
-  /* background-image: url(${backgroundImage}); */
 `;

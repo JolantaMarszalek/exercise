@@ -8,7 +8,6 @@ export const MainPage = () => {
   return (
     <>
       <Header />
-      {/* <SearchBar /> */}
       <MiddleData />
       <Map />
     </>

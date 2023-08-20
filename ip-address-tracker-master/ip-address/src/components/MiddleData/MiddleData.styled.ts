@@ -8,12 +8,13 @@ export const MiddleDataSection = styled.div`
   width: 850px;
   margin: auto;
   outline: none;
-  /* border: none; */
   padding: 0;
   box-sizing: border-box;
   font-weight: bold;
   border-radius: 15px;
   background-color: violet;
+  position: relative;
+  z-index: 3;
 `;
 
 export const MiddleDataStyled = styled.div`
