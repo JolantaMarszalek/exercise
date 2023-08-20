@@ -12,7 +12,7 @@ export const MiddleDataSection = styled.div`
   box-sizing: border-box;
   font-weight: bold;
   border-radius: 15px;
-  background-color: violet;
+  background-color: hsl(54, 98%, 83%);
   position: relative;
   z-index: 3;
 `;
@@ -23,7 +23,7 @@ export const MiddleDataStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: violet;
+  background-color: hsl(54, 98%, 83%);
 `;
 
 export const MiddleDataTitle = styled.div`
