@@ -8,6 +8,13 @@ export const HeaderSection = styled.div`
   height: 200px;
   font-size: 30px;
   background-color: navy;
+  /* background-image: url(../../../../images/pattern-bg-desktop.png); */
+  /* background-image: url(${backgroundImage}); */
+
+  img {
+    width: auto;
+    height: auto;
+  }
 `;
 
 export const Title = styled.div`
