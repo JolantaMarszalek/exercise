@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import backgroundImageArrow from "../../../../images/icon-arrow.svg";
 
 export const SearchBarSection = styled.div`
   display: flex;
