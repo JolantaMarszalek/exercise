@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import backgroundImageArrow from "../../../../images/icon-arrow.svg";
 
 export const SearchBarSection = styled.div`
   display: flex;
@@ -53,11 +52,4 @@ export const Button = styled.button`
   padding: 0;
   box-sizing: border-box;
   background-color: black;
-
-  /* img { 
-    height: 20px;
-    width: 20px;
-  } */
-  /* background-image: url(${backgroundImageArrow}); */
 `;
-// console.log("Image path:", backgroundImageArrow);

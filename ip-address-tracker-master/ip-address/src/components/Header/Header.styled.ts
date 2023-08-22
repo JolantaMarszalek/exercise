@@ -7,7 +7,7 @@ export const HeaderSection = styled.div`
   width: 100%;
   height: 200px;
   font-size: 30px;
-  background-color: navy;
+  background-color: hsl(226, 67%, 61%);
   background-image: url(${backgroundImage});
   background-size: cover;
   background-position: center;

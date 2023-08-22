@@ -4,7 +4,7 @@ export const MapSection = styled.div`
   display: flex;
   flex-direction: column;
   height: 500px;
-  background-color: grey;
+  background-color: hsl(330, 8%, 95%);
   position: relative;
   z-index: 2;
 `;
