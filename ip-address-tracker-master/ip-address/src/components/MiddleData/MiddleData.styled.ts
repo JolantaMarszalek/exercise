@@ -15,6 +15,16 @@ export const MiddleDataSection = styled.div`
   background-color: hsl(54, 98%, 83%);
   position: relative;
   z-index: 3;
+
+  @media (max-height: 740px) {
+    margin-top: 10px;
+    height: 10vh;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const MiddleDataStyled = styled.div`
