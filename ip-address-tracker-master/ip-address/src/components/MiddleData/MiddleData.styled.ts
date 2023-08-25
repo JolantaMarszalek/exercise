@@ -5,7 +5,7 @@ export const MiddleDataSection = styled.div`
   flex-direction: row;
   justify-content: center;
   height: 80px;
-  width: 850px;
+  /* width: 850px; */
   margin: auto;
   outline: none;
   padding: 0;
@@ -16,7 +16,7 @@ export const MiddleDataSection = styled.div`
   position: relative;
   z-index: 3;
 
-  /* @media (max-height: 740px) {
+  @media (max-height: 740px) {
     margin-top: 10px;
     height: 10vh;
   }
@@ -24,7 +24,7 @@ export const MiddleDataSection = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-  } */
+  }
 `;
 
 export const MiddleDataStyled = styled.div`
