@@ -12,7 +12,7 @@ export const MiddleDataSection = styled.div`
   box-sizing: border-box;
   font-weight: bold;
   border-radius: 15px;
-  background-color: hsl(54, 98%, 83%);
+  /* background-color: hsl(54, 98%, 83%); */
   position: relative;
   z-index: 3;
 
