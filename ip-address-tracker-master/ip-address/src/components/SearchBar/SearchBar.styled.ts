@@ -48,10 +48,10 @@ export const InputLabel = styled.label`
   display: flex;
   align-items: center;
 
-  /* @media (max-width: 740px) {
+  @media (max-width: 740px) {
     margin-top: 10px;
     height: 10vh;
-  } */
+  }
 `;
 
 export const Button = styled.button`
