@@ -27,19 +27,20 @@ export const MiddleDataSection = styled.div`
   }
 `;
 
-export const MiddleDataSmallerSection = styled.div`
+export const MiddleDataStyledLeft = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  height: 80px;
-  margin: auto;
-  outline: none;
-  padding: 0;
-  box-sizing: border-box;
-  font-weight: bold;
-  border-radius: 15px;
-  position: relative;
-  z-index: 3;
+  border-radius: 20px 0 0 20px;
+  background-color: hsl(54, 98%, 83%);
+`;
+
+export const MiddleDataStyledRight = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0 20px 20px 0;
+  background-color: hsl(54, 98%, 83%);
 `;
 
 export const MiddleDataStyled = styled.div`
