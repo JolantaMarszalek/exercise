@@ -27,6 +27,21 @@ export const MiddleDataSection = styled.div`
   }
 `;
 
+export const MiddleDataSmallerSection = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 80px;
+  margin: auto;
+  outline: none;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  border-radius: 15px;
+  position: relative;
+  z-index: 3;
+`;
+
 export const MiddleDataStyled = styled.div`
   width: 200px;
   display: flex;
