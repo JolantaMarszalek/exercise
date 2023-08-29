@@ -5,16 +5,42 @@ export const MiddleDataSection = styled.div`
   flex-direction: row;
   justify-content: center;
   height: 80px;
-  width: 850px;
+  /* width: 850px; */
   margin: auto;
   outline: none;
   padding: 0;
   box-sizing: border-box;
   font-weight: bold;
   border-radius: 15px;
-  background-color: hsl(54, 98%, 83%);
+  /* background-color: hsl(54, 98%, 83%); */
   position: relative;
   z-index: 3;
+
+  @media (max-height: 740px) {
+    margin-top: 10px;
+    height: 10vh;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const MiddleDataStyledLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px 0 0 20px;
+  background-color: hsl(54, 98%, 83%);
+`;
+
+export const MiddleDataStyledRight = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0 20px 20px 0;
+  background-color: hsl(54, 98%, 83%);
 `;
 
 export const MiddleDataStyled = styled.div`

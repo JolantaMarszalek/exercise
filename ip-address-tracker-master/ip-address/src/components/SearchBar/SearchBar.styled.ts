@@ -31,6 +31,16 @@ export const InputField = styled.input`
   border-radius: 10px 0 0 10px;
   background-color: white;
   color: gray;
+
+  @media (max-height: 740px) {
+    margin-top: 10px;
+    height: 10vh;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const InputLabel = styled.label`
@@ -43,6 +53,7 @@ export const InputLabel = styled.label`
     height: 10vh;
   }
 `;
+
 export const Button = styled.button`
   height: 40px;
   width: 40px;

@@ -2,16 +2,18 @@ import {
   MiddleDataData,
   MiddleDataSection,
   MiddleDataStyled,
+  MiddleDataStyledLeft,
+  MiddleDataStyledRight,
   MiddleDataTitle,
 } from "./MiddleData.styled";
 
 const MiddleData = () => {
   return (
     <MiddleDataSection>
-      <MiddleDataStyled>
+      <MiddleDataStyledLeft>
         <MiddleDataTitle>IP ADDRESS</MiddleDataTitle>
         <MiddleDataData>123,456,789</MiddleDataData>
-      </MiddleDataStyled>
+      </MiddleDataStyledLeft>
       <MiddleDataStyled>
         <MiddleDataTitle>LOCATION</MiddleDataTitle>
         <MiddleDataData>Alabama,1001</MiddleDataData>
@@ -20,10 +22,10 @@ const MiddleData = () => {
         <MiddleDataTitle>TIMEZONE</MiddleDataTitle>
         <MiddleDataData>UTC 05:00</MiddleDataData>
       </MiddleDataStyled>
-      <MiddleDataStyled>
+      <MiddleDataStyledRight>
         <MiddleDataTitle>ISP</MiddleDataTitle>
         <MiddleDataData>Something</MiddleDataData>
-      </MiddleDataStyled>
+      </MiddleDataStyledRight>
     </MiddleDataSection>
   );
 };
