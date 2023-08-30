@@ -33,6 +33,17 @@ export const MiddleDataStyledLeft = styled.div`
   justify-content: center;
   border-radius: 20px 0 0 20px;
   background-color: hsl(54, 98%, 83%);
+
+  @media (max-height: 740px) {
+    margin-top: 10px;
+    height: 10vh;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+  }
 `;
 
 export const MiddleDataStyledRight = styled.div`
@@ -41,6 +52,17 @@ export const MiddleDataStyledRight = styled.div`
   justify-content: center;
   border-radius: 0 20px 20px 0;
   background-color: hsl(54, 98%, 83%);
+
+  @media (max-height: 740px) {
+    margin-top: 10px;
+    height: 10vh;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+  }
 `;
 
 export const MiddleDataStyled = styled.div`
