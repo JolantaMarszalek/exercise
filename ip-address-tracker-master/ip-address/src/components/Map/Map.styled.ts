@@ -6,5 +6,5 @@ export const MapSection = styled.div`
   height: 500px;
   background-color: hsl(330, 8%, 95%);
   position: relative;
-  z-index: 2;
+  z-index: 1;
 `;

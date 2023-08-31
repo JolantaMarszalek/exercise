@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MiddleDataSection = styled.div`
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: center;
   height: 80px;
   /* width: 850px; */
