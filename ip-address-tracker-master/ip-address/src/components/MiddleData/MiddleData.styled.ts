@@ -14,6 +14,8 @@ export const MiddleDataSection = styled.div`
   border-radius: 15px;
   /* background-color: hsl(54, 98%, 83%); */
   position: relative;
+  /* position: absolute; */
+
   z-index: 2;
 
   @media (max-height: 740px) {
