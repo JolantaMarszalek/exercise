@@ -35,11 +35,13 @@ export const InputField = styled.input`
   @media (max-height: 740px) {
     margin-top: 10px;
     height: 10vh;
+    width: auto;
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+    width: auto;
   }
 `;
 

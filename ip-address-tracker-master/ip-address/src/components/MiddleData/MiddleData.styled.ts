@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MiddleDataSection = styled.div`
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: center;
   height: 80px;
   /* width: 850px; */
@@ -13,8 +13,10 @@ export const MiddleDataSection = styled.div`
   font-weight: bold;
   border-radius: 15px;
   /* background-color: hsl(54, 98%, 83%); */
-  position: relative;
-  z-index: 3;
+  /* position: relative; */
+  position: absolute;
+
+  z-index: 2;
 
   @media (max-height: 740px) {
     margin-top: 10px;
@@ -33,6 +35,17 @@ export const MiddleDataStyledLeft = styled.div`
   justify-content: center;
   border-radius: 20px 0 0 20px;
   background-color: hsl(54, 98%, 83%);
+
+  @media (max-height: 740px) {
+    margin-top: 10px;
+    height: 10vh;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+  }
 `;
 
 export const MiddleDataStyledRight = styled.div`
@@ -41,6 +54,17 @@ export const MiddleDataStyledRight = styled.div`
   justify-content: center;
   border-radius: 0 20px 20px 0;
   background-color: hsl(54, 98%, 83%);
+
+  @media (max-height: 740px) {
+    margin-top: 10px;
+    height: 10vh;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+  }
 `;
 
 export const MiddleDataStyled = styled.div`
