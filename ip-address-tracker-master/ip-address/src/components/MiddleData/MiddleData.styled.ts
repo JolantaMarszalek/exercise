@@ -4,17 +4,23 @@ export const MiddleDataSection = styled.div`
   display: flex;
   /* flex-direction: row; */
   justify-content: center;
+  /* align-items: center; */
   height: 80px;
   /* width: 850px; */
   margin: auto;
-  outline: none;
+  /* outline: none; */
   padding: 0;
   box-sizing: border-box;
   font-weight: bold;
-  border-radius: 15px;
+  text-align: center;
+  /* border-radius: 15px; */
   /* background-color: hsl(54, 98%, 83%); */
   /* position: relative; */
   position: absolute;
+  right: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  /* position: sticky; */
 
   z-index: 2;
 
