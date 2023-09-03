@@ -27,11 +27,13 @@ export const MiddleDataSection = styled.div`
   @media (max-height: 740px) {
     margin-top: 10px;
     height: 10vh;
+    /* border-bottom: 6px solid red; */
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+    /* border-bottom: 6px solid red; */
   }
 `;
 
@@ -51,6 +53,7 @@ export const MiddleDataStyledLeft = styled.div`
     flex-direction: column;
     align-items: center;
     border-radius: 20px 20px 0 0;
+    border-bottom: 1px groove gray;
   }
 `;
 
@@ -80,6 +83,19 @@ export const MiddleDataStyled = styled.div`
   justify-content: center;
   align-items: center;
   background-color: hsl(54, 98%, 83%);
+  /* border-bottom: 6px solid red; */
+
+  @media (max-height: 740px) {
+    margin-top: 10px;
+    height: 10vh;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    /* border-radius: 0 0 20px 20px; */
+    border-bottom: 1px solid gray;
+  }
 `;
 
 export const MiddleDataTitle = styled.div`
