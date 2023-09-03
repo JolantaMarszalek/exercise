@@ -32,4 +32,5 @@ export const Title = styled.div`
   color: white;
   text-align: center;
   font-weight: bold;
+  margin-top: 20px;
 `;
