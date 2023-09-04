@@ -45,6 +45,7 @@ export const MiddleDataStyledLeft = styled.div`
   border-radius: 20px 0 0 20px;
   background-color: hsl(54, 98%, 83%);
   border-right: 1px groove gray;
+  position: relative;
 
   @media (max-height: 740px) {
     margin-top: 10px;
@@ -55,8 +56,16 @@ export const MiddleDataStyledLeft = styled.div`
     flex-direction: column;
     align-items: center;
     border-radius: 20px 20px 0 0;
-    border-bottom: 1px groove gray;
     border-right: 0;
+
+    ::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 70%;
+      height: 1px;
+      background-color: grey;
+    }
   }
 `;
 
@@ -88,6 +97,7 @@ export const MiddleDataStyled = styled.div`
   background-color: hsl(54, 98%, 83%);
   /* border-bottom: 6px solid red; */
   border-right: 1px groove gray;
+  position: relative;
 
   @media (max-height: 740px) {
     margin-top: 10px;
@@ -98,8 +108,17 @@ export const MiddleDataStyled = styled.div`
     flex-direction: column;
     align-items: center;
     /* border-radius: 0 0 20px 20px; */
-    border-bottom: 1px solid gray;
+    /* border-bottom: 1px solid gray; */
     border-right: none;
+
+    ::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 70%;
+      height: 1px;
+      background-color: grey;
+    }
   }
 `;
 
@@ -111,6 +130,7 @@ export const MiddleDataTitle = styled.div`
   align-items: center;
   color: gray;
   font-size: 15px;
+  margin-top: 10px;
 `;
 
 export const MiddleDataData = styled.div`
@@ -121,4 +141,5 @@ export const MiddleDataData = styled.div`
   align-items: center;
   color: black;
   font-size: 25px;
+  margin-bottom: 10px;
 `;
