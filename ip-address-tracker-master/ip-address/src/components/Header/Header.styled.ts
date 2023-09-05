@@ -32,4 +32,8 @@ export const Title = styled.div`
   text-align: center;
   font-weight: bold;
   margin-top: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
 `;
