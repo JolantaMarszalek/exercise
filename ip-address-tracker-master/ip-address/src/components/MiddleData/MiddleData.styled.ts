@@ -2,39 +2,27 @@ import styled from "styled-components";
 
 export const MiddleDataSection = styled.div`
   display: flex;
-  /* flex-direction: row; */
   justify-content: center;
-  /* align-items: center; */
   height: 80px;
-  /* width: 850px; */
   margin: auto;
-  /* outline: none; */
   padding: 0;
   box-sizing: border-box;
   font-weight: bold;
   text-align: center;
-  /* border-radius: 15px; */
-  /* background-color: hsl(54, 98%, 83%); */
-  /* position: relative; */
   position: absolute;
   right: 50%;
   left: 50%;
-  /* transform: translate(-50%, -50%); */
-  /* position: sticky; */
-
   z-index: 2;
 
   @media (max-height: 740px) {
     margin-top: 10px;
     height: 10vh;
-    /* border-bottom: 6px solid red; */
   }
 
   @media (max-width: 768px) {
     margin-top: 10px;
     flex-direction: column;
     align-items: center;
-    /* border-bottom: 6px solid red; */
   }
 `;
 
@@ -44,11 +32,20 @@ export const MiddleDataStyledLeft = styled.div`
   justify-content: center;
   border-radius: 20px 0 0 20px;
   background-color: hsl(54, 98%, 83%);
-  border-right: 1px groove gray;
   position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    /* top: 0; */
+    /* bottom: 0; */
+    width: 1px;
+    background-color: gray;
+    height: 70%;
+  }
+
   @media (max-height: 740px) {
-    /* margin-top: 10px; */
     height: 10vh;
   }
 
@@ -56,7 +53,7 @@ export const MiddleDataStyledLeft = styled.div`
     flex-direction: column;
     align-items: center;
     border-radius: 20px 20px 0 0;
-    border-right: 0;
+    border-right: none;
 
     ::after {
       content: "";
@@ -77,7 +74,6 @@ export const MiddleDataStyledRight = styled.div`
   background-color: hsl(54, 98%, 83%);
 
   @media (max-height: 740px) {
-    /* margin-top: 10px; */
     height: 10vh;
   }
 
@@ -95,26 +91,34 @@ export const MiddleDataStyled = styled.div`
   justify-content: center;
   align-items: center;
   background-color: hsl(54, 98%, 83%);
-  /* border-bottom: 6px solid red; */
-  border-right: 1px groove gray;
   position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    /* top: 0; */
+    /* bottom: 0; */
+    width: 1px;
+    background-color: gray;
+    height: 70%;
+  }
+
   @media (max-height: 740px) {
-    /* margin-top: 10px; */
     height: 10vh;
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    /* border-radius: 0 0 20px 20px; */
-    /* border-bottom: 1px solid gray; */
     border-right: none;
 
     ::after {
       content: "";
       position: absolute;
       bottom: 0;
+      left: 0;
+      right: 0;
       width: 70%;
       height: 1px;
       background-color: grey;
