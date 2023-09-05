@@ -13,11 +13,6 @@ export const HeaderSection = styled.div`
   background-position: center;
   position: relative;
   z-index: 1;
-
-  img {
-    width: auto;
-    height: auto;
-  }
 `;
 
 export const Title = styled.div`
