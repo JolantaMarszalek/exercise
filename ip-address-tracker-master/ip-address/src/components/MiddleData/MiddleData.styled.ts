@@ -31,15 +31,15 @@ export const MiddleDataStyledLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   border-radius: 20px 0 0 20px;
-  background-color: hsl(54, 98%, 83%);
+  background-color: white;
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
     right: 0;
-    width: 1px;
-    background-color: gray;
+    width: 2px;
+    background-color: lightgray;
     height: 70%;
   }
 
@@ -58,8 +58,8 @@ export const MiddleDataStyledLeft = styled.div`
       position: sticky;
       bottom: 0;
       width: 70%;
-      height: 1px;
-      background-color: gray;
+      height: 2px;
+      background-color: lightgray;
     }
   }
 `;
@@ -69,7 +69,7 @@ export const MiddleDataStyledRight = styled.div`
   flex-direction: column;
   justify-content: center;
   border-radius: 0 20px 20px 0;
-  background-color: hsl(54, 98%, 83%);
+  background-color: white;
 
   @media (max-height: 740px) {
     height: 10vh;
@@ -88,15 +88,15 @@ export const MiddleDataStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: hsl(54, 98%, 83%);
+  background-color: white;
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
     right: 0;
-    width: 1px;
-    background-color: gray;
+    width: 2px;
+    background-color: lightgray;
     height: 70%;
   }
 
@@ -114,8 +114,8 @@ export const MiddleDataStyled = styled.div`
       position: sticky;
       bottom: 0;
       width: 70%;
-      height: 1px;
-      background-color: grey;
+      height: 2px;
+      background-color: lightgray;
     }
   }
 `;
