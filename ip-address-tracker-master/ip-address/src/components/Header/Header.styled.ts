@@ -12,7 +12,6 @@ export const HeaderSection = styled.div`
   background-size: cover;
   background-position: center;
   position: relative;
-  /* position: absolute; */
   z-index: 1;
 
   img {

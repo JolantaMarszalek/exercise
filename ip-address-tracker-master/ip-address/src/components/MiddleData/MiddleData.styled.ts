@@ -15,7 +15,6 @@ export const MiddleDataSection = styled.div`
   z-index: 2;
 
   @media (max-height: 740px) {
-    /* margin-top: 100px; */
     height: 10vh;
   }
 

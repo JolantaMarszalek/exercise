@@ -34,8 +34,6 @@ export const InputField = styled.input`
   color: gray;
 
   @media (max-height: 740px) {
-    /* margin-top: 10px; */
-    /* height: 10vh; */
     width: auto;
   }
 
@@ -55,7 +53,6 @@ export const InputLabel = styled.label`
   height: 35px;
 
   @media (max-width: 740px) {
-    /* margin-top: 10px; */
     height: 10vh;
   }
 `;
