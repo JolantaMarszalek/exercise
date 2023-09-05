@@ -38,8 +38,6 @@ export const MiddleDataStyledLeft = styled.div`
     content: "";
     position: absolute;
     right: 0;
-    /* top: 0; */
-    /* bottom: 0; */
     width: 1px;
     background-color: gray;
     height: 70%;
@@ -57,7 +55,7 @@ export const MiddleDataStyledLeft = styled.div`
 
     ::after {
       content: "";
-      position: absolute;
+      position: sticky;
       bottom: 0;
       width: 70%;
       height: 1px;
@@ -97,8 +95,6 @@ export const MiddleDataStyled = styled.div`
     content: "";
     position: absolute;
     right: 0;
-    /* top: 0; */
-    /* bottom: 0; */
     width: 1px;
     background-color: gray;
     height: 70%;
@@ -115,10 +111,8 @@ export const MiddleDataStyled = styled.div`
 
     ::after {
       content: "";
-      position: absolute;
+      position: sticky;
       bottom: 0;
-      left: 0;
-      right: 0;
       width: 70%;
       height: 1px;
       background-color: grey;
