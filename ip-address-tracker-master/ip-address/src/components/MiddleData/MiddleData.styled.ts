@@ -15,12 +15,12 @@ export const MiddleDataSection = styled.div`
   z-index: 2;
 
   @media (max-height: 740px) {
-    margin-top: 10px;
+    /* margin-top: 100px; */
     height: 10vh;
   }
 
   @media (max-width: 768px) {
-    margin-top: 10px;
+    margin-top: 100px;
     flex-direction: column;
     align-items: center;
   }

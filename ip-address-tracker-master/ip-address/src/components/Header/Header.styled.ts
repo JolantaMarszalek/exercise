@@ -5,7 +5,7 @@ export const HeaderSection = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 200px;
+  height: 150px;
   font-size: 30px;
   background-color: hsl(226, 67%, 61%);
   background-image: url(${backgroundImage});
@@ -27,7 +27,7 @@ export const Title = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 10%;
   font-size: 30px;
   color: white;
   text-align: center;
