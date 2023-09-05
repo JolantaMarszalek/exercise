@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const MiddleDataSection = styled.div`
   display: flex;
   justify-content: center;
-  height: 80px;
-  margin-top: -40px;
+  height: 100px;
+  margin-top: -50px;
   padding: 0;
   box-sizing: border-box;
   font-weight: bold;
@@ -20,7 +20,7 @@ export const MiddleDataSection = styled.div`
   }
 
   @media (max-width: 768px) {
-    margin-top: 30px;
+    margin-top: 20px;
     flex-direction: column;
     align-items: center;
   }
