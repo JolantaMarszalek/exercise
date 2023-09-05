@@ -34,7 +34,7 @@ export const InputField = styled.input`
   color: gray;
 
   @media (max-height: 740px) {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     /* height: 10vh; */
     width: auto;
   }

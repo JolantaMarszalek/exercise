@@ -48,7 +48,7 @@ export const MiddleDataStyledLeft = styled.div`
   position: relative;
 
   @media (max-height: 740px) {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     height: 10vh;
   }
 
@@ -64,7 +64,7 @@ export const MiddleDataStyledLeft = styled.div`
       bottom: 0;
       width: 70%;
       height: 1px;
-      background-color: grey;
+      background-color: gray;
     }
   }
 `;
@@ -77,7 +77,7 @@ export const MiddleDataStyledRight = styled.div`
   background-color: hsl(54, 98%, 83%);
 
   @media (max-height: 740px) {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     height: 10vh;
   }
 
@@ -100,7 +100,7 @@ export const MiddleDataStyled = styled.div`
   position: relative;
 
   @media (max-height: 740px) {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     height: 10vh;
   }
 
