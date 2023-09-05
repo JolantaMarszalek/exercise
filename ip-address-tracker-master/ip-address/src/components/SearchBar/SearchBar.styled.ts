@@ -4,7 +4,8 @@ export const SearchBarSection = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 25px;
+  height: 100px;
+  margin: 10px;
   justify-content: center;
   gap: 10px;
 
@@ -33,8 +34,6 @@ export const InputField = styled.input`
   color: gray;
 
   @media (max-height: 740px) {
-    margin-top: 10px;
-    height: 10vh;
     width: auto;
   }
 
@@ -42,6 +41,8 @@ export const InputField = styled.input`
     flex-direction: column;
     align-items: center;
     width: auto;
+    padding-left: 5px;
+    font-size: 12px;
   }
 `;
 
@@ -49,9 +50,9 @@ export const InputLabel = styled.label`
   position: relative;
   display: flex;
   align-items: center;
+  height: 35px;
 
   @media (max-width: 740px) {
-    margin-top: 10px;
     height: 10vh;
   }
 `;

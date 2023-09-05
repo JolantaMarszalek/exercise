@@ -12,7 +12,6 @@ export const HeaderSection = styled.div`
   background-size: cover;
   background-position: center;
   position: relative;
-  /* position: absolute; */
   z-index: 1;
 
   img {
@@ -27,9 +26,10 @@ export const Title = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 10%;
   font-size: 30px;
   color: white;
   text-align: center;
   font-weight: bold;
+  margin-top: 20px;
 `;
