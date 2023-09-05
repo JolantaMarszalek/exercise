@@ -5,7 +5,7 @@ export const HeaderSection = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 150px;
+  height: 200px;
   font-size: 30px;
   background-color: hsl(226, 67%, 61%);
   background-image: url(${backgroundImage});

@@ -44,6 +44,7 @@ export const InputField = styled.input`
     align-items: center;
     width: auto;
     padding-left: 5px;
+    font-size: 12px;
   }
 `;
 
