@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HeaderSection = styled.section`
   /* position: fixed; */
   /* top: 0; */
+  margin-top: 20px;
   margin-left: 100px;
   margin-right: 100px;
   /* width: 100%; */
