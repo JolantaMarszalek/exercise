@@ -72,10 +72,10 @@ export const TopNavigationImage = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-left: 100px;
     img {
       width: auto;
-      height: 100%;
+      height: auto;
     }
   }
 `;

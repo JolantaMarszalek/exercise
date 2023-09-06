@@ -31,10 +31,10 @@ export const SearchBarLeft = styled.form`
   padding-left: 20px;
   background-color: white;
   gap: 10px;
-  margin: 0 10px 0 10px;
+  /* margin: 0 10px 0 10px; */
 
   @media (max-width: 1024px) {
-    width: auto;
-    margin-right: 0px;
+    width: 200px;
+    /* margin-right: 0px; */
   }
 `;

@@ -72,7 +72,9 @@ export const ButtonSquare = styled.button`
   }
 
   @media (max-width: 1024px) {
-    height: 30px;
-    border-radius: 15px;
+    height: 40px;
+    width: 225px;
+    border-radius: 5px;
+    margin-top: 5px;
   }
 `;
