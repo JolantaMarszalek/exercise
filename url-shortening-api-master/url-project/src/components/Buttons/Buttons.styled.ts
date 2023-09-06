@@ -1,26 +1,26 @@
 import styled from "styled-components";
 
 export const ButtonS = styled.button`
-  height: 40px;
+  height: 50px;
   width: 200px;
   outline: none;
   border: none;
   border-radius: 20px;
   padding: 0;
   box-sizing: border-box;
-  background-color: hsl(180, 66%, 49%);
+  background-color: var(--primary-cyan);
   color: white;
   font-weight: 600;
   font-size: 18px;
 
   :hover {
     cursor: pointer;
-    background-color: hsl(180, 66%, 49%);
+    background-color: var(--primary-cyan);
     color: white;
   }
 
   @media (max-width: 1024px) {
-    height: 30px;
+    height: 40px;
     border-radius: 15px;
   }
 `;
@@ -33,7 +33,7 @@ export const ButtonM = styled.button`
   border-radius: 30px;
   padding: 0;
   box-sizing: border-box;
-  background-color: hsl(180, 66%, 49%);
+  background-color: var(--primary-cyan);
   color: white;
   font-weight: 600;
   font-size: 18px;
@@ -41,12 +41,12 @@ export const ButtonM = styled.button`
 
   :hover {
     cursor: pointer;
-    background-color: hsl(180, 66%, 49%);
+    background-color: var(--primary-cyan);
     color: white;
   }
 
   @media (max-width: 1024px) {
-    height: 30px;
+    height: 40px;
     border-radius: 15px;
   }
 `;
@@ -59,20 +59,29 @@ export const ButtonSquare = styled.button`
   border-radius: 10px;
   padding: 0;
   box-sizing: border-box;
-  background-color: hsl(180, 66%, 49%);
+  background-color: var(--primary-cyan);
   color: white;
   font-weight: 600;
   font-size: 18px;
   font-weight: bold;
+  margin: 5px;
 
   :hover {
     cursor: pointer;
-    background-color: hsl(180, 66%, 49%);
+    background-color: var(--primary-cyan);
     color: white;
   }
 
   @media (max-width: 1024px) {
-    height: 30px;
-    border-radius: 15px;
+    height: 40px;
+    width: 225px;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 650px) {
+    height: 40px;
+    width: 225px;
+    border-radius: 5px;
+    margin-top: 5px;
   }
 `;

@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
-import { HeaderSection, HeaderSectionLogo } from "./Header.styled";
+import {
+  HeaderSection,
+  HeaderSectionButton,
+  HeaderSectionLink,
+  HeaderSectionLogo,
+  // HeaderSectionSingleLink,
+} from "./Header.styled";
 import React from "react";
 import { ButtonS } from "../Buttons/Buttons.styled";
 
@@ -14,17 +20,27 @@ export const Header = () => {
           />
         </svg>
       </HeaderSectionLogo>
-      <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
-        Features
-      </Link>
-      <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
-        Pricing
-      </Link>
-      <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
-        Resources
-      </Link>
-      <ButtonS>Login</ButtonS>
-      <ButtonS>Sign Up</ButtonS>
+      <HeaderSectionLink>
+        {/* <HeaderSectionSingleLink> */}
+        <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          Features
+        </Link>
+        {/* </HeaderSectionSingleLink> */}
+        {/* <HeaderSectionSingleLink> */}
+        <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          Pricing
+        </Link>
+        {/* </HeaderSectionSingleLink> */}
+        {/* <HeaderSectionSingleLink> */}
+        <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          Resources
+        </Link>
+        {/* </HeaderSectionSingleLink> */}
+      </HeaderSectionLink>
+      <HeaderSectionButton>
+        <ButtonS>Login</ButtonS>
+        <ButtonS>Sign Up</ButtonS>
+      </HeaderSectionButton>
     </HeaderSection>
   );
 };
