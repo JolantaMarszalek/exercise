@@ -3,6 +3,7 @@ import { Layout } from "./components/Layout/Layout.component";
 import { MainPage } from "./pages/MainPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { GlobalStyle } from "./theme/globalStyles";
+import React from "react";
 
 function App() {
   return (
