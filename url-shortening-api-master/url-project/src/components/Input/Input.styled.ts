@@ -9,7 +9,7 @@ export const InputField = styled.input`
   box-shadow: border-box;
   border-radius: 10px;
   background-color: white;
-  color: hsl(240, 1%, 63%);
+  color: var(--neutral-grayish-violet);
   /* font-weight: bold; */
 `;
 

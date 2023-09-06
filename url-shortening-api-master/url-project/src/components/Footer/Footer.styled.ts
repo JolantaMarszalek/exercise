@@ -9,7 +9,7 @@ export const FooterSection = styled.footer`
   height: 150px;
   font-size: 11px;
   gap: 50px;
-  background-color: hsl(266, 10%, 14%);
+  background-color: var(--neutral-very-dark-violet);
   color: white;
 
   @media (max-width: 1024px) {
@@ -41,7 +41,7 @@ export const FooterSectionText = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  color: hsl(240, 1%, 63%);
+  color: var(--neutral-gray);
 `;
 
 export const FooterSectionDescribe = styled.div`

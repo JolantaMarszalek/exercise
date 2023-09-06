@@ -14,7 +14,7 @@ export const HeaderSection = styled.section`
   background: white;
   z-index: 1;
   font-weight: bold;
-  color: hsl(240, 1%, 63%);
+  color: var(--neutral-grayish-violet);
 
   @media (max-width: 1024px) {
     font-size: 0.5rem;

@@ -69,6 +69,7 @@ export const TopNavigationImage = styled.div`
   display: flex;
   padding: 15px;
   /* width: 100%; */
+  font-weight: bold;
 
   @media (max-width: 1024px) {
     flex-direction: column;

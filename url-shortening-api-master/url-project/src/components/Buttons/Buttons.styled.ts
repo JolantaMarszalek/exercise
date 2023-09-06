@@ -8,14 +8,14 @@ export const ButtonS = styled.button`
   border-radius: 20px;
   padding: 0;
   box-sizing: border-box;
-  background-color: hsl(180, 66%, 49%);
+  background-color: var(--primary-cyan);
   color: white;
   font-weight: 600;
   font-size: 18px;
 
   :hover {
     cursor: pointer;
-    background-color: hsl(180, 66%, 49%);
+    background-color: var(--primary-cyan);
     color: white;
   }
 
@@ -33,7 +33,7 @@ export const ButtonM = styled.button`
   border-radius: 30px;
   padding: 0;
   box-sizing: border-box;
-  background-color: hsl(180, 66%, 49%);
+  background-color: var(--primary-cyan);
   color: white;
   font-weight: 600;
   font-size: 18px;
@@ -41,7 +41,7 @@ export const ButtonM = styled.button`
 
   :hover {
     cursor: pointer;
-    background-color: hsl(180, 66%, 49%);
+    background-color: var(--primary-cyan);
     color: white;
   }
 
@@ -59,7 +59,7 @@ export const ButtonSquare = styled.button`
   border-radius: 10px;
   padding: 0;
   box-sizing: border-box;
-  background-color: hsl(180, 66%, 49%);
+  background-color: var(--primary-cyan);
   color: white;
   font-weight: 600;
   font-size: 18px;
@@ -68,7 +68,7 @@ export const ButtonSquare = styled.button`
 
   :hover {
     cursor: pointer;
-    background-color: hsl(180, 66%, 49%);
+    background-color: var(--primary-cyan);
     color: white;
   }
 
