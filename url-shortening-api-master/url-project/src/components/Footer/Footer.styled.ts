@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterSection = styled.footer`
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   display: flex;
   justify-content: space-between;
