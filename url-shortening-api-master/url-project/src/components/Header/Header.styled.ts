@@ -19,11 +19,13 @@ export const HeaderSection = styled.section`
   @media (max-width: 1024px) {
     font-size: 0.5rem;
     gap: 0px;
+    margin: auto;
   }
 
   @media (max-width: 600px) {
     font-size: 0.5rem;
     width: 100%;
+    margin: auto;
   }
 `;
 

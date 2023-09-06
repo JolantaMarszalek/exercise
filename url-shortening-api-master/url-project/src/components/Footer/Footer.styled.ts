@@ -7,22 +7,19 @@ export const FooterSection = styled.footer`
   justify-content: space-between;
   padding: 5px 0;
   height: 150px;
-  /* width: 100%; */
-  /* margin-bottom: 20px;
-  margin-left: 100px;
-  margin-right: 100px; */
-
   font-size: 11px;
   gap: 50px;
   background-color: hsl(266, 10%, 14%);
   color: white;
 
   @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
     font-size: 0.5rem;
     gap: 0px;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 375px) {
     font-size: 0.5rem;
     width: 100%;
   }

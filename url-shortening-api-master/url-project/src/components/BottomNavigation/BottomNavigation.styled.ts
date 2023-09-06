@@ -7,7 +7,7 @@ export const BottomNavigationSection = styled.section`
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-bottom: 160px;
+  /* margin-bottom: 160px; */
   background: hsl(257, 27%, 26%);
   color: white;
   height: 150px;
