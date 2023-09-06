@@ -35,3 +35,26 @@ export const HeaderSectionLogo = styled.div`
   display: flex;
   padding: 15px;
 `;
+
+export const HeaderSectionLink = styled.div`
+  position: static;
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+  margin: 10px;
+`;
+
+// export const HeaderSectionSingleLink = styled.div`
+//   position: static;
+//   flex-direction: row;
+//   display: flex;
+//   /* margin: 10px; */
+// `;
+
+export const HeaderSectionButton = styled.div`
+  position: static;
+  flex-direction: row;
+  display: flex;
+  margin: 10px;
+  gap: 20px;
+`;

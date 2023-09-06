@@ -27,7 +27,7 @@ export const SearchBarLeft = styled.form`
   align-items: center;
   border: 1px solid #ccc;
   width: 500px;
-  border-radius: 5px;
+  border-radius: 8px;
   padding-left: 20px;
   background-color: white;
   gap: 10px;
