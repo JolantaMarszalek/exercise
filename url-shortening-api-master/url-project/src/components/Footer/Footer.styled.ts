@@ -7,8 +7,11 @@ export const FooterSection = styled.footer`
   justify-content: space-between;
   padding: 5px 0;
   height: 150px;
-  width: 100%;
-  margin: 0;
+  /* width: 100%; */
+  /* margin-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 100px; */
+
   font-size: 11px;
   gap: 50px;
   background-color: hsl(266, 10%, 14%);
@@ -30,6 +33,7 @@ export const FooterSectionLogo = styled.div`
   flex-direction: column;
   display: flex;
   padding: 15px;
+  margin-left: 100px;
 `;
 
 export const FooterSectionText = styled.div`
@@ -55,6 +59,7 @@ export const FooterSectionDescribe = styled.div`
 export const FooterSectionImages = styled.div`
   position: static;
   display: flex;
+  margin-right: 100px;
 `;
 
 export const FooterSectionSingleImage = styled.div`
