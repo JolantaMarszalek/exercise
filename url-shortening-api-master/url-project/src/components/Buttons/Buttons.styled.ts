@@ -20,7 +20,7 @@ export const ButtonS = styled.button`
   }
 
   @media (max-width: 1024px) {
-    height: 30px;
+    height: 40px;
     border-radius: 15px;
   }
 `;
@@ -46,7 +46,7 @@ export const ButtonM = styled.button`
   }
 
   @media (max-width: 1024px) {
-    height: 30px;
+    height: 40px;
     border-radius: 15px;
   }
 `;
@@ -64,6 +64,7 @@ export const ButtonSquare = styled.button`
   font-weight: 600;
   font-size: 18px;
   font-weight: bold;
+  margin: 5px;
 
   :hover {
     cursor: pointer;
@@ -72,6 +73,12 @@ export const ButtonSquare = styled.button`
   }
 
   @media (max-width: 1024px) {
+    height: 40px;
+    width: 225px;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 650px) {
     height: 40px;
     width: 225px;
     border-radius: 5px;

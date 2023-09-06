@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InputField = styled.input`
   border: none;
-  height: 40px;
+  height: 45px;
   width: auto;
   outline: none;
   font-size: 16px;
@@ -19,9 +19,10 @@ export const InputLabel = styled.label`
   align-items: center;
   flex-direction: column;
   color: hsl(240, 1%, 63%);
+
   /* font-weight: bold; */
 
   @media (max-width: 1024px) {
-    height: 35px;
+    height: 40px;
   }
 `;
