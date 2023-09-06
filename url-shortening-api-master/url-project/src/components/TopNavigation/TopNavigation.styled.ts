@@ -54,7 +54,6 @@ export const TopNavigationDescribe = styled.div`
   margin: 10px;
   color: hsl(240, 1%, 63%);
   font-size: 25px;
-  /* font-weight: bold; */
   line-height: 30px;
 
   @media (max-width: 650px) {
@@ -68,7 +67,6 @@ export const TopNavigationImage = styled.div`
   flex-direction: column;
   display: flex;
   padding: 15px;
-  /* width: 100%; */
   font-weight: bold;
 
   @media (max-width: 1024px) {

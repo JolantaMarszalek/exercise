@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
 export const FooterSection = styled.footer`
-  /* position: fixed; */
   bottom: 0;
   display: flex;
   justify-content: space-between;
   padding: 5px;
   height: 150px;
   font-size: 11px;
-  /* gap: 50px; */
   background-color: var(--neutral-very-dark-violet);
   color: var(--neutral-grayish-violet);
 

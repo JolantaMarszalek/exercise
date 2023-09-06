@@ -19,7 +19,6 @@ export const MiddleCardContainer = styled.div`
   border-radius: 10px;
   transition: 0.2s linear;
   border: none;
-  /* margin-top: 10vh; */
 
   @media (max-width: 1024px) {
     width: 80%;
@@ -46,7 +45,6 @@ export const MiddleCardStyled = styled.div`
 
   @media (max-width: 650px) {
     width: 80%;
-    /* height: 60vh; */
   }
 `;
 
@@ -77,7 +75,6 @@ export const MiddleCardTitle = styled.div`
   gap: 1.2rem;
   margin: 10px;
   font-size: 20px;
-  /* text-align: center; */
   justify-content: center;
 
   @media (max-width: 650px) {
@@ -90,7 +87,6 @@ export const MiddleCardDescribe = styled.div`
   gap: 1.2rem;
   font-size: 16px;
   line-height: 25px;
-  /* text-align: center; */
   margin: 10px;
   justify-content: center;
   word-break: break-word;
