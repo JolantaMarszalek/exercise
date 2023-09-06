@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const HeaderSection = styled.section`
-  position: fixed;
-  top: 0;
-  margin: auto;
-  width: 100%;
+  /* position: fixed; */
+  /* top: 0; */
+  margin-left: 100px;
+  margin-right: 100px;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
