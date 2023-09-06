@@ -18,7 +18,7 @@ export const InputLabel = styled.label`
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: hsl(240, 1%, 63%);
+  color: var(--neutral-grayish-violet);
 
   /* font-weight: bold; */
 

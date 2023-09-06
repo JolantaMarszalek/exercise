@@ -5,12 +5,12 @@ export const FooterSection = styled.footer`
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  padding: 5px 0;
+  padding: 5px;
   height: 150px;
   font-size: 11px;
-  gap: 50px;
+  /* gap: 50px; */
   background-color: var(--neutral-very-dark-violet);
-  color: white;
+  color: var(--neutral-grayish-violet);
 
   @media (max-width: 1024px) {
     display: flex;
@@ -48,9 +48,9 @@ export const FooterSectionDescribe = styled.div`
   position: static;
   flex-direction: column;
   display: flex;
-  color: white;
+  color: var(--neutral-gray);
   padding: 0px 30px 0px 30px;
-  gap: 10px;
+  gap: 5px;
 `;
 
 export const FooterSectionImages = styled.div`
