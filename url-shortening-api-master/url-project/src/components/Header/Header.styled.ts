@@ -42,6 +42,7 @@ export const HeaderSectionLink = styled.div`
   display: flex;
   gap: 20px;
   margin: 10px;
+  width: 800px;
 `;
 
 // export const HeaderSectionSingleLink = styled.div`

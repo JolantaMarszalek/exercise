@@ -7,7 +7,7 @@ export const InputField = styled.input`
   outline: none;
   font-size: 16px;
   box-shadow: border-box;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: white;
   color: hsl(240, 1%, 63%);
   /* font-weight: bold; */
