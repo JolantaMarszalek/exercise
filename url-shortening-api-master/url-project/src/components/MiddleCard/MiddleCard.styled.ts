@@ -7,7 +7,8 @@ export const MiddleCardSection = styled.section`
   padding: 8rem 0;
   border-radius: 10px;
   padding: 0.5rem;
-  margin: 0px;
+  /* margin: 0px; */
+  margin-bottom: 100px;
   background: hsl(230, 25%, 95%);
 `;
 
@@ -36,7 +37,7 @@ export const MiddleCardStyled = styled.div`
   width: 350px;
   height: auto;
   /* height: 30vh; */
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 0.5rem;
   margin: auto;
   transition: 0.2s linear;
