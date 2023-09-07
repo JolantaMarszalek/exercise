@@ -22,10 +22,11 @@ export const TopNavigationText = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   margin: 10px;
+  margin-bottom: 100px;
 
   @media (max-width: 650px) {
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
 `;
 
@@ -55,6 +56,7 @@ export const TopNavigationDescribe = styled.div`
   color: var(--neutral-gray);
   font-size: 25px;
   line-height: 30px;
+  margin-bottom: 50px;
 
   @media (max-width: 650px) {
     flex-direction: column;
