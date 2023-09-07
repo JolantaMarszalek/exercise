@@ -5,6 +5,7 @@ import {
   FooterSectionText,
   FooterSectionImages,
   FooterSectionLogo,
+  FooterSectionTitle,
 } from "./Footer.styled";
 import { Link } from "react-router-dom";
 import React from "react";
@@ -22,7 +23,7 @@ export const Footer = () => {
       </FooterSectionLogo>
       <FooterSectionText>
         <FooterSectionDescribe>
-          <h2>Features</h2>
+          <FooterSectionTitle>Features</FooterSectionTitle>
           <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
             Link Shortening
           </Link>
@@ -34,7 +35,7 @@ export const Footer = () => {
           </Link>
         </FooterSectionDescribe>
         <FooterSectionDescribe>
-          <h2>Resources</h2>
+          <FooterSectionTitle>Resources</FooterSectionTitle>
           <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
             Blog
           </Link>
@@ -46,7 +47,7 @@ export const Footer = () => {
           </Link>
         </FooterSectionDescribe>
         <FooterSectionDescribe>
-          <h2>Company</h2>
+          <FooterSectionTitle>Company</FooterSectionTitle>
           <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
             About
           </Link>

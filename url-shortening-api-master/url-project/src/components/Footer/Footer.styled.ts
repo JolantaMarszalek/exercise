@@ -36,7 +36,18 @@ export const FooterSectionText = styled.div`
   position: static;
   padding: 0;
   margin: 0%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: var(--neutral-gray);
+`;
+
+export const FooterSectionTitle = styled.div`
   display: flex;
+  position: static;
+  padding: 0;
+  margin: 0%;
+  font-size: 15px;
+  font-weight: bold;
   justify-content: space-between;
   flex-wrap: wrap;
   color: var(--neutral-gray);
