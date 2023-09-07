@@ -55,7 +55,7 @@ export const MiddleCardImage = styled.div`
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: hsl(256, 28%, 26%);
+  background: var(--neutral-very-dark-blue);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -92,7 +92,7 @@ export const MiddleCardDescribe = styled.div`
   word-break: break-word;
   word-wrap: break-word;
   max-width: auto;
-  color: hsl(240, 1%, 63%);
+  color: var(--neutral-gray);
 
   @media (max-width: 650px) {
     font-size: 14px;

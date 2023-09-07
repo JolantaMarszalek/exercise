@@ -55,7 +55,7 @@ export const MiddleSectionDescribe = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  color: hsl(240, 1%, 63%);
+  color: var(--neutral-gray);
   font-weight: bold;
   line-height: 25px;
 
