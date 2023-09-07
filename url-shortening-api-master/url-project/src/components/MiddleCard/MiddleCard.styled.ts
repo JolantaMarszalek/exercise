@@ -33,8 +33,9 @@ export const MiddleCardStyled = styled.div`
   justify-content: flex-start;
   align-content: center;
   flex-wrap: nowrap;
-  width: 310px;
-  height: 30vh;
+  width: 350px;
+  height: auto;
+  /* height: 30vh; */
   border-radius: 5px;
   padding: 0.5rem;
   margin: auto;
@@ -54,7 +55,7 @@ export const MiddleCardImage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 20px;
   background: var(--primary-dark-violet);
   width: 50px;
   height: 50px;
@@ -85,9 +86,11 @@ export const MiddleCardTitle = styled.div`
 export const MiddleCardDescribe = styled.div`
   display: flex;
   gap: 1.2rem;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 25px;
   margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   justify-content: center;
   word-break: break-word;
   word-wrap: break-word;
