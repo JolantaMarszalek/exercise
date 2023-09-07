@@ -5,8 +5,8 @@ export const FooterSection = styled.footer`
   display: flex;
   justify-content: space-between;
   padding: 5px;
-  height: 150px;
-  font-size: 11px;
+  height: 200px;
+  font-size: 12px;
   background-color: var(--neutral-very-dark-violet);
   color: var(--neutral-grayish-violet);
 

@@ -55,7 +55,7 @@ export const MiddleCardImage = styled.div`
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: var(--neutral-very-dark-blue);
+  background: var(--primary-dark-violet);
   width: 50px;
   height: 50px;
   border-radius: 50%;

@@ -9,7 +9,7 @@ export const BottomNavigationSection = styled.section`
   margin: auto;
   background: var(--primary-dark-violet);
   color: white;
-  height: 150px;
+  height: 200px;
   font-weight: bold;
 
   @media (max-width: 650px) {

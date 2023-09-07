@@ -10,7 +10,7 @@ export const SearchBarSection = styled.div`
   margin: auto;
   width: 80%;
   border-radius: 10px;
-  background: hsl(255, 25%, 34%);
+  background: var(--primary-dark-violet);
 
   @media (max-height: 650px) {
     height: 8vh;
