@@ -15,7 +15,7 @@ export const MiddleCardSection = styled.section`
 export const MiddleCardContainer = styled.div`
   display: flex;
   align-items: center;
-  height: 35vh;
+  height: 40vh;
   width: 80vw;
   border-radius: 10px;
   transition: 0.2s linear;
@@ -44,6 +44,7 @@ export const MiddleCardStyledFirst = styled.div`
   border: none;
   background-color: white;
   color: black;
+  margin-bottom: 80px;
 
   @media (max-width: 650px) {
     width: 80%;
@@ -67,6 +68,7 @@ export const MiddleCardStyledSecond = styled.div`
   border: none;
   background-color: white;
   color: black;
+  margin-bottom: 40px;
 
   @media (max-width: 650px) {
     width: 80%;
@@ -90,6 +92,7 @@ export const MiddleCardStyledThird = styled.div`
   border: none;
   background-color: white;
   color: black;
+  margin-bottom: 0px;
 
   @media (max-width: 650px) {
     width: 80%;
