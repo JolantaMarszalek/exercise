@@ -24,40 +24,60 @@ export const Footer = () => {
       <FooterSectionText>
         <FooterSectionDescribe>
           <FooterSectionTitle>Features</FooterSectionTitle>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Link Shortening
           </Link>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Branded Links
           </Link>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Analytics
           </Link>
         </FooterSectionDescribe>
         <FooterSectionDescribe>
           <FooterSectionTitle>Resources</FooterSectionTitle>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Blog
           </Link>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Developers
           </Link>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Support
           </Link>
         </FooterSectionDescribe>
         <FooterSectionDescribe>
           <FooterSectionTitle>Company</FooterSectionTitle>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             About
           </Link>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Our Team
           </Link>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Careers
           </Link>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Contact
           </Link>
         </FooterSectionDescribe>
