@@ -22,10 +22,11 @@ export const TopNavigationText = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   margin: 10px;
+  margin-bottom: 100px;
 
   @media (max-width: 650px) {
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
 `;
 
@@ -52,10 +53,10 @@ export const TopNavigationDescribe = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  color: hsl(240, 1%, 63%);
+  color: var(--neutral-gray);
   font-size: 25px;
-  /* font-weight: bold; */
   line-height: 30px;
+  margin-bottom: 50px;
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -68,7 +69,6 @@ export const TopNavigationImage = styled.div`
   flex-direction: column;
   display: flex;
   padding: 15px;
-  /* width: 100%; */
   font-weight: bold;
 
   @media (max-width: 1024px) {

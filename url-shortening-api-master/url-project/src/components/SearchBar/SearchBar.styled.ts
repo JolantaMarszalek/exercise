@@ -10,7 +10,7 @@ export const SearchBarSection = styled.div`
   margin: auto;
   width: 80%;
   border-radius: 10px;
-  background: hsl(255, 25%, 34%);
+  background: var(--primary-dark-violet);
 
   @media (max-height: 650px) {
     height: 8vh;
@@ -31,10 +31,8 @@ export const SearchBarLeft = styled.form`
   padding-left: 20px;
   background-color: white;
   gap: 10px;
-  /* margin: 0 10px 0 10px; */
 
   @media (max-width: 1024px) {
     width: 200px;
-    /* margin-right: 0px; */
   }
 `;

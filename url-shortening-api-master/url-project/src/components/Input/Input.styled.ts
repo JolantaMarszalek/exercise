@@ -10,7 +10,6 @@ export const InputField = styled.input`
   border-radius: 10px;
   background-color: white;
   color: var(--neutral-grayish-violet);
-  /* font-weight: bold; */
 `;
 
 export const InputLabel = styled.label`
@@ -19,8 +18,6 @@ export const InputLabel = styled.label`
   align-items: center;
   flex-direction: column;
   color: var(--neutral-grayish-violet);
-
-  /* font-weight: bold; */
 
   @media (max-width: 1024px) {
     height: 40px;

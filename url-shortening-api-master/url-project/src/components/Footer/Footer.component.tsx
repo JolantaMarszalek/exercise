@@ -5,6 +5,7 @@ import {
   FooterSectionText,
   FooterSectionImages,
   FooterSectionLogo,
+  FooterSectionTitle,
 } from "./Footer.styled";
 import { Link } from "react-router-dom";
 import React from "react";
@@ -22,41 +23,61 @@ export const Footer = () => {
       </FooterSectionLogo>
       <FooterSectionText>
         <FooterSectionDescribe>
-          <h2>Features</h2>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <FooterSectionTitle>Features</FooterSectionTitle>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Link Shortening
           </Link>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Branded Links
           </Link>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Analytics
           </Link>
         </FooterSectionDescribe>
         <FooterSectionDescribe>
-          <h2>Resources</h2>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <FooterSectionTitle>Resources</FooterSectionTitle>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Blog
           </Link>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Developers
           </Link>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Support
           </Link>
         </FooterSectionDescribe>
         <FooterSectionDescribe>
-          <h2>Company</h2>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <FooterSectionTitle>Company</FooterSectionTitle>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             About
           </Link>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Our Team
           </Link>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Careers
           </Link>
-          <Link to="" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
             Contact
           </Link>
         </FooterSectionDescribe>

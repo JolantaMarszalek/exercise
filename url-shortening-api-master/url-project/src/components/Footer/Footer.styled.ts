@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
 export const FooterSection = styled.footer`
-  /* position: fixed; */
   bottom: 0;
   display: flex;
   justify-content: space-between;
   padding: 5px;
-  height: 150px;
-  font-size: 11px;
-  /* gap: 50px; */
+  height: 200px;
+  font-size: 12px;
   background-color: var(--neutral-very-dark-violet);
   color: var(--neutral-grayish-violet);
 
@@ -31,6 +29,7 @@ export const FooterSectionLogo = styled.div`
   display: flex;
   padding: 15px;
   margin-left: 100px;
+  margin-top: 50px;
 `;
 
 export const FooterSectionText = styled.div`
@@ -38,10 +37,22 @@ export const FooterSectionText = styled.div`
   position: static;
   padding: 0;
   margin: 0%;
-  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   color: var(--neutral-gray);
+  margin-top: 50px;
+`;
+
+export const FooterSectionTitle = styled.div`
+  display: flex;
+  position: static;
+  padding: 0;
+  font-size: 15px;
+  font-weight: bold;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: var(--neutral-gray);
+  margin-bottom: 10px;
 `;
 
 export const FooterSectionDescribe = styled.div`
@@ -57,6 +68,7 @@ export const FooterSectionImages = styled.div`
   position: static;
   display: flex;
   margin-right: 100px;
+  margin-top: 50px;
 `;
 
 export const FooterSectionSingleImage = styled.div`

@@ -8,7 +8,7 @@ export const MiddleSectionStyled = styled.section`
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  margin-top: 15vh;
+  /* margin-top: 15vh; */
   background: hsl(230, 25%, 95%);
 
   @media (max-width: 650px) {
@@ -23,7 +23,7 @@ export const MiddleSectionText = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
+  margin: 50px;
   text-align: center;
 
   @media (max-width: 650px) {
@@ -55,7 +55,7 @@ export const MiddleSectionDescribe = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  color: hsl(240, 1%, 63%);
+  color: var(--neutral-gray);
   font-weight: bold;
   line-height: 25px;
 
