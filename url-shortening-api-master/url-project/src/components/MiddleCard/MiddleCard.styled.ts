@@ -27,7 +27,53 @@ export const MiddleCardContainer = styled.div`
   }
 `;
 
-export const MiddleCardStyled = styled.div`
+export const MiddleCardStyledFirst = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: nowrap;
+  width: 350px;
+  height: auto;
+  /* height: 30vh; */
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin: auto;
+  transition: 0.2s linear;
+  border: none;
+  background-color: white;
+  color: black;
+
+  @media (max-width: 650px) {
+    width: 80%;
+  }
+`;
+
+export const MiddleCardStyledSecond = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: nowrap;
+  width: 350px;
+  height: auto;
+  /* height: 30vh; */
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin: auto;
+  transition: 0.2s linear;
+  border: none;
+  background-color: white;
+  color: black;
+
+  @media (max-width: 650px) {
+    width: 80%;
+  }
+`;
+
+export const MiddleCardStyledThird = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -51,7 +97,7 @@ export const MiddleCardStyled = styled.div`
 `;
 
 export const MiddleCardImage = styled.div`
-  position: static;
+  position: relative;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -65,7 +111,7 @@ export const MiddleCardImage = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     img {
       width: auto;
       height: 100%;

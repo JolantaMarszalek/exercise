@@ -4,7 +4,10 @@ import {
   MiddleCardDescribe,
   MiddleCardImage,
   MiddleCardSection,
-  MiddleCardStyled,
+  // MiddleCardStyled,
+  MiddleCardStyledFirst,
+  MiddleCardStyledSecond,
+  MiddleCardStyledThird,
   MiddleCardTitle,
 } from "./MiddleCard.styled";
 
@@ -12,7 +15,7 @@ export const MiddleCard = () => {
   return (
     <MiddleCardSection>
       <MiddleCardContainer>
-        <MiddleCardStyled>
+        <MiddleCardStyledFirst>
           <MiddleCardImage>
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
               <path
@@ -26,8 +29,8 @@ export const MiddleCard = () => {
             Boost your brand recognition with each click. Generic links don’t
             mean a thing. Branded links help instil confidence in your content.
           </MiddleCardDescribe>
-        </MiddleCardStyled>
-        <MiddleCardStyled>
+        </MiddleCardStyledFirst>
+        <MiddleCardStyledSecond>
           <MiddleCardImage>
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
               <path
@@ -41,8 +44,8 @@ export const MiddleCard = () => {
             Gain insights into who is clicking your links. Knowing when and
             where people engage with your content helps inform better decisions.
           </MiddleCardDescribe>
-        </MiddleCardStyled>
-        <MiddleCardStyled>
+        </MiddleCardStyledSecond>
+        <MiddleCardStyledThird>
           <MiddleCardImage>
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
               <path
@@ -56,7 +59,7 @@ export const MiddleCard = () => {
             Improve brand awareness and content discoverability through
             customizable links, supercharging audience engagement.
           </MiddleCardDescribe>
-        </MiddleCardStyled>
+        </MiddleCardStyledThird>
       </MiddleCardContainer>
     </MiddleCardSection>
   );
