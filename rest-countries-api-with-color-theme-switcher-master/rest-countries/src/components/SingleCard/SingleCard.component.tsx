@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { CountryProps } from "../CountryList/CountryList.component";
 import {
   CountryCard,
+  CountryDescribe,
   CountryFlag,
   // CountryName,
   // CountryPopulation,
@@ -19,29 +20,31 @@ export const SingleCard = ({ country }: SingleCardProps) => {
       <CountryFlag>
         <img src={country.flag} />
       </CountryFlag>
-      <Link to={`country/${country.name}`}>
-        {/* <CountryName> */}
+      <CountryDescribe>
+        <Link to={`country/${country.name}`}>
+          {/* <CountryName> */}
+          <p>
+            <b></b>
+            {country.name}
+          </p>
+          {/* </CountryName> */}
+        </Link>
+        {/* <CountryPopulation> */}
         <p>
-          <b></b>
-          {country.name}
+          <b>Population:</b> {country.population}
         </p>
-        {/* </CountryName> */}
-      </Link>
-      {/* <CountryPopulation> */}
-      <p>
-        <b>Population:</b> {country.population}
-      </p>
-      {/* </CountryPopulation> */}
-      {/* <CountryRegion> */}
-      <p>
-        <b>Region:</b> {country.region}
-      </p>
-      {/* </CountryRegion> */}
-      {/* <CountryCapital> */}
-      <p>
-        <b>Capital:</b> {country.capital}
-      </p>
-      {/* </CountryCapital> */}
+        {/* </CountryPopulation> */}
+        {/* <CountryRegion> */}
+        <p>
+          <b>Region:</b> {country.region}
+        </p>
+        {/* </CountryRegion> */}
+        {/* <CountryCapital> */}
+        <p>
+          <b>Capital:</b> {country.capital}
+        </p>
+        {/* </CountryCapital> */}
+      </CountryDescribe>
     </CountryCard>
   );
 };

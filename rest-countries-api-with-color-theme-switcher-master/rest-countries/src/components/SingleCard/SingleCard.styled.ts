@@ -14,11 +14,13 @@ export const CountryCard = styled.div`
 `;
 
 export const CountryFlag = styled.div`
+  position: relative;
   display: grid;
   place-items: center;
   /* flex-shrink: 0; */
   width: auto;
-  height: 50%;
+  height: 60%;
+  /* z-index: 1; */
   img {
     width: 100%;
     height: auto;
@@ -26,12 +28,14 @@ export const CountryFlag = styled.div`
 `;
 
 export const CountryDescribe = styled.div`
+  position: relative;
   align-items: left;
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
   margin: 0px;
   height: 50%;
+  /* z-index: 2; */
 `;
 
 export const CountryName = styled.div`
