@@ -16,13 +16,22 @@ export const CountryCard = styled.div`
 export const CountryFlag = styled.div`
   display: grid;
   place-items: center;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   width: auto;
-  height: auto;
+  height: 50%;
   img {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
+`;
+
+export const CountryDescribe = styled.div`
+  align-items: left;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+  height: 50%;
 `;
 
 export const CountryName = styled.div`
@@ -31,13 +40,12 @@ export const CountryName = styled.div`
   font-size: 20px;
   font-weight: bold;
   margin: 0px;
-  height: 40px;
 `;
 
 export const CountryPopulation = styled.div`
   align-items: left;
   padding: 10px;
-  height: 10px;
+  height: 15px;
 `;
 
 export const CountryRegion = styled.div`
