@@ -31,16 +31,16 @@ export const CountryDescribe = styled.div`
   position: relative;
   align-items: left;
   padding: 10px;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 15px;
+  /* font-weight: bold; */
   margin: 0px;
-  height: 50%;
+  height: 40%;
   /* z-index: 2; */
 `;
 
 export const CountryName = styled.div`
   align-items: left;
-  padding: 10px;
+  /* padding: 10px; */
   font-size: 20px;
   font-weight: bold;
   margin: 0px;

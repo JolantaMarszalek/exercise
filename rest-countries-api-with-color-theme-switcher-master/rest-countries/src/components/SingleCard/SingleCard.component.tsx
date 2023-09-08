@@ -4,7 +4,7 @@ import {
   CountryCard,
   CountryDescribe,
   CountryFlag,
-  // CountryName,
+  CountryName,
   // CountryPopulation,
   // CountryRegion,
   // CountryCapital,
@@ -22,12 +22,12 @@ export const SingleCard = ({ country }: SingleCardProps) => {
       </CountryFlag>
       <CountryDescribe>
         <Link to={`country/${country.name}`}>
-          {/* <CountryName> */}
-          <p>
-            <b></b>
-            {country.name}
-          </p>
-          {/* </CountryName> */}
+          <CountryName>
+            <p>
+              <b></b>
+              {country.name}
+            </p>
+          </CountryName>
         </Link>
         {/* <CountryPopulation> */}
         <p>
