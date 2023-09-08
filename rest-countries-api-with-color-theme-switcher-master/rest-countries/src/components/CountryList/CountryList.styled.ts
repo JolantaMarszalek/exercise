@@ -5,8 +5,10 @@ export const CountryGrid = styled.section`
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
   padding: 8rem 0 0;
-  width: 100%;
-  background-color: var(--background-color-elements);
+  width: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: lightgray;
 
   @media (max-width: 75em) {
     grid-template-columns: repeat(2, 1fr);

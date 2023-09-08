@@ -6,8 +6,10 @@ export const CountryCard = styled.div`
   padding: 10px;
   position: relative;
   width: auto;
-  background-color: var(--background-color-elements);
-  margin: 50px;
+  height: auto;
+  background-color: white;
+  margin: 20px;
+
   border-radius: 10px;
 `;
 
@@ -28,19 +30,24 @@ export const CountryName = styled.div`
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
+  margin: 0px;
+  height: 40px;
 `;
 
 export const CountryPopulation = styled.div`
   align-items: left;
   padding: 10px;
+  height: 10px;
 `;
 
 export const CountryRegion = styled.div`
   align-items: left;
   padding: 10px;
+  height: 10px;
 `;
 
 export const CountryCapital = styled.div`
   align-items: left;
   padding: 10px;
+  height: 10px;
 `;
