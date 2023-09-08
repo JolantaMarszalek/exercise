@@ -57,6 +57,7 @@ export const MiddleCardImage = styled.div`
   justify-content: center;
   align-items: center;
   padding: 20px;
+  margin-left: 20px;
   background: var(--primary-dark-violet);
   width: 50px;
   height: 50px;
@@ -76,6 +77,7 @@ export const MiddleCardTitle = styled.div`
   font-weight: bold;
   gap: 1.2rem;
   margin: 10px;
+  margin-left: 20px;
   font-size: 20px;
   justify-content: center;
 
