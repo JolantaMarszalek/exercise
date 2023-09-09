@@ -11,11 +11,11 @@ export const SingleCountry = styled.section`
 `;
 
 export const SingleCountrySectionLeft = styled.div`
-  display: flex;
+  display: grid;
   /* grid-template-columns: repeat(4, 1fr); */
   gap: 3rem;
   padding: 8rem 0 0;
-  width: 100%;
+  width: auto;
   background-color: var(--background-color-app);
 `;
 
@@ -31,14 +31,14 @@ export const SingleCountrySectionRight = styled.div`
 `;
 
 export const SingleCountryFlag = styled.div`
-  display: flex;
+  display: grid;
   align-content: center;
   place-items: center;
   flex-shrink: 0;
   width: auto;
   height: auto;
   img {
-    width: 100%;
+    width: auto;
     height: auto;
   }
 `;
