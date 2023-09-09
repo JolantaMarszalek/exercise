@@ -4,14 +4,33 @@ export const SingleCountry = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
-  padding: 8rem 0 0;
+  /* padding: 8rem 0 0; */
   width: 100%;
   height: auto;
   background-color: var(--background-color-app);
 `;
 
+export const SingleCountrySectionLeft = styled.div`
+  display: flex;
+  /* grid-template-columns: repeat(4, 1fr); */
+  gap: 3rem;
+  padding: 8rem 0 0;
+  width: 100%;
+  background-color: var(--background-color-app);
+`;
+
+export const SingleCountrySectionRight = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 8rem 0 0;
+  width: 100%;
+  background-color: var(--background-color-app);
+`;
+
 export const SingleCountryFlag = styled.div`
-  display: grid;
+  display: flex;
   align-content: center;
   place-items: center;
   flex-shrink: 0;
@@ -23,7 +42,8 @@ export const SingleCountryFlag = styled.div`
   }
 `;
 export const SingleCountryName = styled.div`
-  display: grid;
+  display: flex;
+  width: 100%;
   align-items: center;
   justify-content: left;
   padding: 10px;
@@ -32,54 +52,54 @@ export const SingleCountryName = styled.div`
 `;
 
 export const SingleCountryNativeName = styled.div`
-  display: grid;
+  display: flex;
   align-items: center;
   padding: 10px;
 `;
 export const SingleCountryPopulation = styled.div`
-  display: grid;
+  display: flex;
   align-items: center;
   padding: 10px;
 `;
 
 export const SingleCountryRegion = styled.div`
-  display: grid;
+  display: flex;
   align-items: left;
   padding: 10px;
 `;
 
 export const SingleCountrySubRegion = styled.div`
-  display: grid;
+  display: flex;
   align-items: left;
   padding: 10px;
 `;
 
 export const SingleCountryCapital = styled.div`
-  display: grid;
+  display: flex;
   align-items: left;
   padding: 10px;
 `;
 
 export const SingleCountryTopLevelDomain = styled.div`
-  display: grid;
+  display: flex;
   align-items: left;
   padding: 10px;
 `;
 
 export const SingleCountryCurrencies = styled.div`
-  display: grid;
+  display: flex;
   align-items: left;
   padding: 10px;
 `;
 
 export const SingleCountryLanguages = styled.div`
-  display: grid;
+  display: flex;
   align-items: left;
   padding: 10px;
 `;
 
 export const SingleCountryBorderCountries = styled.div`
-  display: grid;
+  display: flex;
   align-items: left;
   padding: 10px;
 `;
