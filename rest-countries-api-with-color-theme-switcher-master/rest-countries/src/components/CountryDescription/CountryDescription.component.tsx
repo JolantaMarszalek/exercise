@@ -1,18 +1,19 @@
 import {
   SingleCountryFlag,
   SingleCountryName,
-  SingleCountryNativeName,
-  SingleCountryPopulation,
-  SingleCountryRegion,
-  SingleCountrySubRegion,
-  SingleCountryCapital,
-  SingleCountryTopLevelDomain,
-  SingleCountryCurrencies,
-  SingleCountryLanguages,
+  // SingleCountryNativeName,
+  // SingleCountryPopulation,
+  // SingleCountryRegion,
+  // SingleCountrySubRegion,
+  // SingleCountryCapital,
+  // SingleCountryTopLevelDomain,
+  // SingleCountryCurrencies,
+  // SingleCountryLanguages,
   SingleCountryBorderCountries,
   SingleCountrySectionLeft,
   SingleCountrySectionRight,
   SingleCountry,
+  SingleCountryDescriptions,
 } from "./CountryDescription.styled";
 // import { SingleCountryGrid } from "../SingleCountry/SingleCountry.styled";
 
@@ -61,56 +62,55 @@ export const SingleCountryDescription = ({
               <b>{name}</b>
             </p>
           </SingleCountryName>
-          <SingleCountryNativeName>
+          <SingleCountryDescriptions>
             <p>
               <b>Native Name: </b>
               {nativeName}
             </p>
-          </SingleCountryNativeName>
-          <SingleCountryPopulation>
+          </SingleCountryDescriptions>
+          <SingleCountryDescriptions>
             <p>
               <b>Population: </b>
               {population}
             </p>
-          </SingleCountryPopulation>
-
-          <SingleCountryRegion>
+          </SingleCountryDescriptions>
+          <SingleCountryDescriptions>
             <p>
               <b>Region: </b>
               {region}
             </p>
-          </SingleCountryRegion>
-          <SingleCountrySubRegion>
+          </SingleCountryDescriptions>
+          <SingleCountryDescriptions>
             <p>
               <b>Sub Region: </b>
               {subregion}
             </p>
-          </SingleCountrySubRegion>
-          <SingleCountryCapital>
+          </SingleCountryDescriptions>
+          <SingleCountryDescriptions>
             <p>
               <b>Capital: </b>
               {capital}
             </p>
-          </SingleCountryCapital>
-          <SingleCountryTopLevelDomain>
+          </SingleCountryDescriptions>
+          <SingleCountryDescriptions>
             <p>
               <b>Top Level Domain: </b>
               {topLevelDomain}
             </p>
-          </SingleCountryTopLevelDomain>
-          <SingleCountryCurrencies>
+          </SingleCountryDescriptions>
+          <SingleCountryDescriptions>
             <p>
               <b>Currencies: </b>
               {currencies &&
                 currencies.map((currency) => <p>{currency.name}</p>)}
             </p>
-          </SingleCountryCurrencies>
-          <SingleCountryLanguages>
+          </SingleCountryDescriptions>
+          <SingleCountryDescriptions>
             <p>
               <b>Languages: </b>
               {languages && languages.map((language) => <p>{language.name}</p>)}
             </p>
-          </SingleCountryLanguages>
+          </SingleCountryDescriptions>
           <SingleCountryBorderCountries>
             <p>
               <b>Border Countries: </b>
