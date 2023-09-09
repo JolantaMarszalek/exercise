@@ -38,7 +38,7 @@ export const SingleCountryFlag = styled.div`
   width: auto;
   height: auto;
   img {
-    width: auto;
+    width: 100%;
     height: auto;
   }
 `;
