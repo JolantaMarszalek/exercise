@@ -20,7 +20,7 @@ export const SingleCountrySectionLeft = styled.div`
 `;
 
 export const SingleCountrySectionRight = styled.div`
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
 
   grid-template-columns: repeat(2, 1fr);
@@ -53,7 +53,9 @@ export const SingleCountryName = styled.div`
 `;
 
 export const SingleCountryDescriptions = styled.div`
-  display: flex;
+  display: grid;
+
+  /* flex-direction: row; */
   align-items: center;
   padding: 10px;
 `;
