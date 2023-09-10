@@ -5,6 +5,6 @@ export const Title = styled.div`
   color: var(--color-text);
   font-size: 35px;
   font-weight: bold;
-  margin-left: 50px;
-  margin-top: 50px;
+  padding-left: 50px;
+  padding-top: 50px;
 `;
