@@ -21,10 +21,10 @@ export const ToggleButton = styled.button<ToggleProps>`
   border-radius: 15px;
   position: relative;
   background-color: var(--background-color-elements);
-  /* background-color: ${({ active }) =>
+  background-color: ${({ active }) =>
     active
       ? "var(--dark-blue--dark-mode-elements)"
-      : "var(--white--dark-mode-text-and-light-mode-elements)"}; */
+      : "var(--white--dark-mode-text-and-light-mode-elements)"};
   transition: 0.2s linear;
 
   &::before {
