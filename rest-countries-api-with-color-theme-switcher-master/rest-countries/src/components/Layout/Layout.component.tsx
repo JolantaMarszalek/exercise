@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <>
       <Background />
-      <h1>Where in the world?</h1>
+      {/* <h1>Where in the world?</h1> */}
       <Header />
 
       {/* <Toggle /> */}
