@@ -28,6 +28,7 @@ export const SingleCountrySectionRight = styled.div`
   padding: 8rem 0 0;
   width: 100%;
   background-color: var(--background-color-app);
+  color: var(--color-text);
 `;
 
 export const SingleCountryFlag = styled.div`
