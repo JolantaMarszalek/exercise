@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Title = styled.div`
-  background-color: var(--background-color-app);
+  background-color: var(--background-color-elements);
   color: black;
   font-size: 35px;
   font-weight: bold;

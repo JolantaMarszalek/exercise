@@ -9,7 +9,7 @@ export const InputField = styled.input`
   border: 0;
   /* border-color: white; */
   ::placeholder {
-    background-color: var(--background-color-app);
+    background-color: var(--background-color-elements);
     color: var(--color-text);
   }
 `;
@@ -24,7 +24,7 @@ export const InputLabel = styled.label`
   height: 50px;
   margin: 20px;
   margin-left: 50px;
-  background-color: var(--background-color-app);
+  background-color: var(--background-color-elements);
   border: solid gray;
   border-radius: 5px;
   img {

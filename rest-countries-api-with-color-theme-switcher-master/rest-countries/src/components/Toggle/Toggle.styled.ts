@@ -9,6 +9,7 @@ export const ToggleWrapper = styled.div`
   color: var(--color-text);
   width: 150px;
   margin-left: auto;
+  background-color: var(--background-color-elements);
   img {
     width: 20px;
     height: 20px;
@@ -32,7 +33,7 @@ export const ToggleButton = styled.button<ToggleProps>`
     display: absolute;
     width: 15px;
     height: 15px;
-    background-color: var(--background-color-elements);
+    background-color: var(--background-color-app);
     border-radius: 100%;
     position: absolute;
     top: 50%;
