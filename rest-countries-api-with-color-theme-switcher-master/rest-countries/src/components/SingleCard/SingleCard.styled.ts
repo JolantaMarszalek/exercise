@@ -7,7 +7,7 @@ export const CountryCard = styled.div`
   position: relative;
   width: auto;
   height: auto;
-  background-color: white;
+  background-color: var(--background-color-app);
   margin: 20px;
 
   border-radius: 10px;
