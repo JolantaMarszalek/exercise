@@ -26,7 +26,7 @@ export const InputLabel = styled.label`
   margin-left: 50px;
   background-color: var(--background-color-elements);
   color: var(--color-text);
-  border: solid gray;
+  border: 0;
   border-radius: 5px;
   img {
     width: 20px;
