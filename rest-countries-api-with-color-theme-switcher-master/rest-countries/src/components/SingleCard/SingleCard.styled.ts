@@ -5,25 +5,28 @@ export const CountryCard = styled.div`
   flex-direction: column;
   padding: 10px;
   position: relative;
-  width: auto;
-  height: auto;
+  width: 400px;
+  height: 400px;
   background-color: var(--background-color-app);
-  margin: 20px;
-
+  margin: 10px;
   border-radius: 10px;
 `;
 
 export const CountryFlag = styled.div`
   position: relative;
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   place-items: center;
   /* flex-shrink: 0; */
+  object-fit: cover;
   width: auto;
   height: 60%;
   /* z-index: 1; */
+  /* overflow: auto; */
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 `;
 
