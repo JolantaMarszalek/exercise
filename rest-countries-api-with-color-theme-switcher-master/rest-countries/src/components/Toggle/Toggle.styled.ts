@@ -2,6 +2,7 @@ import styled from "styled-components";
 interface ToggleProps {
   active: boolean;
 }
+
 export const ToggleWrapper = styled.div`
   display: flex;
   justify-content: space-between;

@@ -22,7 +22,6 @@ export const SingleCountrySectionLeft = styled.div`
 export const SingleCountrySectionRight = styled.div`
   display: grid;
   flex-wrap: wrap;
-
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   padding: 8rem 0 0;
@@ -55,7 +54,6 @@ export const SingleCountryName = styled.div`
 
 export const SingleCountryDescriptions = styled.div`
   display: grid;
-
   /* flex-direction: row; */
   align-items: center;
   padding: 10px;

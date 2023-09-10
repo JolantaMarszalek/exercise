@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InputField = styled.input`
   flex-grow: 1;
   font-size: 15px;
-  color: black;
+  color: var(--color-text);
   border-radius: 5px;
   overflow: hidden;
   border: 0;
@@ -25,6 +25,7 @@ export const InputLabel = styled.label`
   margin: 20px;
   margin-left: 50px;
   background-color: var(--background-color-elements);
+  color: var(--color-text);
   border: solid gray;
   border-radius: 5px;
   img {
