@@ -23,6 +23,7 @@ export const InputLabel = styled.label`
   margin: 20px;
   margin-left: 50px;
   background-color: var(--background-color-app);
+  border: 5px;
   img {
     width: 20px;
     height: 20px;
