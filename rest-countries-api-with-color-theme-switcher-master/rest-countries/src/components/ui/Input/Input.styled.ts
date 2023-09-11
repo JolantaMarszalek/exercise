@@ -3,11 +3,13 @@ import styled from "styled-components";
 export const InputField = styled.input`
   flex-grow: 1;
   font-size: 15px;
-  color: black;
+  color: var(--color-text);
   border-radius: 5px;
   overflow: hidden;
+  border: 0;
+  /* border-color: white; */
   ::placeholder {
-    background-color: var(--background-color-app);
+    background-color: var(--background-color-elements);
     color: var(--color-text);
   }
 `;
@@ -22,7 +24,10 @@ export const InputLabel = styled.label`
   height: 50px;
   margin: 20px;
   margin-left: 50px;
-  background-color: var(--background-color-app);
+  background-color: var(--background-color-elements);
+  color: var(--color-text);
+  border: 0;
+  border-radius: 5px;
   img {
     width: 20px;
     height: 20px;

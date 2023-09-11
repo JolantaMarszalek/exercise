@@ -5,6 +5,7 @@ import { darkTheme } from "../../theme/themeStyles";
 
 const Toggle = () => {
   const { toggleTheme, theme } = useContext(NightModeContext);
+  console.log("Active:", theme === darkTheme);
   return (
     <ToggleWrapper>
       <img src="moon-outline.svg" />

@@ -13,10 +13,14 @@ import NotFoundPage from "./pages/NotFound.page";
 import { ThemeProvider } from "styled-components";
 import { NightModeContext } from "./context/theme.context";
 import { useContext } from "react";
-// import GlobalStyle from "./theme/globalStyles";
+// import Toggle from "./components/Toggle/Toggle.component";
+import GlobalStyle from "./theme/globalStyles";
 
 function App() {
-  const { theme } = useContext(NightModeContext);
+  const {
+    theme,
+    // toggleTheme
+  } = useContext(NightModeContext);
 
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -31,7 +35,8 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      {/* <GlobalStyle /> */}
+      {/* <Toggle toggleTheme={toggleTheme} /> */}
+      <GlobalStyle theme={theme} />
       {/* <CountryContextProvider> */}
       <RouterProvider router={router} />
       {/* </CountryContextProvider> */}

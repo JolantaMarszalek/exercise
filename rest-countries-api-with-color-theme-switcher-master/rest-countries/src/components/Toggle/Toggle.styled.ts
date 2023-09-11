@@ -2,6 +2,7 @@ import styled from "styled-components";
 interface ToggleProps {
   active: boolean;
 }
+
 export const ToggleWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -9,6 +10,7 @@ export const ToggleWrapper = styled.div`
   color: var(--color-text);
   width: 150px;
   margin-left: auto;
+  background-color: var(--background-color-elements);
   img {
     width: 20px;
     height: 20px;
@@ -21,10 +23,10 @@ export const ToggleButton = styled.button<ToggleProps>`
   border-radius: 15px;
   position: relative;
   background-color: var(--background-color-elements);
-  /* background-color: ${({ active }) =>
+  background-color: ${({ active }) =>
     active
       ? "var(--dark-blue--dark-mode-elements)"
-      : "var(--white--dark-mode-text-and-light-mode-elements)"}; */
+      : "var(--white--dark-mode-text-and-light-mode-elements)"};
   transition: 0.2s linear;
 
   &::before {
@@ -32,7 +34,7 @@ export const ToggleButton = styled.button<ToggleProps>`
     display: absolute;
     width: 15px;
     height: 15px;
-    background-color: var(--background-color-elements);
+    background-color: var(--background-color-app);
     border-radius: 100%;
     position: absolute;
     top: 50%;
