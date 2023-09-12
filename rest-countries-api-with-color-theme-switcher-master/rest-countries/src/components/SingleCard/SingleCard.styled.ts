@@ -10,6 +10,7 @@ export const CountryCard = styled.div`
   background-color: var(--background-color-elements);
   color: var(--color-text);
   margin: 10px;
+
   border-radius: 10px;
 `;
 
