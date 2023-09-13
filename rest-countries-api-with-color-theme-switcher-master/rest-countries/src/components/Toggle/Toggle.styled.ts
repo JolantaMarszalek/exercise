@@ -8,6 +8,20 @@ export const ToggleWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   color: var(--color-text);
+  width: 100%;
+  margin-left: auto;
+  background-color: var(--background-color-elements);
+  img {
+    width: 20px;
+    height: 20px;
+  }
+`;
+
+export const ToggleSection = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-text);
   width: 150px;
   margin-left: auto;
   background-color: var(--background-color-elements);

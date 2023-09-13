@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { NightModeContext } from "../../context/theme.context";
-import { ToggleWrapper, ToggleButton } from "./Toggle.styled";
+import { ToggleWrapper, ToggleButton, ToggleSection } from "./Toggle.styled";
 import { darkTheme } from "../../theme/themeStyles";
 
 const Toggle = () => {
@@ -8,9 +8,12 @@ const Toggle = () => {
   console.log("Active:", theme === darkTheme);
   return (
     <ToggleWrapper>
-      <img src="moon-outline.svg" />
-      <b>Dark Mode</b>
-      <ToggleButton onClick={toggleTheme} active={theme === darkTheme} />
+      <ToggleSection>
+        {" "}
+        <img src="moon-outline.svg" />
+        <b>Dark Mode</b>
+        <ToggleButton onClick={toggleTheme} active={theme === darkTheme} />
+      </ToggleSection>
     </ToggleWrapper>
   );
 };
