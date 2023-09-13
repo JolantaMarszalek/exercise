@@ -5,7 +5,6 @@ export const SingleCountryGrid = styled.section`
   /* grid-template-columns: repeat(4, 1fr); */
   gap: 3rem;
   /* padding: 8rem 0 0; */
-  width: 100%;
   background-color: var(--background-color-app);
 
   @media (max-width: 75em) {

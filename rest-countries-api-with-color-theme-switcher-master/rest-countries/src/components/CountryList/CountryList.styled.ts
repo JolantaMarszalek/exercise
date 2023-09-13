@@ -5,7 +5,7 @@ export const CountryGrid = styled.section`
   grid-template-columns: repeat(4, 1fr);
   /* gap: 3rem; */
   padding: 8rem 0 0;
-  width: 100%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--background-color-app);

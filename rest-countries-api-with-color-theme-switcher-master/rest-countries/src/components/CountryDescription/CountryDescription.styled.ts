@@ -5,8 +5,9 @@ export const SingleCountry = styled.section`
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   /* padding: 8rem 0 0; */
-  width: 100%;
-  height: auto;
+  width: 90%;
+  height: 100%;
+  margin-bottom: 200px;
   background-color: var(--background-color-app);
 `;
 
