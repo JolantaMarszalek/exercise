@@ -34,13 +34,16 @@ function App() {
   );
 
   return (
-    <ThemeProvider theme={theme}>
-      {/* <Toggle toggleTheme={toggleTheme} /> */}
-      <GlobalStyle theme={theme} />
-      {/* <CountryContextProvider> */}
-      <RouterProvider router={router} />
-      {/* </CountryContextProvider> */}
-    </ThemeProvider>
+    <>
+      {" "}
+      <ThemeProvider theme={theme}>
+        <GlobalStyle theme={theme} />
+        {/* <Toggle toggleTheme={toggleTheme} /> */}
+        {/* <CountryContextProvider> */}
+        <RouterProvider router={router} />
+        {/* </CountryContextProvider> */}
+      </ThemeProvider>
+    </>
   );
 }
 
