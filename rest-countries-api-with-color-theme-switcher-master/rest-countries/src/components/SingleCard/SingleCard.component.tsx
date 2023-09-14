@@ -17,34 +17,38 @@ interface SingleCardProps {
 export const SingleCard = ({ country }: SingleCardProps) => {
   return (
     <CountryCard>
-      <CountryFlag>
-        <img src={country.flag} />
-      </CountryFlag>
-      <CountryDescribe>
-        <Link to={`country/${country.name}`} style={{ textDecoration: "none", color: "inherit" }}>
+      <Link
+        to={`country/${country.name}`}
+        style={{ textDecoration: "none", color: "inherit" }}>
+        <CountryFlag>
+          <img src={country.flag} />
+        </CountryFlag>
+        <CountryDescribe>
+          {/* <Link to={`country/${country.name}`} style={{ textDecoration: "none", color: "inherit" }}> */}
           <CountryName>
             <p>
               <b></b>
               {country.name}
             </p>
           </CountryName>
-        </Link>
-        {/* <CountryPopulation> */}
-        <p>
-          <b>Population:</b> {country.population}
-        </p>
-        {/* </CountryPopulation> */}
-        {/* <CountryRegion> */}
-        <p>
-          <b>Region:</b> {country.region}
-        </p>
-        {/* </CountryRegion> */}
-        {/* <CountryCapital> */}
-        <p>
-          <b>Capital:</b> {country.capital}
-        </p>
-        {/* </CountryCapital> */}
-      </CountryDescribe>
+          {/* </Link> */}
+          {/* <CountryPopulation> */}
+          <p>
+            <b>Population:</b> {country.population}
+          </p>
+          {/* </CountryPopulation> */}
+          {/* <CountryRegion> */}
+          <p>
+            <b>Region:</b> {country.region}
+          </p>
+          {/* </CountryRegion> */}
+          {/* <CountryCapital> */}
+          <p>
+            <b>Capital:</b> {country.capital}
+          </p>
+          {/* </CountryCapital> */}
+        </CountryDescribe>
+      </Link>
     </CountryCard>
   );
 };
