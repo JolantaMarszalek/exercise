@@ -5,47 +5,48 @@ export const CountryCard = styled.div`
   flex-direction: column;
   padding: 10px;
   position: relative;
+  justify-content: center;
+  overflow: hidden;
   width: 400px;
   height: 400px;
   background-color: var(--background-color-elements);
   color: var(--color-text);
   margin: 10px;
-
   border-radius: 10px;
 `;
 
 export const CountryFlag = styled.div`
-  position: relative;
   display: flex;
+  flex-direction: column;
+  position: relative;
   align-items: center;
   justify-content: center;
-  place-items: center;
-  /* flex-shrink: 0; */
-  object-fit: cover;
+  object-fit: inherit;
+  /* place-items: center; */
+  /* object-fit: cover; */
   width: auto;
-  height: 60%;
-  /* z-index: 1; */
-  /* overflow: auto; */
+  height: auto;
+
   img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: auto;
   }
 `;
 
 export const CountryDescribe = styled.div`
+  display: flex;
+  flex-direction: column;
   position: relative;
-  align-items: left;
+  align-items: flex-start;
+  /* object-fit: cover; */
   padding: 10px;
   font-size: 15px;
-  /* font-weight: bold; */
-  margin: 0px;
-  height: 40%;
-  /* z-index: 2; */
+  margin-left: 30px;
+  height: auto;
 `;
 
 export const CountryName = styled.div`
   align-items: left;
-  /* padding: 10px; */
   font-size: 20px;
   font-weight: bold;
   margin: 0px;
