@@ -21,7 +21,7 @@ export const SingleCard = ({ country }: SingleCardProps) => {
         <img src={country.flag} />
       </CountryFlag>
       <CountryDescribe>
-        <Link to={`country/${country.name}`}>
+        <Link to={`country/${country.name}`} style={{ textDecoration: "none", color: "inherit" }}>
           <CountryName>
             <p>
               <b></b>
