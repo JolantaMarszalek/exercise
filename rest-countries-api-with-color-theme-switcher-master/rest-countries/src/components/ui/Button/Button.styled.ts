@@ -20,8 +20,4 @@ export const ButtonSmall = styled.button`
   padding: 10px 26px;
   display: inline-block;
   font-size: 12px;
-  svg {
-    width: 20px;
-    height: 20px;
-  }
 `;

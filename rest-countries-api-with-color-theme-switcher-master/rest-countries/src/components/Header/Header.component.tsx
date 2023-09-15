@@ -5,10 +5,12 @@ import { Title } from "./Header.styled";
 const Header = () => {
   return (
     <>
-      <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-        {" "}
-        <Title>Where in the world?</Title>
-      </Link>
+      <Title>
+        <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+          {" "}
+          Where in the world?
+        </Link>
+      </Title>
       <Toggle />
     </>
   );

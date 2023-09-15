@@ -15,6 +15,7 @@ import {
   SingleCountrySectionRight,
   SingleCountry,
   SingleCountryDescriptions,
+  SingleCountryDescriptionsSection,
 } from "./CountryDescription.styled";
 import {
   // Button,
@@ -67,55 +68,58 @@ export const SingleCountryDescription = ({
               <b>{name}</b>
             </p>
           </SingleCountryName>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Native Name: </b>
-              {nativeName}
-            </p>
-          </SingleCountryDescriptions>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Population: </b>
-              {population}
-            </p>
-          </SingleCountryDescriptions>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Region: </b>
-              {region}
-            </p>
-          </SingleCountryDescriptions>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Sub Region: </b>
-              {subregion}
-            </p>
-          </SingleCountryDescriptions>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Capital: </b>
-              {capital}
-            </p>
-          </SingleCountryDescriptions>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Top Level Domain: </b>
-              {topLevelDomain}
-            </p>
-          </SingleCountryDescriptions>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Currencies: </b>
-              {currencies &&
-                currencies.map((currency) => <p>{currency.name}</p>)}
-            </p>
-          </SingleCountryDescriptions>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Languages: </b>
-              {languages && languages.map((language) => <p>{language.name}</p>)}
-            </p>
-          </SingleCountryDescriptions>
+          <SingleCountryDescriptionsSection>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Native Name: </b>
+                {nativeName}
+              </p>
+            </SingleCountryDescriptions>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Population: </b>
+                {population}
+              </p>
+            </SingleCountryDescriptions>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Region: </b>
+                {region}
+              </p>
+            </SingleCountryDescriptions>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Sub Region: </b>
+                {subregion}
+              </p>
+            </SingleCountryDescriptions>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Capital: </b>
+                {capital}
+              </p>
+            </SingleCountryDescriptions>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Top Level Domain: </b>
+                {topLevelDomain}
+              </p>
+            </SingleCountryDescriptions>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Currencies: </b>
+                {currencies &&
+                  currencies.map((currency) => <p>{currency.name}</p>)}
+              </p>
+            </SingleCountryDescriptions>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Languages: </b>
+                {languages &&
+                  languages.map((language) => <p>{language.name}</p>)}
+              </p>
+            </SingleCountryDescriptions>
+          </SingleCountryDescriptionsSection>
           <SingleCountryBorderCountries>
             <p>
               <b>Border Countries: </b>

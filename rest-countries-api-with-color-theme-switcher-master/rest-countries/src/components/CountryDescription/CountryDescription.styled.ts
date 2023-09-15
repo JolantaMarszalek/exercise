@@ -21,7 +21,7 @@ export const SingleCountrySectionLeft = styled.div`
 `;
 
 export const SingleCountrySectionRight = styled.div`
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
@@ -45,6 +45,7 @@ export const SingleCountryFlag = styled.div`
 `;
 export const SingleCountryName = styled.div`
   display: flex;
+  flex-direction: row;
   width: 100%;
   align-items: center;
   justify-content: left;
@@ -52,10 +53,17 @@ export const SingleCountryName = styled.div`
   font-size: 25px;
   font-weight: bold;
 `;
+export const SingleCountryDescriptionsSection = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+`;
 
 export const SingleCountryDescriptions = styled.div`
   display: grid;
-  /* flex-direction: row; */
+  flex-direction: row;
   align-items: center;
   padding: 10px;
 `;
