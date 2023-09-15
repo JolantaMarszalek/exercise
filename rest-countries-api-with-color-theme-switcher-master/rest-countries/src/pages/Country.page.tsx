@@ -1,13 +1,10 @@
-import { DependencyList, EffectCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import {
   SingleCountryDescription,
   CountryDetails,
 } from "../components/CountryDescription/CountryDescription.component";
-import Toggle from "../components/Toggle/Toggle.component";
 import { Button } from "../components/ui/Button/Button.styled";
-import { Input } from "../components/ui/Input/Input.component";
-import { useData } from "../context/country.context";
 
 interface Data {
   url: string;
@@ -39,7 +36,7 @@ const CountryPage: React.FC = () => {
         .catch((error) => console.log(error));
     };
     fetchSingleCountry();
-  }, []);
+  }, [params.country]);
   console.log("Data:", data);
 
   const country =
@@ -48,7 +45,23 @@ const CountryPage: React.FC = () => {
   return (
     <>
       <Link to="/">
-        <Button>Back</Button>
+        <Button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            // class="ionicon"
+            viewBox="0 0 512 512">
+            <title>Arrow Back</title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="48"
+              d="M244 400L100 256l144-144M120 256h292"
+            />
+          </svg>{" "}
+          Back
+        </Button>
       </Link>
       {country && (
         <SingleCountryDescription

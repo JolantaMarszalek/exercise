@@ -4,15 +4,14 @@ export const SingleCountry = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
-  /* padding: 8rem 0 0; */
-  width: 100%;
-  height: auto;
+  width: 90%;
+  height: 100%;
+  margin-bottom: 200px;
   background-color: var(--background-color-app);
 `;
 
 export const SingleCountrySectionLeft = styled.div`
   display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
   gap: 3rem;
   padding: 8rem 0 0;
   width: auto;
@@ -20,7 +19,7 @@ export const SingleCountrySectionLeft = styled.div`
 `;
 
 export const SingleCountrySectionRight = styled.div`
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
@@ -44,6 +43,7 @@ export const SingleCountryFlag = styled.div`
 `;
 export const SingleCountryName = styled.div`
   display: flex;
+  flex-direction: row;
   width: 100%;
   align-items: center;
   justify-content: left;
@@ -51,61 +51,20 @@ export const SingleCountryName = styled.div`
   font-size: 25px;
   font-weight: bold;
 `;
-
-export const SingleCountryDescriptions = styled.div`
+export const SingleCountryDescriptionsSection = styled.div`
   display: grid;
-  /* flex-direction: row; */
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: row;
   align-items: center;
   padding: 10px;
 `;
 
-// export const SingleCountryNativeName = styled.div`
-//   display: flex;
-//   align-items: center;
-//   padding: 10px;
-// `;
-
-// export const SingleCountryPopulation = styled.div`
-//   display: flex;
-//   align-items: center;
-//   padding: 10px;
-// `;
-
-// export const SingleCountryRegion = styled.div`
-//   display: flex;
-//   align-items: left;
-//   padding: 10px;
-// `;
-
-// export const SingleCountrySubRegion = styled.div`
-//   display: flex;
-//   align-items: left;
-//   padding: 10px;
-// `;
-
-// export const SingleCountryCapital = styled.div`
-//   display: flex;
-//   align-items: left;
-//   padding: 10px;
-// `;
-
-// export const SingleCountryTopLevelDomain = styled.div`
-//   display: flex;
-//   align-items: left;
-//   padding: 10px;
-// `;
-
-// export const SingleCountryCurrencies = styled.div`
-//   display: flex;
-//   align-items: left;
-//   padding: 10px;
-// `;
-
-// export const SingleCountryLanguages = styled.div`
-//   display: flex;
-//   align-items: left;
-//   padding: 10px;
-// `;
+export const SingleCountryDescriptions = styled.div`
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+`;
 
 export const SingleCountryBorderCountries = styled.div`
   display: flex;

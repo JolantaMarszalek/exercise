@@ -7,7 +7,6 @@ export const InputField = styled.input`
   border-radius: 5px;
   overflow: hidden;
   border: 0;
-  /* border-color: white; */
   ::placeholder {
     background-color: var(--background-color-elements);
     color: var(--color-text);
@@ -28,7 +27,7 @@ export const InputLabel = styled.label`
   color: var(--color-text);
   border: 0;
   border-radius: 5px;
-  img {
+  svg {
     width: 20px;
     height: 20px;
     margin-left: 20px;

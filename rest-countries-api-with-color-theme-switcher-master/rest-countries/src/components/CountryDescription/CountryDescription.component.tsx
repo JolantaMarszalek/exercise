@@ -1,21 +1,15 @@
+import { Link } from "react-router-dom";
 import {
   SingleCountryFlag,
   SingleCountryName,
-  // SingleCountryNativeName,
-  // SingleCountryPopulation,
-  // SingleCountryRegion,
-  // SingleCountrySubRegion,
-  // SingleCountryCapital,
-  // SingleCountryTopLevelDomain,
-  // SingleCountryCurrencies,
-  // SingleCountryLanguages,
   SingleCountryBorderCountries,
   SingleCountrySectionLeft,
   SingleCountrySectionRight,
   SingleCountry,
   SingleCountryDescriptions,
+  SingleCountryDescriptionsSection,
 } from "./CountryDescription.styled";
-// import { SingleCountryGrid } from "../SingleCountry/SingleCountry.styled";
+import { ButtonSmall } from "../ui/Button/Button.styled";
 
 export interface CountryDetails {
   name: string[];
@@ -62,59 +56,69 @@ export const SingleCountryDescription = ({
               <b>{name}</b>
             </p>
           </SingleCountryName>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Native Name: </b>
-              {nativeName}
-            </p>
-          </SingleCountryDescriptions>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Population: </b>
-              {population}
-            </p>
-          </SingleCountryDescriptions>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Region: </b>
-              {region}
-            </p>
-          </SingleCountryDescriptions>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Sub Region: </b>
-              {subregion}
-            </p>
-          </SingleCountryDescriptions>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Capital: </b>
-              {capital}
-            </p>
-          </SingleCountryDescriptions>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Top Level Domain: </b>
-              {topLevelDomain}
-            </p>
-          </SingleCountryDescriptions>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Currencies: </b>
-              {currencies &&
-                currencies.map((currency) => <p>{currency.name}</p>)}
-            </p>
-          </SingleCountryDescriptions>
-          <SingleCountryDescriptions>
-            <p>
-              <b>Languages: </b>
-              {languages && languages.map((language) => <p>{language.name}</p>)}
-            </p>
-          </SingleCountryDescriptions>
+          <SingleCountryDescriptionsSection>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Native Name: </b>
+                {nativeName}
+              </p>
+            </SingleCountryDescriptions>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Population: </b>
+                {population}
+              </p>
+            </SingleCountryDescriptions>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Region: </b>
+                {region}
+              </p>
+            </SingleCountryDescriptions>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Sub Region: </b>
+                {subregion}
+              </p>
+            </SingleCountryDescriptions>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Capital: </b>
+                {capital}
+              </p>
+            </SingleCountryDescriptions>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Top Level Domain: </b>
+                {topLevelDomain}
+              </p>
+            </SingleCountryDescriptions>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Currencies: </b>
+                {currencies &&
+                  currencies.map((currency) => <p>{currency.name}</p>)}
+              </p>
+            </SingleCountryDescriptions>
+            <SingleCountryDescriptions>
+              <p>
+                <b>Languages: </b>
+                {languages &&
+                  languages.map((language) => <p>{language.name}</p>)}
+              </p>
+            </SingleCountryDescriptions>
+          </SingleCountryDescriptionsSection>
           <SingleCountryBorderCountries>
             <p>
               <b>Border Countries: </b>
-              {borders && borders.map((border) => <p>{border}</p>)}
+              <Link to="not-found">
+                {borders &&
+                  borders.map((border) => (
+                    <ButtonSmall>
+                      <p>{border}</p>
+                    </ButtonSmall>
+                  ))}
+              </Link>
             </p>
           </SingleCountryBorderCountries>
         </SingleCountrySectionRight>

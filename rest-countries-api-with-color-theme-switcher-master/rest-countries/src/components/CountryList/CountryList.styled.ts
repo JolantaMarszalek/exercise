@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const CountryGrid = styled.section`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 3rem;
+  justify-items: center;
   padding: 8rem 0 0;
-  width: auto;
-  margin-left: 50px;
-  margin-right: 50px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--background-color-app);
   color: var(--color-text);
 

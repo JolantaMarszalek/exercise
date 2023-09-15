@@ -5,9 +5,6 @@ import {
   CountryDescribe,
   CountryFlag,
   CountryName,
-  // CountryPopulation,
-  // CountryRegion,
-  // CountryCapital,
 } from "./SingleCard.styled";
 
 interface SingleCardProps {
@@ -17,34 +14,30 @@ interface SingleCardProps {
 export const SingleCard = ({ country }: SingleCardProps) => {
   return (
     <CountryCard>
-      <CountryFlag>
-        <img src={country.flag} />
-      </CountryFlag>
-      <CountryDescribe>
-        <Link to={`country/${country.name}`}>
+      <Link
+        to={`country/${country.name}`}
+        style={{ textDecoration: "none", color: "inherit" }}>
+        <CountryFlag>
+          <img src={country.flag} />
+        </CountryFlag>
+        <CountryDescribe>
           <CountryName>
             <p>
               <b></b>
               {country.name}
             </p>
           </CountryName>
-        </Link>
-        {/* <CountryPopulation> */}
-        <p>
-          <b>Population:</b> {country.population}
-        </p>
-        {/* </CountryPopulation> */}
-        {/* <CountryRegion> */}
-        <p>
-          <b>Region:</b> {country.region}
-        </p>
-        {/* </CountryRegion> */}
-        {/* <CountryCapital> */}
-        <p>
-          <b>Capital:</b> {country.capital}
-        </p>
-        {/* </CountryCapital> */}
-      </CountryDescribe>
+          <p>
+            <b>Population:</b> {country.population}
+          </p>
+          <p>
+            <b>Region:</b> {country.region}
+          </p>
+          <p>
+            <b>Capital:</b> {country.capital}
+          </p>
+        </CountryDescribe>
+      </Link>
     </CountryCard>
   );
 };

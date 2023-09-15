@@ -1,16 +1,6 @@
-// import { Input } from "../components/ui/Input/Input.component";
-// import Toggle from "../components/Toggle/Toggle.component";
-import {
-  // DependencyList,
-  // Dispatch,
-  // EffectCallback,
-  // SetStateAction,
-  useEffect,
-  useState,
-} from "react";
+import { useEffect, useState } from "react";
 import CountryList from "../components/CountryList/CountryList.component";
 import SearchBar from "../components/SearchBar/SearchBar.component";
-// import Header from "../components/Header/Header.component";
 
 interface Data {
   url: string;
@@ -46,7 +36,6 @@ const Homepage: React.FC = () => {
 
   return (
     <>
-      {/* <Header /> */}
       <SearchBar
         query={query}
         setQuery={setQuery}
