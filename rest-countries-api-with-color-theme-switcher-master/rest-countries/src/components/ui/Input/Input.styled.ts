@@ -28,7 +28,7 @@ export const InputLabel = styled.label`
   color: var(--color-text);
   border: 0;
   border-radius: 5px;
-  img {
+  svg {
     width: 20px;
     height: 20px;
     margin-left: 20px;

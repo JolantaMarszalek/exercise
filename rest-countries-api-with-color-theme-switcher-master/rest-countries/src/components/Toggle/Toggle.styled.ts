@@ -11,7 +11,7 @@ export const ToggleWrapper = styled.div`
   width: 100%;
   margin-left: auto;
   background-color: var(--background-color-elements);
-  img {
+  svg {
     width: 20px;
     height: 20px;
   }
@@ -25,10 +25,10 @@ export const ToggleSection = styled.div`
   width: 150px;
   margin-left: auto;
   background-color: var(--background-color-elements);
-  img {
+  /* svg {
     width: 20px;
     height: 20px;
-  }
+  } */
 `;
 
 export const ToggleButton = styled.button<ToggleProps>`
