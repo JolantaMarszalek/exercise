@@ -16,7 +16,10 @@ import {
   SingleCountry,
   SingleCountryDescriptions,
 } from "./CountryDescription.styled";
-import { Button } from "../ui/Button/Button.styled";
+import {
+  // Button,
+  ButtonSmall,
+} from "../ui/Button/Button.styled";
 // import { SingleCountryGrid } from "../SingleCountry/SingleCountry.styled";
 
 export interface CountryDetails {
@@ -119,9 +122,9 @@ export const SingleCountryDescription = ({
               <Link to="not-found">
                 {borders &&
                   borders.map((border) => (
-                    <Button>
+                    <ButtonSmall>
                       <p>{border}</p>
-                    </Button>
+                    </ButtonSmall>
                   ))}
               </Link>
             </p>

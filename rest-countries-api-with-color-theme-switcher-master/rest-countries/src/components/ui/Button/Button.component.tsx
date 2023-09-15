@@ -1,9 +1,23 @@
-import { Button } from "./Button.styled";
+// import { Button } from "./Button.styled";
 
-export const ButtonBack = () => {
-  return (
-    <Button>
-      <img src="arrow-back.outline.svg" />
-    </Button>
-  );
-};
+// export const ButtonBack = () => {
+//   return (
+//     <Button>
+//       <svg
+//         xmlns="http://www.w3.org/2000/svg"
+//         // class="ionicon"
+//         viewBox="0 0 512 512">
+//         <title>Arrow Back</title>
+//         <path
+//           fill="none"
+//           stroke="currentColor"
+//           stroke-linecap="round"
+//           stroke-linejoin="round"
+//           stroke-width="48"
+//           d="M244 400L100 256l144-144M120 256h292"
+//         />
+//       </svg>{" "}
+//       Back
+//     </Button>
+//   );
+// };

@@ -11,6 +11,7 @@ import {
 } from "../components/CountryDescription/CountryDescription.component";
 // import Toggle from "../components/Toggle/Toggle.component";
 import { Button } from "../components/ui/Button/Button.styled";
+// import { ButtonBack } from "../components/ui/Button/Button.component";
 // import { Input } from "../components/ui/Input/Input.component";
 // import { useData } from "../context/country.context";
 
@@ -67,7 +68,7 @@ const CountryPage: React.FC = () => {
               stroke-width="48"
               d="M244 400L100 256l144-144M120 256h292"
             />
-          </svg>
+          </svg>{" "}
           Back
         </Button>
       </Link>
