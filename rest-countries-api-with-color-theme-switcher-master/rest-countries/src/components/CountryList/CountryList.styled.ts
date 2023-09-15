@@ -4,7 +4,6 @@ export const CountryGrid = styled.section`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
-  /* gap: 3rem; */
   padding: 8rem 0 0;
   width: 95%;
   margin-left: auto;

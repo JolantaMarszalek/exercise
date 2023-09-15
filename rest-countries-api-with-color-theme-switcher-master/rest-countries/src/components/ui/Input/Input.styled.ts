@@ -7,7 +7,6 @@ export const InputField = styled.input`
   border-radius: 5px;
   overflow: hidden;
   border: 0;
-  /* border-color: white; */
   ::placeholder {
     background-color: var(--background-color-elements);
     color: var(--color-text);

@@ -1,19 +1,10 @@
-import {
-  // DependencyList,
-  // EffectCallback,
-  useEffect,
-  useState,
-} from "react";
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import {
   SingleCountryDescription,
   CountryDetails,
 } from "../components/CountryDescription/CountryDescription.component";
-// import Toggle from "../components/Toggle/Toggle.component";
 import { Button } from "../components/ui/Button/Button.styled";
-// import { ButtonBack } from "../components/ui/Button/Button.component";
-// import { Input } from "../components/ui/Input/Input.component";
-// import { useData } from "../context/country.context";
 
 interface Data {
   url: string;
@@ -45,7 +36,7 @@ const CountryPage: React.FC = () => {
         .catch((error) => console.log(error));
     };
     fetchSingleCountry();
-  }, []);
+  }, [params.country]);
   console.log("Data:", data);
 
   const country =

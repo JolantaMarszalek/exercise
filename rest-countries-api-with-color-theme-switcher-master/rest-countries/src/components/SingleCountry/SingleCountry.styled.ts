@@ -2,9 +2,7 @@ import styled from "styled-components";
 
 export const SingleCountryGrid = styled.section`
   display: flex;
-  /* grid-template-columns: repeat(4, 1fr); */
   gap: 3rem;
-  /* padding: 8rem 0 0; */
   background-color: var(--background-color-app);
 
   @media (max-width: 75em) {

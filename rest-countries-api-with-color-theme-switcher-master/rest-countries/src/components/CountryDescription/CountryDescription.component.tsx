@@ -2,14 +2,6 @@ import { Link } from "react-router-dom";
 import {
   SingleCountryFlag,
   SingleCountryName,
-  // SingleCountryNativeName,
-  // SingleCountryPopulation,
-  // SingleCountryRegion,
-  // SingleCountrySubRegion,
-  // SingleCountryCapital,
-  // SingleCountryTopLevelDomain,
-  // SingleCountryCurrencies,
-  // SingleCountryLanguages,
   SingleCountryBorderCountries,
   SingleCountrySectionLeft,
   SingleCountrySectionRight,
@@ -17,11 +9,7 @@ import {
   SingleCountryDescriptions,
   SingleCountryDescriptionsSection,
 } from "./CountryDescription.styled";
-import {
-  // Button,
-  ButtonSmall,
-} from "../ui/Button/Button.styled";
-// import { SingleCountryGrid } from "../SingleCountry/SingleCountry.styled";
+import { ButtonSmall } from "../ui/Button/Button.styled";
 
 export interface CountryDetails {
   name: string[];

@@ -13,7 +13,6 @@ import NotFoundPage from "./pages/NotFound.page";
 import { ThemeProvider } from "styled-components";
 import { NightModeContext } from "./context/theme.context";
 import { useContext } from "react";
-// import Toggle from "./components/Toggle/Toggle.component";
 import GlobalStyle from "./theme/globalStyles";
 
 function App() {
@@ -38,7 +37,6 @@ function App() {
       {" "}
       <ThemeProvider theme={theme}>
         <GlobalStyle theme={theme} />
-        {/* <Toggle toggleTheme={toggleTheme} /> */}
         {/* <CountryContextProvider> */}
         <RouterProvider router={router} />
         {/* </CountryContextProvider> */}
