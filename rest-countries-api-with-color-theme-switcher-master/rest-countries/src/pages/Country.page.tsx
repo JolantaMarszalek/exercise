@@ -1,13 +1,18 @@
-import { DependencyList, EffectCallback, useEffect, useState } from "react";
+import {
+  // DependencyList,
+  // EffectCallback,
+  useEffect,
+  useState,
+} from "react";
 import { Link, useParams } from "react-router-dom";
 import {
   SingleCountryDescription,
   CountryDetails,
 } from "../components/CountryDescription/CountryDescription.component";
-import Toggle from "../components/Toggle/Toggle.component";
+// import Toggle from "../components/Toggle/Toggle.component";
 import { Button } from "../components/ui/Button/Button.styled";
-import { Input } from "../components/ui/Input/Input.component";
-import { useData } from "../context/country.context";
+// import { Input } from "../components/ui/Input/Input.component";
+// import { useData } from "../context/country.context";
 
 interface Data {
   url: string;
@@ -51,7 +56,7 @@ const CountryPage: React.FC = () => {
         <Button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="ionicon"
+            // class="ionicon"
             viewBox="0 0 512 512">
             <title>Arrow Back</title>
             <path

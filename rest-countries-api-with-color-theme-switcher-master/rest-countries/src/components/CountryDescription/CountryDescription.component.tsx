@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   SingleCountryFlag,
   SingleCountryName,
@@ -114,7 +115,9 @@ export const SingleCountryDescription = ({
           <SingleCountryBorderCountries>
             <p>
               <b>Border Countries: </b>
-              {borders && borders.map((border) => <p>{border}</p>)}
+              <Link to="not-found">
+                {borders && borders.map((border) => <p>{border}</p>)}
+              </Link>
             </p>
           </SingleCountryBorderCountries>
         </SingleCountrySectionRight>
