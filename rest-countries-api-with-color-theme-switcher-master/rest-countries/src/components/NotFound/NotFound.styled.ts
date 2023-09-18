@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const NotFoundSection = styled.section`
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 700px;
+  height: 725px;
   color: var(--color-text);
   font-size: 30px;
   background-color: var(--background-color-app);
