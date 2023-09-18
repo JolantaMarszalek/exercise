@@ -4,7 +4,7 @@ export const Button = styled.button`
   background-color: var(--background-color-app);
   border-radius: 5px;
   color: var(--color-text);
-  padding: 15px 32px;
+  padding: 15px 30px;
   display: inline-block;
   font-size: 15px;
   svg {
@@ -17,7 +17,7 @@ export const ButtonSmall = styled.button`
   background-color: var(--background-color-app);
   border-radius: 5px;
   color: var(--color-text);
-  padding: 10px 26px;
+  padding: 10px 25px;
   display: inline-block;
   font-size: 12px;
 `;
