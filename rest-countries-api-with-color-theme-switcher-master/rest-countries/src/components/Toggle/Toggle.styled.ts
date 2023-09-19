@@ -24,6 +24,7 @@ export const ToggleSection = styled.div`
   color: var(--color-text);
   width: 150px;
   margin-left: auto;
+  margin-right: 50px;
   background-color: var(--background-color-elements);
 `;
 
