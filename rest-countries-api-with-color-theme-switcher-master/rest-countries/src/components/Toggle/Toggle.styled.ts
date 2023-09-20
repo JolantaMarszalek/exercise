@@ -10,6 +10,7 @@ export const ToggleWrapper = styled.div`
   color: var(--color-text);
   width: 100%;
   margin-left: auto;
+  padding: 50px;
   background-color: var(--background-color-elements);
   svg {
     width: 20px;
@@ -24,7 +25,7 @@ export const ToggleSection = styled.div`
   color: var(--color-text);
   width: 150px;
   margin-left: auto;
-  margin-right: 50px;
+  /* margin-right: 50px; */
   background-color: var(--background-color-elements);
 `;
 

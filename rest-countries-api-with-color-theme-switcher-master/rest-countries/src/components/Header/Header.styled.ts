@@ -5,8 +5,7 @@ export const Title = styled.div`
   color: var(--color-text);
   font-size: 35px;
   font-weight: bold;
-  padding-left: 50px;
-  padding-top: 50px;
+  padding: 50px;
 `;
 
 export const HeaderSection = styled.div`
