@@ -1,4 +1,4 @@
-import { NotFoundSection } from "./NotFound.styled";
+import { NotFoundSection, NotFoundTitle } from "./NotFound.styled";
 
 interface NotFoundProps {
   message: string;
@@ -7,7 +7,7 @@ interface NotFoundProps {
 const NotFound = ({ message }: NotFoundProps) => {
   return (
     <NotFoundSection>
-      <h3>{message}</h3>
+      <NotFoundTitle>{message}</NotFoundTitle>
     </NotFoundSection>
   );
 };
