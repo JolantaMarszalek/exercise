@@ -1,17 +1,28 @@
 import { Link } from "react-router-dom";
 import Toggle from "../Toggle/Toggle.component";
-import { Title } from "./Header.styled";
+import {
+  HeaderSection,
+  HeaderSectionLeft,
+  HeaderSectionRight,
+  Title,
+} from "./Header.styled";
 
 const Header = () => {
   return (
     <>
-      <Title>
-        <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-          {" "}
-          Where in the world?
-        </Link>
-      </Title>
-      <Toggle />
+      <HeaderSection>
+        <HeaderSectionLeft>
+          <Title>
+            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+              {" "}
+              Where in the world?
+            </Link>
+          </Title>
+        </HeaderSectionLeft>
+        <HeaderSectionRight>
+          <Toggle />
+        </HeaderSectionRight>
+      </HeaderSection>
     </>
   );
 };
