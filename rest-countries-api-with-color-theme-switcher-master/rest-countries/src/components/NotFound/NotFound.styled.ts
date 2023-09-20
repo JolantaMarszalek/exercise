@@ -4,7 +4,7 @@ export const NotFoundSection = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 750px;
+  height: 790px;
   color: var(--color-text);
   background-color: var(--background-color-app);
   transition: 0.2s linear;
