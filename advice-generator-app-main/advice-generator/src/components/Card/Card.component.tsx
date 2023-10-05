@@ -7,14 +7,26 @@ import {
   DecorationStyled,
   QuoteStyled,
 } from "./Card.styled";
+import { useEffect, useState } from "react";
 
 export const Card = () => {
+  const [advice, setAdvice] = useState("");
+
+  useEffect(() => {
+    fetch("https://api.adviceslip.com/advice")
+      .then((response) => response.json())
+      .then((data) => {
+        setAdvice(data.slip.advice);
+      })
+      .catch((error) => console.error(error));
+  }, []);
+
   return (
     <>
       <CardBackground>
         <CardStyled>
-          <AdviceStyled>ADVICE</AdviceStyled>
-          <QuoteStyled>Quote</QuoteStyled>
+          <AdviceStyled advice={advice}>{advice}</AdviceStyled>
+          <QuoteStyled advice={advice}>{advice}</QuoteStyled>
           <DecorationStyled>
             <svg width="444" height="16" xmlns="http://www.w3.org/2000/svg">
               <g fill="none" fill-rule="evenodd">

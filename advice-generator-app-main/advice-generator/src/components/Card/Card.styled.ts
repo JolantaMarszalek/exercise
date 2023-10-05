@@ -33,7 +33,11 @@ export const CardStyled = styled.div`
   }
 `;
 
-export const AdviceStyled = styled.div`
+interface AdviceStyledProps {
+  advice: string;
+}
+
+export const AdviceStyled = styled.div<AdviceStyledProps>`
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -49,7 +53,11 @@ export const AdviceStyled = styled.div`
   }
 `;
 
-export const QuoteStyled = styled.div`
+interface QuoteStyledProps {
+  advice: string;
+}
+
+export const QuoteStyled = styled.div<QuoteStyledProps>`
   display: flex;
   flex-direction: column;
   text-align: center;
