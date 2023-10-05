@@ -20,7 +20,7 @@ export const CardStyled = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 350px;
   height: 250px;
   border-radius: 10px;
@@ -41,6 +41,7 @@ export const AdviceStyled = styled.div`
   width: auto;
   height: auto;
   color: var(--primary-neon-green);
+  font-size: 20px;
 
   @media (max-width: 375px) {
     width: auto;
