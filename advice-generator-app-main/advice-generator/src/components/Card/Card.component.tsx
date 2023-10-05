@@ -13,7 +13,17 @@ export const Card = () => {
   const [advice, setAdvice] = useState("");
   const [adviceId, setAdviceId] = useState(0);
 
-  useEffect(() => {
+  // useEffect(() => {
+  //   fetch("https://api.adviceslip.com/advice")
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setAdviceId(data.slip.id);
+  //       setAdvice(data.slip.advice);
+  //     })
+  //     .catch((error) => console.error(error));
+  // }, []);
+
+  const fetchNewAdvice = () => {
     fetch("https://api.adviceslip.com/advice")
       .then((response) => response.json())
       .then((data) => {
@@ -21,14 +31,22 @@ export const Card = () => {
         setAdvice(data.slip.advice);
       })
       .catch((error) => console.error(error));
+  };
+
+  useEffect(() => {
+    fetchNewAdvice();
   }, []);
+
+  const handleButtonClick = () => {
+    fetchNewAdvice();
+  };
 
   return (
     <>
       <CardBackground>
         <CardStyled>
           <AdviceStyled advice={advice}>ADVICE #{adviceId}</AdviceStyled>
-          <QuoteStyled advice={advice}>{advice}</QuoteStyled>
+          <QuoteStyled advice={advice}>"{advice}"</QuoteStyled>
           <DecorationStyled>
             <svg width="444" height="16" xmlns="http://www.w3.org/2000/svg">
               <g fill="none" fill-rule="evenodd">
@@ -41,7 +59,7 @@ export const Card = () => {
             </svg>
           </DecorationStyled>
           <ButtonStyled>
-            <Button>
+            <Button onClick={handleButtonClick}>
               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
