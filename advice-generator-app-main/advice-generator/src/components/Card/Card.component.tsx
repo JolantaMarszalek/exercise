@@ -11,11 +11,13 @@ import { useEffect, useState } from "react";
 
 export const Card = () => {
   const [advice, setAdvice] = useState("");
+  const [adviceId, setAdviceId] = useState(0);
 
   useEffect(() => {
     fetch("https://api.adviceslip.com/advice")
       .then((response) => response.json())
       .then((data) => {
+        setAdviceId(data.slip.id);
         setAdvice(data.slip.advice);
       })
       .catch((error) => console.error(error));
@@ -25,7 +27,7 @@ export const Card = () => {
     <>
       <CardBackground>
         <CardStyled>
-          <AdviceStyled advice={advice}>{advice}</AdviceStyled>
+          <AdviceStyled advice={advice}>ADVICE #{adviceId}</AdviceStyled>
           <QuoteStyled advice={advice}>{advice}</QuoteStyled>
           <DecorationStyled>
             <svg width="444" height="16" xmlns="http://www.w3.org/2000/svg">
