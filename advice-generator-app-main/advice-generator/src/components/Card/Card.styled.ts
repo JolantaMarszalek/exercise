@@ -1,11 +1,34 @@
 import styled from "styled-components";
 
+export const CardBackground = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1440px;
+  height: 960px;
+  margin: 0;
+  background-color: var(--neutral-dark-grayish-blue);
+
+  @media (max-width: 375px) {
+    width: auto;
+    height: auto;
+  }
+`;
+
 export const CardStyled = styled.div`
   display: flex;
   flex-direction: column;
+  text-align: center;
+  justify-content: center;
   width: 350px;
   height: 250px;
   border-radius: 10px;
   background-color: var(--neutral-grayish-blue);
   color: var(--primary-light-cyan);
+
+  @media (max-width: 375px) {
+    width: auto;
+    height: auto;
+  }
 `;
