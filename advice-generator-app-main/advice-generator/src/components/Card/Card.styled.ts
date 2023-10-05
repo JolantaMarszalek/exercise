@@ -32,3 +32,46 @@ export const CardStyled = styled.div`
     height: auto;
   }
 `;
+
+export const AdviceStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  color: var(--primary-neon-green);
+
+  @media (max-width: 375px) {
+    width: auto;
+    height: auto;
+  }
+`;
+
+export const QuoteStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  color: var(--primary-light-cyan);
+
+  @media (max-width: 375px) {
+    width: auto;
+    height: auto;
+  }
+`;
+export const ButtonStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+
+  @media (max-width: 375px) {
+    width: auto;
+    height: auto;
+  }
+`;

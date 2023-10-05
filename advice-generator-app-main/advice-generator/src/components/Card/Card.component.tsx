@@ -1,14 +1,22 @@
 import { Button } from "../Button/Button.styled";
-import { CardBackground, CardStyled } from "./Card.styled";
+import {
+  AdviceStyled,
+  ButtonStyled,
+  CardBackground,
+  CardStyled,
+  QuoteStyled,
+} from "./Card.styled";
 
 export const Card = () => {
   return (
     <>
       <CardBackground>
         <CardStyled>
-          <p>ADVICE</p>
-          <p>Quote</p>
-          <Button></Button>
+          <AdviceStyled>ADVICE</AdviceStyled>
+          <QuoteStyled>Quote</QuoteStyled>
+          <ButtonStyled>
+            <Button></Button>
+          </ButtonStyled>
         </CardStyled>
       </CardBackground>
     </>
