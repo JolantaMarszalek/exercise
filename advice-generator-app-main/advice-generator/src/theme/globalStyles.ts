@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 28px;
+    background-color: var(--neutral-grayish-blue);
 }
 
 #root {

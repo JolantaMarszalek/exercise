@@ -1,7 +1,9 @@
+import { CardStyled } from "./Card.styled";
+
 export const Card = () => {
   return (
     <>
-      <div>Hello</div>
+      <CardStyled>Hello</CardStyled>
     </>
   );
 };
