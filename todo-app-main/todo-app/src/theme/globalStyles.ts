@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
 
 #root {
 --primary-bright-blue: hsl(220, 98%, 61%);
---promary-check-background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+--primary-check-background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
 --light-theme-very-light-gray: hsl(0, 0%, 98%);
 --light-theme-very-light-grayish-blue: hsl(236, 33%, 92%);
 --light-theme-light-grayish-blue: hsl(233, 11%, 84%);
@@ -26,12 +26,9 @@ body {
   font-size: 18px;
 }
 
-
-
 @media (max-width: 375px) {
   :root {
  
   }
 }
-
 `;
