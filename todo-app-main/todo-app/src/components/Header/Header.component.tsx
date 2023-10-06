@@ -1,4 +1,4 @@
-// import Toggle from "../Toggle/Toggle.component";
+import { Button } from "../Button/Button.component";
 import {
   HeaderSection,
   HeaderSectionLeft,
@@ -13,7 +13,9 @@ const Header = () => {
         <HeaderSectionLeft>
           <Title>TO DO</Title>
         </HeaderSectionLeft>
-        <HeaderSectionRight>{/* <Toggle /> */}</HeaderSectionRight>
+        <HeaderSectionRight>
+          <Button />
+        </HeaderSectionRight>
       </HeaderSection>
     </>
   );

@@ -3,7 +3,7 @@ import { NightModeContext } from "../../context/theme.context";
 import { ToggleWrapper, ToggleButton, ToggleSection } from "./Button.styled";
 import { darkTheme } from "../../theme/themeStyles";
 
-export const Toggle = () => {
+export const Button = () => {
   const { toggleTheme, theme } = useContext(NightModeContext);
   console.log("Active:", theme === darkTheme);
   return (
