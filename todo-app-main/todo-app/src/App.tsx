@@ -1,3 +1,5 @@
+// import GlobalStyle from "./theme/globalStyles";
+
 function App() {
   return (
     <>
