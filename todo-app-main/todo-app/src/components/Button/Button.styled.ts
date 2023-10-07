@@ -7,9 +7,9 @@ export const ToggleWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
   margin-left: auto;
-  padding: 50px;
+  /* padding: 50px; */
   svg {
     width: 20px;
     height: 20px;
