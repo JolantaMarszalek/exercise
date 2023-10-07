@@ -11,7 +11,7 @@ export const Title = styled.div`
 export const HeaderSection = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background: var(--primary-check-background);
   color: var(--dark-theme-light-grayish-blue-hover);
