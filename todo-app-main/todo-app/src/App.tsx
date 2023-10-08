@@ -1,13 +1,19 @@
 // import GlobalStyle from "./theme/globalStyles";
 
-import Header from "./components/Header/Header.component";
+import { Header } from "./components/Header/Header.component";
 import { Layout } from "./components/Layout/Layout.styled";
+import { Search } from "./components/Search/Search.component";
 
 function App() {
   return (
     <>
       <Layout>
         <Header />
+        <Search
+        // query={query}
+        // setQuery={setQuery}
+        // placeholder="Create a new todo..."
+        />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

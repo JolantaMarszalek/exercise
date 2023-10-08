@@ -1,4 +1,5 @@
 import { Button } from "../Button/Button.component";
+
 import {
   HeaderSection,
   HeaderSectionLeft,
@@ -6,7 +7,7 @@ import {
   Title,
 } from "./Header.styled";
 
-const Header = () => {
+export const Header = () => {
   return (
     <>
       <HeaderSection>
@@ -20,5 +21,3 @@ const Header = () => {
     </>
   );
 };
-
-export default Header;

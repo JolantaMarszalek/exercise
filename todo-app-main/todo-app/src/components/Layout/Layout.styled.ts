@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Layout = styled.div`
-  background-color: var(--dark-theme-very-dark-grayish-blue);
+  background-color: var(--light-theme-very-light-gray);
   display: flex;
   flex-direction: column;
 `;
