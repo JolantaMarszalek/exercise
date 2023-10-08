@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const InputField = styled.input`
+  display: flex;
   flex-grow: 1;
   font-size: 15px;
+  height: 50px;
   color: var(--color-text);
   border-radius: 5px;
   overflow: hidden;
@@ -20,9 +22,9 @@ export const InputLabel = styled.label`
   gap: 1rem;
   min-width: 20rem;
   width: 35%;
-  height: 50px;
-  margin: 20px;
-  margin-left: 50px;
+  height: 80px;
+  margin-bottom: 50px;
+  /* margin-left: 50px; */
   background-color: var(--background-color-elements);
   color: var(--color-text);
   border: 0;
