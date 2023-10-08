@@ -1,0 +1,37 @@
+import styled from "styled-components";
+
+export const InputField = styled.input`
+  display: flex;
+  flex-grow: 1;
+  font-size: 15px;
+  height: 50px;
+  color: var(--color-text);
+  border-radius: 5px;
+  overflow: hidden;
+  border: 0;
+  ::placeholder {
+    background-color: var(--background-color-elements);
+    color: var(--color-text);
+  }
+`;
+
+export const InputLabel = styled.label`
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 20rem;
+  width: 35%;
+  height: 80px;
+  margin-bottom: 50px;
+  /* margin-left: 50px; */
+  background-color: var(--background-color-elements);
+  color: var(--color-text);
+  border: 0;
+  border-radius: 5px;
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+  }
+`;
