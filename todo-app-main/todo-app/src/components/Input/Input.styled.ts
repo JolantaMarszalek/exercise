@@ -24,7 +24,6 @@ export const InputLabel = styled.label`
   width: 35%;
   height: 80px;
   margin-bottom: 50px;
-  /* margin-left: 50px; */
   background-color: var(--background-color-elements);
   color: var(--color-text);
   border: 0;
