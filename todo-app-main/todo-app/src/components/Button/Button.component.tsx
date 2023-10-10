@@ -10,18 +10,11 @@ export const Button = () => {
     <ToggleWrapper>
       <ToggleSection>
         {/* <b>Dark Mode</b> */}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          // class="ionicon"
-          viewBox="0 0 512 512">
-          <title>Moon</title>
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
           <path
-            d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="32"
+            fill="#FFF"
+            fill-rule="evenodd"
+            d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"
           />
         </svg>
         <ToggleButton onClick={toggleTheme} active={theme === darkTheme} />
