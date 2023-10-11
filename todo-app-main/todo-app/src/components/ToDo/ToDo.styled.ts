@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import { Input } from "../Input/Input.component";
 
-export const SearchInput = styled(Input)`
+export const ToDoInput = styled(Input)`
   label {
     flex-grow: 3;
   }
 `;
-export const SearchBarForm = styled.form`
+export const ToDoBarForm = styled.form`
   width: 100%;
   position: relative;
 `;
 
-export const SearchBarSection = styled.section`
+export const ToDoBarSection = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;

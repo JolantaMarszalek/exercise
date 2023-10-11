@@ -1,5 +1,5 @@
 // import { ChangeEvent, Dispatch, SetStateAction } from "react";
-import { SearchBarForm, SearchBarSection, SearchInput } from "./Search.styled";
+import { ToDoBarForm, ToDoBarSection, ToDoInput } from "./ToDo.styled";
 
 // interface SearchBarProps {
 //   placeholder: string;
@@ -7,20 +7,20 @@ import { SearchBarForm, SearchBarSection, SearchInput } from "./Search.styled";
 //   setQuery: Dispatch<SetStateAction<string>>;
 // }
 
-export const Search = () =>
+export const ToDo = () =>
   // { placeholder, query, setQuery }: SearchBarProps
   {
     return (
-      <SearchBarForm>
-        <SearchBarSection>
-          <SearchInput
+      <ToDoBarForm>
+        <ToDoBarSection>
+          <ToDoInput
           //   placeholder={placeholder}
           //   value={query}
           //   onChange={(event: ChangeEvent<HTMLInputElement>) => {
           //     setQuery(event.target.value);
           //   }}
           />
-        </SearchBarSection>
-      </SearchBarForm>
+        </ToDoBarSection>
+      </ToDoBarForm>
     );
   };

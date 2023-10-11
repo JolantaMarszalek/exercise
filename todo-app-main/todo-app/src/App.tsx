@@ -2,14 +2,14 @@
 
 import { Header } from "./components/Header/Header.component";
 import { Layout } from "./components/Layout/Layout.styled";
-import { Search } from "./components/Search/Search.component";
+import { ToDo } from "./components/ToDo/ToDo.component";
 
 function App() {
   return (
     <>
       <Layout>
         <Header />
-        <Search
+        <ToDo
         // query={query}
         // setQuery={setQuery}
         // placeholder="Create a new todo..."
