@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { Theme } from "./themeStyles";
+// import { Theme } from "./themeStyles";
 
 export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
@@ -30,7 +31,7 @@ body {
 }
 
 #root {
-  --primary-check-background: ${({ theme }: { theme: Theme }) =>
+  --background-color-app: ${({ theme }: { theme: Theme }) =>
     theme.backgroundColor};
   --background-color-elements: ${({ theme }) => theme.backgroundElements};
   --color-text: ${({ theme }) => theme.textColor};
