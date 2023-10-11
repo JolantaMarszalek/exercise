@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import backgroundImage from "../../../../images/bg-desktop-light.jpg";
 
 export const Title = styled.div`
   display: flex;
@@ -15,6 +16,10 @@ export const HeaderSection = styled.div`
   align-items: center;
   background: var(--primary-check-background);
   color: var(--dark-theme-light-grayish-blue-hover);
+  background-image: url(${backgroundImage}); // Dodaj obraz jako tło
+  background-size: cover; // Rozciągnij obraz, aby wypełnił całą sekcję
+  background-position: center; // Wyśrodkuj obraz
+  background-repeat: no-repeat; // Wyłącz powtarzanie obrazu
 `;
 
 export const HeaderSectionLeft = styled.div`

@@ -11,6 +11,7 @@ export const Header = () => {
   return (
     <>
       <HeaderSection>
+        {/* <img src="../../../../images/bg-desktop-light.jpg" /> */}
         <HeaderSectionLeft>
           <Title>TO DO</Title>
         </HeaderSectionLeft>
