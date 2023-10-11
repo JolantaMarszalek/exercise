@@ -1,5 +1,5 @@
 // import { ChangeEvent, Dispatch, SetStateAction } from "react";
-import { ToDoBarForm, ToDoBarSection, ToDoInput } from "./ToDo.styled";
+import { TodoBarForm, TodoBarSection, TodoInput } from "./TodoList.styled";
 
 // interface SearchBarProps {
 //   placeholder: string;
@@ -7,20 +7,20 @@ import { ToDoBarForm, ToDoBarSection, ToDoInput } from "./ToDo.styled";
 //   setQuery: Dispatch<SetStateAction<string>>;
 // }
 
-export const ToDo = () =>
+export const Todo = () =>
   // { placeholder, query, setQuery }: SearchBarProps
   {
     return (
-      <ToDoBarForm>
-        <ToDoBarSection>
-          <ToDoInput
+      <TodoBarForm>
+        <TodoBarSection>
+          <TodoInput
           //   placeholder={placeholder}
           //   value={query}
           //   onChange={(event: ChangeEvent<HTMLInputElement>) => {
           //     setQuery(event.target.value);
           //   }}
           />
-        </ToDoBarSection>
-      </ToDoBarForm>
+        </TodoBarSection>
+      </TodoBarForm>
     );
   };
