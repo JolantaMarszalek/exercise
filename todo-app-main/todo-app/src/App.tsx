@@ -1,11 +1,13 @@
-// import GlobalStyle from "./theme/globalStyles";
-
 import { useState } from "react";
 import { Header } from "./components/Header/Header.component";
 import { Layout } from "./components/Layout/Layout.styled";
 import { TodoAdd } from "./components/TodoAdd/TodoAdd.component";
 import { TodoList } from "./components/TodoList/TodoList.component";
 import { TodoStyled } from "./components/Todo/Todo.styled";
+import { GlobalStyle } from "./theme/globalStyles";
+import { NightModeContext } from "./context/theme.context";
+import { useContext } from "react";
+import { ThemeProvider } from "styled-components";
 interface Todo {
   id: number;
   text: string;
@@ -14,6 +16,7 @@ interface Todo {
 
 export const App: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
+  const { theme } = useContext(NightModeContext);
 
   const todoAdd = (text: string) => {
     if (text.trim() !== "") {
@@ -28,13 +31,16 @@ export const App: React.FC = () => {
 
   return (
     <>
-      <Layout>
-        <Header />
-        <TodoStyled>
-          <TodoAdd todoAdd={todoAdd} />
-          <TodoList todos={todos} />
-        </TodoStyled>
-      </Layout>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle theme={theme} />
+        <Layout>
+          <Header />
+          <TodoStyled>
+            <TodoAdd todoAdd={todoAdd} />
+            <TodoList todos={todos} />
+          </TodoStyled>
+        </Layout>
+      </ThemeProvider>
     </>
   );
 };

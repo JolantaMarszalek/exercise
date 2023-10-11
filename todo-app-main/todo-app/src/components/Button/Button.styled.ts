@@ -7,9 +7,8 @@ export const ToggleWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 100%; */
   margin-left: auto;
-  /* padding: 50px; */
+
   svg {
     width: 25px;
     height: 25px;
@@ -23,7 +22,6 @@ export const ToggleSection = styled.div`
   color: var(--color-text);
   width: 100px;
   margin: auto;
-  /* margin-right: 50px; */
 `;
 
 export const ToggleButton = styled.button<ToggleProps>`
@@ -31,11 +29,11 @@ export const ToggleButton = styled.button<ToggleProps>`
   height: 25px;
   border-radius: 15px;
   position: relative;
-  /* background-color: var(--background-color-elements);
+  background-color: var(--primary-check-background);
   background-color: ${({ active }) =>
     active
       ? "var(--dark-blue--dark-mode-elements)"
-      : "var(--white--dark-mode-text-and-light-mode-elements)"}; */
+      : "var(--white--dark-mode-text-and-light-mode-elements)"};
   transition: 0.2s linear;
 
   &::before {
@@ -43,7 +41,7 @@ export const ToggleButton = styled.button<ToggleProps>`
     display: absolute;
     width: 15px;
     height: 15px;
-    /* background-color: var(--background-color-app); */
+    background-color: var(--primary-check-background);
     border-radius: 100%;
     position: absolute;
     top: 50%;
@@ -51,7 +49,7 @@ export const ToggleButton = styled.button<ToggleProps>`
     transition: 0.2s linear;
 
     &:hover {
-      /* background-color: var(--background-color-elements); */
+      background-color: var(--primary-check-background);
     }
   }
 `;

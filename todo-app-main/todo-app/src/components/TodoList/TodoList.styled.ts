@@ -1,12 +1,4 @@
 import styled from "styled-components";
-// import { Input } from "../Input/Input.component";
-
-// export const TodoInput = styled(Input)`
-//   label {
-//     color: var(--light-theme-very-light-gray);
-//     flex-grow: 3;
-//   }
-// `;
 
 export const TodoBarForm = styled.form`
   display: flex;
@@ -26,8 +18,6 @@ export const TodoOneForm = styled.form`
   color: var(--light-theme-very-light-gray);
   font-size: 15px;
   height: auto;
-  /* background-color: var(--dark-theme-very-dark-desaturated-blue); */
-  color: var(--light-theme-very-light-gray);
 
   li {
     width: 700px;
