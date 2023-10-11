@@ -25,6 +25,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 18px;
   margin:0;
+  
 }
 
 @media (max-width: 375px) {
