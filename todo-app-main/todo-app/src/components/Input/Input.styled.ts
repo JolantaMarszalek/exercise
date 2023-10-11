@@ -5,7 +5,7 @@ export const InputField = styled.input`
   flex-grow: 1;
   font-size: 15px;
   height: 50px;
-  width: 400px;
+  width: 600px;
   background-color: var(--dark-theme-very-dark-desaturated-blue);
   color: var(--light-theme-very-light-gray);
   /* border-radius: 5px; */
@@ -23,9 +23,9 @@ export const InputLabel = styled.label`
   align-items: center;
   gap: 1rem;
   min-width: 20rem;
-  width: 50%;
+  width: auto;
   height: auto;
-  margin-bottom: 50px;
+  margin-top: -150px;
   background-color: var(--dark-theme-very-dark-desaturated-blue);
   color: var(--color-text);
   border: 0;

@@ -14,6 +14,7 @@ export const TodoBarForm = styled.form`
   width: 100%;
   position: relative;
   color: var(--light-theme-very-light-gray);
+  margin-top: -40px;
 `;
 
 export const TodoOneForm = styled.form`
@@ -29,9 +30,9 @@ export const TodoOneForm = styled.form`
   color: var(--light-theme-very-light-gray);
 
   li {
-    width: 300px;
+    width: 600px;
     height: 50px;
-    margin: 10px;
+    margin: 1px;
     background-color: var(--dark-theme-very-dark-desaturated-blue);
   }
 `;
