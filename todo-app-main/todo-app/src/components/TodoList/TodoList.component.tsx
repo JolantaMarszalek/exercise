@@ -1,4 +1,5 @@
 import { TodoItem } from "../TodoItem/TodoItem.component";
+import { TodoBarForm, TodoBarSection, TodoOneForm } from "./TodoList.styled";
 interface Todo {
   id: number;
   text: string;
@@ -11,10 +12,16 @@ interface TodoListProps {
 
 export const TodoList = ({ todos }: TodoListProps) => {
   return (
-    <ul>
-      {todos.map((todo) => (
-        <TodoItem key={todo.id} todo={todo} />
-      ))}
-    </ul>
+    // <TodoBarSection>
+    <TodoBarForm>
+      <TodoBarSection>
+        <TodoOneForm>
+          {todos.map((todo) => (
+            <TodoItem key={todo.id} todo={todo} />
+          ))}
+        </TodoOneForm>
+      </TodoBarSection>
+    </TodoBarForm>
+    /* </TodoBarSection> */
   );
 };

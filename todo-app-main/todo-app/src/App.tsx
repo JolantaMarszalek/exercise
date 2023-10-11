@@ -5,6 +5,7 @@ import { Header } from "./components/Header/Header.component";
 import { Layout } from "./components/Layout/Layout.styled";
 import { TodoAdd } from "./components/TodoAdd/TodoAdd.component";
 import { TodoList } from "./components/TodoList/TodoList.component";
+import { TodoStyled } from "./components/Todo/Todo.styled";
 interface Todo {
   id: number;
   text: string;
@@ -29,10 +30,10 @@ export const App: React.FC = () => {
     <>
       <Layout>
         <Header />
-        <div>
+        <TodoStyled>
           <TodoAdd todoAdd={todoAdd} />
           <TodoList todos={todos} />
-        </div>
+        </TodoStyled>
       </Layout>
     </>
   );

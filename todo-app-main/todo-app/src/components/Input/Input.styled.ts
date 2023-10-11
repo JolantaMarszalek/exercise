@@ -5,13 +5,13 @@ export const InputField = styled.input`
   flex-grow: 1;
   font-size: 15px;
   height: 50px;
-  background-color: var(--light-theme-very-dark-grayish-blue);
+  background-color: var(--dark-theme-very-dark-desaturated-blue);
   color: var(--light-theme-very-light-gray);
   border-radius: 5px;
   overflow: hidden;
   border: 0;
   ::placeholder {
-    background-color: var(--light-theme-very-dark-grayish-blue);
+    background-color: var(--dark-theme-very-dark-desaturated-blue);
     color: var(--color-text);
   }
 `;
@@ -25,7 +25,7 @@ export const InputLabel = styled.label`
   width: 35%;
   height: 80px;
   margin-bottom: 50px;
-  background-color: var(--light-theme-very-dark-grayish-blue);
+  background-color: var(--dark-theme-very-dark-desaturated-blue);
   color: var(--color-text);
   border: 0;
   border-radius: 5px;
