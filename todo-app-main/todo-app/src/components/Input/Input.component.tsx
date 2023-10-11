@@ -2,15 +2,19 @@ import { InputField, InputLabel } from "./Input.styled";
 import { ChangeEventHandler } from "react";
 
 interface InputProps {
-  placeholder?: string;
-  onChange?: ChangeEventHandler;
-  value?: string;
+  type: string;
+  onChange: ChangeEventHandler;
+  value: string;
 }
 
 export const Input = (props: InputProps) => {
   return (
     <InputLabel>
-      <InputField placeholder={props.placeholder} onChange={props.onChange} />
+      <InputField
+        type={props.type}
+        value={props.value}
+        onChange={props.onChange}
+      />
     </InputLabel>
   );
 };

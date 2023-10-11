@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { Theme } from "./themeStyles";
 // import { Theme } from "./themeStyles";
 
 export const GlobalStyle = createGlobalStyle`
@@ -7,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
 #root {
 --primary-bright-blue: hsl(220, 98%, 61%);
 --primary-check-background: linear-gradient(to left, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+--secondary-check-background: linear-gradient(to left, hsl(280, 87%, 65%), hsl(192, 100%, 67%));
 --light-theme-very-light-gray: hsl(0, 0%, 98%);
 --light-theme-very-light-grayish-blue: hsl(236, 33%, 92%);
 --light-theme-light-grayish-blue: hsl(233, 11%, 84%);
@@ -24,6 +26,15 @@ export const GlobalStyle = createGlobalStyle`
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 18px;
+  margin:0;
+  
+}
+
+#root {
+  --background-color-app: ${({ theme }: { theme: Theme }) =>
+    theme.backgroundColor};
+  --background-color-elements: ${({ theme }) => theme.backgroundElements};
+  --color-text: ${({ theme }) => theme.textColor};
 }
 
 @media (max-width: 375px) {
