@@ -5,9 +5,10 @@ export const InputField = styled.input`
   flex-grow: 1;
   font-size: 15px;
   height: 50px;
+  width: 400px;
   background-color: var(--dark-theme-very-dark-desaturated-blue);
   color: var(--light-theme-very-light-gray);
-  border-radius: 5px;
+  /* border-radius: 5px; */
   overflow: hidden;
   border: 0;
   ::placeholder {
@@ -22,13 +23,13 @@ export const InputLabel = styled.label`
   align-items: center;
   gap: 1rem;
   min-width: 20rem;
-  width: 35%;
-  height: 80px;
+  width: 50%;
+  height: auto;
   margin-bottom: 50px;
   background-color: var(--dark-theme-very-dark-desaturated-blue);
   color: var(--color-text);
   border: 0;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   svg {
     width: 20px;
     height: 20px;

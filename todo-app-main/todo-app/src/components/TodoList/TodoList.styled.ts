@@ -15,6 +15,7 @@ export const TodoBarForm = styled.form`
   position: relative;
   color: var(--light-theme-very-light-gray);
 `;
+
 export const TodoOneForm = styled.form`
   width: 100%;
   display: flex;
@@ -24,7 +25,6 @@ export const TodoOneForm = styled.form`
   color: var(--light-theme-very-light-gray);
   font-size: 15px;
   height: auto;
-
   /* background-color: var(--dark-theme-very-dark-desaturated-blue); */
   color: var(--light-theme-very-light-gray);
 

@@ -1,5 +1,6 @@
 import { useState, ChangeEvent } from "react";
 import { Input } from "../Input/Input.component";
+import { TodoAddStyled } from "./TodoAdd.styled";
 
 interface TodoAddProps {
   todoAdd: (text: string) => void;
@@ -18,10 +19,10 @@ export const TodoAdd = ({ todoAdd }: TodoAddProps) => {
   };
 
   return (
-    <div>
+    <TodoAddStyled>
       <Input type="text" value={text} onChange={handleInputChange} />
 
       <button onClick={handleAddClick}>Dodaj</button>
-    </div>
+    </TodoAddStyled>
   );
 };
