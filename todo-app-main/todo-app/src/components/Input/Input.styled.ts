@@ -5,11 +5,11 @@ export const InputField = styled.input`
   flex-grow: 1;
   font-size: 15px;
   height: 50px;
-  width: 600px;
+  width: 700px;
   background-color: var(--dark-theme-very-dark-desaturated-blue);
   color: var(--light-theme-very-light-gray);
-  /* border-radius: 5px; */
   overflow: hidden;
+  border-radius: 10px;
   border: 0;
   ::placeholder {
     background-color: var(--dark-theme-very-dark-desaturated-blue);
@@ -28,11 +28,6 @@ export const InputLabel = styled.label`
   margin-top: -150px;
   background-color: var(--dark-theme-very-dark-desaturated-blue);
   color: var(--color-text);
+  border-radius: 5px;
   border: 0;
-  /* border-radius: 5px; */
-  svg {
-    width: 20px;
-    height: 20px;
-    margin-left: 20px;
-  }
 `;

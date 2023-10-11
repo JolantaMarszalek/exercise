@@ -30,10 +30,11 @@ export const TodoOneForm = styled.form`
   color: var(--light-theme-very-light-gray);
 
   li {
-    width: 600px;
+    width: 700px;
     height: 50px;
     margin: 1px;
     background-color: var(--dark-theme-very-dark-desaturated-blue);
+    border-radius: 5px;
   }
 `;
 
