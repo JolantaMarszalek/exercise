@@ -1,26 +1,20 @@
-// import { ChangeEvent, Dispatch, SetStateAction } from "react";
-import { TodoBarForm, TodoBarSection, TodoInput } from "./TodoList.styled";
+import { TodoItem } from "../TodoItem/TodoItem.component";
+interface Todo {
+  id: number;
+  text: string;
+  completed: boolean;
+}
 
-// interface SearchBarProps {
-//   placeholder: string;
-//   query: string;
-//   setQuery: Dispatch<SetStateAction<string>>;
-// }
+interface TodoListProps {
+  todos: Todo[];
+}
 
-export const Todo = () =>
-  // { placeholder, query, setQuery }: SearchBarProps
-  {
-    return (
-      <TodoBarForm>
-        <TodoBarSection>
-          <TodoInput
-          //   placeholder={placeholder}
-          //   value={query}
-          //   onChange={(event: ChangeEvent<HTMLInputElement>) => {
-          //     setQuery(event.target.value);
-          //   }}
-          />
-        </TodoBarSection>
-      </TodoBarForm>
-    );
-  };
+export const TodoList = ({ todos }: TodoListProps) => {
+  return (
+    <ul>
+      {todos.map((todo) => (
+        <TodoItem key={todo.id} todo={todo} />
+      ))}
+    </ul>
+  );
+};
