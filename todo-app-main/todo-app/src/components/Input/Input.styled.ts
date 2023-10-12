@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InputField = styled.input`
   display: flex;
   flex-grow: 1;
-  font-size: 15px;
+  font-size: 20px;
   height: 50px;
   width: 700px;
   background-color: var(--dark-theme-very-dark-desaturated-blue);
@@ -11,6 +11,8 @@ export const InputField = styled.input`
   overflow: hidden;
   border-radius: 10px;
   border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   ::placeholder {
     background-color: var(--dark-theme-very-dark-desaturated-blue);
     color: var(--color-text);

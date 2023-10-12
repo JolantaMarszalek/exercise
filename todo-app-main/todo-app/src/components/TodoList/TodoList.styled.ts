@@ -16,15 +16,20 @@ export const TodoOneForm = styled.form`
   align-items: center;
   justify-content: center;
   color: var(--light-theme-very-light-gray);
-  font-size: 15px;
   height: auto;
 
   li {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
     width: 700px;
     height: 50px;
     margin: 1px;
     background-color: var(--dark-theme-very-dark-desaturated-blue);
     border-radius: 5px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 `;
 
