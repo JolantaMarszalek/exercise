@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Layout = styled.div`
-  background: var(--dark-theme-very-dark-blue);
+  background: var(--background-color-bottom);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

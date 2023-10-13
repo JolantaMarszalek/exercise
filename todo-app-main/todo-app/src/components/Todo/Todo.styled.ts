@@ -7,5 +7,5 @@ export const TodoStyled = styled.div`
   /* width: 100%; */
   justify-content: center;
   align-items: center;
-  background: var(--dark-theme-very-dark-blue);
+  background: var(--background-color-bottom);
 `;

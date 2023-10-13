@@ -21,6 +21,8 @@ export const GlobalStyle = createGlobalStyle`
 --dark-theme-dark-grayish-blue: hsl(234, 11%, 52%);
 --dark-theme-very-dark-grayish-blue: hsl(233, 14%, 35%);
 --dark-theme-very-dark-grayish-blue: hsl(237, 14%, 26%);
+--white: hsl(0,0%,100%);
+--dark: hsl(240,20%,12%);
 }
 
 body {
@@ -33,8 +35,10 @@ body {
 #root {
   --background-color-app: ${({ theme }: { theme: Theme }) =>
     theme.backgroundColor};
-  --background-color-elements: ${({ theme }) => theme.backgroundElements};
+  --background-color-bottom: ${({ theme }) => theme.backgroundBottom};
   --color-text: ${({ theme }) => theme.textColor};
+  --input-background:${({ theme }) => theme.inputColor};
+
 }
 
 @media (max-width: 375px) {
