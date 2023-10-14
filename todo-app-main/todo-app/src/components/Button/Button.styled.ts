@@ -26,7 +26,7 @@ export const ToggleSection = styled.div`
 
 export const ToggleButton = styled.button<ToggleProps>`
   width: 40px;
-  height: 25px;
+  height: 40px;
   border-radius: 15px;
   position: relative;
   background-color: var(--primary-check-background);
@@ -35,6 +35,7 @@ export const ToggleButton = styled.button<ToggleProps>`
       ? "var(--dark-blue--dark-mode-elements)"
       : "var(--white--dark-mode-text-and-light-mode-elements)"};
   transition: 0.2s linear;
+  outline: none;
 
   &::before {
     content: "";
