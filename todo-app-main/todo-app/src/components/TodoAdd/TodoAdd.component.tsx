@@ -9,10 +9,10 @@ interface TodoAddProps {
 export const TodoAdd = ({ todoAdd }: TodoAddProps) => {
   const [text, setText] = useState<string>("");
 
-  const handleAddClick = () => {
-    todoAdd(text);
-    setText("");
-  };
+  // const handleAddClick = () => {
+  //   todoAdd(text);
+  //   setText("");
+  // };
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value);
