@@ -20,7 +20,7 @@ export const ToggleSection = styled.div`
   justify-content: space-between;
   align-items: center;
   color: var(--color-text);
-  width: 100px;
+  /* width: 100px; */
   margin: auto;
 `;
 

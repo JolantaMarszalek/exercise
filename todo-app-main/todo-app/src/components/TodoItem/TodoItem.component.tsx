@@ -11,7 +11,7 @@ interface TodoItemProps {
 export const TodoItem = ({ todo }: TodoItemProps) => {
   return (
     <li style={{ textDecoration: todo.completed ? "line-through" : "none" }}>
-      {todo.text}
+      <input type="checkbox" checked={todo.completed} /> {todo.text}
     </li>
   );
 };
