@@ -14,8 +14,11 @@ export const Button = () => {
   return (
     <ToggleWrapper>
       <ToggleSection>
-        <img src={iconSrc} alt="Theme Icon" width="26" height="26" />
-        <ToggleButton onClick={toggleTheme} active={theme === darkTheme} />
+        {/* <img src={iconSrc} alt="Theme Icon" width="26" height="26" /> */}
+        <ToggleButton onClick={toggleTheme} active={theme === darkTheme}>
+          {" "}
+          <img src={iconSrc} alt="Theme Icon" width="26" height="26" />
+        </ToggleButton>
       </ToggleSection>
     </ToggleWrapper>
   );
