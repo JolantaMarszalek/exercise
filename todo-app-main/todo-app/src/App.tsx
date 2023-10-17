@@ -16,8 +16,8 @@ interface Todo {
 
 export const App: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([
-    { id: 1, text: "Zadanie 1", completed: false },
-    { id: 2, text: "Zadanie 2", completed: true },
+    // { id: 1, text: "Zadanie 1", completed: false },
+    // { id: 2, text: "Zadanie 2", completed: true },
   ]);
   const { theme } = useContext(NightModeContext);
 
