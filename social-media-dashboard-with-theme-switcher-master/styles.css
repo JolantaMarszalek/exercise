@@ -5,19 +5,34 @@
 }
 
 :root {
-  --text-color: #404040;
-  --bg-color: #fff;
+  --primary-lime-green: hsl(163, 72%, 41%);
+  --primary-bright-red: hsl(356, 69%, 56%);
+  --primary-facebook: hsl(208, 92%, 53%);
+  --primary-twitter: hsl(203, 89%, 53%);
+  --primary-instagram: linear-gradient(
+    to left,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
+  --primary-youtube: hsl(348, 97%, 39%);
+  /*  */
+  --bg-color: hsl(0, 0%, 100%);
+  --bg-color-top: hsl(225, 100%, 98%);
   --card-bg-color: hsl(227, 47%, 96%);
   --card-bg-color-active: hsl(226, 37%, 88%);
-  --bg-toggle: hsl(230, 22%, 74%);
+  --text-color: hsl(228, 12%, 44%);
+  --color-text: hsl(230, 17%, 14%);
+  --toggle-bg: hsl(230, 22%, 74%);
 }
 
 :root .dark-theme {
-  --text-color: #fff;
-  --bg-color: linear-gradient(180deg, #191926 30%, #10101a 0);
+  --bg-color: hsl(230, 17%, 14%);
+  --bg-color-top: hsl(232, 19%, 15%);
   --card-bg-color: hsl(228, 28%, 20%);
   --card-bg-color-active: hsl(227, 29%, 32%);
-  --bg-toggle: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --text-color: hsl(0, 0%, 100%);
+  --color-text: hsl(228, 34%, 66%);
+  --toggle-bg: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
 body {
@@ -54,6 +69,7 @@ h1 {
 h5 {
   margin-top: 1px;
   margin-bottom: 20px;
+  color: var(--color-text);
 }
 
 .container_first_right {
@@ -68,7 +84,12 @@ button {
   height: 25px;
   border-radius: 15px;
   position: relative;
-  background: var(--bg-toggle);
+  background: var(--toggle-bg);
+  color: var(--color-text);
+}
+
+.switch {
+  color: var(--color-text);
 }
 
 .cards_first {
@@ -89,20 +110,24 @@ button {
   width: 200px;
   height: 180px;
   border-radius: 4px;
-  background-color: var(--card-bg-color);
-  color: var(---text-color);
+  background: var(--card-bg-color);
+  color: var(--text-color);
 }
 
-.card_first_one,
+.card_first_one {
+  border-top: 4px solid var(--primary-facebook);
+}
+
 .card_first_two {
-  border-top: 4px solid blue;
+  border-top: 4px solid var(--primary-twitter);
 }
 
 .card_first_three {
-  border-top: 4px solid orange;
+  border-top: 4px solid var(--primary-instagram);
 }
+
 .card_first_four {
-  border-top: 4px solid red;
+  border-top: 4px solid var(--primary-youtube);
 }
 
 .first_one_line_1,
@@ -118,6 +143,7 @@ button {
   align-content: center;
   justify-content: center;
   justify-items: center;
+  color: var(--color-text);
 }
 
 .first_one_line_2,
@@ -139,6 +165,7 @@ button {
   margin-bottom: 0px;
   text-transform: uppercase;
   letter-spacing: 5px;
+  color: var(--color-text);
 }
 
 .first_one_line_4,
@@ -153,11 +180,11 @@ button {
 .first_one_line_4,
 .first_two_line_4,
 .first_three_line_4 {
-  color: green;
+  color: var(--primary-lime-green);
 }
 
 .first_four_line_4 {
-  color: red;
+  color: var(--primary-bright-red);
 }
 
 .container_second {
@@ -193,8 +220,8 @@ button {
   width: 200px;
   height: 100px;
   border-radius: 2px;
-  background-color: var(--card-bg-color);
-  color: var(---text-color);
+  background: var(--card-bg-color);
+  color: var(--text-color);
 }
 
 .second_one_line_1,
@@ -210,6 +237,7 @@ button {
   margin-top: 20px;
   align-items: stretch;
   justify-items: stretch;
+  color: var(--color-text);
 }
 
 .second_one_line_2,
@@ -233,11 +261,11 @@ span {
 }
 
 .span_up {
-  color: green;
+  color: var(--primary-lime-green);
 }
 
 .span_down {
-  color: red;
+  color: var(--primary-bright-red);
 }
 
 img {
