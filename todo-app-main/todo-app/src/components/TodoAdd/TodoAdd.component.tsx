@@ -1,4 +1,4 @@
-import { useState, ChangeEvent, KeyboardEvent} from "react";
+import { useState, ChangeEvent, KeyboardEvent } from "react";
 import { Input } from "../Input/Input.component";
 import { TodoAddStyled } from "./TodoAdd.styled";
 
@@ -18,21 +18,23 @@ export const TodoAdd = ({ todoAdd }: TodoAddProps) => {
     setText(e.target.value);
   };
 
-const handleInputKeyDown = (e: KeyboardEvent<HTMLInputElement>) => { 
-  if (e.key === "Enter" && text.trim() !== '') {
-    todoAdd(text); 
-    setText("");
-  }
-};
+  const handleInputKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter" && text.trim() !== "") {
+      todoAdd(text);
+      setText("");
+    }
+  };
 
   return (
     <TodoAddStyled>
-      <Input type="text" 
-      value={text} 
-    onChange={handleInputChange}
-      onKeyDown={handleInputKeyDown} />
+      <Input
+        type="text"
+        value={text}
+        onChange={handleInputChange}
+        onKeyDown={handleInputKeyDown}
+      />
 
-  {/* <button onClick={handleAddClick}>Dodaj</button> */}
+      {/* <button onClick={handleAddClick}>Dodaj</button> */}
     </TodoAddStyled>
   );
 };

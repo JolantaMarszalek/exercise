@@ -5,7 +5,7 @@ interface InputProps {
   type: string;
   onChange: ChangeEventHandler;
   value: string;
-  onKeyDown: KeyboardEventHandler<HTMLInputElement>
+  onKeyDown: KeyboardEventHandler<HTMLInputElement>;
 }
 
 export const Input = (props: InputProps) => {
@@ -15,7 +15,8 @@ export const Input = (props: InputProps) => {
         type={props.type}
         value={props.value}
         onChange={props.onChange}
-        onKeyDown={props.onKeyDown} />
+        onKeyDown={props.onKeyDown}
+      />
     </InputLabel>
   );
 };
