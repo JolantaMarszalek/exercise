@@ -1,4 +1,5 @@
 :root {
+  --primary: linear-gradient(to left, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   --very_light_grayish_blue: hsl(240, 78%, 98%);
   --light_grayish_blue: hsl(234, 14%, 74%);
   --grayish_blue: hsl(233, 13%, 49%);
@@ -7,7 +8,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: var(--light_grayish_blue);
+  background-color: var(--very_light_grayish_blue);
   font-weight: bold;
 }
 
@@ -15,6 +16,57 @@ h2 {
   color: var(--grayish_blue);
   font-size: 30px;
   margin: 30px;
+}
+
+.toggle_switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  border-radius: 15px;
+  background: var(--primary);
+}
+
+.toggle_switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--primary);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.toggle_switch:hover .slider {
+  background-color: #888;
+}
+
+.toggle_switch input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.toggle_switch input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
 .container {
@@ -48,7 +100,7 @@ h2 {
   width: 250px;
   height: 300px;
   border-radius: 10px 0 0 10px;
-  background-color: var(--very_light_grayish_blue);
+  background-color: white;
   color: var(--grayish_blue);
 }
 
@@ -60,7 +112,7 @@ h2 {
   width: 300px;
   height: 350px;
   border-radius: 10px;
-  background-color: var(--grayish_blue);
+  background: var(--primary);
   color: var(--very_light_grayish_blue);
 }
 
@@ -72,7 +124,7 @@ h2 {
   width: 250px;
   height: 300px;
   border-radius: 0 10px 10px 0;
-  background-color: var(--very_light_grayish_blue);
+  background-color: white;
   color: var(--grayish_blue);
 }
 
@@ -124,7 +176,7 @@ h2 {
 
 .button_first,
 .button_third {
-  background-color: var(--grayish_blue);
+  background: var(--primary);
   color: var(--very_light_grayish_blue);
   border-radius: 5px;
   margin: 20px;
@@ -134,7 +186,7 @@ h2 {
 }
 
 .button_second {
-  background-color: var(--very_light_grayish_blue);
+  background-color: white;
   color: var(--grayish_blue);
   border-radius: 5px;
   margin: 20px;
