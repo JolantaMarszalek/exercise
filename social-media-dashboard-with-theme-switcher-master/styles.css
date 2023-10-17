@@ -16,6 +16,7 @@
   --bg-color: linear-gradient(180deg, #191926 30%, #10101a 0);
   --card-bg-color: hsl(228, 28%, 20%);
   --card-bg-color-active: hsl(227, 29%, 32%);
+  --bg-toggle: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
 body {
@@ -66,7 +67,7 @@ button {
   height: 25px;
   border-radius: 15px;
   position: relative;
-  background-color: var(--background-color-elements);
+  background: var(--bg-toggle);
 }
 
 .cards_first {
