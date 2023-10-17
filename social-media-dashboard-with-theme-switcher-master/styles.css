@@ -61,9 +61,12 @@ h5 {
   align-items: center;
 }
 
-input {
+button {
   width: 40px;
-  margin: 10px;
+  height: 25px;
+  border-radius: 15px;
+  position: relative;
+  background-color: var(--background-color-elements);
 }
 
 .cards_first {
