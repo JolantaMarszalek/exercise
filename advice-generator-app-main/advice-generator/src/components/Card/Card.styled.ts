@@ -15,8 +15,9 @@ export const CardBackground = styled.div`
   background-position: center;
 
   @media (max-width: 375px) {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
   }
 `;
 
@@ -32,8 +33,9 @@ export const CardStyled = styled.div`
   color: var(--primary-light-cyan);
 
   @media (max-width: 375px) {
-    width: auto;
+    width: 90%;
     height: auto;
+    margin: 10px;
   }
 `;
 
