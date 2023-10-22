@@ -5,14 +5,19 @@ export const CardBackground = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1440px;
-  height: 960px;
+  width: 100%;
+  height: 100vh;
   margin: 0;
   background-color: var(--neutral-dark-grayish-blue);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 
   @media (max-width: 375px) {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
   }
 `;
 
@@ -28,8 +33,9 @@ export const CardStyled = styled.div`
   color: var(--primary-light-cyan);
 
   @media (max-width: 375px) {
-    width: auto;
+    width: 90%;
     height: auto;
+    margin: 10px;
   }
 `;
 
