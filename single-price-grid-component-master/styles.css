@@ -1,0 +1,147 @@
+:root {
+  --color-main: white;
+}
+
+body {
+  background-color: #e6eff6;
+  font-family: "Karla", sans-serif;
+}
+
+/*--------container style------*/
+.container {
+  display: flex;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background-color: var(--color-main);
+  border: 0;
+  border-radius: 15px;
+  width: 636px;
+  height: 476px;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*-----------end container----------*/
+
+h1 {
+  color: #2bb3b1;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+h2 {
+  color: #bfdf32;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+p {
+  font-size: 15px;
+  margin-right: 50px;
+  line-height: 20px;
+}
+
+h3,
+.bottom__left_decription,
+.bottom__left__price__description {
+  color: var(--color-main);
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.bottom__left__price__description {
+  font-size: 15px;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+.container__head p {
+  color: #c6cacf;
+}
+
+.container__head {
+  padding: 25px;
+}
+.container__bottom__right {
+  background-color: #4abebd;
+  padding-left: 25px;
+  padding-top: 30px;
+  border-bottom-right-radius: 15px;
+}
+
+.container__bottom__left {
+  background-color: #2bb3b1;
+  padding-left: 25px;
+  padding-top: 30px;
+  border-bottom-left-radius: 15px;
+}
+
+.bottom__right_description {
+  color: white;
+  margin-right: 91px;
+  opacity: 0.8;
+  font-size: 0.9em;
+  line-height: 20px;
+}
+
+.bottom__left__button {
+  color: white;
+  font-size: 15px;
+  background-color: #bfdf32;
+  box-shadow: rgb(17 12 46 / 15%) 0px 48px 100px 0px;
+  width: 16em;
+  height: 45px;
+  margin-top: 20px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.bottom__left__button:hover {
+  background-color: #b4d329;
+  cursor: pointer;
+}
+
+.container__down {
+  display: flex;
+  height: 100%;
+}
+.container__down > div {
+  width: 50%;
+}
+
+.bottom__left__price {
+  color: white;
+  font-size: 25px;
+}
+
+.price__time {
+  font-size: 15px;
+  opacity: 0.8;
+}
+/*media queries*/
+
+@media screen and (max-width: 408px) {
+  .container {
+    width: 336px;
+    height: 100%;
+  }
+  .container__down {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .container__bottom__right {
+    background-color: #4abebd;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .container__bottom__left {
+    background-color: #2bb3b1;
+    border-bottom-left-radius: 0px;
+  }
+  .container__down > div {
+    width: 93%;
+    padding-bottom: 30px;
+  }
+}
