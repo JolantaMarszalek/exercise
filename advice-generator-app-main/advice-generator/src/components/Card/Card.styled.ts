@@ -66,12 +66,14 @@ export const AdviceStyled = styled.div<AdviceStyledProps>`
     width: auto;
     height: auto;
     margin: 10px;
+    font-size: 15px;
   }
 
   @media (max-width: 375px) {
     width: auto;
     height: auto;
     margin: 10px;
+    font-size: 10px;
   }
 `;
 
@@ -94,12 +96,14 @@ export const QuoteStyled = styled.div<QuoteStyledProps>`
     width: auto;
     height: auto;
     margin: 10px;
+    font-size: 15px;
   }
 
   @media (max-width: 375px) {
     width: auto;
     height: auto;
     margin: 10px;
+    font-size: 10px;
   }
 `;
 
@@ -109,8 +113,6 @@ export const DecorationStyled = styled.div`
   text-align: center;
   align-items: center;
   justify-content: center;
-  width: auto;
-  height: auto;
 
   svg {
     width: auto;
@@ -121,12 +123,22 @@ export const DecorationStyled = styled.div`
     width: auto;
     height: auto;
     margin: 10px;
+
+    svg {
+      width: auto;
+      height: auto;
+    }
   }
 
   @media (max-width: 375px) {
     width: auto;
     height: auto;
     margin: 10px;
+
+    svg {
+      width: auto;
+      height: auto;
+    }
   }
 `;
 
@@ -142,11 +154,13 @@ export const ButtonStyled = styled.div`
     width: auto;
     height: auto;
     margin: 10px;
+    font-size: 15px;
   }
 
   @media (max-width: 375px) {
     width: auto;
     height: auto;
     margin: 10px;
+    font-size: 10px;
   }
 `;
