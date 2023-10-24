@@ -7,7 +7,7 @@ export const BottomSectionStyle = styled.section`
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  /* margin-top: 15vh; */
+  background-color: var(--neutral-very-light-gray);
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -31,7 +31,6 @@ export const BottomSectionText = styled.div`
 `;
 
 export const BottomSectionTitle = styled.div`
-  width: min(40rem, 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

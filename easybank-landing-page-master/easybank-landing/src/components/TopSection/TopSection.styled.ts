@@ -5,6 +5,8 @@ export const TopSectionStyle = styled.section`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  /* background-color: var(--neutral-light-grayish-blue); */
+  background-color: var(--neutral-very-light-gray);
 
   @media (max-width: 650px) {
     flex-direction: column;

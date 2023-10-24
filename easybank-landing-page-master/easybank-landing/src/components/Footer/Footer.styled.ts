@@ -7,6 +7,7 @@ export const FooterSection = styled.footer`
   /* padding: 5px; */
   height: 200px;
   /* font-size: 12px; */
+  background-color: var(--primary-dark-blue);
 
   @media (max-width: 1024px) {
     display: flex;

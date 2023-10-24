@@ -7,7 +7,7 @@ export const MiddleSectionStyle = styled.section`
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  /* margin-top: 15vh; */
+  background-color: var(--neutral-light-grayish-blue);
 
   @media (max-width: 650px) {
     flex-direction: column;
