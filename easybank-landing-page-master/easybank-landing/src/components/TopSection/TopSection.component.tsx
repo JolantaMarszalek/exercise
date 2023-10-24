@@ -1,26 +1,26 @@
 import { Button } from "../Button/Button.styled";
 
 import {
-  TopNavigationDescribe,
-  TopNavigationImage,
-  TopNavigationSection,
-  TopNavigationText,
-  TopNavigationTitle,
+  TopSectionDescribe,
+  TopSectionImage,
+  TopSectionText,
+  TopSectionTitle,
+  TopSectionStyle,
 } from "./TopSection.styled";
 
 export const TopSection = () => {
   return (
-    <TopNavigationSection>
-      <TopNavigationText>
-        <TopNavigationTitle>Next generation digital banking</TopNavigationTitle>
-        <TopNavigationDescribe>
+    <TopSectionStyle>
+      <TopSectionText>
+        <TopSectionTitle>Next generation digital banking</TopSectionTitle>
+        <TopSectionDescribe>
           Take your financial life online. Your Easybank account will be a
           one-stop-shop for spending, saving, budgeting, investing, and much
           more.
-        </TopNavigationDescribe>
+        </TopSectionDescribe>
         <Button>Request Invite</Button>
-      </TopNavigationText>
-      <TopNavigationImage>
+      </TopSectionText>
+      <TopSectionImage>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -68,7 +68,7 @@ export const TopSection = () => {
             />
           </g>
         </svg>
-      </TopNavigationImage>
-    </TopNavigationSection>
+      </TopSectionImage>
+    </TopSectionStyle>
   );
 };

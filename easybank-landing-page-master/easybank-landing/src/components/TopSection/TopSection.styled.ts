@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TopNavigationSection = styled.section`
+export const TopSectionStyle = styled.section`
   /* width: 80%; */
   display: flex;
   flex-direction: row;
@@ -15,7 +15,7 @@ export const TopNavigationSection = styled.section`
   }
 `;
 
-export const TopNavigationText = styled.div`
+export const TopSectionText = styled.div`
   width: min(40rem, 100%);
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@ export const TopNavigationText = styled.div`
   }
 `;
 
-export const TopNavigationTitle = styled.div`
+export const TopSectionTitle = styled.div`
   width: min(40rem, 100%);
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@ export const TopNavigationTitle = styled.div`
   }
 `;
 
-export const TopNavigationDescribe = styled.div`
+export const TopSectionDescribe = styled.div`
   width: min(40rem, 100%);
   display: flex;
   flex-direction: column;
@@ -64,7 +64,7 @@ export const TopNavigationDescribe = styled.div`
   }
 `;
 
-export const TopNavigationImage = styled.div`
+export const TopSectionImage = styled.div`
   position: static;
   flex-direction: column;
   display: flex;
