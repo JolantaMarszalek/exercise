@@ -1,3 +1,5 @@
+import { Footer } from "../Footer/Footer.component";
+import { Header } from "../Header/Header.component";
 import { NotFoundSection } from "./NotFound.styled";
 // import React from "react";
 
@@ -7,9 +9,13 @@ interface NotFoundProps {
 
 const NotFound = ({ message }: NotFoundProps) => {
   return (
-    <NotFoundSection>
-      <h3>{message}</h3>
-    </NotFoundSection>
+    <>
+      <Header />
+      <NotFoundSection>
+        <h3>{message}</h3>
+      </NotFoundSection>
+      <Footer />
+    </>
   );
 };
 

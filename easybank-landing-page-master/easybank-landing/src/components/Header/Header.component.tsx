@@ -1,4 +1,4 @@
-import { Button } from "../Buttons/Button.styled";
+import { Button } from "../Button/Button.styled";
 import {
   HeaderSection,
   HeaderSectionButton,
@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <HeaderSection>
-      Header
       <HeaderSectionLogo>
         <Link to="/">
           <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">

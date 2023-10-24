@@ -8,14 +8,18 @@ export const Button = styled.button`
   border-radius: 20px;
   padding: 0;
   box-sizing: border-box;
-  background-color: gold;
+  background: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
   color: white;
   font-weight: 600;
   font-size: 18px;
 
   :hover {
     cursor: pointer;
-    background-color: gold;
+    background: linear-gradient(
+      to left,
+      hsl(192, 70%, 51%),
+      hsl(136, 65%, 51%)
+    );
     color: white;
   }
 
