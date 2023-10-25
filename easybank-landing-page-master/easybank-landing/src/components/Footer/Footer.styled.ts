@@ -4,10 +4,9 @@ export const FooterSection = styled.footer`
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  /* padding: 5px; */
   height: 200px;
-  /* font-size: 12px; */
   background-color: var(--primary-dark-blue);
+  color: var(--neutral-white);
 
   @media (max-width: 1024px) {
     display: flex;
