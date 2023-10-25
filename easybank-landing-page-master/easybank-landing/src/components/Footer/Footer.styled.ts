@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FooterSection = styled.footer`
+export const FooterSectionStyle = styled.footer`
   bottom: 0;
   display: flex;
   justify-content: space-between;
@@ -18,6 +18,37 @@ export const FooterSection = styled.footer`
   @media (max-width: 375px) {
     font-size: 0.5rem;
     width: 100%;
+  }
+`;
+
+export const FooterSectionText = styled.div`
+  width: min(40rem, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px;
+  margin-bottom: 100px;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+`;
+
+export const FooterSectionTitle = styled.div`
+  width: min(40rem, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  font-size: 80px;
+  font-weight: bold;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    margin-bottom: 10px;
   }
 `;
 

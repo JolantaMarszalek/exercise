@@ -1,5 +1,15 @@
-import { MiddleSectionStyle } from "./MiddleSection.styled";
+import {
+  MiddleSectionStyle,
+  MiddleSectionText,
+  MiddleSectionTitle,
+} from "./MiddleSection.styled";
 
 export const MiddleSection = () => {
-  return <MiddleSectionStyle>MiddleSection</MiddleSectionStyle>;
+  return (
+    <MiddleSectionStyle>
+      <MiddleSectionText>
+        <MiddleSectionTitle>Why choose Easybank?</MiddleSectionTitle>
+      </MiddleSectionText>
+    </MiddleSectionStyle>
+  );
 };

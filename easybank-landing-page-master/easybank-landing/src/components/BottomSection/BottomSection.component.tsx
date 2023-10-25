@@ -1,5 +1,15 @@
-import { BottomSectionStyle } from "./BottomSection.styled";
+import {
+  BottomSectionStyle,
+  BottomSectionText,
+  BottomSectionTitle,
+} from "./BottomSection.styled";
 
 export const BottomSection = () => {
-  return <BottomSectionStyle>BottomSection</BottomSectionStyle>;
+  return (
+    <BottomSectionStyle>
+      <BottomSectionText>
+        <BottomSectionTitle>Latest Articles</BottomSectionTitle>
+      </BottomSectionText>
+    </BottomSectionStyle>
+  );
 };
