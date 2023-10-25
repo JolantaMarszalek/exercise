@@ -11,6 +11,11 @@ import {
   BottomSectionTitle,
 } from "./BottomSection.styled";
 
+import currencyImage from "../../../../images/image-currency.jpg";
+import restaurantImage from "../../../../images/image-restaurant.jpg";
+import planeImage from "../../../../images/image-plane.jpg";
+import confettiImage from "../../../../images/image-confetti.jpg";
+
 export const BottomSection = () => {
   return (
     <BottomSectionStyle>
@@ -21,7 +26,7 @@ export const BottomSection = () => {
         <BottomCardContainer>
           <BottomCardStyled>
             <BottomCardImage>
-              <img src="../../../../images/image-currency.jpg" />
+              <img src={currencyImage} alt="Currency" />
             </BottomCardImage>
             <BottomCardAuthor>By Claire Robinson</BottomCardAuthor>
             <BottomCardTitle>
@@ -34,7 +39,7 @@ export const BottomSection = () => {
           </BottomCardStyled>
           <BottomCardStyled>
             <BottomCardImage>
-              <img src="../../../../images/image-restaurant.jpg" />
+              <img src={restaurantImage} alt="Restaurant" />
             </BottomCardImage>
             <BottomCardAuthor>By Wilson Hutton</BottomCardAuthor>
             <BottomCardTitle>
@@ -47,7 +52,7 @@ export const BottomSection = () => {
           </BottomCardStyled>
           <BottomCardStyled>
             <BottomCardImage>
-              <img src="../../../../images/image-plane.jpg" />
+              <img src={planeImage} alt="Plane" />
             </BottomCardImage>
             <BottomCardAuthor>By Wilson Hutton</BottomCardAuthor>
             <BottomCardTitle>
@@ -60,7 +65,7 @@ export const BottomSection = () => {
           </BottomCardStyled>
           <BottomCardStyled>
             <BottomCardImage>
-              <img src="../../../../images/image-confetti.jpg" />
+              <img src={confettiImage} alt="Confetti" />
             </BottomCardImage>
             <BottomCardAuthor>By Claire Robinson</BottomCardAuthor>
             <BottomCardTitle>

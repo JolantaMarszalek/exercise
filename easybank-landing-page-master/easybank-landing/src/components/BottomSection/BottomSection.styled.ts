@@ -63,48 +63,29 @@ export const BottomSectionDescribe = styled.div`
   }
 `;
 
-export const TopSectionImage = styled.div`
-  position: static;
-  flex-direction: column;
-  display: flex;
-  padding: 15px;
-  font-weight: bold;
-  img {
-    width: auto;
-    height: auto;
-  }
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    margin-left: 100px;
-    img {
-      width: auto;
-      height: auto;
-    }
-  }
-`;
-
 export const BottomCardSection = styled.section`
   display: flex;
   justify-content: center;
-  gap: 3rem;
-  padding: 8rem 0;
+  /* gap: 3rem; */
+  /* padding: 8rem 0; */
   border-radius: 10px;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
+  padding: 20px;
   /* margin: 0px; */
-  margin-bottom: 100px;
-  background-color: var(--neutral-light-grayish-blue);
+  /* margin-bottom: 100px; */
+  /* background-color: var(--neutral-light-grayish-blue); */
 `;
 
 export const BottomCardContainer = styled.div`
   display: flex;
   align-items: center;
-  height: 40vh;
-  width: 80vw;
+  /* height: 40vh; */
+  /* width: 80vw; */
   border-radius: 10px;
   transition: 0.2s linear;
   border: none;
-  background-color: var(--neutral-light-grayish-blue);
+  /* background-color: var(--neutral-light-grayish-blue); */
+  padding: 20px;
 
   @media (max-width: 1024px) {
     width: 80%;
@@ -119,17 +100,18 @@ export const BottomCardStyled = styled.div`
   justify-content: flex-start;
   align-content: center;
   flex-wrap: nowrap;
-  width: 350px;
-  height: auto;
+  /* width: auto;
+  height: auto; */
   /* height: 30vh; */
   border-radius: 6px;
-  padding: 0.5rem;
-  margin: auto;
+  /* padding: 0.5rem; */
+  padding: 20px;
+  /* margin: auto; */
   transition: 0.2s linear;
   border: none;
-  background-color: var(--neutral-light-grayish-blue);
+  background-color: var(--neutral-white);
   color: black;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 
   @media (max-width: 650px) {
     width: 80%;
@@ -144,16 +126,17 @@ export const BottomCardImage = styled.div`
   align-items: center;
   padding: 20px;
   // margin-left: 20px;
-  /* background-color: var(--neutral-light-grayish-blue); */
+  background-color: var(--neutral-white);
   // width: 50px;
   // height: 50px;
-  /* border-radius: 50%; */
-  width: auto;
-  height: auto;
+
+  /* width: 350px;
+  height: 350px; */
 
   img {
-    width: auto;
-    height: auto;
+    width: 350px;
+    height: 350px;
+    border-radius: 5%;
   }
 
   @media (max-width: 1024px) {
@@ -173,7 +156,7 @@ export const BottomCardAuthor = styled.div`
   margin-left: 20px;
   font-size: 20px;
   justify-content: center;
-  background-color: var(--neutral-light-grayish-blue);
+  background-color: var(--neutral-white);
 
   @media (max-width: 650px) {
     font-size: 18px;
@@ -187,7 +170,7 @@ export const BottomCardTitle = styled.div`
   margin-left: 20px;
   font-size: 20px;
   justify-content: center;
-  background-color: var(--neutral-light-grayish-blue);
+  background-color: var(--neutral-white);
 
   @media (max-width: 650px) {
     font-size: 18px;
@@ -206,7 +189,7 @@ export const BottomCardDescribe = styled.div`
   word-break: break-word;
   word-wrap: break-word;
   max-width: auto;
-  background-color: var(--neutral-light-grayish-blue);
+  background-color: var(--neutral-white);
   color: var(--neutral-gray);
 
   @media (max-width: 650px) {
