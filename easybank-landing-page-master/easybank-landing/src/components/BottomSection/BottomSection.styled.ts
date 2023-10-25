@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 export const BottomSectionStyle = styled.section`
-  /* width: 80%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* align-items: center; */
   margin: auto;
   background-color: var(--neutral-very-light-gray);
 
@@ -16,13 +14,11 @@ export const BottomSectionStyle = styled.section`
 `;
 
 export const BottomSectionText = styled.div`
-  /* width: min(40rem, 100%); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   margin: 10px;
-  /* margin-bottom: 100px; */
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -52,7 +48,6 @@ export const BottomSectionDescribe = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 50px;
@@ -66,25 +61,17 @@ export const BottomSectionDescribe = styled.div`
 export const BottomCardSection = styled.section`
   display: flex;
   justify-content: center;
-  /* gap: 3rem; */
-  /* padding: 8rem 0; */
   border-radius: 10px;
-  /* padding: 0.5rem; */
   padding: 20px;
-  /* margin: 0px; */
-  /* margin-bottom: 100px; */
-  /* background-color: var(--neutral-light-grayish-blue); */
 `;
 
 export const BottomCardContainer = styled.div`
   display: flex;
   align-items: center;
-  /* height: 40vh; */
   width: auto;
   border-radius: 10px;
   transition: 0.2s linear;
   border: none;
-  /* background-color: var(--neutral-light-grayish-blue); */
   padding: 20px;
   gap: 20px;
 
@@ -101,18 +88,12 @@ export const BottomCardStyled = styled.div`
   justify-content: flex-start;
   align-content: center;
   flex-wrap: nowrap;
-  /* width: auto;
-  height: auto; */
-  /* height: 30vh; */
   border-radius: 6px;
-  /* padding: 0.5rem; */
   padding: 20px;
-  /* margin: auto; */
   transition: 0.2s linear;
   border: none;
   background-color: var(--neutral-white);
   color: black;
-  /* margin-bottom: 80px; */
 
   @media (max-width: 650px) {
     width: 80%;
@@ -126,13 +107,7 @@ export const BottomCardImage = styled.div`
   justify-content: center;
   align-items: center;
   padding: 20px;
-  // margin-left: 20px;
   background-color: var(--neutral-white);
-  // width: 50px;
-  // height: 50px;
-
-  /* width: 350px;
-  height: 350px; */
 
   img {
     width: 350px;
@@ -142,7 +117,7 @@ export const BottomCardImage = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    /* margin-bottom: 10px; */
+
     img {
       width: auto;
       height: auto;

@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 export const MiddleSectionStyle = styled.section`
-  /* width: 80%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // align-items: center;
   margin: auto;
   background-color: var(--neutral-light-grayish-blue);
 
@@ -16,13 +14,11 @@ export const MiddleSectionStyle = styled.section`
 `;
 
 export const MiddleSectionText = styled.div`
-  // width: min(40rem, 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   margin: 10px;
-  // margin-bottom: 100px;
   background-color: var(--neutral-light-grayish-blue);
 
   @media (max-width: 650px) {
@@ -73,7 +69,6 @@ export const MiddleCardSection = styled.section`
   padding: 8rem 0;
   border-radius: 10px;
   padding: 0.5rem;
-  /* margin: 0px; */
   margin-bottom: 100px;
   background-color: var(--neutral-light-grayish-blue);
 `;
@@ -103,7 +98,6 @@ export const MiddleCardStyled = styled.div`
   flex-wrap: nowrap;
   width: 350px;
   height: auto;
-  /* height: 30vh; */
   border-radius: 6px;
   padding: 0.5rem;
   margin: auto;
@@ -125,15 +119,12 @@ export const MiddleCardImage = styled.div`
   justify-content: center;
   align-items: center;
   padding: 20px;
-  // margin-left: 20px;
   background-color: var(--neutral-light-grayish-blue);
-  // width: 50px;
-  // height: 50px;
   border-radius: 50%;
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    /* margin-bottom: 10px; */
+
     img {
       width: auto;
       height: 100%;
