@@ -5,7 +5,7 @@ export const MiddleSectionStyle = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
   margin: auto;
   background-color: var(--neutral-light-grayish-blue);
 
@@ -16,13 +16,13 @@ export const MiddleSectionStyle = styled.section`
 `;
 
 export const MiddleSectionText = styled.div`
-  width: min(40rem, 100%);
+  // width: min(40rem, 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   margin: 10px;
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
   background-color: var(--neutral-light-grayish-blue);
 
   @media (max-width: 650px) {
