@@ -80,12 +80,13 @@ export const BottomCardContainer = styled.div`
   display: flex;
   align-items: center;
   /* height: 40vh; */
-  /* width: 80vw; */
+  width: auto;
   border-radius: 10px;
   transition: 0.2s linear;
   border: none;
   /* background-color: var(--neutral-light-grayish-blue); */
   padding: 20px;
+  gap: 20px;
 
   @media (max-width: 1024px) {
     width: 80%;
@@ -144,7 +145,7 @@ export const BottomCardImage = styled.div`
     /* margin-bottom: 10px; */
     img {
       width: auto;
-      height: 100%;
+      height: auto;
     }
   }
 `;
