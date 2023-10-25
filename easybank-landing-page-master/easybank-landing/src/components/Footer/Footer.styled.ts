@@ -21,6 +21,13 @@ export const FooterSectionStyle = styled.footer`
   }
 `;
 
+export const FooterSectionLogo = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+`;
+
 export const FooterSectionText = styled.div`
   width: min(40rem, 100%);
   display: flex;
@@ -50,6 +57,14 @@ export const FooterSectionTitle = styled.div`
     flex-direction: column;
     margin-bottom: 10px;
   }
+`;
+
+export const FooterSectionButton = styled.div`
+  position: static;
+  flex-direction: row;
+  display: flex;
+  margin: 10px;
+  gap: 20px;
 `;
 
 // export const FooterSectionLogo = styled.div`
