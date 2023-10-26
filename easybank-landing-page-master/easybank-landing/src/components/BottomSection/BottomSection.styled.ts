@@ -27,6 +27,7 @@ export const BottomSectionText = styled.div`
 `;
 
 export const BottomSectionTitle = styled.div`
+  width: min(40rem, 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -42,34 +43,39 @@ export const BottomSectionTitle = styled.div`
   }
 `;
 
-export const BottomSectionDescribe = styled.div`
-  width: min(40rem, 100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px;
-  font-size: 25px;
-  line-height: 30px;
-  margin-bottom: 50px;
+// export const BottomSectionDescribe = styled.div`
+//   width: min(40rem, 100%);
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin: 10px;
+//   font-size: 25px;
+//   line-height: 30px;
+//   margin-bottom: 50px;
 
-  @media (max-width: 650px) {
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
-`;
+//   @media (max-width: 650px) {
+//     flex-direction: column;
+//     margin-bottom: 10px;
+//   }
+// `;
 
 export const BottomCardSection = styled.section`
   display: flex;
   justify-content: center;
   border-radius: 10px;
   padding: 20px;
+  gap: 3rem;
+  padding: 8rem 0;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-bottom: 100px;
 `;
 
 export const BottomCardContainer = styled.div`
   display: flex;
   align-items: center;
-  width: auto;
+  width: 80vw;
   border-radius: 10px;
   transition: 0.2s linear;
   border: none;
@@ -89,8 +95,11 @@ export const BottomCardStyled = styled.div`
   justify-content: flex-start;
   align-content: center;
   flex-wrap: nowrap;
+  width: 350px;
+  height: auto;
   border-radius: 6px;
-  padding: 20px;
+  padding: 0.5rem;
+  margin: auto;
   transition: 0.2s linear;
   border: none;
   background-color: var(--neutral-white);
@@ -111,8 +120,8 @@ export const BottomCardImage = styled.div`
   background-color: var(--neutral-white);
 
   img {
-    width: 350px;
-    height: 350px;
+    max-width: 100%;
+    height: auto;
     border-radius: 5%;
   }
 
@@ -120,9 +129,13 @@ export const BottomCardImage = styled.div`
     flex-direction: column;
 
     img {
-      width: auto;
+      max-width: 100%;
       height: auto;
     }
+  }
+
+  @media (max-width: 650px) {
+    width: 80%;
   }
 `;
 

@@ -106,7 +106,7 @@ export const MiddleCardStyled = styled.div`
   border: none;
   background-color: var(--neutral-light-grayish-blue);
   color: black;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 
   @media (max-width: 650px) {
     width: 80%;
