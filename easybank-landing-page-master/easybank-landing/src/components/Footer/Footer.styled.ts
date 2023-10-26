@@ -35,8 +35,9 @@ export const FooterSectionLink = styled.div`
   display: flex;
   gap: 20px;
   margin: 10px;
-  width: 800px;
-  color: var(--neutral-grayish-blue);
+  width: 400px;
+  font-size: 15px;
+  color: var(--neutral-white);
 `;
 
 export const FooterSectionText = styled.div`
@@ -46,27 +47,11 @@ export const FooterSectionText = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   margin: 10px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 
   @media (max-width: 650px) {
     flex-direction: column;
     margin-bottom: 50px;
-  }
-`;
-
-export const FooterSectionTitle = styled.div`
-  width: min(40rem, 100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px;
-  font-size: 60px;
-  /* font-weight: bold; */
-
-  @media (max-width: 650px) {
-    flex-direction: column;
-    margin-bottom: 10px;
   }
 `;
 
@@ -92,57 +77,3 @@ export const FooterSectionSingleImage = styled.div`
   display: flex;
   padding: 15px;
 `;
-
-// export const FooterSectionLogo = styled.div`
-//   position: static;
-//   flex-direction: column;
-//   display: flex;
-//   padding: 15px;
-//   margin-left: 100px;
-//   margin-top: 50px;
-// `;
-
-// export const FooterSectionText = styled.div`
-//   display: flex;
-//   position: static;
-//   padding: 0;
-//   margin: 0%;
-//   justify-content: space-between;
-//   flex-wrap: wrap;
-//   margin-top: 50px;
-// `;
-
-// export const FooterSectionTitle = styled.div`
-//   display: flex;
-//   position: static;
-//   padding: 0;
-//   font-size: 15px;
-//   font-weight: bold;
-//   justify-content: space-between;
-//   flex-wrap: wrap;
-
-//   margin-bottom: 10px;
-// `;
-
-// export const FooterSectionDescribe = styled.div`
-//   position: static;
-//   flex-direction: column;
-//   display: flex;
-
-//   padding: 0px 30px 0px 30px;
-//   gap: 5px;
-// `;
-
-// export const FooterSectionImages = styled.div`
-//   position: static;
-//   display: flex;
-//   margin-right: 100px;
-//   margin-top: 50px;
-// `;
-
-// export const FooterSectionSingleImage = styled.div`
-//   position: static;
-//   flex-direction: column;
-//   display: flex;
-//   padding: 15px;
-// `;
