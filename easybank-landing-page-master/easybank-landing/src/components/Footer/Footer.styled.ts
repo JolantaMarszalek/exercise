@@ -40,7 +40,7 @@ export const FooterSectionLink = styled.div`
 `;
 
 export const FooterSectionText = styled.div`
-  width: min(40rem, 100%);
+  width: min(30rem, 100%);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -76,6 +76,21 @@ export const FooterSectionButton = styled.div`
   display: flex;
   margin: 10px;
   gap: 20px;
+`;
+
+export const FooterSectionImages = styled.div`
+  position: static;
+  display: flex;
+  margin-right: 100px;
+  margin-top: 50px;
+  color: white;
+`;
+
+export const FooterSectionSingleImage = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
 `;
 
 // export const FooterSectionLogo = styled.div`
