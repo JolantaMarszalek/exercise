@@ -45,7 +45,7 @@ export const MiddleSectionTitle = styled.div`
 `;
 
 export const MiddleSectionDescribe = styled.div`
-  width: min(40rem, 100%);
+  width: min(60rem, 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -33,7 +33,7 @@ export const TopSectionTitle = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  font-size: 80px;
+  font-size: 70px;
   /* font-weight: bold; */
   color: var(--primary-dark-blue);
 
