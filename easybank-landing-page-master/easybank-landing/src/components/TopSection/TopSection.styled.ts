@@ -35,6 +35,7 @@ export const TopSectionTitle = styled.div`
   margin: 10px;
   font-size: 80px;
   font-weight: bold;
+  color: var(--primary-dark-blue);
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -51,6 +52,7 @@ export const TopSectionDescribe = styled.div`
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 50px;
+  color: var(--neutral-grayish-blue);
 
   @media (max-width: 650px) {
     flex-direction: column;

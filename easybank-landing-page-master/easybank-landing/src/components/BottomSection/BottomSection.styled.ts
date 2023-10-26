@@ -34,6 +34,7 @@ export const BottomSectionTitle = styled.div`
   margin: 10px;
   font-size: 80px;
   font-weight: bold;
+  color: var(--primary-dark-blue);
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -133,6 +134,7 @@ export const BottomCardAuthor = styled.div`
   font-size: 20px;
   justify-content: center;
   background-color: var(--neutral-white);
+  color: var(--neutral-grayish-blue);
 
   @media (max-width: 650px) {
     font-size: 18px;
@@ -147,6 +149,7 @@ export const BottomCardTitle = styled.div`
   font-size: 20px;
   justify-content: center;
   background-color: var(--neutral-white);
+  color: var(--primary-dark-blue);
 
   @media (max-width: 650px) {
     font-size: 18px;
@@ -166,7 +169,7 @@ export const BottomCardDescribe = styled.div`
   word-wrap: break-word;
   max-width: auto;
   background-color: var(--neutral-white);
-  color: var(--neutral-gray);
+  color: var(--neutral-grayish-blue);
 
   @media (max-width: 650px) {
     font-size: 14px;

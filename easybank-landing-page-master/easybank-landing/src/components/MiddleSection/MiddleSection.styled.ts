@@ -36,6 +36,7 @@ export const MiddleSectionTitle = styled.div`
   margin: 10px;
   font-size: 80px;
   font-weight: bold;
+  color: var(--primary-dark-blue);
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -51,7 +52,7 @@ export const MiddleSectionDescribe = styled.div`
   align-items: center;
   margin: 10px;
   background-color: var(--neutral-light-grayish-blue);
-
+  color: var(--neutral-grayish-blue);
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 50px;
@@ -140,6 +141,7 @@ export const MiddleCardTitle = styled.div`
   font-size: 20px;
   justify-content: center;
   background-color: var(--neutral-light-grayish-blue);
+  color: var(--primary-dark-blue);
 
   @media (max-width: 650px) {
     font-size: 18px;
@@ -159,7 +161,7 @@ export const MiddleCardDescribe = styled.div`
   word-wrap: break-word;
   max-width: auto;
   background-color: var(--neutral-light-grayish-blue);
-  color: var(--neutral-gray);
+  color: var(--neutral-grayish-blue);
 
   @media (max-width: 650px) {
     font-size: 14px;
