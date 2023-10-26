@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
 import { Button } from "../Button/Button.styled";
 import {
   FooterSectionButton,
+  FooterSectionLink,
   FooterSectionLogo,
   FooterSectionStyle,
   FooterSectionText,
-  FooterSectionTitle,
+  // FooterSectionTitle,
 } from "./Footer.styled";
 
 export const Footer = () => {
@@ -33,7 +35,42 @@ export const Footer = () => {
         </svg>
       </FooterSectionLogo>
       <FooterSectionText>
-        <FooterSectionTitle>Footer</FooterSectionTitle>
+        <FooterSectionLink>
+          {" "}
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
+            About Us
+          </Link>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
+            Contact
+          </Link>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
+            Blog
+          </Link>
+        </FooterSectionLink>{" "}
+        <FooterSectionLink>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
+            Careers
+          </Link>
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
+            Support
+          </Link>{" "}
+          <Link
+            to="not-found"
+            style={{ textDecoration: "none", color: "inherit" }}>
+            Privacy Policy
+          </Link>
+        </FooterSectionLink>
+        {/* <FooterSectionTitle>Footer</FooterSectionTitle> */}
       </FooterSectionText>
       <FooterSectionButton>
         <Button>Request Invite</Button>

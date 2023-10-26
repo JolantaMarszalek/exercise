@@ -28,10 +28,21 @@ export const FooterSectionLogo = styled.div`
   padding: 15px;
 `;
 
+export const FooterSectionLink = styled.div`
+  position: static;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+  margin: 10px;
+  width: 800px;
+  color: var(--neutral-grayish-blue);
+`;
+
 export const FooterSectionText = styled.div`
   width: min(40rem, 100%);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   margin: 10px;
@@ -50,8 +61,8 @@ export const FooterSectionTitle = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  font-size: 80px;
-  font-weight: bold;
+  font-size: 60px;
+  /* font-weight: bold; */
 
   @media (max-width: 650px) {
     flex-direction: column;
