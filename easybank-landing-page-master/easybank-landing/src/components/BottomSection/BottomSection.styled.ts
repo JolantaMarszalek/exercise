@@ -29,12 +29,12 @@ export const BottomSectionText = styled.div`
 export const BottomSectionTitle = styled.div`
   width: min(40rem, 100%);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  font-size: 80px;
-  font-weight: bold;
+  font-size: 50px;
+  /* font-weight: bold; */
   color: var(--primary-dark-blue);
 
   @media (max-width: 650px) {
@@ -103,7 +103,7 @@ export const BottomCardStyled = styled.div`
   transition: 0.2s linear;
   border: none;
   background-color: var(--neutral-white);
-  color: black;
+  /* color: black; */
 
   @media (max-width: 650px) {
     width: 80%;
@@ -140,11 +140,11 @@ export const BottomCardImage = styled.div`
 `;
 
 export const BottomCardAuthor = styled.div`
-  font-weight: bold;
+  /* font-weight: bold; */
   gap: 1.2rem;
   margin: 10px;
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 13px;
   justify-content: center;
   background-color: var(--neutral-white);
   color: var(--neutral-grayish-blue);
@@ -155,11 +155,11 @@ export const BottomCardAuthor = styled.div`
 `;
 
 export const BottomCardTitle = styled.div`
-  font-weight: bold;
+  /* font-weight: bold; */
   gap: 1.2rem;
   margin: 10px;
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 18px;
   justify-content: center;
   background-color: var(--neutral-white);
   color: var(--primary-dark-blue);
