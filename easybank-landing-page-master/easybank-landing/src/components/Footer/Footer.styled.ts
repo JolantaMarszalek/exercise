@@ -26,6 +26,7 @@ export const FooterSectionLogo = styled.div`
   flex-direction: column;
   display: flex;
   padding: 15px;
+  justify-content: center;
 `;
 
 export const FooterSectionLink = styled.div`
@@ -44,9 +45,9 @@ export const FooterSectionText = styled.div`
   width: min(30rem, 100%);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 10px;
+  justify-content: center;
+  /* align-items: flex-start; */
+  /* margin: 10px; */
   /* margin-bottom: 100px; */
 
   @media (max-width: 650px) {
@@ -78,6 +79,8 @@ export const FooterSectionButton = styled.div`
   display: flex;
   margin: 10px;
   gap: 20px;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const FooterSectionImages = styled.div`
