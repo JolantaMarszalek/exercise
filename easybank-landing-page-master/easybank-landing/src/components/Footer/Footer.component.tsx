@@ -8,6 +8,7 @@ import {
   FooterSectionSingleImage,
   FooterSectionStyle,
   FooterSectionText,
+  FooterSectionTextUnderButton,
   // FooterSectionTitle,
 } from "./Footer.styled";
 
@@ -121,6 +122,9 @@ export const Footer = () => {
       </FooterSectionText>
       <FooterSectionButton>
         <Button>Request Invite</Button>
+        <FooterSectionTextUnderButton>
+          © Easybank. All Rights Reserved
+        </FooterSectionTextUnderButton>
       </FooterSectionButton>
     </FooterSectionStyle>
   );

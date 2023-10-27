@@ -55,9 +55,26 @@ export const FooterSectionText = styled.div`
   }
 `;
 
+export const FooterSectionTextUnderButton = styled.div`
+  width: min(30rem, 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px;
+  font-size: 15px;
+  /* margin-bottom: 100px; */
+  color: var(--neutral-grayish-blue);
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+`;
+
 export const FooterSectionButton = styled.div`
   position: static;
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
   margin: 10px;
   gap: 20px;
