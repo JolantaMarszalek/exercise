@@ -34,7 +34,6 @@ export const BottomSectionTitle = styled.div`
   align-items: center;
   margin: 10px;
   font-size: 50px;
-  /* font-weight: bold; */
   color: var(--primary-dark-blue);
 
   @media (max-width: 650px) {
@@ -42,23 +41,6 @@ export const BottomSectionTitle = styled.div`
     margin-bottom: 10px;
   }
 `;
-
-// export const BottomSectionDescribe = styled.div`
-//   width: min(40rem, 100%);
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   align-items: center;
-//   margin: 10px;
-//   font-size: 25px;
-//   line-height: 30px;
-//   margin-bottom: 50px;
-
-//   @media (max-width: 650px) {
-//     flex-direction: column;
-//     margin-bottom: 10px;
-//   }
-// `;
 
 export const BottomCardSection = styled.section`
   display: flex;
@@ -103,7 +85,6 @@ export const BottomCardStyled = styled.div`
   transition: 0.2s linear;
   border: none;
   background-color: var(--neutral-white);
-  /* color: black; */
 
   @media (max-width: 650px) {
     width: 80%;
@@ -140,7 +121,6 @@ export const BottomCardImage = styled.div`
 `;
 
 export const BottomCardAuthor = styled.div`
-  /* font-weight: bold; */
   gap: 1.2rem;
   margin: 10px;
   margin-left: 20px;
@@ -155,7 +135,6 @@ export const BottomCardAuthor = styled.div`
 `;
 
 export const BottomCardTitle = styled.div`
-  /* font-weight: bold; */
   gap: 1.2rem;
   margin: 10px;
   margin-left: 20px;

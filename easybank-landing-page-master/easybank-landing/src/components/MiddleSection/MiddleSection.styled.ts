@@ -35,7 +35,6 @@ export const MiddleSectionTitle = styled.div`
   align-items: center;
   margin: 10px;
   font-size: 50px;
-  /* font-weight: bold; */
   color: var(--primary-dark-blue);
 
   @media (max-width: 650px) {
@@ -106,7 +105,6 @@ export const MiddleCardStyled = styled.div`
   border: none;
   background-color: var(--neutral-light-grayish-blue);
   color: black;
-  /* margin-bottom: 80px; */
 
   @media (max-width: 650px) {
     width: 80%;
@@ -134,7 +132,6 @@ export const MiddleCardImage = styled.div`
 `;
 
 export const MiddleCardTitle = styled.div`
-  /* font-weight: bold; */
   gap: 1.2rem;
   margin: 10px;
   margin-left: 20px;

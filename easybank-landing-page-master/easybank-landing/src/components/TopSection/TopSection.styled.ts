@@ -34,7 +34,6 @@ export const TopSectionTitle = styled.div`
   align-items: center;
   margin: 10px;
   font-size: 70px;
-  /* font-weight: bold; */
   color: var(--primary-dark-blue);
 
   @media (max-width: 650px) {

@@ -46,9 +46,6 @@ export const FooterSectionText = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* align-items: flex-start; */
-  /* margin: 10px; */
-  /* margin-bottom: 100px; */
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -64,7 +61,6 @@ export const FooterSectionTextUnderButton = styled.div`
   align-items: flex-start;
   margin: 10px;
   font-size: 15px;
-  /* margin-bottom: 100px; */
   color: var(--neutral-grayish-blue);
 
   @media (max-width: 650px) {
