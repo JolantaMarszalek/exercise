@@ -25,6 +25,7 @@ export const HeaderSectionLink = styled.div`
   gap: 20px;
   margin: 10px;
   width: 800px;
+  color: var(--neutral-grayish-blue);
 `;
 
 export const HeaderSectionButton = styled.div`

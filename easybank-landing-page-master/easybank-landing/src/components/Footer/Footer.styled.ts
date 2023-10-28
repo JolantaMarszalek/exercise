@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
-export const FooterSection = styled.footer`
+export const FooterSectionStyle = styled.footer`
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  /* padding: 5px; */
   height: 200px;
-  /* font-size: 12px; */
   background-color: var(--primary-dark-blue);
+  color: var(--neutral-white);
 
   @media (max-width: 1024px) {
     display: flex;
@@ -22,56 +21,75 @@ export const FooterSection = styled.footer`
   }
 `;
 
-// export const FooterSectionLogo = styled.div`
-//   position: static;
-//   flex-direction: column;
-//   display: flex;
-//   padding: 15px;
-//   margin-left: 100px;
-//   margin-top: 50px;
-// `;
+export const FooterSectionLogo = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+`;
 
-// export const FooterSectionText = styled.div`
-//   display: flex;
-//   position: static;
-//   padding: 0;
-//   margin: 0%;
-//   justify-content: space-between;
-//   flex-wrap: wrap;
-//   margin-top: 50px;
-// `;
+export const FooterSectionLink = styled.div`
+  position: static;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+  margin: 10px;
+  width: 400px;
+  font-size: 15px;
+  color: var(--neutral-white);
+`;
 
-// export const FooterSectionTitle = styled.div`
-//   display: flex;
-//   position: static;
-//   padding: 0;
-//   font-size: 15px;
-//   font-weight: bold;
-//   justify-content: space-between;
-//   flex-wrap: wrap;
+export const FooterSectionText = styled.div`
+  width: min(30rem, 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-//   margin-bottom: 10px;
-// `;
+  @media (max-width: 650px) {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+`;
 
-// export const FooterSectionDescribe = styled.div`
-//   position: static;
-//   flex-direction: column;
-//   display: flex;
+export const FooterSectionTextUnderButton = styled.div`
+  width: min(30rem, 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 10px;
+  font-size: 15px;
+  color: var(--neutral-grayish-blue);
 
-//   padding: 0px 30px 0px 30px;
-//   gap: 5px;
-// `;
+  @media (max-width: 650px) {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+`;
 
-// export const FooterSectionImages = styled.div`
-//   position: static;
-//   display: flex;
-//   margin-right: 100px;
-//   margin-top: 50px;
-// `;
+export const FooterSectionButton = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  margin: 10px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+`;
 
-// export const FooterSectionSingleImage = styled.div`
-//   position: static;
-//   flex-direction: column;
-//   display: flex;
-//   padding: 15px;
-// `;
+export const FooterSectionImages = styled.div`
+  position: static;
+  display: flex;
+  margin-right: 100px;
+  margin-top: 50px;
+  color: white;
+`;
+
+export const FooterSectionSingleImage = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+`;

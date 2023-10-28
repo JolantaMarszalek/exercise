@@ -5,7 +5,6 @@ export const TopSectionStyle = styled.section`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* background-color: var(--neutral-light-grayish-blue); */
   background-color: var(--neutral-very-light-gray);
 
   @media (max-width: 650px) {
@@ -34,8 +33,8 @@ export const TopSectionTitle = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  font-size: 80px;
-  font-weight: bold;
+  font-size: 70px;
+  color: var(--primary-dark-blue);
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -49,9 +48,10 @@ export const TopSectionDescribe = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 30px;
   margin-bottom: 50px;
+  color: var(--neutral-grayish-blue);
 
   @media (max-width: 650px) {
     flex-direction: column;
