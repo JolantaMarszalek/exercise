@@ -104,6 +104,9 @@ export const BottomCardImage = styled.div`
     max-width: 100%;
     height: auto;
     border-radius: 5%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 
   @media (max-width: 1024px) {
