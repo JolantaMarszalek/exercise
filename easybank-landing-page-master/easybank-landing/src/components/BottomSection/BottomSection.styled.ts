@@ -4,7 +4,7 @@ export const BottomSectionStyle = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: auto;
+  margin: 0;
   background-color: var(--neutral-very-light-gray);
 
   @media (max-width: 650px) {
@@ -51,7 +51,8 @@ export const BottomCardSection = styled.section`
   padding: 8rem 0;
   border-radius: 10px;
   padding: 0.5rem;
-  margin-bottom: 100px;
+  height: auto;
+  /* margin-bottom: 100px; */
 `;
 
 export const BottomCardContainer = styled.div`
@@ -63,6 +64,7 @@ export const BottomCardContainer = styled.div`
   border: none;
   padding: 20px;
   gap: 20px;
+  height: 100%;
 
   @media (max-width: 1024px) {
     width: 80%;
@@ -78,10 +80,10 @@ export const BottomCardStyled = styled.div`
   align-content: center;
   flex-wrap: nowrap;
   width: 350px;
-  height: auto;
+  min-height: 400px;
   border-radius: 6px;
   padding: 0.5rem;
-  margin: auto;
+  margin-bottom: 100px;
   transition: 0.2s linear;
   border: none;
   background-color: var(--neutral-white);
