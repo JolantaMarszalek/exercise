@@ -64,7 +64,7 @@ export const BottomCardContainer = styled.div`
   border: none;
   padding: 20px;
   gap: 20px;
-  height: 100%;
+  /* height: 100%; */
 
   @media (max-width: 1024px) {
     width: 80%;
@@ -107,8 +107,8 @@ export const BottomCardImage = styled.div`
     height: auto;
     border-radius: 5%;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
   }
 
   @media (max-width: 1024px) {
