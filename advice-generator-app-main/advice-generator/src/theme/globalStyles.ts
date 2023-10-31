@@ -7,6 +7,7 @@ body {
     font-family: 'Manrope', sans-serif;
     font-size: 25px;
     background-color: var(--neutral-grayish-blue);
+    margin: 0;
 }
 
 #root {
