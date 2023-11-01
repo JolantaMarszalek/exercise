@@ -52,7 +52,6 @@ export const BottomCardSection = styled.section`
   border-radius: 10px;
   padding: 0.5rem;
   height: auto;
-  /* margin-bottom: 100px; */
 `;
 
 export const BottomCardContainer = styled.div`
@@ -64,7 +63,6 @@ export const BottomCardContainer = styled.div`
   border: none;
   padding: 20px;
   gap: 20px;
-  /* height: 100%; */
 
   @media (max-width: 1024px) {
     width: 80%;
