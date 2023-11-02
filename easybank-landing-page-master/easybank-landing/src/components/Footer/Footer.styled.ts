@@ -11,12 +11,41 @@ export const FooterSectionStyle = styled.footer`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    font-size: 0.5rem;
+    gap: 0px;
+    height: 100%;
+  }
+
+  @media (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.5rem;
+    gap: 0px;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+    gap: 0px;
+  }
+
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 0.5rem;
     gap: 0px;
   }
 
   @media (max-width: 375px) {
     font-size: 0.5rem;
+    align-items: center;
     width: 100%;
   }
 `;
