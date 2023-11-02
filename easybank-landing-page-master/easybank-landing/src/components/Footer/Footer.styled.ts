@@ -68,6 +68,31 @@ export const FooterSectionLink = styled.div`
   width: 400px;
   font-size: 15px;
   color: var(--neutral-white);
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 0.5rem; */
+    gap: 20px;
+  }
+
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 0.5rem; */
+    gap: 20px;
+  }
+
+  @media (max-width: 375px) {
+    /* font-size: 0.5rem; */
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
 `;
 
 export const FooterSectionText = styled.div`
