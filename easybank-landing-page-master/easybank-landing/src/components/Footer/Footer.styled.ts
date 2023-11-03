@@ -74,7 +74,6 @@ export const FooterSectionLink = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* font-size: 0.5rem; */
     gap: 20px;
   }
 
@@ -83,7 +82,6 @@ export const FooterSectionLink = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* font-size: 0.5rem; */
     gap: 20px;
   }
 
