@@ -7,10 +7,32 @@ export const BottomSectionStyle = styled.section`
   margin: 0;
   background-color: var(--neutral-very-light-gray);
 
-  @media (max-width: 650px) {
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (max-width: 375px) {
+    /* font-size: 0.5rem; */
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+  /* @media (max-width: 650px) {
     flex-direction: column;
     margin-bottom: 10px;
-  }
+  } */
 `;
 
 export const BottomSectionText = styled.div`
@@ -67,6 +89,29 @@ export const BottomCardContainer = styled.div`
   @media (max-width: 1024px) {
     width: 80%;
     margin-top: 6vh;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (max-width: 375px) {
+    /* font-size: 0.5rem; */
+    align-items: center;
+    width: 100%;
+    gap: 20px;
   }
 `;
 
