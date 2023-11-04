@@ -99,9 +99,32 @@ export const FooterSectionText = styled.div`
   flex-direction: row;
   justify-content: center;
 
-  @media (max-width: 650px) {
+  /* @media (max-width: 650px) {
     flex-direction: column;
     margin-bottom: 50px;
+  } */
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+  }
+
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+  }
+
+  @media (max-width: 375px) {
+    /* font-size: 0.5rem; */
+    align-items: center;
+    width: 100%;
+    gap: 20px;
   }
 `;
 
