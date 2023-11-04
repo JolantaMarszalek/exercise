@@ -87,6 +87,32 @@ export const MiddleCardContainer = styled.div`
     width: 80%;
     margin-top: 6vh;
   }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+  }
+
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+  }
+
+  @media (max-width: 375px) {
+    /* font-size: 0.5rem; */
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    height: 100%;
+  }
 `;
 
 export const MiddleCardStyled = styled.div`
