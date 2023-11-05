@@ -56,6 +56,30 @@ export const FooterSectionLogo = styled.div`
   display: flex;
   padding: 15px;
   justify-content: center;
+  /* align-items: center; */
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (max-width: 375px) {
+    /* font-size: 0.5rem; */
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
 `;
 
 export const FooterSectionLink = styled.div`
@@ -160,6 +184,29 @@ export const FooterSectionImages = styled.div`
   margin-right: 100px;
   margin-top: 50px;
   color: white;
+
+  @media (max-width: 768px) {
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+  }
+
+  @media (max-width: 576px) {
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+  }
+
+  @media (max-width: 375px) {
+    /* font-size: 0.5rem; */
+    align-items: center;
+    width: 100%;
+    /* gap: 20px; */
+  }
 `;
 
 export const FooterSectionSingleImage = styled.div`
