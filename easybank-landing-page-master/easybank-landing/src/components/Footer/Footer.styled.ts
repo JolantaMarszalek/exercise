@@ -186,14 +186,11 @@ export const FooterSectionImages = styled.div`
   color: white;
 
   @media (max-width: 768px) {
-    /* display: flex; */
-
     justify-content: center;
     align-items: center;
   }
 
   @media (max-width: 576px) {
-    /* display: flex; */
     justify-content: center;
     align-items: center;
   }
