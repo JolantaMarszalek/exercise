@@ -186,26 +186,18 @@ export const FooterSectionImages = styled.div`
   color: white;
 
   @media (max-width: 768px) {
-    /* display: flex;
-    flex-direction: column; */
     justify-content: center;
     align-items: center;
-    /* gap: 20px; */
   }
 
   @media (max-width: 576px) {
-    /* display: flex;
-    flex-direction: column; */
     justify-content: center;
     align-items: center;
-    /* gap: 20px; */
   }
 
   @media (max-width: 375px) {
-    /* font-size: 0.5rem; */
     align-items: center;
     width: 100%;
-    /* gap: 20px; */
   }
 `;
 
