@@ -110,7 +110,6 @@ export const FooterSectionLink = styled.div`
   }
 
   @media (max-width: 375px) {
-    /* font-size: 0.5rem; */
     align-items: center;
     width: 100%;
     gap: 20px;
@@ -122,11 +121,6 @@ export const FooterSectionText = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-
-  /* @media (max-width: 650px) {
-    flex-direction: column;
-    margin-bottom: 50px;
-  } */
 
   @media (max-width: 768px) {
     display: flex;
