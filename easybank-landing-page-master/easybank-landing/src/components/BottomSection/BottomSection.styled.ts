@@ -29,10 +29,6 @@ export const BottomSectionStyle = styled.section`
     width: 100%;
     gap: 20px;
   }
-  /* @media (max-width: 650px) {
-    flex-direction: column;
-    margin-bottom: 10px;
-  } */
 `;
 
 export const BottomSectionText = styled.div`
