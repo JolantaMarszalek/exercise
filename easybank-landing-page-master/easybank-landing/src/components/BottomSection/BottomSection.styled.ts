@@ -24,7 +24,6 @@ export const BottomSectionStyle = styled.section`
   }
 
   @media (max-width: 375px) {
-    /* font-size: 0.5rem; */
     align-items: center;
     width: 100%;
     gap: 20px;
