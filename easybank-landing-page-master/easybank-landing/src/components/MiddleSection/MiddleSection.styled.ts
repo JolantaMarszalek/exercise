@@ -107,7 +107,6 @@ export const MiddleCardContainer = styled.div`
   }
 
   @media (max-width: 375px) {
-    /* font-size: 0.5rem; */
     align-items: center;
     width: 100%;
     gap: 20px;
