@@ -56,7 +56,6 @@ export const FooterSectionLogo = styled.div`
   display: flex;
   padding: 15px;
   justify-content: center;
-  /* align-items: center; */
 
   @media (max-width: 768px) {
     display: flex;

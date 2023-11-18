@@ -24,15 +24,10 @@ export const BottomSectionStyle = styled.section`
   }
 
   @media (max-width: 375px) {
-    /* font-size: 0.5rem; */
     align-items: center;
     width: 100%;
     gap: 20px;
   }
-  /* @media (max-width: 650px) {
-    flex-direction: column;
-    margin-bottom: 10px;
-  } */
 `;
 
 export const BottomSectionText = styled.div`
@@ -108,7 +103,6 @@ export const BottomCardContainer = styled.div`
   }
 
   @media (max-width: 375px) {
-    /* font-size: 0.5rem; */
     align-items: center;
     width: 100%;
     gap: 20px;
@@ -150,8 +144,6 @@ export const BottomCardImage = styled.div`
     height: auto;
     border-radius: 5%;
     object-fit: cover;
-    /* width: 100%;
-    height: 100%; */
   }
 
   @media (max-width: 1024px) {
