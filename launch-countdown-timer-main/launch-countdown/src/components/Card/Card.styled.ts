@@ -39,4 +39,6 @@ export const Title = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  color: var(--neutral-white);
+  letter-spacing: 5px;
 `;
