@@ -1,14 +1,10 @@
-import { SingleCard } from "./components/SingleCard/SingleCard.component";
-import { SingleCardSection } from "./components/SingleCard/SingleCard.styled";
+import { Card } from "./components/SingleCard/Card.component";
 
 function App() {
   return (
-    <SingleCardSection>
-      <SingleCard />
-      <SingleCard />
-      <SingleCard />
-      <SingleCard />
-    </SingleCardSection>
+    <>
+      <Card />
+    </>
   );
 }
 

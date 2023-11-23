@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
-export const SingleCardSection = styled.div`
+export const CardSection = styled.div`
   display: flex;
-  padding: 10px;
+  /* padding: 10px; */
   position: relative;
   justify-content: center;
-  margin: 10px;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--neutral-very-dark-blue);
 `;
 
-export const SingleCardStyled = styled.div`
+export const CardStyled = styled.div`
   display: flex;
   padding: 10px;
   justify-content: center;
