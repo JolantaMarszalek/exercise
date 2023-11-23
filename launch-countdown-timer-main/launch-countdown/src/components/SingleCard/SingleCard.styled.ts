@@ -16,5 +16,5 @@ export const SingleCardStyled = styled.div`
   height: 200px;
   margin: 10px;
   border-radius: 10px;
-  background-color: blueviolet;
+  background-color: var(--neutral-dark-desaturated-blue);
 `;
