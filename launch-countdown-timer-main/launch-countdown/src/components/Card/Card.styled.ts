@@ -13,7 +13,6 @@ export const Layout = styled.div`
 
 export const CardSection = styled.div`
   display: flex;
-  /* padding: 10px; */
   position: relative;
   justify-content: center;
   align-items: center;
