@@ -17,8 +17,8 @@ export const FooterSection = styled.div`
 export const FooterSectionImages = styled.div`
   position: static;
   display: flex;
-  margin-right: 100px;
-  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
   color: white;
 
   @media (max-width: 768px) {
@@ -41,5 +41,7 @@ export const FooterSectionSingleImage = styled.div`
   position: static;
   flex-direction: column;
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px;
 `;
