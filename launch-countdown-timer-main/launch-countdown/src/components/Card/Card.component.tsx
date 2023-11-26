@@ -21,21 +21,21 @@ export const Card = () => {
         </SingleCardStyled>
         <SingleCardStyled>
           <CardStyled>
-            <NumbersCard>08</NumbersCard>
+            <NumbersCard>23</NumbersCard>
           </CardStyled>
-          <TextUnderCard>DAYS</TextUnderCard>
+          <TextUnderCard>HOURS</TextUnderCard>
         </SingleCardStyled>
         <SingleCardStyled>
           <CardStyled>
-            <NumbersCard>08</NumbersCard>
+            <NumbersCard>55</NumbersCard>
           </CardStyled>
-          <TextUnderCard>DAYS</TextUnderCard>
+          <TextUnderCard>MINUTES</TextUnderCard>
         </SingleCardStyled>
         <SingleCardStyled>
           <CardStyled>
-            <NumbersCard>08</NumbersCard>
+            <NumbersCard>41</NumbersCard>
           </CardStyled>
-          <TextUnderCard>DAYS</TextUnderCard>
+          <TextUnderCard>SECONDS</TextUnderCard>
         </SingleCardStyled>
       </CardSection>
     </>

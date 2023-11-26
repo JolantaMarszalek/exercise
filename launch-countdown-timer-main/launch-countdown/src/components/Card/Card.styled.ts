@@ -29,8 +29,8 @@ export const CardStyled = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin: 10px;
   border-radius: 10px;
   background-color: var(--neutral-dark-desaturated-blue);
