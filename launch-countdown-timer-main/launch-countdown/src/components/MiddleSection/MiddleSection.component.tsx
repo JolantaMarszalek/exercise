@@ -1,3 +1,5 @@
+import { Card } from "../Card/Card.component";
+
 export const MiddleSection = () => {
-  return <></>;
+  return <Card></Card>;
 };

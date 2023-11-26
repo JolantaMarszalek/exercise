@@ -2,6 +2,7 @@ import {
   CardSection,
   CardStyled,
   NumbersCard,
+  SingleCardStyled,
   // CardStyledBottom,
   // CardStyledTop,
   // NumbersCard,
@@ -12,12 +13,30 @@ export const Card = () => {
   return (
     <>
       <CardSection>
-        <CardStyled>
-          <NumbersCard>08:00</NumbersCard>
-          {/* <CardStyledTop>08:00</CardStyledTop>
-          <CardStyledBottom>08:00</CardStyledBottom> */}
-        </CardStyled>
-        <TextUnderCard>DAYS</TextUnderCard>
+        <SingleCardStyled>
+          <CardStyled>
+            <NumbersCard>08</NumbersCard>
+          </CardStyled>
+          <TextUnderCard>DAYS</TextUnderCard>
+        </SingleCardStyled>
+        <SingleCardStyled>
+          <CardStyled>
+            <NumbersCard>08</NumbersCard>
+          </CardStyled>
+          <TextUnderCard>DAYS</TextUnderCard>
+        </SingleCardStyled>
+        <SingleCardStyled>
+          <CardStyled>
+            <NumbersCard>08</NumbersCard>
+          </CardStyled>
+          <TextUnderCard>DAYS</TextUnderCard>
+        </SingleCardStyled>
+        <SingleCardStyled>
+          <CardStyled>
+            <NumbersCard>08</NumbersCard>
+          </CardStyled>
+          <TextUnderCard>DAYS</TextUnderCard>
+        </SingleCardStyled>
       </CardSection>
     </>
   );

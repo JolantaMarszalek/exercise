@@ -4,10 +4,8 @@ export const FooterSection = styled.div`
   width: 100%;
   height: auto;
   background-color: var(--neutral-very-dark-blue);
-  // background-image: url("../../../../images/pattern-hills.svg");
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  position: relative;
+  position: fixed;
+  bottom: 0;
   justify-content: center;
   align-items: center;
   display: flex;
