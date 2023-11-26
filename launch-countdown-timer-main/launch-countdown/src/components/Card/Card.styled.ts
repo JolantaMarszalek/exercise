@@ -13,6 +13,7 @@ export const Layout = styled.div`
 
 export const CardSection = styled.div`
   display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -23,8 +24,11 @@ export const CardSection = styled.div`
 
 export const CardStyled = styled.div`
   display: flex;
+  flex-direction: column;
   padding: 10px;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
   width: 200px;
   height: 200px;
   margin: 10px;
@@ -32,7 +36,37 @@ export const CardStyled = styled.div`
   background-color: var(--neutral-dark-desaturated-blue);
 `;
 
-export const Text = styled.div`
+// export const CardStyledTop = styled.div`
+//   display: flex;
+//   /* padding: 10px; */
+//   justify-content: center;
+//   //width: 200px;
+//   // height: 200px;
+//   /* margin: 10px; */
+//   justify-content: center;
+//   height: 100%;
+//   width: 50%;
+//   overflow: hidden;
+//   border-radius: 10px;
+//   background-color: var(--neutral-dark-desaturated-blue);
+// `;
+
+// export const CardStyledBottom = styled.div`
+//   display: flex;
+//   /* padding: 10px; */
+//   justify-content: center;
+//   // width: 200px;
+//   //height: 200px;
+//   /* margin: 10px; */
+//   justify-content: center;
+//   height: 100%;
+//   width: 50%;
+//   overflow: hidden;
+//   border-radius: 10px;
+//   background-color: var(--neutral-dark-desaturated-blue);
+// `;
+
+export const TextUnderCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,7 +76,7 @@ export const Text = styled.div`
   letter-spacing: 5px;
 `;
 
-export const Title = styled.div`
+export const NumbersCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,4 +84,5 @@ export const Title = styled.div`
   width: 100%;
   color: var(--neutral-white);
   letter-spacing: 5px;
+  margin: 0px;
 `;
