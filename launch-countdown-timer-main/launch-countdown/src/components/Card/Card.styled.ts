@@ -26,7 +26,7 @@ export const CardStyled = styled.div`
   display: flex;
   flex-direction: column;
   padding: 10px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: relative;
   width: 200px;

@@ -1,9 +1,14 @@
 import { LayoutSection } from "./Layout.styled";
+import React, { ReactNode } from "react";
 
-export const Layout = () => {
+interface LayoutProps {
+  children: ReactNode;
+}
+
+export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <LayoutSection />
+      <LayoutSection>{children}</LayoutSection>
     </>
   );
 };
