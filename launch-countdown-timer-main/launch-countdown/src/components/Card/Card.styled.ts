@@ -32,6 +32,16 @@ export const CardStyled = styled.div`
   background-color: var(--neutral-dark-desaturated-blue);
 `;
 
+export const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: var(--neutral-white);
+  letter-spacing: 5px;
+`;
+
 export const Title = styled.div`
   display: flex;
   flex-direction: column;
