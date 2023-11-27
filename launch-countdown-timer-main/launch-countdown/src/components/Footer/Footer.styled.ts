@@ -1,24 +1,27 @@
 import styled from "styled-components";
 
 export const FooterSection = styled.div`
-  width: 100%;
-  height: auto;
-  background-color: var(--neutral-very-dark-blue);
-  position: fixed;
-  bottom: 0;
+  display: block;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: auto;
+  /* background-color: var(--neutral-very-dark-blue); */
+  position: fixed;
+  bottom: 0;
 
   svg {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    display: block;
   }
 
   @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
+    position: relative;
+    background-color: var(--neutral-very-dark-blue);
   }
 
   @media (max-width: 576px) {
@@ -37,7 +40,7 @@ export const FooterSectionImages = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(271, 23%, 18%);
+  background-color: #2f2439;
   width: 100%;
 
   @media (max-width: 768px) {

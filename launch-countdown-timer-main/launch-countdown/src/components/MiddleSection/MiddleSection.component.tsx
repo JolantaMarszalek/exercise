@@ -1,5 +1,10 @@
 import { Card } from "../Card/Card.component";
+import { MiddleSectionStyle } from "./MiddleSection.styled";
 
 export const MiddleSection = () => {
-  return <Card></Card>;
+  return (
+    <MiddleSectionStyle>
+      <Card></Card>
+    </MiddleSectionStyle>
+  );
 };

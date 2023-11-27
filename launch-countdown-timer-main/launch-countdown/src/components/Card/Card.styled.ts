@@ -20,6 +20,24 @@ export const CardSection = styled.div`
   width: 100%;
   height: auto;
   background-color: var(--neutral-very-dark-blue);
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
 `;
 
 export const CardStyled = styled.div`

@@ -10,12 +10,15 @@ export const Footer = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-        width="1440"
-        height="197">
+        width="100%"
+        style={{ display: "block", width: "100%", margin: "0", padding: "0" }}
+        // width="1440"
+        // height="197"
+      >
         <defs>
           <path id="a" d="M0 0h1440v197H0z" />
         </defs>
-        <g fill="none" fill-rule="evenodd">
+        <g fill="none" fillRule="evenodd">
           <mask id="b" fill="#fff">
             <use xlinkHref="#a" />
           </mask>

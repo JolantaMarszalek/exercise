@@ -7,6 +7,7 @@ body {
 font-family: 'Red Hat Text', sans-serif;
 font-size: 14px;
 margin: 0;
+width: 100%;
 }
 
 #root {
