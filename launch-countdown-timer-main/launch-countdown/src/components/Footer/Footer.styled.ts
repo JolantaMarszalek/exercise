@@ -66,4 +66,22 @@ export const FooterSectionSingleImage = styled.div`
   justify-content: center;
   align-items: center;
   padding: 15px;
+
+  svg {
+    fill: #8385a9;
+    transition: fill 0.3s ease;
+
+    .icon-path {
+      fill: #8385a9;
+      transition: fill 0.3s ease;
+    }
+  }
+
+  &:hover svg {
+    fill: var(--primary-soft-red);
+
+    .icon-path {
+      fill: var(--primary-soft-red);
+    }
+  }
 `;
