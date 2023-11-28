@@ -1,5 +1,6 @@
 import {
   MiddleSectionLeftSide,
+  MiddleSectionRightSide,
   MiddleSectionStyle,
 } from "./MiddleSection.styled";
 
@@ -14,6 +15,7 @@ export const MiddleSection = () => {
           <img src={imageProduct1} />
           {/* <img src="../../../../images/image-product-1-thumbnail.jpg" /> */}
         </MiddleSectionLeftSide>
+        <MiddleSectionRightSide></MiddleSectionRightSide>
       </MiddleSectionStyle>
     </>
   );
