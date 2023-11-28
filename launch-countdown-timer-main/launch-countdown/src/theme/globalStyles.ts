@@ -8,6 +8,9 @@ font-family: 'Red Hat Text', sans-serif;
 font-size: 14px;
 margin: 0;
 width: 100%;
+/* background-image: url("../../../images/bg-stars.svg");
+background-repeat: no-repeat;
+background-size: cover; */
 }
 
 #root {

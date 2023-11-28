@@ -4,7 +4,7 @@ import { MiddleSectionStyle } from "./MiddleSection.styled";
 export const MiddleSection = () => {
   return (
     <MiddleSectionStyle>
-      <Card></Card>
+      <Card />
     </MiddleSectionStyle>
   );
 };
