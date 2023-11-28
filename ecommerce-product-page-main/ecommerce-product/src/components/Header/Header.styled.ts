@@ -10,3 +10,58 @@ export const HeaderSection = styled.section`
   @media (max-width: 600px) {
   }
 `;
+
+export const HeaderSectionLogo = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  margin-left: 50px;
+`;
+
+export const HeaderSectionLink = styled.div`
+  position: static;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+  margin: 10px;
+  width: auto;
+  color: var(--neutral-dark-grayish-blue);
+`;
+
+export const HeaderSectionSingleLink = styled.div`
+  position: static;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+  margin: 10px;
+  width: auto;
+  color: var(--neutral-dark-grayish-blue);
+`;
+
+export const HeaderSectionCart = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+`;
+
+export const HeaderSectionAvatar = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  margin-right: 50px;
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+`;
