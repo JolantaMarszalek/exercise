@@ -38,7 +38,6 @@ export const MiddleSectionLeftSide = styled.section`
 
 export const MiddleSectionRightSide = styled.section`
   display: flex;
-
   height: auto;
   position: static;
   flex-direction: column;
