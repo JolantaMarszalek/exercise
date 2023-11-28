@@ -63,43 +63,14 @@ export const SingleCardStyled = styled.div`
   position: relative;
 `;
 
-// export const CardStyledTop = styled.div`
-//   display: flex;
-//   /* padding: 10px; */
-//   justify-content: center;
-//   //width: 200px;
-//   // height: 200px;
-//   /* margin: 10px; */
-//   justify-content: center;
-//   height: 100%;
-//   width: 50%;
-//   overflow: hidden;
-//   border-radius: 10px;
-//   background-color: var(--neutral-dark-desaturated-blue);
-// `;
-
-// export const CardStyledBottom = styled.div`
-//   display: flex;
-//   /* padding: 10px; */
-//   justify-content: center;
-//   // width: 200px;
-//   //height: 200px;
-//   /* margin: 10px; */
-//   justify-content: center;
-//   height: 100%;
-//   width: 50%;
-//   overflow: hidden;
-//   border-radius: 10px;
-//   background-color: var(--neutral-dark-desaturated-blue);
-// `;
-
 export const TextUnderCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: auto;
-  color: var(--neutral-white);
+  height: 50px;
+  color: var(--primary-grayish-blue);
   letter-spacing: 5px;
 `;
 

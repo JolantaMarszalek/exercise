@@ -42,6 +42,7 @@ export const FooterSectionImages = styled.div`
   align-items: center;
   background-color: #2f2439;
   width: 100%;
+  height: 100px;
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -66,6 +67,7 @@ export const FooterSectionSingleImage = styled.div`
   justify-content: center;
   align-items: center;
   padding: 15px;
+  margin-bottom: 20px;
 
   svg {
     fill: #8385a9;
