@@ -51,7 +51,13 @@ export const CardStyled = styled.div`
   height: 150px;
   margin: 10px;
   border-radius: 10px;
-  background-color: var(--neutral-dark-desaturated-blue);
+  /* background-color: var(--neutral-dark-desaturated-blue); */
+  background-image: linear-gradient(
+    to bottom,
+    hsl(240, 21%, 22%),
+    hsl(236, 21%, 26%)
+  );
+  box-shadow: 0px 15px var(--neutral-very-dark-blue-mostly-black);
 `;
 
 export const SingleCardStyled = styled.div`
@@ -83,5 +89,5 @@ export const NumbersCard = styled.div`
   color: var(--primary-soft-red);
   letter-spacing: 5px;
   margin: 0px;
-  font-size: 50px;
+  font-size: 80px;
 `;
