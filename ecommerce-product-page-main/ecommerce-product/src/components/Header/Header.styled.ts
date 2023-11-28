@@ -17,7 +17,7 @@ export const HeaderSectionLogo = styled.div`
   display: flex;
   padding: 15px;
   justify-content: center;
-  margin-left: 50px;
+  margin-left: 100px;
 `;
 
 export const HeaderSectionLink = styled.div`
@@ -44,6 +44,14 @@ export const HeaderSectionSingleLink = styled.div`
   color: var(--neutral-dark-grayish-blue);
 `;
 
+export const HeaderSectionRightSide = styled.div`
+  position: static;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  margin-right: 100px;
+`;
+
 export const HeaderSectionCart = styled.div`
   position: static;
   flex-direction: column;
@@ -58,7 +66,6 @@ export const HeaderSectionAvatar = styled.div`
   display: flex;
   padding: 15px;
   justify-content: center;
-  margin-right: 50px;
 
   img {
     width: 50px;
