@@ -6,8 +6,9 @@ export const TitleSection = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 200px;
   color: var(--neutral-white);
   letter-spacing: 5px;
   background-color: var(--neutral-very-dark-blue);
+  font-size: 20px;
 `;

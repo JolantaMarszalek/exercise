@@ -20,6 +20,24 @@ export const CardSection = styled.div`
   width: 100%;
   height: auto;
   background-color: var(--neutral-very-dark-blue);
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
 `;
 
 export const CardStyled = styled.div`
@@ -33,7 +51,13 @@ export const CardStyled = styled.div`
   height: 150px;
   margin: 10px;
   border-radius: 10px;
-  background-color: var(--neutral-dark-desaturated-blue);
+  /* background-color: var(--neutral-dark-desaturated-blue); */
+  background-image: linear-gradient(
+    to bottom,
+    hsl(240, 21%, 22%),
+    hsl(236, 21%, 26%)
+  );
+  box-shadow: 0px 15px var(--neutral-very-dark-blue-mostly-black);
 `;
 
 export const SingleCardStyled = styled.div`
@@ -45,43 +69,14 @@ export const SingleCardStyled = styled.div`
   position: relative;
 `;
 
-// export const CardStyledTop = styled.div`
-//   display: flex;
-//   /* padding: 10px; */
-//   justify-content: center;
-//   //width: 200px;
-//   // height: 200px;
-//   /* margin: 10px; */
-//   justify-content: center;
-//   height: 100%;
-//   width: 50%;
-//   overflow: hidden;
-//   border-radius: 10px;
-//   background-color: var(--neutral-dark-desaturated-blue);
-// `;
-
-// export const CardStyledBottom = styled.div`
-//   display: flex;
-//   /* padding: 10px; */
-//   justify-content: center;
-//   // width: 200px;
-//   //height: 200px;
-//   /* margin: 10px; */
-//   justify-content: center;
-//   height: 100%;
-//   width: 50%;
-//   overflow: hidden;
-//   border-radius: 10px;
-//   background-color: var(--neutral-dark-desaturated-blue);
-// `;
-
 export const TextUnderCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: auto;
-  color: var(--neutral-white);
+  height: 50px;
+  color: var(--primary-grayish-blue);
   letter-spacing: 5px;
 `;
 
@@ -94,5 +89,5 @@ export const NumbersCard = styled.div`
   color: var(--primary-soft-red);
   letter-spacing: 5px;
   margin: 0px;
-  font-size: 50px;
+  font-size: 80px;
 `;
