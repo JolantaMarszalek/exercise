@@ -51,3 +51,67 @@ export const MiddleSectionRightSide = styled.section`
   @media (max-width: 600px) {
   }
 `;
+
+export const TitleCompany = styled.section`
+  display: flex;
+  height: auto;
+  position: static;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+  background-color: gray;
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const Title = styled.section`
+  display: flex;
+  height: auto;
+  position: static;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+  background-color: gray;
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const Describe = styled.section`
+  display: flex;
+  height: auto;
+  position: static;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+  background-color: gray;
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const Price = styled.section`
+  display: flex;
+  height: auto;
+  position: static;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+  background-color: gray;
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
