@@ -182,15 +182,25 @@ export const ButtonSection = styled.section`
 `;
 
 export const Button = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   width: 200px;
   outline: none;
   border: none;
   border-radius: 10px;
+  /* font-size: 15px; */
+  font-weight: bold;
   padding: 0;
   box-sizing: border-box;
   background-color: var(--primary-orange);
   color: var(--neutral-white);
+
+  svg {
+    margin-right: 10px;
+    fill: var(--neutral-white);
+  }
 
   @media (max-width: 1024px) {
   }
