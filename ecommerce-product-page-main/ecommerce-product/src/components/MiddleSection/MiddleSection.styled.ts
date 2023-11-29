@@ -23,6 +23,7 @@ export const MiddleSectionLeftSide = styled.section`
   display: flex;
   padding: 15px;
   justify-content: center;
+  margin-left: 20px;
 
   @media (max-width: 1024px) {
   }
@@ -35,11 +36,10 @@ export const ProductImage = styled.div`
   display: flex;
   height: auto;
   position: static;
+  align-content: center;
   flex-direction: column;
   padding: 15px;
   justify-content: center;
-  font-weight: bold;
-  color: var(--primary-orange);
 
   img {
     width: auto;
@@ -61,9 +61,7 @@ export const SmallImages = styled.div`
   flex-direction: row;
   padding: 15px;
   justify-content: center;
-  font-weight: bold;
   color: var(--primary-orange);
-  width: auto;
 
   img {
     width: auto;
@@ -85,7 +83,6 @@ export const SinleSmallImage = styled.div`
   flex-direction: column;
   padding: 15px;
   justify-content: center;
-  font-weight: bold;
   color: var(--primary-orange);
 
   img {
@@ -109,6 +106,7 @@ export const MiddleSectionRightSide = styled.section`
   flex-direction: column;
   padding: 15px;
   justify-content: center;
+  margin-right: 20px;
 
   @media (max-width: 1024px) {
   }
