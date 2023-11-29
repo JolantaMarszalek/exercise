@@ -100,6 +100,22 @@ export const Describe = styled.section`
   }
 `;
 
+export const PricePercentSection = styled.section`
+  display: flex;
+  height: auto;
+  position: static;
+  /* flex-direction: column; */
+  /* padding: 15px; */
+  /* justify-content: center; */
+  background-color: gray;
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
 export const Price = styled.section`
   display: flex;
   height: auto;
@@ -108,6 +124,72 @@ export const Price = styled.section`
   padding: 15px;
   justify-content: center;
   background-color: gray;
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const OldPrice = styled.section`
+  display: flex;
+  height: auto;
+  position: static;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+  background-color: gray;
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const Percent = styled.section`
+  display: flex;
+  height: auto;
+  position: static;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+  background-color: gray;
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const ButtonSection = styled.section`
+  display: flex;
+  height: auto;
+  position: static;
+  /* flex-direction: column; */
+  /* padding: 15px; */
+  /* justify-content: center; */
+  background-color: gray;
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const Button = styled.button`
+  height: 50px;
+  width: 200px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--primary-orange);
+  color: var(--neutral-white);
 
   @media (max-width: 1024px) {
   }
