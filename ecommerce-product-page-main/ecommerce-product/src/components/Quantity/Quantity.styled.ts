@@ -22,7 +22,7 @@ export const SmallButtonLeft = styled.button`
   border-radius: 10px 0 0 10px;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--neutral-grayish-blue);
+  background-color: var(--neutral-light-grayish-blue);
 
   @media (max-width: 1024px) {
   }
@@ -39,7 +39,7 @@ export const SmallButtonRight = styled.button`
   border-radius: 0 10px 10px 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--neutral-grayish-blue);
+  background-color: var(--neutral-light-grayish-blue);
 
   @media (max-width: 1024px) {
   }
@@ -58,7 +58,9 @@ export const Input = styled.input`
   padding: 0;
   border: none;
   text-align: center;
-  background-color: var(--neutral-grayish-blue);
+  font-weight: bold;
+  font-size: 18px;
+  background-color: var(--neutral-light-grayish-blue);
 
   @media (max-width: 1024px) {
   }

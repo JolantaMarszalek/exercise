@@ -60,6 +60,8 @@ export const TitleCompany = styled.section`
   flex-direction: column;
   padding: 15px;
   justify-content: center;
+  font-weight: bold;
+  color: var(--primary-orange);
 
   @media (max-width: 1024px) {
   }
@@ -75,6 +77,8 @@ export const Title = styled.section`
   flex-direction: column;
   padding: 15px;
   justify-content: center;
+  font-weight: bold;
+  font-size: 40px;
 
   @media (max-width: 1024px) {
   }
@@ -90,6 +94,7 @@ export const Describe = styled.section`
   flex-direction: column;
   padding: 15px;
   justify-content: center;
+  color: var(--neutral-dark-grayish-blue);
 
   @media (max-width: 1024px) {
   }
@@ -102,10 +107,7 @@ export const PricePercentSection = styled.section`
   display: flex;
   height: auto;
   position: static;
-  /* flex-direction: column; */
-  /* padding: 15px; */
-  /* justify-content: center; */
-
+  align-items: center;
   @media (max-width: 1024px) {
   }
 
@@ -120,6 +122,8 @@ export const Price = styled.section`
   flex-direction: column;
   padding: 15px;
   justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
 
   @media (max-width: 1024px) {
   }
@@ -135,6 +139,9 @@ export const OldPrice = styled.section`
   flex-direction: column;
   padding: 15px;
   justify-content: center;
+  font-weight: bold;
+  text-decoration: line-through;
+  color: var(--neutral-grayish-blue);
 
   @media (max-width: 1024px) {
   }
@@ -148,8 +155,12 @@ export const Percent = styled.section`
   height: auto;
   position: static;
   flex-direction: column;
-  padding: 15px;
+  padding: 5px;
+  border-radius: 5px;
   justify-content: center;
+  font-weight: bold;
+  color: var(--primary-orange);
+  background-color: var(--primary-pale-orange);
 
   @media (max-width: 1024px) {
   }
