@@ -16,7 +16,7 @@ export const MiddleSectionStyle = styled.section`
 
 export const MiddleSectionLeftSide = styled.section`
   display: flex;
-
+  width: 50%;
   height: auto;
   position: static;
   flex-direction: column;
@@ -27,6 +27,7 @@ export const MiddleSectionLeftSide = styled.section`
   img {
     width: auto;
     height: auto;
+    border-radius: 10px;
   }
 
   @media (max-width: 1024px) {
@@ -38,6 +39,7 @@ export const MiddleSectionLeftSide = styled.section`
 
 export const MiddleSectionRightSide = styled.section`
   display: flex;
+  width: 50%;
   height: auto;
   position: static;
   flex-direction: column;

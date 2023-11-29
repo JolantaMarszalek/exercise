@@ -13,7 +13,7 @@ import {
   TitleCompany,
 } from "./MiddleSection.styled";
 
-import imageProduct1 from "../../../../images/image-product-1-thumbnail.jpg";
+import imageProduct1 from "../../../../images/image-product-1.jpg";
 import Quantity from "../Quantity/Quantity.component";
 
 export const MiddleSection = () => {
