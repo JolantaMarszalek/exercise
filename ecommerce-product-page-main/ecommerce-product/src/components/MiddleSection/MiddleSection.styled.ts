@@ -43,7 +43,6 @@ export const MiddleSectionRightSide = styled.section`
   flex-direction: column;
   padding: 15px;
   justify-content: center;
-  background-color: gray;
 
   @media (max-width: 1024px) {
   }
@@ -59,7 +58,6 @@ export const TitleCompany = styled.section`
   flex-direction: column;
   padding: 15px;
   justify-content: center;
-  background-color: gray;
 
   @media (max-width: 1024px) {
   }
@@ -75,7 +73,6 @@ export const Title = styled.section`
   flex-direction: column;
   padding: 15px;
   justify-content: center;
-  background-color: gray;
 
   @media (max-width: 1024px) {
   }
@@ -91,7 +88,6 @@ export const Describe = styled.section`
   flex-direction: column;
   padding: 15px;
   justify-content: center;
-  background-color: gray;
 
   @media (max-width: 1024px) {
   }
@@ -107,7 +103,6 @@ export const PricePercentSection = styled.section`
   /* flex-direction: column; */
   /* padding: 15px; */
   /* justify-content: center; */
-  background-color: gray;
 
   @media (max-width: 1024px) {
   }
@@ -123,7 +118,6 @@ export const Price = styled.section`
   flex-direction: column;
   padding: 15px;
   justify-content: center;
-  background-color: gray;
 
   @media (max-width: 1024px) {
   }
@@ -139,7 +133,6 @@ export const OldPrice = styled.section`
   flex-direction: column;
   padding: 15px;
   justify-content: center;
-  background-color: gray;
 
   @media (max-width: 1024px) {
   }
@@ -155,7 +148,6 @@ export const Percent = styled.section`
   flex-direction: column;
   padding: 15px;
   justify-content: center;
-  background-color: gray;
 
   @media (max-width: 1024px) {
   }
@@ -168,11 +160,7 @@ export const ButtonSection = styled.section`
   display: flex;
   height: auto;
   position: static;
-  /* flex-direction: column; */
-  /* padding: 15px; */
-  /* justify-content: center; */
-  background-color: gray;
-
+  align-items: center;
   @media (max-width: 1024px) {
   }
 

@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { Input, QuanitySectionStyle, SmallButton } from "./Quantity.styled";
+import {
+  Input,
+  QuanitySectionStyle,
+  SmallButtonLeft,
+  SmallButtonRight,
+} from "./Quantity.styled";
 
 const Quantity: React.FC = () => {
   const [quantity, setQuantity] = useState<number>(0);
@@ -18,13 +23,13 @@ const Quantity: React.FC = () => {
     <QuanitySectionStyle>
       {" "}
       {/* <div className="quantity"> */}
-      <SmallButton onClick={decreaseQuantity}>-</SmallButton>
+      <SmallButtonLeft onClick={decreaseQuantity}>-</SmallButtonLeft>
       {/* <button className="decrease" onClick={decreaseQuantity}>
         -
       </button> */}
       <Input value={quantity} readOnly></Input>
       {/* <input type="text" className="quantity-input" value={quantity} readOnly /> */}
-      <SmallButton onClick={increaseQuantity}>+</SmallButton>
+      <SmallButtonRight onClick={increaseQuantity}>+</SmallButtonRight>
       {/* <button className="increase" onClick={increaseQuantity}>
         +
       </button> */}
