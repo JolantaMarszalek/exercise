@@ -24,6 +24,70 @@ export const MiddleSectionLeftSide = styled.section`
   padding: 15px;
   justify-content: center;
 
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const ProductImage = styled.div`
+  display: flex;
+  height: auto;
+  position: static;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--primary-orange);
+
+  img {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const SmallImages = styled.div`
+  display: flex;
+  height: auto;
+  position: static;
+  flex-direction: row;
+  padding: 15px;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--primary-orange);
+  width: auto;
+
+  img {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const SinleSmallImage = styled.div`
+  display: flex;
+  height: auto;
+  position: static;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--primary-orange);
+
   img {
     width: auto;
     height: auto;
@@ -53,7 +117,7 @@ export const MiddleSectionRightSide = styled.section`
   }
 `;
 
-export const TitleCompany = styled.section`
+export const TitleCompany = styled.div`
   display: flex;
   height: auto;
   position: static;
@@ -70,7 +134,7 @@ export const TitleCompany = styled.section`
   }
 `;
 
-export const Title = styled.section`
+export const Title = styled.div`
   display: flex;
   height: auto;
   position: static;
@@ -87,7 +151,7 @@ export const Title = styled.section`
   }
 `;
 
-export const Describe = styled.section`
+export const Describe = styled.div`
   display: flex;
   height: auto;
   position: static;
@@ -103,7 +167,7 @@ export const Describe = styled.section`
   }
 `;
 
-export const PricePercentSection = styled.section`
+export const PricePercentSection = styled.div`
   display: flex;
   height: auto;
   position: static;
@@ -115,7 +179,7 @@ export const PricePercentSection = styled.section`
   }
 `;
 
-export const Price = styled.section`
+export const Price = styled.div`
   display: flex;
   height: auto;
   position: static;
@@ -132,7 +196,7 @@ export const Price = styled.section`
   }
 `;
 
-export const OldPrice = styled.section`
+export const OldPrice = styled.div`
   display: flex;
   height: auto;
   position: static;
@@ -150,7 +214,7 @@ export const OldPrice = styled.section`
   }
 `;
 
-export const Percent = styled.section`
+export const Percent = styled.div`
   display: flex;
   height: auto;
   position: static;
@@ -169,7 +233,7 @@ export const Percent = styled.section`
   }
 `;
 
-export const ButtonSection = styled.section`
+export const ButtonSection = styled.div`
   display: flex;
   height: auto;
   position: static;

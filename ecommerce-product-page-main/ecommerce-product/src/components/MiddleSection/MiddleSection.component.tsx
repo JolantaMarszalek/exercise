@@ -9,20 +9,45 @@ import {
   Percent,
   Price,
   PricePercentSection,
+  ProductImage,
+  SinleSmallImage,
+  SmallImages,
   Title,
   TitleCompany,
 } from "./MiddleSection.styled";
 import Quantity from "../Quantity/Quantity.component";
 import imageProduct1 from "../../../../images/image-product-1.jpg";
+import imageProduct1Small from "../../../../images/image-product-1-thumbnail.jpg";
+import imageProduct2Small from "../../../../images/image-product-2-thumbnail.jpg";
+import imageProduct3Small from "../../../../images/image-product-3-thumbnail.jpg";
+import imageProduct4Small from "../../../../images/image-product-4-thumbnail.jpg";
 
 export const MiddleSection = () => {
   return (
     <>
       <MiddleSectionStyle>
         <MiddleSectionLeftSide>
-          {" "}
-          <img src={imageProduct1} />
-          {/* <img src="../../../../images/image-product-1-thumbnail.jpg" /> */}
+          <ProductImage>
+            <img src={imageProduct1} />
+            {/* <img src="../../../../images/image-product-1-thumbnail.jpg" /> */}
+          </ProductImage>
+          <SmallImages>
+            <SinleSmallImage>
+              <img src={imageProduct1Small} />
+            </SinleSmallImage>
+            <SinleSmallImage>
+              {" "}
+              <img src={imageProduct2Small} />
+            </SinleSmallImage>
+            <SinleSmallImage>
+              {" "}
+              <img src={imageProduct3Small} />
+            </SinleSmallImage>
+            <SinleSmallImage>
+              {" "}
+              <img src={imageProduct4Small} />
+            </SinleSmallImage>
+          </SmallImages>
         </MiddleSectionLeftSide>
         <MiddleSectionRightSide>
           <TitleCompany>SNEAKER COMPANY</TitleCompany>
