@@ -6,6 +6,8 @@ export const MiddleSectionStyle = styled.section`
   justify-content: center;
   height: auto;
   padding: 15px;
+  /* width: 80%; */
+  margin: 0;
 
   @media (max-width: 1024px) {
   }
@@ -16,7 +18,7 @@ export const MiddleSectionStyle = styled.section`
 
 export const MiddleSectionLeftSide = styled.section`
   display: flex;
-  width: 50%;
+  width: 40%;
   height: auto;
   position: static;
   flex-direction: column;
@@ -61,10 +63,11 @@ export const SmallImages = styled.div`
   flex-direction: row;
   padding: 15px;
   justify-content: center;
+  overflow: hidden;
   color: var(--primary-orange);
 
   img {
-    width: auto;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
   }
@@ -100,7 +103,7 @@ export const SinleSmallImage = styled.div`
 
 export const MiddleSectionRightSide = styled.section`
   display: flex;
-  width: 50%;
+  width: 40%;
   height: auto;
   position: static;
   flex-direction: column;
@@ -170,6 +173,7 @@ export const PricePercentSection = styled.div`
   height: auto;
   position: static;
   align-items: center;
+
   @media (max-width: 1024px) {
   }
 
@@ -236,6 +240,7 @@ export const ButtonSection = styled.div`
   height: auto;
   position: static;
   align-items: center;
+
   @media (max-width: 1024px) {
   }
 
