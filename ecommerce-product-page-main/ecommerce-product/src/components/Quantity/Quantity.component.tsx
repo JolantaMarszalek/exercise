@@ -36,7 +36,7 @@ const Quantity: React.FC = () => {
               id="a"
             />
           </defs>
-          <use fill="#FF7E1B" fill-rule="nonzero" xlinkHref="#a" />
+          <use fill="#FF7E1B" fillRule="nonzero" xlinkHref="#a" />
         </svg>
       </SmallButtonLeft>
       {/* <button className="decrease" onClick={decreaseQuantity}>
@@ -56,7 +56,7 @@ const Quantity: React.FC = () => {
               id="b"
             />
           </defs>
-          <use fill="#FF7E1B" fill-rule="nonzero" xlinkHref="#b" />
+          <use fill="#FF7E1B" fillRule="nonzero" xlinkHref="#b" />
         </svg>
       </SmallButtonRight>
       {/* <button className="increase" onClick={increaseQuantity}>
