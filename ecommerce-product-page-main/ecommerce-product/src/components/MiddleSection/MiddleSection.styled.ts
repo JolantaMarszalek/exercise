@@ -282,8 +282,8 @@ export const CloseButton = styled.button`
   font-size: 20px;
   cursor: pointer;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 50px;
+  right: 350px;
   z-index: 10001;
   color: #fff;
 `;

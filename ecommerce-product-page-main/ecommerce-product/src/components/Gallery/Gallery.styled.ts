@@ -23,17 +23,20 @@ export const ThumbnailContainer = styled.div`
 `;
 
 export const Thumbnail = styled.img`
-  width: 80px;
+  width: 100px;
   height: auto;
   cursor: pointer;
+  padding: 10px;
+  border-radius: 20px;
 `;
 
 export const MainImage = styled.img`
-  width: 300px;
+  width: 500px;
   height: auto;
   display: block;
   margin: 0 auto;
   cursor: pointer;
+  border-radius: 10px;
 `;
 
 export const Arrow = styled.div`
@@ -52,21 +55,27 @@ export const Arrow = styled.div`
 `;
 
 export const LeftArrow = styled(Arrow)`
-  left: 10px;
+  left: 250px;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
 `;
 
 export const RightArrow = styled(Arrow)`
-  right: 10px;
+  right: 250px;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
 `;
 
-export const CloseButton = styled.button`
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 10001;
-  color: #fff;
-`;
+// export const CloseButton = styled.button`
+//   background: none;
+//   border: none;
+//   font-size: 20px;
+//   cursor: pointer;
+//   position: absolute;
+//   top: 10px;
+//   right: 10px;
+//   z-index: 10001;
+//   color: #fff;
+// `;
