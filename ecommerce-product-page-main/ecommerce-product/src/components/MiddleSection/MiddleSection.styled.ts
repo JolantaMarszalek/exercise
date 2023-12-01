@@ -275,3 +275,15 @@ export const Button = styled.button`
   @media (max-width: 600px) {
   }
 `;
+
+export const CloseButton = styled.button`
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10001;
+  color: #fff;
+`;

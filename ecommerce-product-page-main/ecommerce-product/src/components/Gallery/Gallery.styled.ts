@@ -1,12 +1,18 @@
 import styled from "styled-components";
 
 export const GalleryContainer = styled.div`
-  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  z-index: 9999;
+  position: absolute;
+  background-color: hsla(0, 0%, 0%, 0.75);
 `;
 
 export const ThumbnailContainer = styled.div`
@@ -61,4 +67,6 @@ export const CloseButton = styled.button`
   position: absolute;
   top: 10px;
   right: 10px;
+  z-index: 10001;
+  color: #fff;
 `;

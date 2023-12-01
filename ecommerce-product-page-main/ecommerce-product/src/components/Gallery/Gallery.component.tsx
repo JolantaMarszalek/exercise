@@ -10,7 +10,7 @@ import imageProduct4 from "../../../../images/image-product-4.jpg";
 // import imageProduct3Small from "../../../../images/image-product-3-thumbnail.jpg";
 // import imageProduct4Small from "../../../../images/image-product-4-thumbnail.jpg";
 import {
-  CloseButton,
+  //   CloseButton,
   GalleryContainer,
   LeftArrow,
   MainImage,
@@ -92,7 +92,7 @@ const GalleryComponent: React.FC<GalleryProps> = ({
         )}{" "}
         <LeftArrow onClick={goToPrevious}>{"<"}</LeftArrow>
         <RightArrow onClick={goToNext}>{">"}</RightArrow>
-        <CloseButton onClick={closeLightbox}>X</CloseButton>
+        {/* <CloseButton onClick={closeLightbox}>X</CloseButton> */}
       </GalleryContainer>
     </>
   );

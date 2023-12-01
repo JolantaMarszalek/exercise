@@ -1,6 +1,7 @@
 import {
   Button,
   ButtonSection,
+  CloseButton,
   Describe,
   MiddleSectionLeftSide,
   MiddleSectionRightSide,
@@ -57,13 +58,13 @@ export const MiddleSection = () => {
               </SinleSmallImage>
             ))}
           </SmallImages>
-          {lightboxOpen && (
+          {/* {lightboxOpen && (
             <GalleryComponent
               images={images}
               selectedIndex={selectedImageIndex}
               onClose={closeLightbox}
             />
-          )}
+          )} */}
           {/* <ProductImage>
             <img src={imageProduct1} />
           </ProductImage> */}
@@ -114,6 +115,16 @@ export const MiddleSection = () => {
           </ButtonSection>
         </MiddleSectionRightSide>
       </MiddleSectionStyle>
+      {lightboxOpen && (
+        <>
+          <GalleryComponent
+            images={images}
+            selectedIndex={selectedImageIndex}
+            onClose={closeLightbox}
+          />
+          <CloseButton onClick={closeLightbox}>X</CloseButton>
+        </>
+      )}
     </>
   );
 };
