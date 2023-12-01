@@ -286,4 +286,15 @@ export const CloseButton = styled.button`
   right: 350px;
   z-index: 10001;
   color: #fff;
+
+  svg {
+    path {
+      transition: stroke 0.3s ease;
+    }
+    &:hover {
+      path {
+        stroke: var(--primary-orange);
+      }
+    }
+  }
 `;

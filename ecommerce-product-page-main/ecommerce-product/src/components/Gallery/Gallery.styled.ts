@@ -59,6 +59,17 @@ export const LeftArrow = styled(Arrow)`
   border-radius: 100px;
   width: 50px;
   height: 50px;
+
+  svg {
+    path {
+      transition: stroke 0.3s ease;
+    }
+    &:hover {
+      path {
+        stroke: var(--primary-orange);
+      }
+    }
+  }
 `;
 
 export const RightArrow = styled(Arrow)`
@@ -66,6 +77,17 @@ export const RightArrow = styled(Arrow)`
   border-radius: 100px;
   width: 50px;
   height: 50px;
+
+  svg {
+    path {
+      transition: stroke 0.3s ease;
+    }
+    &:hover {
+      path {
+        stroke: var(--primary-orange);
+      }
+    }
+  }
 `;
 
 // export const CloseButton = styled.button`
