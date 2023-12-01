@@ -6,23 +6,28 @@ import {
   SmallButtonRight,
 } from "./Quantity.styled";
 
-const Quantity: React.FC = () => {
+interface QuantityProps {
+  onChange: (value: number) => void;
+}
+
+const Quantity: React.FC<QuantityProps> = ({ onChange }) => {
   const [quantity, setQuantity] = useState<number>(0);
 
   const decreaseQuantity = () => {
     if (quantity > 0) {
       setQuantity(quantity - 1);
+      onChange(quantity - 1);
     }
   };
 
   const increaseQuantity = () => {
     setQuantity(quantity + 1);
+    onChange(quantity + 1);
   };
 
   return (
     <QuanitySectionStyle>
       {" "}
-      {/* <div className="quantity"> */}
       <SmallButtonLeft onClick={decreaseQuantity}>
         {" "}
         <svg
@@ -36,14 +41,10 @@ const Quantity: React.FC = () => {
               id="a"
             />
           </defs>
-          <use fill="#FF7E1B" fill-rule="nonzero" xlinkHref="#a" />
+          <use fill="#FF7E1B" fillRule="nonzero" xlinkHref="#a" />
         </svg>
       </SmallButtonLeft>
-      {/* <button className="decrease" onClick={decreaseQuantity}>
-        -
-      </button> */}
       <Input value={quantity} readOnly></Input>
-      {/* <input type="text" className="quantity-input" value={quantity} readOnly /> */}
       <SmallButtonRight onClick={increaseQuantity}>
         <svg
           width="12"
@@ -56,13 +57,9 @@ const Quantity: React.FC = () => {
               id="b"
             />
           </defs>
-          <use fill="#FF7E1B" fill-rule="nonzero" xlinkHref="#b" />
+          <use fill="#FF7E1B" fillRule="nonzero" xlinkHref="#b" />
         </svg>
       </SmallButtonRight>
-      {/* <button className="increase" onClick={increaseQuantity}>
-        +
-      </button> */}
-      {/* </div> */}
     </QuanitySectionStyle>
   );
 };
