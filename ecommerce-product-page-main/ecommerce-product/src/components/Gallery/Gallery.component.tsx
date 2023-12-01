@@ -5,10 +5,10 @@ import imageProduct1 from "../../../../images/image-product-1.jpg";
 import imageProduct2 from "../../../../images/image-product-2.jpg";
 import imageProduct3 from "../../../../images/image-product-3.jpg";
 import imageProduct4 from "../../../../images/image-product-4.jpg";
-import imageProduct1Small from "../../../../images/image-product-1-thumbnail.jpg";
-import imageProduct2Small from "../../../../images/image-product-2-thumbnail.jpg";
-import imageProduct3Small from "../../../../images/image-product-3-thumbnail.jpg";
-import imageProduct4Small from "../../../../images/image-product-4-thumbnail.jpg";
+// import imageProduct1Small from "../../../../images/image-product-1-thumbnail.jpg";
+// import imageProduct2Small from "../../../../images/image-product-2-thumbnail.jpg";
+// import imageProduct3Small from "../../../../images/image-product-3-thumbnail.jpg";
+// import imageProduct4Small from "../../../../images/image-product-4-thumbnail.jpg";
 import {
   CloseButton,
   GalleryContainer,
@@ -25,20 +25,20 @@ interface GalleryProps {
 
 const GalleryComponent: React.FC<GalleryProps> = ({
   images,
-  selectedIndex,
-  onClose,
+  //   selectedIndex,
+  //   onClose,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
 
-  const pictures = [
-    imageProduct1Small,
-    imageProduct2Small,
-    imageProduct3Small,
-    imageProduct4Small,
-  ];
+  //   const pictures: string[] = [
+  //     imageProduct1Small,
+  //     imageProduct2Small,
+  //     imageProduct3Small,
+  //     imageProduct4Small,
+  //   ];
 
-  const thumbnails = [
+  const thumbnails: string[] = [
     imageProduct1,
     imageProduct2,
     imageProduct3,

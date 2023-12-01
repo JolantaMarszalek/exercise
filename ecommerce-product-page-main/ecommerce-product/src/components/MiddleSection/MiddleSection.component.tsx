@@ -28,7 +28,7 @@ export const MiddleSection = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
-  const images = [
+  const images: string[] = [
     imageProduct1Small,
     imageProduct2Small,
     imageProduct3Small,
