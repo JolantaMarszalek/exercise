@@ -1,7 +1,22 @@
 import { useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
-
+import imageProduct1 from "../../../../images/image-product-1.jpg";
+import imageProduct2 from "../../../../images/image-product-2.jpg";
+import imageProduct3 from "../../../../images/image-product-3.jpg";
+import imageProduct4 from "../../../../images/image-product-4.jpg";
+import imageProduct1Small from "../../../../images/image-product-1-thumbnail.jpg";
+import imageProduct2Small from "../../../../images/image-product-2-thumbnail.jpg";
+import imageProduct3Small from "../../../../images/image-product-3-thumbnail.jpg";
+import imageProduct4Small from "../../../../images/image-product-4-thumbnail.jpg";
+import {
+  CloseButton,
+  GalleryContainer,
+  LeftArrow,
+  MainImage,
+  RightArrow,
+  Thumbnail,
+} from "./Gallery.styled";
 interface GalleryProps {
   images: string[];
   selectedIndex: number;
@@ -17,17 +32,17 @@ const GalleryComponent: React.FC<GalleryProps> = ({
   const [photoIndex, setPhotoIndex] = useState(0);
 
   const pictures = [
-    "../../../../images/image-product-1.jpg",
-    "../../../../images/image-product-2.jpg",
-    "../../../../images/image-product-3.jpg",
-    "../../../../images/image-product-4.jpg",
+    imageProduct1Small,
+    imageProduct2Small,
+    imageProduct3Small,
+    imageProduct4Small,
   ];
 
   const thumbnails = [
-    "../../../../images/image-product-1-thumbnail.jpg",
-    "../../../../images/image-product-2-thumbnail.jpg",
-    "../../../../images/image-product-3-thumbnail.jpg",
-    "../../../../images/image-product-4-thumbnail.jpg",
+    imageProduct1,
+    imageProduct2,
+    imageProduct3,
+    imageProduct4,
   ];
 
   const openLightbox = (index: number) => {
@@ -39,33 +54,46 @@ const GalleryComponent: React.FC<GalleryProps> = ({
     setIsOpen(false);
   };
 
+  const goToPrevious = () => {
+    setPhotoIndex((photoIndex + images.length - 1) % images.length);
+  };
+
+  const goToNext = () => {
+    setPhotoIndex((photoIndex + 1) % images.length);
+  };
+
   return (
     <>
-      {thumbnails.map((thumbnail, index) => (
-        <img
-          key={index}
-          src={thumbnail}
-          alt={`Thumbnail ${index}`}
-          onClick={() => openLightbox(index)}
+      <GalleryContainer>
+        <MainImage
+          src={thumbnails[photoIndex]}
+          alt={`Main Image`}
+          onClick={() => openLightbox(photoIndex)}
         />
-      ))}
-
-      {isOpen && (
-        <Lightbox
-          mainSrc={pictures[photoIndex]}
-          nextSrc={pictures[(photoIndex + 1) % pictures.length]}
-          prevSrc={
-            pictures[(photoIndex + pictures.length - 1) % pictures.length]
-          }
-          onCloseRequest={closeLightbox}
-          onMovePrevRequest={() =>
-            setPhotoIndex((photoIndex + pictures.length - 1) % pictures.length)
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % pictures.length)
-          }
-        />
-      )}
+        <div>
+          {thumbnails.map((thumbnail, index) => (
+            <Thumbnail
+              key={index}
+              src={thumbnail}
+              alt={`Thumbnail ${index}`}
+              onClick={() => openLightbox(index)}
+            />
+          ))}
+        </div>
+        {isOpen && (
+          <Lightbox
+            mainSrc={images[photoIndex]}
+            nextSrc={images[(photoIndex + 1) % images.length]}
+            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            onCloseRequest={closeLightbox}
+            onMovePrevRequest={goToPrevious}
+            onMoveNextRequest={goToNext}
+          />
+        )}{" "}
+        <LeftArrow onClick={goToPrevious}>{"<"}</LeftArrow>
+        <RightArrow onClick={goToNext}>{">"}</RightArrow>
+        <CloseButton onClick={closeLightbox}>X</CloseButton>
+      </GalleryContainer>
     </>
   );
 };
