@@ -4,10 +4,10 @@ export const MiddleSectionStyle = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto;
   padding: 15px;
-  /* width: 80%; */
   margin: 0;
+  z-index: 1;
+  position: relative;
 
   @media (max-width: 1024px) {
   }
@@ -23,7 +23,7 @@ export const MiddleSectionLeftSide = styled.section`
   position: static;
   flex-direction: column;
   display: flex;
-  padding: 15px;
+  padding: 10px;
   justify-content: center;
   margin-left: 20px;
 
@@ -39,12 +39,13 @@ export const ProductImage = styled.div`
   height: auto;
   position: static;
   align-content: center;
+  align-items: center;
   flex-direction: column;
-  padding: 15px;
+  padding: 10px;
   justify-content: center;
 
   img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 10px;
   }
@@ -61,13 +62,14 @@ export const SmallImages = styled.div`
   height: auto;
   position: static;
   flex-direction: row;
-  padding: 15px;
+  padding: 10px;
   justify-content: center;
   overflow: hidden;
+  align-items: center;
   color: var(--primary-orange);
 
   img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 10px;
   }
@@ -84,8 +86,9 @@ export const SingleSmallImage = styled.div`
   height: auto;
   position: static;
   flex-direction: column;
-  padding: 15px;
+  padding: 10px;
   justify-content: center;
+  align-items: center;
   color: var(--primary-orange);
 
   img {
@@ -107,7 +110,7 @@ export const MiddleSectionRightSide = styled.section`
   height: auto;
   position: static;
   flex-direction: column;
-  padding: 15px;
+  padding: 10px;
   justify-content: center;
   margin-right: 20px;
 
@@ -123,7 +126,7 @@ export const TitleCompany = styled.div`
   height: auto;
   position: static;
   flex-direction: column;
-  padding: 15px;
+  padding: 10px;
   justify-content: center;
   font-weight: bold;
   color: var(--primary-orange);
@@ -140,7 +143,7 @@ export const Title = styled.div`
   height: auto;
   position: static;
   flex-direction: column;
-  padding: 15px;
+  padding: 10px;
   justify-content: center;
   font-weight: bold;
   font-size: 40px;
@@ -157,7 +160,7 @@ export const Describe = styled.div`
   height: auto;
   position: static;
   flex-direction: column;
-  padding: 15px;
+  padding: 10px;
   justify-content: center;
   color: var(--neutral-dark-grayish-blue);
 
@@ -186,7 +189,7 @@ export const Price = styled.div`
   height: auto;
   position: static;
   flex-direction: column;
-  padding: 15px;
+  padding: 10px;
   justify-content: center;
   font-weight: bold;
   font-size: 30px;
@@ -203,7 +206,7 @@ export const OldPrice = styled.div`
   height: auto;
   position: static;
   flex-direction: column;
-  padding: 15px;
+  padding: 10px;
   justify-content: center;
   font-weight: bold;
   text-decoration: line-through;
