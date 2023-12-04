@@ -44,7 +44,7 @@ export const ProductImage = styled.div`
   justify-content: center;
 
   img {
-    width: auto;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
   }
@@ -79,7 +79,7 @@ export const SmallImages = styled.div`
   }
 `;
 
-export const SinleSmallImage = styled.div`
+export const SingleSmallImage = styled.div`
   display: flex;
   height: auto;
   position: static;

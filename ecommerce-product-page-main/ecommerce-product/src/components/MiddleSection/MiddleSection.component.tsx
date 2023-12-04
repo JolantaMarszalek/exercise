@@ -11,7 +11,7 @@ import {
   Price,
   PricePercentSection,
   ProductImage,
-  SinleSmallImage,
+  SingleSmallImage,
   SmallImages,
   Title,
   TitleCompany,
@@ -81,9 +81,9 @@ export const MiddleSection = () => {
           </ProductImage>
           <SmallImages>
             {images.map((image, index) => (
-              <SinleSmallImage key={index} onClick={() => openLightbox(index)}>
+              <SingleSmallImage key={index} onClick={() => openLightbox(index)}>
                 <img src={image} alt={`Product ${index}`} />
-              </SinleSmallImage>
+              </SingleSmallImage>
             ))}
           </SmallImages>
         </MiddleSectionLeftSide>
