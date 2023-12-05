@@ -9,9 +9,13 @@ interface Product {
 
 interface CartProps {
   cartItems: Product[];
+  // addToCart: (product: Product) => void;
 }
 
-export const Cart: React.FC<CartProps> = ({ cartItems }) => {
+export const Cart: React.FC<CartProps> = ({
+  cartItems,
+  // addToCart
+}) => {
   // const [cartItems, setCartItems] = useState<Product[]>([]);
   return (
     <CartSection>
