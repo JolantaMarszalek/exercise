@@ -12,7 +12,7 @@ interface CartProps {
 }
 
 export const Cart: React.FC<CartProps> = ({ cartItems }) => {
-  //   const [cartItems, setCartItems] = useState<Product[]>([]);
+  // const [cartItems, setCartItems] = useState<Product[]>([]);
   return (
     <CartSection>
       <h3>Your Cart</h3>
