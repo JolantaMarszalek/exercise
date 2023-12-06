@@ -1,11 +1,5 @@
 import { CartSection } from "./Cart.styled";
 
-// interface Product {
-//   id: number;
-//   name: string;
-//   price: number;
-//   quantity: number;
-// }
 interface CartItem {
   id?: number;
   name?: string;
@@ -16,14 +10,9 @@ interface CartItem {
 
 interface CartProps {
   cartItems: CartItem[];
-  // addToCart: (product: Product) => void;
 }
 
-export const Cart: React.FC<CartProps> = ({
-  cartItems,
-  // addToCart
-}) => {
-  // const [cartItems, setCartItems] = useState<Product[]>([]);
+export const Cart: React.FC<CartProps> = ({ cartItems }) => {
   const totalAmount = cartItems.reduce((total, product) => {
     return total + product.price * product.quantity;
   }, 0);
@@ -45,13 +34,6 @@ export const Cart: React.FC<CartProps> = ({
       <h3>Cart</h3>
       <p>Total Items: {totalQuantity}</p>
       <p>Total Amount: ${totalAmount.toFixed(2)}</p>
-      {/* <ul>
-        {cartItems.map((product) => (
-          <li key={product.id}>
-            {product.name} - ${product.price} x {product.quantity}
-          </li>
-        ))}
-      </ul> */}
     </CartSection>
   );
 };

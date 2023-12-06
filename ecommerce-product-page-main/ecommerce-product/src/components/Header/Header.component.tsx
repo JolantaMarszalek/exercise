@@ -8,16 +8,8 @@ import {
   HeaderSectionRightSide,
 } from "./Header.styled";
 import { useState } from "react";
-
 import imageAvatar from "../../../../images/image-avatar.png";
 import { Cart } from "../Cart/Cart.component";
-
-// interface Product {
-//   id: number;
-//   name: string;
-//   price: number;
-//   quantity: number;
-// }
 
 interface CartItem {
   id?: number;
@@ -41,8 +33,6 @@ export const Header: React.FC<HeaderProps> = ({ cartItems }) => {
   const handleCartLeave = () => {
     setIsCartOpen(false);
   };
-
-  // const cartItems: Product[] = [];
 
   return (
     <HeaderSection>

@@ -40,13 +40,9 @@ interface MiddleSectionProps {
 export const MiddleSection: React.FC<MiddleSectionProps> = ({ addToCart }) => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-  // const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
   const [quantity, setQuantity] = useState<number>(1);
-  const [
-    price,
-    // setPrice
-  ] = useState<number>(125.0);
+  const [price] = useState<number>(125.0);
 
   const images: string[] = [
     imageProduct1Small,
@@ -64,24 +60,9 @@ export const MiddleSection: React.FC<MiddleSectionProps> = ({ addToCart }) => {
     setLightboxOpen(false);
   };
 
-  // const addToCart = () => {
-  //   const item = {
-  //     image: images[selectedImageIndex],
-  //     quantity: quantity,
-  //     price: price,
-  //   };
-
-  //   setCartItems([...cartItems, item]);
-  // };
-
   const handleQuantityChange = (value: number) => {
     setQuantity(value);
   };
-
-  // const addToCart = (productToAdd: CartItem) => {
-  //   const updatedCartItems = [...cartItems, productToAdd];
-  //   setCartItems(updatedCartItems);
-  // };
 
   return (
     <>
