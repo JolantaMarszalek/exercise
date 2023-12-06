@@ -5,7 +5,8 @@ export const CartSection = styled.div`
   border: 1px solid #ccc;
   padding: 10px;
   position: absolute;
-  top: 40px;
-  right: 0;
+  top: 80px;
+  right: 40px;
   z-index: 10;
+  width: 300px;
 `;
