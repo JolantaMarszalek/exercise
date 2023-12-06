@@ -19,7 +19,11 @@ interface Product {
   quantity: number;
 }
 
-export const Header = () => {
+interface HeaderProps {
+  cartItems: Product[];
+}
+
+export const Header: React.FC<HeaderProps> = ({ cartItems }) => {
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   const handleCartHover = () => {
@@ -30,7 +34,7 @@ export const Header = () => {
     setIsCartOpen(false);
   };
 
-  const cartItems: Product[] = [];
+  // const cartItems: Product[] = [];
 
   return (
     <HeaderSection>
