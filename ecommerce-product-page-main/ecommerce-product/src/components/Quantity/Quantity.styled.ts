@@ -54,7 +54,6 @@ export const Input = styled.input`
   justify-content: center;
   height: 50px;
   width: 50px;
-  /* padding: 15px; */
   padding: 0;
   border: none;
   text-align: center;
