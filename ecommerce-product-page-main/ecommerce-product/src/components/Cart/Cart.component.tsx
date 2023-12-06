@@ -1,14 +1,21 @@
 import { CartSection } from "./Cart.styled";
 
-interface Product {
-  id: number;
-  name: string;
-  price: number;
+// interface Product {
+//   id: number;
+//   name: string;
+//   price: number;
+//   quantity: number;
+// }
+interface CartItem {
+  id?: number;
+  name?: string;
+  image: string;
   quantity: number;
+  price: number;
 }
 
 interface CartProps {
-  cartItems: Product[];
+  cartItems: CartItem[];
   // addToCart: (product: Product) => void;
 }
 

@@ -12,15 +12,23 @@ import { useState } from "react";
 import imageAvatar from "../../../../images/image-avatar.png";
 import { Cart } from "../Cart/Cart.component";
 
-interface Product {
-  id: number;
-  name: string;
-  price: number;
+// interface Product {
+//   id: number;
+//   name: string;
+//   price: number;
+//   quantity: number;
+// }
+
+interface CartItem {
+  id?: number;
+  name?: string;
+  image: string;
   quantity: number;
+  price: number;
 }
 
 interface HeaderProps {
-  cartItems: Product[];
+  cartItems: CartItem[];
 }
 
 export const Header: React.FC<HeaderProps> = ({ cartItems }) => {

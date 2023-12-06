@@ -26,16 +26,18 @@ import GalleryComponent from "../Gallery/Gallery.component";
 import { useState } from "react";
 
 interface CartItem {
+  id?: number;
+  name?: string;
   image: string;
   quantity: number;
   price: number;
 }
 
-export const MiddleSection = ({
-  addToCart: handleAddToCart,
-}: {
+interface MiddleSectionProps {
   addToCart: (product: CartItem) => void;
-}) => {
+}
+
+export const MiddleSection: React.FC<MiddleSectionProps> = ({ addToCart }) => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   // const [cartItems, setCartItems] = useState<CartItem[]>([]);
@@ -113,7 +115,7 @@ export const MiddleSection = ({
             <Quantity onChange={handleQuantityChange} />
             <Button
               onClick={() =>
-                handleAddToCart({
+                addToCart({
                   image: images[selectedImageIndex],
                   quantity,
                   price,
