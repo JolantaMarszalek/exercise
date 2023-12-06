@@ -86,7 +86,7 @@ export const SingleSmallImage = styled.div`
   height: auto;
   position: static;
   flex-direction: column;
-  padding: 10px;
+  /* padding: 10px; */
   justify-content: center;
   align-items: center;
   color: var(--primary-orange);
