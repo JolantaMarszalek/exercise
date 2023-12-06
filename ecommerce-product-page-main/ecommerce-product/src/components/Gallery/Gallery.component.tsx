@@ -5,12 +5,7 @@ import imageProduct1 from "../../../../images/image-product-1.jpg";
 import imageProduct2 from "../../../../images/image-product-2.jpg";
 import imageProduct3 from "../../../../images/image-product-3.jpg";
 import imageProduct4 from "../../../../images/image-product-4.jpg";
-// import imageProduct1Small from "../../../../images/image-product-1-thumbnail.jpg";
-// import imageProduct2Small from "../../../../images/image-product-2-thumbnail.jpg";
-// import imageProduct3Small from "../../../../images/image-product-3-thumbnail.jpg";
-// import imageProduct4Small from "../../../../images/image-product-4-thumbnail.jpg";
 import {
-  //   CloseButton,
   GalleryContainer,
   LeftArrow,
   MainImage,
@@ -23,20 +18,9 @@ interface GalleryProps {
   onClose: () => void;
 }
 
-const GalleryComponent: React.FC<GalleryProps> = ({
-  images,
-  //   selectedIndex,
-  //   onClose,
-}) => {
+const GalleryComponent: React.FC<GalleryProps> = ({ images }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
-
-  //   const pictures: string[] = [
-  //     imageProduct1Small,
-  //     imageProduct2Small,
-  //     imageProduct3Small,
-  //     imageProduct4Small,
-  //   ];
 
   const thumbnails: string[] = [
     imageProduct1,
@@ -112,7 +96,6 @@ const GalleryComponent: React.FC<GalleryProps> = ({
             />
           </svg>
         </RightArrow>
-        {/* <CloseButton onClick={closeLightbox}>X</CloseButton> */}
       </GalleryContainer>
     </>
   );

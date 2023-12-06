@@ -88,7 +88,6 @@ export const SingleSmallImage = styled.div`
   height: auto;
   position: static;
   flex-direction: column;
-  /* padding: 10px; */
   justify-content: center;
   align-items: center;
   color: var(--primary-orange);
@@ -262,7 +261,6 @@ export const Button = styled.button`
   outline: none;
   border: none;
   border-radius: 10px;
-  /* font-size: 15px; */
   font-weight: bold;
   padding: 0;
   box-sizing: border-box;
