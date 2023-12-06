@@ -10,6 +10,8 @@ export const MiddleSectionStyle = styled.section`
   position: relative;
 
   @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
   }
 
   @media (max-width: 600px) {
