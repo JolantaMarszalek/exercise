@@ -1,7 +1,9 @@
+import { LeftSection } from "./components/LeftSection/LeftSection.component";
+
 function App() {
   return (
     <>
-      <h1>multi</h1>
+      <LeftSection></LeftSection>
     </>
   );
 }
