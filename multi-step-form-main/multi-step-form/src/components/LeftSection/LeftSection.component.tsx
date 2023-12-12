@@ -25,6 +25,33 @@ export const LeftSection = () => {
                 <LeftTextSecondLine>YOUR INFO</LeftTextSecondLine>
               </LeftTextSingleLineRightSide>
             </LeftTextSingleLine>
+            <LeftTextSingleLine>
+              <LeftTextSingleLineLeftSide>
+                <LeftTextNumber>2</LeftTextNumber>
+              </LeftTextSingleLineLeftSide>
+              <LeftTextSingleLineRightSide>
+                <LeftTextFirstLine>STEP 2</LeftTextFirstLine>
+                <LeftTextSecondLine>SELECT PLAN</LeftTextSecondLine>
+              </LeftTextSingleLineRightSide>
+            </LeftTextSingleLine>
+            <LeftTextSingleLine>
+              <LeftTextSingleLineLeftSide>
+                <LeftTextNumber>3</LeftTextNumber>
+              </LeftTextSingleLineLeftSide>
+              <LeftTextSingleLineRightSide>
+                <LeftTextFirstLine>STEP 3</LeftTextFirstLine>
+                <LeftTextSecondLine>ADD-ONS</LeftTextSecondLine>
+              </LeftTextSingleLineRightSide>
+            </LeftTextSingleLine>
+            <LeftTextSingleLine>
+              <LeftTextSingleLineLeftSide>
+                <LeftTextNumber>4</LeftTextNumber>
+              </LeftTextSingleLineLeftSide>
+              <LeftTextSingleLineRightSide>
+                <LeftTextFirstLine>STEP 4</LeftTextFirstLine>
+                <LeftTextSecondLine>SUMMARY</LeftTextSecondLine>
+              </LeftTextSingleLineRightSide>
+            </LeftTextSingleLine>
           </LeftNavigationTextStyle>
         </LeftNavigationStyle>
       </LeftSectionStyle>

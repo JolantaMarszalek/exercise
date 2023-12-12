@@ -31,8 +31,8 @@ export const LeftSectionStyle = styled.div`
 export const LeftNavigationStyle = styled.div`
   display: flex;
   position: relative;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  /* align-items: center; */
   width: 300px;
   height: 565px;
   background-color: navy;
@@ -57,12 +57,17 @@ export const LeftNavigationStyle = styled.div`
 
 export const LeftNavigationTextStyle = styled.div`
   display: flex;
-  position: relative;
+  flex-direction: column;
+  /* position: relative;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   width: auto;
   height: auto;
   color: var(--neutral-white);
+  margin-left: 30px;
+  margin-top: 30px;
+  gap: 20px;
+
   @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
@@ -83,7 +88,7 @@ export const LeftTextSingleLine = styled.div`
   display: flex;
   flex-direction: row;
   position: relative;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: auto;
   height: auto;
@@ -134,7 +139,7 @@ export const LeftTextSingleLineRightSide = styled.div`
   flex-direction: column;
   position: relative;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: auto;
   height: auto;
 
@@ -159,8 +164,10 @@ export const LeftTextNumber = styled.div`
   position: relative;
   justify-content: center;
   align-items: center;
-  width: auto;
-  height: auto;
+  width: 40px;
+  height: 40px;
+  background-color: skyblue;
+  border-radius: 100px;
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -185,6 +192,8 @@ export const LeftTextFirstLine = styled.div`
   align-items: center;
   width: auto;
   height: auto;
+  /* padding: 5px; */
+  margin-left: 10px;
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -209,6 +218,9 @@ export const LeftTextSecondLine = styled.div`
   align-items: center;
   width: auto;
   height: auto;
+  /* padding: 5px; */
+  font-weight: bold;
+  margin-left: 10px;
 
   @media (max-width: 768px) {
     justify-content: center;
