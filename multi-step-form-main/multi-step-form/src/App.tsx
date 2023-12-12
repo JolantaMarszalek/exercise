@@ -6,6 +6,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Step1Page />} />
+        <Route path="/selectPlan" element={<Step2Page />} />
+        <Route path="/addOns" element={<Step3Page />} />
+        <Route path="/summary" element={<Step4Page />} />
       </Routes>
     </Router>
   );
