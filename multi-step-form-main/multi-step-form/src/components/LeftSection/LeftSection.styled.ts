@@ -54,3 +54,174 @@ export const LeftNavigationStyle = styled.div`
     width: 100%;
   }
 `;
+
+export const LeftNavigationTextStyle = styled.div`
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  color: var(--neutral-white);
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const LeftTextSingleLine = styled.div`
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const LeftTextSingleLineLeftSide = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const LeftTextSingleLineRightSide = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const LeftTextNumber = styled.div`
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const LeftTextFirstLine = styled.div`
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const LeftTextSecondLine = styled.div`
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
