@@ -7,7 +7,7 @@ export const LayoutSectionStyle = styled.div`
   align-items: center;
   width: 1000px;
   height: 600px;
-  background-color: skyblue;
+  background-color: var(--neutral-white);
   border-radius: 10px;
   margin: auto;
   margin-top: 100px;

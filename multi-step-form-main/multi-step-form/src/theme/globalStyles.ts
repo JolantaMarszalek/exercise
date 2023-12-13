@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     /* color: black; */
     margin: 0;
+    background-color: hsl(217, 100%, 97%);
   }
 
   #root {
