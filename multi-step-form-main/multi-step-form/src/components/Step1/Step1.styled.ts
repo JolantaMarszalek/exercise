@@ -38,6 +38,7 @@ export const Step1Title = styled.div`
   font-weight: bold;
   margin-left: 30px;
   margin-top: 30px;
+  margin-bottom: 20px;
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -62,6 +63,7 @@ export const Step1Describe = styled.div`
   align-items: center;
   /* margin: auto; */
   margin-left: 30px;
+  margin-bottom: 20px;
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -86,6 +88,7 @@ export const Step1AboveInput = styled.div`
   align-items: center;
   /* margin: auto; */
   margin-left: 30px;
+  margin-top: 30px;
 
   @media (max-width: 768px) {
     justify-content: center;
