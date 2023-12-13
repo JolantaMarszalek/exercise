@@ -6,11 +6,10 @@ export const Step1SectionStyle = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 600px;
-  height: 600px;
+  height: 565px;
   background-color: white;
   border-radius: 10px;
   margin: auto;
-  margin-top: 100px;
 
   @media (max-width: 768px) {
     justify-content: center;
