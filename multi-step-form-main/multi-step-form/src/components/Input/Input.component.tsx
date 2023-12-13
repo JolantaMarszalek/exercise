@@ -1,3 +1,9 @@
+import { InputField, InputLabel } from "./Input.styled";
+
 export const Input = () => {
-  return;
+  return (
+    <InputLabel>
+      <InputField />
+    </InputLabel>
+  );
 };
