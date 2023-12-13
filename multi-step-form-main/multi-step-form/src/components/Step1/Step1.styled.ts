@@ -6,7 +6,7 @@ export const Step1SectionStyle = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 600px;
+  width: 500px;
   height: 565px;
   background-color: white;
   border-radius: 10px;
@@ -36,7 +36,7 @@ export const Step1Title = styled.div`
   /* margin: auto; */
   font-size: 24px;
   font-weight: bold;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   margin-top: 30px;
   margin-bottom: 20px;
 
@@ -62,7 +62,7 @@ export const Step1Describe = styled.div`
   justify-content: flex-start;
   align-items: center;
   /* margin: auto; */
-  margin-left: 30px;
+  /* margin-left: 30px; */
   margin-bottom: 20px;
 
   @media (max-width: 768px) {
@@ -87,7 +87,7 @@ export const Step1AboveInput = styled.div`
   justify-content: flex-start;
   align-items: center;
   /* margin: auto; */
-  margin-left: 30px;
+  /* margin-left: 30px; */
   margin-top: 30px;
 
   @media (max-width: 768px) {
