@@ -6,6 +6,7 @@ export const InputField = styled.input`
   border-radius: 5px;
   overflow: hidden;
   /* border: 0; */
+  margin-left: 30px;
 `;
 
 export const InputLabel = styled.label`
