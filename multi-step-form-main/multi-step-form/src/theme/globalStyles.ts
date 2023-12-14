@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     /* color: black; */
     margin: 0;
+    background-color: hsl(217, 100%, 97%);
   }
 
   #root {
@@ -21,4 +22,10 @@ export const GlobalStyle = createGlobalStyle`
   --neutral-monolita: hsl(217, 100%, 97%);
   --neutral-alabaster: hsl(231, 100%, 99%);
   --neutral-white:  hsl(0, 0%, 100%);
-} `;
+} 
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+}`;
