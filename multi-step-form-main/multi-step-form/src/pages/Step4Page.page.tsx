@@ -1,3 +1,12 @@
+import { Layout } from "../components/Layout/Layout.component";
+import { LeftSection } from "../components/LeftSection/LeftSection.component";
+
 export const Step4Page = () => {
-  return <h1>Step4</h1>;
+  return (
+    <>
+      <Layout>
+        <LeftSection />
+      </Layout>
+    </>
+  );
 };

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Button } from "../Button/Button.component";
+import { ButtonDark } from "../Button/ButtonDark.component";
 import { Input } from "../Input/Input.component";
 import {
   Step1AboveInput,
@@ -22,7 +22,7 @@ export const Step1Section = () => {
       <Step1AboveInput>Phone Number</Step1AboveInput> <Input></Input>
       <Step1ButtonContainer>
         <Link to="/selectPlan">
-          <Button>Next Step</Button>
+          <ButtonDark>Next Step</ButtonDark>
         </Link>
       </Step1ButtonContainer>
     </Step1SectionStyle>

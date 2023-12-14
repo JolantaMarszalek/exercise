@@ -64,6 +64,7 @@ export const Step1Describe = styled.div`
   /* margin: auto; */
   /* margin-left: 30px; */
   margin-bottom: 20px;
+  color: var(--neutral-cool-gray);
 
   @media (max-width: 768px) {
     justify-content: center;
