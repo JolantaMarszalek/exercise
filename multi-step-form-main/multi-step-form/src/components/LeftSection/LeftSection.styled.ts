@@ -166,8 +166,9 @@ export const LeftTextNumber = styled.div`
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: var(--primary-light-blue);
+  /* background-color: var(--primary-light-blue); */
   border-radius: 100px;
+  border: 2px solid var(--primary-light-blue);
 
   @media (max-width: 768px) {
     justify-content: center;

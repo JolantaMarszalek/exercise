@@ -118,8 +118,8 @@ export const Step2SingleCardSection = styled.div`
   align-items: flex-start;
   width: 150px;
   height: 150px;
-  background-color: grey;
   border-radius: 10px;
+  border: 2px solid black;
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -136,6 +136,7 @@ export const Step2SingleCardSection = styled.div`
     width: 100%;
   }
 `;
+
 export const Step2SingleCardImage = styled.div`
   display: flex;
   position: relative;
