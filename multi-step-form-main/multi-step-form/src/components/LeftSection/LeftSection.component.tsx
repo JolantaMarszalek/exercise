@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import {
   LeftNavigationStyle,
   LeftNavigationTextStyle,
@@ -12,6 +13,12 @@ import {
 } from "./LeftSection.styled";
 
 export const LeftSection = () => {
+  const [backgroundColor, setBackgroundColor] = useState("");
+
+  const handleClick = () => {
+    setBackgroundColor("--primary-light-blue");
+  };
+
   return (
     <>
       {/* <LeftSectionStyle> */}
@@ -21,7 +28,11 @@ export const LeftSection = () => {
           <Link to="/">
             <LeftTextSingleLine>
               <LeftTextSingleLineLeftSide>
-                <LeftTextNumber>1</LeftTextNumber>
+                <LeftTextNumber
+                  style={{ backgroundColor: backgroundColor }}
+                  onClick={handleClick}>
+                  1
+                </LeftTextNumber>
               </LeftTextSingleLineLeftSide>
               <LeftTextSingleLineRightSide>
                 <LeftTextFirstLine>STEP 1</LeftTextFirstLine>

@@ -167,8 +167,15 @@ export const LeftTextNumber = styled.div`
   width: 40px;
   height: 40px;
   /* background-color: var(--primary-light-blue); */
+  font-weight: bold;
   border-radius: 100px;
   border: 2px solid var(--primary-light-blue);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-light-blue);
+    color: var(--primary-marine-blue);
+  }
 
   @media (max-width: 768px) {
     justify-content: center;
