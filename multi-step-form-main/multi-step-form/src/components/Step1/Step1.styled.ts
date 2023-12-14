@@ -34,7 +34,7 @@ export const Step1Title = styled.div`
   justify-content: flex-start;
   align-items: center;
   /* margin: auto; */
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   /* margin-left: 30px; */
   margin-top: 30px;
