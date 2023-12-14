@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ButtonDark } from "../Button/ButtonDark.component";
-
+// import { useState } from "react";
 import {
   Step2ButtonContainer,
   Step2CardSection,
@@ -11,8 +11,32 @@ import {
   Step2SingleCardSection,
   Step2SingleCardTitle,
   Step2Title,
+  Step2Toggle,
+  Step2ToggleContainer,
+  Step2ToggleText,
+  ToggleContainer,
+  ToggleInput,
+  ToggleSlider,
 } from "./Step2.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
+
+export const ToggleCheckbox = () => {
+  //   const [isChecked, setIsChecked] = useState(false);
+  //   const handleCheckboxChange = () => {
+  //     setIsChecked(!isChecked);
+  //   };
+  //   return (
+  //     <div>
+  //       <label>
+  //         <input
+  //           type="checkbox"
+  //           checked={isChecked}
+  //           onChange={handleCheckboxChange}
+  //         />
+  //       </label>
+  //     </div>
+  //   );
+};
 
 export const Step2Section = () => {
   return (
@@ -83,6 +107,20 @@ export const Step2Section = () => {
           <Step2SingleCardPrice>15/mo</Step2SingleCardPrice>
         </Step2SingleCardSection>
       </Step2CardSection>
+      <Step2ToggleContainer>
+        <Step2ToggleText>Monthly</Step2ToggleText>
+        <Step2Toggle>
+          <ToggleContainer>
+            <ToggleInput
+              type="checkbox"
+              //   checked={isChecked}
+              //   onChange={handleCheckboxChange}
+            />
+            <ToggleSlider />
+          </ToggleContainer>
+        </Step2Toggle>
+        <Step2ToggleText>Yearly</Step2ToggleText>
+      </Step2ToggleContainer>
       <Step2ButtonContainer>
         <Link to="/">
           <ButtonLight>Go Back</ButtonLight>{" "}
