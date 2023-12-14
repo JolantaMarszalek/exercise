@@ -105,3 +105,17 @@ export const Step1AboveInput = styled.div`
     width: 100%;
   }
 `;
+
+export const Step1ButtonContainer = styled.section`
+  box-sizing: content-box;
+  width: min(40rem, 100%);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: auto;
+  height: 10vh;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+`;

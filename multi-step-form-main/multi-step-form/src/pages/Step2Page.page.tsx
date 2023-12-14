@@ -1,3 +1,3 @@
 export const Step2Page = () => {
-  return;
+  return <h1>Step2</h1>;
 };

@@ -13,6 +13,7 @@ export const ButtonStyle = styled.button`
   font-weight: bold;
   color: var(--neutral-white);
   background-color: var(--primary-marine-blue);
+  display: block;
 
   @media (max-width: 1024px) {
     height: 30px;
