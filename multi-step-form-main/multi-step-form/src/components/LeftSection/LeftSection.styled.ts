@@ -159,7 +159,10 @@ export const LeftTextSingleLineRightSide = styled.div`
   }
 `;
 
-export const LeftTextNumber = styled.div`
+interface NumberProps {
+  clicked: boolean;
+}
+export const LeftTextNumber = styled.div<NumberProps>`
   display: flex;
   position: relative;
   justify-content: center;
@@ -172,10 +175,15 @@ export const LeftTextNumber = styled.div`
   border: 2px solid var(--primary-light-blue);
   cursor: pointer;
 
-  &:hover {
+  /* &:hover {
     background-color: var(--primary-light-blue);
     color: var(--primary-marine-blue);
-  }
+  } */
+
+  background-color: ${(props) =>
+    props.clicked ? "var(--primary-light-blue)" : "transparent"};
+  color: ${(props) =>
+    props.clicked ? "var(--primary-marine-blue)" : "var(--primary-light-blue)"};
 
   @media (max-width: 768px) {
     justify-content: center;

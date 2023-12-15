@@ -13,10 +13,18 @@ import {
 } from "./LeftSection.styled";
 
 export const LeftSection = () => {
-  const [backgroundColor, setBackgroundColor] = useState("");
+  const [numbers, setNumbers] = useState({
+    1: false,
+    2: false,
+    3: false,
+    4: false,
+  });
 
-  const handleClick = () => {
-    setBackgroundColor("--primary-light-blue");
+  const handleClick = (num: number) => {
+    setNumbers((prevNumbers) => ({
+      ...prevNumbers,
+      [num]: !prevNumbers[num as keyof typeof prevNumbers],
+    }));
   };
 
   return (
@@ -29,8 +37,8 @@ export const LeftSection = () => {
             <LeftTextSingleLine>
               <LeftTextSingleLineLeftSide>
                 <LeftTextNumber
-                  style={{ backgroundColor: backgroundColor }}
-                  onClick={handleClick}>
+                  clicked={numbers[1]}
+                  onClick={() => handleClick(1)}>
                   1
                 </LeftTextNumber>
               </LeftTextSingleLineLeftSide>
@@ -43,7 +51,11 @@ export const LeftSection = () => {
           <Link to="/selectPlan">
             <LeftTextSingleLine>
               <LeftTextSingleLineLeftSide>
-                <LeftTextNumber>2</LeftTextNumber>
+                <LeftTextNumber
+                  clicked={numbers[2]}
+                  onClick={() => handleClick(2)}>
+                  2
+                </LeftTextNumber>
               </LeftTextSingleLineLeftSide>
               <LeftTextSingleLineRightSide>
                 <LeftTextFirstLine>STEP 2</LeftTextFirstLine>
@@ -54,7 +66,11 @@ export const LeftSection = () => {
           <Link to="/addOns">
             <LeftTextSingleLine>
               <LeftTextSingleLineLeftSide>
-                <LeftTextNumber>3</LeftTextNumber>
+                <LeftTextNumber
+                  clicked={numbers[3]}
+                  onClick={() => handleClick(3)}>
+                  3
+                </LeftTextNumber>
               </LeftTextSingleLineLeftSide>
               <LeftTextSingleLineRightSide>
                 <LeftTextFirstLine>STEP 3</LeftTextFirstLine>
@@ -65,7 +81,11 @@ export const LeftSection = () => {
           <Link to="/summary">
             <LeftTextSingleLine>
               <LeftTextSingleLineLeftSide>
-                <LeftTextNumber>4</LeftTextNumber>
+                <LeftTextNumber
+                  clicked={numbers[4]}
+                  onClick={() => handleClick(4)}>
+                  4
+                </LeftTextNumber>
               </LeftTextSingleLineLeftSide>
               <LeftTextSingleLineRightSide>
                 <LeftTextFirstLine>STEP 4</LeftTextFirstLine>
