@@ -32,7 +32,6 @@ export const LeftNavigationStyle = styled.div`
   display: flex;
   position: relative;
   justify-content: flex-start;
-  /* align-items: center; */
   width: 300px;
   height: 565px;
   background-color: navy;
@@ -58,9 +57,6 @@ export const LeftNavigationStyle = styled.div`
 export const LeftNavigationTextStyle = styled.div`
   display: flex;
   flex-direction: column;
-  /* position: relative;
-  justify-content: center;
-  align-items: center; */
   width: auto;
   height: auto;
   color: var(--neutral-white);
@@ -169,7 +165,6 @@ export const LeftTextNumber = styled.div<NumberProps>`
   align-items: center;
   width: 40px;
   height: 40px;
-  /* background-color: var(--primary-light-blue); */
   font-weight: bold;
   border-radius: 100px;
   border: 2px solid var(--primary-light-blue);
