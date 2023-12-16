@@ -6,7 +6,9 @@ import {
   Step3CardSection,
   Step3Describe,
   Step3SectionStyle,
+  Step3SingleCardDescribe,
   Step3SingleCardSection,
+  Step3SingleCardTitle,
   Step3Title,
 } from "./Step3.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
@@ -20,9 +22,27 @@ export const Step3Section = () => {
       </Step3Describe>
 
       <Step3CardSection>
-        <Step3SingleCardSection></Step3SingleCardSection>
-        <Step3SingleCardSection></Step3SingleCardSection>
-        <Step3SingleCardSection></Step3SingleCardSection>
+        <Step3SingleCardSection>
+          <Step3SingleCardTitle> Online service</Step3SingleCardTitle>
+          <Step3SingleCardDescribe>
+            {" "}
+            Access to multiplayer games
+          </Step3SingleCardDescribe>
+        </Step3SingleCardSection>
+        <Step3SingleCardSection>
+          <Step3SingleCardTitle> Larger storage</Step3SingleCardTitle>
+          <Step3SingleCardDescribe>
+            {" "}
+            Extra 1TB of cloud save
+          </Step3SingleCardDescribe>
+        </Step3SingleCardSection>
+        <Step3SingleCardSection>
+          <Step3SingleCardTitle> Customizable Profile</Step3SingleCardTitle>
+          <Step3SingleCardDescribe>
+            {" "}
+            Custom theme on your profile
+          </Step3SingleCardDescribe>
+        </Step3SingleCardSection>
       </Step3CardSection>
 
       <Step3ButtonContainer>
