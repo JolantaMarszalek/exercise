@@ -27,3 +27,72 @@ export const Step3SectionStyle = styled.div`
     width: 100%;
   }
 `;
+
+export const Step3Title = styled.div`
+  display: flex;
+  /* position: relative; */
+  justify-content: flex-start;
+  align-items: center;
+  /* margin: auto; */
+  font-size: 30px;
+  font-weight: bold;
+  /* margin-left: 30px; */
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const Step3Describe = styled.div`
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  /* margin: auto; */
+  /* margin-left: 30px; */
+  margin-bottom: 20px;
+  color: var(--neutral-cool-gray);
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const Step3ButtonContainer = styled.section`
+  box-sizing: content-box;
+  width: min(40rem, 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: auto; */
+  height: 10vh;
+  margin-top: 20px;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+`;
