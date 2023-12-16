@@ -3,8 +3,10 @@ import { ButtonDark } from "../Button/ButtonDark.component";
 
 import {
   Step3ButtonContainer,
+  Step3CardSection,
   Step3Describe,
   Step3SectionStyle,
+  Step3SingleCardSection,
   Step3Title,
 } from "./Step3.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
@@ -16,6 +18,12 @@ export const Step3Section = () => {
       <Step3Describe>
         Add-ons help enhance your gaming experience.
       </Step3Describe>
+
+      <Step3CardSection>
+        <Step3SingleCardSection></Step3SingleCardSection>
+        <Step3SingleCardSection></Step3SingleCardSection>
+        <Step3SingleCardSection></Step3SingleCardSection>
+      </Step3CardSection>
 
       <Step3ButtonContainer>
         <Link to="/">
