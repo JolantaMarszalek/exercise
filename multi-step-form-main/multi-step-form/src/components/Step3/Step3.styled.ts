@@ -4,7 +4,7 @@ export const Step3SectionStyle = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   width: 500px;
   height: 565px;
@@ -113,14 +113,40 @@ export const Step3CardSection = styled.div`
 
 export const Step3SingleCardSection = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: relative;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
   width: 500px;
   height: 75px;
   border-radius: 10px;
   border: 2px solid black;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const Step3SingleCardTextSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 10px;
+  /* margin: auto; */
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -194,8 +220,8 @@ export const Step3SingleCardPrice = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  /* margin-bottom: 20px; */
+  margin-right: 20px;
 
   @media (max-width: 768px) {
     justify-content: center;

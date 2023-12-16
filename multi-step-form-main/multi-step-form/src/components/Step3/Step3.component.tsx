@@ -7,7 +7,9 @@ import {
   Step3Describe,
   Step3SectionStyle,
   Step3SingleCardDescribe,
+  Step3SingleCardPrice,
   Step3SingleCardSection,
+  Step3SingleCardTextSection,
   Step3SingleCardTitle,
   Step3Title,
 } from "./Step3.styled";
@@ -23,11 +25,14 @@ export const Step3Section = () => {
 
       <Step3CardSection>
         <Step3SingleCardSection>
-          <Step3SingleCardTitle> Online service</Step3SingleCardTitle>
-          <Step3SingleCardDescribe>
-            {" "}
-            Access to multiplayer games
-          </Step3SingleCardDescribe>
+          <Step3SingleCardTextSection>
+            <Step3SingleCardTitle> Online service</Step3SingleCardTitle>
+            <Step3SingleCardDescribe>
+              {" "}
+              Access to multiplayer games
+            </Step3SingleCardDescribe>
+          </Step3SingleCardTextSection>
+          <Step3SingleCardPrice>+$1/mo</Step3SingleCardPrice>
         </Step3SingleCardSection>
         <Step3SingleCardSection>
           <Step3SingleCardTitle> Larger storage</Step3SingleCardTitle>
