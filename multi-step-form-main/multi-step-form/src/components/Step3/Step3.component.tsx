@@ -56,7 +56,7 @@ export const Step3Section = () => {
       </Step3CardSection>
 
       <Step3ButtonContainer>
-        <Link to="/">
+        <Link to="/selectPlan">
           <ButtonLight>Go Back</ButtonLight>{" "}
         </Link>
         <Link to="/summary">
