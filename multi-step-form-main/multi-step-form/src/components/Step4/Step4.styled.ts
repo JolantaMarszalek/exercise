@@ -172,6 +172,7 @@ export const Step4SingleCardTitle = styled.div`
   margin-left: 20px;
   /* margin-top: 20px; */
   font-weight: bold;
+  padding: 10px;
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -198,6 +199,7 @@ export const Step4SingleCardDescribe = styled.div`
   /* margin-top: 20px; */
   /* font-weight: bold; */
   color: var(--neutral-cool-gray);
+  padding: 10px;
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -248,6 +250,34 @@ export const Step4SingleCardPrice = styled.div`
   align-items: center;
   /* margin-bottom: 20px; */
   margin-right: 20px;
+  padding: 10px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const Step4UnderSingleCard = styled.div`
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 20px; */
+  margin-right: 20px;
+  padding: 10px;
+  width: 100%;
 
   @media (max-width: 768px) {
     justify-content: center;

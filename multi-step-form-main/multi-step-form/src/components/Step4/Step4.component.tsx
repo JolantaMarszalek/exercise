@@ -13,6 +13,7 @@ import {
   Step4SingleCardTitle,
   Step4Title,
   Step4SingleCardPriceSection,
+  Step4UnderSingleCard,
 } from "./Step4.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
 
@@ -39,7 +40,11 @@ export const Step4Section = () => {
             <Step4SingleCardPrice>+$1/mo</Step4SingleCardPrice>{" "}
             <Step4SingleCardPrice>+$2/mo</Step4SingleCardPrice>
           </Step4SingleCardPriceSection>
-        </Step4SingleCardSection>
+        </Step4SingleCardSection>{" "}
+        <Step4UnderSingleCard>
+          <Step4SingleCardDescribe> Larger storage</Step4SingleCardDescribe>
+          <Step4SingleCardPrice>+$2/mo</Step4SingleCardPrice>
+        </Step4UnderSingleCard>
       </Step4CardSection>
 
       <Step4ButtonContainer>
