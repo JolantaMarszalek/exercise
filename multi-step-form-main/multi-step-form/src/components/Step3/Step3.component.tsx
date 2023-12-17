@@ -27,7 +27,6 @@ export const Step3Section = () => {
           <Step3SingleCardTextSection>
             <Step3SingleCardTitle>Online service</Step3SingleCardTitle>
             <Step3SingleCardDescribe>
-              {" "}
               Access to multiplayer games
             </Step3SingleCardDescribe>
           </Step3SingleCardTextSection>
@@ -37,27 +36,24 @@ export const Step3Section = () => {
           <Step3SingleCardTextSection>
             <Step3SingleCardTitle>Larger storage</Step3SingleCardTitle>
             <Step3SingleCardDescribe>
-              {" "}
               Extra 1TB of cloud save
-            </Step3SingleCardDescribe>{" "}
-          </Step3SingleCardTextSection>{" "}
-          <Step3SingleCardPrice> +$2/mo</Step3SingleCardPrice>
+            </Step3SingleCardDescribe>
+          </Step3SingleCardTextSection>
+          <Step3SingleCardPrice>+$2/mo</Step3SingleCardPrice>
         </Step3SingleCardSection>
         <Step3SingleCardSection>
           <Step3SingleCardTextSection>
             <Step3SingleCardTitle>Customizable Profile</Step3SingleCardTitle>
             <Step3SingleCardDescribe>
-              {" "}
               Custom theme on your profile
-            </Step3SingleCardDescribe>{" "}
-          </Step3SingleCardTextSection>{" "}
-          <Step3SingleCardPrice> +$2/mo</Step3SingleCardPrice>
+            </Step3SingleCardDescribe>
+          </Step3SingleCardTextSection>
+          <Step3SingleCardPrice>+$2/mo</Step3SingleCardPrice>
         </Step3SingleCardSection>
       </Step3CardSection>
-
       <Step3ButtonContainer>
         <Link to="/selectPlan">
-          <ButtonLight>Go Back</ButtonLight>{" "}
+          <ButtonLight>Go Back</ButtonLight>
         </Link>
         <Link to="/summary">
           <ButtonDark>Next Step</ButtonDark>
