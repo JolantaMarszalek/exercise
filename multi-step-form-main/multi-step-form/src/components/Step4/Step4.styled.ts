@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Step3SectionStyle = styled.div`
+export const Step4SectionStyle = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
@@ -28,7 +28,7 @@ export const Step3SectionStyle = styled.div`
   }
 `;
 
-export const Step3Title = styled.div`
+export const Step4Title = styled.div`
   display: flex;
   /* position: relative; */
   justify-content: flex-start;
@@ -56,7 +56,7 @@ export const Step3Title = styled.div`
   }
 `;
 
-export const Step3Describe = styled.div`
+export const Step4Describe = styled.div`
   display: flex;
   position: relative;
   justify-content: flex-start;
@@ -82,7 +82,7 @@ export const Step3Describe = styled.div`
   }
 `;
 
-export const Step3CardSection = styled.div`
+export const Step4CardSection = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
@@ -111,14 +111,14 @@ export const Step3CardSection = styled.div`
   }
 `;
 
-export const Step3SingleCardSection = styled.div`
+export const Step4SingleCardSection = styled.div`
   display: flex;
   flex-direction: row;
   position: relative;
   justify-content: space-between;
   align-items: center;
   width: 500px;
-  height: 75px;
+  height: 200px;
   border-radius: 10px;
   border: 2px solid black;
 
@@ -138,7 +138,7 @@ export const Step3SingleCardSection = styled.div`
   }
 `;
 
-export const Step3SingleCardTextSection = styled.div`
+export const Step4SingleCardTextSection = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
@@ -164,7 +164,7 @@ export const Step3SingleCardTextSection = styled.div`
   }
 `;
 
-export const Step3SingleCardTitle = styled.div`
+export const Step4SingleCardTitle = styled.div`
   display: flex;
   position: relative;
   justify-content: flex-start;
@@ -189,7 +189,7 @@ export const Step3SingleCardTitle = styled.div`
   }
 `;
 
-export const Step3SingleCardDescribe = styled.div`
+export const Step4SingleCardDescribe = styled.div`
   display: flex;
   position: relative;
   justify-content: flex-start;
@@ -215,8 +215,9 @@ export const Step3SingleCardDescribe = styled.div`
   }
 `;
 
-export const Step3SingleCardPrice = styled.div`
+export const Step4SingleCardPriceSection = styled.div`
   display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: flex-start;
   align-items: center;
@@ -239,7 +240,32 @@ export const Step3SingleCardPrice = styled.div`
   }
 `;
 
-export const Step3ButtonContainer = styled.section`
+export const Step4SingleCardPrice = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  /* margin-bottom: 20px; */
+  margin-right: 20px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const Step4ButtonContainer = styled.section`
   box-sizing: content-box;
   width: min(40rem, 100%);
   display: flex;
