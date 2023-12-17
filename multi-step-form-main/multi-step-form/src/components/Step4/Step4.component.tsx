@@ -19,31 +19,25 @@ import { ButtonLight } from "../Button/ButtonLight.component";
 export const Step4Section = () => {
   return (
     <Step4SectionStyle>
-      <Step4Title> Pick add-ons</Step4Title>
+      <Step4Title>Finishing up</Step4Title>
       <Step4Describe>
-        Add-ons help enhance your gaming experience.
+        Double-check everything looks OK before confirming.
       </Step4Describe>
       <Step4CardSection>
         <Step4SingleCardSection>
           <Step4SingleCardTextSection>
-            <Step4SingleCardTitle> Online service</Step4SingleCardTitle>
+            <Step4SingleCardTitle>Arcade (Monthly)</Step4SingleCardTitle>
+            <Step4SingleCardDescribe>Change</Step4SingleCardDescribe>
             <Step4SingleCardDescribe>
               {" "}
-              Access to multiplayer games
-            </Step4SingleCardDescribe>
-            <Step4SingleCardDescribe>
-              {" "}
-              Access to multiplayer games
+              Online service{" "}
             </Step4SingleCardDescribe>{" "}
-            <Step4SingleCardDescribe>
-              {" "}
-              Access to multiplayer games
-            </Step4SingleCardDescribe>
+            <Step4SingleCardDescribe> Larger storage</Step4SingleCardDescribe>
           </Step4SingleCardTextSection>
           <Step4SingleCardPriceSection>
-            <Step4SingleCardPrice>+$1/mo</Step4SingleCardPrice>
+            <Step4SingleCardPrice>+$9/mo</Step4SingleCardPrice>
             <Step4SingleCardPrice>+$1/mo</Step4SingleCardPrice>{" "}
-            <Step4SingleCardPrice>+$1/mo</Step4SingleCardPrice>
+            <Step4SingleCardPrice>+$2/mo</Step4SingleCardPrice>
           </Step4SingleCardPriceSection>
         </Step4SingleCardSection>
       </Step4CardSection>
