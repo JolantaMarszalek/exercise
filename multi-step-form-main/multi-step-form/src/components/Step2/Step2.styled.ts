@@ -219,6 +219,8 @@ export const Step2ToggleContainer = styled.section`
   /* margin: auto; */
   height: 10vh;
   margin-top: 20px;
+  background: var(--primary-pastel-blue);
+  border-radius: 20px;
 
   @media (max-width: 650px) {
     flex-direction: column;

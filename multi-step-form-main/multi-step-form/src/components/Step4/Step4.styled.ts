@@ -121,6 +121,7 @@ export const Step4SingleCardSection = styled.div`
   height: 200px;
   border-radius: 10px;
   border: 2px solid black;
+  background: var(--primary-pastel-blue);
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -144,7 +145,7 @@ export const Step4SingleCardTextSection = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: white;
+  /* background-color: white; */
   border-radius: 10px;
   /* margin: auto; */
 
