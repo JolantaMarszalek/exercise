@@ -33,7 +33,7 @@ export const Step4Section = () => {
               {" "}
               Online service{" "}
             </Step4SingleCardDescribe>{" "}
-            <Step4SingleCardDescribe> Larger storage</Step4SingleCardDescribe>
+            <Step4SingleCardDescribe>Larger storage</Step4SingleCardDescribe>
           </Step4SingleCardTextSection>
           <Step4SingleCardPriceSection>
             <Step4SingleCardPrice>+$9/mo</Step4SingleCardPrice>
@@ -42,8 +42,8 @@ export const Step4Section = () => {
           </Step4SingleCardPriceSection>
         </Step4SingleCardSection>{" "}
         <Step4UnderSingleCard>
-          <Step4SingleCardDescribe> Larger storage</Step4SingleCardDescribe>
-          <Step4SingleCardPrice>+$2/mo</Step4SingleCardPrice>
+          <Step4SingleCardDescribe>Total (per month)</Step4SingleCardDescribe>
+          <Step4SingleCardPrice>+$12/mo</Step4SingleCardPrice>
         </Step4UnderSingleCard>
       </Step4CardSection>
 

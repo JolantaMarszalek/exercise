@@ -18,14 +18,14 @@ import { ButtonLight } from "../Button/ButtonLight.component";
 export const Step3Section = () => {
   return (
     <Step3SectionStyle>
-      <Step3Title> Pick add-ons</Step3Title>
+      <Step3Title>Pick add-ons</Step3Title>
       <Step3Describe>
         Add-ons help enhance your gaming experience.
       </Step3Describe>
       <Step3CardSection>
         <Step3SingleCardSection>
           <Step3SingleCardTextSection>
-            <Step3SingleCardTitle> Online service</Step3SingleCardTitle>
+            <Step3SingleCardTitle>Online service</Step3SingleCardTitle>
             <Step3SingleCardDescribe>
               {" "}
               Access to multiplayer games
@@ -35,7 +35,7 @@ export const Step3Section = () => {
         </Step3SingleCardSection>
         <Step3SingleCardSection>
           <Step3SingleCardTextSection>
-            <Step3SingleCardTitle> Larger storage</Step3SingleCardTitle>
+            <Step3SingleCardTitle>Larger storage</Step3SingleCardTitle>
             <Step3SingleCardDescribe>
               {" "}
               Extra 1TB of cloud save
@@ -45,7 +45,7 @@ export const Step3Section = () => {
         </Step3SingleCardSection>
         <Step3SingleCardSection>
           <Step3SingleCardTextSection>
-            <Step3SingleCardTitle> Customizable Profile</Step3SingleCardTitle>
+            <Step3SingleCardTitle>Customizable Profile</Step3SingleCardTitle>
             <Step3SingleCardDescribe>
               {" "}
               Custom theme on your profile
