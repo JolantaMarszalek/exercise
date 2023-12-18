@@ -123,7 +123,7 @@ export const Step2Section = () => {
       </Step2ToggleContainer>
       <Step2ButtonContainer>
         <Link to="/">
-          <ButtonLight>Go Back</ButtonLight>{" "}
+          <ButtonLight>Go Back</ButtonLight>
         </Link>
         <Link to="/addOns">
           <ButtonDark>Next Step</ButtonDark>

@@ -32,7 +32,7 @@ export const ButtonLightStyle = styled.button`
   font-weight: 600;
   font-size: 18px;
   font-weight: bold;
-  color: black;
+  color: var(--neutral-cool-gray);
   background-color: white;
   display: block;
   text-align: left;

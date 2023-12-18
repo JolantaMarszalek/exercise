@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import BackgroundDesktop from "/../assets/images/bg-sidebar-desktop.svg";
+
 // export const LeftSectionStyle = styled.div`
 //   display: flex;
 //   position: relative;
@@ -32,12 +34,15 @@ export const LeftNavigationStyle = styled.div`
   display: flex;
   position: relative;
   justify-content: flex-start;
-  /* align-items: center; */
   width: 300px;
   height: 565px;
   background-color: navy;
+  /* background: url("/multi-step-form-main/assets/images/bg-sidebar-desktop.svg"); */
+  /* background-image: url(${BackgroundDesktop}); */
   border-radius: 10px;
   margin-left: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -58,9 +63,6 @@ export const LeftNavigationStyle = styled.div`
 export const LeftNavigationTextStyle = styled.div`
   display: flex;
   flex-direction: column;
-  /* position: relative;
-  justify-content: center;
-  align-items: center; */
   width: auto;
   height: auto;
   color: var(--neutral-white);
@@ -169,7 +171,6 @@ export const LeftTextNumber = styled.div<NumberProps>`
   align-items: center;
   width: 40px;
   height: 40px;
-  /* background-color: var(--primary-light-blue); */
   font-weight: bold;
   border-radius: 100px;
   border: 2px solid var(--primary-light-blue);
