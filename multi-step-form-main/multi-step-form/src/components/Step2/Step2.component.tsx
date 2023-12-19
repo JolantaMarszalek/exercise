@@ -51,19 +51,40 @@ export const Step2Section = () => {
             <>
               {" "}
               $90/yr
-              <br /> <strong>2 months free</strong>
+              <br />{" "}
+              <span
+                style={{
+                  color: "var(--primary-marine-blue)",
+                  fontSize: "smaller",
+                }}>
+                2 months free
+              </span>
             </>
           );
         case "Advanced":
           return (
             <>
-              $120/yr <br /> <strong>2 months free</strong>
+              $120/yr <br />{" "}
+              <span
+                style={{
+                  color: "var(--primary-marine-blue)",
+                  fontSize: "smaller",
+                }}>
+                2 months free
+              </span>
             </>
           );
         case "Pro":
           return (
             <>
-              $150/yr <br /> <strong>2 months free</strong>
+              $150/yr <br />{" "}
+              <span
+                style={{
+                  color: "var(--primary-marine-blue)",
+                  fontSize: "smaller",
+                }}>
+                2 months free
+              </span>
             </>
           );
         default:
