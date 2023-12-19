@@ -108,7 +108,7 @@ export const Step2SingleCardSection = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   width: 150px;
-  height: 150px;
+  height: 180px;
   border-radius: 10px;
   border: 1px solid var(--neutral-cool-gray);
   cursor: pointer;
@@ -185,9 +185,10 @@ export const Step2SingleCardTitle = styled.div`
 
 export const Step2SingleCardPrice = styled.div`
   display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: flex-start;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 20px;
   margin-left: 20px;
   font-size: 15px;

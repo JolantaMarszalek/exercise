@@ -47,11 +47,25 @@ export const Step2Section = () => {
     } else {
       switch (cardType) {
         case "Arcade":
-          return "$90/yr";
+          return (
+            <>
+              {" "}
+              $90/yr
+              <br /> <strong>2 months free</strong>
+            </>
+          );
         case "Advanced":
-          return "$120/yr";
+          return (
+            <>
+              $120/yr <br /> <strong>2 months free</strong>
+            </>
+          );
         case "Pro":
-          return "$150/yr";
+          return (
+            <>
+              $150/yr <br /> <strong>2 months free</strong>
+            </>
+          );
         default:
           return "";
       }
