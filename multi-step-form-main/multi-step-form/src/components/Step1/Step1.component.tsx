@@ -8,6 +8,7 @@ import {
   Step1Describe,
   Step1SectionStyle,
   Step1Title,
+  StyledForm,
 } from "./Step1.styled";
 import React, { useState } from "react";
 import { useForm, Controller, SubmitHandler } from "react-hook-form";
@@ -38,7 +39,7 @@ export const Step1Section: React.FC<Step1SectionProps> = () => {
 
   return (
     <Step1SectionStyle>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <StyledForm onSubmit={handleSubmit(onSubmit)}>
         <Step1Title>Personal info</Step1Title>
         <Step1Describe>
           Please provide your name, email address, and phone number.
@@ -105,7 +106,7 @@ export const Step1Section: React.FC<Step1SectionProps> = () => {
             <ButtonDark type="submit">Next Step</ButtonDark>
           )}
         </Step1ButtonContainer>{" "}
-      </form>
+      </StyledForm>
     </Step1SectionStyle>
   );
 };

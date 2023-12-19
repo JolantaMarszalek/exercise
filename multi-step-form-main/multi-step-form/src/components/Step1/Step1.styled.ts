@@ -28,6 +28,14 @@ export const Step1SectionStyle = styled.div`
   }
 `;
 
+export const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 565px;
+  justify-content: space-between;
+`;
+
 export const Step1Title = styled.div`
   display: flex;
   /* position: relative; */
