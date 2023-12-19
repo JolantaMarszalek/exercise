@@ -85,7 +85,7 @@ export const Step1Describe = styled.div`
 export const Step1AboveInput = styled.div`
   display: flex;
   position: relative;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   /* margin: auto; */
   /* margin-left: 30px; */
@@ -111,7 +111,7 @@ export const ErrorContainer = styled.div`
   color: red;
   text-align: right;
   font-size: 15px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 `;
 
 export const Step1ButtonContainer = styled.section`
