@@ -20,29 +20,42 @@ import {
 } from "./Step2.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
 
-export const ToggleCheckbox = () => {
-  //   const [isChecked, setIsChecked] = useState(false);
-  //   const handleCheckboxChange = () => {
-  //     setIsChecked(!isChecked);
-  //   };
-  //   return (
-  //     <div>
-  //       <label>
-  //         <input
-  //           type="checkbox"
-  //           checked={isChecked}
-  //           onChange={handleCheckboxChange}
-  //         />
-  //       </label>
-  //     </div>
-  //   );
-};
-
 export const Step2Section = () => {
   const [isClicked, setIsClicked] = useState(false);
+  const [isMonthly, setIsMonthly] = useState(true);
 
   const handleClick = () => {
     setIsClicked(!isClicked);
+  };
+
+  const handleToggleChange = () => {
+    setIsMonthly(!isMonthly);
+  };
+
+  const getPrice = (cardType: string) => {
+    if (!isMonthly) {
+      switch (cardType) {
+        case "Arcade":
+          return "$9/mo";
+        case "Advanced":
+          return "$12/mo";
+        case "Pro":
+          return "$15/mo";
+        default:
+          return "";
+      }
+    } else {
+      switch (cardType) {
+        case "Arcade":
+          return "$90/yr";
+        case "Advanced":
+          return "$120/yr";
+        case "Pro":
+          return "$150/yr";
+        default:
+          return "";
+      }
+    }
   };
 
   return (
@@ -70,9 +83,9 @@ export const Step2Section = () => {
             </svg>
           </Step2SingleCardImage>
           <Step2SingleCardTitle>Arcade</Step2SingleCardTitle>
-          <Step2SingleCardPrice>$9/mo</Step2SingleCardPrice>
+          <Step2SingleCardPrice>{getPrice("Arcade")}</Step2SingleCardPrice>
         </Step2SingleCardSection>
-        <Step2SingleCardSection>
+        <Step2SingleCardSection onClick={handleClick}>
           <Step2SingleCardImage>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -90,9 +103,9 @@ export const Step2Section = () => {
             </svg>
           </Step2SingleCardImage>
           <Step2SingleCardTitle>Advanced</Step2SingleCardTitle>
-          <Step2SingleCardPrice>$12/mo</Step2SingleCardPrice>
+          <Step2SingleCardPrice>{getPrice("Advanced")}</Step2SingleCardPrice>
         </Step2SingleCardSection>
-        <Step2SingleCardSection>
+        <Step2SingleCardSection onClick={handleClick}>
           <Step2SingleCardImage>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +123,7 @@ export const Step2Section = () => {
             </svg>
           </Step2SingleCardImage>
           <Step2SingleCardTitle>Pro</Step2SingleCardTitle>
-          <Step2SingleCardPrice>$15/mo</Step2SingleCardPrice>
+          <Step2SingleCardPrice>{getPrice("Pro")}</Step2SingleCardPrice>
         </Step2SingleCardSection>
       </Step2CardSection>
       <Step2ToggleContainer>
@@ -119,8 +132,8 @@ export const Step2Section = () => {
           <ToggleContainer>
             <ToggleInput
               type="checkbox"
-              //   checked={isChecked}
-              //   onChange={handleCheckboxChange}
+              checked={isMonthly}
+              onChange={handleToggleChange}
             />
             <ToggleSlider />
           </ToggleContainer>
