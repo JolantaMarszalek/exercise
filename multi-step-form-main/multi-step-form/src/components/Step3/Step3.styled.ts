@@ -116,7 +116,13 @@ export const Step3SingleCardSection = styled.div`
   width: 500px;
   height: 75px;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 1px solid var(--neutral-cool-gray);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--neutral-alabaster);
+    border: 1px solid var(--primary-purplish-blue);
+  }
 
   @media (max-width: 768px) {
     justify-content: center;

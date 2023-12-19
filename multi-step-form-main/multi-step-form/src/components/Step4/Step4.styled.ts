@@ -120,8 +120,8 @@ export const Step4SingleCardSection = styled.div`
   width: 500px;
   height: 200px;
   border-radius: 10px;
-  border: 2px solid black;
-  background: var(--primary-pastel-blue);
+  /* border: 2px solid black; */
+  background: var(--neutral-alabaster);
 
   @media (max-width: 768px) {
     justify-content: center;
