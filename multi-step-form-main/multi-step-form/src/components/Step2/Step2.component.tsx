@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ButtonDark } from "../Button/ButtonDark.component";
-// import { useState } from "react";
+import { useState } from "react";
 import {
   Step2ButtonContainer,
   Step2CardSection,
@@ -39,6 +39,12 @@ export const ToggleCheckbox = () => {
 };
 
 export const Step2Section = () => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
+
   return (
     <Step2SectionStyle>
       <Step2Title>Select your plan</Step2Title>
@@ -46,7 +52,7 @@ export const Step2Section = () => {
         You have the option of monthly or yearly billing.
       </Step2Describe>
       <Step2CardSection>
-        <Step2SingleCardSection>
+        <Step2SingleCardSection onClick={handleClick}>
           <Step2SingleCardImage>
             <svg
               xmlns="http://www.w3.org/2000/svg"
