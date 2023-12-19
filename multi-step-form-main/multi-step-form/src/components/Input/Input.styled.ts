@@ -7,6 +7,17 @@ export const InputField = styled.input`
   overflow: hidden;
   height: 40px;
   font-weight: bold;
+  border: 1px solid var(--neutral-cool-gray);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--primary-purplish-blue);
+  }
+
+  &:active {
+    border: 1px solid var(--primary-purplish-blue);
+  }
 `;
 
 export const InputLabel = styled.label`

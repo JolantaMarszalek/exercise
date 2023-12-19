@@ -23,10 +23,7 @@ interface FormData {
 }
 
 export const Step1Section: React.FC<Step1SectionProps> = () => {
-  const [
-    formFilled,
-    // setFormFilled
-  ] = useState(false);
+  const [formFilled, setFormFilled] = useState(false);
 
   const {
     handleSubmit,
@@ -36,6 +33,7 @@ export const Step1Section: React.FC<Step1SectionProps> = () => {
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
     console.log("Formularz wysłany:", data);
+    setFormFilled(true);
   };
 
   return (
