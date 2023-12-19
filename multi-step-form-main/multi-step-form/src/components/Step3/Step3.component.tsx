@@ -6,6 +6,7 @@ import {
   Step3CardSection,
   Step3Describe,
   Step3SectionStyle,
+  Step3SingleCardCheckboxSection,
   Step3SingleCardDescribe,
   Step3SingleCardPrice,
   Step3SingleCardSection,
@@ -24,6 +25,11 @@ export const Step3Section = () => {
       </Step3Describe>
       <Step3CardSection>
         <Step3SingleCardSection>
+          <Step3SingleCardCheckboxSection>
+            {" "}
+            <input type="checkbox" />
+          </Step3SingleCardCheckboxSection>
+
           <Step3SingleCardTextSection>
             <Step3SingleCardTitle>Online service</Step3SingleCardTitle>
             <Step3SingleCardDescribe>
@@ -33,6 +39,11 @@ export const Step3Section = () => {
           <Step3SingleCardPrice>+$1/mo</Step3SingleCardPrice>
         </Step3SingleCardSection>
         <Step3SingleCardSection>
+          {" "}
+          <Step3SingleCardCheckboxSection>
+            {" "}
+            <input type="checkbox" />
+          </Step3SingleCardCheckboxSection>
           <Step3SingleCardTextSection>
             <Step3SingleCardTitle>Larger storage</Step3SingleCardTitle>
             <Step3SingleCardDescribe>
@@ -42,6 +53,11 @@ export const Step3Section = () => {
           <Step3SingleCardPrice>+$2/mo</Step3SingleCardPrice>
         </Step3SingleCardSection>
         <Step3SingleCardSection>
+          {" "}
+          <Step3SingleCardCheckboxSection>
+            {" "}
+            <input type="checkbox" />
+          </Step3SingleCardCheckboxSection>
           <Step3SingleCardTextSection>
             <Step3SingleCardTitle>Customizable Profile</Step3SingleCardTitle>
             <Step3SingleCardDescribe>
