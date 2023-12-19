@@ -11,6 +11,7 @@ export const LayoutSectionStyle = styled.div`
   border-radius: 10px;
   margin: auto;
   margin-top: 100px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 
   @media (max-width: 768px) {
     justify-content: center;

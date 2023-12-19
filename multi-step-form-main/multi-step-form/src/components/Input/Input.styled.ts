@@ -5,9 +5,8 @@ export const InputField = styled.input`
   font-size: 15px;
   border-radius: 10px;
   overflow: hidden;
-  /* border: 0; */
-  /* margin-left: 30px; */
   height: 40px;
+  font-weight: bold;
 `;
 
 export const InputLabel = styled.label`
@@ -18,8 +17,5 @@ export const InputLabel = styled.label`
   min-width: 20rem;
   width: 100%;
   height: 50px;
-  /* margin: 20px; */
-  /* margin-left: 50px; */
-  /* border: 0; */
   border-radius: 5px;
 `;

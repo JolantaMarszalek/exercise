@@ -21,11 +21,11 @@ export const Step1Section: React.FC<Step1SectionProps> = () => {
         Please provide your name, email address, and phone number.
       </Step1Describe>
       <Step1AboveInput>Name</Step1AboveInput>
-      <Input placeholder="Enter your name"></Input>
+      <Input placeholder=" e.g. Stephen King"></Input>
       <Step1AboveInput>Email Address</Step1AboveInput>{" "}
-      <Input placeholder="Enter your name"></Input>
+      <Input placeholder=" e.g. stephenking@lorem.com"></Input>
       <Step1AboveInput>Phone Number</Step1AboveInput>{" "}
-      <Input placeholder="Enter your name"></Input>
+      <Input placeholder=" e.g. +1 234 567 890"></Input>
       <Step1ButtonContainer>
         <Link to="/selectPlan">
           <ButtonDark>Next Step</ButtonDark>
