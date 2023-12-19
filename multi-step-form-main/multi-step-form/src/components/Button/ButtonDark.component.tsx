@@ -1,11 +1,23 @@
 import { ButtonContainer, ButtonDarkStyle } from "./Button.styled";
 import React from "react";
 
-export const ButtonDark: React.FC<{ children: string }> = ({ children }) => {
+interface ButtonDarkProps {
+  onClick?: () => void;
+  children?: React.ReactNode;
+  type?: "button" | "submit" | "reset";
+}
+
+export const ButtonDark: React.FC<ButtonDarkProps> = ({
+  children,
+  onClick,
+  type = "button",
+}) => {
   return (
     <>
       <ButtonContainer>
-        <ButtonDarkStyle>{children}</ButtonDarkStyle>
+        <ButtonDarkStyle type={type} onClick={onClick}>
+          {children}
+        </ButtonDarkStyle>
       </ButtonContainer>
     </>
   );

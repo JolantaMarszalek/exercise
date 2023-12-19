@@ -107,6 +107,13 @@ export const Step1AboveInput = styled.div`
   }
 `;
 
+export const ErrorContainer = styled.div`
+  color: red;
+  text-align: right;
+  font-size: 15px;
+  margin-top: 5px;
+`;
+
 export const Step1ButtonContainer = styled.section`
   box-sizing: content-box;
   width: min(40rem, 100%);

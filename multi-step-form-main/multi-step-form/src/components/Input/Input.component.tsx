@@ -1,13 +1,13 @@
 import { InputField, InputLabel } from "./Input.styled";
 
-interface InputProps {
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   placeholder?: string;
 }
 
-export const Input: React.FC<InputProps> = ({ placeholder }) => {
+export const Input: React.FC<InputProps> = ({ placeholder, ...rest }) => {
   return (
     <InputLabel>
-      <InputField placeholder={placeholder} />
+      <InputField placeholder={placeholder} {...rest} />
     </InputLabel>
   );
 };
