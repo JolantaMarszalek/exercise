@@ -110,7 +110,7 @@ export const Step2Section = () => {
             </svg>
           </Step2SingleCardImage>
           <Step2SingleCardTitle>Pro</Step2SingleCardTitle>
-          <Step2SingleCardPrice>15/mo</Step2SingleCardPrice>
+          <Step2SingleCardPrice>$15/mo</Step2SingleCardPrice>
         </Step2SingleCardSection>
       </Step2CardSection>
       <Step2ToggleContainer>

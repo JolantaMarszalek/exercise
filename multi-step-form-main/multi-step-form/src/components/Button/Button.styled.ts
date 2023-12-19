@@ -9,7 +9,7 @@ export const ButtonDarkStyle = styled.button`
   padding: 0;
   box-sizing: border-box;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: var(--neutral-white);
   background-color: var(--primary-marine-blue);
@@ -30,7 +30,7 @@ export const ButtonLightStyle = styled.button`
   padding: 0;
   box-sizing: border-box;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: var(--neutral-cool-gray);
   background-color: white;
