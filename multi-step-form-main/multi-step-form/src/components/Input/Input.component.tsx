@@ -1,9 +1,13 @@
 import { InputField, InputLabel } from "./Input.styled";
 
-export const Input = () => {
+interface InputProps {
+  placeholder?: string;
+}
+
+export const Input: React.FC<InputProps> = ({ placeholder }) => {
   return (
     <InputLabel>
-      <InputField />
+      <InputField placeholder={placeholder} />
     </InputLabel>
   );
 };
