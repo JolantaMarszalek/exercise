@@ -28,6 +28,30 @@ export const Step5SectionStyle = styled.div`
   }
 `;
 
+export const Step5Image = styled.div`
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  /* margin-top: 20px;
+  margin-left: 20px; */
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
 export const Step5Title = styled.div`
   display: flex;
   justify-content: center;
@@ -61,6 +85,7 @@ export const Step5Describe = styled.div`
   margin-bottom: 20px;
   color: var(--neutral-cool-gray);
   text-align: center;
+  font-size: 18px;
 
   @media (max-width: 768px) {
     justify-content: center;
