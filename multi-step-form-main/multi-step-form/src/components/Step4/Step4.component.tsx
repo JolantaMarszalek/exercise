@@ -83,7 +83,7 @@ export const Step4Section = () => {
         <Link to="/addOns">
           <ButtonLight>Go Back</ButtonLight>
         </Link>
-        <Link to="/summary">
+        <Link to="/thankYou">
           <ButtonDark>Next Step</ButtonDark>
         </Link>
       </Step4ButtonContainer>

@@ -3,6 +3,7 @@ import { Step1Page } from "./pages/Step1Page.page";
 import { Step2Page } from "./pages/Step2Page.page";
 import { Step3Page } from "./pages/Step3Page.page";
 import { Step4Page } from "./pages/Step4Page.page";
+import { Step5Page } from "./pages/Step5Page.page";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/selectPlan" element={<Step2Page />} />
         <Route path="/addOns" element={<Step3Page />} />
         <Route path="/summary" element={<Step4Page />} />
+        <Route path="/thankYou" element={<Step5Page />} />
       </Routes>
     </Router>
   );
