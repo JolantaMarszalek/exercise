@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ButtonDark } from "../Button/ButtonDark.component";
+// import { ButtonDark } from "../Button/ButtonDark.component";
 
 import {
   Step4ButtonContainer,
@@ -18,6 +18,7 @@ import {
   Step4SingleCardTextSingleLineText,
 } from "./Step4.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
+import { ButtonDarkSecond } from "../Button/ButtonDarkSecond.component";
 
 export const Step4Section = () => {
   return (
@@ -84,7 +85,7 @@ export const Step4Section = () => {
           <ButtonLight>Go Back</ButtonLight>
         </Link>
         <Link to="/thankYou">
-          <ButtonDark>Next Step</ButtonDark>
+          <ButtonDarkSecond>Confirm</ButtonDarkSecond>
         </Link>
       </Step4ButtonContainer>
     </Step4SectionStyle>
