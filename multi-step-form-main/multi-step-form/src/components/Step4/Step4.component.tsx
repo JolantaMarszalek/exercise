@@ -34,7 +34,15 @@ export const Step4Section = () => {
                 <Step4SingleCardTitle>Arcade (Monthly)</Step4SingleCardTitle>
                 <Step4SingleCardDescribe>Change</Step4SingleCardDescribe>
               </Step4SingleCardTextSingleLineText>
-              <Step4SingleCardPrice>+$9/mo</Step4SingleCardPrice>
+              <Step4SingleCardPrice>
+                {" "}
+                <span
+                  style={{
+                    fontWeight: "bold",
+                  }}>
+                  +$9/mo
+                </span>
+              </Step4SingleCardPrice>
             </Step4SingleCardTextSingleLine>
             {/* <Step4SingleCardTitle>Arcade (Monthly)</Step4SingleCardTitle>
             <Step4SingleCardDescribe>Change</Step4SingleCardDescribe> */}
@@ -59,7 +67,16 @@ export const Step4Section = () => {
         </Step4SingleCardSection>
         <Step4UnderSingleCard>
           <Step4SingleCardDescribe>Total (per month)</Step4SingleCardDescribe>
-          <Step4SingleCardPrice>+$12/mo</Step4SingleCardPrice>
+          <Step4SingleCardPrice>
+            <span
+              style={{
+                color: "var(--primary-purplish-blue)",
+                fontWeight: "bold",
+                fontSize: "20px",
+              }}>
+              +$12/mo
+            </span>
+          </Step4SingleCardPrice>
         </Step4UnderSingleCard>
       </Step4CardSection>
       <Step4ButtonContainer>
