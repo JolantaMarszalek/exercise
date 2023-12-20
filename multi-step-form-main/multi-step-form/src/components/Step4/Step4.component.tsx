@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-// import { ButtonDark } from "../Button/ButtonDark.component";
-
 import {
   Step4ButtonContainer,
   Step4CardSection,
@@ -12,7 +10,6 @@ import {
   Step4SingleCardTextSection,
   Step4SingleCardTitle,
   Step4Title,
-  // Step4SingleCardPriceSection,
   Step4UnderSingleCard,
   Step4SingleCardTextSingleLine,
   Step4SingleCardTextSingleLineText,
@@ -45,13 +42,10 @@ export const Step4Section = () => {
                 </span>
               </Step4SingleCardPrice>
             </Step4SingleCardTextSingleLine>
-            {/* <Step4SingleCardTitle>Arcade (Monthly)</Step4SingleCardTitle>
-            <Step4SingleCardDescribe>Change</Step4SingleCardDescribe> */}
             <Step4SingleCardTextSingleLine>
               <Step4SingleCardDescribe>Online service</Step4SingleCardDescribe>
               <Step4SingleCardPrice>+$1/mo</Step4SingleCardPrice>
             </Step4SingleCardTextSingleLine>
-            {/* <Step4SingleCardDescribe>Online service</Step4SingleCardDescribe> */}
             <Step4SingleCardTextSingleLine>
               {" "}
               <Step4SingleCardDescribe>
@@ -60,11 +54,6 @@ export const Step4Section = () => {
               <Step4SingleCardPrice>+$2/mo</Step4SingleCardPrice>
             </Step4SingleCardTextSingleLine>
           </Step4SingleCardTextSection>
-          {/* <Step4SingleCardPriceSection> */}
-          {/* <Step4SingleCardPrice>+$9/mo</Step4SingleCardPrice> */}
-          {/* <Step4SingleCardPrice>+$1/mo</Step4SingleCardPrice> */}
-          {/* <Step4SingleCardPrice>+$2/mo</Step4SingleCardPrice> */}
-          {/* </Step4SingleCardPriceSection> */}
         </Step4SingleCardSection>
         <Step4UnderSingleCard>
           <Step4SingleCardDescribe>Total (per month)</Step4SingleCardDescribe>
