@@ -84,7 +84,8 @@ export const Step3Section = () => {
         Add-ons help enhance your gaming experience.
       </Step3Describe>
       <Step3CardSection>
-        <Step3SingleCardSection>
+        <Step3SingleCardSection
+          isSelected={selectedAddons.includes("Online service")}>
           <Step3SingleCardCheckboxSection>
             {" "}
             <input
@@ -104,7 +105,8 @@ export const Step3Section = () => {
             {getAddonPrice("Online service")}
           </Step3SingleCardPrice>
         </Step3SingleCardSection>
-        <Step3SingleCardSection>
+        <Step3SingleCardSection
+          isSelected={selectedAddons.includes("Larger storage")}>
           {" "}
           <Step3SingleCardCheckboxSection>
             {" "}
@@ -125,7 +127,8 @@ export const Step3Section = () => {
             {getAddonPrice("Larger storage")}
           </Step3SingleCardPrice>
         </Step3SingleCardSection>
-        <Step3SingleCardSection>
+        <Step3SingleCardSection
+          isSelected={selectedAddons.includes("Customizable Profile")}>
           {" "}
           <Step3SingleCardCheckboxSection>
             {" "}

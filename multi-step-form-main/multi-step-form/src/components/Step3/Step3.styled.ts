@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Step3SectionStyle = styled.div`
   display: flex;
@@ -107,7 +107,16 @@ export const Step3CardSection = styled.div`
   }
 `;
 
-export const Step3SingleCardSection = styled.div`
+interface Step3SingleCardSectionProps {
+  isSelected: boolean;
+}
+
+const selectedStyles = css`
+  background-color: var(--neutral-alabaster);
+  border: 1px solid var(--primary-purplish-blue);
+`;
+
+export const Step3SingleCardSection = styled.div<Step3SingleCardSectionProps>`
   display: flex;
   flex-direction: row;
   position: relative;
@@ -123,6 +132,8 @@ export const Step3SingleCardSection = styled.div`
     background-color: var(--neutral-alabaster);
     border: 1px solid var(--primary-purplish-blue);
   }
+
+  ${({ isSelected }) => isSelected && selectedStyles}
 
   @media (max-width: 768px) {
     justify-content: center;
