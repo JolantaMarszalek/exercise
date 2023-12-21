@@ -20,27 +20,35 @@ import {
 } from "./Step4.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
 import { ButtonDarkSecond } from "../Button/ButtonDarkSecond.component";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 export const Step4Section = () => {
   const location = useLocation();
-  const { state } = location;
-  const { selectedAddons: initialSelectedAddons, isMonthly: initialIsMonthly } =
-    state || { selectedAddons: [], isMonthly: true };
-  const [selectedAddons, setSelectedAddons] = useState<string[]>(
-    initialSelectedAddons
+  const queryParams = useMemo(
+    () => new URLSearchParams(location.search),
+    [location.search]
   );
-  const [isMonthly, setIsMonthly] = useState<boolean>(initialIsMonthly);
+  const selectedCard = queryParams.get("selectedCard");
+  const addonsString = queryParams.get("addons");
+  const selectedAddons = addonsString
+    ? JSON.parse(decodeURIComponent(addonsString))
+    : [];
+  const isMonthly = queryParams.get("monthly") === "true";
 
-  // const history = useHistory();
-  // const { selectedCard } = history.location.state || {};
+  const [initialSelectedAddons, setInitialSelectedAddons] = useState<string[]>(
+    []
+  );
+  const [initialIsMonthly, setInitialIsMonthly] = useState<boolean>(true);
 
   useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    const addons = JSON.parse(decodeURIComponent(params.get("addons") || "[]"));
-    setSelectedAddons(addons);
-    setIsMonthly(params.get("monthly") === "true");
-  }, [location.search]);
+    const addons = JSON.parse(
+      decodeURIComponent(queryParams.get("addons") || "[]")
+    );
+    const isMonthlyValue = queryParams.get("monthly") === "true";
+
+    setInitialSelectedAddons(addons);
+    setInitialIsMonthly(isMonthlyValue);
+  }, [queryParams]);
 
   const getAddonPrice = (addonType: string) => {
     if (!isMonthly) {
@@ -72,7 +80,6 @@ export const Step4Section = () => {
     return (
       <Step4SingleCardTextSingleLine key={addonName}>
         <Step4SingleCardDescribe>{addonName}</Step4SingleCardDescribe>
-
         <Step4SingleCardPrice>{getAddonPrice(addonName)}</Step4SingleCardPrice>
       </Step4SingleCardTextSingleLine>
     );
@@ -89,18 +96,26 @@ export const Step4Section = () => {
           <Step4SingleCardTextSection>
             <Step4SingleCardTextFromStep2>
               <Step4SingleCardTextSingleLineFromStep2>
-                {/* {selectedCard} */}
-                <Step4SingleCardTitle>Arcade (Monthly)</Step4SingleCardTitle>
-                <Step4SingleCardDescribe>Change</Step4SingleCardDescribe>
+                {selectedCard ? (
+                  <>
+                    <Step4SingleCardTitle>{selectedCard}</Step4SingleCardTitle>
+                    <Step4SingleCardDescribe>Change</Step4SingleCardDescribe>
+                  </>
+                ) : null}
+                {/* <Step4SingleCardTitle>Arcade (Monthly)</Step4SingleCardTitle>
+                <Step4SingleCardDescribe>Change</Step4SingleCardDescribe> */}
               </Step4SingleCardTextSingleLineFromStep2>
               <Step4SingleCardPriceFromStep2>
-                {" "}
+                {/* {" "}
                 <span
                   style={{
                     fontWeight: "bold",
                   }}>
                   +$9/mo
-                </span>
+                </span> */}
+                {selectedCard ? (
+                  <span style={{ fontWeight: "bold" }}>+$9/mo</span>
+                ) : null}
               </Step4SingleCardPriceFromStep2>
             </Step4SingleCardTextFromStep2>
 

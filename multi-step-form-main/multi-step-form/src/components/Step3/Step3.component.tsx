@@ -20,7 +20,9 @@ import { useState } from "react";
 
 export const Step3Section = () => {
   const location = useLocation();
-  const isMonthly = location.state ? location.state.isMonthly : false;
+  const { isMonthly, selectedCard } = location.state
+    ? location.state.isMonthly
+    : false;
   const [selectedAddons, setSelectedAddons] = useState<string[]>([]);
 
   const getAddonPrice = (addonType: string) => {
@@ -139,7 +141,7 @@ export const Step3Section = () => {
         <Link
           to={{
             pathname: "/summary",
-            search: `?addons=${encodeURIComponent(
+            search: `?selectedCard=${selectedCard}&addons=${encodeURIComponent(
               JSON.stringify(selectedAddons)
             )}&monthly=${isMonthly}`,
           }}>

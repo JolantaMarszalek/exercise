@@ -19,25 +19,22 @@ import {
   ToggleSlider,
 } from "./Step2.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
-// import { useHistory } from "react-router-dom";
-// import { withRouter } from "react-router-dom";
 import React from "react";
-// import { Redirect } from "react-router-dom";
-// import { useHistory } from "react-router-dom";
 
 export const Step2Section: React.FC = () => {
-  // export const Step2Section = withRouter(({ history }) => {
-  //   const handleNextStep = (selectedCard) => {
-  //     history.push("/summary", { selectedCard });
-  //   };
   const [isClicked, setIsClicked] = useState(false);
   const [isMonthly, setIsMonthly] = useState(false);
-  // const history = useHistory();
-  // const [selectedCard, setSelectedCard] = useState("");
   const navigate = useNavigate();
+  const [selectedCard, setSelectedCard] = useState<string>("");
+
+  // const handleNextStep = (cardType: string) => {
+  //   setSelectedCard(cardType);
+  //   navigate("/summary", { state: { selectedCard: cardType } });
+  // };
 
   const handleNextStep = (cardType: string) => {
-    navigate("/summary", { state: { selectedCard: cardType } });
+    setSelectedCard(cardType);
+    navigate(`/summary?selectedCard=${cardType}`);
   };
 
   const handleClick = () => {
@@ -195,7 +192,9 @@ export const Step2Section: React.FC = () => {
         <Link to="/">
           <ButtonLight>Go Back</ButtonLight>
         </Link>
-        <Link to="/addOns" state={{ isMonthly: isMonthly }}>
+        <Link
+          to="/addOns"
+          state={{ isMonthly: isMonthly, selectedCard: selectedCard }}>
           {/* <ButtonDark>Next Step</ButtonDark> */}
           <ButtonDark onClick={() => handleNextStep("Arcade")}>
             Next Step
