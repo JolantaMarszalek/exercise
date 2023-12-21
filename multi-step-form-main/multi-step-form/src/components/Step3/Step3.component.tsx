@@ -16,10 +16,19 @@ import {
 } from "./Step3.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
 import { useLocation } from "react-router-dom";
+import { useState } from "react";
+
+// interface LocationState {
+//   selectedAddons: string[];
+//   isMonthly: boolean;
+// }
 
 export const Step3Section = () => {
   const location = useLocation();
+  // <LocationState>
   const isMonthly = location.state ? location.state.isMonthly : true;
+  // const { isMonthly } = location.state || { isMonthly: true };
+  const [selectedAddons, setSelectedAddons] = useState<string[]>([]);
 
   const getAddonPrice = (addonType: string) => {
     if (!isMonthly) {
@@ -47,6 +56,17 @@ export const Step3Section = () => {
     }
   };
 
+  const handleAddonSelection = (addonType: string) => {
+    const index = selectedAddons.indexOf(addonType);
+    if (index === -1) {
+      setSelectedAddons([...selectedAddons, addonType]);
+    } else {
+      const updatedAddons = [...selectedAddons];
+      updatedAddons.splice(index, 1);
+      setSelectedAddons(updatedAddons);
+    }
+  };
+
   return (
     <Step3SectionStyle>
       <Step3Title>Pick add-ons</Step3Title>
@@ -57,7 +77,11 @@ export const Step3Section = () => {
         <Step3SingleCardSection>
           <Step3SingleCardCheckboxSection>
             {" "}
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              onChange={() => handleAddonSelection("Online service")}
+              checked={selectedAddons.includes("Online service")}
+            />
           </Step3SingleCardCheckboxSection>
 
           <Step3SingleCardTextSection>
@@ -108,7 +132,12 @@ export const Step3Section = () => {
         <Link to="/selectPlan">
           <ButtonLight>Go Back</ButtonLight>
         </Link>
-        <Link to="/summary">
+        {/* <Link
+          to={{
+            pathname: "/summary",
+            state: { selectedAddons: selectedAddons, isMonthly: isMonthly },
+          }}> */}
+        <Link to="/summary" state={{ selectedAddons, isMonthly }}>
           <ButtonDark>Next Step</ButtonDark>
         </Link>
       </Step3ButtonContainer>

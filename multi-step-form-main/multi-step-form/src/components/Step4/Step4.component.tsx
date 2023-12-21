@@ -12,7 +12,9 @@ import {
   Step4Title,
   Step4UnderSingleCard,
   Step4SingleCardTextSingleLine,
-  Step4SingleCardTextSingleLineText,
+  Step4SingleCardTextFromStep2,
+  Step4SingleCardTextSingleLineFromStep2,
+  Step4SingleCardPriceFromStep2,
 } from "./Step4.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
 import { ButtonDarkSecond } from "../Button/ButtonDarkSecond.component";
@@ -27,12 +29,12 @@ export const Step4Section = () => {
       <Step4CardSection>
         <Step4SingleCardSection>
           <Step4SingleCardTextSection>
-            <Step4SingleCardTextSingleLine>
-              <Step4SingleCardTextSingleLineText>
+            <Step4SingleCardTextFromStep2>
+              <Step4SingleCardTextSingleLineFromStep2>
                 <Step4SingleCardTitle>Arcade (Monthly)</Step4SingleCardTitle>
                 <Step4SingleCardDescribe>Change</Step4SingleCardDescribe>
-              </Step4SingleCardTextSingleLineText>
-              <Step4SingleCardPrice>
+              </Step4SingleCardTextSingleLineFromStep2>
+              <Step4SingleCardPriceFromStep2>
                 {" "}
                 <span
                   style={{
@@ -40,8 +42,8 @@ export const Step4Section = () => {
                   }}>
                   +$9/mo
                 </span>
-              </Step4SingleCardPrice>
-            </Step4SingleCardTextSingleLine>
+              </Step4SingleCardPriceFromStep2>
+            </Step4SingleCardTextFromStep2>
             <Step4SingleCardTextSingleLine>
               <Step4SingleCardDescribe>Online service</Step4SingleCardDescribe>
               <Step4SingleCardPrice>+$1/mo</Step4SingleCardPrice>
