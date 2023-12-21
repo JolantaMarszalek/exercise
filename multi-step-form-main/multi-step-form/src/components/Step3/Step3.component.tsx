@@ -30,6 +30,16 @@ export const Step3Section = () => {
   // const { isMonthly } = location.state || { isMonthly: true };
   const [selectedAddons, setSelectedAddons] = useState<string[]>([]);
 
+  // const { selectedAddons, isMonthly } = location.state || {
+  //   selectedAddons: [],
+  //   isMonthly: true,
+  // };
+
+  // const selectedAddonsParams = new URLSearchParams();
+  // selectedAddons.forEach((addon) => {
+  //   selectedAddonsParams.append("selectedAddons", addon);
+  // });
+
   const getAddonPrice = (addonType: string) => {
     if (!isMonthly) {
       switch (addonType) {
@@ -98,7 +108,11 @@ export const Step3Section = () => {
           {" "}
           <Step3SingleCardCheckboxSection>
             {" "}
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              onChange={() => handleAddonSelection("Larger storage")}
+              checked={selectedAddons.includes("Larger storage")}
+            />
           </Step3SingleCardCheckboxSection>
           <Step3SingleCardTextSection>
             <Step3SingleCardTitle>Larger storage</Step3SingleCardTitle>
@@ -115,7 +129,11 @@ export const Step3Section = () => {
           {" "}
           <Step3SingleCardCheckboxSection>
             {" "}
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              onChange={() => handleAddonSelection("Customizable Profile")}
+              checked={selectedAddons.includes("Customizable Profile")}
+            />
           </Step3SingleCardCheckboxSection>
           <Step3SingleCardTextSection>
             <Step3SingleCardTitle>Customizable Profile</Step3SingleCardTitle>
@@ -137,7 +155,16 @@ export const Step3Section = () => {
             pathname: "/summary",
             state: { selectedAddons: selectedAddons, isMonthly: isMonthly },
           }}> */}
-        <Link to="/summary" state={{ selectedAddons, isMonthly }}>
+        <Link
+          to={{
+            pathname: "/summary",
+            // state: { selectedAddons, isMonthly },
+            // search: `?${selectedAddonsParams.toString()}`,
+            search: `?addons=${encodeURIComponent(
+              JSON.stringify(selectedAddons)
+            )}&monthly=${isMonthly}`,
+            // state: { selectedAddons, isMonthly },
+          }}>
           <ButtonDark>Next Step</ButtonDark>
         </Link>
       </Step3ButtonContainer>

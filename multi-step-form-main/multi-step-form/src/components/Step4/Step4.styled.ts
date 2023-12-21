@@ -219,6 +219,32 @@ export const Step4SingleCardTextSingleLineFromStep2 = styled.div`
   }
 `;
 
+export const Step4SingleCardTextSingleLineSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* background-color: white; */
+  border-radius: 10px;
+  /* margin: auto; */
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
 export const Step4SingleCardTextSingleLine = styled.div`
   display: flex;
   flex-direction: row;
@@ -248,7 +274,7 @@ export const Step4SingleCardTextSingleLine = styled.div`
 
 export const Step4SingleCardTextSingleLineText = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;

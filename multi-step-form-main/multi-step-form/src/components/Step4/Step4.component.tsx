@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   Step4ButtonContainer,
   Step4CardSection,
@@ -15,11 +15,81 @@ import {
   Step4SingleCardTextFromStep2,
   Step4SingleCardTextSingleLineFromStep2,
   Step4SingleCardPriceFromStep2,
+  Step4SingleCardTextSingleLineSection,
+  // Step4SingleCardTextSingleLineText,
 } from "./Step4.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
 import { ButtonDarkSecond } from "../Button/ButtonDarkSecond.component";
+import { useEffect, useState } from "react";
 
 export const Step4Section = () => {
+  const location = useLocation();
+  const { state } = location;
+  const { selectedAddons: initialSelectedAddons, isMonthly: initialIsMonthly } =
+    state || { selectedAddons: [], isMonthly: true };
+  const [selectedAddons, setSelectedAddons] = useState<string[]>(
+    initialSelectedAddons
+  );
+  const [isMonthly, setIsMonthly] = useState<boolean>(initialIsMonthly);
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const addons = JSON.parse(decodeURIComponent(params.get("addons") || "[]"));
+    setSelectedAddons(addons);
+    setIsMonthly(params.get("monthly") === "true");
+  }, [location.search]);
+
+  // const params = new URLSearchParams(location.search);
+  // const selectedAddons = params.getAll("selectedAddons");
+
+  // const queryParams = new URLSearchParams(location.search);
+  // const addons = JSON.parse(
+  //   decodeURIComponent(queryParams.get("addons") || "[]")
+  // );
+  // const isMonthly = queryParams.get("monthly") === "true";
+
+  // const allAddons = [
+  //   { name: "Online service", price: "$1/mo" },
+  //   { name: "Larger storage", price: "$2/mo" },
+  //   { name: "Customizable Profile", price: "$2/mo" },
+  // ];
+
+  const getAddonPrice = (addonType: string) => {
+    if (!isMonthly) {
+      switch (addonType) {
+        case "Online service":
+          return "$1/mo";
+        case "Larger storage":
+          return "$2/mo";
+        case "Customizable Profile":
+          return "$2/mo";
+        default:
+          return "";
+      }
+    } else {
+      switch (addonType) {
+        case "Online service":
+          return "$10/yr";
+        case "Larger storage":
+          return "$20/yr";
+        case "Customizable Profile":
+          return "$20/yr";
+        default:
+          return "";
+      }
+    }
+  };
+
+  const selectedAddonsInStep4 = selectedAddons.map((addonName) => {
+    return (
+      <Step4SingleCardTextSingleLine key={addonName}>
+        <Step4SingleCardDescribe>{addonName}</Step4SingleCardDescribe>
+
+        <Step4SingleCardPrice>{getAddonPrice(addonName)}</Step4SingleCardPrice>
+      </Step4SingleCardTextSingleLine>
+    );
+  });
+
   return (
     <Step4SectionStyle>
       <Step4Title>Finishing up</Step4Title>
@@ -44,17 +114,24 @@ export const Step4Section = () => {
                 </span>
               </Step4SingleCardPriceFromStep2>
             </Step4SingleCardTextFromStep2>
-            <Step4SingleCardTextSingleLine>
+
+            <Step4SingleCardTextSingleLineSection>
+              {" "}
+              {/* <Step4SingleCardTextSingleLine> */}
+              {/* <Step4SingleCardTextSingleLineText> */}
+              {selectedAddonsInStep4}
+              {/* </Step4SingleCardTextSingleLineText> */}
+              {/* </Step4SingleCardTextSingleLine> */}
+            </Step4SingleCardTextSingleLineSection>
+
+            {/* <Step4SingleCardTextSingleLine>
               <Step4SingleCardDescribe>Online service</Step4SingleCardDescribe>
               <Step4SingleCardPrice>+$1/mo</Step4SingleCardPrice>
-            </Step4SingleCardTextSingleLine>
-            <Step4SingleCardTextSingleLine>
-              {" "}
-              <Step4SingleCardDescribe>
-                Larger storage
-              </Step4SingleCardDescribe>{" "}
+            </Step4SingleCardTextSingleLine> */}
+            {/* <Step4SingleCardTextSingleLine>
+              <Step4SingleCardDescribe>Larger storage</Step4SingleCardDescribe>
               <Step4SingleCardPrice>+$2/mo</Step4SingleCardPrice>
-            </Step4SingleCardTextSingleLine>
+            </Step4SingleCardTextSingleLine> */}
           </Step4SingleCardTextSection>
         </Step4SingleCardSection>
         <Step4UnderSingleCard>
