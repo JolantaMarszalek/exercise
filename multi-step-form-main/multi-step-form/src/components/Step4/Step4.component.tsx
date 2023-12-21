@@ -39,21 +39,6 @@ export const Step4Section = () => {
     setIsMonthly(params.get("monthly") === "true");
   }, [location.search]);
 
-  // const params = new URLSearchParams(location.search);
-  // const selectedAddons = params.getAll("selectedAddons");
-
-  // const queryParams = new URLSearchParams(location.search);
-  // const addons = JSON.parse(
-  //   decodeURIComponent(queryParams.get("addons") || "[]")
-  // );
-  // const isMonthly = queryParams.get("monthly") === "true";
-
-  // const allAddons = [
-  //   { name: "Online service", price: "$1/mo" },
-  //   { name: "Larger storage", price: "$2/mo" },
-  //   { name: "Customizable Profile", price: "$2/mo" },
-  // ];
-
   const getAddonPrice = (addonType: string) => {
     if (!isMonthly) {
       switch (addonType) {
@@ -117,21 +102,8 @@ export const Step4Section = () => {
 
             <Step4SingleCardTextSingleLineSection>
               {" "}
-              {/* <Step4SingleCardTextSingleLine> */}
-              {/* <Step4SingleCardTextSingleLineText> */}
               {selectedAddonsInStep4}
-              {/* </Step4SingleCardTextSingleLineText> */}
-              {/* </Step4SingleCardTextSingleLine> */}
             </Step4SingleCardTextSingleLineSection>
-
-            {/* <Step4SingleCardTextSingleLine>
-              <Step4SingleCardDescribe>Online service</Step4SingleCardDescribe>
-              <Step4SingleCardPrice>+$1/mo</Step4SingleCardPrice>
-            </Step4SingleCardTextSingleLine> */}
-            {/* <Step4SingleCardTextSingleLine>
-              <Step4SingleCardDescribe>Larger storage</Step4SingleCardDescribe>
-              <Step4SingleCardPrice>+$2/mo</Step4SingleCardPrice>
-            </Step4SingleCardTextSingleLine> */}
           </Step4SingleCardTextSection>
         </Step4SingleCardSection>
         <Step4UnderSingleCard>

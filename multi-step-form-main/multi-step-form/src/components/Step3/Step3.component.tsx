@@ -18,27 +18,10 @@ import { ButtonLight } from "../Button/ButtonLight.component";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 
-// interface LocationState {
-//   selectedAddons: string[];
-//   isMonthly: boolean;
-// }
-
 export const Step3Section = () => {
   const location = useLocation();
-  // <LocationState>
   const isMonthly = location.state ? location.state.isMonthly : true;
-  // const { isMonthly } = location.state || { isMonthly: true };
   const [selectedAddons, setSelectedAddons] = useState<string[]>([]);
-
-  // const { selectedAddons, isMonthly } = location.state || {
-  //   selectedAddons: [],
-  //   isMonthly: true,
-  // };
-
-  // const selectedAddonsParams = new URLSearchParams();
-  // selectedAddons.forEach((addon) => {
-  //   selectedAddonsParams.append("selectedAddons", addon);
-  // });
 
   const getAddonPrice = (addonType: string) => {
     if (!isMonthly) {
@@ -153,20 +136,12 @@ export const Step3Section = () => {
         <Link to="/selectPlan">
           <ButtonLight>Go Back</ButtonLight>
         </Link>
-        {/* <Link
-          to={{
-            pathname: "/summary",
-            state: { selectedAddons: selectedAddons, isMonthly: isMonthly },
-          }}> */}
         <Link
           to={{
             pathname: "/summary",
-            // state: { selectedAddons, isMonthly },
-            // search: `?${selectedAddonsParams.toString()}`,
             search: `?addons=${encodeURIComponent(
               JSON.stringify(selectedAddons)
             )}&monthly=${isMonthly}`,
-            // state: { selectedAddons, isMonthly },
           }}>
           <ButtonDark>Next Step</ButtonDark>
         </Link>
