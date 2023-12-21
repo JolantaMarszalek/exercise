@@ -15,8 +15,38 @@ import {
   Step3Title,
 } from "./Step3.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
+import { useLocation } from "react-router-dom";
 
 export const Step3Section = () => {
+  const location = useLocation();
+  const isMonthly = location.state ? location.state.isMonthly : true;
+
+  const getAddonPrice = (addonType: string) => {
+    if (!isMonthly) {
+      switch (addonType) {
+        case "Online service":
+          return "$1/mo";
+        case "Larger storage":
+          return "$2/mo";
+        case "Customizable Profile":
+          return "$2/mo";
+        default:
+          return "";
+      }
+    } else {
+      switch (addonType) {
+        case "Online service":
+          return "$10/yr";
+        case "Larger storage":
+          return "$20/yr";
+        case "Customizable Profile":
+          return "$20/yr";
+        default:
+          return "";
+      }
+    }
+  };
+
   return (
     <Step3SectionStyle>
       <Step3Title>Pick add-ons</Step3Title>
@@ -36,7 +66,9 @@ export const Step3Section = () => {
               Access to multiplayer games
             </Step3SingleCardDescribe>
           </Step3SingleCardTextSection>
-          <Step3SingleCardPrice>+$1/mo</Step3SingleCardPrice>
+          <Step3SingleCardPrice>
+            {getAddonPrice("Online service")}
+          </Step3SingleCardPrice>
         </Step3SingleCardSection>
         <Step3SingleCardSection>
           {" "}
@@ -50,7 +82,10 @@ export const Step3Section = () => {
               Extra 1TB of cloud save
             </Step3SingleCardDescribe>
           </Step3SingleCardTextSection>
-          <Step3SingleCardPrice>+$2/mo</Step3SingleCardPrice>
+          <Step3SingleCardPrice>
+            {" "}
+            {getAddonPrice("Larger storage")}
+          </Step3SingleCardPrice>
         </Step3SingleCardSection>
         <Step3SingleCardSection>
           {" "}
@@ -64,7 +99,9 @@ export const Step3Section = () => {
               Custom theme on your profile
             </Step3SingleCardDescribe>
           </Step3SingleCardTextSection>
-          <Step3SingleCardPrice>+$2/mo</Step3SingleCardPrice>
+          <Step3SingleCardPrice>
+            {getAddonPrice("Customizable Profile")}
+          </Step3SingleCardPrice>
         </Step3SingleCardSection>
       </Step3CardSection>
       <Step3ButtonContainer>

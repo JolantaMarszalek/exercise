@@ -20,7 +20,7 @@ import {
 } from "./Step2.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
 
-export const Step2Section = () => {
+export const Step2Section: React.FC = () => {
   const [isClicked, setIsClicked] = useState(false);
   const [isMonthly, setIsMonthly] = useState(true);
 
@@ -179,7 +179,7 @@ export const Step2Section = () => {
         <Link to="/">
           <ButtonLight>Go Back</ButtonLight>
         </Link>
-        <Link to="/addOns">
+        <Link to="/addOns" state={{ isMonthly: isMonthly }}>
           <ButtonDark>Next Step</ButtonDark>
         </Link>
       </Step2ButtonContainer>
