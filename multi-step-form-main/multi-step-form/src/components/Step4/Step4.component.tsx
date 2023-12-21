@@ -32,6 +32,9 @@ export const Step4Section = () => {
   );
   const [isMonthly, setIsMonthly] = useState<boolean>(initialIsMonthly);
 
+  // const history = useHistory();
+  // const { selectedCard } = history.location.state || {};
+
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const addons = JSON.parse(decodeURIComponent(params.get("addons") || "[]"));
@@ -86,6 +89,7 @@ export const Step4Section = () => {
           <Step4SingleCardTextSection>
             <Step4SingleCardTextFromStep2>
               <Step4SingleCardTextSingleLineFromStep2>
+                {/* {selectedCard} */}
                 <Step4SingleCardTitle>Arcade (Monthly)</Step4SingleCardTitle>
                 <Step4SingleCardDescribe>Change</Step4SingleCardDescribe>
               </Step4SingleCardTextSingleLineFromStep2>
