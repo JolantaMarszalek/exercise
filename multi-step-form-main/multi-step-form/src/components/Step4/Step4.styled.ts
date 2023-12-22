@@ -120,8 +120,8 @@ export const Step4SingleCardSection = styled.div`
   width: 500px;
   height: 200px;
   border-radius: 10px;
-  border: 2px solid black;
-  background: var(--primary-pastel-blue);
+  /* border: 2px solid black; */
+  background: var(--neutral-alabaster);
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -142,6 +142,139 @@ export const Step4SingleCardSection = styled.div`
 export const Step4SingleCardTextSection = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* background-color: white; */
+  border-radius: 10px;
+  /* margin: auto; */
+  width: 100%;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+export const Step4SingleCardTextFromStep2 = styled.div`
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* background-color: white; */
+  border-radius: 10px;
+  /* margin: auto; */
+  margin-top: 10px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const Step4SingleCardTextSingleLineFromStep2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* background-color: white; */
+  border-radius: 10px;
+  /* margin: auto; */
+  margin-top: 10px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const Step4SingleCardTextSingleLineSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* background-color: white; */
+  border-radius: 10px;
+  /* margin: auto; */
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const Step4SingleCardTextSingleLine = styled.div`
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* background-color: white; */
+  border-radius: 10px;
+  /* margin: auto; */
+  margin-top: 10px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const Step4SingleCardTextSingleLineText = styled.div`
+  display: flex;
+  flex-direction: row;
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
@@ -174,6 +307,7 @@ export const Step4SingleCardTitle = styled.div`
   /* margin-top: 20px; */
   font-weight: bold;
   padding: 10px;
+  width: 350px;
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -201,6 +335,7 @@ export const Step4SingleCardDescribe = styled.div`
   /* font-weight: bold; */
   color: var(--neutral-cool-gray);
   padding: 10px;
+  width: 350px;
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -226,6 +361,32 @@ export const Step4SingleCardPriceSection = styled.div`
   align-items: center;
   /* margin-bottom: 20px; */
   margin-right: 20px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const Step4SingleCardPriceFromStep2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  /* margin-bottom: 20px; */
+  margin-right: 20px;
+  padding: 10px;
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -278,7 +439,6 @@ export const Step4UnderSingleCard = styled.div`
   /* margin-bottom: 20px; */
   margin-right: 20px;
   padding: 10px;
-  width: 100%;
 
   @media (max-width: 768px) {
     justify-content: center;

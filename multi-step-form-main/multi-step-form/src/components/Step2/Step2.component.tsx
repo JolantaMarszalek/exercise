@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ButtonDark } from "../Button/ButtonDark.component";
-// import { useState } from "react";
+import { useState } from "react";
 import {
   Step2ButtonContainer,
   Step2CardSection,
@@ -19,26 +19,93 @@ import {
   ToggleSlider,
 } from "./Step2.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
+import React from "react";
 
-export const ToggleCheckbox = () => {
-  //   const [isChecked, setIsChecked] = useState(false);
-  //   const handleCheckboxChange = () => {
-  //     setIsChecked(!isChecked);
-  //   };
-  //   return (
-  //     <div>
-  //       <label>
-  //         <input
-  //           type="checkbox"
-  //           checked={isChecked}
-  //           onChange={handleCheckboxChange}
-  //         />
-  //       </label>
-  //     </div>
-  //   );
-};
+export const Step2Section: React.FC = () => {
+  const [isClicked, setIsClicked] = useState(false);
+  const [isMonthly, setIsMonthly] = useState(false);
+  const navigate = useNavigate();
+  const [selectedCard, setSelectedCard] = useState<string>("");
 
-export const Step2Section = () => {
+  // const handleNextStep = (cardType: string) => {
+  //   setSelectedCard(cardType);
+  //   navigate("/summary", { state: { selectedCard: cardType } });
+  // };
+
+  const handleNextStep = (cardType: string) => {
+    setSelectedCard(cardType);
+    navigate(`/summary?selectedCard=${cardType}`);
+  };
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
+
+  const handleToggleChange = () => {
+    setIsMonthly(!isMonthly);
+  };
+
+  const getPrice = (cardType: string) => {
+    if (!isMonthly) {
+      switch (cardType) {
+        case "Arcade":
+          return "$9/mo";
+        case "Advanced":
+          return "$12/mo";
+        case "Pro":
+          return "$15/mo";
+        default:
+          return "";
+      }
+    } else {
+      switch (cardType) {
+        case "Arcade":
+          return (
+            <>
+              {" "}
+              $90/yr
+              <br />{" "}
+              <span
+                style={{
+                  color: "var(--primary-marine-blue)",
+                  fontSize: "smaller",
+                }}>
+                2 months free
+              </span>
+            </>
+          );
+        case "Advanced":
+          return (
+            <>
+              $120/yr <br />{" "}
+              <span
+                style={{
+                  color: "var(--primary-marine-blue)",
+                  fontSize: "smaller",
+                }}>
+                2 months free
+              </span>
+            </>
+          );
+        case "Pro":
+          return (
+            <>
+              $150/yr <br />{" "}
+              <span
+                style={{
+                  color: "var(--primary-marine-blue)",
+                  fontSize: "smaller",
+                }}>
+                2 months free
+              </span>
+            </>
+          );
+        default:
+          return "";
+      }
+    }
+  };
+
   return (
     <Step2SectionStyle>
       <Step2Title>Select your plan</Step2Title>
@@ -46,7 +113,7 @@ export const Step2Section = () => {
         You have the option of monthly or yearly billing.
       </Step2Describe>
       <Step2CardSection>
-        <Step2SingleCardSection>
+        <Step2SingleCardSection onClick={handleClick}>
           <Step2SingleCardImage>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,9 +131,9 @@ export const Step2Section = () => {
             </svg>
           </Step2SingleCardImage>
           <Step2SingleCardTitle>Arcade</Step2SingleCardTitle>
-          <Step2SingleCardPrice>$9/mo</Step2SingleCardPrice>
+          <Step2SingleCardPrice>{getPrice("Arcade")}</Step2SingleCardPrice>
         </Step2SingleCardSection>
-        <Step2SingleCardSection>
+        <Step2SingleCardSection onClick={handleClick}>
           <Step2SingleCardImage>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -84,9 +151,9 @@ export const Step2Section = () => {
             </svg>
           </Step2SingleCardImage>
           <Step2SingleCardTitle>Advanced</Step2SingleCardTitle>
-          <Step2SingleCardPrice>$12/mo</Step2SingleCardPrice>
+          <Step2SingleCardPrice>{getPrice("Advanced")}</Step2SingleCardPrice>
         </Step2SingleCardSection>
-        <Step2SingleCardSection>
+        <Step2SingleCardSection onClick={handleClick}>
           <Step2SingleCardImage>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +171,7 @@ export const Step2Section = () => {
             </svg>
           </Step2SingleCardImage>
           <Step2SingleCardTitle>Pro</Step2SingleCardTitle>
-          <Step2SingleCardPrice>15/mo</Step2SingleCardPrice>
+          <Step2SingleCardPrice>{getPrice("Pro")}</Step2SingleCardPrice>
         </Step2SingleCardSection>
       </Step2CardSection>
       <Step2ToggleContainer>
@@ -113,8 +180,8 @@ export const Step2Section = () => {
           <ToggleContainer>
             <ToggleInput
               type="checkbox"
-              //   checked={isChecked}
-              //   onChange={handleCheckboxChange}
+              checked={isMonthly}
+              onChange={handleToggleChange}
             />
             <ToggleSlider />
           </ToggleContainer>
@@ -125,8 +192,13 @@ export const Step2Section = () => {
         <Link to="/">
           <ButtonLight>Go Back</ButtonLight>
         </Link>
-        <Link to="/addOns">
-          <ButtonDark>Next Step</ButtonDark>
+        <Link
+          to="/addOns"
+          state={{ isMonthly: isMonthly, selectedCard: selectedCard }}>
+          {/* <ButtonDark>Next Step</ButtonDark> */}
+          <ButtonDark onClick={() => handleNextStep("Arcade")}>
+            Next Step
+          </ButtonDark>
         </Link>
       </Step2ButtonContainer>
     </Step2SectionStyle>

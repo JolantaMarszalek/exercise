@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Step3SectionStyle = styled.div`
   display: flex;
@@ -86,11 +86,7 @@ export const Step3CardSection = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  /* justify-content: flex-start; */
   align-items: center;
-  /* margin: auto; */
-  /* margin-left: 30px; */
-  /* margin-bottom: 20px; */
   justify-content: space-between;
   gap: 20px;
   width: 100%;
@@ -111,16 +107,60 @@ export const Step3CardSection = styled.div`
   }
 `;
 
-export const Step3SingleCardSection = styled.div`
+interface Step3SingleCardSectionProps {
+  isSelected: boolean;
+}
+
+const selectedStyles = css`
+  background-color: var(--neutral-alabaster);
+  border: 1px solid var(--primary-purplish-blue);
+`;
+
+export const Step3SingleCardSection = styled.div<Step3SingleCardSectionProps>`
   display: flex;
   flex-direction: row;
   position: relative;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: 500px;
   height: 75px;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 1px solid var(--neutral-cool-gray);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--neutral-alabaster);
+    border: 1px solid var(--primary-purplish-blue);
+  }
+
+  ${({ isSelected }) => isSelected && selectedStyles}
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
+
+export const Step3SingleCardCheckboxSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 50px;
+  /* margin: auto; */
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -147,6 +187,7 @@ export const Step3SingleCardTextSection = styled.div`
   background-color: white;
   border-radius: 10px;
   /* margin: auto; */
+  width: 350px;
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -169,7 +210,7 @@ export const Step3SingleCardTitle = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   /* margin-top: 20px; */
   font-weight: bold;
 
@@ -194,7 +235,7 @@ export const Step3SingleCardDescribe = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   /* margin-top: 20px; */
   /* font-weight: bold; */
   color: var(--neutral-cool-gray);
@@ -218,7 +259,6 @@ export const Step3SingleCardDescribe = styled.div`
 export const Step3SingleCardPrice = styled.div`
   display: flex;
   position: relative;
-  justify-content: flex-start;
   align-items: center;
   /* margin-bottom: 20px; */
   margin-right: 20px;

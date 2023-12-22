@@ -30,13 +30,10 @@ export const Step2SectionStyle = styled.div`
 
 export const Step2Title = styled.div`
   display: flex;
-  /* position: relative; */
   justify-content: flex-start;
   align-items: center;
-  /* margin: auto; */
   font-size: 30px;
   font-weight: bold;
-  /* margin-left: 30px; */
   margin-top: 30px;
   margin-bottom: 20px;
 
@@ -61,8 +58,6 @@ export const Step2Describe = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  /* margin: auto; */
-  /* margin-left: 30px; */
   margin-bottom: 20px;
   color: var(--neutral-cool-gray);
 
@@ -85,11 +80,7 @@ export const Step2Describe = styled.div`
 export const Step2CardSection = styled.div`
   display: flex;
   position: relative;
-  /* justify-content: flex-start; */
   align-items: center;
-  /* margin: auto; */
-  /* margin-left: 30px; */
-  /* margin-bottom: 20px; */
   justify-content: space-between;
   gap: 20px;
   width: 100%;
@@ -117,9 +108,15 @@ export const Step2SingleCardSection = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   width: 150px;
-  height: 150px;
+  height: 180px;
   border-radius: 10px;
-  border: 2px solid black;
+  border: 1px solid var(--neutral-cool-gray);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--neutral-alabaster);
+    border: 1px solid var(--primary-purplish-blue);
+  }
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -188,11 +185,14 @@ export const Step2SingleCardTitle = styled.div`
 
 export const Step2SingleCardPrice = styled.div`
   display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: flex-start;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 20px;
   margin-left: 20px;
+  font-size: 15px;
+  color: var(--neutral-cool-gray);
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -216,11 +216,11 @@ export const Step2ToggleContainer = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin: auto; */
-  height: 10vh;
+  height: 6vh;
   margin-top: 20px;
-  background: var(--primary-pastel-blue);
-  border-radius: 20px;
+  background: var(--neutral-alabaster);
+  /* background: pink; */
+  border-radius: 10px;
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -233,10 +233,9 @@ export const Step2ToggleText = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: auto; */
-  height: 10vh;
-  margin-top: 20px;
+  height: 6vh;
   font-weight: bold;
+  font-size: 15px;
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -249,9 +248,7 @@ export const Step2Toggle = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: auto; */
   height: 10vh;
-  margin-top: 20px;
 
   @media (max-width: 650px) {
     flex-direction: column;
@@ -261,8 +258,8 @@ export const Step2Toggle = styled.section`
 export const ToggleContainer = styled.label`
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 55px;
+  height: 25px;
 `;
 
 export const ToggleSlider = styled.span`
@@ -272,14 +269,14 @@ export const ToggleSlider = styled.span`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--primary-marine-blue);
   border-radius: 15px;
 
   &:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 18px;
+    width: 18px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -288,7 +285,7 @@ export const ToggleSlider = styled.span`
   }
 
   input:checked + & {
-    background-color: #2196f3;
+    background-color: var(--primary-marine-blue);
   }
 
   input:focus + & {
@@ -312,7 +309,6 @@ export const Step2ButtonContainer = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin: auto; */
   height: 10vh;
   margin-top: 20px;
 

@@ -9,10 +9,31 @@ export const ButtonDarkStyle = styled.button`
   padding: 0;
   box-sizing: border-box;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: var(--neutral-white);
   background-color: var(--primary-marine-blue);
+  display: block;
+
+  @media (max-width: 1024px) {
+    height: 30px;
+    border-radius: 15px;
+  }
+`;
+
+export const ButtonDarkSecondStyle = styled.button`
+  height: 50px;
+  width: 150px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--neutral-white);
+  background-color: var(--primary-purplish-blue);
   display: block;
 
   @media (max-width: 1024px) {
@@ -30,7 +51,7 @@ export const ButtonLightStyle = styled.button`
   padding: 0;
   box-sizing: border-box;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: var(--neutral-cool-gray);
   background-color: white;
