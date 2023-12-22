@@ -188,7 +188,6 @@ export const Step2SingleCardPrice = styled.div`
   flex-direction: column;
   position: relative;
   justify-content: flex-start;
-  /* align-items: center; */
   margin-bottom: 20px;
   margin-left: 20px;
   font-size: 15px;
@@ -219,7 +218,6 @@ export const Step2ToggleContainer = styled.section`
   height: 6vh;
   margin-top: 20px;
   background: var(--neutral-alabaster);
-  /* background: pink; */
   border-radius: 10px;
 
   @media (max-width: 650px) {
