@@ -30,13 +30,10 @@ export const Step3SectionStyle = styled.div`
 
 export const Step3Title = styled.div`
   display: flex;
-  /* position: relative; */
   justify-content: flex-start;
   align-items: center;
-  /* margin: auto; */
   font-size: 30px;
   font-weight: bold;
-  /* margin-left: 30px; */
   margin-top: 30px;
   margin-bottom: 20px;
 
@@ -61,8 +58,6 @@ export const Step3Describe = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  /* margin: auto; */
-  /* margin-left: 30px; */
   margin-bottom: 20px;
   color: var(--neutral-cool-gray);
 
@@ -160,7 +155,6 @@ export const Step3SingleCardCheckboxSection = styled.div`
   background-color: white;
   border-radius: 10px;
   width: 50px;
-  /* margin: auto; */
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -186,7 +180,6 @@ export const Step3SingleCardTextSection = styled.div`
   align-items: flex-start;
   background-color: white;
   border-radius: 10px;
-  /* margin: auto; */
   width: 350px;
 
   @media (max-width: 768px) {
@@ -210,8 +203,6 @@ export const Step3SingleCardTitle = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  /* margin-left: 20px; */
-  /* margin-top: 20px; */
   font-weight: bold;
 
   @media (max-width: 768px) {
@@ -235,9 +226,6 @@ export const Step3SingleCardDescribe = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  /* margin-left: 20px; */
-  /* margin-top: 20px; */
-  /* font-weight: bold; */
   color: var(--neutral-cool-gray);
 
   @media (max-width: 768px) {
@@ -260,7 +248,6 @@ export const Step3SingleCardPrice = styled.div`
   display: flex;
   position: relative;
   align-items: center;
-  /* margin-bottom: 20px; */
   margin-right: 20px;
 
   @media (max-width: 768px) {
@@ -285,7 +272,6 @@ export const Step3ButtonContainer = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin: auto; */
   height: 10vh;
   margin-top: 20px;
 

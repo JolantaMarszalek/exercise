@@ -33,8 +33,6 @@ export const Step5Image = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  /* margin-top: 20px;
-  margin-left: 20px; */
 
   @media (max-width: 768px) {
     justify-content: center;

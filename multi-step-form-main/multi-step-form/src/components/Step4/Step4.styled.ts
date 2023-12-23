@@ -30,13 +30,10 @@ export const Step4SectionStyle = styled.div`
 
 export const Step4Title = styled.div`
   display: flex;
-  /* position: relative; */
   justify-content: flex-start;
   align-items: center;
-  /* margin: auto; */
   font-size: 30px;
   font-weight: bold;
-  /* margin-left: 30px; */
   margin-top: 30px;
   margin-bottom: 20px;
 
@@ -61,8 +58,6 @@ export const Step4Describe = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  /* margin: auto; */
-  /* margin-left: 30px; */
   margin-bottom: 20px;
   color: var(--neutral-cool-gray);
 
@@ -86,11 +81,7 @@ export const Step4CardSection = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  /* justify-content: flex-start; */
   align-items: center;
-  /* margin: auto; */
-  /* margin-left: 30px; */
-  /* margin-bottom: 20px; */
   justify-content: space-between;
   gap: 20px;
   width: 100%;
@@ -120,7 +111,6 @@ export const Step4SingleCardSection = styled.div`
   width: 500px;
   height: 200px;
   border-radius: 10px;
-  /* border: 2px solid black; */
   background: var(--neutral-alabaster);
 
   @media (max-width: 768px) {
@@ -145,9 +135,7 @@ export const Step4SingleCardTextSection = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
-  /* background-color: white; */
   border-radius: 10px;
-  /* margin: auto; */
   width: 100%;
 
   @media (max-width: 768px) {
@@ -171,9 +159,7 @@ export const Step4SingleCardTextFromStep2 = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
-  /* background-color: white; */
   border-radius: 10px;
-  /* margin: auto; */
   margin-top: 10px;
 
   @media (max-width: 768px) {
@@ -198,9 +184,7 @@ export const Step4SingleCardTextSingleLineFromStep2 = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
-  /* background-color: white; */
   border-radius: 10px;
-  /* margin: auto; */
   margin-top: 10px;
 
   @media (max-width: 768px) {
@@ -222,12 +206,9 @@ export const Step4SingleCardTextSingleLineFromStep2 = styled.div`
 export const Step4SingleCardTextSingleLineSection = styled.div`
   display: flex;
   flex-direction: column;
-  /* position: relative; */
   justify-content: flex-start;
   align-items: flex-start;
-  /* background-color: white; */
   border-radius: 10px;
-  /* margin: auto; */
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -251,9 +232,7 @@ export const Step4SingleCardTextSingleLine = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
-  /* background-color: white; */
   border-radius: 10px;
-  /* margin: auto; */
   margin-top: 10px;
 
   @media (max-width: 768px) {
@@ -278,9 +257,7 @@ export const Step4SingleCardTextSingleLineText = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
-  /* background-color: white; */
   border-radius: 10px;
-  /* margin: auto; */
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -304,7 +281,6 @@ export const Step4SingleCardTitle = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin-left: 20px;
-  /* margin-top: 20px; */
   font-weight: bold;
   padding: 10px;
   width: 350px;
@@ -331,8 +307,6 @@ export const Step4SingleCardDescribe = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin-left: 20px;
-  /* margin-top: 20px; */
-  /* font-weight: bold; */
   color: var(--neutral-cool-gray);
   padding: 10px;
   width: 350px;
@@ -359,7 +333,6 @@ export const Step4SingleCardPriceSection = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  /* margin-bottom: 20px; */
   margin-right: 20px;
 
   @media (max-width: 768px) {
@@ -384,7 +357,6 @@ export const Step4SingleCardPriceFromStep2 = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  /* margin-bottom: 20px; */
   margin-right: 20px;
   padding: 10px;
 
@@ -410,7 +382,6 @@ export const Step4SingleCardPrice = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  /* margin-bottom: 20px; */
   margin-right: 20px;
   padding: 10px;
 
@@ -436,7 +407,6 @@ export const Step4UnderSingleCard = styled.div`
   position: relative;
   justify-content: space-between;
   align-items: center;
-  /* margin-bottom: 20px; */
   margin-right: 20px;
   padding: 10px;
 
@@ -462,7 +432,6 @@ export const Step4ButtonContainer = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin: auto; */
   height: 10vh;
   margin-top: 20px;
 

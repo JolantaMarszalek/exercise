@@ -38,13 +38,10 @@ export const StyledForm = styled.form`
 
 export const Step1Title = styled.div`
   display: flex;
-  /* position: relative; */
   justify-content: flex-start;
   align-items: center;
-  /* margin: auto; */
   font-size: 30px;
   font-weight: bold;
-  /* margin-left: 30px; */
   margin-top: 30px;
   margin-bottom: 20px;
 
@@ -69,8 +66,6 @@ export const Step1Describe = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  /* margin: auto; */
-  /* margin-left: 30px; */
   margin-bottom: 20px;
   color: var(--neutral-cool-gray);
 
@@ -95,8 +90,6 @@ export const Step1AboveInput = styled.div`
   position: relative;
   justify-content: space-between;
   align-items: center;
-  /* margin: auto; */
-  /* margin-left: 30px; */
   margin-top: 30px;
 
   @media (max-width: 768px) {
@@ -119,7 +112,6 @@ export const ErrorContainer = styled.div`
   color: red;
   text-align: right;
   font-size: 15px;
-  /* margin-top: 5px; */
 `;
 
 export const Step1ButtonContainer = styled.section`
@@ -128,7 +120,6 @@ export const Step1ButtonContainer = styled.section`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* margin: auto; */
   height: 10vh;
   margin-top: 20px;
 

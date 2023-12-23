@@ -209,7 +209,6 @@ export const LeftTextFirstLine = styled.div`
   align-items: center;
   width: auto;
   height: auto;
-  /* padding: 5px; */
   margin-left: 10px;
 
   @media (max-width: 768px) {
@@ -235,7 +234,6 @@ export const LeftTextSecondLine = styled.div`
   align-items: center;
   width: auto;
   height: auto;
-  /* padding: 5px; */
   font-weight: bold;
   margin-left: 10px;
 
