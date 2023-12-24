@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Step2SectionStyle = styled.div`
   display: flex;
@@ -100,8 +100,16 @@ export const Step2CardSection = styled.div`
     width: 100%;
   }
 `;
+interface Step2SingleCardSectionProps {
+  isSelected: boolean;
+}
 
-export const Step2SingleCardSection = styled.div`
+const selectedStyles = css`
+  background-color: var(--neutral-alabaster);
+  border: 1px solid var(--primary-purplish-blue);
+`;
+
+export const Step2SingleCardSection = styled.div<Step2SingleCardSectionProps>`
   display: flex;
   flex-direction: column;
   position: relative;
@@ -117,6 +125,13 @@ export const Step2SingleCardSection = styled.div`
     background-color: var(--neutral-alabaster);
     border: 1px solid var(--primary-purplish-blue);
   }
+
+  &:active {
+    background-color: var(--neutral-alabaster);
+    border: 1px solid var(--primary-purplish-blue);
+  }
+
+  ${({ isSelected }) => isSelected && selectedStyles}
 
   @media (max-width: 768px) {
     justify-content: center;

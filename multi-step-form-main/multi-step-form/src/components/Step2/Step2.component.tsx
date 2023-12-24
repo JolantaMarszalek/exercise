@@ -21,7 +21,14 @@ import {
 import { ButtonLight } from "../Button/ButtonLight.component";
 import React from "react";
 
-export const Step2Section: React.FC = () => {
+interface Step2SectionProps {
+  isSelected: boolean;
+}
+
+export const Step2Section: React.FC<Step2SectionProps> = ({
+  isSelected,
+  ...rest
+}) => {
   const [isClicked, setIsClicked] = useState(false);
   const [isMonthly, setIsMonthly] = useState(false);
   const navigate = useNavigate();
@@ -113,7 +120,10 @@ export const Step2Section: React.FC = () => {
         You have the option of monthly or yearly billing.
       </Step2Describe>
       <Step2CardSection>
-        <Step2SingleCardSection onClick={handleClick}>
+        <Step2SingleCardSection
+          onClick={handleClick}
+          isSelected={isSelected}
+          {...rest}>
           <Step2SingleCardImage>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +143,10 @@ export const Step2Section: React.FC = () => {
           <Step2SingleCardTitle>Arcade</Step2SingleCardTitle>
           <Step2SingleCardPrice>{getPrice("Arcade")}</Step2SingleCardPrice>
         </Step2SingleCardSection>
-        <Step2SingleCardSection onClick={handleClick}>
+        <Step2SingleCardSection
+          onClick={handleClick}
+          isSelected={isSelected}
+          {...rest}>
           <Step2SingleCardImage>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +166,10 @@ export const Step2Section: React.FC = () => {
           <Step2SingleCardTitle>Advanced</Step2SingleCardTitle>
           <Step2SingleCardPrice>{getPrice("Advanced")}</Step2SingleCardPrice>
         </Step2SingleCardSection>
-        <Step2SingleCardSection onClick={handleClick}>
+        <Step2SingleCardSection
+          onClick={handleClick}
+          isSelected={isSelected}
+          {...rest}>
           <Step2SingleCardImage>
             <svg
               xmlns="http://www.w3.org/2000/svg"

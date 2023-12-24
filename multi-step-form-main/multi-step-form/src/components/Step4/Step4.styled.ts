@@ -153,6 +153,7 @@ export const Step4SingleCardTextSection = styled.div`
     width: 100%;
   }
 `;
+
 export const Step4SingleCardTextFromStep2 = styled.div`
   display: flex;
   flex-direction: row;
