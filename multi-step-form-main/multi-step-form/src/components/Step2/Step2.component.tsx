@@ -188,8 +188,8 @@ export const Step2Section: React.FC<Step2SectionProps> = ({
         </Step2SingleCardSection>
         <Step2SingleCardSection
           onClick={() => handleNextStep("Pro")}
-          // isSelected={selectedCard === "Pro"}
-          isSelected={isSelected}
+          isSelected={selectedCard === "Pro"}
+          // isSelected={isSelected}
           {...rest}>
           <Step2SingleCardImage>
             <svg
