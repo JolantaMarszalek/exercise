@@ -20,9 +20,13 @@ import { useState } from "react";
 
 export const Step3Section = () => {
   const location = useLocation();
-  const { isMonthly, selectedCard } = location.state
-    ? location.state.isMonthly
-    : false;
+  const { isMonthly, selectedCard } = location.state || {
+    isMonthly: false,
+    selectedCard: "",
+  };
+  // const { isMonthly, selectedCard } = location.state
+  //   ? location.state.isMonthly
+  //   : false;
   const [selectedAddons, setSelectedAddons] = useState<string[]>([]);
 
   const getAddonPrice = (addonType: string) => {
