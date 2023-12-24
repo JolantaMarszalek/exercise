@@ -16,6 +16,7 @@ import {
   Step4SingleCardTextSingleLineFromStep2,
   Step4SingleCardPriceFromStep2,
   Step4SingleCardTextSingleLineSection,
+  Step4SingleCardTextSingleLineFromStep2Line,
   // Step4SingleCardTextSingleLineText,
 } from "./Step4.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
@@ -173,6 +174,7 @@ export const Step4Section = () => {
                 {/* <Step4SingleCardTitle>Arcade (Monthly)</Step4SingleCardTitle>
                 <Step4SingleCardDescribe>Change</Step4SingleCardDescribe> */}
               </Step4SingleCardTextSingleLineFromStep2>
+              <></>
               <Step4SingleCardPriceFromStep2>
                 {/* {" "}
                 <span
@@ -188,6 +190,7 @@ export const Step4Section = () => {
                 ) : null}
               </Step4SingleCardPriceFromStep2>
             </Step4SingleCardTextFromStep2>
+            <Step4SingleCardTextSingleLineFromStep2Line></Step4SingleCardTextSingleLineFromStep2Line>
             <Step4SingleCardTextSingleLineSection>
               {" "}
               {selectedAddonsInStep4}

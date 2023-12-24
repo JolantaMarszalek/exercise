@@ -160,8 +160,9 @@ export const Step4SingleCardTextFromStep2 = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin-top: 10px;
+  /* border-bottom: 1px solid #ccc; */
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -178,6 +179,11 @@ export const Step4SingleCardTextFromStep2 = styled.div`
     width: 100%;
   }
 `;
+export const Step4SingleCardTextSingleLineFromStep2Line = styled.div`
+  border-bottom: 1px solid #ccc;
+  width: 90%;
+  margin: 0 auto;
+`;
 
 export const Step4SingleCardTextSingleLineFromStep2 = styled.div`
   display: flex;
@@ -185,7 +191,7 @@ export const Step4SingleCardTextSingleLineFromStep2 = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin-top: 10px;
 
   @media (max-width: 768px) {
