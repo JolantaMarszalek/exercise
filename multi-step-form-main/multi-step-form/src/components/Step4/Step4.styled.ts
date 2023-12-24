@@ -159,7 +159,7 @@ export const Step4SingleCardTextFromStep2 = styled.div`
   flex-direction: row;
   position: relative;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   /* border-radius: 10px; */
   margin-top: 10px;
   /* border-bottom: 1px solid #ccc; */
