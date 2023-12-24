@@ -101,7 +101,7 @@ export const Step4Section = () => {
                   color: "var(--primary-marine-blue)",
                   fontSize: "smaller",
                 }}>
-                2 months free
+                {/* 2 months free */}
               </span>
             </>
           );
@@ -114,7 +114,7 @@ export const Step4Section = () => {
                   color: "var(--primary-marine-blue)",
                   fontSize: "smaller",
                 }}>
-                2 months free
+                {/* 2 months free */}
               </span>
             </>
           );
@@ -127,7 +127,7 @@ export const Step4Section = () => {
                   color: "var(--primary-marine-blue)",
                   fontSize: "smaller",
                 }}>
-                2 months free
+                {/* 2 months free */}
               </span>
             </>
           );
@@ -159,7 +159,10 @@ export const Step4Section = () => {
               <Step4SingleCardTextSingleLineFromStep2>
                 {selectedCard ? (
                   <>
-                    <Step4SingleCardTitle>{selectedCard}</Step4SingleCardTitle>
+                    <Step4SingleCardTitle>
+                      {" "}
+                      {selectedCard} ({!isMonthly ? "Monthly" : "Yearly"})
+                    </Step4SingleCardTitle>
                     <Step4SingleCardDescribe>Change</Step4SingleCardDescribe>
                   </>
                 ) : null}
