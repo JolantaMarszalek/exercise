@@ -11,6 +11,7 @@ import {
   LeftTextSingleLineLeftSide,
   LeftTextSingleLineRightSide,
 } from "./LeftSection.styled";
+// import mySvgBackground from "../../../../images/bg-sidebar-desktop.svg";
 
 export const LeftSection = () => {
   const [numbers, setNumbers] = useState({
@@ -19,6 +20,9 @@ export const LeftSection = () => {
     3: false,
     4: false,
   });
+  // const leftSectionStyle = {
+  //   background: `url(${mySvgBackground}) no-repeat center center fixed`,
+  // };
 
   const handleClick = (num: number) => {
     setNumbers((prevNumbers) => ({
@@ -30,7 +34,9 @@ export const LeftSection = () => {
   return (
     <>
       {/* <LeftSectionStyle> */}
-      <LeftNavigationStyle>
+      <LeftNavigationStyle
+      // style={leftSectionStyle}
+      >
         <LeftNavigationTextStyle>
           {" "}
           <Link to="/">

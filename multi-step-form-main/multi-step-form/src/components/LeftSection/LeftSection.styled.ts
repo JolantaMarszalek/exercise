@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import BackgroundDesktop from "/../assets/images/bg-sidebar-desktop.svg";
+import BackgroundDesktop from "../../images/bg-sidebar-desktop.svg";
 
 // export const LeftSectionStyle = styled.div`
 //   display: flex;
@@ -37,8 +37,7 @@ export const LeftNavigationStyle = styled.div`
   width: 300px;
   height: 565px;
   background-color: navy;
-  /* background: url("/multi-step-form-main/assets/images/bg-sidebar-desktop.svg"); */
-  /* background-image: url(${BackgroundDesktop}); */
+  background-image: url(${BackgroundDesktop});
   border-radius: 10px;
   margin-left: 15px;
   background-repeat: no-repeat;
