@@ -1,4 +1,7 @@
-import { Link, useNavigate } from "react-router-dom";
+import {
+  Link,
+  // useNavigate
+} from "react-router-dom";
 import { ButtonDark } from "../Button/ButtonDark.component";
 import { useState } from "react";
 import {
@@ -29,10 +32,13 @@ export const Step2Section: React.FC<Step2SectionProps> = ({
   isSelected,
   ...rest
 }) => {
-  const [isClicked, setIsClicked] = useState(false);
+  // const [isClicked, setIsClicked] = useState(false);
   const [isMonthly, setIsMonthly] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [selectedCard, setSelectedCard] = useState<string>("");
+  // const [isSelectedArcade, setIsSelectedArcade] = useState(false);
+  // const [isSelectedAdvanced, setIsSelectedAdvanced] = useState(false);
+  // const [isSelectedPro, setIsSelectedPro] = useState(false);
 
   // const handleNextStep = (cardType: string) => {
   //   setSelectedCard(cardType);
@@ -41,12 +47,12 @@ export const Step2Section: React.FC<Step2SectionProps> = ({
 
   const handleNextStep = (cardType: string) => {
     setSelectedCard(cardType);
-    navigate(`/summary?selectedCard=${cardType}`);
+    // navigate(`/summary?selectedCard=${cardType}`);
   };
 
-  const handleClick = () => {
-    setIsClicked(!isClicked);
-  };
+  // const handleClick = () => {
+  //   setIsClicked(!isClicked);
+  // };
 
   const handleToggleChange = () => {
     setIsMonthly(!isMonthly);
@@ -121,7 +127,8 @@ export const Step2Section: React.FC<Step2SectionProps> = ({
       </Step2Describe>
       <Step2CardSection>
         <Step2SingleCardSection
-          onClick={handleClick}
+          onClick={() => handleNextStep("Arcade")}
+          // isSelected={selectedCard === "Arcade"}
           isSelected={isSelected}
           {...rest}>
           <Step2SingleCardImage>
@@ -144,7 +151,8 @@ export const Step2Section: React.FC<Step2SectionProps> = ({
           <Step2SingleCardPrice>{getPrice("Arcade")}</Step2SingleCardPrice>
         </Step2SingleCardSection>
         <Step2SingleCardSection
-          onClick={handleClick}
+          onClick={() => handleNextStep("Advanced")}
+          // isSelected={selectedCard === "Advanced"}
           isSelected={isSelected}
           {...rest}>
           <Step2SingleCardImage>
@@ -167,7 +175,8 @@ export const Step2Section: React.FC<Step2SectionProps> = ({
           <Step2SingleCardPrice>{getPrice("Advanced")}</Step2SingleCardPrice>
         </Step2SingleCardSection>
         <Step2SingleCardSection
-          onClick={handleClick}
+          onClick={() => handleNextStep("Pro")}
+          // isSelected={selectedCard === "Pro"}
           isSelected={isSelected}
           {...rest}>
           <Step2SingleCardImage>
