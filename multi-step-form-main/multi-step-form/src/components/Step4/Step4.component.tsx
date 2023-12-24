@@ -192,7 +192,9 @@ export const Step4Section = () => {
           </Step4SingleCardTextSection>
         </Step4SingleCardSection>
         <Step4UnderSingleCard>
-          <Step4SingleCardDescribe>Total (per month)</Step4SingleCardDescribe>
+          <Step4SingleCardDescribe>
+            Total ({!isMonthly ? "per month" : "per year"})
+          </Step4SingleCardDescribe>
           <Step4SingleCardPrice>
             <span
               style={{
