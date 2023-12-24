@@ -137,7 +137,7 @@ export const Step4Section = () => {
     }
   };
 
-  const selectedAddonsInStep4 = selectedAddons.map((addonName) => {
+  const selectedAddonsInStep4 = selectedAddons.map((addonName: string) => {
     return (
       <Step4SingleCardTextSingleLine key={addonName}>
         <Step4SingleCardDescribe>{addonName}</Step4SingleCardDescribe>
