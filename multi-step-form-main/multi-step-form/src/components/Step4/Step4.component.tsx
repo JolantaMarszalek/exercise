@@ -76,6 +76,67 @@ export const Step4Section = () => {
     }
   };
 
+  const getPrice = (cardType: string) => {
+    if (!isMonthly) {
+      switch (cardType) {
+        case "Arcade":
+          return "$9/mo";
+        case "Advanced":
+          return "$12/mo";
+        case "Pro":
+          return "$15/mo";
+        default:
+          return "";
+      }
+    } else {
+      switch (cardType) {
+        case "Arcade":
+          return (
+            <>
+              {" "}
+              $90/yr
+              <br />{" "}
+              <span
+                style={{
+                  color: "var(--primary-marine-blue)",
+                  fontSize: "smaller",
+                }}>
+                2 months free
+              </span>
+            </>
+          );
+        case "Advanced":
+          return (
+            <>
+              $120/yr <br />{" "}
+              <span
+                style={{
+                  color: "var(--primary-marine-blue)",
+                  fontSize: "smaller",
+                }}>
+                2 months free
+              </span>
+            </>
+          );
+        case "Pro":
+          return (
+            <>
+              $150/yr <br />{" "}
+              <span
+                style={{
+                  color: "var(--primary-marine-blue)",
+                  fontSize: "smaller",
+                }}>
+                2 months free
+              </span>
+            </>
+          );
+        default:
+          return "";
+      }
+    }
+  };
+
   const selectedAddonsInStep4 = selectedAddons.map((addonName) => {
     return (
       <Step4SingleCardTextSingleLine key={addonName}>
@@ -114,7 +175,9 @@ export const Step4Section = () => {
                   +$9/mo
                 </span> */}
                 {selectedCard ? (
-                  <span style={{ fontWeight: "bold" }}>+$9/mo</span>
+                  <span style={{ fontWeight: "bold" }}>
+                    {/* +$9/mo */} {getPrice(selectedCard)}
+                  </span>
                 ) : null}
               </Step4SingleCardPriceFromStep2>
             </Step4SingleCardTextFromStep2>

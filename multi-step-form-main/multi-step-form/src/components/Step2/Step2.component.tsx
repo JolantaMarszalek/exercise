@@ -46,8 +46,14 @@ export const Step2Section: React.FC<Step2SectionProps> = ({
   // };
 
   const handleNextStep = (cardType: string) => {
-    setSelectedCard(cardType);
+    // setSelectedCard(cardType);
+    // setSelectedCardPrice(getPrice(cardType));
     // navigate(`/summary?selectedCard=${cardType}`);
+    if (selectedCard === cardType) {
+      setSelectedCard("");
+    } else {
+      setSelectedCard(cardType);
+    }
   };
 
   // const handleClick = () => {
@@ -128,8 +134,9 @@ export const Step2Section: React.FC<Step2SectionProps> = ({
       <Step2CardSection>
         <Step2SingleCardSection
           onClick={() => handleNextStep("Arcade")}
+          isSelected={selectedCard === "Arcade"}
+          // isSelected={isSelected}
           // isSelected={selectedCard === "Arcade"}
-          isSelected={isSelected}
           {...rest}>
           <Step2SingleCardImage>
             <svg
@@ -148,12 +155,17 @@ export const Step2Section: React.FC<Step2SectionProps> = ({
             </svg>
           </Step2SingleCardImage>
           <Step2SingleCardTitle>Arcade</Step2SingleCardTitle>
-          <Step2SingleCardPrice>{getPrice("Arcade")}</Step2SingleCardPrice>
+          <Step2SingleCardPrice>
+            {getPrice("Arcade")}
+            {/* {selectedCard === "Arcade" ? getPrice("Arcade") : ""} */}
+
+            {/* {selectedCard === "Arcade" ? getPrice("Arcade") : ""} */}
+          </Step2SingleCardPrice>
         </Step2SingleCardSection>
         <Step2SingleCardSection
           onClick={() => handleNextStep("Advanced")}
-          // isSelected={selectedCard === "Advanced"}
-          isSelected={isSelected}
+          isSelected={selectedCard === "Advanced"}
+          // isSelected={isSelected}
           {...rest}>
           <Step2SingleCardImage>
             <svg
