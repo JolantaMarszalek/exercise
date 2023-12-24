@@ -76,7 +76,7 @@ export const Step4Section = () => {
     }
   };
 
-  const getPrice = (cardType: string) => {
+  const getPrice = (cardType: string): string => {
     if (!isMonthly) {
       switch (cardType) {
         case "Arcade":
@@ -91,46 +91,11 @@ export const Step4Section = () => {
     } else {
       switch (cardType) {
         case "Arcade":
-          return (
-            <>
-              {" "}
-              $90/yr
-              <br />{" "}
-              <span
-                style={{
-                  color: "var(--primary-marine-blue)",
-                  fontSize: "smaller",
-                }}>
-                {/* 2 months free */}
-              </span>
-            </>
-          );
+          return "$90/yr";
         case "Advanced":
-          return (
-            <>
-              $120/yr <br />{" "}
-              <span
-                style={{
-                  color: "var(--primary-marine-blue)",
-                  fontSize: "smaller",
-                }}>
-                {/* 2 months free */}
-              </span>
-            </>
-          );
+          return "$120/yr";
         case "Pro":
-          return (
-            <>
-              $150/yr <br />{" "}
-              <span
-                style={{
-                  color: "var(--primary-marine-blue)",
-                  fontSize: "smaller",
-                }}>
-                {/* 2 months free */}
-              </span>
-            </>
-          );
+          return "$150/yr";
         default:
           return "";
       }
@@ -145,6 +110,45 @@ export const Step4Section = () => {
       </Step4SingleCardTextSingleLine>
     );
   });
+
+  const getTotalPrice = (): number => {
+    let total = 0;
+
+    // Dodaj cenę wybranej karty
+    if (selectedCard) {
+      const cardPrice = getPrice(selectedCard);
+      total += parseFloat(cardPrice.split("/")[0].replace("$", ""));
+    }
+
+    selectedAddons.forEach((addonName: string) => {
+      const addonPrice = getAddonPrice(addonName);
+      total += parseFloat(addonPrice.split("/")[0].replace("$", ""));
+    });
+
+    return total;
+  };
+
+  // const totalPrice = getTotalPrice();
+
+  //   // Sumowanie cen z funkcji getPrice dla wybranej karty
+  //   if (selectedCard) {
+  //     const cardPrice = getPrice(selectedCard);
+  //     if (cardPrice !== "") {
+  //       if (!isMonthly) {
+  //         // Usunięcie znaku $ oraz parsowanie wartości na liczbę
+  //         const price = parseFloat(cardPrice.replace("$", ""));
+  //         total += price;
+  //       }
+  //     }
+  //   }
+
+  //   return total;
+  // };
+
+  const totalPrice = getTotalPrice();
+
+  // Obliczenie całkowitej ceny
+  // const totalPrice = calculateTotalPrice();
 
   return (
     <Step4SectionStyle>
@@ -184,7 +188,6 @@ export const Step4Section = () => {
                 ) : null}
               </Step4SingleCardPriceFromStep2>
             </Step4SingleCardTextFromStep2>
-
             <Step4SingleCardTextSingleLineSection>
               {" "}
               {selectedAddonsInStep4}
@@ -202,7 +205,10 @@ export const Step4Section = () => {
                 fontWeight: "bold",
                 fontSize: "20px",
               }}>
-              +$12/mo
+              {/* {totalPrice ? `$${totalPrice.toFixed(2)}` : ""} */}
+              {totalPrice ? `$${totalPrice.toFixed(2)}` : ""}
+
+              {/* +$12/mo */}
             </span>
           </Step4SingleCardPrice>
         </Step4UnderSingleCard>
