@@ -12,6 +12,10 @@ export const Step5SectionStyle = styled.div`
   border-radius: 10px;
   margin: auto;
 
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
   @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
@@ -33,6 +37,10 @@ export const Step5Image = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -59,6 +67,10 @@ export const Step5Title = styled.div`
   margin-top: 30px;
   margin-bottom: 20px;
 
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
   @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
@@ -84,6 +96,10 @@ export const Step5Describe = styled.div`
   color: var(--neutral-cool-gray);
   text-align: center;
   font-size: 18px;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
 
   @media (max-width: 768px) {
     justify-content: center;
