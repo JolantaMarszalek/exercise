@@ -317,7 +317,7 @@ export const Step4SingleCardDescribe = styled.div`
   color: var(--neutral-cool-gray);
   padding: 10px;
   width: 350px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 
   @media (max-width: 768px) {
     justify-content: center;

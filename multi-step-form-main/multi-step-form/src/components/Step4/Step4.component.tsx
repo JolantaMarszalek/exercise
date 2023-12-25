@@ -36,10 +36,16 @@ export const Step4Section = () => {
     : [];
   const isMonthly = queryParams.get("monthly") === "true";
 
-  const [initialSelectedAddons, setInitialSelectedAddons] = useState<string[]>(
-    []
-  );
-  const [initialIsMonthly, setInitialIsMonthly] = useState<boolean>(true);
+  const [
+    ,
+    // initialSelectedAddons
+    setInitialSelectedAddons,
+  ] = useState<string[]>([]);
+  const [
+    ,
+    // initialIsMonthly
+    setInitialIsMonthly,
+  ] = useState<boolean>(true);
 
   useEffect(() => {
     const addons = JSON.parse(
@@ -51,7 +57,7 @@ export const Step4Section = () => {
     setInitialIsMonthly(isMonthlyValue);
   }, [queryParams]);
 
-  const getAddonPrice = (addonType: string) => {
+  const getAddonPrice = (addonType: string): string => {
     if (!isMonthly) {
       switch (addonType) {
         case "Online service":
@@ -115,7 +121,6 @@ export const Step4Section = () => {
   const getTotalPrice = (): number => {
     let total = 0;
 
-    // Dodaj cenę wybranej karty
     if (selectedCard) {
       const cardPrice = getPrice(selectedCard);
       total += parseFloat(cardPrice.split("/")[0].replace("$", ""));
@@ -146,10 +151,7 @@ export const Step4Section = () => {
   //   return total;
   // };
 
-  const totalPrice = getTotalPrice();
-
-  // Obliczenie całkowitej ceny
-  // const totalPrice = calculateTotalPrice();
+  const totalPrice: number = getTotalPrice();
 
   return (
     <Step4SectionStyle>
@@ -168,7 +170,10 @@ export const Step4Section = () => {
                       {" "}
                       {selectedCard} ({!isMonthly ? "Monthly" : "Yearly"})
                     </Step4SingleCardTitle>
-                    <Step4SingleCardDescribe>Change</Step4SingleCardDescribe>
+                    <Step4SingleCardDescribe
+                      style={{ textDecoration: "underline" }}>
+                      Change
+                    </Step4SingleCardDescribe>
                   </>
                 ) : null}
                 {/* <Step4SingleCardTitle>Arcade (Monthly)</Step4SingleCardTitle>
