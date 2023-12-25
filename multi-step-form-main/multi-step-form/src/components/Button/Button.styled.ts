@@ -85,6 +85,6 @@ export const ButtonContainer = styled.section`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: row;
-    /* width: auto; */
+    width: auto;
   }
 `;
