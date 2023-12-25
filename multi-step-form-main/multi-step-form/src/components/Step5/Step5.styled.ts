@@ -96,9 +96,10 @@ export const Step5Describe = styled.div`
   color: var(--neutral-cool-gray);
   text-align: center;
   font-size: 18px;
+  /* width: 350px; */
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 80%;
   }
 
   @media (max-width: 768px) {
