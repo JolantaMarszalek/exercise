@@ -13,6 +13,11 @@ export const LayoutSectionStyle = styled.div`
   margin-top: 100px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
@@ -24,7 +29,7 @@ export const LayoutSectionStyle = styled.div`
   }
 
   @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 `;

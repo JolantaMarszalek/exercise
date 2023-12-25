@@ -12,6 +12,15 @@ export const Step1SectionStyle = styled.div`
   border-radius: 10px;
   margin: auto;
 
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    ustify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 0;
+  }
+
   @media (max-width: 768px) {
     justify-content: center;
     align-items: center;

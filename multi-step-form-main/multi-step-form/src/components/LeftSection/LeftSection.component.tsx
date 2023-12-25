@@ -12,6 +12,7 @@ import {
   LeftTextSingleLineRightSide,
 } from "./LeftSection.styled";
 // import mySvgBackground from "../../../../images/bg-sidebar-desktop.svg";
+import { useMediaQuery } from "react-responsive";
 
 export const LeftSection = () => {
   const [numbers, setNumbers] = useState({
@@ -23,6 +24,7 @@ export const LeftSection = () => {
   // const leftSectionStyle = {
   //   background: `url(${mySvgBackground}) no-repeat center center fixed`,
   // };
+  const isMobile = useMediaQuery({ maxWidth: 1024 });
 
   const handleClick = (num: number) => {
     setNumbers((prevNumbers) => ({
@@ -48,7 +50,8 @@ export const LeftSection = () => {
                   1
                 </LeftTextNumber>
               </LeftTextSingleLineLeftSide>
-              <LeftTextSingleLineRightSide>
+              <LeftTextSingleLineRightSide
+                className={isMobile ? "hide-on-mobile" : ""}>
                 <LeftTextFirstLine>STEP 1</LeftTextFirstLine>
                 <LeftTextSecondLine>YOUR INFO</LeftTextSecondLine>
               </LeftTextSingleLineRightSide>
@@ -63,7 +66,8 @@ export const LeftSection = () => {
                   2
                 </LeftTextNumber>
               </LeftTextSingleLineLeftSide>
-              <LeftTextSingleLineRightSide>
+              <LeftTextSingleLineRightSide
+                className={isMobile ? "hide-on-mobile" : ""}>
                 <LeftTextFirstLine>STEP 2</LeftTextFirstLine>
                 <LeftTextSecondLine>SELECT PLAN</LeftTextSecondLine>
               </LeftTextSingleLineRightSide>
@@ -78,7 +82,8 @@ export const LeftSection = () => {
                   3
                 </LeftTextNumber>
               </LeftTextSingleLineLeftSide>
-              <LeftTextSingleLineRightSide>
+              <LeftTextSingleLineRightSide
+                className={isMobile ? "hide-on-mobile" : ""}>
                 <LeftTextFirstLine>STEP 3</LeftTextFirstLine>
                 <LeftTextSecondLine>ADD-ONS</LeftTextSecondLine>
               </LeftTextSingleLineRightSide>
@@ -93,7 +98,8 @@ export const LeftSection = () => {
                   4
                 </LeftTextNumber>
               </LeftTextSingleLineLeftSide>
-              <LeftTextSingleLineRightSide>
+              <LeftTextSingleLineRightSide
+                className={isMobile ? "hide-on-mobile" : ""}>
                 <LeftTextFirstLine>STEP 4</LeftTextFirstLine>
                 <LeftTextSecondLine>SUMMARY</LeftTextSecondLine>
               </LeftTextSingleLineRightSide>

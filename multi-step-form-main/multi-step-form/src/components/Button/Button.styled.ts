@@ -15,10 +15,10 @@ export const ButtonDarkStyle = styled.button`
   background-color: var(--primary-marine-blue);
   display: block;
 
-  @media (max-width: 1024px) {
-    height: 30px;
+  /* @media (max-width: 1024px) {
+    height: 40px;
     border-radius: 15px;
-  }
+  } */
 `;
 
 export const ButtonDarkSecondStyle = styled.button`
@@ -36,10 +36,10 @@ export const ButtonDarkSecondStyle = styled.button`
   background-color: var(--primary-purplish-blue);
   display: block;
 
-  @media (max-width: 1024px) {
-    height: 30px;
+  /* @media (max-width: 1024px) {
+    height: 40px;
     border-radius: 15px;
-  }
+  } */
 `;
 
 export const ButtonLightStyle = styled.button`
@@ -58,10 +58,10 @@ export const ButtonLightStyle = styled.button`
   display: block;
   text-align: left;
 
-  @media (max-width: 1024px) {
-    height: 30px;
+  /* @media (max-width: 1024px) {
+    height: 40px;
     border-radius: 15px;
-  }
+  } */
 `;
 
 export const ButtonContainer = styled.section`
