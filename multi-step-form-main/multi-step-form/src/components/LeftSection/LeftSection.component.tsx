@@ -3,7 +3,6 @@ import { useState } from "react";
 import {
   LeftNavigationStyle,
   LeftNavigationTextStyle,
-  //   LeftSectionStyle,
   LeftTextFirstLine,
   LeftTextNumber,
   LeftTextSecondLine,
@@ -11,7 +10,6 @@ import {
   LeftTextSingleLineLeftSide,
   LeftTextSingleLineRightSide,
 } from "./LeftSection.styled";
-// import mySvgBackground from "../../../../images/bg-sidebar-desktop.svg";
 import { useMediaQuery } from "react-responsive";
 
 export const LeftSection = () => {
@@ -21,9 +19,7 @@ export const LeftSection = () => {
     3: false,
     4: false,
   });
-  // const leftSectionStyle = {
-  //   background: `url(${mySvgBackground}) no-repeat center center fixed`,
-  // };
+
   const isMobile = useMediaQuery({ maxWidth: 1024 });
 
   const handleClick = (num: number) => {
@@ -35,10 +31,7 @@ export const LeftSection = () => {
 
   return (
     <>
-      {/* <LeftSectionStyle> */}
-      <LeftNavigationStyle
-      // style={leftSectionStyle}
-      >
+      <LeftNavigationStyle>
         <LeftNavigationTextStyle>
           {" "}
           <Link to="/">
@@ -107,7 +100,6 @@ export const LeftSection = () => {
           </Link>
         </LeftNavigationTextStyle>
       </LeftNavigationStyle>
-      {/* </LeftSectionStyle> */}
     </>
   );
 };
