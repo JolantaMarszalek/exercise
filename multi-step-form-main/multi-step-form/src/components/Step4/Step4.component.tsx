@@ -33,20 +33,24 @@ export const Step4Section = () => {
   const selectedAddons = addonsString
     ? JSON.parse(decodeURIComponent(addonsString))
     : [];
-  // const isMonthly = queryParams.get("monthly") === "true";
-  const [displayType, setDisplayType] = useState<"monthly" | "yearly">(
-    "monthly"
-  );
+  const isMonthly = queryParams.get("monthly") === "true";
+  // const [displayType, setDisplayType] = useState<"monthly" | "yearly">(
+  //   "yearly"
+  // );
+  // const displayType: "yearly" | "monthly" = "yearly";
 
-  const handleDisplayTypeChange = () => {
-    setDisplayType((prevDisplayType) => {
-      const newDisplayType =
-        prevDisplayType === "monthly" ? "yearly" : "monthly";
-      console.log("New Display Type:", newDisplayType);
-      setInitialIsMonthly(newDisplayType === "monthly");
-      return newDisplayType;
-    });
-  };
+  // const displayType =
+  //   queryParams.get("monthly") === "true" ? "monthly" : "yearly";
+
+  // const handleDisplayTypeChange = () => {
+  //   setDisplayType((prevDisplayType) => {
+  //     const newDisplayType =
+  //       prevDisplayType === "monthly" ? "yearly" : "monthly";
+  //     console.log("New Display Type:", newDisplayType);
+  //     setInitialIsMonthly(newDisplayType === "monthly");
+  //     return newDisplayType;
+  //   });
+  // };
 
   const [
     ,
@@ -67,10 +71,39 @@ export const Step4Section = () => {
 
     setInitialSelectedAddons(addons);
     setInitialIsMonthly(isMonthlyValue);
+
+    // if (!isMonthlyValue) {
+    //   setDisplayType("yearly");
+    // }
   }, [queryParams]);
 
   const getAddonPrice = (addonType: string): string => {
-    if (displayType === "monthly") {
+    if (
+      !isMonthly
+
+      // displayType === "yearly"
+    ) {
+      //   switch (addonType) {
+      //     case "Online service":
+      //       return displayType === "monthly" ? "$1/mo" : "$10/yr";
+      //     case "Larger storage":
+      //       return displayType === "monthly" ? "$2/mo" : "$20/yr";
+      //     case "Customizable Profile":
+      //       return displayType === "monthly" ? "$2/mo" : "$20/yr";
+      //     default:
+      //       return "";
+      //   }
+      // } else {
+      //   switch (addonType) {
+      //     case "Online service":
+      //       return displayType === "monthly" ? "$10/yr" : "$1/mo";
+      //     case "Larger storage":
+      //       return displayType === "monthly" ? "$20/yr" : "$2/mo";
+      //     case "Customizable Profile":
+      //       return displayType === "monthly" ? "$20/yr" : "$2/mo";
+      //     default:
+      //       return "";
+      //   }
       switch (addonType) {
         case "Online service":
           return "$1/mo";
@@ -96,7 +129,32 @@ export const Step4Section = () => {
   };
 
   const getPrice = (cardType: string): string => {
-    if (displayType === "monthly") {
+    if (
+      !isMonthly
+
+      // displayType === "yearly"
+    ) {
+      //   switch (cardType) {
+      //     case "Arcade":
+      //       return displayType === "monthly" ? "$9/mo" : "$90/yr";
+      //     case "Advanced":
+      //       return displayType === "monthly" ? "$12/mo" : "$120/yr";
+      //     case "Pro":
+      //       return displayType === "monthly" ? "$15/mo" : "$150/yr";
+      //     default:
+      //       return "";
+      //   }
+      // } else {
+      //   switch (cardType) {
+      //     case "Arcade":
+      //       return displayType === "monthly" ? "$90/yr" : "$9/mo";
+      //     case "Advanced":
+      //       return displayType === "monthly" ? "$120/yr" : "$12/mo";
+      //     case "Pro":
+      //       return displayType === "monthly" ? "$150/yr" : "$15/mo";
+      //     default:
+      //       return "";
+      //   }
       switch (cardType) {
         case "Arcade":
           return "$9/mo";
@@ -163,13 +221,19 @@ export const Step4Section = () => {
                   <>
                     <Step4SingleCardTitle>
                       {" "}
-                      {/* {selectedCard} ({!isMonthly ? "Monthly" : "Yearly"}) */}
-                      {selectedCard} (
-                      {displayType === "monthly" ? "Monthly" : "Yearly"})
+                      {selectedCard} ({!isMonthly ? "Monthly" : "Yearly"})
+                      {/* {selectedCard} ( */}
+                      {/* {displayType === "monthly" ? "Monthly" : "Yearly"}) */}
+                      {/* {selectedCard} (
+                      {queryParams.get("monthly") === "true"
+                        ? "Monthly"
+                        : "Yearly"}
+                      ) */}
                     </Step4SingleCardTitle>
                     <Step4SingleCardDescribe
                       style={{ textDecoration: "underline", cursor: "pointer" }}
-                      onClick={handleDisplayTypeChange}>
+                      // onClick={handleDisplayTypeChange}
+                    >
                       Change
                     </Step4SingleCardDescribe>
                   </>
@@ -192,9 +256,8 @@ export const Step4Section = () => {
         </Step4SingleCardSection>
         <Step4UnderSingleCard>
           <Step4SingleCardDescribe>
-            Total
-            {/* ({!isMonthly ? "per month" : "per year"}) */}
-            Total ({displayType === "monthly" ? "per month" : "per year"})
+            Total ({!isMonthly ? "per month" : "per year"})
+            {/* {displayType === "monthly" ? "per month" : "per year"}) */}
           </Step4SingleCardDescribe>
           <Step4SingleCardPrice>
             <span
@@ -203,14 +266,19 @@ export const Step4Section = () => {
                 fontWeight: "bold",
                 fontSize: "20px",
               }}>
-              {/* {totalPrice ? `$${totalPrice.toFixed(2)}` : ""} */}
               {totalPrice
+                ? `$${totalPrice.toFixed(0)}/${!isMonthly ? "mo" : "yr"}`
+                : ""}
+
+              {/* {totalPrice ? `$${totalPrice.toFixed(0)}` : ""} */}
+              {/* {totalPrice
                 ? `${
-                    displayType === "monthly"
+                    // displayType === "monthly"
+                    ""
                       ? "$" + totalPrice.toFixed(0) + "/mo"
                       : "$" + totalPrice.toFixed(0) + "/yr"
                   }`
-                : ""}
+                : ""} */}
             </span>
           </Step4SingleCardPrice>
         </Step4UnderSingleCard>
