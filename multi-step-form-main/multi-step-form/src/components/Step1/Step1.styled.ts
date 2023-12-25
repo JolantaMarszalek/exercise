@@ -15,7 +15,7 @@ export const Step1SectionStyle = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    ustify-content: center;
+    justify-content: center;
     align-items: center;
     width: 100%;
     border-radius: 0;
@@ -132,7 +132,9 @@ export const Step1ButtonContainer = styled.section`
   height: 10vh;
   margin-top: 20px;
 
-  @media (max-width: 650px) {
-    flex-direction: column;
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    width: auto;
   }
 `;

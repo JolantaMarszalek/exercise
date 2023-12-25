@@ -325,7 +325,9 @@ export const Step2ButtonContainer = styled.section`
   height: 10vh;
   margin-top: 20px;
 
-  @media (max-width: 650px) {
-    flex-direction: column;
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    width: auto;
   }
 `;

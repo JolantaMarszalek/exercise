@@ -15,10 +15,13 @@ export const ButtonDarkStyle = styled.button`
   background-color: var(--primary-marine-blue);
   display: block;
 
-  /* @media (max-width: 1024px) {
-    height: 40px;
-    border-radius: 15px;
-  } */
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border-radius: 10px;
+    display: block;
+  }
 `;
 
 export const ButtonDarkSecondStyle = styled.button`
@@ -36,10 +39,13 @@ export const ButtonDarkSecondStyle = styled.button`
   background-color: var(--primary-purplish-blue);
   display: block;
 
-  /* @media (max-width: 1024px) {
-    height: 40px;
-    border-radius: 15px;
-  } */
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border-radius: 10px;
+    display: block;
+  }
 `;
 
 export const ButtonLightStyle = styled.button`
@@ -58,10 +64,13 @@ export const ButtonLightStyle = styled.button`
   display: block;
   text-align: left;
 
-  /* @media (max-width: 1024px) {
-    height: 40px;
-    border-radius: 15px;
-  } */
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border-radius: 10px;
+    display: block;
+  }
 `;
 
 export const ButtonContainer = styled.section`
@@ -73,7 +82,9 @@ export const ButtonContainer = styled.section`
   margin: auto;
   height: 10vh;
 
-  @media (max-width: 650px) {
-    flex-direction: column;
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    /* width: auto; */
   }
 `;

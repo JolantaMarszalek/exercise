@@ -50,6 +50,7 @@ export const LeftNavigationStyle = styled.div`
     align-items: center;
     width: 100%;
     border-radius: 0;
+    margin: 0px;
     background-image: url(${BackgroundMobile});
 
     .hide-on-mobile {
@@ -89,6 +90,7 @@ export const LeftNavigationTextStyle = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: row;
+    margin: 0px;
   }
 
   @media (max-width: 768px) {
