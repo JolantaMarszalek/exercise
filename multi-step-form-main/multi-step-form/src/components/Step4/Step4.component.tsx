@@ -17,7 +17,6 @@ import {
   Step4SingleCardPriceFromStep2,
   Step4SingleCardTextSingleLineSection,
   Step4SingleCardTextSingleLineFromStep2Line,
-  // Step4SingleCardTextSingleLineText,
 } from "./Step4.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
 import { ButtonDarkSecond } from "../Button/ButtonDarkSecond.component";
@@ -134,23 +133,6 @@ export const Step4Section = () => {
     return total;
   };
 
-  // const totalPrice = getTotalPrice();
-
-  //   // Sumowanie cen z funkcji getPrice dla wybranej karty
-  //   if (selectedCard) {
-  //     const cardPrice = getPrice(selectedCard);
-  //     if (cardPrice !== "") {
-  //       if (!isMonthly) {
-  //         // Usunięcie znaku $ oraz parsowanie wartości na liczbę
-  //         const price = parseFloat(cardPrice.replace("$", ""));
-  //         total += price;
-  //       }
-  //     }
-  //   }
-
-  //   return total;
-  // };
-
   const totalPrice: number = getTotalPrice();
 
   return (
@@ -176,21 +158,12 @@ export const Step4Section = () => {
                     </Step4SingleCardDescribe>
                   </>
                 ) : null}
-                {/* <Step4SingleCardTitle>Arcade (Monthly)</Step4SingleCardTitle>
-                <Step4SingleCardDescribe>Change</Step4SingleCardDescribe> */}
               </Step4SingleCardTextSingleLineFromStep2>
               <></>
               <Step4SingleCardPriceFromStep2>
-                {/* {" "}
-                <span
-                  style={{
-                    fontWeight: "bold",
-                  }}>
-                  +$9/mo
-                </span> */}
                 {selectedCard ? (
                   <span style={{ fontWeight: "bold" }}>
-                    {/* +$9/mo */} {getPrice(selectedCard)}
+                    {getPrice(selectedCard)}
                   </span>
                 ) : null}
               </Step4SingleCardPriceFromStep2>
@@ -213,10 +186,7 @@ export const Step4Section = () => {
                 fontWeight: "bold",
                 fontSize: "20px",
               }}>
-              {/* {totalPrice ? `$${totalPrice.toFixed(2)}` : ""} */}
               {totalPrice ? `$${totalPrice.toFixed(2)}` : ""}
-
-              {/* +$12/mo */}
             </span>
           </Step4SingleCardPrice>
         </Step4UnderSingleCard>
