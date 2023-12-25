@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { ButtonDark } from "../Button/ButtonDark.component";
-
 import {
   Step3ButtonContainer,
   Step3CardSection,
@@ -24,9 +23,7 @@ export const Step3Section = () => {
     isMonthly: false,
     selectedCard: "",
   };
-  // const { isMonthly, selectedCard } = location.state
-  //   ? location.state.isMonthly
-  //   : false;
+
   const [selectedAddons, setSelectedAddons] = useState<string[]>([]);
 
   const getAddonPrice = (addonType: string) => {
@@ -83,7 +80,6 @@ export const Step3Section = () => {
               checked={selectedAddons.includes("Online service")}
             />
           </Step3SingleCardCheckboxSection>
-
           <Step3SingleCardTextSection>
             <Step3SingleCardTitle>Online service</Step3SingleCardTitle>
             <Step3SingleCardDescribe>
