@@ -3,7 +3,6 @@ import { useState } from "react";
 import {
   LeftNavigationStyle,
   LeftNavigationTextStyle,
-  //   LeftSectionStyle,
   LeftTextFirstLine,
   LeftTextNumber,
   LeftTextSecondLine,
@@ -11,6 +10,7 @@ import {
   LeftTextSingleLineLeftSide,
   LeftTextSingleLineRightSide,
 } from "./LeftSection.styled";
+import { useMediaQuery } from "react-responsive";
 
 export const LeftSection = () => {
   const [numbers, setNumbers] = useState({
@@ -19,6 +19,8 @@ export const LeftSection = () => {
     3: false,
     4: false,
   });
+
+  const isMobile = useMediaQuery({ maxWidth: 1024 });
 
   const handleClick = (num: number) => {
     setNumbers((prevNumbers) => ({
@@ -29,7 +31,6 @@ export const LeftSection = () => {
 
   return (
     <>
-      {/* <LeftSectionStyle> */}
       <LeftNavigationStyle>
         <LeftNavigationTextStyle>
           {" "}
@@ -42,7 +43,8 @@ export const LeftSection = () => {
                   1
                 </LeftTextNumber>
               </LeftTextSingleLineLeftSide>
-              <LeftTextSingleLineRightSide>
+              <LeftTextSingleLineRightSide
+                className={isMobile ? "hide-on-mobile" : ""}>
                 <LeftTextFirstLine>STEP 1</LeftTextFirstLine>
                 <LeftTextSecondLine>YOUR INFO</LeftTextSecondLine>
               </LeftTextSingleLineRightSide>
@@ -57,7 +59,8 @@ export const LeftSection = () => {
                   2
                 </LeftTextNumber>
               </LeftTextSingleLineLeftSide>
-              <LeftTextSingleLineRightSide>
+              <LeftTextSingleLineRightSide
+                className={isMobile ? "hide-on-mobile" : ""}>
                 <LeftTextFirstLine>STEP 2</LeftTextFirstLine>
                 <LeftTextSecondLine>SELECT PLAN</LeftTextSecondLine>
               </LeftTextSingleLineRightSide>
@@ -72,7 +75,8 @@ export const LeftSection = () => {
                   3
                 </LeftTextNumber>
               </LeftTextSingleLineLeftSide>
-              <LeftTextSingleLineRightSide>
+              <LeftTextSingleLineRightSide
+                className={isMobile ? "hide-on-mobile" : ""}>
                 <LeftTextFirstLine>STEP 3</LeftTextFirstLine>
                 <LeftTextSecondLine>ADD-ONS</LeftTextSecondLine>
               </LeftTextSingleLineRightSide>
@@ -87,7 +91,8 @@ export const LeftSection = () => {
                   4
                 </LeftTextNumber>
               </LeftTextSingleLineLeftSide>
-              <LeftTextSingleLineRightSide>
+              <LeftTextSingleLineRightSide
+                className={isMobile ? "hide-on-mobile" : ""}>
                 <LeftTextFirstLine>STEP 4</LeftTextFirstLine>
                 <LeftTextSecondLine>SUMMARY</LeftTextSecondLine>
               </LeftTextSingleLineRightSide>
@@ -95,7 +100,6 @@ export const LeftSection = () => {
           </Link>
         </LeftNavigationTextStyle>
       </LeftNavigationStyle>
-      {/* </LeftSectionStyle> */}
     </>
   );
 };

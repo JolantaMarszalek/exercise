@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Step2SectionStyle = styled.div`
   display: flex;
@@ -100,8 +100,16 @@ export const Step2CardSection = styled.div`
     width: 100%;
   }
 `;
+interface Step2SingleCardSectionProps {
+  isSelected: boolean;
+}
 
-export const Step2SingleCardSection = styled.div`
+const selectedStyles = css`
+  background-color: var(--neutral-alabaster);
+  border: 1px solid var(--primary-purplish-blue);
+`;
+
+export const Step2SingleCardSection = styled.div<Step2SingleCardSectionProps>`
   display: flex;
   flex-direction: column;
   position: relative;
@@ -117,6 +125,13 @@ export const Step2SingleCardSection = styled.div`
     background-color: var(--neutral-alabaster);
     border: 1px solid var(--primary-purplish-blue);
   }
+
+  &:active {
+    background-color: var(--neutral-alabaster);
+    border: 1px solid var(--primary-purplish-blue);
+  }
+
+  ${({ isSelected }) => isSelected && selectedStyles}
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -188,7 +203,6 @@ export const Step2SingleCardPrice = styled.div`
   flex-direction: column;
   position: relative;
   justify-content: flex-start;
-  /* align-items: center; */
   margin-bottom: 20px;
   margin-left: 20px;
   font-size: 15px;
@@ -219,7 +233,6 @@ export const Step2ToggleContainer = styled.section`
   height: 6vh;
   margin-top: 20px;
   background: var(--neutral-alabaster);
-  /* background: pink; */
   border-radius: 10px;
 
   @media (max-width: 650px) {
@@ -312,7 +325,9 @@ export const Step2ButtonContainer = styled.section`
   height: 10vh;
   margin-top: 20px;
 
-  @media (max-width: 650px) {
-    flex-direction: column;
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    width: auto;
   }
 `;

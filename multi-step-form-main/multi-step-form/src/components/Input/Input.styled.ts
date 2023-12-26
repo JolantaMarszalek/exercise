@@ -18,6 +18,13 @@ export const InputField = styled.input`
   &:active {
     border: 1px solid var(--primary-purplish-blue);
   }
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+    height: 40px;
+  }
 `;
 
 export const InputLabel = styled.label`
@@ -29,4 +36,11 @@ export const InputLabel = styled.label`
   width: 100%;
   height: 50px;
   border-radius: 5px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40px;
+  }
 `;

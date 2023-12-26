@@ -16,7 +16,7 @@ import {
   Step4SingleCardTextSingleLineFromStep2,
   Step4SingleCardPriceFromStep2,
   Step4SingleCardTextSingleLineSection,
-  // Step4SingleCardTextSingleLineText,
+  Step4SingleCardTextSingleLineFromStep2Line,
 } from "./Step4.styled";
 import { ButtonLight } from "../Button/ButtonLight.component";
 import { ButtonDarkSecond } from "../Button/ButtonDarkSecond.component";
@@ -35,10 +35,16 @@ export const Step4Section = () => {
     : [];
   const isMonthly = queryParams.get("monthly") === "true";
 
-  const [initialSelectedAddons, setInitialSelectedAddons] = useState<string[]>(
-    []
-  );
-  const [initialIsMonthly, setInitialIsMonthly] = useState<boolean>(true);
+  const [
+    ,
+    // initialSelectedAddons
+    setInitialSelectedAddons,
+  ] = useState<string[]>([]);
+  const [
+    ,
+    // initialIsMonthly
+    setInitialIsMonthly,
+  ] = useState<boolean>(true);
 
   useEffect(() => {
     const addons = JSON.parse(
@@ -50,7 +56,7 @@ export const Step4Section = () => {
     setInitialIsMonthly(isMonthlyValue);
   }, [queryParams]);
 
-  const getAddonPrice = (addonType: string) => {
+  const getAddonPrice = (addonType: string): string => {
     if (!isMonthly) {
       switch (addonType) {
         case "Online service":
@@ -76,7 +82,33 @@ export const Step4Section = () => {
     }
   };
 
-  const selectedAddonsInStep4 = selectedAddons.map((addonName) => {
+  const getPrice = (cardType: string): string => {
+    if (!isMonthly) {
+      switch (cardType) {
+        case "Arcade":
+          return "$9/mo";
+        case "Advanced":
+          return "$12/mo";
+        case "Pro":
+          return "$15/mo";
+        default:
+          return "";
+      }
+    } else {
+      switch (cardType) {
+        case "Arcade":
+          return "$90/yr";
+        case "Advanced":
+          return "$120/yr";
+        case "Pro":
+          return "$150/yr";
+        default:
+          return "";
+      }
+    }
+  };
+
+  const selectedAddonsInStep4 = selectedAddons.map((addonName: string) => {
     return (
       <Step4SingleCardTextSingleLine key={addonName}>
         <Step4SingleCardDescribe>{addonName}</Step4SingleCardDescribe>
@@ -84,6 +116,24 @@ export const Step4Section = () => {
       </Step4SingleCardTextSingleLine>
     );
   });
+
+  const getTotalPrice = (): number => {
+    let total = 0;
+
+    if (selectedCard) {
+      const cardPrice = getPrice(selectedCard);
+      total += parseFloat(cardPrice.split("/")[0].replace("$", ""));
+    }
+
+    selectedAddons.forEach((addonName: string) => {
+      const addonPrice = getAddonPrice(addonName);
+      total += parseFloat(addonPrice.split("/")[0].replace("$", ""));
+    });
+
+    return total;
+  };
+
+  const totalPrice: number = getTotalPrice();
 
   return (
     <Step4SectionStyle>
@@ -98,27 +148,29 @@ export const Step4Section = () => {
               <Step4SingleCardTextSingleLineFromStep2>
                 {selectedCard ? (
                   <>
-                    <Step4SingleCardTitle>{selectedCard}</Step4SingleCardTitle>
-                    <Step4SingleCardDescribe>Change</Step4SingleCardDescribe>
+                    <Step4SingleCardTitle>
+                      {" "}
+                      {selectedCard} ({!isMonthly ? "Monthly" : "Yearly"})
+                    </Step4SingleCardTitle>
+                    <Step4SingleCardDescribe
+                      style={{
+                        textDecoration: "underline",
+                        cursor: "pointer",
+                      }}>
+                      Change
+                    </Step4SingleCardDescribe>
                   </>
                 ) : null}
-                {/* <Step4SingleCardTitle>Arcade (Monthly)</Step4SingleCardTitle>
-                <Step4SingleCardDescribe>Change</Step4SingleCardDescribe> */}
               </Step4SingleCardTextSingleLineFromStep2>
               <Step4SingleCardPriceFromStep2>
-                {/* {" "}
-                <span
-                  style={{
-                    fontWeight: "bold",
-                  }}>
-                  +$9/mo
-                </span> */}
                 {selectedCard ? (
-                  <span style={{ fontWeight: "bold" }}>+$9/mo</span>
+                  <span style={{ fontWeight: "bold" }}>
+                    {getPrice(selectedCard)}
+                  </span>
                 ) : null}
               </Step4SingleCardPriceFromStep2>
             </Step4SingleCardTextFromStep2>
-
+            <Step4SingleCardTextSingleLineFromStep2Line></Step4SingleCardTextSingleLineFromStep2Line>
             <Step4SingleCardTextSingleLineSection>
               {" "}
               {selectedAddonsInStep4}
@@ -126,7 +178,9 @@ export const Step4Section = () => {
           </Step4SingleCardTextSection>
         </Step4SingleCardSection>
         <Step4UnderSingleCard>
-          <Step4SingleCardDescribe>Total (per month)</Step4SingleCardDescribe>
+          <Step4SingleCardDescribe>
+            Total ({!isMonthly ? "per month" : "per year"})
+          </Step4SingleCardDescribe>
           <Step4SingleCardPrice>
             <span
               style={{
@@ -134,7 +188,9 @@ export const Step4Section = () => {
                 fontWeight: "bold",
                 fontSize: "20px",
               }}>
-              +$12/mo
+              {totalPrice
+                ? `$${totalPrice.toFixed(0)}/${!isMonthly ? "mo" : "yr"}`
+                : ""}
             </span>
           </Step4SingleCardPrice>
         </Step4UnderSingleCard>

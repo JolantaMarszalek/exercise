@@ -16,8 +16,11 @@ export const ButtonDarkStyle = styled.button`
   display: block;
 
   @media (max-width: 1024px) {
-    height: 30px;
-    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border-radius: 10px;
+    display: block;
   }
 `;
 
@@ -37,8 +40,11 @@ export const ButtonDarkSecondStyle = styled.button`
   display: block;
 
   @media (max-width: 1024px) {
-    height: 30px;
-    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border-radius: 10px;
+    display: block;
   }
 `;
 
@@ -59,8 +65,11 @@ export const ButtonLightStyle = styled.button`
   text-align: left;
 
   @media (max-width: 1024px) {
-    height: 30px;
-    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border-radius: 10px;
+    display: block;
   }
 `;
 
@@ -73,7 +82,9 @@ export const ButtonContainer = styled.section`
   margin: auto;
   height: 10vh;
 
-  @media (max-width: 650px) {
-    flex-direction: column;
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    width: auto;
   }
 `;

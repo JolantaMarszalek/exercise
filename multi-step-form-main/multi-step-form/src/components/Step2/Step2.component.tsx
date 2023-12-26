@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ButtonDark } from "../Button/ButtonDark.component";
 import { useState } from "react";
 import {
@@ -21,24 +21,20 @@ import {
 import { ButtonLight } from "../Button/ButtonLight.component";
 import React from "react";
 
-export const Step2Section: React.FC = () => {
-  const [isClicked, setIsClicked] = useState(false);
+interface Step2SectionProps {
+  isSelected: boolean;
+}
+
+export const Step2Section: React.FC<Step2SectionProps> = () => {
   const [isMonthly, setIsMonthly] = useState(false);
-  const navigate = useNavigate();
   const [selectedCard, setSelectedCard] = useState<string>("");
 
-  // const handleNextStep = (cardType: string) => {
-  //   setSelectedCard(cardType);
-  //   navigate("/summary", { state: { selectedCard: cardType } });
-  // };
-
   const handleNextStep = (cardType: string) => {
-    setSelectedCard(cardType);
-    navigate(`/summary?selectedCard=${cardType}`);
-  };
-
-  const handleClick = () => {
-    setIsClicked(!isClicked);
+    if (selectedCard === cardType) {
+      setSelectedCard("");
+    } else {
+      setSelectedCard(cardType);
+    }
   };
 
   const handleToggleChange = () => {
@@ -113,7 +109,9 @@ export const Step2Section: React.FC = () => {
         You have the option of monthly or yearly billing.
       </Step2Describe>
       <Step2CardSection>
-        <Step2SingleCardSection onClick={handleClick}>
+        <Step2SingleCardSection
+          onClick={() => handleNextStep("Arcade")}
+          isSelected={selectedCard === "Arcade"}>
           <Step2SingleCardImage>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +131,9 @@ export const Step2Section: React.FC = () => {
           <Step2SingleCardTitle>Arcade</Step2SingleCardTitle>
           <Step2SingleCardPrice>{getPrice("Arcade")}</Step2SingleCardPrice>
         </Step2SingleCardSection>
-        <Step2SingleCardSection onClick={handleClick}>
+        <Step2SingleCardSection
+          onClick={() => handleNextStep("Advanced")}
+          isSelected={selectedCard === "Advanced"}>
           <Step2SingleCardImage>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +153,9 @@ export const Step2Section: React.FC = () => {
           <Step2SingleCardTitle>Advanced</Step2SingleCardTitle>
           <Step2SingleCardPrice>{getPrice("Advanced")}</Step2SingleCardPrice>
         </Step2SingleCardSection>
-        <Step2SingleCardSection onClick={handleClick}>
+        <Step2SingleCardSection
+          onClick={() => handleNextStep("Pro")}
+          isSelected={selectedCard === "Pro"}>
           <Step2SingleCardImage>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +197,6 @@ export const Step2Section: React.FC = () => {
         <Link
           to="/addOns"
           state={{ isMonthly: isMonthly, selectedCard: selectedCard }}>
-          {/* <ButtonDark>Next Step</ButtonDark> */}
           <ButtonDark onClick={() => handleNextStep("Arcade")}>
             Next Step
           </ButtonDark>

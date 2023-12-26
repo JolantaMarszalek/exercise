@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import BackgroundDesktop from "/../assets/images/bg-sidebar-desktop.svg";
-
+import BackgroundDesktop from "../../images/bg-sidebar-desktop.svg";
+import BackgroundMobile from "../../images/bg-sidebar-mobile.svg";
 // export const LeftSectionStyle = styled.div`
 //   display: flex;
 //   position: relative;
@@ -37,27 +37,45 @@ export const LeftNavigationStyle = styled.div`
   width: 300px;
   height: 565px;
   background-color: navy;
-  /* background: url("/multi-step-form-main/assets/images/bg-sidebar-desktop.svg"); */
-  /* background-image: url(${BackgroundDesktop}); */
+  background-image: url(${BackgroundDesktop});
   border-radius: 10px;
   margin-left: 15px;
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
     align-items: center;
     width: 100%;
+    height: 100px;
+    border-radius: 0;
+    margin: 0px;
+    background-image: url(${BackgroundMobile});
+
+    .hide-on-mobile {
+      display: none;
+    }
   }
+
+  /* @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  } */
+
+  /* @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  } */
+
+  /* @media (max-width: 375px) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  } */
 `;
 
 export const LeftNavigationTextStyle = styled.div`
@@ -69,6 +87,12 @@ export const LeftNavigationTextStyle = styled.div`
   margin-left: 30px;
   margin-top: 30px;
   gap: 20px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+  }
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -209,7 +233,6 @@ export const LeftTextFirstLine = styled.div`
   align-items: center;
   width: auto;
   height: auto;
-  /* padding: 5px; */
   margin-left: 10px;
 
   @media (max-width: 768px) {
@@ -235,7 +258,6 @@ export const LeftTextSecondLine = styled.div`
   align-items: center;
   width: auto;
   height: auto;
-  /* padding: 5px; */
   font-weight: bold;
   margin-left: 10px;
 
