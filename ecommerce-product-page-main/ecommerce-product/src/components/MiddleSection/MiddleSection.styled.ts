@@ -258,7 +258,7 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   height: 50px;
-  width: 200px;
+  width: 250px;
   outline: none;
   border: none;
   border-radius: 10px;

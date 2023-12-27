@@ -1,4 +1,17 @@
-import { CartSection, CartTitle } from "./Cart.styled";
+import {
+  ButtonCart,
+  ButtonCartSection,
+  CartAmount,
+  CartEmpty,
+  CartItems,
+  CartPrices,
+  CartProductName,
+  CartSection,
+  CartTitle,
+  ThumbnailCart,
+  ThumbnailCartContainer,
+} from "./Cart.styled";
+import imageCartProduct from "../../../../images/image-product-1-thumbnail.jpg";
 
 interface CartItem {
   id?: number;
@@ -12,6 +25,20 @@ interface CartProps {
   cartItems: CartItem[];
 }
 
+// interface ThumbnailCartProps {
+//   src: string;
+//   alt: string;
+// }
+
+// const ThumbnailCart: React.FC<ThumbnailCartProps> = ({ src, alt }) => {
+//   return (
+//     <div>
+//       <img src={src} alt={alt} />
+//     </div>
+//   );
+// };
+// export default ThumbnailCart;
+
 export const Cart: React.FC<CartProps> = ({ cartItems }) => {
   const totalAmount = cartItems.reduce((total, product) => {
     return total + product.price * product.quantity;
@@ -24,8 +51,7 @@ export const Cart: React.FC<CartProps> = ({ cartItems }) => {
     return (
       <CartSection>
         <CartTitle>Cart</CartTitle>
-        {/* <h3>Cart</h3> */}
-        <p>Your cart is empty.</p>
+        <CartEmpty>Your cart is empty.</CartEmpty>
       </CartSection>
     );
   }
@@ -33,9 +59,17 @@ export const Cart: React.FC<CartProps> = ({ cartItems }) => {
   return (
     <CartSection>
       <CartTitle>Cart</CartTitle>
-      {/* <h3>Cart</h3> */}
-      <p>Total Items: {totalQuantity}</p>
-      <p>Total Amount: ${totalAmount.toFixed(2)}</p>
+      <ThumbnailCartContainer>
+        <ThumbnailCart src={imageCartProduct} alt="Product Thumbnail" />
+      </ThumbnailCartContainer>
+      <CartPrices>
+        <CartProductName></CartProductName>
+        <CartItems> $125.00 x {totalQuantity}</CartItems>
+        <CartAmount> ${totalAmount.toFixed(2)}</CartAmount>
+      </CartPrices>
+      <ButtonCartSection>
+        <ButtonCart>Checkout</ButtonCart>
+      </ButtonCartSection>
     </CartSection>
   );
 };
