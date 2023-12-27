@@ -85,8 +85,8 @@ export const Step2SingleCardSection = styled.div<Step2SingleCardSectionProps>`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: row;
-    width: 300px;
-    height: 80px;
+    width: 500px;
+    height: 75px;
   }
 `;
 
@@ -97,6 +97,10 @@ export const Step2SingleCardImage = styled.div`
   align-items: center;
   margin-top: 20px;
   margin-left: 20px;
+
+  @media (max-width: 1024px) {
+    margin: 20px;
+  }
 `;
 
 export const Step2SingleCardTitle = styled.div`
@@ -109,9 +113,7 @@ export const Step2SingleCardTitle = styled.div`
   font-weight: bold;
 
   @media (max-width: 1024px) {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
+    margin: auto;
   }
 `;
 
@@ -126,8 +128,6 @@ export const Step2SingleCardPrice = styled.div`
   color: var(--neutral-cool-gray);
 
   @media (max-width: 1024px) {
-    display: flex;
-    flex-direction: column;
     margin: 20px;
   }
 `;
