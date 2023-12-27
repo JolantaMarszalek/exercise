@@ -1,4 +1,20 @@
-import { CartSection } from "./Cart.styled";
+import {
+  ButtonCart,
+  ButtonCartSection,
+  CartAmount,
+  CartBottomSection,
+  CartEmpty,
+  CartItems,
+  CartPriceSection,
+  CartPrices,
+  CartProductName,
+  CartSection,
+  CartTextSection,
+  CartTitle,
+  ThumbnailCart,
+  ThumbnailCartContainer,
+} from "./Cart.styled";
+import imageCartProduct from "../../../../images/image-product-1-thumbnail.jpg";
 
 interface CartItem {
   id?: number;
@@ -23,17 +39,30 @@ export const Cart: React.FC<CartProps> = ({ cartItems }) => {
   if (totalQuantity === 0) {
     return (
       <CartSection>
-        <h3>Cart</h3>
-        <p>Your cart is empty.</p>
+        <CartTitle>Cart</CartTitle>
+        <CartEmpty>Your cart is empty.</CartEmpty>
       </CartSection>
     );
   }
 
   return (
     <CartSection>
-      <h3>Cart</h3>
-      <p>Total Items: {totalQuantity}</p>
-      <p>Total Amount: ${totalAmount.toFixed(2)}</p>
+      <CartTitle>Cart</CartTitle>
+      <CartBottomSection>
+        <ThumbnailCartContainer>
+          <ThumbnailCart src={imageCartProduct} alt="Product Thumbnail" />
+        </ThumbnailCartContainer>
+        <CartTextSection>
+          <CartProductName>Fall Limited Edition Sneakers</CartProductName>
+          <CartPriceSection>
+            <CartItems> $125.00 x {totalQuantity}</CartItems>
+            <CartAmount> ${totalAmount.toFixed(2)}</CartAmount>
+          </CartPriceSection>
+        </CartTextSection>
+      </CartBottomSection>
+      <ButtonCartSection>
+        <ButtonCart>Checkout</ButtonCart>
+      </ButtonCartSection>
     </CartSection>
   );
 };

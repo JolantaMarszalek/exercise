@@ -12,6 +12,7 @@ export const MiddleSectionStyle = styled.section`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    width: auto;
   }
 
   @media (max-width: 600px) {
@@ -257,7 +258,7 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   height: 50px;
-  width: 200px;
+  width: 250px;
   outline: none;
   border: none;
   border-radius: 10px;

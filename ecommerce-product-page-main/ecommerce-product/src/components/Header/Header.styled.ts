@@ -4,9 +4,11 @@ export const HeaderSection = styled.section`
   display: flex;
   justify-content: space-between;
   height: 100px;
+  width: auto;
   z-index: 2;
 
   @media (max-width: 1024px) {
+    width: auto;
   }
 
   @media (max-width: 600px) {
