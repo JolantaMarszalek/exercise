@@ -49,7 +49,7 @@ export const LeftNavigationStyle = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 200px;
+    height: 150px;
     border-radius: 0;
     margin-top: 0;
     margin: 0px;
