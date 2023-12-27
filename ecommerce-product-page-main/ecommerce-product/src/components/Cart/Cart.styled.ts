@@ -9,4 +9,14 @@ export const CartSection = styled.div`
   right: 40px;
   z-index: 10;
   width: 300px;
+  border-radius: 10px;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+`;
+
+export const CartTitle = styled.div`
+  font-size: 16px;
+  font-weight: bold;
 `;

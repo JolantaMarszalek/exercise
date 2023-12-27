@@ -1,4 +1,4 @@
-import { CartSection } from "./Cart.styled";
+import { CartSection, CartTitle } from "./Cart.styled";
 
 interface CartItem {
   id?: number;
@@ -23,7 +23,8 @@ export const Cart: React.FC<CartProps> = ({ cartItems }) => {
   if (totalQuantity === 0) {
     return (
       <CartSection>
-        <h3>Cart</h3>
+        <CartTitle>Cart</CartTitle>
+        {/* <h3>Cart</h3> */}
         <p>Your cart is empty.</p>
       </CartSection>
     );
@@ -31,7 +32,8 @@ export const Cart: React.FC<CartProps> = ({ cartItems }) => {
 
   return (
     <CartSection>
-      <h3>Cart</h3>
+      <CartTitle>Cart</CartTitle>
+      {/* <h3>Cart</h3> */}
       <p>Total Items: {totalQuantity}</p>
       <p>Total Amount: ${totalAmount.toFixed(2)}</p>
     </CartSection>
