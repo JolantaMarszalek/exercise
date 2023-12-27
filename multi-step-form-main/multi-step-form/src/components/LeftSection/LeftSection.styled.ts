@@ -49,8 +49,9 @@ export const LeftNavigationStyle = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 200px;
     border-radius: 0;
+    margin-top: 0;
     margin: 0px;
     background-image: url(${BackgroundMobile});
 
