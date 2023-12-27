@@ -1,3 +1,5 @@
+import { CardSection } from "./Card.styles";
+
 export const Card = () => {
-  return <></>;
+  return <CardSection></CardSection>;
 };

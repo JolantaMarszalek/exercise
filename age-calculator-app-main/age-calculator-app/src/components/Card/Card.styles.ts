@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
-export const CardBackground = styled.div`
+export const CardSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 600px;
   height: 100vh;
+  background-color: grey;
 
   @media (max-width: 375px) {
     width: 100%;
