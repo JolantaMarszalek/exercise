@@ -17,8 +17,8 @@ export const LayoutSectionStyle = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
-    margin: auto;
+    height: auto;
+    margin-top: auto;
   }
 
   @media (max-width: 768px) {

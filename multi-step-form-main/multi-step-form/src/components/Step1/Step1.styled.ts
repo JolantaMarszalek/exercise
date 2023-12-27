@@ -17,8 +17,9 @@ export const Step1SectionStyle = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 200px;
     border-radius: 0;
+    /* margin-left: 10px; */
   }
 
   @media (max-width: 768px) {
@@ -54,7 +55,7 @@ export const Step1Title = styled.div`
   margin-top: 30px;
   margin-bottom: 20px;
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -67,7 +68,7 @@ export const Step1Title = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const Step1Describe = styled.div`
@@ -78,7 +79,7 @@ export const Step1Describe = styled.div`
   margin-bottom: 20px;
   color: var(--neutral-cool-gray);
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -91,7 +92,7 @@ export const Step1Describe = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const Step1AboveInput = styled.div`
@@ -101,7 +102,7 @@ export const Step1AboveInput = styled.div`
   align-items: center;
   margin-top: 30px;
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -114,7 +115,7 @@ export const Step1AboveInput = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const ErrorContainer = styled.div`
@@ -131,10 +132,10 @@ export const Step1ButtonContainer = styled.section`
   align-items: center;
   height: 10vh;
   margin-top: 20px;
-
+  /* 
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: row;
     width: auto;
-  }
+  } */
 `;

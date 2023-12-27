@@ -29,16 +29,16 @@ export const InputField = styled.input`
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    /* width: 90%; */
     height: 40px;
   }
 
   @media (max-width: 576px) {
-    width: 80%;
+    /* width: 80%; */
   }
 
   @media (max-width: 375px) {
-    width: 70%;
+    /* width: 70%; */
   }
 `;
 
