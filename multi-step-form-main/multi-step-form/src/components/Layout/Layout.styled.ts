@@ -21,7 +21,7 @@ export const LayoutSectionStyle = styled.div`
     margin-top: auto;
   }
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -34,5 +34,5 @@ export const LayoutSectionStyle = styled.div`
   @media (max-width: 375px) {
     display: flex;
     flex-direction: column;
-  }
+  } */
 `;

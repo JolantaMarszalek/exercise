@@ -12,7 +12,11 @@ export const Step3SectionStyle = styled.div`
   border-radius: 10px;
   margin: auto;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -25,7 +29,7 @@ export const Step3SectionStyle = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const Step3Title = styled.div`
@@ -37,7 +41,7 @@ export const Step3Title = styled.div`
   margin-top: 30px;
   margin-bottom: 20px;
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -50,7 +54,7 @@ export const Step3Title = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const Step3Describe = styled.div`
@@ -61,7 +65,7 @@ export const Step3Describe = styled.div`
   margin-bottom: 20px;
   color: var(--neutral-cool-gray);
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -74,7 +78,7 @@ export const Step3Describe = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const Step3CardSection = styled.div`
@@ -86,7 +90,7 @@ export const Step3CardSection = styled.div`
   gap: 20px;
   width: 100%;
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -99,7 +103,7 @@ export const Step3CardSection = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 interface Step3SingleCardSectionProps {
@@ -128,9 +132,8 @@ export const Step3SingleCardSection = styled.div<Step3SingleCardSectionProps>`
     border: 1px solid var(--primary-purplish-blue);
   }
 
-  ${({ isSelected }) => isSelected && selectedStyles}
-
-  @media (max-width: 768px) {
+  ${({ isSelected }) =>
+    isSelected && selectedStyles}/* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -143,7 +146,7 @@ export const Step3SingleCardSection = styled.div<Step3SingleCardSectionProps>`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const Step3SingleCardCheckboxSection = styled.div`
@@ -156,7 +159,7 @@ export const Step3SingleCardCheckboxSection = styled.div`
   border-radius: 10px;
   width: 50px;
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -169,7 +172,7 @@ export const Step3SingleCardCheckboxSection = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const Step3SingleCardTextSection = styled.div`
@@ -182,7 +185,7 @@ export const Step3SingleCardTextSection = styled.div`
   border-radius: 10px;
   width: 350px;
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -195,7 +198,7 @@ export const Step3SingleCardTextSection = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const Step3SingleCardTitle = styled.div`
@@ -205,7 +208,7 @@ export const Step3SingleCardTitle = styled.div`
   align-items: center;
   font-weight: bold;
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -218,7 +221,7 @@ export const Step3SingleCardTitle = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const Step3SingleCardDescribe = styled.div`
@@ -228,7 +231,7 @@ export const Step3SingleCardDescribe = styled.div`
   align-items: center;
   color: var(--neutral-cool-gray);
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -241,7 +244,7 @@ export const Step3SingleCardDescribe = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const Step3SingleCardPrice = styled.div`
@@ -250,7 +253,7 @@ export const Step3SingleCardPrice = styled.div`
   align-items: center;
   margin-right: 20px;
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -263,7 +266,7 @@ export const Step3SingleCardPrice = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const Step3ButtonContainer = styled.section`
@@ -279,5 +282,12 @@ export const Step3ButtonContainer = styled.section`
     display: flex;
     flex-direction: row;
     width: auto;
+    display: flex;
+    box-sizing: content-box;
+    width: min(40rem, 100%);
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 10vh;
+    margin-top: 20px;
   }
 `;

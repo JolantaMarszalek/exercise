@@ -25,21 +25,6 @@ export const InputField = styled.input`
     width: 100%;
     height: 40px;
   }
-
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    /* width: 90%; */
-    height: 40px;
-  }
-
-  @media (max-width: 576px) {
-    /* width: 80%; */
-  }
-
-  @media (max-width: 375px) {
-    /* width: 70%; */
-  }
 `;
 
 export const InputLabel = styled.label`
@@ -55,7 +40,7 @@ export const InputLabel = styled.label`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 100%;
     height: 40px;
   }
 `;

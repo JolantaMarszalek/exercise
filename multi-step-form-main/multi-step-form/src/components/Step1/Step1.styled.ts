@@ -13,13 +13,16 @@ export const Step1SectionStyle = styled.div`
   margin: auto;
 
   @media (max-width: 1024px) {
+    width: auto;
+    /* margin: auto; */
+  }
+
+  /* @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 200px;
     border-radius: 0;
-    /* margin-left: 10px; */
   }
 
   @media (max-width: 768px) {
@@ -35,7 +38,7 @@ export const Step1SectionStyle = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const StyledForm = styled.form`
@@ -44,6 +47,10 @@ export const StyledForm = styled.form`
   width: 500px;
   height: 565px;
   justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
 `;
 
 export const Step1Title = styled.div`
@@ -132,10 +139,17 @@ export const Step1ButtonContainer = styled.section`
   align-items: center;
   height: 10vh;
   margin-top: 20px;
-  /* 
+
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: row;
     width: auto;
-  } */
+    display: flex;
+    box-sizing: content-box;
+    width: min(40rem, 100%);
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 10vh;
+    margin-top: 20px;
+  }
 `;

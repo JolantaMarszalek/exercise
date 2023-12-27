@@ -94,7 +94,7 @@ export const LeftNavigationTextStyle = styled.div`
     flex-direction: row;
     margin: 0px;
   }
-
+  /* 
   @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@ export const LeftNavigationTextStyle = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const LeftTextSingleLine = styled.div`
@@ -120,7 +120,7 @@ export const LeftTextSingleLine = styled.div`
   width: auto;
   height: auto;
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -133,7 +133,7 @@ export const LeftTextSingleLine = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const LeftTextSingleLineLeftSide = styled.div`
@@ -145,7 +145,7 @@ export const LeftTextSingleLineLeftSide = styled.div`
   width: auto;
   height: auto;
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -158,7 +158,7 @@ export const LeftTextSingleLineLeftSide = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const LeftTextSingleLineRightSide = styled.div`
@@ -170,6 +170,7 @@ export const LeftTextSingleLineRightSide = styled.div`
   width: auto;
   height: auto;
 
+  /* 
   @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
@@ -183,7 +184,7 @@ export const LeftTextSingleLineRightSide = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 interface NumberProps {
@@ -211,7 +212,7 @@ export const LeftTextNumber = styled.div<NumberProps>`
   color: ${(props) =>
     props.clicked ? "var(--primary-marine-blue)" : "var(--primary-light-blue)"};
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -224,7 +225,7 @@ export const LeftTextNumber = styled.div<NumberProps>`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const LeftTextFirstLine = styled.div`
@@ -236,7 +237,7 @@ export const LeftTextFirstLine = styled.div`
   height: auto;
   margin-left: 10px;
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -249,7 +250,7 @@ export const LeftTextFirstLine = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;
 
 export const LeftTextSecondLine = styled.div`
@@ -262,7 +263,7 @@ export const LeftTextSecondLine = styled.div`
   font-weight: bold;
   margin-left: 10px;
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
   }
@@ -275,5 +276,5 @@ export const LeftTextSecondLine = styled.div`
   @media (max-width: 375px) {
     align-items: center;
     width: 100%;
-  }
+  } */
 `;

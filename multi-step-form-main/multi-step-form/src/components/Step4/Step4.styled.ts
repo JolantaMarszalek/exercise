@@ -12,19 +12,8 @@ export const Step4SectionStyle = styled.div`
   border-radius: 10px;
   margin: auto;
 
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
+  @media (max-width: 1024px) {
+    width: auto;
   }
 `;
 
@@ -36,21 +25,6 @@ export const Step4Title = styled.div`
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 20px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step4Describe = styled.div`
@@ -60,21 +34,6 @@ export const Step4Describe = styled.div`
   align-items: center;
   margin-bottom: 20px;
   color: var(--neutral-cool-gray);
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step4CardSection = styled.div`
@@ -85,21 +44,6 @@ export const Step4CardSection = styled.div`
   justify-content: space-between;
   gap: 20px;
   width: 100%;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step4SingleCardSection = styled.div`
@@ -112,21 +56,6 @@ export const Step4SingleCardSection = styled.div`
   height: 200px;
   border-radius: 10px;
   background: var(--neutral-alabaster);
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step4SingleCardTextSection = styled.div`
@@ -137,21 +66,6 @@ export const Step4SingleCardTextSection = styled.div`
   align-items: flex-start;
   border-radius: 10px;
   width: 100%;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step4SingleCardTextFromStep2 = styled.div`
@@ -160,25 +74,9 @@ export const Step4SingleCardTextFromStep2 = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: center;
-  /* border-radius: 10px; */
   margin-top: 10px;
-  /* border-bottom: 1px solid #ccc; */
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
+
 export const Step4SingleCardTextSingleLineFromStep2Line = styled.div`
   border-bottom: 1px solid #ccc;
   width: 90%;
@@ -191,23 +89,7 @@ export const Step4SingleCardTextSingleLineFromStep2 = styled.div`
   position: relative;
   justify-content: flex-start;
   align-items: flex-start;
-  /* border-radius: 10px; */
   margin-top: 10px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step4SingleCardTextSingleLineSection = styled.div`
@@ -216,21 +98,6 @@ export const Step4SingleCardTextSingleLineSection = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   border-radius: 10px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step4SingleCardTextSingleLine = styled.div`
@@ -241,21 +108,6 @@ export const Step4SingleCardTextSingleLine = styled.div`
   align-items: flex-start;
   border-radius: 10px;
   margin-top: 10px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step4SingleCardTextSingleLineText = styled.div`
@@ -265,21 +117,6 @@ export const Step4SingleCardTextSingleLineText = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   border-radius: 10px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step4SingleCardTitle = styled.div`
@@ -291,21 +128,6 @@ export const Step4SingleCardTitle = styled.div`
   font-weight: bold;
   padding: 10px;
   width: 350px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step4SingleCardDescribe = styled.div`
@@ -317,22 +139,6 @@ export const Step4SingleCardDescribe = styled.div`
   color: var(--neutral-cool-gray);
   padding: 10px;
   width: 350px;
-  /* text-decoration: underline; */
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step4SingleCardPriceSection = styled.div`
@@ -342,21 +148,6 @@ export const Step4SingleCardPriceSection = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin-right: 20px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step4SingleCardPriceFromStep2 = styled.div`
@@ -367,21 +158,6 @@ export const Step4SingleCardPriceFromStep2 = styled.div`
   align-items: center;
   margin-right: 20px;
   padding: 10px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step4SingleCardPrice = styled.div`
@@ -392,21 +168,6 @@ export const Step4SingleCardPrice = styled.div`
   align-items: center;
   margin-right: 20px;
   padding: 10px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step4UnderSingleCard = styled.div`
@@ -417,21 +178,6 @@ export const Step4UnderSingleCard = styled.div`
   align-items: center;
   margin-right: 20px;
   padding: 10px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step4ButtonContainer = styled.section`
@@ -447,5 +193,11 @@ export const Step4ButtonContainer = styled.section`
     display: flex;
     flex-direction: row;
     width: auto;
+    display: flex;
+    box-sizing: content-box;
+    width: min(40rem, 100%);
+    justify-content: space-between;
+    height: 10vh;
+    margin-top: 20px;
   }
 `;
