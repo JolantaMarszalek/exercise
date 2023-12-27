@@ -17,6 +17,14 @@ export const CartSection = styled.div`
   }
 `;
 
+export const CartBottomSection = styled.div`
+  display: flex;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+`;
+
 export const CartTitle = styled.div`
   font-size: 16px;
   font-weight: bold;
@@ -34,26 +42,37 @@ export const ThumbnailCartContainer = styled.div`
 `;
 
 export const ThumbnailCart = styled.img`
-  width: 100px;
+  /* width: 100px; */
   height: auto;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 15px;
+  width: 50px;
+  height: 50px;
 `;
 
 export const CartProductName = styled.div`
   font-size: 16px;
   font-weight: bold;
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
   width: 100%;
-  height: 40px;
+  height: auto;
   /* margin-top: 10px; */
 `;
 
-export const CartPrices = styled.div`
+export const CartTextSection = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: auto;
   margin-top: 20px;
+`;
+
+export const CartPriceSection = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  /* margin-top: 20px; */
 `;
 
 export const CartEmpty = styled.div`

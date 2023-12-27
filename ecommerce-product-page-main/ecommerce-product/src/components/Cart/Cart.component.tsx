@@ -2,11 +2,14 @@ import {
   ButtonCart,
   ButtonCartSection,
   CartAmount,
+  CartBottomSection,
   CartEmpty,
   CartItems,
+  CartPriceSection,
   CartPrices,
   CartProductName,
   CartSection,
+  CartTextSection,
   CartTitle,
   ThumbnailCart,
   ThumbnailCartContainer,
@@ -24,20 +27,6 @@ interface CartItem {
 interface CartProps {
   cartItems: CartItem[];
 }
-
-// interface ThumbnailCartProps {
-//   src: string;
-//   alt: string;
-// }
-
-// const ThumbnailCart: React.FC<ThumbnailCartProps> = ({ src, alt }) => {
-//   return (
-//     <div>
-//       <img src={src} alt={alt} />
-//     </div>
-//   );
-// };
-// export default ThumbnailCart;
 
 export const Cart: React.FC<CartProps> = ({ cartItems }) => {
   const totalAmount = cartItems.reduce((total, product) => {
@@ -59,14 +48,18 @@ export const Cart: React.FC<CartProps> = ({ cartItems }) => {
   return (
     <CartSection>
       <CartTitle>Cart</CartTitle>
-      <ThumbnailCartContainer>
-        <ThumbnailCart src={imageCartProduct} alt="Product Thumbnail" />
-      </ThumbnailCartContainer>
-      <CartPrices>
-        <CartProductName></CartProductName>
-        <CartItems> $125.00 x {totalQuantity}</CartItems>
-        <CartAmount> ${totalAmount.toFixed(2)}</CartAmount>
-      </CartPrices>
+      <CartBottomSection>
+        <ThumbnailCartContainer>
+          <ThumbnailCart src={imageCartProduct} alt="Product Thumbnail" />
+        </ThumbnailCartContainer>
+        <CartTextSection>
+          <CartProductName>Fall Limited Edition Sneakers</CartProductName>
+          <CartPriceSection>
+            <CartItems> $125.00 x {totalQuantity}</CartItems>
+            <CartAmount> ${totalAmount.toFixed(2)}</CartAmount>
+          </CartPriceSection>
+        </CartTextSection>
+      </CartBottomSection>
       <ButtonCartSection>
         <ButtonCart>Checkout</ButtonCart>
       </ButtonCartSection>
