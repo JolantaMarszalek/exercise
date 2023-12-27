@@ -15,21 +15,6 @@ export const Step5SectionStyle = styled.div`
   @media (max-width: 1024px) {
     width: auto;
   }
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step5Image = styled.div`
@@ -40,21 +25,6 @@ export const Step5Image = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
-  }
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
   }
 `;
 
@@ -70,21 +40,6 @@ export const Step5Title = styled.div`
   @media (max-width: 1024px) {
     width: auto;
   }
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const Step5Describe = styled.div`
@@ -96,24 +51,8 @@ export const Step5Describe = styled.div`
   color: var(--neutral-cool-gray);
   text-align: center;
   font-size: 18px;
-  /* width: 350px; */
 
   @media (max-width: 1024px) {
     width: 80%;
-  }
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
   }
 `;

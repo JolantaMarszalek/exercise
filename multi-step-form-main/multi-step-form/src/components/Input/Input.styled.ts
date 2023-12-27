@@ -22,7 +22,7 @@ export const InputField = styled.input`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    min-width: 90%;
+    width: 100%;
     height: 40px;
   }
 `;

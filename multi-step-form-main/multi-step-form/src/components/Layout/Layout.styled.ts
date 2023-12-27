@@ -18,20 +18,6 @@ export const LayoutSectionStyle = styled.div`
     flex-direction: column;
     width: 100%;
     height: auto;
-  }
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    display: flex;
-    flex-direction: column;
+    margin-top: auto;
   }
 `;

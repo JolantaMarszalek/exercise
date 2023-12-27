@@ -1,34 +1,6 @@
 import styled from "styled-components";
-
 import BackgroundDesktop from "../../images/bg-sidebar-desktop.svg";
 import BackgroundMobile from "../../images/bg-sidebar-mobile.svg";
-// export const LeftSectionStyle = styled.div`
-//   display: flex;
-//   position: relative;
-//   justify-content: flex-start;
-//   align-items: center;
-//   width: 1000px;
-//   height: 600px;
-//   background-color: skyblue;
-//   border-radius: 10px;
-//   margin: auto;
-//   margin-top: 100px;
-
-//   @media (max-width: 768px) {
-//     justify-content: center;
-//     align-items: center;
-//   }
-
-//   @media (max-width: 576px) {
-//     justify-content: center;
-//     align-items: center;
-//   }
-
-//   @media (max-width: 375px) {
-//     align-items: center;
-//     width: 100%;
-//   }
-// `;
 
 export const LeftNavigationStyle = styled.div`
   display: flex;
@@ -49,8 +21,9 @@ export const LeftNavigationStyle = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 150px;
     border-radius: 0;
+    margin-top: 0;
     margin: 0px;
     background-image: url(${BackgroundMobile});
 
@@ -58,24 +31,6 @@ export const LeftNavigationStyle = styled.div`
       display: none;
     }
   }
-
-  /* @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  } */
-
-  /* @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  } */
-
-  /* @media (max-width: 375px) {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  } */
 `;
 
 export const LeftNavigationTextStyle = styled.div`
@@ -93,21 +48,6 @@ export const LeftNavigationTextStyle = styled.div`
     flex-direction: row;
     margin: 0px;
   }
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const LeftTextSingleLine = styled.div`
@@ -118,21 +58,6 @@ export const LeftTextSingleLine = styled.div`
   align-items: center;
   width: auto;
   height: auto;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const LeftTextSingleLineLeftSide = styled.div`
@@ -143,21 +68,6 @@ export const LeftTextSingleLineLeftSide = styled.div`
   align-items: center;
   width: auto;
   height: auto;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const LeftTextSingleLineRightSide = styled.div`
@@ -168,21 +78,6 @@ export const LeftTextSingleLineRightSide = styled.div`
   align-items: flex-start;
   width: auto;
   height: auto;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 interface NumberProps {
@@ -200,30 +95,10 @@ export const LeftTextNumber = styled.div<NumberProps>`
   border: 2px solid var(--primary-light-blue);
   cursor: pointer;
 
-  /* &:hover {
-    background-color: var(--primary-light-blue);
-    color: var(--primary-marine-blue);
-  } */
-
   background-color: ${(props) =>
     props.clicked ? "var(--primary-light-blue)" : "transparent"};
   color: ${(props) =>
     props.clicked ? "var(--primary-marine-blue)" : "var(--primary-light-blue)"};
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const LeftTextFirstLine = styled.div`
@@ -234,21 +109,6 @@ export const LeftTextFirstLine = styled.div`
   width: auto;
   height: auto;
   margin-left: 10px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
 
 export const LeftTextSecondLine = styled.div`
@@ -260,19 +120,4 @@ export const LeftTextSecondLine = styled.div`
   height: auto;
   font-weight: bold;
   margin-left: 10px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  }
 `;
