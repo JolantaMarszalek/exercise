@@ -14,31 +14,7 @@ export const Step1SectionStyle = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
-    /* margin: auto; */
   }
-
-  /* @media (max-width: 1024px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0;
-  }
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  } */
 `;
 
 export const StyledForm = styled.form`
@@ -61,21 +37,6 @@ export const Step1Title = styled.div`
   font-weight: bold;
   margin-top: 30px;
   margin-bottom: 20px;
-
-  /* @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  } */
 `;
 
 export const Step1Describe = styled.div`
@@ -85,21 +46,6 @@ export const Step1Describe = styled.div`
   align-items: center;
   margin-bottom: 20px;
   color: var(--neutral-cool-gray);
-
-  /* @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  } */
 `;
 
 export const Step1AboveInput = styled.div`
@@ -108,21 +54,6 @@ export const Step1AboveInput = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-
-  /* @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  } */
 `;
 
 export const ErrorContainer = styled.div`
@@ -148,7 +79,6 @@ export const Step1ButtonContainer = styled.section`
     box-sizing: content-box;
     width: min(40rem, 100%);
     justify-content: space-between;
-    /* align-items: center; */
     height: 10vh;
     margin-top: 20px;
   }
