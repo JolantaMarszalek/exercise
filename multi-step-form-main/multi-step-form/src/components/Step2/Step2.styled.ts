@@ -20,7 +20,6 @@ export const Step2SectionStyle = styled.div`
 export const Step2Title = styled.div`
   display: flex;
   justify-content: flex-start;
-  /* align-items: center; */
   font-size: 30px;
   font-weight: bold;
   margin-top: 30px;
@@ -43,21 +42,6 @@ export const Step2CardSection = styled.div`
   justify-content: space-between;
   gap: 20px;
   width: 100%;
-
-  /* @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  } */
 `;
 interface Step2SingleCardSectionProps {
   isSelected: boolean;
@@ -90,21 +74,7 @@ export const Step2SingleCardSection = styled.div<Step2SingleCardSectionProps>`
     border: 1px solid var(--primary-purplish-blue);
   }
 
-  ${({ isSelected }) =>
-    isSelected && selectedStyles}/* @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  } */
+  ${({ isSelected }) => isSelected && selectedStyles}
 `;
 
 export const Step2SingleCardImage = styled.div`
@@ -114,21 +84,6 @@ export const Step2SingleCardImage = styled.div`
   align-items: center;
   margin-top: 20px;
   margin-left: 20px;
-
-  /* @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  } */
 `;
 
 export const Step2SingleCardTitle = styled.div`
@@ -139,21 +94,6 @@ export const Step2SingleCardTitle = styled.div`
   margin-left: 20px;
   margin-top: 20px;
   font-weight: bold;
-
-  /* @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  } */
 `;
 
 export const Step2SingleCardPrice = styled.div`
@@ -165,21 +105,6 @@ export const Step2SingleCardPrice = styled.div`
   margin-left: 20px;
   font-size: 15px;
   color: var(--neutral-cool-gray);
-
-  /* @media (max-width: 768px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 576px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media (max-width: 375px) {
-    align-items: center;
-    width: 100%;
-  } */
 `;
 
 export const Step2ToggleContainer = styled.section`
@@ -192,10 +117,6 @@ export const Step2ToggleContainer = styled.section`
   margin-top: 20px;
   background: var(--neutral-alabaster);
   border-radius: 10px;
-
-  /* @media (max-width: 650px) {
-    flex-direction: column;
-  } */
 `;
 
 export const Step2ToggleText = styled.section`
@@ -207,10 +128,6 @@ export const Step2ToggleText = styled.section`
   height: 6vh;
   font-weight: bold;
   font-size: 15px;
-
-  /* @media (max-width: 650px) {
-    flex-direction: column;
-  } */
 `;
 
 export const Step2Toggle = styled.section`
@@ -220,10 +137,6 @@ export const Step2Toggle = styled.section`
   justify-content: center;
   align-items: center;
   height: 10vh;
-
-  /* @media (max-width: 650px) {
-    flex-direction: column;
-  } */
 `;
 
 export const ToggleContainer = styled.label`
@@ -279,7 +192,6 @@ export const Step2ButtonContainer = styled.section`
   width: min(40rem, 100%);
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   height: 10vh;
   margin-top: 20px;
 
@@ -289,9 +201,7 @@ export const Step2ButtonContainer = styled.section`
     width: auto;
     box-sizing: content-box;
     width: min(40rem, 100%);
-    display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     height: 10vh;
     margin-top: 20px;
   }
