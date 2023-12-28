@@ -1,5 +1,13 @@
 import { CardSection } from "./Card.styles";
 
-export const Card = () => {
-  return <CardSection></CardSection>;
+interface CardProps {
+  children: React.ReactNode;
+}
+
+export const Card: React.FC<CardProps> = ({ children }) => {
+  return (
+    <>
+      <CardSection>{children}</CardSection>
+    </>
+  );
 };

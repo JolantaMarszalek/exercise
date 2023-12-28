@@ -5,15 +5,16 @@ export const InputField = styled.input`
   font-size: 15px;
   border-radius: 10px;
   overflow: hidden;
-  height: 40px;
+  height: 80px;
+  width: 100px;
   font-weight: bold;
   cursor: pointer;
 
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 40px;
+    height: 80px;
+    width: 100px;
   }
 `;
 
@@ -23,14 +24,14 @@ export const InputLabel = styled.label`
   align-items: center;
   gap: 1rem;
   min-width: 20rem;
-  width: 100%;
-  height: 50px;
+  height: 80px;
+  width: 100px;
   border-radius: 5px;
 
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 40px;
+    height: 80px;
+    width: 100px;
   }
 `;
