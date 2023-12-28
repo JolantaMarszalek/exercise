@@ -15,6 +15,8 @@ export const HeaderSingleInput = styled.div`
 `;
 
 export const HeaderTextUnderInput = styled.div`
+  font-size: 20px;
+  margin-left: 20px;
   /* background-color: var(--neutral-off-white);
   width: 100%;
   height: 100vh; */
