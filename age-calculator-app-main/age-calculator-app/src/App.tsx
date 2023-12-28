@@ -1,5 +1,5 @@
 import { Card } from "./components/Card/Card.component";
-import { Input } from "./components/Input/Input.component";
+import { Header } from "./components/Header/Header.component";
 import { Layout } from "./components/Layout/Layout.component";
 
 function App() {
@@ -8,9 +8,7 @@ function App() {
       <h1>app</h1>
       <Layout>
         <Card>
-          <Input></Input>
-          <Input></Input>
-          <Input></Input>
+          <Header />
         </Card>
       </Layout>
     </>
