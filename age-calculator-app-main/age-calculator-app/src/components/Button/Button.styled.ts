@@ -11,7 +11,6 @@ export const ButtonStyle = styled.button`
   font-weight: 600;
   font-size: 16px;
   font-weight: bold;
-
   background-color: var(--primary-purple);
   display: block;
 

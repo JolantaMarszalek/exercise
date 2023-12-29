@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { AgeContext } from "../Header/Header.component";
+import { AgeContext, useAge } from "../Header/Header.component";
 import {
   BottomSectionStyle,
   BottomSingleLine,
@@ -7,14 +7,14 @@ import {
   BottomSingleLineText,
 } from "./Bottom.styled";
 
-interface AgeProps {
-  years: number;
-  months: number;
-  days: number;
-}
+// interface AgeProps {
+//   years: number;
+//   months: number;
+//   days: number;
+// }
 
-export const Bottom: React.FC<AgeProps> = () => {
-  //   const age = useAge();
+export const Bottom: React.FC = () => {
+  // const age = useAge();
   const age = useContext(AgeContext);
   if (!age) {
     return (

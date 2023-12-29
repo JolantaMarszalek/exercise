@@ -47,6 +47,8 @@ export const Header = () => {
     const months = differenceInMonths(today, birthDate);
     const days = differenceInDays(today, birthDate) % 30;
     setAge({ years, months, days });
+    console.log("onSubmit was called with data:", data);
+    console.log("Calculated age:", { years, months, days });
   };
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -59,7 +61,7 @@ export const Header = () => {
     <>
       {" "}
       <AgeContext.Provider value={age}>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit((data: FormData) => onSubmit(data))}>
           <HeaderSectionStyle>
             <HeaderSingleInput>
               <HeaderTextUnderInput>DAY</HeaderTextUnderInput>
@@ -72,7 +74,11 @@ export const Header = () => {
                     <Input
                       value={field.value}
                       onChange={field.onChange}
-                      onKeyDown={(e) => handleKeyPress(e)}
+                      onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => {
+                        if (e.key === "Enter") {
+                          handleSubmit(onSubmit)();
+                        }
+                      }}
                     />
                     {errors.day && (
                       <ErrorContainer>{errors.day.message}</ErrorContainer>
