@@ -18,6 +18,7 @@ import {
   differenceInYears,
   differenceInMonths,
   differenceInDays,
+  addYears,
 } from "date-fns";
 
 interface AgeContextType {
@@ -65,8 +66,8 @@ export const Header = () => {
     const today = new Date();
     const birthDate = new Date(`${year}-${month}-${day}`);
     const years = differenceInYears(today, birthDate);
-    const months = differenceInMonths(today, birthDate) % 12;
-    const days = differenceInDays(today, birthDate) % 30;
+    const months = differenceInMonths(today, birthDate) - years * 12;
+    const days = differenceInDays(today, addYears(birthDate, years)) % 30;
     setAge({ years, months, days });
     console.log("onSubmit was called with data:", data);
     console.log("Calculated age:", { years, months, days });
