@@ -16,6 +16,7 @@ export const BottomSingleLineText = styled.div`
   font-size: 60px;
   font-weight: bold;
   font-style: italic;
+  color: var(--neutral-off-black);
 `;
 
 export const BottomSingleLineNumber = styled.div`

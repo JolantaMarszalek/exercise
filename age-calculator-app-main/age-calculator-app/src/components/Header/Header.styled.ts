@@ -14,6 +14,7 @@ export const HeaderSingleInput = styled.div`
 export const HeaderTextUnderInput = styled.div`
   font-size: 18px;
   margin-left: 20px;
+  color: var(--neutral-off-black);
 `;
 
 export const ErrorContainer = styled.div`
