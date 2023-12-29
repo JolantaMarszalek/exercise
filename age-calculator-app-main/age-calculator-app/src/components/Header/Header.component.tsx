@@ -1,5 +1,6 @@
 import { Input } from "../Input/Input.component";
 import {
+  ErrorContainer,
   HeaderSectionStyle,
   HeaderSingleInput,
   HeaderTextUnderInput,
@@ -46,7 +47,9 @@ export const Header = () => {
                     onChange={field.onChange}
                     onKeyDown={(e) => handleKeyPress(e)}
                   />
-                  {errors.day && <span>{errors.day.message}</span>}
+                  {errors.day && (
+                    <ErrorContainer>{errors.day.message}</ErrorContainer>
+                  )}
                 </>
               )}
             />
@@ -64,7 +67,9 @@ export const Header = () => {
                     onChange={field.onChange}
                     onKeyDown={(e) => handleKeyPress(e)}
                   />
-                  {errors.month && <span>{errors.month.message}</span>}
+                  {errors.month && (
+                    <ErrorContainer>{errors.month.message}</ErrorContainer>
+                  )}
                 </>
               )}
             />
@@ -82,7 +87,9 @@ export const Header = () => {
                     onChange={field.onChange}
                     onKeyDown={(e) => handleKeyPress(e)}
                   />
-                  {errors.year && <span>{errors.year.message}</span>}
+                  {errors.year && (
+                    <ErrorContainer>{errors.year.message}</ErrorContainer>
+                  )}
                 </>
               )}
             />

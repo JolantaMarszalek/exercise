@@ -5,27 +5,28 @@ export const InputField = styled.input`
   font-size: 15px;
   border-radius: 10px;
   overflow: hidden;
-  height: 50px;
-  width: 100px;
+  height: 60px;
+  width: 150px;
   font-weight: bold;
   cursor: pointer;
   gap: 1rem;
   padding: 2px;
   margin: 5px;
+  font-size: 32px;
 
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    height: 50px;
-    width: 100px;
+    height: 60px;
+    width: 150px;
     gap: 1rem;
     padding: 2px;
     margin: 5px;
   }
 
   @media (max-width: 375px) {
-    height: 50px;
-    width: 100px;
+    height: 60px;
+    width: 150px;
     gap: 1rem;
     padding: 2px;
     margin: 5px;
@@ -38,8 +39,8 @@ export const InputLabel = styled.label`
   align-items: center;
   gap: 1rem;
   /* min-width: 20rem; */
-  height: 80px;
-  width: 100px;
+  height: 60px;
+  width: 150px;
   border-radius: 5px;
   padding: 2px;
   margin: 5px;
@@ -47,16 +48,16 @@ export const InputLabel = styled.label`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    height: 80px;
-    width: 100px;
+    height: 60px;
+    width: 150px;
     gap: 1rem;
     padding: 2px;
     margin: 5px;
   }
 
   @media (max-width: 375px) {
-    height: 80px;
-    width: 100px;
+    height: 60px;
+    width: 150px;
     gap: 1rem;
     padding: 2px;
     margin: 5px;
