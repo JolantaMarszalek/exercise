@@ -1,4 +1,10 @@
-import { createContext, useContext, useState } from "react";
+import {
+  Dispatch,
+  SetStateAction,
+  createContext,
+  useContext,
+  useState,
+} from "react";
 import { Button } from "../Button/Button.component";
 import { Input } from "../Input/Input.component";
 import {
@@ -18,12 +24,25 @@ interface AgeContextType {
   years: number;
   months: number;
   days: number;
+  setAge: Dispatch<
+    SetStateAction<{ years: number; months: number; days: number }>
+  >;
 }
 
-export const AgeContext = createContext<AgeContextType | undefined>(undefined);
+export const AgeContext = createContext<AgeContextType>({
+  years: 0,
+  months: 0,
+  days: 0,
+  setAge: () => {},
+});
 
-export const useAge = () => useContext(AgeContext);
-
+export const useAge = () => {
+  const context = useContext(AgeContext);
+  if (!context) {
+    throw new Error("useAge must be used within an AgeContext Provider");
+  }
+  return context;
+};
 interface FormData {
   day: string;
   month: string;
@@ -37,6 +56,8 @@ export const Header = () => {
     formState: { errors },
   } = useForm<FormData>();
 
+  const ageContext = useContext(AgeContext);
+
   const [age, setAge] = useState({ years: 0, months: 0, days: 0 });
 
   const onSubmit = (data: FormData) => {
@@ -49,6 +70,10 @@ export const Header = () => {
     setAge({ years, months, days });
     console.log("onSubmit was called with data:", data);
     console.log("Calculated age:", { years, months, days });
+
+    if (ageContext) {
+      ageContext.setAge({ years, months, days });
+    }
   };
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -60,7 +85,13 @@ export const Header = () => {
   return (
     <>
       {" "}
-      <AgeContext.Provider value={age}>
+      <AgeContext.Provider
+        value={{
+          years: age.years,
+          months: age.months,
+          days: age.days,
+          setAge: setAge,
+        }}>
         <form onSubmit={handleSubmit((data: FormData) => onSubmit(data))}>
           <HeaderSectionStyle>
             <HeaderSingleInput>
@@ -74,11 +105,7 @@ export const Header = () => {
                     <Input
                       value={field.value}
                       onChange={field.onChange}
-                      onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => {
-                        if (e.key === "Enter") {
-                          handleSubmit(onSubmit)();
-                        }
-                      }}
+                      onKeyDown={(e) => handleKeyPress(e)}
                     />
                     {errors.day && (
                       <ErrorContainer>{errors.day.message}</ErrorContainer>
