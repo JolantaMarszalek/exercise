@@ -2,14 +2,15 @@ import styled from "styled-components";
 
 export const CardSection = styled.div`
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-content: flex-start;
   justify-content: center;
-  width: 600px;
-  height: 300px;
+  width: 800px;
+  height: 600px;
   /* height: 100vh; */
-  background-color: grey;
+  background-color: var(--neutral-white);
   padding: 2px;
+  border-radius: 10px;
 
   @media (max-width: 1024px) {
     display: flex;
