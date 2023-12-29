@@ -14,7 +14,7 @@ export const CardSection = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: auto;
     height: 100vh;
     padding: 2px;

@@ -18,8 +18,9 @@ export const ButtonStyle = styled.button`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: row;
-    height: 50px;
-    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
     display: block;
   }
 `;
