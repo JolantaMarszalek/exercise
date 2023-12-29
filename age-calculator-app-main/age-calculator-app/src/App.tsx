@@ -5,7 +5,6 @@ import { Layout } from "./components/Layout/Layout.component";
 function App() {
   return (
     <>
-      <h1>app</h1>
       <Layout>
         <Card>
           <Header />

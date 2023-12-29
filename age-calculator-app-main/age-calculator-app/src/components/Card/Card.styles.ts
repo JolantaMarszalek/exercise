@@ -6,10 +6,11 @@ export const CardSection = styled.div`
   align-items: center;
   justify-content: center;
   width: 600px;
-  height: 300px;
+  height: 400px;
   /* height: 100vh; */
   background-color: grey;
   padding: 2px;
+  border-radius: 10px;
 
   @media (max-width: 1024px) {
     display: flex;
