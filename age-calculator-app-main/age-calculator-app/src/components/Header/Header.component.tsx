@@ -65,7 +65,7 @@ export const Header = () => {
     const today = new Date();
     const birthDate = new Date(`${year}-${month}-${day}`);
     const years = differenceInYears(today, birthDate);
-    const months = differenceInMonths(today, birthDate);
+    const months = differenceInMonths(today, birthDate) % 12;
     const days = differenceInDays(today, birthDate) % 30;
     setAge({ years, months, days });
     console.log("onSubmit was called with data:", data);
