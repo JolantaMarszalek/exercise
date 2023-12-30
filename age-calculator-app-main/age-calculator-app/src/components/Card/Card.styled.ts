@@ -10,7 +10,7 @@ export const CardSection = styled.div`
   /* height: 100vh; */
   background-color: var(--neutral-white);
   padding: 2px;
-  border-radius: 10px;
+  border-radius: 10px 10px 300px 10px;
 
   @media (max-width: 1024px) {
     display: flex;
