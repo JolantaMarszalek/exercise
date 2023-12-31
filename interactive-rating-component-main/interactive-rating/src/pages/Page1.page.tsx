@@ -1,3 +1,7 @@
 export const Page1 = () => {
-  return <></>;
+  return (
+    <>
+      <h1>fifi</h1>
+    </>
+  );
 };
