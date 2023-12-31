@@ -4,7 +4,7 @@ export const CardSection = styled.div`
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 400px;
   height: 400px;
   background-color: var(--neutral-dark-blue);

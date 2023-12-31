@@ -7,6 +7,7 @@ export const ButtonStyle = styled.section`
   align-items: center;
   height: 10vh;
   background: var(--neutral-dark-blue);
+  border-radius: 100px;
 
   @media (max-width: 1024px) {
     display: flex;

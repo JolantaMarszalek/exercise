@@ -22,3 +22,15 @@ export const StarSection = styled.div`
     padding: 2px;
   }
 `;
+
+export const Circle = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: var(--neutral-medium-grey);
+  margin-left: 20px;
+`;
