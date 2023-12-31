@@ -16,7 +16,13 @@ export const HeaderSectionStyle = styled.div`
     height: 2px;
     background-color: var(--neutral-light-grey);
     /* z-index: 2; */
+
+    @media (max-width: 1024px) {
+      width: 90%;
+      top: 120px;
+    }
   }
+
   @media (max-width: 1024px) {
     width: 100%;
     height: auto;

@@ -36,6 +36,8 @@ export const ButtonContainer = styled.section`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: auto;
+    margin: 0;
   }
 `;
