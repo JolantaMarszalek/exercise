@@ -22,7 +22,13 @@ export const RatingSection = styled.div`
   }
 `;
 
-export const Circle = styled.div`
+interface CircleProps {
+  clicked: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}
+
+export const Circle = styled.div<CircleProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,6 +36,24 @@ export const Circle = styled.div`
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background-color: var(--neutral-medium-grey);
-  /* margin-left: 20px; */
+
+  background-color: ${(props) =>
+    props.clicked
+      ? "var(--neutral-medium-grey)"
+      : "var(--neutral-medium-grey)"};
+  color: ${(props) =>
+    props.clicked ? "var(--neutral-white)" : "var(--neutral-white)"};
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: ${(props) =>
+      props.clicked ? "var(--primary-orange)" : "var(--primary-orange)"};
+    color: var(--neutral-white);
+  }
+
+  &:active {
+    background-color: var(--primary-orange);
+    color: var(--neutral-white);
+  }
 `;
