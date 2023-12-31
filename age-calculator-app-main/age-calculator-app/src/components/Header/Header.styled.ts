@@ -17,6 +17,16 @@ export const HeaderSectionStyle = styled.div`
     background-color: var(--neutral-light-grey);
     /* z-index: 2; */
   }
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+
+  @media (max-width: 375px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export const HeaderSingleInput = styled.div`

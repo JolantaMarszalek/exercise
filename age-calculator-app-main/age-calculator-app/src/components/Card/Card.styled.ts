@@ -16,13 +16,13 @@ export const CardSection = styled.div`
     display: flex;
     flex-direction: column;
     width: auto;
-    height: 100vh;
+    height: auto;
     padding: 2px;
   }
 
   @media (max-width: 375px) {
     width: auto;
-    height: 100vh;
+    height: auto;
     padding: 2px;
   }
 `;
