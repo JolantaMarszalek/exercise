@@ -96,7 +96,12 @@ export const Header = () => {
         <form onSubmit={handleSubmit((data: FormData) => onSubmit(data))}>
           <HeaderSectionStyle>
             <HeaderSingleInput>
-              <HeaderTextUnderInput>DAY</HeaderTextUnderInput>
+              <HeaderTextUnderInput
+                style={{
+                  color: errors.month ? "hsl(0, 100%, 67%)" : "hsl(0, 1%, 44%)",
+                }}>
+                DAY
+              </HeaderTextUnderInput>
               <Controller
                 control={control}
                 name="day"
@@ -116,7 +121,12 @@ export const Header = () => {
               />
             </HeaderSingleInput>
             <HeaderSingleInput>
-              <HeaderTextUnderInput>MONTH</HeaderTextUnderInput>
+              <HeaderTextUnderInput
+                style={{
+                  color: errors.month ? "hsl(0, 100%, 67%)" : "hsl(0, 1%, 44%)",
+                }}>
+                MONTH
+              </HeaderTextUnderInput>
               <Controller
                 control={control}
                 name="month"
@@ -136,7 +146,12 @@ export const Header = () => {
               />
             </HeaderSingleInput>
             <HeaderSingleInput>
-              <HeaderTextUnderInput>YEAR</HeaderTextUnderInput>
+              <HeaderTextUnderInput
+                style={{
+                  color: errors.month ? "hsl(0, 100%, 67%)" : "hsl(0, 1%, 44%)",
+                }}>
+                YEAR
+              </HeaderTextUnderInput>
               <Controller
                 control={control}
                 name="year"

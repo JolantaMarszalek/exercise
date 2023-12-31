@@ -31,7 +31,7 @@ export const HeaderTextUnderInput = styled.div`
 `;
 
 export const ErrorContainer = styled.div`
-  color: red;
+  color: var(--primary-light-red);
   text-align: center;
   font-size: 13px;
   font-style: italic;
