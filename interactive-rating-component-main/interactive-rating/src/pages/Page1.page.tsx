@@ -1,10 +1,11 @@
+import { Card } from "../components/Card/Card.component";
 import { Layout } from "../components/Layout/Layout.component";
 
 export const Page1 = () => {
   return (
     <>
       <Layout>
-        <h1>fifi</h1>
+        <Card></Card>
       </Layout>
     </>
   );
