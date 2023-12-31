@@ -77,6 +77,21 @@ export const Header = () => {
     }
   };
 
+  const isInvalidDay = (value: string) => {
+    const dayNumber = parseInt(value, 10);
+    return isNaN(dayNumber) || dayNumber < 1 || dayNumber > 31;
+  };
+
+  const isInvalidMonth = (value: string) => {
+    const monthNumber = parseInt(value, 10);
+    return isNaN(monthNumber) || monthNumber < 1 || monthNumber > 12;
+  };
+
+  const isInvalidYear = (value: string) => {
+    const yearNumber = parseInt(value, 10);
+    return isNaN(yearNumber) || yearNumber < 1 || yearNumber > 2023;
+  };
+
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       handleSubmit(onSubmit)();
@@ -105,7 +120,13 @@ export const Header = () => {
               <Controller
                 control={control}
                 name="day"
-                rules={{ required: "The field is required" }}
+                rules={{
+                  required: "The field is required",
+                  validate: {
+                    invalidDay: (value: string) =>
+                      isInvalidDay(value) ? "Must be a valid day" : true,
+                  },
+                }}
                 render={({ field }) => (
                   <>
                     <Input
@@ -130,7 +151,13 @@ export const Header = () => {
               <Controller
                 control={control}
                 name="month"
-                rules={{ required: "The field is required" }}
+                rules={{
+                  required: "The field is required",
+                  validate: {
+                    invalidMonth: (value: string) =>
+                      isInvalidMonth(value) ? "Must be a valid month" : true,
+                  },
+                }}
                 render={({ field }) => (
                   <>
                     <Input
@@ -155,7 +182,13 @@ export const Header = () => {
               <Controller
                 control={control}
                 name="year"
-                rules={{ required: "The field is required" }}
+                rules={{
+                  required: "The field is required",
+                  validate: {
+                    invalidYear: (value: string) =>
+                      isInvalidYear(value) ? "Must be in the past" : true,
+                  },
+                }}
                 render={({ field }) => (
                   <>
                     <Input

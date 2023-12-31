@@ -12,7 +12,8 @@ export const InputField = styled.input`
   gap: 1rem;
   padding: 2px;
   padding-left: 20px;
-  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 32px;
   border: 2px solid var(--neutral-light-grey);
 
