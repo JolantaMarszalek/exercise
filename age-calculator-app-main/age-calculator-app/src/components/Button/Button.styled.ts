@@ -11,31 +11,33 @@ export const ButtonStyle = styled.button`
   font-weight: 600;
   font-size: 16px;
   font-weight: bold;
-
   background-color: var(--primary-purple);
   display: block;
 
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: row;
-    height: 50px;
-    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
     display: block;
   }
 `;
 
 export const ButtonContainer = styled.section`
   box-sizing: content-box;
-  width: min(40rem, 100%);
+  /* width: min(40rem, 100%); */
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  // margin: auto;
   height: 10vh;
+  margin-right: 100px;
 
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: auto;
+    margin: 0;
   }
 `;

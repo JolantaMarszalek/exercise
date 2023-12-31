@@ -1,4 +1,4 @@
-import { CardSection } from "./Card.styles";
+import { CardSection } from "./Card.styled";
 
 interface CardProps {
   children: React.ReactNode;

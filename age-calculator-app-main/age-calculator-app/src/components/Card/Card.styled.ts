@@ -10,19 +10,19 @@ export const CardSection = styled.div`
   /* height: 100vh; */
   background-color: var(--neutral-white);
   padding: 2px;
-  border-radius: 10px;
+  border-radius: 10px 10px 200px 10px;
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: auto;
-    height: 100vh;
+    height: auto;
     padding: 2px;
   }
 
   @media (max-width: 375px) {
     width: auto;
-    height: 100vh;
+    height: auto;
     padding: 2px;
   }
 `;
