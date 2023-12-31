@@ -26,10 +26,15 @@ export const TextSection = styled.div`
 export const TextTitleSection = styled.div`
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
+  align-content: center;
   justify-content: center;
+  align-items: flex-start;
   padding: 2px;
   border-radius: 50px;
+  color: var(--neutral-white);
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 25px;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -49,10 +54,14 @@ export const TextTitleSection = styled.div`
 export const TextDescribeSection = styled.div`
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
+  align-content: center;
   justify-content: center;
+  align-items: flex-start;
   padding: 2px;
   border-radius: 50px;
+  color: var(--neutral-light-grey);
+  margin-left: 20px;
+  margin-right: 20px;
 
   @media (max-width: 1024px) {
     display: flex;
