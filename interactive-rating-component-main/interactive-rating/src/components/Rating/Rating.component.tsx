@@ -1,8 +1,45 @@
-import { useState } from "react";
 import { Circle, RatingSection } from "./Rating.styled";
 
+import React, { useContext, createContext, useState, ReactNode } from "react";
+
+interface RatingContextType {
+  selectedNumber: number | null;
+  setSelectedNumber: React.Dispatch<React.SetStateAction<number | null>>;
+}
+
+export const RatingContext = createContext<RatingContextType | undefined>(
+  undefined
+);
+
+export const useRatingContext = () => {
+  const context = useContext(RatingContext);
+  if (!context) {
+    throw new Error(
+      "useRatingContext must be used within a RatingContextProvider"
+    );
+  }
+  return context;
+};
+
+interface RatingContextProviderProps {
+  children: ReactNode;
+}
+
+export const RatingContextProvider: React.FC<RatingContextProviderProps> = ({
+  children,
+}) => {
+  const [selectedNumber, setSelectedNumber] = useState<number | null>(null);
+
+  return (
+    <RatingContext.Provider value={{ selectedNumber, setSelectedNumber }}>
+      {children}
+    </RatingContext.Provider>
+  );
+};
+
 export const Rating = () => {
-  //   const [clicked, setClicked] = useState(false);
+  const { selectedNumber, setSelectedNumber } = useRatingContext();
+
   const [numbers, setNumbers] = useState({
     1: false,
     2: false,
@@ -16,6 +53,7 @@ export const Rating = () => {
       ...prevNumbers,
       [num]: !prevNumbers[num as keyof typeof prevNumbers],
     }));
+    setSelectedNumber(num);
   };
 
   return (

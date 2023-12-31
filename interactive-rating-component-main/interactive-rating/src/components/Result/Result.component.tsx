@@ -1,11 +1,34 @@
+import {
+  RatingContextProvider,
+  useRatingContext,
+} from "../Rating/Rating.component";
 import { ResultContainer, ResultSection, ResultText } from "./Result.styled";
 
-export const Result = () => {
+interface ResultProps {
+  selectedNumber: number | null;
+}
+
+export const Result: React.FC<ResultProps> = ({
+  selectedNumber: propSelectedNumber,
+}) => {
+  const { selectedNumber: contextSelectedNumber } = useRatingContext();
+
   return (
-    <ResultSection>
-      <ResultContainer>
-        <ResultText>You selected -- Add rating here -- out of 5</ResultText>
-      </ResultContainer>
-    </ResultSection>
+    <RatingContextProvider>
+      <ResultSection>
+        <ResultContainer>
+          <ResultText>
+            {" "}
+            You selected{" "}
+            {propSelectedNumber
+              ? propSelectedNumber
+              : contextSelectedNumber
+              ? contextSelectedNumber
+              : "--"}{" "}
+            out of 5
+          </ResultText>
+        </ResultContainer>
+      </ResultSection>
+    </RatingContextProvider>
   );
 };
