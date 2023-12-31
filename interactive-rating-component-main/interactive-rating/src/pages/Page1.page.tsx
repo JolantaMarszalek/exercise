@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../components/Button/Button.component";
 import { Card } from "../components/Card/Card.component";
 import { Layout } from "../components/Layout/Layout.component";
@@ -12,7 +13,11 @@ export const Page1 = () => {
         <Star />
         <Text />
         <Rating />
-        <Button />
+        <Link
+          to="/thankYou"
+          style={{ textDecoration: "none", color: "inherit" }}>
+          <Button />
+        </Link>
       </Card>
     </Layout>
   );
