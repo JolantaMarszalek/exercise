@@ -5,9 +5,9 @@ export const ButtonStyle = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
-  background: var(--neutral-dark-blue);
-  border-radius: 100px;
+  /* height: 10vh; */
+  /* background: var(--neutral-dark-blue); */
+  /* border-radius: 100px; */
 
   @media (max-width: 1024px) {
     display: flex;
@@ -34,6 +34,11 @@ export const ButtonContainer = styled.button`
   justify-content: center;
   align-items: center;
   color: var(--neutral-white);
+
+  &:hover {
+    background-color: var(--neutral-white);
+    color: var(--primary-orange);
+  }
 
   @media (max-width: 1024px) {
     display: flex;

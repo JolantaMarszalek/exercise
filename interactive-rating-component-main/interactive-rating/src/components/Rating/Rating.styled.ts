@@ -38,9 +38,7 @@ export const Circle = styled.div<CircleProps>`
   border-radius: 100%;
 
   background-color: ${(props) =>
-    props.clicked
-      ? "var(--neutral-medium-grey)"
-      : "var(--neutral-medium-grey)"};
+    props.clicked ? "var(--neutral-dark-blue)" : "var(--neutral-medium-grey)"};
   color: ${(props) =>
     props.clicked ? "var(--neutral-white)" : "var(--neutral-white)"};
   cursor: pointer;
@@ -53,7 +51,7 @@ export const Circle = styled.div<CircleProps>`
   }
 
   &:active {
-    background-color: var(--primary-orange);
+    background-color: var(--neutral-medium-grey);
     color: var(--neutral-white);
   }
 `;

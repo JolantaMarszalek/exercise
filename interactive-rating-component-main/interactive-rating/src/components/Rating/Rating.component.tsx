@@ -2,26 +2,37 @@ import { useState } from "react";
 import { Circle, RatingSection } from "./Rating.styled";
 
 export const Rating = () => {
-  const [clicked, setClicked] = useState(false);
+  //   const [clicked, setClicked] = useState(false);
+  const [numbers, setNumbers] = useState({
+    1: false,
+    2: false,
+    3: false,
+    4: false,
+    5: false,
+  });
 
-  const handleCircleClick = () => {
-    setClicked((prevState) => !prevState);
+  const handleClick = (num: number) => {
+    setNumbers((prevNumbers) => ({
+      ...prevNumbers,
+      [num]: !prevNumbers[num as keyof typeof prevNumbers],
+    }));
   };
+
   return (
     <RatingSection>
-      <Circle clicked={clicked} onClick={handleCircleClick}>
+      <Circle clicked={numbers[1]} onClick={() => handleClick(1)}>
         1
       </Circle>
-      <Circle clicked={clicked} onClick={handleCircleClick}>
+      <Circle clicked={numbers[2]} onClick={() => handleClick(2)}>
         2
       </Circle>
-      <Circle clicked={clicked} onClick={handleCircleClick}>
+      <Circle clicked={numbers[3]} onClick={() => handleClick(3)}>
         3
       </Circle>
-      <Circle clicked={clicked} onClick={handleCircleClick}>
+      <Circle clicked={numbers[4]} onClick={() => handleClick(4)}>
         4
       </Circle>
-      <Circle clicked={clicked} onClick={handleCircleClick}>
+      <Circle clicked={numbers[5]} onClick={() => handleClick(5)}>
         5
       </Circle>
     </RatingSection>

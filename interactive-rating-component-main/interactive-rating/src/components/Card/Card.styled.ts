@@ -7,7 +7,11 @@ export const CardSection = styled.div`
   justify-content: space-evenly;
   width: 400px;
   height: 400px;
-  background-color: var(--neutral-dark-blue);
+  background-image: linear-gradient(
+    to bottom,
+    var(--neutral-dark-blue),
+    var(--neutral-very-dark-blue)
+  );
   padding: 2px;
   border-radius: 50px;
 
