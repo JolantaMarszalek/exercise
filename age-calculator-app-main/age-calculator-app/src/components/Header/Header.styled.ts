@@ -4,6 +4,19 @@ export const HeaderSectionStyle = styled.div`
   display: flex;
   flex-direction: row;
   margin-left: 50px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 130px;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    height: 2px;
+    background-color: var(--neutral-light-grey);
+    /* z-index: 2; */
+  }
 `;
 
 export const HeaderSingleInput = styled.div`

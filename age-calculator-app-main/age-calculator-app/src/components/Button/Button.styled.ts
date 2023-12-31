@@ -26,12 +26,12 @@ export const ButtonStyle = styled.button`
 
 export const ButtonContainer = styled.section`
   box-sizing: content-box;
-  width: min(40rem, 100%);
+  /* width: min(40rem, 100%); */
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  // margin: auto;
   height: 10vh;
+  margin-right: 100px;
 
   @media (max-width: 1024px) {
     display: flex;
