@@ -2,9 +2,9 @@ import {
   TextDescribeSection,
   TextSection,
   TextTitleSection,
-} from "./Text.styled";
+} from "./TextPage1.styled";
 
-export const Text = () => {
+export const TextPage1 = () => {
   return (
     <TextSection>
       <TextTitleSection>How did we do?</TextTitleSection>
