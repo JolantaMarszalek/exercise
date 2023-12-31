@@ -11,8 +11,10 @@ export const InputField = styled.input`
   cursor: pointer;
   gap: 1rem;
   padding: 2px;
+  padding-left: 20px;
   margin: 5px;
   font-size: 32px;
+  border: 2px solid var(--neutral-light-grey);
 
   @media (max-width: 1024px) {
     display: flex;
@@ -43,7 +45,7 @@ export const InputLabel = styled.label`
   width: 150px;
   border-radius: 5px;
   padding: 2px;
-  margin: 5px;
+  /* margin-left: 5px; */
 
   @media (max-width: 1024px) {
     display: flex;
