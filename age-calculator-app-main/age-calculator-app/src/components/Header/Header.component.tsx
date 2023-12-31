@@ -1,6 +1,6 @@
 import {
-  Dispatch,
-  SetStateAction,
+  // Dispatch,
+  // SetStateAction,
   createContext,
   useContext,
   useState,
@@ -25,9 +25,7 @@ interface AgeContextType {
   years: number;
   months: number;
   days: number;
-  setAge: Dispatch<
-    SetStateAction<{ years: number; months: number; days: number }>
-  >;
+  setAge: (newAge: { years: number; months: number; days: number }) => void;
 }
 
 export const AgeContext = createContext<AgeContextType>({
@@ -60,15 +58,48 @@ export const Header = () => {
 
   const ageContext = useContext(AgeContext);
 
-  const [age, setAge] = useState({ years: 0, months: 0, days: 0 });
+  const [age, setAge] = useState<{
+    years: number;
+    months: number;
+    days: number;
+  }>({
+    years: 0,
+    months: 0,
+    days: 0,
+  });
 
   const onSubmit = (data: FormData) => {
     const { day, month, year } = data;
     const today = new Date();
+    // let birthYear = parseInt(year, 10);
     const birthDate = new Date(`${year}-${month}-${day}`);
+
+    // if (year.length === 1) {
+    //   birthYear += 2000;
+    // }
+
+    // const birthDate = new Date(
+    //   birthYear,
+    //   parseInt(month, 10) - 1,
+    //   parseInt(day, 10)
+    // );
+
+    // let years = today.getFullYear() - birthDate.getFullYear();
+    // const months = today.getMonth() - birthDate.getMonth();
+    // const days = today.getDate() - birthDate.getDate();
+
     const years = differenceInYears(today, birthDate);
-    const months = differenceInMonths(today, birthDate) - years * 12;
-    const days = differenceInDays(today, addYears(birthDate, years)) % 30;
+    const months = differenceInMonths(today, addYears(birthDate, years));
+    const days = differenceInDays(today, addYears(birthDate, years));
+
+    // if (months < 0 || (months === 0 && today.getDate() < birthDate.getDate())) {
+    //   years--;
+    // }
+
+    // const years = differenceInYears(today, birthDate);
+    // const months = differenceInMonths(today, addYears(birthDate, years));
+    // const days = differenceInDays(today, addYears(birthDate, years));
+
     setAge({ years, months, days });
     console.log("onSubmit was called with data:", data);
     console.log("Calculated age:", { years, months, days });
@@ -115,13 +146,7 @@ export const Header = () => {
   return (
     <>
       {" "}
-      <AgeContext.Provider
-        value={{
-          years: age.years,
-          months: age.months,
-          days: age.days,
-          setAge: setAge,
-        }}>
+      <AgeContext.Provider value={{ ...age, setAge }}>
         <form onSubmit={handleSubmit((data: FormData) => onSubmit(data))}>
           <HeaderSectionStyle>
             <HeaderSingleInput>
