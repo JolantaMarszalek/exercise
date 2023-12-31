@@ -55,6 +55,7 @@ export const Header = () => {
     control,
     handleSubmit,
     formState: { errors },
+    getValues,
   } = useForm<FormData>();
 
   const ageContext = useContext(AgeContext);
@@ -77,9 +78,22 @@ export const Header = () => {
     }
   };
 
-  const isInvalidDay = (value: string) => {
+  const daysInMonth = (month: number, year: number): number => {
+    return new Date(year, month, 0).getDate();
+  };
+
+  const isInvalidDay = (value: string, formData: FormData) => {
+    const { month, year } = formData;
     const dayNumber = parseInt(value, 10);
-    return isNaN(dayNumber) || dayNumber < 1 || dayNumber > 31;
+    const monthNumber = parseInt(month, 10);
+    const yearNumber = parseInt(year, 10);
+
+    if (isNaN(dayNumber) || dayNumber < 1 || dayNumber > 31) {
+      return true;
+    }
+
+    const daysInChosenMonth = daysInMonth(monthNumber, yearNumber);
+    return dayNumber > daysInChosenMonth;
   };
 
   const isInvalidMonth = (value: string) => {
@@ -124,7 +138,9 @@ export const Header = () => {
                   required: "The field is required",
                   validate: {
                     invalidDay: (value: string) =>
-                      isInvalidDay(value) ? "Must be a valid day" : true,
+                      isInvalidDay(value, getValues() as FormData)
+                        ? "Invalid day for this month"
+                        : true,
                   },
                 }}
                 render={({ field }) => (
