@@ -43,8 +43,5 @@ export const ButtonContainer = styled.button`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: row;
-    height: 80px;
-    width: 80px;
-    display: block;
   }
 `;
