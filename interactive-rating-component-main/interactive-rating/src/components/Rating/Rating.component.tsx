@@ -11,7 +11,7 @@ export const RatingContext = createContext<RatingContextType | undefined>(
   undefined
 );
 
-export const useRatingContext = () => {
+export const useRatingContext = (): RatingContextType => {
   const context = useContext(RatingContext);
   if (!context) {
     throw new Error(
@@ -38,39 +38,44 @@ export const RatingContextProvider: React.FC<RatingContextProviderProps> = ({
 };
 
 export const Rating = () => {
-  const { selectedNumber, setSelectedNumber } = useRatingContext();
+  const {
+    // selectedNumber,
+    setSelectedNumber,
+  } = useRatingContext();
 
-  const [numbers, setNumbers] = useState({
-    1: false,
-    2: false,
-    3: false,
-    4: false,
-    5: false,
-  });
+  // const [numbers, setNumbers] = useState({
+  //   1: false,
+  //   2: false,
+  //   3: false,
+  //   4: false,
+  //   5: false,
+  // });
+
+  const [numbers, setNumbers] = useState([false, false, false, false, false]);
 
   const handleClick = (num: number) => {
-    setNumbers((prevNumbers) => ({
-      ...prevNumbers,
-      [num]: !prevNumbers[num as keyof typeof prevNumbers],
-    }));
-    setSelectedNumber(num);
+    setNumbers((prevNumbers) => {
+      const updatedNumbers = prevNumbers.map((_, index) => index + 1 === num);
+      setSelectedNumber(num);
+      return updatedNumbers;
+    });
   };
 
   return (
     <RatingSection>
-      <Circle clicked={numbers[1]} onClick={() => handleClick(1)}>
+      <Circle clicked={numbers[0]} onClick={() => handleClick(1)}>
         1
       </Circle>
-      <Circle clicked={numbers[2]} onClick={() => handleClick(2)}>
+      <Circle clicked={numbers[1]} onClick={() => handleClick(2)}>
         2
       </Circle>
-      <Circle clicked={numbers[3]} onClick={() => handleClick(3)}>
+      <Circle clicked={numbers[2]} onClick={() => handleClick(3)}>
         3
       </Circle>
-      <Circle clicked={numbers[4]} onClick={() => handleClick(4)}>
+      <Circle clicked={numbers[3]} onClick={() => handleClick(4)}>
         4
       </Circle>
-      <Circle clicked={numbers[5]} onClick={() => handleClick(5)}>
+      <Circle clicked={numbers[4]} onClick={() => handleClick(5)}>
         5
       </Circle>
     </RatingSection>

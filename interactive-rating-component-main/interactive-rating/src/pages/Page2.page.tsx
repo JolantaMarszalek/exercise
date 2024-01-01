@@ -4,25 +4,23 @@ import { Layout } from "../components/Layout/Layout.component";
 import { RatingContext } from "../components/Rating/Rating.component";
 import { Result } from "../components/Result/Result.component";
 import { TextPage2 } from "../components/TextPage2/TextPage2.component";
-import React from "react";
+import React, { useContext } from "react";
 
 export const Page2: React.FC = () => {
-  const [selectedNumber, setSelectedNumber] = React.useState<number | null>(
-    null
-  );
+  const { selectedNumber } = useContext(RatingContext) || {
+    selectedNumber: null,
+  };
 
   return (
     <>
       {" "}
-      <RatingContext.Provider value={{ selectedNumber, setSelectedNumber }}>
-        <Layout>
-          <Card>
-            <Image />
-            <Result selectedNumber={selectedNumber} />
-            <TextPage2 />
-          </Card>
-        </Layout>
-      </RatingContext.Provider>
+      <Layout>
+        <Card>
+          <Image />
+          <Result selectedNumber={selectedNumber} />
+          <TextPage2 />
+        </Card>
+      </Layout>
     </>
   );
 };
