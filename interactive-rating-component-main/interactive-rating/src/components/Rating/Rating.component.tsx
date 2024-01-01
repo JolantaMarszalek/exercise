@@ -11,7 +11,7 @@ export const RatingContext = createContext<RatingContextType | undefined>(
   undefined
 );
 
-export const useRatingContext = () => {
+export const useRatingContext = (): RatingContextType => {
   const context = useContext(RatingContext);
   if (!context) {
     throw new Error(
@@ -38,7 +38,10 @@ export const RatingContextProvider: React.FC<RatingContextProviderProps> = ({
 };
 
 export const Rating = () => {
-  const { selectedNumber, setSelectedNumber } = useRatingContext();
+  const {
+    // selectedNumber,
+    setSelectedNumber,
+  } = useRatingContext();
 
   const [numbers, setNumbers] = useState({
     1: false,
