@@ -1,5 +1,15 @@
 import { ReactNode } from "react";
-import { CardLeftSection, CardRightSection, CardSection } from "./Card.styled";
+import {
+  CardLeftSection,
+  CardLeftSectionDescribe,
+  CardLeftSectionList,
+  CardLeftSectionListSingleLine,
+  CardLeftSectionListSingleLineDescribe,
+  CardLeftSectionListSingleLineImage,
+  CardLeftSectionTitle,
+  CardRightSection,
+  CardSection,
+} from "./Card.styled";
 
 interface CardProps {
   children: ReactNode;
@@ -12,7 +22,80 @@ export const Card: React.FC<CardProps> = () =>
       <>
         <CardSection>
           {/* {children} */}
-          <CardLeftSection></CardLeftSection>
+          <CardLeftSection>
+            <CardLeftSectionTitle>Stay updated!</CardLeftSectionTitle>
+            <CardLeftSectionDescribe>
+              {" "}
+              Join 60,000+ product managers receiving monthly updates on:
+            </CardLeftSectionDescribe>
+            <CardLeftSectionList>
+              <CardLeftSectionListSingleLine>
+                {" "}
+                <CardLeftSectionListSingleLineImage>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21">
+                    <g fill="none">
+                      <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                      <path
+                        stroke="#FFF"
+                        stroke-width="2"
+                        d="M6 11.381 8.735 14 15 8"
+                      />
+                    </g>
+                  </svg>
+                </CardLeftSectionListSingleLineImage>
+                <CardLeftSectionListSingleLineDescribe>
+                  Product discovery and building what matters
+                </CardLeftSectionListSingleLineDescribe>
+              </CardLeftSectionListSingleLine>
+              <CardLeftSectionListSingleLine>
+                <CardLeftSectionListSingleLineImage>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21">
+                    <g fill="none">
+                      <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                      <path
+                        stroke="#FFF"
+                        stroke-width="2"
+                        d="M6 11.381 8.735 14 15 8"
+                      />
+                    </g>
+                  </svg>
+                </CardLeftSectionListSingleLineImage>
+                <CardLeftSectionListSingleLineDescribe>
+                  Measuring to ensure updates are a success
+                </CardLeftSectionListSingleLineDescribe>
+              </CardLeftSectionListSingleLine>
+              <CardLeftSectionListSingleLine>
+                {" "}
+                <CardLeftSectionListSingleLineImage>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21">
+                    <g fill="none">
+                      <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                      <path
+                        stroke="#FFF"
+                        stroke-width="2"
+                        d="M6 11.381 8.735 14 15 8"
+                      />
+                    </g>
+                  </svg>
+                </CardLeftSectionListSingleLineImage>
+                <CardLeftSectionListSingleLineDescribe>
+                  And much more!
+                </CardLeftSectionListSingleLineDescribe>
+              </CardLeftSectionListSingleLine>
+            </CardLeftSectionList>
+          </CardLeftSection>
           <CardRightSection>
             <svg
               xmlns="http://www.w3.org/2000/svg"

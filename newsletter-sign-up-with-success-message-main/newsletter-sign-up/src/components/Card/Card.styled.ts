@@ -18,7 +18,6 @@ export const CardSection = styled.div`
   }
 
   @media (max-width: 375px) {
-    padding: 2px;
   }
 `;
 
@@ -38,7 +37,100 @@ export const CardLeftSection = styled.div`
   }
 
   @media (max-width: 375px) {
-    padding: 2px;
+  }
+`;
+
+export const CardLeftSectionTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  font-size: 50px;
+  font-weight: bold;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const CardLeftSectionDescribe = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-evenly;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const CardLeftSectionList = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-evenly;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const CardLeftSectionListSingleLine = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const CardLeftSectionListSingleLineImage = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  padding: 2px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const CardLeftSectionListSingleLineDescribe = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-evenly;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 375px) {
   }
 `;
 
@@ -58,6 +150,5 @@ export const CardRightSection = styled.div`
   }
 
   @media (max-width: 375px) {
-    padding: 2px;
   }
 `;
