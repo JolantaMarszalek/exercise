@@ -38,10 +38,7 @@ export const RatingContextProvider: React.FC<RatingContextProviderProps> = ({
 };
 
 export const Rating = () => {
-  const {
-    // selectedNumber,
-    setSelectedNumber,
-  } = useRatingContext();
+  const { selectedNumber, setSelectedNumber } = useRatingContext();
 
   const [numbers, setNumbers] = useState({
     1: false,
@@ -52,10 +49,13 @@ export const Rating = () => {
   });
 
   const handleClick = (num: number) => {
-    setNumbers((prevNumbers) => ({
-      ...prevNumbers,
-      [num]: !prevNumbers[num as keyof typeof prevNumbers],
-    }));
+    const updatedNumbers: { [key: number]: boolean } = { ...numbers };
+
+    Object.keys(updatedNumbers).forEach((key) => {
+      updatedNumbers[parseInt(key)] = parseInt(key) === num;
+    });
+
+    setNumbers(updatedNumbers);
     setSelectedNumber(num);
   };
 
