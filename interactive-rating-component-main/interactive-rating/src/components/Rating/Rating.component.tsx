@@ -38,7 +38,10 @@ export const RatingContextProvider: React.FC<RatingContextProviderProps> = ({
 };
 
 export const Rating = () => {
-  const { selectedNumber, setSelectedNumber } = useRatingContext();
+  const {
+    // selectedNumber,
+    setSelectedNumber,
+  } = useRatingContext();
 
   // const [numbers, setNumbers] = useState({
   //   1: false,
