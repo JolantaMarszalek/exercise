@@ -1,0 +1,48 @@
+import styled from "styled-components";
+
+export const ButtonStyle = styled.section`
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 10vh; */
+  /* background: var(--neutral-dark-blue); */
+  /* border-radius: 100px; */
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    margin: 0;
+  }
+`;
+
+export const ButtonContainer = styled.button`
+  height: 50px;
+  width: 350px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var();
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--neutral-white);
+  background-color: var(--neutral-dark-slate-grey);
+
+  &:hover {
+    background-color: var(--neutral-dark-slate-grey);
+    color: var(--neutral-white);
+  }
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+  }
+`;

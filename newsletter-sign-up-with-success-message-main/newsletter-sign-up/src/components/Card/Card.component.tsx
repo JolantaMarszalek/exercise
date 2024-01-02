@@ -10,6 +10,7 @@ import {
   CardRightSection,
   CardSection,
 } from "./Card.styled";
+import { Button } from "../Button/Button.component";
 
 interface CardProps {
   children: ReactNode;
@@ -95,6 +96,7 @@ export const Card: React.FC<CardProps> = () =>
                 </CardLeftSectionListSingleLineDescribe>
               </CardLeftSectionListSingleLine>
             </CardLeftSectionList>
+            <Button></Button>
           </CardLeftSection>
           <CardRightSection>
             <svg
