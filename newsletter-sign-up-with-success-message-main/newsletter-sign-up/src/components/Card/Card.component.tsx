@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import {
   CardLeftSection,
+  CardLeftSectionAboveInput,
   CardLeftSectionDescribe,
   CardLeftSectionList,
   CardLeftSectionListSingleLine,
@@ -97,7 +98,11 @@ export const Card: React.FC<CardProps> = () =>
                 </CardLeftSectionListSingleLineDescribe>
               </CardLeftSectionListSingleLine>
             </CardLeftSectionList>
-            <Input></Input>
+            <CardLeftSectionAboveInput>
+              {" "}
+              Email address
+            </CardLeftSectionAboveInput>
+            <Input placeholder="email@company.com" type="email"></Input>
             <Button></Button>
           </CardLeftSection>
           <CardRightSection>

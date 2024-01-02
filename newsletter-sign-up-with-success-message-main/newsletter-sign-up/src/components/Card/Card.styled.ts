@@ -134,6 +134,14 @@ export const CardLeftSectionListSingleLineDescribe = styled.div`
   }
 `;
 
+export const CardLeftSectionAboveInput = styled.div`
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+`;
+
 export const CardRightSection = styled.div`
   display: flex;
   flex-direction: column;

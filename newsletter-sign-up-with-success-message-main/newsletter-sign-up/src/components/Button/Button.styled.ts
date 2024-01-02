@@ -5,6 +5,7 @@ export const ButtonStyle = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 400px;
   /* height: 10vh; */
   /* background: var(--neutral-dark-blue); */
   /* border-radius: 100px; */
@@ -20,7 +21,7 @@ export const ButtonStyle = styled.section`
 
 export const ButtonContainer = styled.button`
   height: 50px;
-  width: 350px;
+  width: 400px;
   outline: none;
   border: none;
   border-radius: 10px;
