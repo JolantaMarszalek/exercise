@@ -19,16 +19,16 @@ export const InputField = styled.input`
   font-size: 15px;
   border-radius: 10px;
   overflow: hidden;
-  height: 40px;
+  height: 57px;
   width: 400px;
   font-weight: bold;
-  border: 1px solid var();
+  border: 1px solid var(--neutral-grey);
   cursor: pointer;
   padding-left: 15px;
 
   &:hover,
   &:focus {
-    border: 1px solid var();
+    border: 1px solid var(--neutral-grey);
   }
 
   &:active {
@@ -39,7 +39,7 @@ export const InputField = styled.input`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 40px;
+    /* height: 40px; */
   }
 `;
 
@@ -52,13 +52,13 @@ export const InputLabel = styled.label`
   gap: 1rem;
   min-width: 20rem;
   /* width: 350px; */
-  height: 50px;
+  height: 60px;
   border-radius: 5px;
 
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 40px;
+    /* height: 40px; */
   }
 `;

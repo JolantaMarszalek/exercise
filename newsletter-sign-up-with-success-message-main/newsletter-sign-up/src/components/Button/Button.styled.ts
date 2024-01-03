@@ -20,7 +20,7 @@ export const ButtonStyle = styled.section`
 `;
 
 export const ButtonContainer = styled.button`
-  height: 50px;
+  height: 60px;
   width: 400px;
   outline: none;
   border: none;
