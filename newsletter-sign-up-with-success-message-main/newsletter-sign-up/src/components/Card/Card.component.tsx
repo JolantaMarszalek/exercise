@@ -3,6 +3,7 @@ import {
   CardLeftSection,
   CardLeftSectionAboveInput,
   CardLeftSectionDescribe,
+  CardLeftSectionInput,
   CardLeftSectionList,
   CardLeftSectionListSingleLine,
   CardLeftSectionListSingleLineDescribe,
@@ -98,11 +99,13 @@ export const Card: React.FC<CardProps> = () =>
                 </CardLeftSectionListSingleLineDescribe>
               </CardLeftSectionListSingleLine>
             </CardLeftSectionList>
-            <CardLeftSectionAboveInput>
-              {" "}
-              Email address
-            </CardLeftSectionAboveInput>
-            <Input placeholder="email@company.com" type="email"></Input>
+            <CardLeftSectionInput>
+              <CardLeftSectionAboveInput>
+                {" "}
+                Email address
+              </CardLeftSectionAboveInput>
+              <Input placeholder="email@company.com" type="email"></Input>
+            </CardLeftSectionInput>
             <Button></Button>
           </CardLeftSection>
           <CardRightSection>
