@@ -34,7 +34,7 @@ export const Card: React.FC<CardProps> = () => {
     if (!data.email.match(/^\S+@\S+$/i)) {
       setError("email", {
         type: "manual",
-        message: "Please enter a valid email address",
+        message: "Valid email required",
       });
     } else {
       console.log(data);
