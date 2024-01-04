@@ -32,6 +32,7 @@ export const ButtonContainer = styled.button`
   align-items: center;
   color: var(--neutral-white);
   background-color: var(--neutral-dark-slate-grey);
+  margin-top: 25px;
 
   &:hover {
     background-image: linear-gradient(
