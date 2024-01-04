@@ -140,8 +140,8 @@ export const Card: React.FC<CardProps> = () => {
                     <Input
                       {...field}
                       placeholder="email@company.com"
-                      type="email"
-                      aria-invalid={errors.email ? "true" : "false"}
+                      // type="email"
+                      // aria-invalid={errors.email ? "true" : "false"}
                     />
                   </>
                 )}
