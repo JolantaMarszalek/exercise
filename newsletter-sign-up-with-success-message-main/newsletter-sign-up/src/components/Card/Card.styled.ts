@@ -159,14 +159,10 @@ export const CardLeftSectionAboveInput = styled.div`
 `;
 
 export const ErrorContainer = styled.div`
-  color: red;
+  color: var(--primary-tomato);
   text-align: right;
   font-size: 12px;
   font-weight: bold;
-
-  &.error {
-    background-color: red;
-  }
 `;
 
 export const CardRightSection = styled.div`

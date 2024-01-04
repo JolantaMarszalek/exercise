@@ -35,6 +35,11 @@ export const InputField = styled.input`
     border: 1px solid var();
   }
 
+  &.error {
+    background-color: red;
+    border: 1px solid red;
+  }
+
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;

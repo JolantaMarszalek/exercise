@@ -30,11 +30,6 @@ export const Card: React.FC<CardProps> = () => {
     setError,
   } = useForm();
 
-  // { children }
-  // interface FormData {
-  //   email: string;
-  // }
-
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     if (!data.email.match(/^\S+@\S+$/i)) {
       setError("email", {
@@ -49,7 +44,6 @@ export const Card: React.FC<CardProps> = () => {
   return (
     <>
       <CardSection>
-        {/* {children} */}
         <CardLeftSection>
           <CardLeftSectionTitle>Stay updated!</CardLeftSectionTitle>
           <CardLeftSectionDescribe>
