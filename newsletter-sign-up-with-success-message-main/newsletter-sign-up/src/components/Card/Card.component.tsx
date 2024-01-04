@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import {
   CardLeftSection,
   CardLeftSectionAboveInput,
@@ -17,6 +17,7 @@ import { Button } from "../Button/Button.component";
 import { Input } from "../Input/Input.component";
 import { useForm, Controller } from "react-hook-form";
 import { SubmitHandler, FieldValues } from "react-hook-form";
+import { Link } from "react-router-dom";
 
 interface CardProps {
   children: ReactNode;
@@ -29,6 +30,7 @@ export const Card: React.FC<CardProps> = () => {
     formState: { errors },
     setError,
   } = useForm();
+  const [formFilled, setFormFilled] = useState(false);
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     if (!data.email.match(/^\S+@\S+$/i)) {
@@ -37,6 +39,7 @@ export const Card: React.FC<CardProps> = () => {
         message: "Valid email required",
       });
     } else {
+      setFormFilled(true);
       console.log(data);
     }
   };
@@ -147,7 +150,13 @@ export const Card: React.FC<CardProps> = () => {
                 )}
               />
             </CardLeftSectionInput>
-            <Button type="submit"></Button>
+            {formFilled ? (
+              <Link to="/success" style={{ textDecoration: "none" }}>
+                <Button type="submit" />
+              </Link>
+            ) : (
+              <Button type="submit" />
+            )}
           </form>
         </CardLeftSection>
         <CardRightSection>
