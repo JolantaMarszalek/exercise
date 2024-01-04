@@ -27,7 +27,7 @@ export const CardLeftSection = styled.div`
   align-content: flex-start;
   justify-content: space-evenly;
   width: 400px;
-  height: 600px;
+  height: 550px;
   background: var(--neutral-white);
   padding: 2px;
 
