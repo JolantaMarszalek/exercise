@@ -152,10 +152,10 @@ export const Card: React.FC<CardProps> = () => {
             </CardLeftSectionInput>
             {formFilled ? (
               <Link to="/success" style={{ textDecoration: "none" }}>
-                <Button type="submit" />
+                <Button type="submit">Subscribe to monthly newsletter</Button>
               </Link>
             ) : (
-              <Button type="submit" />
+              <Button type="submit">Subscribe to monthly newsletter</Button>
             )}
           </form>
         </CardLeftSection>
