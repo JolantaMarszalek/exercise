@@ -45,7 +45,7 @@ export const CardLeftSectionTitle = styled.div`
   flex-direction: column;
   align-content: flex-start;
   justify-content: space-evenly;
-  font-size: 50px;
+  font-size: 55px;
   font-weight: bold;
   color: var(--neutral-dark-slate-grey);
 
@@ -64,6 +64,7 @@ export const CardLeftSectionDescribe = styled.div`
   align-content: flex-start;
   justify-content: space-evenly;
   color: var(--neutral-dark-slate-grey);
+  line-height: 1.5;
 
   @media (max-width: 1024px) {
     display: flex;
