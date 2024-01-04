@@ -163,6 +163,9 @@ export const ErrorContainer = styled.div`
   text-align: right;
   font-size: 12px;
   font-weight: bold;
+  .input-error {
+    border: 1px solid red; /* Kolor czerwony dla obramowania */
+  }
 `;
 
 export const CardRightSection = styled.div`
