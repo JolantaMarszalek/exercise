@@ -6,9 +6,6 @@ export const ButtonStyle = styled.section`
   justify-content: center;
   align-items: center;
   width: 400px;
-  /* height: 10vh; */
-  /* background: var(--neutral-dark-blue); */
-  /* border-radius: 100px; */
 
   @media (max-width: 1024px) {
     display: flex;
@@ -29,16 +26,20 @@ export const ButtonContainer = styled.button`
   box-sizing: border-box;
   font-size: 16px;
   font-weight: bold;
-  background-color: var();
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: var(--neutral-white);
   background-color: var(--neutral-dark-slate-grey);
+  margin-top: 25px;
 
   &:hover {
-    background-color: var(--neutral-dark-slate-grey);
+    background-image: linear-gradient(
+      to left,
+      var(--primary-tomato),
+      hsl(346, 100%, 66%)
+    );
     color: var(--neutral-white);
   }
 

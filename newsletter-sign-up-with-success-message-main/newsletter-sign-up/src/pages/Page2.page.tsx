@@ -1,4 +1,4 @@
-import { Card } from "../components/Card/Card.component";
+import { CardSecond } from "../components/CardSecond/CardSecond.component";
 import { Layout } from "../components/Layout/Layout.component";
 
 export const Page2: React.FC = () => {
@@ -6,9 +6,9 @@ export const Page2: React.FC = () => {
     <>
       {" "}
       <Layout>
-        <Card>
+        <CardSecond>
           <></>
-        </Card>
+        </CardSecond>
       </Layout>
     </>
   );

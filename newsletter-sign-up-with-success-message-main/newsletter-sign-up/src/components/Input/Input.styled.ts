@@ -35,11 +35,21 @@ export const InputField = styled.input`
     border: 1px solid var();
   }
 
+  &.error {
+    background-color: red;
+    border: 1px solid red;
+  }
+
+  &.error {
+    background-color: hsl(5, 100%, 95%);
+    border: 1px solid var(--primary-tomato);
+    color: var(--primary-tomato);
+  }
+
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* height: 40px; */
   }
 `;
 

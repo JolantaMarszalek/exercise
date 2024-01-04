@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CardSection = styled.div`
+export const CardSection = styled.section`
   display: flex;
   flex-direction: row;
   align-content: flex-start;
@@ -27,7 +27,7 @@ export const CardLeftSection = styled.div`
   align-content: flex-start;
   justify-content: space-evenly;
   width: 400px;
-  height: 600px;
+  height: 550px;
   background: var(--neutral-white);
   padding: 2px;
 
@@ -45,7 +45,7 @@ export const CardLeftSectionTitle = styled.div`
   flex-direction: column;
   align-content: flex-start;
   justify-content: space-evenly;
-  font-size: 50px;
+  font-size: 55px;
   font-weight: bold;
   color: var(--neutral-dark-slate-grey);
 
@@ -64,6 +64,7 @@ export const CardLeftSectionDescribe = styled.div`
   align-content: flex-start;
   justify-content: space-evenly;
   color: var(--neutral-dark-slate-grey);
+  line-height: 1.5;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -143,18 +144,28 @@ export const CardLeftSectionInput = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  align-items: flex-start;
+  align-items: stretch;
 `;
 
 export const CardLeftSectionAboveInput = styled.div`
   display: flex;
   position: relative;
   justify-content: space-between;
-  align-items: center;
+
   margin-bottom: 5px;
   font-size: 12px;
   font-weight: bold;
   color: var(--neutral-dark-slate-grey);
+`;
+
+export const ErrorContainer = styled.div`
+  color: var(--primary-tomato);
+  text-align: right;
+  font-size: 12px;
+  font-weight: bold;
+  .input-error {
+    border: 1px solid red; /* Kolor czerwony dla obramowania */
+  }
 `;
 
 export const CardRightSection = styled.div`
