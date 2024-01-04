@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CardSection = styled.div`
+export const CardSection = styled.section`
   display: flex;
   flex-direction: row;
   align-content: flex-start;
