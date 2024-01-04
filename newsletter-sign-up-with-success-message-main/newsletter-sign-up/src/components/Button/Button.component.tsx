@@ -1,10 +1,12 @@
 import { ButtonContainer, ButtonStyle } from "./Button.styled";
 
-export const Button = () => {
+export const Button = ({ type }: { type: "submit" | "reset" | "button" }) => {
   return (
     <>
       <ButtonStyle>
-        <ButtonContainer>Subscribe to monthly newsletter</ButtonContainer>
+        <ButtonContainer type={type}>
+          Subscribe to monthly newsletter
+        </ButtonContainer>
       </ButtonStyle>
     </>
   );
