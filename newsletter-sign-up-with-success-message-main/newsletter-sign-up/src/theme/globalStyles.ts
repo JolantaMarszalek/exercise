@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   #root {
-  --primary-toato: hsl(4, 100%, 67%);
+  --primary-tomato: hsl(4, 100%, 67%);
   --neutral-dark-slate-grey: hsl(234, 29%, 20%);
   --neutral-charcoal-grey: hsl(235, 18%, 26%);
   --neutral-grey: hsl(231, 7%, 60%);
