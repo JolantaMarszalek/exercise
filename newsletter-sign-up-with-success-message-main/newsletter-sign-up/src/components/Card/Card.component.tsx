@@ -135,6 +135,13 @@ export const Card: React.FC<CardProps> = () => {
                   <>
                     <CardLeftSectionAboveInput>
                       Email address
+                      {errors.email && (
+                        <ErrorContainer>
+                          {typeof errors.email.message === "string"
+                            ? errors.email.message
+                            : "Valid email required"}
+                        </ErrorContainer>
+                      )}
                     </CardLeftSectionAboveInput>
                     <Input
                       {...field}
@@ -145,13 +152,6 @@ export const Card: React.FC<CardProps> = () => {
                   </>
                 )}
               />
-              {errors.email && (
-                <ErrorContainer>
-                  {typeof errors.email.message === "string"
-                    ? errors.email.message
-                    : "Valid email required"}
-                </ErrorContainer>
-              )}
             </CardLeftSectionInput>
             <Button type="submit"></Button>
           </form>

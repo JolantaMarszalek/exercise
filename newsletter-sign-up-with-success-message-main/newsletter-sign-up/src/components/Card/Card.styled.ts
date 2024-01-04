@@ -144,14 +144,14 @@ export const CardLeftSectionInput = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  align-items: flex-start;
+  align-items: stretch;
 `;
 
 export const CardLeftSectionAboveInput = styled.div`
   display: flex;
   position: relative;
   justify-content: space-between;
-  align-items: center;
+
   margin-bottom: 5px;
   font-size: 12px;
   font-weight: bold;
