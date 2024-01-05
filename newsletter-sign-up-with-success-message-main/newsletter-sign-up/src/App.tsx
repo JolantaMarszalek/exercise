@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Page1 />} />
-          <Route path="/success" element={<Page2 />} />
+          <Route path="/success/:userEmail" element={<Page2 />} />
         </Routes>
       </Router>
     </>

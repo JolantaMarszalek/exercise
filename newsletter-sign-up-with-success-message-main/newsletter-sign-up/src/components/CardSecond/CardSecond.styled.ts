@@ -72,7 +72,7 @@ export const CardSecondSectionTitle = styled.div`
 `;
 
 export const CardSecondSectionDescribe = styled.div`
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-content: flex-start;
   justify-content: space-evenly;
@@ -80,11 +80,6 @@ export const CardSecondSectionDescribe = styled.div`
   line-height: 1.5;
   margin-left: 60px;
   margin-right: 60px;
-
-  /* strong {
-    display: inline;
-    white-space: nowrap;
-  } */
 
   @media (max-width: 1024px) {
     display: flex;

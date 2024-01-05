@@ -32,6 +32,18 @@ export const Card: React.FC<CardProps> = () => {
   } = useForm();
   const [formFilled, setFormFilled] = useState(false);
 
+  // const onSubmit: SubmitHandler<FieldValues> = async (data) => {
+  //   if (!data.email.match(/^\S+@\S+$/i)) {
+  //     setError("email", {
+  //       type: "manual",
+  //       message: "Valid email required",
+  //     });
+  //   } else {
+  //     setFormFilled(true);
+  //     console.log(data);
+  //   }
+  // };
+
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     if (!data.email.match(/^\S+@\S+$/i)) {
       setError("email", {
@@ -40,6 +52,7 @@ export const Card: React.FC<CardProps> = () => {
       });
     } else {
       setFormFilled(true);
+      localStorage.setItem("userEmail", data.email);
       console.log(data);
     }
   };
@@ -151,7 +164,10 @@ export const Card: React.FC<CardProps> = () => {
               />
             </CardLeftSectionInput>
             {formFilled ? (
-              <Link to="/success" style={{ textDecoration: "none" }}>
+              <Link
+                to={`/success/${localStorage.getItem("userEmail")}`}
+                style={{ textDecoration: "none" }}>
+                {/* <Link to="/success" style={{ textDecoration: "none" }}> */}
                 <Button type="submit">Subscribe to monthly newsletter</Button>
               </Link>
             ) : (
