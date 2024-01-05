@@ -11,7 +11,7 @@ export const ButtonStyle = styled.section`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: auto;
+    width: 100%;
     margin: 0;
   }
 `;
@@ -46,5 +46,6 @@ export const ButtonContainer = styled.button`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: row;
+    width: 100%;
   }
 `;

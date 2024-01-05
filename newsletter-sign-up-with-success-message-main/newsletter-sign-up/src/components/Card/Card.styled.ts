@@ -15,6 +15,9 @@ export const CardSection = styled.section`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
   }
 
   @media (max-width: 375px) {
@@ -34,6 +37,7 @@ export const CardLeftSection = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    width: auto;
   }
 
   @media (max-width: 375px) {
@@ -100,7 +104,7 @@ export const CardLeftSectionListSingleLine = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   @media (max-width: 375px) {
@@ -179,7 +183,8 @@ export const CardRightSection = styled.div`
   padding: 2px;
 
   @media (max-width: 1024px) {
-    display: flex;
+    display: none;
+
     flex-direction: column;
   }
 

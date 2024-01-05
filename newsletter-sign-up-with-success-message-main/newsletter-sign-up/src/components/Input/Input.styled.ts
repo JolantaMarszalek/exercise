@@ -68,7 +68,7 @@ export const InputLabel = styled.label`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     /* height: 40px; */
   }
 `;
