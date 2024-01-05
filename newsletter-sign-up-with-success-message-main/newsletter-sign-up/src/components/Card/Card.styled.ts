@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import BackgroundSVG from "./../../../../assets/images/illustration-sign-up-desktop.svg";
+// import BackgroundMediaSVG from "./../../../../assets/images/illustration-sign-up-mobile.svg";
 
 export const CardSection = styled.section`
   display: flex;
@@ -168,7 +170,18 @@ export const ErrorContainer = styled.div`
   font-size: 12px;
   font-weight: bold;
   .input-error {
-    border: 1px solid red; /* Kolor czerwony dla obramowania */
+    border: 1px solid red;
+  }
+`;
+
+export const CardMediaImage = styled.div`
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
+
+  @media (max-width: 375px) {
   }
 `;
 
@@ -179,7 +192,9 @@ export const CardRightSection = styled.div`
   justify-content: space-evenly;
   width: 400px;
   height: 600px;
-  background: var(--neutral-white);
+  /* background-image: url(${BackgroundSVG}); */
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 2px;
 
   @media (max-width: 1024px) {
@@ -191,3 +206,19 @@ export const CardRightSection = styled.div`
   @media (max-width: 375px) {
   }
 `;
+
+// export const BackgroundImage = styled.div`
+//   width: 100%;
+//   height: 100%;
+//   background-image: url(${BackgroundSVG});
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// `;
+
+// export const BackgroundMediaImage = styled.div`
+//   width: 100%;
+//   height: 100%;
+//   background-image: url(${BackgroundMediaSVG});
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// `;
