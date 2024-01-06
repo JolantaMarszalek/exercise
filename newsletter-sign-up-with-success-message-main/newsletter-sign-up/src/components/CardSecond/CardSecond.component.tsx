@@ -7,7 +7,7 @@ import {
   CardSecondSectionTitle,
 } from "./CardSecond.styled";
 import { Button } from "../Button/Button.component";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 interface CardProps {
@@ -17,6 +17,7 @@ interface CardProps {
 export const CardSecond: React.FC<CardProps> = () => {
   const [formFilled, setFormFilled] = useState(false);
   const navigate = useNavigate();
+  const { userEmail } = useParams();
 
   const handleDismiss = () => {
     setFormFilled(true);
@@ -52,8 +53,9 @@ export const CardSecond: React.FC<CardProps> = () => {
         </CardSecondSectionImage>
         <CardSecondSectionTitle>Thanks for subscribing!</CardSecondSectionTitle>
         <CardSecondSectionDescribe>
-          A confirmation email has been sent to ash@loremcompany.com. Please
-          open it and click the button inside to confirm your subscription.
+          A confirmation email has been sent to <strong>{userEmail}</strong>.
+          Please open it and click the button inside to confirm your
+          subscription.
         </CardSecondSectionDescribe>
         {formFilled ? (
           <Link to="/" style={{ textDecoration: "none" }}>

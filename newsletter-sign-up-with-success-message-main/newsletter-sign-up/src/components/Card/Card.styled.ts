@@ -15,9 +15,9 @@ export const CardSection = styled.section`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-  }
-
-  @media (max-width: 375px) {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
   }
 `;
 
@@ -34,9 +34,7 @@ export const CardLeftSection = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-  }
-
-  @media (max-width: 375px) {
+    width: 375px;
   }
 `;
 
@@ -52,9 +50,7 @@ export const CardLeftSectionTitle = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-  }
-
-  @media (max-width: 375px) {
+    margin-top: 30px;
   }
 `;
 
@@ -69,9 +65,7 @@ export const CardLeftSectionDescribe = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-  }
-
-  @media (max-width: 375px) {
+    margin-top: 20px;
   }
 `;
 
@@ -85,9 +79,7 @@ export const CardLeftSectionList = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-  }
-
-  @media (max-width: 375px) {
+    margin-top: 20px;
   }
 `;
 
@@ -100,10 +92,7 @@ export const CardLeftSectionListSingleLine = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
-  }
-
-  @media (max-width: 375px) {
+    margin-top: 10px;
   }
 `;
 
@@ -117,9 +106,6 @@ export const CardLeftSectionListSingleLineImage = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-  }
-
-  @media (max-width: 375px) {
   }
 `;
 
@@ -135,9 +121,6 @@ export const CardLeftSectionListSingleLineDescribe = styled.div`
     display: flex;
     flex-direction: column;
   }
-
-  @media (max-width: 375px) {
-  }
 `;
 
 export const CardLeftSectionInput = styled.div`
@@ -145,13 +128,16 @@ export const CardLeftSectionInput = styled.div`
   flex-direction: column;
   position: relative;
   align-items: stretch;
+
+  @media (max-width: 1024px) {
+    margin-top: 30px;
+  }
 `;
 
 export const CardLeftSectionAboveInput = styled.div`
   display: flex;
   position: relative;
   justify-content: space-between;
-
   margin-bottom: 5px;
   font-size: 12px;
   font-weight: bold;
@@ -164,7 +150,7 @@ export const ErrorContainer = styled.div`
   font-size: 12px;
   font-weight: bold;
   .input-error {
-    border: 1px solid red; /* Kolor czerwony dla obramowania */
+    border: 1px solid red;
   }
 `;
 
@@ -175,14 +161,12 @@ export const CardRightSection = styled.div`
   justify-content: space-evenly;
   width: 400px;
   height: 600px;
-  background: var(--neutral-white);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 2px;
 
   @media (max-width: 1024px) {
-    display: flex;
+    display: none;
     flex-direction: column;
-  }
-
-  @media (max-width: 375px) {
   }
 `;
