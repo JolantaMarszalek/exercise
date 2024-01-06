@@ -6,7 +6,4 @@ export const BackgroundMobileSectionStyle = styled.div`
   align-items: center;
   align-content: center;
   width: 100%;
-
-  @media (max-width: 1024px) {
-  }
 `;
