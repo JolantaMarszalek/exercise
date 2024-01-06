@@ -47,5 +47,6 @@ export const ButtonContainer = styled.button`
     display: flex;
     flex-direction: row;
     width: 100%;
+    width: 375px;
   }
 `;

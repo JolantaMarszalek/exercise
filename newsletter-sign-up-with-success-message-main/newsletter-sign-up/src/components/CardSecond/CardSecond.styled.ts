@@ -14,10 +14,11 @@ export const CardSecondSection = styled.section`
 
   @media (max-width: 1024px) {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-  }
-
-  @media (max-width: 375px) {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
   }
 `;
 
@@ -29,9 +30,7 @@ export const CardSecondSectionImage = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-  }
-
-  @media (max-width: 375px) {
+    width: 375px;
   }
 `;
 
@@ -44,9 +43,8 @@ export const CardSecondImage = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-  }
-
-  @media (max-width: 375px) {
+    width: 375px;
+    margin: 0;
   }
 `;
 
@@ -65,14 +63,12 @@ export const CardSecondSectionTitle = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-  }
-
-  @media (max-width: 375px) {
+    width: 375px;
+    margin-top: 30px;
   }
 `;
 
 export const CardSecondSectionDescribe = styled.div`
-  /* display: flex; */
   flex-direction: column;
   align-content: flex-start;
   justify-content: space-evenly;
@@ -80,12 +76,10 @@ export const CardSecondSectionDescribe = styled.div`
   line-height: 1.5;
   margin-left: 60px;
   margin-right: 60px;
+  margin-bottom: 100px;
 
   @media (max-width: 1024px) {
-    display: flex;
-    flex-direction: column;
-  }
-
-  @media (max-width: 375px) {
+    width: 375px;
+    margin-top: 30px;
   }
 `;
