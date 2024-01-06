@@ -10,5 +10,6 @@ export const BackgroundSectionStyle = styled.div`
   height: 100vh;
 
   @media (max-width: 1024px) {
+    /* display: none; */
   }
 `;

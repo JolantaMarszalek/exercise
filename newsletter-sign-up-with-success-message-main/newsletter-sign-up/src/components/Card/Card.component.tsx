@@ -9,8 +9,9 @@ import {
   CardLeftSectionListSingleLineDescribe,
   CardLeftSectionListSingleLineImage,
   CardLeftSectionTitle,
-  CardMediaImage,
   CardRightSection,
+  // CardMediaImage,
+  // CardRightSection,
   CardSection,
   ErrorContainer,
 } from "./Card.styled";
@@ -21,6 +22,7 @@ import { SubmitHandler, FieldValues } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { BackgroundMobile } from "../BackgroundMobile/BackgroundMobile.component";
 import { Background } from "../Background/Background.component";
+import MediaQuery from "react-responsive";
 
 interface CardProps {
   children: ReactNode;
@@ -35,18 +37,6 @@ export const Card: React.FC<CardProps> = () => {
     setError,
   } = useForm();
   const [formFilled, setFormFilled] = useState(false);
-
-  // const onSubmit: SubmitHandler<FieldValues> = async (data) => {
-  //   if (!data.email.match(/^\S+@\S+$/i)) {
-  //     setError("email", {
-  //       type: "manual",
-  //       message: "Valid email required",
-  //     });
-  //   } else {
-  //     setFormFilled(true);
-  //     console.log(data);
-  //   }
-  // };
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     if (!data.email.match(/^\S+@\S+$/i)) {
@@ -65,9 +55,9 @@ export const Card: React.FC<CardProps> = () => {
     <>
       <CardSection>
         <CardLeftSection>
-          <CardMediaImage>
-            <BackgroundMobile />
-          </CardMediaImage>
+          <MediaQuery minWidth={1024}>
+            {(matches) => (matches ? null : <BackgroundMobile />)}
+          </MediaQuery>
           <CardLeftSectionTitle>Stay updated!</CardLeftSectionTitle>
           <CardLeftSectionDescribe>
             {" "}
@@ -183,7 +173,9 @@ export const Card: React.FC<CardProps> = () => {
           </form>
         </CardLeftSection>
         <CardRightSection>
-          <Background />
+          <MediaQuery maxWidth={1024}>
+            {(matches) => (matches ? null : <Background />)}
+          </MediaQuery>
         </CardRightSection>
       </CardSection>{" "}
     </>
