@@ -1,37 +1,21 @@
 import styled from "styled-components";
 
-export const ButtonStyle = styled.section`
-  box-sizing: content-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-
-  @media (max-width: 1024px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-  }
-`;
-
-export const ButtonContainer = styled.button`
+export const ButtonBigGrey = styled.button`
   height: 50px;
-  width: 150px;
+  width: 200px;
   outline: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  font-weight: bold;
+  /* font-weight: bold; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: var(--primary-soft-red);
+  background-color: var(--neutral-grayish-blue);
   /* margin-top: 25px; */
 
   /* &:hover {

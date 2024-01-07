@@ -1,18 +1,15 @@
 import styled from "styled-components";
 
 export const HeaderSection = styled.section`
-  position: fixed;
-  top: 0;
-  margin-top: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 999; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 150px;
+  width: auto;
   background: white;
-  z-index: 1;
-  font-weight: bold;
 
   @media (max-width: 1024px) {
     font-size: 0.5rem;
@@ -33,6 +30,7 @@ export const HeaderSectionLogo = styled.div`
   flex-direction: column;
   display: flex;
   padding: 15px;
+  width: 200px;
 `;
 
 export const HeaderSectionLink = styled.div`
@@ -42,7 +40,7 @@ export const HeaderSectionLink = styled.div`
   display: flex;
   gap: 20px;
   margin: 10px;
-  width: 800px;
+  width: 1000px;
 `;
 
 export const HeaderSectionButton = styled.div`
