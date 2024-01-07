@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react";
+import { ReactNode } from "react";
 import {
   SectionFirstLeftSection,
   SectionFirstLeftSectionButton,
@@ -7,11 +7,8 @@ import {
   SectionFirstRightSection,
   SectionFirstSection,
 } from "./SectionFirst.styled";
-import { Button } from "../Button/Button.component";
-import { useForm } from "react-hook-form";
-import { SubmitHandler, FieldValues } from "react-hook-form";
 import { Link } from "react-router-dom";
-import { ButtonBB, ButtonBigBlue } from "../Button/ButtonBigBlue.styled";
+import { ButtonBigBlue } from "../Button/ButtonBigBlue.styled";
 import { ButtonBigGrey } from "../Button/ButtonBigGrey.styled";
 
 interface SectionFirstProps {
@@ -19,28 +16,6 @@ interface SectionFirstProps {
 }
 
 export const SectionFirst: React.FC<SectionFirstProps> = () => {
-  //   const {
-  //     control,
-  //     handleSubmit,
-  //     formState: { errors },
-
-  //     setError,
-  //   } = useForm();
-  //   const [formFilled, setFormFilled] = useState(false);
-
-  //   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
-  //     if (!data.email.match(/^\S+@\S+$/i)) {
-  //       setError("email", {
-  //         type: "manual",
-  //         message: "Valid email required",
-  //       });
-  //     } else {
-  //       setFormFilled(true);
-  //       localStorage.setItem("userEmail", data.email);
-  //       console.log(data);
-  //     }
-  //   };
-
   return (
     <>
       <SectionFirstSection>
