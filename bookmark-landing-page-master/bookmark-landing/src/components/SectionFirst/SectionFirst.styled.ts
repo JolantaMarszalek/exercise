@@ -45,7 +45,7 @@ export const SectionFirstLeftSectionTitle = styled.div`
   justify-content: space-evenly;
   font-size: 55px;
   font-weight: bold;
-  color: var(--neutral-dark-slate-grey);
+  color: var(--neutral-very-dark-blue);
 
   @media (max-width: 1024px) {
     display: flex;
@@ -59,7 +59,7 @@ export const SectionFirstLeftSectionDescribe = styled.div`
   flex-direction: column;
   align-content: flex-start;
   justify-content: space-evenly;
-  color: var(--neutral-dark-slate-grey);
+  color: var(--neutral-grayish-blue);
   line-height: 1.5;
 
   @media (max-width: 1024px) {

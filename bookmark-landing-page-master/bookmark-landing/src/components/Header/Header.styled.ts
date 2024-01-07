@@ -41,6 +41,9 @@ export const HeaderSectionLink = styled.div`
   gap: 20px;
   margin: 10px;
   width: 1000px;
+  color: var(--neutral-very-dark-blue);
+  font-size: 15px;
+  letter-spacing: 2px;
 `;
 
 export const HeaderSectionButton = styled.div`

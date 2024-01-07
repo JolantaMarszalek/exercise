@@ -9,13 +9,14 @@ export const ButtonBigGrey = styled.button`
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  /* font-weight: bold; */
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: var(--neutral-grayish-blue);
+  background-color: hsl(0, 0%, 95%);
+  color: var(--neutral-grayish-blue);
   /* margin-top: 25px; */
 
   /* &:hover {
