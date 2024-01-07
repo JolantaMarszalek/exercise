@@ -5,7 +5,7 @@ import {
   HeaderSectionLink,
   HeaderSectionLogo,
 } from "./Header.styled";
-// import { ButtonS } from "../Buttons/Buttons.styled";
+import { Button } from "../Button/Button.component";
 
 export const Header = () => {
   return (
@@ -33,8 +33,7 @@ export const Header = () => {
         </Link>
       </HeaderSectionLink>
       <HeaderSectionButton>
-        {/* <ButtonS>Login</ButtonS> */}
-        {/* <ButtonS>Sign Up</ButtonS> */}
+        <Button type="submit">Login</Button>
       </HeaderSectionButton>
     </HeaderSection>
   );

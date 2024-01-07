@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderSection = styled.section`
+  position: fixed;
   top: 0;
   margin-top: 20px;
   margin-left: 100px;
@@ -17,6 +18,7 @@ export const HeaderSection = styled.section`
     font-size: 0.5rem;
     gap: 0px;
     margin: auto;
+    width: 100%;
   }
 
   @media (max-width: 600px) {
@@ -36,6 +38,7 @@ export const HeaderSectionLogo = styled.div`
 export const HeaderSectionLink = styled.div`
   position: static;
   flex-direction: row;
+  justify-content: flex-end;
   display: flex;
   gap: 20px;
   margin: 10px;
