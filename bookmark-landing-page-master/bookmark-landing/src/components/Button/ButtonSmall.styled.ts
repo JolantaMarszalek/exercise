@@ -9,7 +9,7 @@ export const ButtonSmall = styled.button`
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  /* font-weight: bold; */
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: center;
