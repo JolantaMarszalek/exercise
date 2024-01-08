@@ -2,6 +2,7 @@
 import { Header } from "../Header/Header.component";
 import { Layout } from "../Layout/Layout.component";
 import { SectionFirst } from "../SectionFirst/SectionFirst.component";
+import { SectionFourth } from "../SectionFourth/SectionFourth.component";
 import { SectionSecond } from "../SectionSecond/SectionSecond.component";
 import { SectionSecondTab1 } from "../SectionSecondTab1/SectionSecondTab1.component";
 import { SectionThird } from "../SectionThird/SectionThird.component";
@@ -22,6 +23,7 @@ export const MainPage1 =
           <SectionSecond />
           <SectionSecondTab1 />
           <SectionThird />
+          <SectionFourth />
         </Layout>
       );
     };
