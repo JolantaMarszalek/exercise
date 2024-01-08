@@ -1,6 +1,8 @@
 // import React from "react";
+import { Footer } from "../Footer/Footer.component";
 import { Header } from "../Header/Header.component";
 import { Layout } from "../Layout/Layout.component";
+import { SectionFifth } from "../SectionFifth/SectionFifth.component";
 import { SectionFirst } from "../SectionFirst/SectionFirst.component";
 import { SectionFourth } from "../SectionFourth/SectionFourth.component";
 import { SectionSecond } from "../SectionSecond/SectionSecond.component";
@@ -24,6 +26,8 @@ export const MainPage1 =
           <SectionSecondTab1 />
           <SectionThird />
           <SectionFourth />
+          <SectionFifth />
+          <Footer />
         </Layout>
       );
     };
