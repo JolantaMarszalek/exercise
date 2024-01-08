@@ -138,7 +138,7 @@ export const SectionFifthSectionButton = styled.div`
   align-items: center;
   width: auto;
   /* height: 200px; */
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 `;
 
 export const SectionFifthSectionInput = styled.div`
@@ -242,4 +242,12 @@ export const ErrorContainer = styled.div`
 export const FormContainer = styled.form`
   display: flex;
   flex-direction: row;
+  position: static;
+  flex-direction: row;
+  display: flex;
+  margin: 10px;
+  gap: 20px;
+  align-items: center;
+  width: auto;
+  margin-bottom: 100px;
 `;
