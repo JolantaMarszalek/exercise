@@ -47,6 +47,7 @@ export const SectionFourthTopSectionDescribe = styled.div`
   line-height: 1.5;
   width: 550px;
   text-align: center;
+  margin-bottom: 20px;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -82,6 +83,11 @@ export const SectionFourthList = styled.div`
   align-content: flex-start;
   justify-content: space-evenly;
   color: var(--neutral-dark-slate-grey);
+  width: 550px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid var(--neutral-grayish-blue);
 
   @media (max-width: 1024px) {
     display: flex;
@@ -94,8 +100,13 @@ export const SectionFourthListSingleLine = styled.div`
   display: flex;
   flex-direction: row;
   align-content: flex-start;
-  justify-content: flex-start;
-  gap: 15px;
+  justify-content: space-between;
+  /* gap: 15px; */
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  border-bottom: 1px solid var(--neutral-grayish-blue);
 
   @media (max-width: 1024px) {
     display: flex;
@@ -135,6 +146,7 @@ export const SectionFourthListSingleLineAnswear = styled.div`
   justify-content: space-evenly;
   margin-top: 5px;
   margin-bottom: 5px;
+  color: var(--neutral-grayish-blue);
 
   @media (max-width: 1024px) {
     display: flex;
