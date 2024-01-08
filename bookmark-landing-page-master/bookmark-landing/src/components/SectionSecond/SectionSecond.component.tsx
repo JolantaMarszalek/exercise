@@ -26,7 +26,10 @@ export const SectionSecond =
             can access them on the go.
           </SectionSecondTopSectionDescribe>
           <SectionSecondTopMenu>
-            <Link to="/simple-bookmarking">
+            <Link
+              to="/simple-bookmarking"
+              // to="/"
+            >
               <SectionSecondTopMenuSingle>
                 Simple Bookmarking
               </SectionSecondTopMenuSingle>

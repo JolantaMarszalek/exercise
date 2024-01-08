@@ -25,10 +25,83 @@ export const SectionSecondTab2 =
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
-              width="536"
-              height="346">
+              width="478"
+              height="416">
               <defs>
-                <rect id="a" width="536" height="346" rx="8" />
+                <rect id="a" width="350" height="346" rx="8" />
+                <rect id="d" width="200" height="255" rx="8" />
+                <filter
+                  id="c"
+                  width="117.5%"
+                  height="113.7%"
+                  x="-8.8%"
+                  y="-4.9%"
+                  filterUnits="objectBoundingBox">
+                  <feOffset
+                    dy="5"
+                    in="SourceAlpha"
+                    result="shadowOffsetOuter1"
+                  />
+                  <feGaussianBlur
+                    in="shadowOffsetOuter1"
+                    result="shadowBlurOuter1"
+                    stdDeviation="5"
+                  />
+                  <feColorMatrix
+                    in="shadowBlurOuter1"
+                    values="0 0 0 0 0.285332669 0 0 0 0 0.363695184 0 0 0 0 0.811480978 0 0 0 0.0830692745 0"
+                  />
+                </filter>
+                <filter
+                  id="e"
+                  width="139.5%"
+                  height="131%"
+                  x="-19.8%"
+                  y="-13.5%"
+                  filterUnits="objectBoundingBox">
+                  <feOffset
+                    dy="5"
+                    in="SourceAlpha"
+                    result="shadowOffsetOuter1"
+                  />
+                  <feGaussianBlur
+                    in="shadowOffsetOuter1"
+                    result="shadowBlurOuter1"
+                    stdDeviation="5"
+                  />
+                  <feColorMatrix
+                    in="shadowBlurOuter1"
+                    result="shadowMatrixOuter1"
+                    values="0 0 0 0 0.285332669 0 0 0 0 0.363695184 0 0 0 0 0.811480978 0 0 0 0.0830692745 0"
+                  />
+                  <feMerge>
+                    <feMergeNode in="shadowMatrixOuter1" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+                <rect id="g" width="200" height="255" rx="8" />
+                <filter
+                  id="f"
+                  width="117.5%"
+                  height="113.7%"
+                  x="-8.8%"
+                  y="-4.9%"
+                  filterUnits="objectBoundingBox">
+                  <feOffset
+                    dy="5"
+                    in="SourceAlpha"
+                    result="shadowOffsetOuter1"
+                  />
+                  <feGaussianBlur
+                    in="shadowOffsetOuter1"
+                    result="shadowBlurOuter1"
+                    stdDeviation="5"
+                  />
+                  <feColorMatrix
+                    in="shadowBlurOuter1"
+                    values="0 0 0 0 0.285332669 0 0 0 0 0.363695184 0 0 0 0 0.811480978 0 0 0 0.0830692745 0"
+                  />
+                </filter>
               </defs>
               <g fill="none" fill-rule="evenodd">
                 <mask id="b" fill="#fff">
@@ -39,163 +112,211 @@ export const SectionSecondTab2 =
                   <path fill="#242A45" d="M-3.53.197h547v59h-547z" />
                   <g transform="translate(22.47 14.197)" fill="#FFF">
                     <circle cx="16" cy="16" r="16" opacity=".245" />
-                    <circle cx="477" cy="16" r="16" opacity=".104" />
                     <g transform="translate(47 6)">
                       <rect width="120" height="6" opacity=".75" rx="3" />
                       <rect width="64" height="6" y="14" opacity=".25" rx="3" />
                     </g>
                   </g>
                 </g>
-                <g mask="url(#b)">
-                  <g transform="translate(57 93)">
-                    <rect width="261" height="316" fill="#FFF" rx="8" />
-                    <rect width="128" height="316" x="295" fill="#FFF" rx="8" />
+                <g transform="translate(27 138)">
+                  <use fill="#000" filter="url(#c)" xlinkHref="#d" />
+                  <use fill="#FFF" xlinkHref="#d" />
+                  <g transform="translate(23 29)">
                     <rect
-                      width="120"
+                      width="101.317"
                       height="6"
-                      x="78.47"
-                      y="38.197"
+                      x="45.683"
+                      y="6"
                       fill="#242A45"
                       opacity=".5"
                       rx="3"
                     />
+                    <circle cx="16" cy="16" r="16" fill="#5267DF" />
+                    <rect
+                      width="54.036"
+                      height="6"
+                      x="45.683"
+                      y="20"
+                      fill="#242A45"
+                      opacity=".25"
+                      rx="3"
+                    />
+                    <g transform="translate(0 56)">
+                      <circle cx="16" cy="16" r="16" fill="#5267DF" />
+                      <rect
+                        width="101.317"
+                        height="6"
+                        x="45.683"
+                        y="6"
+                        fill="#242A45"
+                        opacity=".5"
+                        rx="3"
+                      />
+                      <rect
+                        width="54.036"
+                        height="6"
+                        x="45.683"
+                        y="20"
+                        fill="#242A45"
+                        opacity=".25"
+                        rx="3"
+                      />
+                    </g>
+                    <g transform="translate(0 112)">
+                      <circle cx="16" cy="16" r="16" fill="#5267DF" />
+                      <rect
+                        width="101.317"
+                        height="6"
+                        x="45.683"
+                        y="6"
+                        fill="#242A45"
+                        opacity=".5"
+                        rx="3"
+                      />
+                      <rect
+                        width="54.036"
+                        height="6"
+                        x="45.683"
+                        y="20"
+                        fill="#242A45"
+                        opacity=".25"
+                        rx="3"
+                      />
+                    </g>
+                    <g transform="translate(0 168)">
+                      <circle cx="16" cy="16" r="16" fill="#5267DF" />
+                      <rect
+                        width="101.317"
+                        height="6"
+                        x="45.683"
+                        y="6"
+                        fill="#242A45"
+                        opacity=".5"
+                        rx="3"
+                      />
+                      <rect
+                        width="54.036"
+                        height="6"
+                        x="45.683"
+                        y="20"
+                        fill="#242A45"
+                        opacity=".25"
+                        rx="3"
+                      />
+                    </g>
                   </g>
                 </g>
-                <g transform="translate(88.47 115.197)">
-                  <circle cx="16" cy="26" r="16" fill="#F98E5D" />
-                  <rect
-                    width="88"
-                    height="6"
-                    x="284"
-                    fill="#242A45"
-                    opacity=".25"
-                    rx="3"
-                  />
-                  <rect
-                    width="88"
-                    height="6"
-                    x="284"
-                    y="20"
-                    fill="#242A45"
-                    opacity=".25"
-                    rx="3"
-                  />
-                  <rect
-                    width="88"
-                    height="6"
-                    x="284"
-                    y="40"
-                    fill="#242A45"
-                    opacity=".25"
-                    rx="3"
-                  />
-                  <rect
-                    width="88"
-                    height="6"
-                    x="284"
-                    y="60"
-                    fill="#242A45"
-                    opacity=".25"
-                    rx="3"
-                  />
-                  <rect
-                    width="88"
-                    height="6"
-                    x="284"
-                    y="94"
-                    fill="#242A45"
-                    opacity=".25"
-                    rx="3"
-                  />
-                  <rect
-                    width="88"
-                    height="6"
-                    x="284"
-                    y="114"
-                    fill="#242A45"
-                    opacity=".25"
-                    rx="3"
-                  />
-                  <rect
-                    width="88"
-                    height="6"
-                    x="284"
-                    y="134"
-                    fill="#242A45"
-                    opacity=".25"
-                    rx="3"
-                  />
-                  <rect
-                    width="64"
-                    height="6"
-                    x="47"
-                    y="30"
-                    fill="#242A45"
-                    opacity=".25"
-                    rx="3"
-                  />
+                <g filter="url(#e)" transform="translate(251 138)">
+                  <use fill="#000" filter="url(#f)" xlinkHref="#g" />
+                  <use fill="#FFF" xlinkHref="#g" />
+                  <g transform="translate(23 29)">
+                    <rect
+                      width="101.317"
+                      height="6"
+                      x="45.683"
+                      y="6"
+                      fill="#242A45"
+                      opacity=".5"
+                      rx="3"
+                    />
+                    <circle cx="16" cy="16" r="16" fill="#5267DF" />
+                    <rect
+                      width="54.036"
+                      height="6"
+                      x="45.683"
+                      y="20"
+                      fill="#242A45"
+                      opacity=".25"
+                      rx="3"
+                    />
+                    <g transform="translate(0 56)">
+                      <circle cx="16" cy="16" r="16" fill="#FA5959" />
+                      <rect
+                        width="101.317"
+                        height="6"
+                        x="45.683"
+                        y="6"
+                        fill="#242A45"
+                        opacity=".5"
+                        rx="3"
+                      />
+                      <rect
+                        width="54.036"
+                        height="6"
+                        x="45.683"
+                        y="20"
+                        fill="#242A45"
+                        opacity=".25"
+                        rx="3"
+                      />
+                    </g>
+                    <g transform="translate(0 112)">
+                      <circle cx="16" cy="16" r="16" fill="#5267DF" />
+                      <rect
+                        width="101.317"
+                        height="6"
+                        x="45.683"
+                        y="6"
+                        fill="#242A45"
+                        opacity=".5"
+                        rx="3"
+                      />
+                      <rect
+                        width="54.036"
+                        height="6"
+                        x="45.683"
+                        y="20"
+                        fill="#242A45"
+                        opacity=".25"
+                        rx="3"
+                      />
+                    </g>
+                    <g transform="translate(0 168)">
+                      <circle cx="16" cy="16" r="16" fill="#5267DF" />
+                      <rect
+                        width="101.317"
+                        height="6"
+                        x="45.683"
+                        y="6"
+                        fill="#242A45"
+                        opacity=".5"
+                        rx="3"
+                      />
+                      <rect
+                        width="54.036"
+                        height="6"
+                        x="45.683"
+                        y="20"
+                        fill="#242A45"
+                        opacity=".25"
+                        rx="3"
+                      />
+                    </g>
+                  </g>
                 </g>
-                <g transform="translate(88.47 181.197)">
-                  <circle cx="16" cy="16" r="16" fill="#6AC6D6" />
-                  <rect
-                    width="120"
-                    height="6"
-                    x="47"
-                    y="6"
-                    fill="#242A45"
-                    opacity=".5"
-                    rx="3"
+                <rect
+                  width="237"
+                  height="34"
+                  x="27"
+                  y="85"
+                  fill="#FFF"
+                  rx="8"
+                />
+                <g
+                  stroke="#5267DF"
+                  stroke-width="20"
+                  transform="translate(305 102)">
+                  <circle
+                    cx="67"
+                    cy="67"
+                    r="67"
+                    fill="#495DCF"
+                    fill-opacity=".2"
                   />
-                  <rect
-                    width="64"
-                    height="6"
-                    x="47"
-                    y="20"
-                    fill="#242A45"
-                    opacity=".25"
-                    rx="3"
-                  />
-                </g>
-                <g transform="translate(88.47 237.197)">
-                  <circle cx="16" cy="16" r="16" fill="#A47ED4" />
-                  <rect
-                    width="120"
-                    height="6"
-                    x="47"
-                    y="6"
-                    fill="#242A45"
-                    opacity=".5"
-                    rx="3"
-                  />
-                  <rect
-                    width="64"
-                    height="6"
-                    x="47"
-                    y="20"
-                    fill="#242A45"
-                    opacity=".25"
-                    rx="3"
-                  />
-                </g>
-                <g transform="translate(88.47 293.197)">
-                  <circle cx="16" cy="16" r="16" fill="#EC7878" />
-                  <rect
-                    width="120"
-                    height="6"
-                    x="47"
-                    y="6"
-                    fill="#242A45"
-                    opacity=".5"
-                    rx="3"
-                  />
-                  <rect
-                    width="64"
-                    height="6"
-                    x="47"
-                    y="20"
-                    fill="#242A45"
-                    opacity=".25"
-                    rx="3"
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M114 115l49 49"
                   />
                 </g>
               </g>
@@ -203,16 +324,15 @@ export const SectionSecondTab2 =
           </SectionSecondLeftSection>
           <SectionSecondRightSection>
             <SectionSecondRightSectionTitle>
-              Bookmark in one click
+              Intelligent search
             </SectionSecondRightSectionTitle>
             <SectionSecondRightSectionDescribe>
               {" "}
-              Organize your bookmarks however you like. Our simple drag-and-drop
-              interface gives you complete control over how you manage your
-              favourite sites.
+              Our powerful search feature will help you find saved sites in no
+              time at all. No need to trawl through all of your bookmarks.
             </SectionSecondRightSectionDescribe>
             <SectionSecondRightSectionButton>
-              <Link to="/" style={{ textDecoration: "none" }}>
+              <Link to="not-found" style={{ textDecoration: "none" }}>
                 <ButtonSmall type="submit">More Info</ButtonSmall>
               </Link>
             </SectionSecondRightSectionButton>

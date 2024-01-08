@@ -212,7 +212,7 @@ export const SectionSecondTab1 =
               favourite sites.
             </SectionSecondRightSectionDescribe>
             <SectionSecondRightSectionButton>
-              <Link to="/" style={{ textDecoration: "none" }}>
+              <Link to="not-found" style={{ textDecoration: "none" }}>
                 <ButtonSmall type="submit">More Info</ButtonSmall>
               </Link>
             </SectionSecondRightSectionButton>
