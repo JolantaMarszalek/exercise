@@ -32,12 +32,20 @@ export const SectionFirst =
               for free.
             </SectionFirstLeftSectionDescribe>
             <SectionFirstLeftSectionButton>
-              <Link to="/" style={{ textDecoration: "none" }}>
+              <a
+                href="https://www.google.pl/intl/pl/chrome/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}>
                 <ButtonBigBlue type="submit">Get it on Chrome</ButtonBigBlue>
-              </Link>
-              <Link to="/" style={{ textDecoration: "none" }}>
+              </a>
+              <a
+                href="https://www.mozilla.org/pl/firefox/new/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}>
                 <ButtonBigGrey type="submit">Get it on Firefox</ButtonBigGrey>
-              </Link>
+              </a>
             </SectionFirstLeftSectionButton>
           </SectionFirstLeftSection>
           <SectionFirstRightSection>

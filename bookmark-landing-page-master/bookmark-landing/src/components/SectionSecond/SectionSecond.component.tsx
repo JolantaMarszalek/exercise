@@ -27,20 +27,20 @@ export const SectionSecond =
           </SectionSecondTopSectionDescribe>
           <SectionSecondTopMenu>
             <Link
-              to="/simple-bookmarking"
               // to="/"
-            >
+              to="/simple-bookmarking"
+              style={{ textDecoration: "none" }}>
               <SectionSecondTopMenuSingle>
                 Simple Bookmarking
               </SectionSecondTopMenuSingle>
             </Link>
-            <Link to="/speedy-searching">
+            <Link to="/speedy-searching" style={{ textDecoration: "none" }}>
               {" "}
               <SectionSecondTopMenuSingle>
                 Speedy Searching
               </SectionSecondTopMenuSingle>
             </Link>
-            <Link to="/easy-sharing">
+            <Link to="/easy-sharing" style={{ textDecoration: "none" }}>
               <SectionSecondTopMenuSingle>
                 Easy Sharing
               </SectionSecondTopMenuSingle>

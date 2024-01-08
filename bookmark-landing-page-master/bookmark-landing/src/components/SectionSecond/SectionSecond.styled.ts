@@ -60,10 +60,11 @@ export const SectionSecondTopMenu = styled.div`
   flex-direction: row;
   align-content: flex-start;
   justify-content: space-evenly;
+  align-items: center;
   color: var(--neutral-grayish-blue);
   line-height: 1.5;
   height: 100px;
-  width: 800px;
+  width: 900px;
   text-align: center;
 
   @media (max-width: 1024px) {
@@ -80,8 +81,20 @@ export const SectionSecondTopMenuSingle = styled.div`
   justify-content: space-evenly;
   color: var(--neutral-grayish-blue);
   line-height: 1.5;
-  width: auto;
+  width: 300px;
+  height: 50px;
   text-align: center;
+  border-bottom: 1px solid var(--neutral-grayish-blue);
+  transition: border-color 0.3s;
+
+  &:hover {
+    color: var(--primary-soft-red);
+    border-bottom: 4px solid var(--primary-soft-red);
+  }
+
+  &:active {
+    border-bottom: 4px solid var(--primary-soft-red);
+  }
 
   @media (max-width: 1024px) {
     display: flex;
