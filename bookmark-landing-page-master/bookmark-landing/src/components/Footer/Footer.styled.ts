@@ -7,9 +7,9 @@ export const FooterSection = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 150px;
-  width: auto;
-  background: white;
+
+  width: 100%;
+  background: var(--neutral-very-dark-blue);
 
   @media (max-width: 1024px) {
     font-size: 0.5rem;
@@ -31,22 +31,33 @@ export const FooterSectionLogo = styled.div`
   display: flex;
   padding: 15px;
   width: 200px;
+  height: 100px;
+  justify-content: center;
 `;
 
 export const FooterSectionLink = styled.div`
   position: static;
   flex-direction: row;
-  justify-content: flex-end;
   display: flex;
   gap: 20px;
   margin: 10px;
   width: 1000px;
-  color: var(--neutral-very-dark-blue);
+  color: white;
   font-size: 15px;
   letter-spacing: 2px;
+  height: 100px;
+  align-items: center;
 `;
 
-export const FooterSectionButton = styled.div`
+export const FooterSectionImage = styled.div`
+  position: static;
+  flex-direction: row;
+  display: flex;
+  margin: 10px;
+  gap: 20px;
+`;
+
+export const FooterSectionSingleImage = styled.div`
   position: static;
   flex-direction: row;
   display: flex;
