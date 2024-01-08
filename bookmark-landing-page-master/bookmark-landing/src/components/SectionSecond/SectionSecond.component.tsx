@@ -6,6 +6,11 @@ import {
   SectionSecondRightSectionDescribe,
   SectionSecondRightSectionTitle,
   SectionSecondSection,
+  SectionSecondTopMenu,
+  SectionSecondTopMenuSingle,
+  SectionSecondTopSection,
+  SectionSecondTopSectionDescribe,
+  SectionSecondTopSectionTitle,
 } from "./SectionSecond.styled";
 import { Link } from "react-router-dom";
 
@@ -18,6 +23,24 @@ interface SectionFirstProps {
 export const SectionSecond: React.FC<SectionFirstProps> = () => {
   return (
     <>
+      {" "}
+      <SectionSecondTopSection>
+        <SectionSecondTopSectionTitle>Features</SectionSecondTopSectionTitle>{" "}
+        <SectionSecondTopSectionDescribe>
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </SectionSecondTopSectionDescribe>
+        <SectionSecondTopMenu>
+          <SectionSecondTopMenuSingle>
+            Simple Bookmarking
+          </SectionSecondTopMenuSingle>
+          <SectionSecondTopMenuSingle>
+            Speedy Searching
+          </SectionSecondTopMenuSingle>
+          <SectionSecondTopMenuSingle>Easy Sharing</SectionSecondTopMenuSingle>
+        </SectionSecondTopMenu>
+      </SectionSecondTopSection>
       <SectionSecondSection>
         <SectionSecondLeftSection>
           <svg
