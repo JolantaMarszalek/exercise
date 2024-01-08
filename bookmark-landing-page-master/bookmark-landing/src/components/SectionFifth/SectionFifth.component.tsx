@@ -1,5 +1,4 @@
 // import { ReactNode } from "react";
-import { useState } from "react";
 import { ButtonRed } from "../Button/ButtonRed.styled";
 import {
   ErrorContainer,
@@ -9,12 +8,11 @@ import {
   InputLabel,
   SectionFifthSection,
   SectionFifthSectionButton,
-  SectionFifthSectionInput,
   SectionFifthTopSection,
   SectionFifthTopSectionDescribe,
   SectionFifthTopSectionTitle,
 } from "./SectionFifth.styled";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Controller, useForm } from "react-hook-form";
 
 // interface SectionFirstProps {

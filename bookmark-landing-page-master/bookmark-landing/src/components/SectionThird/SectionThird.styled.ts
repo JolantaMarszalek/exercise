@@ -119,7 +119,7 @@ export const SectionThirdSection = styled.section`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: auto;
     border-radius: 0;
   }
 `;
@@ -141,7 +141,8 @@ export const SectionThirdSingleCard1 = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    width: 375px;
+    width: 250px;
+    height: 350px;
   }
 `;
 
@@ -161,7 +162,8 @@ export const SectionThirdSingleCard2 = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    width: 375px;
+    width: 250px;
+    height: 350px;
   }
 `;
 
@@ -181,7 +183,8 @@ export const SectionThirdSingleCard3 = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    width: 375px;
+    width: 250px;
+    height: 350px;
   }
 `;
 

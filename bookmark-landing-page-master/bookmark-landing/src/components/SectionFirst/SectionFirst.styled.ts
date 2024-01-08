@@ -14,10 +14,13 @@ export const SectionFirstSection = styled.section`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
+    flex-direction: column-reverse;
+
+    /* width: 100%;
+    height: 100vh; */
     border-radius: 0;
+    /* width: 375px; */
+    height: auto;
   }
 `;
 
@@ -34,7 +37,7 @@ export const SectionFirstLeftSection = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    width: 375px;
+    /* width: 375px; */
   }
 `;
 
@@ -98,7 +101,7 @@ export const SectionFirstRightSection = styled.div`
   padding: 2px;
 
   @media (max-width: 1024px) {
-    display: none;
+    /* display: none; */
     flex-direction: column;
   }
 `;

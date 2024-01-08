@@ -32,7 +32,7 @@ export const ButtonBigGrey = styled.button`
     display: flex;
     flex-direction: row;
     width: auto;
-    width: 100px;
-    font-size: 0.5rem;
+    width: 200px;
+    /* font-size: 0.5rem; */
   }
 `;

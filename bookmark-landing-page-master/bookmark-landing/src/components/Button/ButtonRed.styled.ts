@@ -47,8 +47,8 @@ export const ButtonRed = styled.button`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: row;
-    width: auto;
-    width: 100px;
-    font-size: 0.5rem;
+    height: 50px;
+    width: 150px;
+    /* font-size: 0.5rem; */
   }
 `;
