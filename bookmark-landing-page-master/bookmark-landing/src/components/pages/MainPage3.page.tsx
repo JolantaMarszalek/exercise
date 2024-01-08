@@ -4,6 +4,7 @@ import { Layout } from "../Layout/Layout.component";
 import { SectionFirst } from "../SectionFirst/SectionFirst.component";
 import { SectionSecond } from "../SectionSecond/SectionSecond.component";
 import { SectionSecondTab3 } from "../SectionSecondTab3/SectionSecondTab3.component";
+import { SectionThird } from "../SectionThird/SectionThird.component";
 
 // interface MainProps {
 //   children: ReactNode;
@@ -20,6 +21,7 @@ export const MainPage3 =
           <SectionFirst />
           <SectionSecond />
           <SectionSecondTab3 />
+          <SectionThird />
         </Layout>
       );
     };

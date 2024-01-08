@@ -7,7 +7,7 @@ import {
   SectionFirstRightSection,
   SectionFirstSection,
 } from "./SectionFirst.styled";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { ButtonBigBlue } from "../Button/ButtonBigBlue.styled";
 import { ButtonBigGrey } from "../Button/ButtonBigGrey.styled";
 
