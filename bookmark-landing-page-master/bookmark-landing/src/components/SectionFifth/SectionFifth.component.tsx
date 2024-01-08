@@ -1,6 +1,10 @@
 // import { ReactNode } from "react";
+import { useState } from "react";
 import { ButtonRed } from "../Button/ButtonRed.styled";
 import {
+  ErrorContainer,
+  FormContainer,
+  InputContainer,
   InputField,
   InputLabel,
   SectionFifthSection,
@@ -10,7 +14,8 @@ import {
   SectionFifthTopSectionDescribe,
   SectionFifthTopSectionTitle,
 } from "./SectionFifth.styled";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Controller, useForm } from "react-hook-form";
 
 // interface SectionFirstProps {
 //   children: ReactNode;
@@ -19,6 +24,18 @@ import { Link } from "react-router-dom";
 export const SectionFifth =
   // : React.FC<SectionFirstProps>
   () => {
+    const {
+      control,
+      handleSubmit,
+      formState: { errors },
+    } = useForm();
+
+    const navigate = useNavigate();
+
+    const onSubmit = () => {
+      navigate("not-found");
+    };
+
     return (
       <>
         {" "}
@@ -31,17 +48,45 @@ export const SectionFifth =
           </SectionFifthTopSectionTitle>{" "}
         </SectionFifthTopSection>
         <SectionFifthSection>
-          <SectionFifthSectionInput>
-            <InputLabel>
-              <InputField placeholder="Enter your email address"></InputField>
-            </InputLabel>
-          </SectionFifthSectionInput>{" "}
-          <SectionFifthSectionButton>
-            {" "}
-            <Link to="not-found" style={{ textDecoration: "none" }}>
+          {" "}
+          <FormContainer onSubmit={handleSubmit(onSubmit)}>
+            <Controller
+              name="email"
+              control={control}
+              rules={{
+                required: "Valid email required",
+                pattern: {
+                  value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                  message: "Whoops, make sure it's an email",
+                },
+              }}
+              render={({ field }) => (
+                <>
+                  <InputContainer>
+                    <InputLabel className={errors.email ? "error" : ""}>
+                      <InputField
+                        {...field}
+                        placeholder="Enter your email address"
+                        style={{
+                          borderColor: errors.email ? "error" : "",
+                        }}
+                      />
+                    </InputLabel>
+                    {errors.email && (
+                      <ErrorContainer>
+                        {typeof errors.email.message === "string"
+                          ? errors.email.message
+                          : "Whoops, make sure it's an email"}
+                      </ErrorContainer>
+                    )}
+                  </InputContainer>
+                </>
+              )}
+            />
+            <SectionFifthSectionButton>
               <ButtonRed type="submit">Contact Us</ButtonRed>{" "}
-            </Link>
-          </SectionFifthSectionButton>
+            </SectionFifthSectionButton>{" "}
+          </FormContainer>
         </SectionFifthSection>
       </>
     );

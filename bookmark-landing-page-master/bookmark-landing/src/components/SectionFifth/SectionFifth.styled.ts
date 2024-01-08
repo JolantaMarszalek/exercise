@@ -143,7 +143,7 @@ export const SectionFifthSectionButton = styled.div`
 
 export const SectionFifthSectionInput = styled.div`
   position: static;
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
   margin: 10px;
   gap: 20px;
@@ -173,6 +173,11 @@ export const InputField = styled.input`
   cursor: pointer;
   padding-left: 15px;
 
+  /* &.error {
+    background-color: red;
+    border: 1px solid red;
+  } */
+
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
@@ -183,6 +188,7 @@ export const InputField = styled.input`
 export const InputLabel = styled.label`
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   box-sizing: content-box;
@@ -192,10 +198,48 @@ export const InputLabel = styled.label`
   height: 60px;
   border-radius: 5px;
 
+  &.error {
+    background-color: var(--primary-soft-red);
+    border: 1px solid var(--primary-soft-red);
+    border-radius: 5px 5px 0 0;
+  }
+
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
     width: 95%;
     /* height: 40px; */
   }
+`;
+
+export const InputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ErrorContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  color: red;
+  text-align: right;
+  font-size: 12px;
+  font-style: italic;
+  align-items: flex-start;
+  height: 30px;
+  justify-content: center;
+  padding-left: 10px;
+  color: white;
+  background-color: var(--primary-soft-red);
+  border-radius: 0 0 5px 5px;
+  /* font-weight: bold; */
+  /* 
+  .input-error {
+    border: 1px solid red;
+    background-color: red;
+  } */
+`;
+
+export const FormContainer = styled.form`
+  display: flex;
+  flex-direction: row;
 `;
