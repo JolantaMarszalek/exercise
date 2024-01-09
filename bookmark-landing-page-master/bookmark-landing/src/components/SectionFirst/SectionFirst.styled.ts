@@ -87,6 +87,7 @@ export const SectionFirstLeftSectionButton = styled.div`
     justify-content: center;
     width: 100%;
     margin: 0;
+    margin-top: 30px;
   }
 `;
 

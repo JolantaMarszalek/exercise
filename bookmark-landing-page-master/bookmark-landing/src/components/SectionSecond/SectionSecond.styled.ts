@@ -72,6 +72,8 @@ export const SectionSecondTopMenu = styled.div`
     flex-direction: column;
     margin-top: 20px;
     height: auto;
+    /* margin-top: 30px; */
+    margin-bottom: 30px;
   }
 `;
 
@@ -123,6 +125,7 @@ export const SectionSecondSection = styled.section`
     width: 100%;
     height: 100vh;
     border-radius: 0;
+    margin-top: 30px;
   }
 `;
 
@@ -187,6 +190,7 @@ export const SectionSecondRightSectionButton = styled.div`
     justify-content: center;
     width: 100%;
     margin: 0;
+    margin-top: 30px;
   }
 `;
 

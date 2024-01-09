@@ -56,6 +56,7 @@ export const SectionThirdTopSectionDescribe = styled.div`
     margin-top: 20px;
     text-align: center;
     width: 550px;
+    margin-bottom: 20px;
   }
 `;
 
