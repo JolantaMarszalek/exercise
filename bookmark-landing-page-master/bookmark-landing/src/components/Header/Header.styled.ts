@@ -13,6 +13,7 @@ export const HeaderSection = styled.section`
 
   @media (max-width: 1024px) {
     display: flex;
+    /* flex-direction: column; */
     justify-content: space-around;
     font-size: 0.5rem;
     gap: 0px;
@@ -48,6 +49,9 @@ export const HeaderSectionLink = styled.div`
   letter-spacing: 2px;
 
   @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -59,6 +63,9 @@ export const HeaderSectionButton = styled.div`
   gap: 20px;
 
   @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
