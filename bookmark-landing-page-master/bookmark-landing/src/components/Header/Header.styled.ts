@@ -12,6 +12,8 @@ export const HeaderSection = styled.section`
   background: white;
 
   @media (max-width: 1024px) {
+    display: flex;
+    justify-content: space-around;
     font-size: 0.5rem;
     gap: 0px;
     margin: auto;
@@ -44,6 +46,10 @@ export const HeaderSectionLink = styled.div`
   color: var(--neutral-very-dark-blue);
   font-size: 15px;
   letter-spacing: 2px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const HeaderSectionButton = styled.div`
@@ -52,4 +58,18 @@ export const HeaderSectionButton = styled.div`
   display: flex;
   margin: 10px;
   gap: 20px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+`;
+
+export const HeaderSectionMobileMenu = styled.div`
+  display: none;
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+  width: 200px;
+  align-items: center;
 `;

@@ -4,11 +4,20 @@ import {
   HeaderSectionButton,
   HeaderSectionLink,
   HeaderSectionLogo,
+  HeaderSectionMobileMenu,
 } from "./Header.styled";
+import MediaQuery from "react-responsive";
 
 import { ButtonRed } from "../Button/ButtonRed.styled";
+import { useState } from "react";
 
 export const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <HeaderSection>
       <HeaderSectionLogo>
@@ -28,22 +37,35 @@ export const Header = () => {
                 />
               </g>
             </g>
-          </svg>
+          </svg>{" "}
         </Link>
-      </HeaderSectionLogo>
-      <HeaderSectionLink>
+      </HeaderSectionLogo>{" "}
+      <MediaQuery minWidth={1024}>
+        {(matches) =>
+          matches ? null : (
+            <HeaderSectionMobileMenu onClick={toggleMobileMenu}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15">
+                <path
+                  fill="#242A45"
+                  fill-rule="evenodd"
+                  d="M0 0h18v3H0V0zm0 6h18v3H0V6zm0 6h18v3H0v-3z"
+                />
+              </svg>
+            </HeaderSectionMobileMenu>
+          )
+        }
+      </MediaQuery>
+      <HeaderSectionLink className={isMobileMenuOpen ? "mobile-menu-open" : ""}>
         <Link
           to="not-found"
           style={{ textDecoration: "none", color: "inherit" }}>
           FEATURES
         </Link>
-
         <Link
           to="not-found"
           style={{ textDecoration: "none", color: "inherit" }}>
           PRICING
         </Link>
-
         <Link
           to="not-found"
           style={{ textDecoration: "none", color: "inherit" }}>
