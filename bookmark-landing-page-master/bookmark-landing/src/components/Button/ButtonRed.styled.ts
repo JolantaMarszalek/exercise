@@ -32,7 +32,7 @@ export const ButtonRed = styled.button`
   align-items: center;
   color: white;
   background-color: var(--primary-soft-red);
-  letter-spacing: 2px;
+
   /* margin-top: 25px; */
 
   /* &:hover {
@@ -49,6 +49,7 @@ export const ButtonRed = styled.button`
     flex-direction: row;
     height: 50px;
     width: 150px;
+    /* background-color: hsla(229, 31%, 21%, 0.8); */
     /* font-size: 0.5rem; */
   }
 `;

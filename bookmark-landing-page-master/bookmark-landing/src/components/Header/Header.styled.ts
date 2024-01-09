@@ -52,6 +52,7 @@ export const HeaderSectionLink = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
   }
 `;
 
@@ -66,6 +67,8 @@ export const HeaderSectionButton = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 300px;
+    border-top: 1px solid white;
   }
 `;
 

@@ -4,8 +4,11 @@ import {
   HeaderSectionLink,
 } from "../Header/Header.styled";
 import { Link } from "react-router-dom";
-import { ButtonRed } from "../Button/ButtonRed.styled";
-import { MobileMenuSection } from "./MobileMenu.styled";
+import {
+  HeaderMobileButton,
+  MobileMenuSection,
+  MobileMenuSingleLink,
+} from "./MobileMenu.styled";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -23,24 +26,44 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen }) => {
         <>
           <MobileMenuSection>
             <HeaderSectionLink>
-              <Link
-                to="not-found"
-                style={{ textDecoration: "none", color: "inherit" }}>
-                FEATURES
-              </Link>
-              <Link
-                to="not-found"
-                style={{ textDecoration: "none", color: "inherit" }}>
-                PRICING
-              </Link>
-              <Link
-                to="not-found"
-                style={{ textDecoration: "none", color: "inherit" }}>
-                CONTACT
-              </Link>
+              <MobileMenuSingleLink>
+                <Link
+                  to="not-found"
+                  style={{
+                    textDecoration: "none",
+                    color: "inherit",
+                    //   borderTop: "2px solid white",
+                  }}>
+                  FEATURES
+                </Link>
+              </MobileMenuSingleLink>
+              <MobileMenuSingleLink>
+                <Link
+                  to="not-found"
+                  style={{
+                    textDecoration: "none",
+                    color: "inherit",
+                    //   borderTop: "2px solid white",
+                  }}>
+                  PRICING
+                </Link>
+              </MobileMenuSingleLink>
+              <MobileMenuSingleLink>
+                {" "}
+                <Link
+                  to="not-found"
+                  style={{
+                    textDecoration: "none",
+                    color: "inherit",
+                    //   borderTop: "2px solid white",
+                    //   borderBottom: "2px solid white",
+                  }}>
+                  CONTACT
+                </Link>
+              </MobileMenuSingleLink>
             </HeaderSectionLink>
             <HeaderSectionButton>
-              <ButtonRed type="submit">LOGIN</ButtonRed>
+              <HeaderMobileButton>LOGIN</HeaderMobileButton>
             </HeaderSectionButton>
           </MobileMenuSection>
         </>
