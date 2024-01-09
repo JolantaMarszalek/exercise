@@ -35,6 +35,8 @@ export const SectionThirdTopSectionTitle = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    text-align: center;
+    width: 550px;
   }
 `;
 
@@ -52,6 +54,8 @@ export const SectionThirdTopSectionDescribe = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    text-align: center;
+    width: 550px;
   }
 `;
 

@@ -39,6 +39,8 @@ export const SectionFifthTopSectionTitle = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    text-align: center;
+    width: 550px;
   }
 `;
 
@@ -60,6 +62,8 @@ export const SectionFifthTopSectionDescribe = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    text-align: center;
+    width: 550px;
   }
 `;
 
@@ -79,6 +83,8 @@ export const SectionFifthTopMenu = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    text-align: center;
+    width: 550px;
   }
 `;
 
@@ -108,6 +114,8 @@ export const SectionFifthTopMenuSingle = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    text-align: center;
+    width: 550px;
   }
 `;
 

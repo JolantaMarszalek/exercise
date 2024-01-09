@@ -71,6 +71,7 @@ export const SectionSecondTopMenu = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    height: auto;
   }
 `;
 

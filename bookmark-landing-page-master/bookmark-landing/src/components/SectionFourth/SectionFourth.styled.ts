@@ -35,6 +35,8 @@ export const SectionFourthTopSectionTitle = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    text-align: center;
+    width: 550px;
   }
 `;
 
@@ -53,6 +55,8 @@ export const SectionFourthTopSectionDescribe = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    text-align: center;
+    width: 550px;
   }
 `;
 
@@ -93,6 +97,8 @@ export const SectionFourthList = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    text-align: center;
+    width: 550px;
   }
 `;
 
@@ -111,6 +117,8 @@ export const SectionFourthListSingleLine = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     margin-top: 10px;
+    text-align: center;
+    width: 550px;
   }
 `;
 

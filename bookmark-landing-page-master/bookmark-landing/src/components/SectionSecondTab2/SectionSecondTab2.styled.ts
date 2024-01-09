@@ -34,7 +34,9 @@ export const SectionSecondLeftSection = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    width: 375px;
+    text-align: center;
+    width: 550px;
+    align-items: center;
   }
 `;
 
@@ -51,6 +53,8 @@ export const SectionSecondRightSectionTitle = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    text-align: center;
+    width: 550px;
   }
 `;
 
@@ -66,6 +70,8 @@ export const SectionSecondRightSectionDescribe = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    text-align: center;
+    width: 550px;
   }
 `;
 
@@ -99,6 +105,7 @@ export const SectionSecondRightSection = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    width: 375px;
+    text-align: center;
+    width: 550px;
   }
 `;

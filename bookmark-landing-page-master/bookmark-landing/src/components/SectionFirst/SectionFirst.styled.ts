@@ -15,11 +15,7 @@ export const SectionFirstSection = styled.section`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column-reverse;
-
-    /* width: 100%;
-    height: 100vh; */
     border-radius: 0;
-    /* width: 375px; */
     height: auto;
   }
 `;
@@ -37,7 +33,8 @@ export const SectionFirstLeftSection = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    /* width: 375px; */
+    align-items: center;
+    width: 550px;
   }
 `;
 
@@ -54,6 +51,8 @@ export const SectionFirstLeftSectionTitle = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    text-align: center;
+    width: 550px;
   }
 `;
 
@@ -69,6 +68,8 @@ export const SectionFirstLeftSectionDescribe = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    text-align: center;
+    width: 550px;
   }
 `;
 
