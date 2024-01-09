@@ -36,8 +36,8 @@ export const HeaderMobileButton = styled.div`
   border: 2px solid white;
   font-size: 15px;
   letter-spacing: 2px;
-  width: 200px;
-  height: 30px;
+  width: 250px;
+  height: 35px;
   border-radius: 5px;
 
   @media (max-width: 1024px) {
