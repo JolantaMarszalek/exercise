@@ -55,26 +55,31 @@ export const Header = () => {
           )
         }
       </MediaQuery>
-      <HeaderSectionLink className={isMobileMenuOpen ? "mobile-menu-open" : ""}>
-        <Link
-          to="not-found"
-          style={{ textDecoration: "none", color: "inherit" }}>
-          FEATURES
-        </Link>
-        <Link
-          to="not-found"
-          style={{ textDecoration: "none", color: "inherit" }}>
-          PRICING
-        </Link>
-        <Link
-          to="not-found"
-          style={{ textDecoration: "none", color: "inherit" }}>
-          CONTACT
-        </Link>
-      </HeaderSectionLink>
-      <HeaderSectionButton>
-        <ButtonRed type="submit">LOGIN</ButtonRed>
-      </HeaderSectionButton>
+      {(isMobileMenuOpen || window.innerWidth >= 1024) && (
+        <>
+          <HeaderSectionLink
+            className={isMobileMenuOpen ? "mobile-menu-open" : ""}>
+            <Link
+              to="not-found"
+              style={{ textDecoration: "none", color: "inherit" }}>
+              FEATURES
+            </Link>
+            <Link
+              to="not-found"
+              style={{ textDecoration: "none", color: "inherit" }}>
+              PRICING
+            </Link>
+            <Link
+              to="not-found"
+              style={{ textDecoration: "none", color: "inherit" }}>
+              CONTACT
+            </Link>
+          </HeaderSectionLink>
+          <HeaderSectionButton>
+            <ButtonRed type="submit">LOGIN</ButtonRed>
+          </HeaderSectionButton>
+        </>
+      )}
     </HeaderSection>
   );
 };

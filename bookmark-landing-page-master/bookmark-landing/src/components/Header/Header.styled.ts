@@ -48,7 +48,6 @@ export const HeaderSectionLink = styled.div`
   letter-spacing: 2px;
 
   @media (max-width: 1024px) {
-    display: none;
   }
 `;
 
@@ -60,7 +59,6 @@ export const HeaderSectionButton = styled.div`
   gap: 20px;
 
   @media (max-width: 1024px) {
-    display: none;
   }
 `;
 
