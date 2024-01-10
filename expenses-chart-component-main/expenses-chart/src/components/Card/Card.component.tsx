@@ -19,8 +19,18 @@ import {
   CardSectionMiddleGraph6,
   CardSectionMiddleGraph7,
 } from "./Card.styled";
+import jsonData from "./../../../../data.json";
 
 export const Card = () => {
+  const graphComponents = jsonData.map((item, index) => (
+    <CardSectionMiddleSingleLineGraph key={index}>
+      <div style={{ height: `${item.amount}px` }}>{item.amount}</div>
+      <CardSectionMiddleGraphTextUnder>
+        {item.day}
+      </CardSectionMiddleGraphTextUnder>
+    </CardSectionMiddleSingleLineGraph>
+  ));
+
   return (
     <CardSection>
       <CardSectionTop>
@@ -30,7 +40,9 @@ export const Card = () => {
       </CardSectionTop>
       <CardSectionMiddle>
         <CardSectionMiddleSection>
-          <CardSectionMiddleSingleLineGraph>
+          {" "}
+          {graphComponents}
+          {/* <CardSectionMiddleSingleLineGraph>
             <CardSectionMiddleGraph1></CardSectionMiddleGraph1>
             <CardSectionMiddleGraphTextUnder>
               mon
@@ -71,7 +83,7 @@ export const Card = () => {
             <CardSectionMiddleGraphTextUnder>
               sun
             </CardSectionMiddleGraphTextUnder>
-          </CardSectionMiddleSingleLineGraph>
+          </CardSectionMiddleSingleLineGraph> */}
         </CardSectionMiddleSection>
       </CardSectionMiddle>
       <CardSectionBottom>
