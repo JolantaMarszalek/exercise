@@ -1,13 +1,23 @@
 import {
   CardSection,
-  CardSectionDescribe,
+  CardSectionBottomDescribe,
   CardSectionText,
-  CardSectionTitle,
-  CardSectionPrice,
+  CardSectionTopTitle,
+  CardSectionBottomPrice,
   CardSectionTop,
   CardSectionMiddle,
   CardSectionBottom,
-  CardSectionPercent,
+  CardSectionBottomPercent,
+  CardSectionMiddleSection,
+  CardSectionMiddleSingleLineGraph,
+  CardSectionMiddleGraphTextUnder,
+  CardSectionMiddleGraph1,
+  CardSectionMiddleGraph2,
+  CardSectionMiddleGraph3,
+  CardSectionMiddleGraph4,
+  CardSectionMiddleGraph5,
+  CardSectionMiddleGraph6,
+  CardSectionMiddleGraph7,
 } from "./Card.styled";
 
 export const Card = () => {
@@ -15,18 +25,65 @@ export const Card = () => {
     <CardSection>
       <CardSectionTop>
         <CardSectionText>
-          <CardSectionTitle>Spending - Last 7 days</CardSectionTitle>
+          <CardSectionTopTitle>Spending - Last 7 days</CardSectionTopTitle>
         </CardSectionText>
       </CardSectionTop>
-      <CardSectionMiddle></CardSectionMiddle>
+      <CardSectionMiddle>
+        <CardSectionMiddleSection>
+          <CardSectionMiddleSingleLineGraph>
+            <CardSectionMiddleGraph1></CardSectionMiddleGraph1>
+            <CardSectionMiddleGraphTextUnder>
+              mon
+            </CardSectionMiddleGraphTextUnder>
+          </CardSectionMiddleSingleLineGraph>
+          <CardSectionMiddleSingleLineGraph>
+            <CardSectionMiddleGraph2></CardSectionMiddleGraph2>
+            <CardSectionMiddleGraphTextUnder>
+              tue
+            </CardSectionMiddleGraphTextUnder>
+          </CardSectionMiddleSingleLineGraph>
+          <CardSectionMiddleSingleLineGraph>
+            <CardSectionMiddleGraph3></CardSectionMiddleGraph3>
+            <CardSectionMiddleGraphTextUnder>
+              wed
+            </CardSectionMiddleGraphTextUnder>
+          </CardSectionMiddleSingleLineGraph>
+          <CardSectionMiddleSingleLineGraph>
+            <CardSectionMiddleGraph4></CardSectionMiddleGraph4>
+            <CardSectionMiddleGraphTextUnder>
+              thu
+            </CardSectionMiddleGraphTextUnder>
+          </CardSectionMiddleSingleLineGraph>
+          <CardSectionMiddleSingleLineGraph>
+            <CardSectionMiddleGraph5></CardSectionMiddleGraph5>
+            <CardSectionMiddleGraphTextUnder>
+              fri
+            </CardSectionMiddleGraphTextUnder>
+          </CardSectionMiddleSingleLineGraph>
+          <CardSectionMiddleSingleLineGraph>
+            <CardSectionMiddleGraph6></CardSectionMiddleGraph6>
+            <CardSectionMiddleGraphTextUnder>
+              sat
+            </CardSectionMiddleGraphTextUnder>
+          </CardSectionMiddleSingleLineGraph>
+          <CardSectionMiddleSingleLineGraph>
+            <CardSectionMiddleGraph7></CardSectionMiddleGraph7>
+            <CardSectionMiddleGraphTextUnder>
+              sun
+            </CardSectionMiddleGraphTextUnder>
+          </CardSectionMiddleSingleLineGraph>
+        </CardSectionMiddleSection>
+      </CardSectionMiddle>
       <CardSectionBottom>
         <CardSectionText>
-          <CardSectionDescribe>Total this month</CardSectionDescribe>
-          <CardSectionPrice>$478.33</CardSectionPrice>
+          <CardSectionBottomDescribe>
+            Total this month
+          </CardSectionBottomDescribe>
+          <CardSectionBottomPrice>$478.33</CardSectionBottomPrice>
         </CardSectionText>
         <CardSectionText>
-          <CardSectionPercent>+2.4%</CardSectionPercent>
-          <CardSectionDescribe>from last month</CardSectionDescribe>
+          <CardSectionBottomPercent>+2.4%</CardSectionBottomPercent>
+          <CardSectionBottomDescribe>from last month</CardSectionBottomDescribe>
         </CardSectionText>
       </CardSectionBottom>
     </CardSection>

@@ -28,7 +28,7 @@ export const CardSectionTop = styled.div`
   flex-direction: column;
   display: flex;
   padding: 15px;
-  width: 100%;
+  /* width: 100%; */
   width: 400px;
 `;
 
@@ -37,7 +37,7 @@ export const CardSectionMiddle = styled.div`
   flex-direction: column;
   display: flex;
   padding: 15px;
-  width: 100%;
+  /* width: 100%; */
   width: 400px;
 `;
 
@@ -47,7 +47,7 @@ export const CardSectionBottom = styled.div`
   display: flex;
   padding: 15px;
   align-items: flex-end;
-  width: 100%;
+  /* width: 100%; */
   width: 400px;
   border-top: 2px solid var(--neutral-cream);
 `;
@@ -59,14 +59,75 @@ export const CardSectionText = styled.div`
   padding: 15px;
 `;
 
-export const CardSectionTitle = styled.div`
+export const CardSectionTopTitle = styled.div`
   position: static;
   flex-direction: column;
   display: flex;
   font-weight: bold;
 `;
 
-export const CardSectionPrice = styled.div`
+export const CardSectionMiddleSection = styled.div`
+  position: static;
+  /* flex-direction: column; */
+  display: flex;
+  padding: 15px;
+`;
+export const CardSectionMiddleSingleLineGraph = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+`;
+export const CardSectionMiddleGraphTextUnder = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+`;
+export const CardSectionMiddleGraph1 = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+`;
+export const CardSectionMiddleGraph2 = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+`;
+export const CardSectionMiddleGraph3 = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+`;
+export const CardSectionMiddleGraph4 = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+`;
+export const CardSectionMiddleGraph5 = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+`;
+export const CardSectionMiddleGraph6 = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+`;
+export const CardSectionMiddleGraph7 = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+`;
+
+export const CardSectionBottomPrice = styled.div`
   position: static;
   flex-direction: column;
   display: flex;
@@ -74,7 +135,7 @@ export const CardSectionPrice = styled.div`
   font-weight: bold;
 `;
 
-export const CardSectionPercent = styled.div`
+export const CardSectionBottomPercent = styled.div`
   position: static;
   flex-direction: column;
   display: flex;
@@ -83,17 +144,10 @@ export const CardSectionPercent = styled.div`
   font-size: 15px;
 `;
 
-export const CardSectionDescribe = styled.div`
+export const CardSectionBottomDescribe = styled.div`
   position: static;
   flex-direction: column;
   display: flex;
   color: var(--neutral-medium-brown);
   font-size: 15px;
-`;
-
-export const CardSectionLogo = styled.div`
-  position: static;
-  flex-direction: column;
-  display: flex;
-  padding: 15px;
 `;
