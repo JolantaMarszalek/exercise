@@ -5,7 +5,7 @@ export const CardSection = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  align-items: center;
   height: 400px;
   width: 500px;
   background: white;
@@ -28,6 +28,8 @@ export const CardSectionTop = styled.div`
   flex-direction: column;
   display: flex;
   padding: 15px;
+  width: 100%;
+  width: 400px;
 `;
 
 export const CardSectionMiddle = styled.div`
@@ -35,6 +37,8 @@ export const CardSectionMiddle = styled.div`
   flex-direction: column;
   display: flex;
   padding: 15px;
+  width: 100%;
+  width: 400px;
 `;
 
 export const CardSectionBottom = styled.div`
@@ -43,6 +47,9 @@ export const CardSectionBottom = styled.div`
   display: flex;
   padding: 15px;
   align-items: flex-end;
+  width: 100%;
+  width: 400px;
+  border-top: 2px solid var(--neutral-cream);
 `;
 
 export const CardSectionText = styled.div`
