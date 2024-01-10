@@ -1,22 +1,24 @@
 import styled from "styled-components";
 
 export const HeaderSection = styled.section`
-  top: 0;
-  margin-top: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 999; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 150px;
+  width: auto;
   background: white;
-  z-index: 1;
-  font-weight: bold;
 
   @media (max-width: 1024px) {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
     font-size: 0.5rem;
     gap: 0px;
     margin: auto;
+    width: 100%;
   }
 
   @media (max-width: 600px) {
@@ -31,15 +33,27 @@ export const HeaderSectionLogo = styled.div`
   flex-direction: column;
   display: flex;
   padding: 15px;
+  width: 200px;
 `;
 
 export const HeaderSectionLink = styled.div`
   position: static;
   flex-direction: row;
+  justify-content: flex-end;
   display: flex;
   gap: 20px;
   margin: 10px;
-  width: 800px;
+  width: 1000px;
+  color: var(--neutral-very-dark-blue);
+  font-size: 15px;
+  letter-spacing: 2px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
 `;
 
 export const HeaderSectionButton = styled.div`
@@ -48,4 +62,22 @@ export const HeaderSectionButton = styled.div`
   display: flex;
   margin: 10px;
   gap: 20px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border-top: 1px solid white;
+  }
+`;
+
+export const HeaderSectionMobileMenu = styled.div`
+  display: none;
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+  width: 200px;
+  align-items: center;
 `;
