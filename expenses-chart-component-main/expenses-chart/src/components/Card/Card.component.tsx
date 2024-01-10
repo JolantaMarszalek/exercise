@@ -10,24 +10,24 @@ import {
   CardSectionBottomPercent,
   CardSectionMiddleSection,
   CardSectionMiddleSingleLineGraph,
-  CardSectionMiddleGraphTextUnder,
-  CardSectionMiddleGraph1,
-  CardSectionMiddleGraph2,
-  CardSectionMiddleGraph3,
-  CardSectionMiddleGraph4,
-  CardSectionMiddleGraph5,
-  CardSectionMiddleGraph6,
-  CardSectionMiddleGraph7,
+  //   CardSectionMiddleGraphTextUnder,
+  //   CardSectionMiddleGraph1,
+  //   CardSectionMiddleGraph2,
+  //   CardSectionMiddleGraph3,
+  //   CardSectionMiddleGraph4,
+  //   CardSectionMiddleGraph5,
+  //   CardSectionMiddleGraph6,
+  //   CardSectionMiddleGraph7,
+  Bar,
 } from "./Card.styled";
 import jsonData from "./../../../../data.json";
 
 export const Card = () => {
   const graphComponents = jsonData.map((item, index) => (
     <CardSectionMiddleSingleLineGraph key={index}>
-      <div style={{ height: `${item.amount}px` }}>{item.amount}</div>
-      <CardSectionMiddleGraphTextUnder>
-        {item.day}
-      </CardSectionMiddleGraphTextUnder>
+      <Bar height={item.amount * 5} />
+      {/* <div>{item.amount}</div> */}
+      <div>{item.day}</div>
     </CardSectionMiddleSingleLineGraph>
   ));
 

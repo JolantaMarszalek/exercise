@@ -6,8 +6,8 @@ export const CardSection = styled.section`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 400px;
-  width: 500px;
+  height: 600px;
+  width: 600px;
   background: white;
   z-index: 1;
   /* font-weight: bold; */
@@ -29,7 +29,7 @@ export const CardSectionTop = styled.div`
   display: flex;
   padding: 15px;
   /* width: 100%; */
-  width: 400px;
+  width: 500px;
 `;
 
 export const CardSectionMiddle = styled.div`
@@ -38,7 +38,7 @@ export const CardSectionMiddle = styled.div`
   display: flex;
   padding: 15px;
   /* width: 100%; */
-  width: 400px;
+  width: 500px;
 `;
 
 export const CardSectionBottom = styled.div`
@@ -48,7 +48,7 @@ export const CardSectionBottom = styled.div`
   padding: 15px;
   align-items: flex-end;
   /* width: 100%; */
-  width: 400px;
+  width: 500px;
   border-top: 2px solid var(--neutral-cream);
 `;
 
@@ -71,13 +71,34 @@ export const CardSectionMiddleSection = styled.div`
   /* flex-direction: column; */
   display: flex;
   padding: 15px;
+  height: auto;
+  justify-content: space-between;
 `;
+
 export const CardSectionMiddleSingleLineGraph = styled.div`
   position: static;
   flex-direction: column;
   display: flex;
-  padding: 15px;
+  /* padding: 15px; */
+  width: 40px;
+  border-radius: 10px;
+  justify-content: flex-end;
+  margin: 2px;
+  font-size: 15px;
+  color: var(--neutral-medium-brown);
+  align-items: center;
 `;
+
+interface BarProps {
+  height: number;
+}
+export const Bar = styled.div<BarProps>`
+  height: ${({ height }) => height}px;
+  width: 50px;
+  background-color: var(--primary-soft-red);
+  border-radius: 5px;
+`;
+
 export const CardSectionMiddleGraphTextUnder = styled.div`
   position: static;
   flex-direction: column;
@@ -141,7 +162,7 @@ export const CardSectionBottomPercent = styled.div`
   display: flex;
   align-items: flex-end;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
 `;
 
 export const CardSectionBottomDescribe = styled.div`
@@ -149,5 +170,5 @@ export const CardSectionBottomDescribe = styled.div`
   flex-direction: column;
   display: flex;
   color: var(--neutral-medium-brown);
-  font-size: 15px;
+  font-size: 16px;
 `;

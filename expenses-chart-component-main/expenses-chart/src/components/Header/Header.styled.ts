@@ -5,8 +5,8 @@ export const HeaderSection = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-  width: 500px;
+  height: 150px;
+  width: 600px;
   background: white;
   z-index: 1;
   /* font-weight: bold; */
