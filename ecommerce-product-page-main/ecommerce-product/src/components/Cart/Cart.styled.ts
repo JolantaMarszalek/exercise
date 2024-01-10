@@ -72,6 +72,7 @@ export const CartPriceSection = styled.div`
   flex-direction: row;
   justify-content: center;
   width: auto;
+  justify-content: flex-start;
   /* margin-top: 20px; */
 `;
 
