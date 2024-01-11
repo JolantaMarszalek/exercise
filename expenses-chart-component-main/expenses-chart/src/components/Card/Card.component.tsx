@@ -21,7 +21,10 @@ export const Card = () => {
   const graphComponents = jsonData.map((item, index) => (
     <CardSectionMiddleSingleLineGraph key={index}>
       {" "}
-      <div className="value">{hoveredValue}</div>
+      {/* <div className="value">{hoveredValue}</div> */}{" "}
+      {hoveredValue === item.amount && (
+        <div className="value">{hoveredValue}</div>
+      )}
       <Bar
         height={item.amount * 5}
         onMouseEnter={() => setHoveredValue(item.amount)}

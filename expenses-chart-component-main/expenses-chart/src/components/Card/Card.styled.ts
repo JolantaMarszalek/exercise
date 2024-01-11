@@ -80,7 +80,8 @@ export const CardSectionMiddleSingleLineGraph = styled.div`
   flex-direction: column;
   display: flex;
   /* padding: 15px; */
-  width: 40px;
+  /* width: 40px; */
+  height: 100%;
   border-radius: 10px;
   justify-content: flex-end;
   margin: 2px;
@@ -95,8 +96,8 @@ interface BarProps {
 export const Bar = styled.div<BarProps>`
   position: relative;
   height: ${({ height }) => height}px;
-  /* width: 55px; */
-  width: 100%;
+  width: 55px;
+  /* width: 100%; */
   background-color: var(--primary-soft-red);
   border-radius: 5px;
   cursor: pointer;
