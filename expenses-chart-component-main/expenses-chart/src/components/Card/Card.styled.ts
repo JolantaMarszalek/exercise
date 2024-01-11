@@ -7,7 +7,7 @@ export const CardSection = styled.section`
   justify-content: space-between;
   align-items: center;
   height: 600px;
-  width: 600px;
+  width: 650px;
   background: white;
   z-index: 1;
   /* font-weight: bold; */
@@ -29,7 +29,7 @@ export const CardSectionTop = styled.div`
   display: flex;
   padding: 15px;
   /* width: 100%; */
-  width: 500px;
+  width: 550px;
 `;
 
 export const CardSectionMiddle = styled.div`
@@ -38,7 +38,7 @@ export const CardSectionMiddle = styled.div`
   display: flex;
   padding: 15px;
   /* width: 100%; */
-  width: 500px;
+  width: 550px;
 `;
 
 export const CardSectionBottom = styled.div`
@@ -48,7 +48,7 @@ export const CardSectionBottom = styled.div`
   padding: 15px;
   align-items: flex-end;
   /* width: 100%; */
-  width: 500px;
+  width: 550px;
   border-top: 2px solid var(--neutral-cream);
 `;
 
@@ -94,7 +94,7 @@ interface BarProps {
 }
 export const Bar = styled.div<BarProps>`
   height: ${({ height }) => height}px;
-  width: 50px;
+  width: 55px;
   background-color: var(--primary-soft-red);
   border-radius: 5px;
 `;
@@ -152,7 +152,7 @@ export const CardSectionBottomPrice = styled.div`
   position: static;
   flex-direction: column;
   display: flex;
-  font-size: 35px;
+  font-size: 45px;
   font-weight: bold;
 `;
 

@@ -6,7 +6,7 @@ export const HeaderSection = styled.section`
   justify-content: space-between;
   align-items: center;
   height: 150px;
-  width: 600px;
+  width: 650px;
   background: white;
   z-index: 1;
   /* font-weight: bold; */
@@ -27,6 +27,8 @@ export const HeaderSectionText = styled.div`
   flex-direction: column;
   display: flex;
   padding: 15px;
+  margin-left: 20px;
+  gap: 10px;
 `;
 
 export const HeaderSectionTitle = styled.div`
@@ -39,7 +41,7 @@ export const HeaderSectionPrice = styled.div`
   position: static;
   flex-direction: column;
   display: flex;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
 `;
 
@@ -48,6 +50,7 @@ export const HeaderSectionLogo = styled.div`
   flex-direction: column;
   display: flex;
   padding: 15px;
+  margin-right: 20px;
 `;
 
 // export const HeaderSectionLink = styled.div`
