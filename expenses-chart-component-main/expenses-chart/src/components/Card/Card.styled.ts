@@ -64,6 +64,7 @@ export const CardSectionTopTitle = styled.div`
   flex-direction: column;
   display: flex;
   font-weight: bold;
+  font-size: 35px;
 `;
 
 export const CardSectionMiddleSection = styled.div`
