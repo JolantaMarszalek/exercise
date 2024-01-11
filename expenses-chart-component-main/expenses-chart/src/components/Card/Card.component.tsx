@@ -18,7 +18,7 @@ import jsonData from "./../../../../data.json";
 import { useState } from "react";
 
 export const Card = () => {
-  const [hoveredValue, setHoveredValue] = useState<number | null>(null);
+  // const [hoveredValue, setHoveredValue] = useState<number | null>(null);
   const [clickedValue, setClickedValue] = useState<number | null>(null);
 
   const highestValue = Math.max(...jsonData.map((item) => item.amount));
@@ -39,8 +39,8 @@ export const Card = () => {
       )}
       <Bar
         height={item.amount * 3}
-        onMouseEnter={() => setHoveredValue(item.amount)}
-        onMouseLeave={() => setHoveredValue(null)}
+        // onMouseEnter={() => setHoveredValue(item.amount)}
+        // onMouseLeave={() => setHoveredValue(null)}
         isHighest={item.amount === highestValue}
         className={item.amount === highestValue ? "highestBar" : ""}
       />
