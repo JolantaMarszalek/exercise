@@ -10,22 +10,23 @@ import {
   CardSectionBottomPercent,
   CardSectionMiddleSection,
   CardSectionMiddleSingleLineGraph,
-  //   CardSectionMiddleGraphTextUnder,
-  //   CardSectionMiddleGraph1,
-  //   CardSectionMiddleGraph2,
-  //   CardSectionMiddleGraph3,
-  //   CardSectionMiddleGraph4,
-  //   CardSectionMiddleGraph5,
-  //   CardSectionMiddleGraph6,
-  //   CardSectionMiddleGraph7,
   Bar,
 } from "./Card.styled";
 import jsonData from "./../../../../data.json";
+import { useState } from "react";
 
 export const Card = () => {
+  const [hoveredValue, setHoveredValue] = useState<number | null>(null);
+
   const graphComponents = jsonData.map((item, index) => (
     <CardSectionMiddleSingleLineGraph key={index}>
-      <Bar height={item.amount * 5} />
+      {" "}
+      <div className="value">{hoveredValue}</div>
+      <Bar
+        height={item.amount * 5}
+        onMouseEnter={() => setHoveredValue(item.amount)}
+        onMouseLeave={() => setHoveredValue(null)}
+      />{" "}
       {/* <div>{item.amount}</div> */}
       <div>{item.day}</div>
     </CardSectionMiddleSingleLineGraph>
@@ -39,52 +40,7 @@ export const Card = () => {
         </CardSectionText>
       </CardSectionTop>
       <CardSectionMiddle>
-        <CardSectionMiddleSection>
-          {" "}
-          {graphComponents}
-          {/* <CardSectionMiddleSingleLineGraph>
-            <CardSectionMiddleGraph1></CardSectionMiddleGraph1>
-            <CardSectionMiddleGraphTextUnder>
-              mon
-            </CardSectionMiddleGraphTextUnder>
-          </CardSectionMiddleSingleLineGraph>
-          <CardSectionMiddleSingleLineGraph>
-            <CardSectionMiddleGraph2></CardSectionMiddleGraph2>
-            <CardSectionMiddleGraphTextUnder>
-              tue
-            </CardSectionMiddleGraphTextUnder>
-          </CardSectionMiddleSingleLineGraph>
-          <CardSectionMiddleSingleLineGraph>
-            <CardSectionMiddleGraph3></CardSectionMiddleGraph3>
-            <CardSectionMiddleGraphTextUnder>
-              wed
-            </CardSectionMiddleGraphTextUnder>
-          </CardSectionMiddleSingleLineGraph>
-          <CardSectionMiddleSingleLineGraph>
-            <CardSectionMiddleGraph4></CardSectionMiddleGraph4>
-            <CardSectionMiddleGraphTextUnder>
-              thu
-            </CardSectionMiddleGraphTextUnder>
-          </CardSectionMiddleSingleLineGraph>
-          <CardSectionMiddleSingleLineGraph>
-            <CardSectionMiddleGraph5></CardSectionMiddleGraph5>
-            <CardSectionMiddleGraphTextUnder>
-              fri
-            </CardSectionMiddleGraphTextUnder>
-          </CardSectionMiddleSingleLineGraph>
-          <CardSectionMiddleSingleLineGraph>
-            <CardSectionMiddleGraph6></CardSectionMiddleGraph6>
-            <CardSectionMiddleGraphTextUnder>
-              sat
-            </CardSectionMiddleGraphTextUnder>
-          </CardSectionMiddleSingleLineGraph>
-          <CardSectionMiddleSingleLineGraph>
-            <CardSectionMiddleGraph7></CardSectionMiddleGraph7>
-            <CardSectionMiddleGraphTextUnder>
-              sun
-            </CardSectionMiddleGraphTextUnder>
-          </CardSectionMiddleSingleLineGraph> */}
-        </CardSectionMiddleSection>
+        <CardSectionMiddleSection> {graphComponents}</CardSectionMiddleSection>
       </CardSectionMiddle>
       <CardSectionBottom>
         <CardSectionText>
