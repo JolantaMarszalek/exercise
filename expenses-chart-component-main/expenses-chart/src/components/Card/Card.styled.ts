@@ -4,7 +4,7 @@ export const CardSection = styled.section`
   top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 600px;
   width: 650px;
@@ -71,7 +71,7 @@ export const CardSectionMiddleSection = styled.div`
   /* flex-direction: column; */
   display: flex;
   padding: 15px;
-  height: auto;
+  height: 250px;
   justify-content: space-between;
 `;
 
@@ -92,6 +92,7 @@ export const CardSectionMiddleSingleLineGraph = styled.div`
 
 interface BarProps {
   height: number;
+  isHighest: boolean;
 }
 export const Bar = styled.div<BarProps>`
   position: relative;
@@ -116,56 +117,24 @@ export const Bar = styled.div<BarProps>`
   &:hover .value {
     display: block;
   }
+
+  &.highestBar {
+    background-color: var(--primary-cyan);
+  }
 `;
 
+export const CardSectionMiddleGraphTextAbove = styled.div`
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding-bottom: 10px;
+`;
 export const CardSectionMiddleGraphTextUnder = styled.div`
   position: static;
   flex-direction: column;
   display: flex;
-  padding: 15px;
+  padding-top: 10px;
 `;
-// export const CardSectionMiddleGraph1 = styled.div`
-//   position: static;
-//   flex-direction: column;
-//   display: flex;
-//   padding: 15px;
-// `;
-// export const CardSectionMiddleGraph2 = styled.div`
-//   position: static;
-//   flex-direction: column;
-//   display: flex;
-//   padding: 15px;
-// `;
-// export const CardSectionMiddleGraph3 = styled.div`
-//   position: static;
-//   flex-direction: column;
-//   display: flex;
-//   padding: 15px;
-// `;
-// export const CardSectionMiddleGraph4 = styled.div`
-//   position: static;
-//   flex-direction: column;
-//   display: flex;
-//   padding: 15px;
-// `;
-// export const CardSectionMiddleGraph5 = styled.div`
-//   position: static;
-//   flex-direction: column;
-//   display: flex;
-//   padding: 15px;
-// `;
-// export const CardSectionMiddleGraph6 = styled.div`
-//   position: static;
-//   flex-direction: column;
-//   display: flex;
-//   padding: 15px;
-// `;
-// export const CardSectionMiddleGraph7 = styled.div`
-//   position: static;
-//   flex-direction: column;
-//   display: flex;
-//   padding: 15px;
-// `;
 
 export const CardSectionBottomPrice = styled.div`
   position: static;

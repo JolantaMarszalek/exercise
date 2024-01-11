@@ -11,27 +11,43 @@ import {
   CardSectionMiddleSection,
   CardSectionMiddleSingleLineGraph,
   Bar,
+  CardSectionMiddleGraphTextUnder,
+  CardSectionMiddleGraphTextAbove,
 } from "./Card.styled";
 import jsonData from "./../../../../data.json";
 import { useState } from "react";
 
 export const Card = () => {
   const [hoveredValue, setHoveredValue] = useState<number | null>(null);
+  const [clickedValue, setClickedValue] = useState<number | null>(null);
+
+  const highestValue = Math.max(...jsonData.map((item) => item.amount));
+
+  const handleGraphClick = (value: number) => {
+    setClickedValue(value);
+  };
 
   const graphComponents = jsonData.map((item, index) => (
-    <CardSectionMiddleSingleLineGraph key={index}>
-      {" "}
+    <CardSectionMiddleSingleLineGraph
+      key={index}
+      onClick={() => handleGraphClick(item.amount)}>
       {/* <div className="value">{hoveredValue}</div> */}{" "}
-      {hoveredValue === item.amount && (
-        <div className="value">{hoveredValue}</div>
+      {clickedValue === item.amount && (
+        <CardSectionMiddleGraphTextAbove>
+          <div className="value">${clickedValue}</div>
+        </CardSectionMiddleGraphTextAbove>
       )}
       <Bar
-        height={item.amount * 5}
+        height={item.amount * 3}
         onMouseEnter={() => setHoveredValue(item.amount)}
         onMouseLeave={() => setHoveredValue(null)}
-      />{" "}
+        isHighest={item.amount === highestValue}
+        className={item.amount === highestValue ? "highestBar" : ""}
+      />
       {/* <div>{item.amount}</div> */}
-      <div>{item.day}</div>
+      <CardSectionMiddleGraphTextUnder>
+        <div>{item.day}</div>
+      </CardSectionMiddleGraphTextUnder>
     </CardSectionMiddleSingleLineGraph>
   ));
 
