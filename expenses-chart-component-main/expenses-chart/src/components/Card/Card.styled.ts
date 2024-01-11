@@ -80,7 +80,7 @@ export const CardSectionMiddleSingleLineGraph = styled.div`
   flex-direction: column;
   display: flex;
   /* padding: 15px; */
-  /* width: 40px; */
+  width: 100px;
   height: 100%;
   border-radius: 10px;
   justify-content: flex-end;
@@ -127,8 +127,18 @@ export const CardSectionMiddleGraphTextAbove = styled.div`
   position: static;
   flex-direction: column;
   display: flex;
-  padding-bottom: 10px;
+  color: white;
+  background-color: var(--neutral-dark-brown);
+  height: 40px;
+  width: 70px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
 `;
+
 export const CardSectionMiddleGraphTextUnder = styled.div`
   position: static;
   flex-direction: column;
