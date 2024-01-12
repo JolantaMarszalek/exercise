@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const InputStyled = styled.input`
+  display: flex;
   font-family: "League Spartan", sans-serif;
-
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 32px;
   padding: 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  border: 0;
+  background-color: var(--bg-very-dark-desaturated-blue-screen-bg);
+  color: var(--text-white);
+  outline: none;
+  text-align: end;
 `;
