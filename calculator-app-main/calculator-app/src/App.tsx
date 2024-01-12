@@ -1,10 +1,10 @@
-import Calculator from "./components/Calculator/Calculator.component";
+import { Calculator } from "./components/Calculator/Calculator.component";
 
 function App() {
   return (
-    <div className="App">
-      <Calculator />
-    </div>
+    <>
+      <h1>dfsdfsdf</h1> <Calculator />
+    </>
   );
 }
 
