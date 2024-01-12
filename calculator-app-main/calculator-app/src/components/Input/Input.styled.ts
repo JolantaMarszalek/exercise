@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const InputStyled = styled.input`
+  font-family: "League Spartan", sans-serif;
+
   font-size: 20px;
   margin-bottom: 10px;
   padding: 10px;

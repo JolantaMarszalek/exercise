@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const ButtonDel = styled.button`
+  font-family: "League Spartan", sans-serif;
+
   font-size: 18px;
   padding: 10px;
   cursor: pointer;

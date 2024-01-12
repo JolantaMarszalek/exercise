@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { ButtonContainer, CalculatorSection } from "./Calculator.styled";
+import {
+  ButtonContainer,
+  ButtonContainer2,
+  CalculatorSection,
+} from "./Calculator.styled";
 import { Button } from "../Button/Button.styled";
 import { ButtonDel } from "../Button/ButtonDel.styled";
 import { ButtonReset } from "../Button/ButtonReset.styled";
@@ -52,10 +56,13 @@ export const Calculator = () => {
         <Button onClick={() => handleButtonClick(".")}>.</Button>
         <Button onClick={() => handleButtonClick("0")}>0</Button>
         <Button onClick={() => handleButtonClick("/")}>/</Button>
-        <Button onClick={() => handleButtonClick("*")}>*</Button>
+        <Button onClick={() => handleButtonClick("*")}>*</Button>{" "}
+      </ButtonContainer>
+      <ButtonContainer2>
+        {" "}
         <ButtonReset onClick={handleReset}>RESET</ButtonReset>
         <ButtonEqual onClick={handleCalculate}>=</ButtonEqual>
-      </ButtonContainer>
+      </ButtonContainer2>
     </CalculatorSection>
   );
 };

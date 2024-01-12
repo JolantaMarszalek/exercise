@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const CalculatorSection = styled.section`
+  font-family: "League Spartan", sans-serif;
+
   width: 300px;
   margin: 50px auto;
   padding: 20px;
@@ -13,4 +15,11 @@ export const ButtonContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+`;
+
+export const ButtonContainer2 = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
 `;
