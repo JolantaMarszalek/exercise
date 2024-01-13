@@ -26,8 +26,7 @@ export const CalculatorSectionToggle = styled.section`
   display: flex;
   font-family: "League Spartan", sans-serif;
   justify-content: space-between;
-  align-items: center;
-
+  align-items: flex-end;
   width: 400px;
   margin: 10px auto;
   padding: 20px;
@@ -49,6 +48,7 @@ export const CalculatorSectionTop = styled.section`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: var(--bg-very-dark-desaturated-blue-screen-bg);
 `;
+
 export const CalculatorSectionBottom = styled.section`
   font-family: "League Spartan", sans-serif;
   width: 400px;
@@ -83,10 +83,11 @@ export const CalculatorSectionToggleText = styled.div`
 `;
 
 export const CalculatorSectionToggleContainer = styled.div`
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   margin-top: 10px;
+  align-items: flex-end;
 `;
 export const CalculatorSectionToggleToggle = styled.div`
   display: flex;
@@ -94,6 +95,7 @@ export const CalculatorSectionToggleToggle = styled.div`
   gap: 10px;
   margin-top: 10px;
 `;
+
 export const CalculatorSectionToggleTextToggle = styled.div`
   display: flex;
   /* grid-template-columns: repeat(2, 1fr); */
@@ -101,6 +103,33 @@ export const CalculatorSectionToggleTextToggle = styled.div`
   margin-top: 10px;
   color: white;
   font-size: 15px;
+`;
+
+export const CalculatorSectionToggleSectionToggle = styled.div`
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 10px;
+  margin-top: 10px;
+`;
+
+export const CalculatorSectionToggleNumberToggle = styled.div`
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-top: 10px;
+  color: white;
+  font-size: 15px;
+`;
+
+export const CalculatorSectionToggleSingleNumberToggle = styled.div`
+  /* display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* gap: 10px;
+  margin-top: 10px;
+  color: white;
+  font-size: 15px;  */
 `;
 
 export const ThemeToggleButton = styled.button`
