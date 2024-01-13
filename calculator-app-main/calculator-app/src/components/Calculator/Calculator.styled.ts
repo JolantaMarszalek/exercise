@@ -16,7 +16,7 @@ export const CalculatorSection = styled.div<CalculatorSectionProps>`
   /* border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-  background-color: var(--bg-very-dark-desaturated-blue-main-bg);
+  /* background-color: var(--bg-very-dark-desaturated-blue-main-bg); */
 
   background-color: ${(props) => props.theme.backgroundColor};
   color: ${(props) => props.theme.textColor};
@@ -105,7 +105,7 @@ export const CalculatorSectionToggleTextToggle = styled.div`
 
 export const ThemeToggleButton = styled.button`
   position: relative;
-  background-color: ${(props) => props.theme.backgroundColor};
+  background-color: ${(props) => props.theme.backgroundToggle};
   color: ${(props) => props.theme.textColor};
   padding: 8px;
   cursor: pointer;
@@ -129,6 +129,19 @@ export const SliderDot = styled.div<{ active: boolean }>`
   height: 16px;
   border-radius: 50%;
   transition: background-color 0.3s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    background-color: ${(props) => props.theme.backgroundToggle};
+    border-radius: 50%;
+    z-index: -1;
+  }
 `;
 
 export const ThemeSlider = styled.div`
@@ -137,6 +150,8 @@ export const ThemeSlider = styled.div`
 `;
 
 export const ThemeDotContainer = styled.div`
+  background-color: ${(props) => props.theme.backgroundToggle};
+  border-radius: 10px;
   display: flex;
   gap: 8px;
 `;

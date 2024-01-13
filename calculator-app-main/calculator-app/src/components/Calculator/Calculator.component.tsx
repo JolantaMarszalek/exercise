@@ -13,7 +13,7 @@ import {
   SliderDot,
   ThemeDotContainer,
   ThemeSlider,
-  ThemeToggleButton,
+  // ThemeToggleButton,
 } from "./Calculator.styled";
 import { Button } from "../Button/Button.styled";
 import { ButtonDel } from "../Button/ButtonDel.styled";
@@ -87,8 +87,7 @@ export const Calculator = () => {
                     />
                   ))}
                 </ThemeDotContainer>
-                <ThemeToggleButton
-                  onClick={() => toggleTheme("default")}></ThemeToggleButton>
+                {/* <ThemeToggleButton onClick={() => toggleTheme("default")} /> */}
               </ThemeSlider>
             </CalculatorSectionToggleToggle>
           </CalculatorSectionToggleContainer>
