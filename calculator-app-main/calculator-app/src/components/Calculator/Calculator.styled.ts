@@ -104,6 +104,7 @@ export const CalculatorSectionToggleTextToggle = styled.div`
 `;
 
 export const ThemeToggleButton = styled.button`
+  position: relative;
   background-color: ${(props) => props.theme.backgroundColor};
   color: ${(props) => props.theme.textColor};
   padding: 8px;
@@ -111,8 +112,31 @@ export const ThemeToggleButton = styled.button`
   border: none;
   outline: none;
   font-size: 16px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   &:hover {
     opacity: 0.8;
   }
+`;
+
+export const SliderDot = styled.div<{ active: boolean }>`
+  background-color: ${(props) => (props.active ? "white" : "transparent")};
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+`;
+
+export const ThemeSlider = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const ThemeDotContainer = styled.div`
+  display: flex;
+  gap: 8px;
 `;

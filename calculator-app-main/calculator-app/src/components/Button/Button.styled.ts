@@ -11,7 +11,9 @@ export const Button = styled.button`
   height: 50px;
   /* width: 80px; */
   cursor: pointer;
-  background-color: var(--key-light-grayish-orange-key-bg);
+  background-color: ${(props) => props.theme.buttonColor};
+
+  /* background-color: var(--key-light-grayish-orange-key-bg); */
   color: var(--text-very-dark-grayish-blue);
   border: none;
   border-radius: 10px;

@@ -10,6 +10,9 @@ import {
   CalculatorSectionToggleTextToggle,
   CalculatorSectionToggleToggle,
   CalculatorSectionTop,
+  SliderDot,
+  ThemeDotContainer,
+  ThemeSlider,
   ThemeToggleButton,
 } from "./Calculator.styled";
 import { Button } from "../Button/Button.styled";
@@ -45,19 +48,22 @@ export const Calculator = () => {
     setInput((prevInput) => prevInput.slice(0, -1));
   };
 
-  const toggleTheme = () => {
-    setTheme((prevTheme) => {
-      switch (prevTheme) {
-        case "default":
-          return "dark";
-        case "dark":
-          return "light";
-        case "light":
-          return "default";
-        default:
-          return "default";
-      }
-    });
+  // const toggleTheme = () => {
+  //   setTheme((prevTheme) => {
+  //     switch (prevTheme) {
+  //       case "default":
+  //         return "dark";
+  //       case "dark":
+  //         return "light";
+  //       case "light":
+  //         return "default";
+  //       default:
+  //         return "default";
+  //     }
+  //   });
+  // };
+  const toggleTheme = (selectedTheme: string) => {
+    setTheme(selectedTheme);
   };
 
   return (
@@ -66,14 +72,24 @@ export const Calculator = () => {
         <CalculatorSectionToggle>
           <CalculatorSectionToggleText>calc</CalculatorSectionToggleText>
           <CalculatorSectionToggleContainer>
-            <CalculatorSectionToggleTextToggle onClick={toggleTheme}>
+            <CalculatorSectionToggleTextToggle>
               THEME
             </CalculatorSectionToggleTextToggle>
             <CalculatorSectionToggleToggle>
               {" "}
-              <ThemeToggleButton onClick={toggleTheme}>
-                Toggle Theme
-              </ThemeToggleButton>
+              <ThemeSlider>
+                <ThemeDotContainer>
+                  {Object.keys(themes).map((themeKey) => (
+                    <SliderDot
+                      key={themeKey}
+                      active={theme === themeKey}
+                      onClick={() => toggleTheme(themeKey)}
+                    />
+                  ))}
+                </ThemeDotContainer>
+                <ThemeToggleButton
+                  onClick={() => toggleTheme("default")}></ThemeToggleButton>
+              </ThemeSlider>
             </CalculatorSectionToggleToggle>
           </CalculatorSectionToggleContainer>
         </CalculatorSectionToggle>
