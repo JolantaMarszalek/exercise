@@ -4,6 +4,11 @@ import {
   ButtonContainer2,
   CalculatorSection,
   CalculatorSectionBottom,
+  CalculatorSectionToggle,
+  CalculatorSectionToggleContainer,
+  CalculatorSectionToggleText,
+  CalculatorSectionToggleTextToggle,
+  CalculatorSectionToggleToggle,
   CalculatorSectionTop,
 } from "./Calculator.styled";
 import { Button } from "../Button/Button.styled";
@@ -44,6 +49,15 @@ export const Calculator = () => {
 
   return (
     <CalculatorSection>
+      <CalculatorSectionToggle>
+        <CalculatorSectionToggleText>calc</CalculatorSectionToggleText>
+        <CalculatorSectionToggleContainer>
+          <CalculatorSectionToggleTextToggle>
+            THEME
+          </CalculatorSectionToggleTextToggle>
+          <CalculatorSectionToggleToggle></CalculatorSectionToggleToggle>
+        </CalculatorSectionToggleContainer>
+      </CalculatorSectionToggle>
       <CalculatorSectionTop>
         <Input someValue={input} />
       </CalculatorSectionTop>
