@@ -1,6 +1,10 @@
-import styled from "styled-components";
+import styled, { DefaultTheme } from "styled-components";
 
-export const CalculatorSection = styled.section`
+interface CalculatorSectionProps {
+  theme: DefaultTheme;
+}
+
+export const CalculatorSection = styled.div<CalculatorSectionProps>`
   font-family: "League Spartan", sans-serif;
   display: flex;
   flex-direction: column;
@@ -13,6 +17,9 @@ export const CalculatorSection = styled.section`
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   background-color: var(--bg-very-dark-desaturated-blue-main-bg);
+
+  background-color: ${(props) => props.theme.backgroundColor};
+  color: ${(props) => props.theme.textColor};
 `;
 
 export const CalculatorSectionToggle = styled.section`
@@ -94,4 +101,18 @@ export const CalculatorSectionToggleTextToggle = styled.div`
   margin-top: 10px;
   color: white;
   font-size: 15px;
+`;
+
+export const ThemeToggleButton = styled.button`
+  background-color: ${(props) => props.theme.backgroundColor};
+  color: ${(props) => props.theme.textColor};
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 16px;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `;
