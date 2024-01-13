@@ -2,9 +2,13 @@ import styled from "styled-components";
 
 export const CalculatorSection = styled.section`
   font-family: "League Spartan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: auto;
   /* margin: 50px auto; */
   padding: 20px;
+  height: 100vh;
   /* border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
@@ -16,7 +20,7 @@ export const CalculatorSectionTop = styled.section`
   font-family: "League Spartan", sans-serif;
   justify-content: center;
   width: 400px;
-  margin: 50px auto;
+  margin: 10px auto;
   padding: 20px;
   /* border: 1px solid #ccc; */
   border-radius: 5px;
@@ -26,7 +30,7 @@ export const CalculatorSectionTop = styled.section`
 export const CalculatorSectionBottom = styled.section`
   font-family: "League Spartan", sans-serif;
   width: 400px;
-  margin: 50px auto;
+  margin: 10px auto;
   padding: 20px;
   /* border: 1px solid #ccc; */
   border-radius: 5px;

@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const ButtonReset = styled.button`
   font-family: "League Spartan", sans-serif;
-
+  display: flex;
+  align-content: center;
+  justify-content: center;
   font-size: 32px;
 
   padding: 10px;
