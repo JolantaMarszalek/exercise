@@ -5,7 +5,11 @@ export const themes: Record<string, DefaultTheme> = {
     backgroundColor: "var(--bg-very-dark-desaturated-blue-main-bg)",
     textColor: "var(--text-white)",
     buttonColor: "var(--key-light-grayish-orange-key-bg)",
+    buttonShadow: "var(--key-grayish-orange-key-shadow)",
+
     buttonDelColor: "var(--key-desaturated-dark-blue-key-bg)",
+    buttonDelShadow: "var(--key-desaturated-dark-blue-key-shadow)",
+
     backgroundToggle:
       "var(--bg-very-dark-desaturated-blue-togglee-bg-keypad-bg)",
   },

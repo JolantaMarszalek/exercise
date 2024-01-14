@@ -17,4 +17,5 @@ export const Button = styled.button`
   color: var(--text-very-dark-grayish-blue);
   border: none;
   border-radius: 10px;
+  box-shadow: 0 5px ${(props) => props.theme.buttonShadow};
 `;

@@ -12,6 +12,7 @@ export const ButtonDel = styled.button`
   padding: 10px;
   cursor: pointer;
   background-color: ${(props) => props.theme.buttonDelColor};
+  box-shadow: 0 5px ${(props) => props.theme.buttonDelShadow};
 
   /* background-color: var(--key-desaturated-dark-blue-key-bg); */
   color: var(--text-white);
