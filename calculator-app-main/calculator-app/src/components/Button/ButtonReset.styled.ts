@@ -10,8 +10,10 @@ export const ButtonReset = styled.button`
 
   padding: 10px;
   cursor: pointer;
-  background-color: var(--key-desaturated-dark-blue-key-bg);
+  /* background-color: var(--key-desaturated-dark-blue-key-bg); */
   color: var(--text-white);
   border: none;
   border-radius: 10px;
+  background-color: ${(props) => props.theme.buttonResetColor};
+  box-shadow: 0 5px ${(props) => props.theme.buttonResetShadow};
 `;

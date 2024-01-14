@@ -10,8 +10,10 @@ export const ButtonEqual = styled.button`
 
   padding: 10px;
   cursor: pointer;
-  background-color: var(--key-red-key-bg-toggle);
+  /* background-color: var(--key-red-key-bg-toggle); */
   color: var(--text-white);
   border: none;
   border-radius: 10px;
+  background-color: ${(props) => props.theme.buttonEqualColor};
+  box-shadow: 0 5px ${(props) => props.theme.buttonEqualShadow};
 `;

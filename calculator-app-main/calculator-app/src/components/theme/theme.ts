@@ -6,9 +6,13 @@ export const themes: Record<string, DefaultTheme> = {
     textColor: "var(--text-white)",
     buttonColor: "var(--key-light-grayish-orange-key-bg)",
     buttonShadow: "var(--key-grayish-orange-key-shadow)",
-
     buttonDelColor: "var(--key-desaturated-dark-blue-key-bg)",
     buttonDelShadow: "var(--key-desaturated-dark-blue-key-shadow)",
+
+    buttonEqualColor: "var(--key-red-key-bg-toggle)",
+    buttonEqualShadow: "var(--key-dark-red-key-shadow)",
+    buttonResetColor: "var(--key-desaturated-dark-blue-key-bg)",
+    buttonResetShadow: "var(--key-desaturated-dark-blue-key-shadow)",
 
     backgroundToggle:
       "var(--bg-very-dark-desaturated-blue-togglee-bg-keypad-bg)",
