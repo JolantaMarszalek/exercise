@@ -15,7 +15,10 @@ export const ButtonDel = styled.button`
   box-shadow: 0 5px ${(props) => props.theme.buttonDelShadow};
 
   /* background-color: var(--key-desaturated-dark-blue-key-bg); */
-  color: var(--text-white);
+  /* color: var(--text-white); */
+  border: none;
+  border-radius: 10px;
+  color: ${(props) => props.theme.buttonDelText};
   border: none;
   border-radius: 10px;
 `;
