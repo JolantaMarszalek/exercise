@@ -2,13 +2,18 @@ import styled from "styled-components";
 
 export const ButtonReset = styled.button`
   font-family: "League Spartan", sans-serif;
-
-  font-size: 32px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
 
   padding: 10px;
   cursor: pointer;
-  background-color: var(--key-desaturated-dark-blue-key-bg);
+  /* background-color: var(--key-desaturated-dark-blue-key-bg); */
   color: var(--text-white);
   border: none;
-  border-radius: 3px;
+  border-radius: 10px;
+  background-color: ${(props) => props.theme.buttonResetColor};
+  box-shadow: 0 5px ${(props) => props.theme.buttonResetShadow};
 `;

@@ -2,13 +2,23 @@ import styled from "styled-components";
 
 export const ButtonDel = styled.button`
   font-family: "League Spartan", sans-serif;
-
-  font-size: 32px;
-
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  height: 50px;
+  /* width: 80px; */
   padding: 10px;
   cursor: pointer;
-  background-color: var(--key-desaturated-dark-blue-key-bg);
-  color: var(--text-white);
+  background-color: ${(props) => props.theme.buttonDelColor};
+  box-shadow: 0 5px ${(props) => props.theme.buttonDelShadow};
+
+  /* background-color: var(--key-desaturated-dark-blue-key-bg); */
+  /* color: var(--text-white); */
   border: none;
-  border-radius: 3px;
+  border-radius: 10px;
+  color: ${(props) => props.theme.buttonDelText};
+  border: none;
+  border-radius: 10px;
 `;
