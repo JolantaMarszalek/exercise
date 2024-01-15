@@ -6,8 +6,8 @@ export const InputStyled = styled.input`
   font-size: 32px;
   padding: 10px;
   border: 0;
-  background-color: var(--bg-very-dark-desaturated-blue-screen-bg);
-  color: var(--text-white);
+  background-color: ${(props) => props.theme.backgroundInputColor};
+  color: ${(props) => props.theme.textInputColor};
   outline: none;
   text-align: end;
 `;
