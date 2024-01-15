@@ -43,11 +43,13 @@ body {
   /* Theme 3 */
   --bg-very-dark-violet-main-bg: hsl(268, 75%, 9%);
   --bg-very-dark-violet-togglee-bg-keypad-bg-screen-bg: hsl(268, 71%, 12%);
-  --key-dark-violet-key-bg: hsl(281, 89%, 26%);
+  /* --key-dark-violet-key-bg: hsl(281, 89%, 26%); */
+  --key-dark-violet-key-bg:  hsl(269,48%,20%);
   --key-vivid-magenta-key-shadow: hsl(285, 91%, 52%);
   --key-pure-cyan-key-bg-toggle: hsl(176, 100%, 44%);
   --key-soft-cyan-key-shadow: hsl(177, 92%, 70%);
-  --key-very-dark-violet-key-bg: hsl(45, 7%, 89%);
+  /* --key-very-dark-violet-key-bg: hsl(45, 7%, 89%); */
+  --key-very-dark-violet-key-bg: hsl(281,89%,26%);
   --key-dark-magenta-key-shadow: hsl(290, 70%, 36%);
   --text-light-yellow: hsl(52, 100%, 62%);
   --text-very-dark-blue: hsl(198, 20%, 13%);

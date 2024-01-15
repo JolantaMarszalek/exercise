@@ -5,20 +5,14 @@ export const ButtonDel = styled.button`
   display: flex;
   align-content: center;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   font-size: 28px;
   height: 50px;
-  /* width: 80px; */
   padding: 10px;
   cursor: pointer;
   background-color: ${(props) => props.theme.buttonDelColor};
   box-shadow: 0 5px ${(props) => props.theme.buttonDelShadow};
-
-  /* background-color: var(--key-desaturated-dark-blue-key-bg); */
-  /* color: var(--text-white); */
   border: none;
   border-radius: 10px;
   color: ${(props) => props.theme.buttonDelText};
-  border: none;
-  border-radius: 10px;
 `;
