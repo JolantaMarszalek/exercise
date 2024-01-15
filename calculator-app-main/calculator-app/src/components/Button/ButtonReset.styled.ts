@@ -7,11 +7,9 @@ export const ButtonReset = styled.button`
   justify-content: center;
   align-items: center;
   font-size: 28px;
-
   padding: 10px;
   cursor: pointer;
-  /* background-color: var(--key-desaturated-dark-blue-key-bg); */
-  color: var(--text-white);
+  color: ${(props) => props.theme.buttonResetText};
   border: none;
   border-radius: 10px;
   background-color: ${(props) => props.theme.buttonResetColor};

@@ -20,8 +20,10 @@ export const themes: Record<string, DefaultTheme> = {
     buttonEqualShadow: "var(--key-dark-red-key-shadow)",
     buttonResetColor: "var(--key-desaturated-dark-blue-key-bg)",
     buttonResetShadow: "var(--key-desaturated-dark-blue-key-shadow)",
+    buttonResetText: "var(--text-white)",
     backgroundToggle:
       "var(--bg-very-dark-desaturated-blue-togglee-bg-keypad-bg)",
+    backgroundToggleSliderDot: "var(--key-red-key-bg-toggle)",
   },
   dark: {
     backgroundColor: "var(--bg-light-gray-main-bg)",
@@ -40,7 +42,9 @@ export const themes: Record<string, DefaultTheme> = {
     buttonEqualShadow: "var(--key-dark-orange-key-shadow)",
     buttonResetColor: "var(--key-dark-moderate-cyan-key-bg)",
     buttonResetShadow: "var(--key-very-dark-cyan-key-shadow)",
+    buttonResetText: "var(--text-white)",
     backgroundToggle: "var(--bg-grayish-red-togglee-bg-keypad-bg)",
+    backgroundToggleSliderDot: "var(--key-orange-key-bg-toggle)",
   },
   light: {
     backgroundColor: "var(--bg-very-dark-violet-main-bg)",
@@ -50,21 +54,22 @@ export const themes: Record<string, DefaultTheme> = {
       "var(--bg-very-dark-violet-togglee-bg-keypad-bg-screen-bg)",
     backgroundInputColor:
       "var(--bg-very-dark-violet-togglee-bg-keypad-bg-screen-bg)",
-
     textColor: "var(--text-light-yellow)",
     textToggleColor: "var(--text-light-yellow)",
     textInputColor: "var(--text-light-yellow)",
-
     buttonText: "var(--text-light-yellow)",
     buttonColor: "var(--key-dark-violet-key-bg)",
-    buttonShadow: "var(--key-vivid-magenta-key-shadow)",
-    buttonDelColor: "var(--key-dark-violet-key-bg)",
-    buttonDelShadow: "var(--key-dark-magenta-key-shadow)",
+    buttonShadow: "var(--key-dark-magenta-key-shadow)",
+    buttonDelColor: "var(--key-very-dark-violet-key-bg)",
+    buttonDelShadow: "var(--key-vivid-magenta-key-shadow)",
     buttonEqualColor: "var(--key-pure-cyan-key-bg-toggle)",
     buttonEqualShadow: "var(--key-soft-cyan-key-shadow)",
-    buttonResetColor: "var(--key-dark-violet-key-bg)",
-    buttonResetShadow: "var(--key-dark-magenta-key-shadow)",
+    buttonEqualText: "var(--text-very-dark-blue)",
+    buttonResetColor: "var(--key-very-dark-violet-key-bg)",
+    buttonResetShadow: "var(--key-vivid-magenta-key-shadow)",
+    buttonResetText: "var(--text-white)",
     backgroundToggle:
       "var(--bg-very-dark-violet-togglee-bg-keypad-bg-screen-bg)",
+    backgroundToggleSliderDot: "var(--key-pure-cyan-key-bg-toggle)",
   },
 };

@@ -7,13 +7,12 @@ export const ButtonEqual = styled.button`
   justify-content: center;
   align-items: center;
   font-size: 28px;
-
   padding: 10px;
   cursor: pointer;
-  /* background-color: var(--key-red-key-bg-toggle); */
   color: var(--text-white);
   border: none;
   border-radius: 10px;
+  color: ${(props) => props.theme.buttonEqualText};
   background-color: ${(props) => props.theme.buttonEqualColor};
   box-shadow: 0 5px ${(props) => props.theme.buttonEqualShadow};
 `;
