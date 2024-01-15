@@ -5,7 +5,7 @@ export const ButtonDel = styled.button`
   display: flex;
   align-content: center;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   font-size: 28px;
   height: 50px;
   padding: 10px;

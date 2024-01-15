@@ -5,7 +5,7 @@ export const ButtonEqual = styled.button`
   display: flex;
   align-content: center;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   font-size: 28px;
   padding: 10px;
   cursor: pointer;
