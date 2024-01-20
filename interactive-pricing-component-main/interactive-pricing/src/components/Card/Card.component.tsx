@@ -1,3 +1,9 @@
+import { CardSectionStyled } from "./Card.styled";
+
 export const Card = () => {
-  return <></>;
+  return (
+    <>
+      <CardSectionStyled></CardSectionStyled>
+    </>
+  );
 };

@@ -1,3 +1,9 @@
+import { LayoutSectionStyled } from "./Layout.styled";
+
 export const Layout = () => {
-  return <></>;
+  return (
+    <>
+      <LayoutSectionStyled></LayoutSectionStyled>
+    </>
+  );
 };

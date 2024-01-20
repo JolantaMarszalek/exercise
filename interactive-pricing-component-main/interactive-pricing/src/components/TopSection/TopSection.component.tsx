@@ -1,3 +1,9 @@
+import { TopSectionStyled } from "./TopSection.styled";
+
 export const TopSection = () => {
-  return <></>;
+  return (
+    <>
+      <TopSectionStyled></TopSectionStyled>
+    </>
+  );
 };
