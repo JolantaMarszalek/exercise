@@ -1,9 +1,11 @@
-import { TopSectionStyled } from "./TopSection.styled";
+import { TopSectionStyled, TopSectionTitle } from "./TopSection.styled";
 
 export const TopSection = () => {
   return (
     <>
-      <TopSectionStyled></TopSectionStyled>
+      <TopSectionStyled>
+        <TopSectionTitle>Title</TopSectionTitle>
+      </TopSectionStyled>
     </>
   );
 };

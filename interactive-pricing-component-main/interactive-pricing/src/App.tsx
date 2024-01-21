@@ -1,5 +1,11 @@
+import { TopSection } from "./components/TopSection/TopSection.component";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <TopSection></TopSection>
+    </>
+  );
 }
 
 export default App;
