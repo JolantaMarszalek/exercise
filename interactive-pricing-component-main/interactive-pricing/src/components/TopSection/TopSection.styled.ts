@@ -6,7 +6,7 @@ export const TopSectionStyled = styled.section`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 100px;
 
   @media (max-width: 700px) {
   }
@@ -21,7 +21,7 @@ export const TopSectionTitle = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
 
   @media (max-width: 700px) {
   }
