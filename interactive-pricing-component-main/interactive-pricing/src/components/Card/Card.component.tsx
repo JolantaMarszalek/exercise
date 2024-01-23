@@ -1,10 +1,19 @@
-import { CardSectionStyled, CardTop } from "./Card.styled";
+import {
+  CardSectionBottom,
+  CardSectionMiddle,
+  CardSectionStyled,
+  CardSectionToggle,
+  CardSectionTop,
+} from "./Card.styled";
 
 export const Card = () => {
   return (
     <>
       <CardSectionStyled>
-        <CardTop></CardTop>
+        <CardSectionTop></CardSectionTop>
+        <CardSectionToggle></CardSectionToggle>
+        <CardSectionMiddle></CardSectionMiddle>
+        <CardSectionBottom></CardSectionBottom>
       </CardSectionStyled>
     </>
   );
