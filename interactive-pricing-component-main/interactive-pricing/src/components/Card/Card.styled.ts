@@ -5,8 +5,12 @@ export const CardSectionStyled = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 600px;
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 24px 0px
+    var(--neutral-light-grayish-blue--empty-slider-bar);
+  background-color: var(--neutral-white--pricing-component-background);
 
   @media (max-width: 700px) {
   }
