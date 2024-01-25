@@ -77,7 +77,7 @@ export const CardSectionToggle = styled.div`
 
 export const CardSectionMiddle = styled.div`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -92,7 +92,7 @@ export const CardSectionMiddle = styled.div`
 
 export const CardSectionBottom = styled.div`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -137,7 +137,7 @@ export const CardSectionBottomLeftList = styled.div`
 
 export const CardSectionBottomLeftListSingleLine = styled.div`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: 100%;
