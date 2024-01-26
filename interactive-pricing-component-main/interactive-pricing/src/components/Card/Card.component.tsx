@@ -8,6 +8,11 @@ import {
   CardSectionBottomRight,
   CardSectionBottomRightButton,
   CardSectionMiddle,
+  CardSectionMiddleLeft,
+  CardSectionMiddleLeftToggle,
+  CardSectionMiddleRight,
+  CardSectionMiddleRightPrice,
+  CardSectionMiddleText,
   CardSectionStyled,
   CardSectionToggle,
   CardSectionTop,
@@ -32,7 +37,18 @@ export const Card = () => {
           </CardSectionTopRight>
         </CardSectionTop>
         <CardSectionToggle></CardSectionToggle>
-        <CardSectionMiddle></CardSectionMiddle>
+        <CardSectionMiddle>
+          <CardSectionMiddleLeft>
+            <CardSectionMiddleText>Monthly Billing</CardSectionMiddleText>
+            <CardSectionMiddleLeftToggle></CardSectionMiddleLeftToggle>
+          </CardSectionMiddleLeft>
+          <CardSectionMiddleRight>
+            <CardSectionMiddleText>Yearly Billing</CardSectionMiddleText>
+            <CardSectionMiddleRightPrice>
+              25% discount
+            </CardSectionMiddleRightPrice>
+          </CardSectionMiddleRight>
+        </CardSectionMiddle>
         <CardSectionBottom>
           <CardSectionBottomLeft>
             <CardSectionBottomLeftList>

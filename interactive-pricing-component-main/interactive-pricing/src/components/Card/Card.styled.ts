@@ -166,7 +166,7 @@ export const CardSectionMiddleLeftToggle = styled.div`
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: auto;
   /* height: 100vh; */
 
   @media (max-width: 700px) {
@@ -196,8 +196,17 @@ export const CardSectionMiddleRightPrice = styled.div`
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
   /* height: 100vh; */
+  width: 100px;
+  /* height: 100vh; */
+  padding: 10px;
+  height: 10px;
+  border-radius: 25px;
+  color: var(--primary-red--discount-text);
+  background-color: var(--primary-light-grayish-red--discount-background);
+  font-size: 11px;
+  font-weight: bold;
 
   @media (max-width: 700px) {
   }
@@ -211,8 +220,11 @@ export const CardSectionMiddleText = styled.div`
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: auto;
   /* height: 100vh; */
+  padding: 10px;
+  color: var(--neutral-grayish-blue--text);
+  font-size: 13px;
 
   @media (max-width: 700px) {
   }
@@ -304,6 +316,7 @@ export const CardSectionBottomLeftListSingleLineDescribe = styled.div`
   width: 100%;
   /* height: 100vh; */
   color: var(--neutral-grayish-blue--text);
+  font-size: 13px;
 
   @media (max-width: 700px) {
   }
@@ -332,13 +345,15 @@ export const CardSectionBottomRightButton = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 150px;
+  width: 180px;
   /* height: 100vh; */
   padding: 10px;
   height: 30px;
   border-radius: 25px;
+  font-size: 13px;
   background-color: var(--neutral-dark-desaturated-blue--text-CTA-background);
   color: var(--primary-pale-blue--CTA-text);
+  /* font-weight: bold; */
 
   @media (max-width: 700px) {
   }

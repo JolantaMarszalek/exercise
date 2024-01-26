@@ -21,7 +21,9 @@ export const TopSectionTitle = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  font-size: 30px;
   /* height: 100vh; */
+  font-weight: bold;
 
   @media (max-width: 700px) {
   }
