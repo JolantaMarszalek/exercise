@@ -20,5 +20,6 @@ body {
   --neutral-very-pale-blue--main-background: hsl(230, 100%, 99%);
   --neutral-light-grayish-blue--empty-slider-bar: hsl(224, 65%, 95%);  
   --neutral-light-grayish-blue--toggle-background: hsl(223, 50%, 87%); 
+  --neutral-grayish-blue--text: hsl(225, 20%, 60%);
   --neutral-dark-desaturated-blue--text-CTA-background: hsl(227, 35%, 25%);
 } `;

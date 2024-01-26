@@ -12,6 +12,10 @@ import {
   CardSectionToggle,
   CardSectionTop,
   CardSectionTopLeft,
+  CardSectionTopLeftText,
+  CardSectionTopRight,
+  CardSectionTopRightPrice,
+  CardSectionTopRightText,
 } from "./Card.styled";
 
 export const Card = () => {
@@ -19,8 +23,13 @@ export const Card = () => {
     <>
       <CardSectionStyled>
         <CardSectionTop>
-          <CardSectionTopLeft>Pageviews</CardSectionTopLeft>
-          <CardSectionBottomRight>$ /month</CardSectionBottomRight>
+          <CardSectionTopLeft>
+            <CardSectionTopLeftText>100K Pageviews</CardSectionTopLeftText>
+          </CardSectionTopLeft>
+          <CardSectionTopRight>
+            <CardSectionTopRightPrice>$16.00</CardSectionTopRightPrice>
+            <CardSectionTopRightText>/month</CardSectionTopRightText>
+          </CardSectionTopRight>
         </CardSectionTop>
         <CardSectionToggle></CardSectionToggle>
         <CardSectionMiddle></CardSectionMiddle>

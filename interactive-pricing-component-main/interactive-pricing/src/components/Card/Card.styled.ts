@@ -42,7 +42,24 @@ export const CardSectionTopLeft = styled.div`
   width: 100%;
   /* height: 100vh; */
   text-transform: uppercase;
-  color: var();
+  color: var(--neutral-grayish-blue--text);
+
+  @media (max-width: 700px) {
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const CardSectionTopLeftText = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: 100vh; */
+  text-transform: uppercase;
+  color: var(--neutral-grayish-blue--text);
 
   @media (max-width: 700px) {
   }
@@ -53,11 +70,44 @@ export const CardSectionTopLeft = styled.div`
 
 export const CardSectionTopRight = styled.div`
   display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: 100vh; */
+  /* color: var(--neutral-grayish-blue--text); */
+
+  @media (max-width: 700px) {
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const CardSectionTopRightPrice = styled.div`
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   /* height: 100vh; */
+  /* color: var(--neutral-grayish-blue--text); */
+
+  @media (max-width: 700px) {
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const CardSectionTopRightText = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: 100vh; */
+  color: var(--neutral-grayish-blue--text);
 
   @media (max-width: 700px) {
   }
@@ -82,6 +132,81 @@ export const CardSectionToggle = styled.div`
 `;
 
 export const CardSectionMiddle = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: 100vh; */
+
+  @media (max-width: 700px) {
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const CardSectionMiddleLeft = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: 100vh; */
+
+  @media (max-width: 700px) {
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const CardSectionMiddleLeftToggle = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: 100vh; */
+
+  @media (max-width: 700px) {
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const CardSectionMiddleRight = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: 100vh; */
+
+  @media (max-width: 700px) {
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const CardSectionMiddleRightPrice = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: 100vh; */
+
+  @media (max-width: 700px) {
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const CardSectionMiddleText = styled.div`
   display: flex;
   /* flex-direction: column; */
   align-items: center;
@@ -178,6 +303,7 @@ export const CardSectionBottomLeftListSingleLineDescribe = styled.div`
   justify-content: center;
   width: 100%;
   /* height: 100vh; */
+  color: var(--neutral-grayish-blue--text);
 
   @media (max-width: 700px) {
   }
