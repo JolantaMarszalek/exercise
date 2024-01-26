@@ -153,6 +153,7 @@ export const CardSectionMiddleLeft = styled.div`
   justify-content: center;
   width: 100%;
   /* height: 100vh; */
+  justify-content: flex-end;
 
   @media (max-width: 700px) {
   }
@@ -176,6 +177,53 @@ export const CardSectionMiddleLeftToggle = styled.div`
   }
 `;
 
+export const ToggleSwitch = styled.label`
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  height: 34px;
+`;
+
+export const ToggleInput = styled.input`
+  display: none;
+`;
+
+export const Slider = styled.span`
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--neutral-light-grayish-blue--toggle-background);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+
+  input:checked + & {
+    background-color: var(--neutral-light-grayish-blue--toggle-background);
+  }
+
+  input:checked + &::before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+`;
+
 export const CardSectionMiddleRight = styled.div`
   display: flex;
   /* flex-direction: column; */
@@ -183,6 +231,7 @@ export const CardSectionMiddleRight = styled.div`
   justify-content: center;
   width: 100%;
   /* height: 100vh; */
+  justify-content: flex-start;
 
   @media (max-width: 700px) {
   }

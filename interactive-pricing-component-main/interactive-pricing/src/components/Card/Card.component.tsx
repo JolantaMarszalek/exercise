@@ -21,6 +21,9 @@ import {
   CardSectionTopRight,
   CardSectionTopRightPrice,
   CardSectionTopRightText,
+  Slider,
+  ToggleInput,
+  ToggleSwitch,
 } from "./Card.styled";
 
 export const Card = () => {
@@ -40,7 +43,12 @@ export const Card = () => {
         <CardSectionMiddle>
           <CardSectionMiddleLeft>
             <CardSectionMiddleText>Monthly Billing</CardSectionMiddleText>
-            <CardSectionMiddleLeftToggle></CardSectionMiddleLeftToggle>
+            <CardSectionMiddleLeftToggle>
+              <ToggleSwitch>
+                <ToggleInput type="checkbox" />
+                <Slider />
+              </ToggleSwitch>
+            </CardSectionMiddleLeftToggle>
           </CardSectionMiddleLeft>
           <CardSectionMiddleRight>
             <CardSectionMiddleText>Yearly Billing</CardSectionMiddleText>
