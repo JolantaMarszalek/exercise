@@ -76,7 +76,7 @@ export const Card = () => {
           </CardSectionBottomLeft>
           <CardSectionBottomRight>
             <CardSectionBottomRightButton>
-              <button>Start my trial</button>
+              Start my trial
             </CardSectionBottomRightButton>
           </CardSectionBottomRight>
         </CardSectionBottom>

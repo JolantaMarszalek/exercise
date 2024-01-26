@@ -4,7 +4,7 @@ export const CardSectionStyled = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 600px;
   height: 400px;
   border-radius: 10px;
@@ -41,6 +41,8 @@ export const CardSectionTopLeft = styled.div`
   justify-content: center;
   width: 100%;
   /* height: 100vh; */
+  text-transform: uppercase;
+  color: var();
 
   @media (max-width: 700px) {
   }
@@ -159,7 +161,7 @@ export const CardSectionBottomLeftListSingleLineImage = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 200px;
   /* height: 100vh; */
 
   @media (max-width: 700px) {
@@ -168,10 +170,11 @@ export const CardSectionBottomLeftListSingleLineImage = styled.div`
   @media (max-width: 375px) {
   }
 `;
+
 export const CardSectionBottomLeftListSingleLineDescribe = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   width: 100%;
   /* height: 100vh; */
@@ -203,8 +206,13 @@ export const CardSectionBottomRightButton = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 150px;
   /* height: 100vh; */
+  padding: 10px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: var(--neutral-dark-desaturated-blue--text-CTA-background);
+  color: var(--primary-pale-blue--CTA-text);
 
   @media (max-width: 700px) {
   }
