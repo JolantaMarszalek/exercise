@@ -163,6 +163,7 @@ export const CardSectionToggleSlider = styled.span`
   width: 50%;
   margin: 50px auto;
   /* height: 100vh; */
+  background-color: var(--primary-strong-cyan--slider-background);
 
   :hover {
     opacity: 1;
