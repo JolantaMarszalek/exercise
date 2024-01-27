@@ -1,3 +1,4 @@
+import { ChangeEvent, useState } from "react";
 import {
   CardSectionBottom,
   CardSectionBottomLeft,
@@ -30,21 +31,50 @@ import {
 } from "./Card.styled";
 
 export const Card = () => {
+  const [pageviews, setPageviews] = useState(100);
+  const [price, setPrice] = useState(16);
+
+  const handleSliderChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const value = parseInt(event.target.value);
+
+    if (value <= 20) {
+      setPageviews(10);
+      setPrice(8);
+    } else if (value <= 40) {
+      setPageviews(50);
+      setPrice(12);
+    } else if (value <= 60) {
+      setPageviews(100);
+      setPrice(16);
+    } else if (value <= 80) {
+      setPageviews(500);
+      setPrice(24);
+    } else {
+      setPageviews(1000);
+      setPrice(36);
+    }
+  };
+
   return (
     <>
       <CardSectionStyled>
         <CardSectionTop>
           <CardSectionTopLeft>
-            <CardSectionTopLeftText>100K Pageviews</CardSectionTopLeftText>
+            <CardSectionTopLeftText>
+              {pageviews}K Pageviews
+            </CardSectionTopLeftText>
           </CardSectionTopLeft>
           <CardSectionTopRight>
-            <CardSectionTopRightPrice>$16.00</CardSectionTopRightPrice>
+            <CardSectionTopRightPrice>${price}.00</CardSectionTopRightPrice>
             <CardSectionTopRightText>/month</CardSectionTopRightText>
           </CardSectionTopRight>
         </CardSectionTop>
         <CardSectionToggle>
           <CardSectionToggleSwitch>
-            <CardSectionToggleInput type="range" />
+            <CardSectionToggleInput
+              type="range"
+              onChange={handleSliderChange}
+            />
             <CardSectionToggleSlider />
           </CardSectionToggleSwitch>
         </CardSectionToggle>
