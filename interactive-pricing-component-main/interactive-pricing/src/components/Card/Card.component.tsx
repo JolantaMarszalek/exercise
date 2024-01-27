@@ -33,6 +33,8 @@ import {
 export const Card = () => {
   const [pageviews, setPageviews] = useState(100);
   const [price, setPrice] = useState(16);
+  const [isYearlyBilling, setIsYearlyBilling] = useState(false);
+  const [originalPrice, setOriginalPrice] = useState(16);
 
   const handleSliderChange = (event: ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(event.target.value);
@@ -52,6 +54,16 @@ export const Card = () => {
     } else {
       setPageviews(1000);
       setPrice(36);
+    }
+  };
+
+  const handleBillingToggle = () => {
+    setIsYearlyBilling((prev) => !prev);
+    if (isYearlyBilling) {
+      setPrice(originalPrice);
+    } else {
+      setOriginalPrice(price);
+      setPrice((prevPrice) => prevPrice * 0.75);
     }
   };
 
@@ -83,9 +95,12 @@ export const Card = () => {
             <CardSectionMiddleText>Monthly Billing</CardSectionMiddleText>
             <CardSectionMiddleLeftToggle>
               <ToggleSwitch>
-                <ToggleInput type="checkbox" />
+                <ToggleInput type="checkbox" onChange={handleBillingToggle} />
                 <Slider />
               </ToggleSwitch>
+              {/* <span>
+                {isYearlyBilling ? "Yearly Billing" : "Monthly Billing"}
+              </span> */}
             </CardSectionMiddleLeftToggle>
           </CardSectionMiddleLeft>
           <CardSectionMiddleRight>
