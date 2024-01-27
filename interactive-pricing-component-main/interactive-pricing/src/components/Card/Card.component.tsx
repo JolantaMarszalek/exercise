@@ -78,7 +78,7 @@ export const Card = () => {
           </CardSectionTopLeft>
           <CardSectionTopRight>
             <CardSectionTopRightPrice>${price}.00</CardSectionTopRightPrice>
-            <CardSectionTopRightText>/month</CardSectionTopRightText>
+            <CardSectionTopRightText>/ month</CardSectionTopRightText>
           </CardSectionTopRight>
         </CardSectionTop>
         <CardSectionToggle>

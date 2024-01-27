@@ -41,6 +41,7 @@ export const CardSectionTopLeft = styled.div`
   justify-content: center;
   width: 100%;
   /* height: 100vh; */
+  margin-top: 20px;
   text-transform: uppercase;
   color: var(--neutral-grayish-blue--text);
 
@@ -58,6 +59,8 @@ export const CardSectionTopLeftText = styled.div`
   justify-content: center;
   width: 100%;
   /* height: 100vh; */
+  padding: 10px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--neutral-grayish-blue--text);
 
@@ -74,6 +77,7 @@ export const CardSectionTopRight = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 20px;
   /* height: 100vh; */
   /* color: var(--neutral-grayish-blue--text); */
 
@@ -89,7 +93,11 @@ export const CardSectionTopRightPrice = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
+  font-size: 35px;
+  font-weight: bold;
+  padding: 10px;
+
   /* height: 100vh; */
   /* color: var(--neutral-grayish-blue--text); */
 
@@ -105,7 +113,9 @@ export const CardSectionTopRightText = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  padding: 10px;
+  letter-spacing: 1px;
+  /* width: 100%; */
   /* height: 100vh; */
   color: var(--neutral-grayish-blue--text);
 
@@ -341,6 +351,7 @@ export const CardSectionBottom = styled.div`
   justify-content: center;
   width: 100%;
   /* height: 100vh; */
+  border-top: 1px solid var(--neutral-light-grayish-blue--toggle-background);
 
   @media (max-width: 700px) {
   }
@@ -355,6 +366,7 @@ export const CardSectionBottomLeft = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 20px;
   /* height: 100vh; */
 
   @media (max-width: 700px) {
@@ -385,6 +397,7 @@ export const CardSectionBottomLeftListSingleLine = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding: 5px;
   /* height: 100vh; */
 
   @media (max-width: 700px) {
@@ -432,6 +445,7 @@ export const CardSectionBottomRight = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 20px;
   /* height: 100vh; */
 
   @media (max-width: 700px) {
@@ -441,7 +455,7 @@ export const CardSectionBottomRight = styled.div`
   }
 `;
 
-export const CardSectionBottomRightButton = styled.div`
+export const CardSectionBottomRightButton = styled.button`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -449,12 +463,22 @@ export const CardSectionBottomRightButton = styled.div`
   width: 180px;
   /* height: 100vh; */
   padding: 10px;
-  height: 30px;
+  height: 40px;
   border-radius: 25px;
   font-size: 13px;
   background-color: var(--neutral-dark-desaturated-blue--text-CTA-background);
   color: var(--primary-pale-blue--CTA-text);
   /* font-weight: bold; */
+
+  :hover {
+    /* background-color: var(--neutral-dark-desaturated-blue--text-CTA-background); */
+    color: var(--neutral-white--pricing-component-background);
+    cursor: pointer;
+  }
+
+  :active {
+    color: var(--neutral-white--pricing-component-background);
+  }
 
   @media (max-width: 700px) {
   }
