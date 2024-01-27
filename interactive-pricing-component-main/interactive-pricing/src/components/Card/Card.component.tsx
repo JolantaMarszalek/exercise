@@ -15,6 +15,9 @@ import {
   CardSectionMiddleText,
   CardSectionStyled,
   CardSectionToggle,
+  CardSectionToggleInput,
+  CardSectionToggleSlider,
+  CardSectionToggleSwitch,
   CardSectionTop,
   CardSectionTopLeft,
   CardSectionTopLeftText,
@@ -39,7 +42,12 @@ export const Card = () => {
             <CardSectionTopRightText>/month</CardSectionTopRightText>
           </CardSectionTopRight>
         </CardSectionTop>
-        <CardSectionToggle></CardSectionToggle>
+        <CardSectionToggle>
+          <CardSectionToggleSwitch>
+            <CardSectionToggleInput type="range" />
+            <CardSectionToggleSlider />
+          </CardSectionToggleSwitch>
+        </CardSectionToggle>
         <CardSectionMiddle>
           <CardSectionMiddleLeft>
             <CardSectionMiddleText>Monthly Billing</CardSectionMiddleText>

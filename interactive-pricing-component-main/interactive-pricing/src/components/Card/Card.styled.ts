@@ -131,6 +131,58 @@ export const CardSectionToggle = styled.div`
   }
 `;
 
+export const CardSectionToggleSwitch = styled.label`
+  width: 80%;
+  /* margin: 50px auto; */
+  /* height: 100vh; */
+
+  @media (max-width: 700px) {
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const CardSectionToggleInput = styled.input`
+  width: 100%;
+
+  /* display: none; */
+`;
+
+export const CardSectionToggleSlider = styled.span`
+  width: 50%;
+  margin: 50px auto;
+  /* height: 100vh; */
+
+  :hover {
+    opacity: 1;
+  }
+
+  ::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4caf50;
+    cursor: pointer;
+  }
+
+  ::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4caf50;
+    cursor: pointer;
+  }
+
+  @media (max-width: 700px) {
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
 export const CardSectionMiddle = styled.div`
   display: flex;
   /* flex-direction: column; */
