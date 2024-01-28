@@ -7,6 +7,7 @@ export const LayoutSectionStyled = styled.section`
   justify-content: center;
   width: 100%;
   height: 100vh;
+  background-color: var(--neutral-very-pale-blue--main-background);
 
   @media (max-width: 700px) {
   }
