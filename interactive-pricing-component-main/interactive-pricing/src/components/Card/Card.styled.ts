@@ -337,6 +337,19 @@ export const CardSectionMiddleRightPrice = styled.div`
   font-size: 11px;
   font-weight: bold;
 
+  .price {
+    display: none;
+  }
+
+  @media (max-width: 700px) {
+    .discount {
+      display: none;
+    }
+    .price {
+      display: inline-block;
+    }
+  }
+
   @media (max-width: 700px) {
     width: 100%;
   }

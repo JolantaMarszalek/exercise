@@ -106,7 +106,8 @@ export const Card = () => {
           <CardSectionMiddleRight>
             <CardSectionMiddleText>Yearly Billing</CardSectionMiddleText>
             <CardSectionMiddleRightPrice>
-              25% discount
+              <span className="discount">25% discount</span>
+              <span className="price">-25%</span>
             </CardSectionMiddleRightPrice>
           </CardSectionMiddleRight>
         </CardSectionMiddle>
