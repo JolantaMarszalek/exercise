@@ -27,6 +27,7 @@ export const TopSectionTitle = styled.div`
 
   @media (max-width: 700px) {
     width: auto;
+    font-size: 25px;
   }
 
   @media (max-width: 375px) {
@@ -44,6 +45,8 @@ export const TopSectionDescribe = styled.div`
 
   @media (max-width: 700px) {
     width: auto;
+    font-size: 13px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 375px) {

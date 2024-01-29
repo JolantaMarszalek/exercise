@@ -72,6 +72,7 @@ export const CardSectionTopLeftText = styled.div`
 
   @media (max-width: 700px) {
     width: 100%;
+    font-size: 13px;
   }
 
   @media (max-width: 375px) {
@@ -140,6 +141,7 @@ export const CardSectionTopRightPrice = styled.div`
   /* color: var(--neutral-grayish-blue--text); */
 
   @media (max-width: 700px) {
+    font-size: 30px;
   }
 
   @media (max-width: 375px) {
@@ -159,6 +161,7 @@ export const CardSectionTopRightText = styled.div`
 
   @media (max-width: 700px) {
     width: auto;
+    font-size: 13px;
   }
 
   @media (max-width: 375px) {
@@ -242,7 +245,10 @@ export const CardSectionMiddle = styled.div`
   /* height: 100vh; */
 
   @media (max-width: 700px) {
-    width: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   @media (max-width: 375px) {
@@ -380,6 +386,7 @@ export const CardSectionMiddleRightPrice = styled.div`
 
   @media (max-width: 700px) {
     width: 100%;
+    font-size: 10px;
   }
 
   @media (max-width: 375px) {
@@ -400,6 +407,7 @@ export const CardSectionMiddleText = styled.div`
 
   @media (max-width: 700px) {
     width: 100%;
+    font-size: 11px;
   }
 
   @media (max-width: 375px) {
@@ -499,6 +507,7 @@ export const CardSectionBottomLeftListSingleLineDescribe = styled.div`
   font-size: 13px;
 
   @media (max-width: 700px) {
+    font-size: 11px;
   }
 
   @media (max-width: 375px) {
@@ -547,6 +556,8 @@ export const CardSectionBottomRightButton = styled.button`
   }
 
   @media (max-width: 700px) {
+    font-size: 11px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: 375px) {
