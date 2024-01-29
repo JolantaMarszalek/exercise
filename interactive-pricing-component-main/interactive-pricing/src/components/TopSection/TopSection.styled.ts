@@ -26,6 +26,7 @@ export const TopSectionTitle = styled.div`
   font-weight: bold;
 
   @media (max-width: 700px) {
+    width: auto;
   }
 
   @media (max-width: 375px) {
@@ -42,6 +43,7 @@ export const TopSectionDescribe = styled.div`
   color: var(--neutral-grayish-blue--text);
 
   @media (max-width: 700px) {
+    width: auto;
   }
 
   @media (max-width: 375px) {

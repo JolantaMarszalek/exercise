@@ -13,9 +13,11 @@ export const CardSectionStyled = styled.section`
   background-color: var(--neutral-white--pricing-component-background);
 
   @media (max-width: 700px) {
+    width: auto;
   }
 
   @media (max-width: 375px) {
+    width: auto;
   }
 `;
 
@@ -28,9 +30,11 @@ export const CardSectionTop = styled.div`
   /* height: 100vh; */
 
   @media (max-width: 700px) {
+    width: 100%;
   }
 
   @media (max-width: 375px) {
+    width: 100%;
   }
 `;
 
@@ -46,9 +50,11 @@ export const CardSectionTopLeft = styled.div`
   color: var(--neutral-grayish-blue--text);
 
   @media (max-width: 700px) {
+    width: 100%;
   }
 
   @media (max-width: 375px) {
+    width: 100%;
   }
 `;
 
@@ -65,9 +71,11 @@ export const CardSectionTopLeftText = styled.div`
   color: var(--neutral-grayish-blue--text);
 
   @media (max-width: 700px) {
+    width: 100%;
   }
 
   @media (max-width: 375px) {
+    width: 100%;
   }
 `;
 
@@ -82,9 +90,11 @@ export const CardSectionTopRight = styled.div`
   /* color: var(--neutral-grayish-blue--text); */
 
   @media (max-width: 700px) {
+    width: 100%;
   }
 
   @media (max-width: 375px) {
+    width: 100%;
   }
 `;
 
@@ -120,6 +130,7 @@ export const CardSectionTopRightText = styled.div`
   color: var(--neutral-grayish-blue--text);
 
   @media (max-width: 700px) {
+    width: auto;
   }
 
   @media (max-width: 375px) {
@@ -203,9 +214,11 @@ export const CardSectionMiddle = styled.div`
   /* height: 100vh; */
 
   @media (max-width: 700px) {
+    width: 100%;
   }
 
   @media (max-width: 375px) {
+    width: 100%;
   }
 `;
 
@@ -219,9 +232,11 @@ export const CardSectionMiddleLeft = styled.div`
   justify-content: flex-end;
 
   @media (max-width: 700px) {
+    width: 100%;
   }
 
   @media (max-width: 375px) {
+    width: 100%;
   }
 `;
 
@@ -297,9 +312,11 @@ export const CardSectionMiddleRight = styled.div`
   justify-content: flex-start;
 
   @media (max-width: 700px) {
+    width: 100%;
   }
 
   @media (max-width: 375px) {
+    width: 100%;
   }
 `;
 
@@ -321,9 +338,11 @@ export const CardSectionMiddleRightPrice = styled.div`
   font-weight: bold;
 
   @media (max-width: 700px) {
+    width: 100%;
   }
 
   @media (max-width: 375px) {
+    width: 100%;
   }
 `;
 
@@ -339,9 +358,11 @@ export const CardSectionMiddleText = styled.div`
   font-size: 13px;
 
   @media (max-width: 700px) {
+    width: 100%;
   }
 
   @media (max-width: 375px) {
+    width: 100%;
   }
 `;
 
@@ -355,6 +376,9 @@ export const CardSectionBottom = styled.div`
   border-top: 1px solid var(--neutral-light-grayish-blue--toggle-background);
 
   @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   @media (max-width: 375px) {

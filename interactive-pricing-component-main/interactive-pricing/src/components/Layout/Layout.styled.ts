@@ -10,8 +10,10 @@ export const LayoutSectionStyled = styled.section`
   background-color: var(--neutral-very-pale-blue--main-background);
 
   @media (max-width: 700px) {
+    width: auto;
   }
 
   @media (max-width: 375px) {
+    width: auto;
   }
 `;
