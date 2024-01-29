@@ -22,7 +22,9 @@ import {
   CardSectionTop,
   CardSectionTopLeft,
   CardSectionTopLeftText,
-  CardSectionTopRight,
+  // CardSectionTopRight,
+  CardSectionTopRightDesktop,
+  CardSectionTopRightMedia,
   CardSectionTopRightPrice,
   CardSectionTopRightText,
   Slider,
@@ -76,10 +78,10 @@ export const Card = () => {
               {pageviews}K Pageviews
             </CardSectionTopLeftText>
           </CardSectionTopLeft>
-          <CardSectionTopRight>
+          <CardSectionTopRightDesktop>
             <CardSectionTopRightPrice>${price}.00</CardSectionTopRightPrice>
             <CardSectionTopRightText>/ month</CardSectionTopRightText>
-          </CardSectionTopRight>
+          </CardSectionTopRightDesktop>
         </CardSectionTop>
         <CardSectionToggle>
           <CardSectionToggleSwitch>
@@ -90,6 +92,10 @@ export const Card = () => {
             <CardSectionToggleSlider />
           </CardSectionToggleSwitch>
         </CardSectionToggle>
+        <CardSectionTopRightMedia>
+          <CardSectionTopRightPrice>${price}.00</CardSectionTopRightPrice>
+          <CardSectionTopRightText>/ month</CardSectionTopRightText>
+        </CardSectionTopRightMedia>
         <CardSectionMiddle>
           <CardSectionMiddleLeft>
             <CardSectionMiddleText>Monthly Billing</CardSectionMiddleText>

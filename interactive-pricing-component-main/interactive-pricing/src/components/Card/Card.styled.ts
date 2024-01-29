@@ -79,7 +79,7 @@ export const CardSectionTopLeftText = styled.div`
   }
 `;
 
-export const CardSectionTopRight = styled.div`
+export const CardSectionTopRightDesktop = styled.div`
   display: flex;
   /* flex-direction: column; */
   align-items: center;
@@ -90,7 +90,35 @@ export const CardSectionTopRight = styled.div`
   /* color: var(--neutral-grayish-blue--text); */
 
   @media (max-width: 700px) {
+    display: none;
+  }
+
+  @media (max-width: 700px) {
     width: 100%;
+  }
+
+  @media (max-width: 375px) {
+    width: 100%;
+  }
+`;
+
+export const CardSectionTopRightMedia = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  /* height: 100vh; */
+  /* color: var(--neutral-grayish-blue--text); */
+
+  @media (min-width: 700px) {
+    display: none;
+  }
+
+  @media (max-width: 700px) {
+    width: 100%;
+    margin-top: 0;
   }
 
   @media (max-width: 375px) {
