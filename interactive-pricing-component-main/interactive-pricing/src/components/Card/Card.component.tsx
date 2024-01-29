@@ -22,7 +22,8 @@ import {
   CardSectionTop,
   CardSectionTopLeft,
   CardSectionTopLeftText,
-  CardSectionTopRight,
+  CardSectionTopRightDesktop,
+  CardSectionTopRightMedia,
   CardSectionTopRightPrice,
   CardSectionTopRightText,
   Slider,
@@ -76,10 +77,10 @@ export const Card = () => {
               {pageviews}K Pageviews
             </CardSectionTopLeftText>
           </CardSectionTopLeft>
-          <CardSectionTopRight>
+          <CardSectionTopRightDesktop>
             <CardSectionTopRightPrice>${price}.00</CardSectionTopRightPrice>
             <CardSectionTopRightText>/ month</CardSectionTopRightText>
-          </CardSectionTopRight>
+          </CardSectionTopRightDesktop>
         </CardSectionTop>
         <CardSectionToggle>
           <CardSectionToggleSwitch>
@@ -90,6 +91,10 @@ export const Card = () => {
             <CardSectionToggleSlider />
           </CardSectionToggleSwitch>
         </CardSectionToggle>
+        <CardSectionTopRightMedia>
+          <CardSectionTopRightPrice>${price}.00</CardSectionTopRightPrice>
+          <CardSectionTopRightText>/ month</CardSectionTopRightText>
+        </CardSectionTopRightMedia>
         <CardSectionMiddle>
           <CardSectionMiddleLeft>
             <CardSectionMiddleText>Monthly Billing</CardSectionMiddleText>
@@ -98,15 +103,13 @@ export const Card = () => {
                 <ToggleInput type="checkbox" onChange={handleBillingToggle} />
                 <Slider />
               </ToggleSwitch>
-              {/* <span>
-                {isYearlyBilling ? "Yearly Billing" : "Monthly Billing"}
-              </span> */}
             </CardSectionMiddleLeftToggle>
           </CardSectionMiddleLeft>
           <CardSectionMiddleRight>
             <CardSectionMiddleText>Yearly Billing</CardSectionMiddleText>
             <CardSectionMiddleRightPrice>
-              25% discount
+              <span className="discount">25% discount</span>
+              <span className="price">-25%</span>
             </CardSectionMiddleRightPrice>
           </CardSectionMiddleRight>
         </CardSectionMiddle>
