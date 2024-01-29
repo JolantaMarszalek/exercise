@@ -15,25 +15,15 @@ export const CardSectionStyled = styled.section`
   @media (max-width: 700px) {
     width: auto;
   }
-
-  @media (max-width: 375px) {
-    width: auto;
-  }
 `;
 
 export const CardSectionTop = styled.div`
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* height: 100vh; */
 
   @media (max-width: 700px) {
-    width: 100%;
-  }
-
-  @media (max-width: 375px) {
     width: 100%;
   }
 `;
@@ -44,16 +34,11 @@ export const CardSectionTopLeft = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* height: 100vh; */
   margin-top: 20px;
   text-transform: uppercase;
   color: var(--neutral-grayish-blue--text);
 
   @media (max-width: 700px) {
-    width: 100%;
-  }
-
-  @media (max-width: 375px) {
     width: 100%;
   }
 `;
@@ -64,7 +49,6 @@ export const CardSectionTopLeftText = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* height: 100vh; */
   padding: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -74,21 +58,14 @@ export const CardSectionTopLeftText = styled.div`
     width: 100%;
     font-size: 13px;
   }
-
-  @media (max-width: 375px) {
-    width: 100%;
-  }
 `;
 
 export const CardSectionTopRightDesktop = styled.div`
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: 100%;
   margin-top: 20px;
-  /* height: 100vh; */
-  /* color: var(--neutral-grayish-blue--text); */
 
   @media (max-width: 700px) {
     display: none;
@@ -97,21 +74,14 @@ export const CardSectionTopRightDesktop = styled.div`
   @media (max-width: 700px) {
     width: 100%;
   }
-
-  @media (max-width: 375px) {
-    width: 100%;
-  }
 `;
 
 export const CardSectionTopRightMedia = styled.div`
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: 100%;
   margin-top: 20px;
-  /* height: 100vh; */
-  /* color: var(--neutral-grayish-blue--text); */
 
   @media (min-width: 700px) {
     display: none;
@@ -121,10 +91,6 @@ export const CardSectionTopRightMedia = styled.div`
     width: 100%;
     margin-top: 0;
   }
-
-  @media (max-width: 375px) {
-    width: 100%;
-  }
 `;
 
 export const CardSectionTopRightPrice = styled.div`
@@ -132,19 +98,12 @@ export const CardSectionTopRightPrice = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* width: 100%; */
   font-size: 35px;
   font-weight: bold;
   padding: 10px;
 
-  /* height: 100vh; */
-  /* color: var(--neutral-grayish-blue--text); */
-
   @media (max-width: 700px) {
     font-size: 30px;
-  }
-
-  @media (max-width: 375px) {
   }
 `;
 
@@ -155,16 +114,11 @@ export const CardSectionTopRightText = styled.div`
   justify-content: center;
   padding: 10px;
   letter-spacing: 1px;
-  /* width: 100%; */
-  /* height: 100vh; */
   color: var(--neutral-grayish-blue--text);
 
   @media (max-width: 700px) {
     width: auto;
     font-size: 13px;
-  }
-
-  @media (max-width: 375px) {
   }
 `;
 
@@ -174,37 +128,25 @@ export const CardSectionToggle = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* height: 100vh; */
 
   @media (max-width: 700px) {
-  }
-
-  @media (max-width: 375px) {
   }
 `;
 
 export const CardSectionToggleSwitch = styled.label`
   width: 80%;
-  /* margin: 50px auto; */
-  /* height: 100vh; */
 
   @media (max-width: 700px) {
-  }
-
-  @media (max-width: 375px) {
   }
 `;
 
 export const CardSectionToggleInput = styled.input`
   width: 100%;
-
-  /* display: none; */
 `;
 
 export const CardSectionToggleSlider = styled.span`
   width: 50%;
   margin: 50px auto;
-  /* height: 100vh; */
   background-color: var(--primary-strong-cyan--slider-background);
 
   :hover {
@@ -231,18 +173,13 @@ export const CardSectionToggleSlider = styled.span`
 
   @media (max-width: 700px) {
   }
-
-  @media (max-width: 375px) {
-  }
 `;
 
 export const CardSectionMiddle = styled.div`
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* height: 100vh; */
 
   @media (max-width: 700px) {
     width: auto;
@@ -250,42 +187,27 @@ export const CardSectionMiddle = styled.div`
     align-items: center;
     justify-content: center;
   }
-
-  @media (max-width: 375px) {
-    width: 100%;
-  }
 `;
 
 export const CardSectionMiddleLeft = styled.div`
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* height: 100vh; */
   justify-content: flex-end;
 
   @media (max-width: 700px) {
-    width: 100%;
-  }
-
-  @media (max-width: 375px) {
     width: 100%;
   }
 `;
 
 export const CardSectionMiddleLeftToggle = styled.div`
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: auto;
-  /* height: 100vh; */
 
   @media (max-width: 700px) {
-  }
-
-  @media (max-width: 375px) {
   }
 `;
 
@@ -338,31 +260,21 @@ export const Slider = styled.span`
 
 export const CardSectionMiddleRight = styled.div`
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* height: 100vh; */
   justify-content: flex-start;
 
   @media (max-width: 700px) {
-    width: 100%;
-  }
-
-  @media (max-width: 375px) {
     width: 100%;
   }
 `;
 
 export const CardSectionMiddleRightPrice = styled.div`
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  /* width: 100%; */
-  /* height: 100vh; */
   width: 100px;
-  /* height: 100vh; */
   padding: 10px;
   height: 10px;
   border-radius: 25px;
@@ -388,19 +300,13 @@ export const CardSectionMiddleRightPrice = styled.div`
     width: 100%;
     font-size: 10px;
   }
-
-  @media (max-width: 375px) {
-    width: 100%;
-  }
 `;
 
 export const CardSectionMiddleText = styled.div`
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: auto;
-  /* height: 100vh; */
   padding: 10px;
   color: var(--neutral-grayish-blue--text);
   font-size: 13px;
@@ -409,28 +315,19 @@ export const CardSectionMiddleText = styled.div`
     width: 100%;
     font-size: 11px;
   }
-
-  @media (max-width: 375px) {
-    width: 100%;
-  }
 `;
 
 export const CardSectionBottom = styled.div`
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* height: 100vh; */
   border-top: 1px solid var(--neutral-light-grayish-blue--toggle-background);
 
   @media (max-width: 700px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  @media (max-width: 375px) {
   }
 `;
 
@@ -441,12 +338,8 @@ export const CardSectionBottomLeft = styled.div`
   justify-content: center;
   width: 100%;
   margin-top: 20px;
-  /* height: 100vh; */
 
   @media (max-width: 700px) {
-  }
-
-  @media (max-width: 375px) {
   }
 `;
 
@@ -456,28 +349,19 @@ export const CardSectionBottomLeftList = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* height: 100vh; */
 
   @media (max-width: 700px) {
-  }
-
-  @media (max-width: 375px) {
   }
 `;
 
 export const CardSectionBottomLeftListSingleLine = styled.div`
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: 100%;
   padding: 5px;
-  /* height: 100vh; */
 
   @media (max-width: 700px) {
-  }
-
-  @media (max-width: 375px) {
   }
 `;
 
@@ -487,30 +371,21 @@ export const CardSectionBottomLeftListSingleLineImage = styled.div`
   align-items: center;
   justify-content: center;
   width: 200px;
-  /* height: 100vh; */
 
   @media (max-width: 700px) {
-  }
-
-  @media (max-width: 375px) {
   }
 `;
 
 export const CardSectionBottomLeftListSingleLineDescribe = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   width: 100%;
-  /* height: 100vh; */
   color: var(--neutral-grayish-blue--text);
   font-size: 13px;
 
   @media (max-width: 700px) {
     font-size: 11px;
-  }
-
-  @media (max-width: 375px) {
   }
 `;
 
@@ -521,12 +396,8 @@ export const CardSectionBottomRight = styled.div`
   justify-content: center;
   width: 100%;
   margin-top: 20px;
-  /* height: 100vh; */
 
   @media (max-width: 700px) {
-  }
-
-  @media (max-width: 375px) {
   }
 `;
 
@@ -536,17 +407,14 @@ export const CardSectionBottomRightButton = styled.button`
   align-items: center;
   justify-content: center;
   width: 180px;
-  /* height: 100vh; */
   padding: 10px;
   height: 40px;
   border-radius: 25px;
   font-size: 13px;
   background-color: var(--neutral-dark-desaturated-blue--text-CTA-background);
   color: var(--primary-pale-blue--CTA-text);
-  /* font-weight: bold; */
 
   :hover {
-    /* background-color: var(--neutral-dark-desaturated-blue--text-CTA-background); */
     color: var(--neutral-white--pricing-component-background);
     cursor: pointer;
   }
@@ -558,8 +426,5 @@ export const CardSectionBottomRightButton = styled.button`
   @media (max-width: 700px) {
     font-size: 11px;
     margin-bottom: 20px;
-  }
-
-  @media (max-width: 375px) {
   }
 `;

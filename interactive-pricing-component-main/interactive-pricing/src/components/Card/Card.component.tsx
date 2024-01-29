@@ -22,7 +22,6 @@ import {
   CardSectionTop,
   CardSectionTopLeft,
   CardSectionTopLeftText,
-  // CardSectionTopRight,
   CardSectionTopRightDesktop,
   CardSectionTopRightMedia,
   CardSectionTopRightPrice,
@@ -104,9 +103,6 @@ export const Card = () => {
                 <ToggleInput type="checkbox" onChange={handleBillingToggle} />
                 <Slider />
               </ToggleSwitch>
-              {/* <span>
-                {isYearlyBilling ? "Yearly Billing" : "Monthly Billing"}
-              </span> */}
             </CardSectionMiddleLeftToggle>
           </CardSectionMiddleLeft>
           <CardSectionMiddleRight>
