@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
 body {
     font-family: 'Commissioner', sans-serif;
     font-size: 16px;
-    margin: 0;
+    margin: 0;background-color: hsl(0, 0%, 98%);
 }
 
 #root {

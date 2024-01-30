@@ -9,6 +9,8 @@ export const CardTopSection = styled.section`
   height: 200px;
   /* position: relative; */
   /* z-index: 2; */
+  border-radius: 10px;
+  margin: 10px;
   background-color: yellow;
 
   @media (max-width: 1024px) {

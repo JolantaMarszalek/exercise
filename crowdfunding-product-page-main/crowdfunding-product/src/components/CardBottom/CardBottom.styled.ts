@@ -10,6 +10,8 @@ export const CardBottomSection = styled.section`
   /* height: 100vh; */
   /* position: relative; */
   /* z-index: 2; */
+  border-radius: 10px;
+  margin: 10px;
 
   background-color: pink;
 

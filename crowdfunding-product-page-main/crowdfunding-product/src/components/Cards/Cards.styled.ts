@@ -5,10 +5,10 @@ export const CardsSection = styled.section`
   justify-content: space-between;
   align-items: center;
   width: auto;
-  height: auto;
+  /* height: 100vh; */
   /* position: relative; */
   /* z-index: 2; */
-  /* background-color: green; */
+  /* background-color: hsl(0, 0%, 98%); */
   flex-direction: column;
   margin-top: 100px;
 
