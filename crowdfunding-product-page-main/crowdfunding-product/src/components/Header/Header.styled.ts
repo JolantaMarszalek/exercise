@@ -41,7 +41,7 @@ export const HeaderSectionLogo = styled.div`
   display: flex;
   padding: 15px;
   justify-content: center;
-  margin-left: 100px;
+  margin-left: 200px;
   margin-top: 50px;
   z-index: 1;
 `;
@@ -54,7 +54,7 @@ export const HeaderSectionLink = styled.div`
   display: flex;
   gap: 20px;
   margin-top: 50px;
-  margin-right: 100px;
+  margin-right: 200px;
   width: 100%;
   color: white;
   z-index: 1;
