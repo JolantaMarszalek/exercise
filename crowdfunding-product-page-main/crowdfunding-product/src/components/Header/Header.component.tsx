@@ -3,8 +3,8 @@ import {
   HeaderSectionLink,
   HeaderSectionLogo,
   HeaderSectionSingleLink,
-  HeaderSectionRightSide,
   HeaderSectionBackground,
+  BackgroundImage,
 } from "./Header.styled";
 import imageHeroDesktop from "../../../../images/image-hero-desktop.jpg";
 
@@ -13,7 +13,9 @@ export const Header = () => {
     <>
       <HeaderSection className="my-component">
         <HeaderSectionBackground>
-          <img src={imageHeroDesktop} alt="Header Background" />
+          <BackgroundImage src={imageHeroDesktop} alt="Header Background" />
+
+          {/* <img src={imageHeroDesktop} alt="Header Background" /> */}
         </HeaderSectionBackground>
         <HeaderSectionLogo>
           <svg width="128" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +31,6 @@ export const Header = () => {
           <HeaderSectionSingleLink>Discover</HeaderSectionSingleLink>
           <HeaderSectionSingleLink>Get Started</HeaderSectionSingleLink>
         </HeaderSectionLink>
-        <HeaderSectionRightSide></HeaderSectionRightSide>
       </HeaderSection>
     </>
   );
