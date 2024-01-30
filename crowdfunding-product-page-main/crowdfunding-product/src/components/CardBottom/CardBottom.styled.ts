@@ -12,8 +12,8 @@ export const CardBottomSection = styled.section`
   /* z-index: 2; */
   border-radius: 10px;
   margin: 10px;
-
-  background-color: pink;
+  border: 1px solid lightgray;
+  background-color: white;
 
   @media (max-width: 1024px) {
     width: auto;

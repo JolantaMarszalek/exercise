@@ -12,6 +12,8 @@ export const CardMiddleSection = styled.section`
   /* z-index: 2; */
   background-color: blue;
   margin: 10px;
+  border: 1px solid lightgray;
+  background-color: white;
 
   border-radius: 10px;
 
