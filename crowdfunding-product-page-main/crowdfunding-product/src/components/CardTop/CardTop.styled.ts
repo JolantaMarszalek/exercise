@@ -7,8 +7,6 @@ export const CardTopSection = styled.section`
   align-items: center;
   width: 70%;
   height: 250px;
-  /* position: relative; */
-  /* z-index: 2; */
   border-radius: 10px;
   margin: 10px;
   background-color: white;
@@ -70,7 +68,6 @@ export const CardTopSectionDescribe = styled.div`
 
 export const CardTopSectionButtons = styled.div`
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -89,7 +86,6 @@ export const CardTopSectionLeftButton = styled.button`
   align-items: center;
   justify-content: center;
   width: 180px;
-  /* padding: 10px; */
   height: 55px;
   border-radius: 30px;
   font-size: 13px;
@@ -106,7 +102,6 @@ export const CardTopSectionLeftButton = styled.button`
 
 export const CardTopSectionRightButton = styled.button`
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: flex-start;
   gap: 5px;

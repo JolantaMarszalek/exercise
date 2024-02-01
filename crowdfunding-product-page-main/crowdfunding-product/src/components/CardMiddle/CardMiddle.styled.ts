@@ -7,9 +7,6 @@ export const CardMiddleSection = styled.section`
   align-items: center;
   width: 80%;
   height: 200px;
-  /* height: 100vh; */
-  /* position: relative; */
-  /* z-index: 2; */
   background-color: blue;
   margin: 10px;
   border: 1px solid lightgray;
