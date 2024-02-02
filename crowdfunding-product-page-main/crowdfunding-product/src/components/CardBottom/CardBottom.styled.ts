@@ -7,9 +7,6 @@ export const CardBottomSection = styled.section`
   align-items: center;
   width: 80%;
   height: 200px;
-  /* height: 100vh; */
-  /* position: relative; */
-  /* z-index: 2; */
   border-radius: 10px;
   margin: 10px;
   border: 1px solid lightgray;

@@ -5,9 +5,7 @@ export const HeaderSection = styled.section`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* height: 100vh; */
   position: relative;
-  /* z-index: 2; */
 
   @media (max-width: 1024px) {
     width: auto;
@@ -25,7 +23,6 @@ export const HeaderSectionBackground = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  /* height: 100%; */
   z-index: -1;
 `;
 
@@ -37,7 +34,6 @@ export const BackgroundImage = styled.img`
 
 export const HeaderSectionLogo = styled.div`
   position: static;
-  /* flex-direction: column; */
   display: flex;
   padding: 15px;
   justify-content: center;
@@ -69,34 +65,4 @@ export const HeaderSectionSingleLink = styled.div`
   gap: 20px;
   margin: 10px;
   width: auto;
-  /* color: var(); */
-`;
-
-export const HeaderSectionRightSide = styled.div`
-  position: static;
-  display: flex;
-  padding: 15px;
-  justify-content: center;
-  margin-right: 100px;
-`;
-
-export const HeaderSectionCart = styled.div`
-  position: static;
-  flex-direction: column;
-  display: flex;
-  padding: 15px;
-  justify-content: center;
-`;
-
-export const HeaderSectionAvatar = styled.div`
-  position: static;
-  flex-direction: column;
-  display: flex;
-  padding: 15px;
-  justify-content: center;
-
-  img {
-    width: 50px;
-    height: 50px;
-  }
 `;
