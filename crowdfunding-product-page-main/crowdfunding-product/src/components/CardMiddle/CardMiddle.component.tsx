@@ -1,6 +1,6 @@
-import { CardBottomSection } from "../CardBottom/CardBottom.styled";
 import {
   CardMiddleSection,
+  CardMiddleSectionBottom,
   CardMiddleSectionTop,
   CardMiddleSectionTopSinglePart,
   CardMiddleSectionTopSinglePartDescribe,
@@ -38,7 +38,7 @@ export const CardMiddle = () => {
           </CardMiddleSectionTopSinglePart>
         </CardMiddleSectionTop>
       </CardMiddleSection>
-      <CardBottomSection></CardBottomSection>
+      <CardMiddleSectionBottom></CardMiddleSectionBottom>
     </>
   );
 };

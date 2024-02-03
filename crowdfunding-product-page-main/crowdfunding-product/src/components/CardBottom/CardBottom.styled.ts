@@ -6,11 +6,233 @@ export const CardBottomSection = styled.section`
   justify-content: space-between;
   align-items: center;
   width: 50%;
-  height: 200px;
+  height: auto;
   border-radius: 10px;
   margin: 10px;
   border: 1px solid lightgray;
   background-color: white;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+export const CardBottomSectionTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const CardBottomSectionDescribe = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 25px; */
+  /* font-weight: bold; */
+  color: var(--neutral-dark-gray);
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const CardBottomSectionCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 25px; */
+  /* font-weight: bold; */
+  /* color: var(--neutral-dark-gray); */
+  border: 1px solid var(--neutral-dark-gray);
+  border-radius: 10px;
+  width: 90%;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+export const CardBottomSectionCardTop = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  /* font-size: 25px; */
+  /* font-weight: bold; */
+  /* color: var(--neutral-dark-gray); */
+  width: 90%;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const CardBottomSectionCardTopTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 25px; */
+  /* font-weight: bold; */
+  /* color: var(--neutral-dark-gray); */
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const CardBottomSectionCardTopPrice = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 25px; */
+  /* font-weight: bold; */
+  color: var(--neutral-dark-gray);
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const CardBottomSectionCardDescribe = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* font-size: 25px; */
+  /* font-weight: bold; */
+  color: var(--neutral-dark-gray);
+  width: 90%;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const CardBottomSectionCardBottom = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 25px; */
+  /* font-weight: bold; */
+  color: var(--neutral-dark-gray);
+  width: 90%;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const CardBottomSectionCardBottomLeft = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 25px; */
+  /* font-weight: bold; */
+  color: var(--neutral-dark-gray);
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+export const CardBottomSectionCardBottomLeftNumber = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 25px; */
+  /* font-weight: bold; */
+  color: var(--neutral-dark-gray);
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+export const CardBottomSectionCardBottomLeftDescribe = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 25px; */
+  /* font-weight: bold; */
+  color: var(--neutral-dark-gray);
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+export const CardBottomSectionCardBottomButtonSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 25px; */
+  /* font-weight: bold; */
+  color: var(--neutral-dark-gray);
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const CardBottomSectionCardBottomButton = styled.button`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 25px; */
+  /* font-weight: bold; */
+  color: var(--neutral-dark-gray);
 
   @media (max-width: 1024px) {
     width: auto;

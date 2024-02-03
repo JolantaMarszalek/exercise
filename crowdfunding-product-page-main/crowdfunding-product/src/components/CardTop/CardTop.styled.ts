@@ -6,7 +6,7 @@ export const CardTopSection = styled.section`
   justify-content: space-around;
   align-items: center;
   width: 50%;
-  height: 250px;
+  height: 300px;
   border-radius: 10px;
   margin: 10px;
   background-color: white;
