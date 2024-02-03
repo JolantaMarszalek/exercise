@@ -5,7 +5,7 @@ export const CardBottomSection = styled.section`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 50%;
   height: 200px;
   border-radius: 10px;
   margin: 10px;
