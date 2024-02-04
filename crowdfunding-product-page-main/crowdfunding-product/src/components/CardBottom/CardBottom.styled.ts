@@ -24,9 +24,10 @@ export const CardBottomSectionTitle = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   width: 90%;
+  padding: 10px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -43,6 +44,7 @@ export const CardBottomSectionDescribe = styled.div`
   align-items: center;
   color: var(--neutral-dark-gray);
   width: 90%;
+  padding: 10px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -180,6 +182,7 @@ export const CardBottomSectionCardBottomLeftDescribe = styled.div`
   justify-content: space-between;
   align-items: center;
   color: var(--neutral-dark-gray);
+  padding-left: 10px;
 
   @media (max-width: 1024px) {
     width: auto;
