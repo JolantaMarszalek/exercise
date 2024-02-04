@@ -23,9 +23,10 @@ export const CardBottomSectionTitle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   font-size: 30px;
   font-weight: bold;
+  width: 90%;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -41,6 +42,7 @@ export const CardBottomSectionDescribe = styled.div`
   justify-content: space-between;
   align-items: center;
   color: var(--neutral-dark-gray);
+  width: 90%;
 
   @media (max-width: 1024px) {
     width: auto;
