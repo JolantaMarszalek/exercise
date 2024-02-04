@@ -5,8 +5,8 @@ export const CardTopSection = styled.section`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 70%;
-  height: 250px;
+  width: 50%;
+  height: 300px;
   border-radius: 10px;
   margin: 10px;
   background-color: white;
