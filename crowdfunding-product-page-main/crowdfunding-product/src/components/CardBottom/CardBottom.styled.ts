@@ -28,6 +28,8 @@ export const CardBottomSectionTitle = styled.div`
   font-weight: bold;
   width: 90%;
   padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -45,6 +47,7 @@ export const CardBottomSectionDescribe = styled.div`
   color: var(--neutral-dark-gray);
   width: 90%;
   padding: 10px;
+  margin-bottom: 10px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -63,7 +66,7 @@ export const CardBottomSectionCard = styled.div`
   border-radius: 10px;
   width: 90%;
   height: 200px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 
   @media (max-width: 1024px) {
