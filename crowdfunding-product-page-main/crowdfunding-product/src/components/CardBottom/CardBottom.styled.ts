@@ -97,6 +97,7 @@ export const CardBottomSectionCardTopTitle = styled.div`
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
+  font-size: 20px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -208,12 +209,32 @@ export const CardBottomSectionCardBottomButtonSection = styled.div`
   }
 `;
 
-export const CardBottomSectionCardBottomButton = styled.button`
+export const CardBottomSectionCardBottomGreenButton = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--primary-moderate-cyan);
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  width: 150px;
+  height: 50px;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const CardBottomSectionCardBottomGreyButton = styled.button`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-dark-gray);
   color: white;
   border: 0;
   border-radius: 30px;

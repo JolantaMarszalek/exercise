@@ -2,8 +2,9 @@ import {
   CardBottomSection,
   CardBottomSectionCard,
   CardBottomSectionCardBottom,
-  CardBottomSectionCardBottomButton,
   CardBottomSectionCardBottomButtonSection,
+  CardBottomSectionCardBottomGreenButton,
+  CardBottomSectionCardBottomGreyButton,
   CardBottomSectionCardBottomLeft,
   CardBottomSectionCardBottomLeftDescribe,
   CardBottomSectionCardBottomLeftNumber,
@@ -56,9 +57,9 @@ export const CardBottom = () => {
               </CardBottomSectionCardBottomLeftDescribe>
             </CardBottomSectionCardBottomLeft>
             <CardBottomSectionCardBottomButtonSection>
-              <CardBottomSectionCardBottomButton>
+              <CardBottomSectionCardBottomGreenButton>
                 Select Reward
-              </CardBottomSectionCardBottomButton>
+              </CardBottomSectionCardBottomGreenButton>
             </CardBottomSectionCardBottomButtonSection>
           </CardBottomSectionCardBottom>
         </CardBottomSectionCard>
@@ -86,9 +87,9 @@ export const CardBottom = () => {
               </CardBottomSectionCardBottomLeftDescribe>
             </CardBottomSectionCardBottomLeft>
             <CardBottomSectionCardBottomButtonSection>
-              <CardBottomSectionCardBottomButton>
+              <CardBottomSectionCardBottomGreenButton>
                 Select Reward
-              </CardBottomSectionCardBottomButton>
+              </CardBottomSectionCardBottomGreenButton>
             </CardBottomSectionCardBottomButtonSection>
           </CardBottomSectionCardBottom>
         </CardBottomSectionCard>
@@ -116,9 +117,9 @@ export const CardBottom = () => {
               </CardBottomSectionCardBottomLeftDescribe>
             </CardBottomSectionCardBottomLeft>
             <CardBottomSectionCardBottomButtonSection>
-              <CardBottomSectionCardBottomButton>
+              <CardBottomSectionCardBottomGreyButton>
                 Out of Stock
-              </CardBottomSectionCardBottomButton>
+              </CardBottomSectionCardBottomGreyButton>
             </CardBottomSectionCardBottomButtonSection>
           </CardBottomSectionCardBottom>
         </CardBottomSectionCard>
