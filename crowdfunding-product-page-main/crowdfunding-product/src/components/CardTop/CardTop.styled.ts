@@ -40,7 +40,7 @@ export const CardTopSectionTitle = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
 
   @media (max-width: 1024px) {
@@ -68,9 +68,9 @@ export const CardTopSectionDescribe = styled.div`
 
 export const CardTopSectionButtons = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
 
   @media (max-width: 1024px) {
     width: auto;
