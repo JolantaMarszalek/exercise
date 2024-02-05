@@ -25,11 +25,12 @@ export const CardMiddleSection = styled.section`
 export const CardMiddleSectionTop = styled.div`
   display: flex;
   /* flex-direction: column; */
-  justify-content: space-evenly;
+
+  justify-content: space-between;
   align-items: center;
   /* font-size: 25px; */
   /* font-weight: bold; */
-  width: 100%;
+  width: 90%;
   grid-template-columns: repeat(3, 1fr);
   /* margin-left: 100px;
   margin-right: 100px; */
@@ -49,7 +50,7 @@ export const CardMiddleSectionTopSinglePart = styled.div`
   align-items: center;
   /* font-size: 25px; */
   /* font-weight: bold; */
-  width: auto;
+  width: 200px;
   align-items: flex-start;
 
   @media (max-width: 1024px) {
@@ -67,6 +68,7 @@ export const CardMiddleSectionTopSinglePartTitle = styled.div`
   align-items: center;
   font-size: 30px;
   font-weight: bold;
+  margin-bottom: 10px;
 
   @media (max-width: 1024px) {
     width: auto;
