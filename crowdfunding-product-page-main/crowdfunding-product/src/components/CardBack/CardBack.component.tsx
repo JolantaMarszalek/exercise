@@ -22,7 +22,7 @@ import {
 export const CardBack = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isCheckedArray, setIsCheckedArray] = useState([false, false, false]);
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpandedArray, setIsExpandedArray] = useState([false, false, false]);
 
   const openLightbox = () => {
     setIsOpen(true);
@@ -34,13 +34,11 @@ export const CardBack = () => {
 
   const handleCheckboxClick = (index) => {
     const newCheckedArray = [...isCheckedArray];
+    const newExpandedArray = [...isExpandedArray];
     newCheckedArray[index] = !newCheckedArray[index];
+    newExpandedArray[index] = !newExpandedArray[index];
     setIsCheckedArray(newCheckedArray);
-    toggleExpand();
-  };
-
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
+    setIsExpandedArray(newExpandedArray);
   };
 
   return (
@@ -55,6 +53,7 @@ export const CardBack = () => {
             Want to support us in bringing Mastercraft Bamboo Monitor Riser out
             in the world?
           </CardBackSectionDescribe>
+
           <CardBackSectionCard>
             <CardBackSectionCardLeft>
               <CardBackSectionCardCheckbox
@@ -73,6 +72,11 @@ export const CardBack = () => {
                 our project. As a backer, you will be signed up to receive
                 product updates via email.
               </CardBackSectionCardDescribe>
+              {isCheckedArray[0] && (
+                <CardBackSectionCardDescribe>
+                  Dodatkowy tekst po zaznaczeniu checkboxa
+                </CardBackSectionCardDescribe>
+              )}
             </CardBackSectionCardRight>
           </CardBackSectionCard>
           <CardBackSectionCard>
@@ -104,7 +108,11 @@ export const CardBack = () => {
                 us launch our promotional campaign, and you’ll be added to a
                 special Backer member list.
               </CardBackSectionCardDescribe>
-              {isExpanded && <></>}
+              {isCheckedArray[1] && (
+                <CardBackSectionCardDescribe>
+                  Dodatkowy tekst po zaznaczeniu checkboxa
+                </CardBackSectionCardDescribe>
+              )}
             </CardBackSectionCardRight>
           </CardBackSectionCard>
 
@@ -137,6 +145,11 @@ export const CardBack = () => {
                 thank you. You’ll be added to our Backer member list. Shipping
                 is included.
               </CardBackSectionCardDescribe>
+              {isCheckedArray[2] && (
+                <CardBackSectionCardDescribe>
+                  Dodatkowy tekst po zaznaczeniu checkboxa
+                </CardBackSectionCardDescribe>
+              )}
             </CardBackSectionCardRight>
           </CardBackSectionCard>
 
@@ -168,7 +181,12 @@ export const CardBack = () => {
                 You get two Special Edition Mahogany stands, a Backer T-Shirt,
                 and a personal thank you. You’ll be added to our Backer member
                 list. Shipping is included.
-              </CardBackSectionCardDescribe>
+              </CardBackSectionCardDescribe>{" "}
+              {isCheckedArray[3] && (
+                <CardBackSectionCardDescribe>
+                  Dodatkowy tekst po zaznaczeniu checkboxa
+                </CardBackSectionCardDescribe>
+              )}
             </CardBackSectionCardRight>
           </CardBackSectionCard>
         </CardBackSection>
