@@ -51,7 +51,7 @@ export const CardBackSectionTitle = styled.div`
   font-weight: bold;
   width: 90%;
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 10px;
 
   @media (max-width: 1024px) {
@@ -114,13 +114,45 @@ export const CardBackSectionCardTop = styled.div`
   }
 `;
 
+export const CardBackSectionCardTopLeft = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  width: auto;
+  gap: 10px;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const CardBackSectionCardTopRight = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  width: auto;
+  gap: 10px;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
 export const CardBackSectionCardTopTitle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -167,7 +199,24 @@ export const CardBackSectionCardNumber = styled.div`
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const CardBackSectionButton = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-weight: bold;
+  font-size: 20px;
+  width: 100%;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -178,13 +227,17 @@ export const CardBackSectionCardNumber = styled.div`
 `;
 
 export const CloseButton = styled.button`
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
+  /* position: absolute; */
+  /* top: 10px; */
+  /* right: 10px; */
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  width: 30px;
   cursor: pointer;
   background: transparent;
   border: none;
-  color: white;
+  color: black;
   z-index: 999;
 `;

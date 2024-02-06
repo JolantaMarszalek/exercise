@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import {
   CardBackContainer,
   CardBackSection,
+  CardBackSectionButton,
   CardBackSectionCard,
   CardBackSectionCardDescribe,
   CardBackSectionCardNumber,
   CardBackSectionCardTop,
+  CardBackSectionCardTopLeft,
   CardBackSectionCardTopPrice,
+  CardBackSectionCardTopRight,
   CardBackSectionCardTopTitle,
   CardBackSectionDescribe,
   CardBackSectionTitle,
@@ -28,6 +31,9 @@ export const CardBack = () => {
     <>
       <CardBackContainer>
         <CardBackSection>
+          <CardBackSectionButton>
+            <CloseButton onClick={closeLightbox}>x</CloseButton>
+          </CardBackSectionButton>
           <CardBackSectionTitle>Back this project</CardBackSectionTitle>
           <CardBackSectionDescribe>
             Want to support us in bringing Mastercraft Bamboo Monitor Riser out
@@ -47,14 +53,18 @@ export const CardBack = () => {
           </CardBackSectionCard>
           <CardBackSectionCard>
             <CardBackSectionCardTop>
-              <CardBackSectionCardTopTitle>
-                Bamboo Stand
-              </CardBackSectionCardTopTitle>
-              <CardBackSectionCardTopPrice>
-                Pledge $25 or more
-              </CardBackSectionCardTopPrice>
-              <CardBackSectionCardNumber>101</CardBackSectionCardNumber>
-              <CardBackSectionCardDescribe>left</CardBackSectionCardDescribe>
+              <CardBackSectionCardTopLeft>
+                <CardBackSectionCardTopTitle>
+                  Bamboo Stand
+                </CardBackSectionCardTopTitle>
+                <CardBackSectionCardTopPrice>
+                  Pledge $25 or more
+                </CardBackSectionCardTopPrice>
+              </CardBackSectionCardTopLeft>
+              <CardBackSectionCardTopRight>
+                <CardBackSectionCardNumber>101</CardBackSectionCardNumber>
+                <CardBackSectionCardDescribe>left</CardBackSectionCardDescribe>
+              </CardBackSectionCardTopRight>
             </CardBackSectionCardTop>
             <CardBackSectionCardDescribe>
               You get an ergonomic stand made of natural bamboo. You've helped
@@ -64,14 +74,18 @@ export const CardBack = () => {
           </CardBackSectionCard>
           <CardBackSectionCard>
             <CardBackSectionCardTop>
-              <CardBackSectionCardTopTitle>
-                Black Edition Stand
-              </CardBackSectionCardTopTitle>
-              <CardBackSectionCardTopPrice>
-                Pledge $75 or more
-              </CardBackSectionCardTopPrice>
-              <CardBackSectionCardNumber>64</CardBackSectionCardNumber>
-              <CardBackSectionCardDescribe>left</CardBackSectionCardDescribe>
+              <CardBackSectionCardTopLeft>
+                <CardBackSectionCardTopTitle>
+                  Black Edition Stand
+                </CardBackSectionCardTopTitle>
+                <CardBackSectionCardTopPrice>
+                  Pledge $75 or more
+                </CardBackSectionCardTopPrice>
+              </CardBackSectionCardTopLeft>
+              <CardBackSectionCardTopRight>
+                <CardBackSectionCardNumber>64</CardBackSectionCardNumber>
+                <CardBackSectionCardDescribe>left</CardBackSectionCardDescribe>
+              </CardBackSectionCardTopRight>
             </CardBackSectionCardTop>
             <CardBackSectionCardDescribe>
               You get a Black Special Edition computer stand and a personal
@@ -81,14 +95,18 @@ export const CardBack = () => {
           </CardBackSectionCard>
           <CardBackSectionCard>
             <CardBackSectionCardTop>
-              <CardBackSectionCardTopTitle>
-                Mahogany Special Edition
-              </CardBackSectionCardTopTitle>
-              <CardBackSectionCardTopPrice>
-                Pledge $200 or more
-              </CardBackSectionCardTopPrice>
-              <CardBackSectionCardNumber>0</CardBackSectionCardNumber>
-              <CardBackSectionCardDescribe>left</CardBackSectionCardDescribe>
+              <CardBackSectionCardTopLeft>
+                <CardBackSectionCardTopTitle>
+                  Mahogany Special Edition
+                </CardBackSectionCardTopTitle>
+                <CardBackSectionCardTopPrice>
+                  Pledge $200 or more
+                </CardBackSectionCardTopPrice>
+              </CardBackSectionCardTopLeft>
+              <CardBackSectionCardTopRight>
+                <CardBackSectionCardNumber>0</CardBackSectionCardNumber>
+                <CardBackSectionCardDescribe>left</CardBackSectionCardDescribe>
+              </CardBackSectionCardTopRight>
             </CardBackSectionCardTop>
             <CardBackSectionCardDescribe>
               You get two Special Edition Mahogany stands, a Backer T-Shirt, and
@@ -97,8 +115,7 @@ export const CardBack = () => {
             </CardBackSectionCardDescribe>
           </CardBackSectionCard>
         </CardBackSection>
-      </CardBackContainer>{" "}
-      {isOpen && <CloseButton onClick={closeLightbox}>X</CloseButton>}
+      </CardBackContainer>
     </>
   );
 };
