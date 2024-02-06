@@ -1,6 +1,26 @@
 import styled from "styled-components";
 
-export const CardBottomSection = styled.section`
+export const CardBackContainer = styled.section`
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 9999;
+  /* position: absolute; */
+  background-color: hsla(0, 0%, 0%, 0.75);
+  position: fixed;
+  width: 100%;
+  /* height: 100%; */
+  height: 100vh;
+  overflow-y: auto;
+`;
+
+export const CardBackSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,6 +31,8 @@ export const CardBottomSection = styled.section`
   margin: 10px;
   border: 1px solid lightgray;
   background-color: white;
+  overflow-y: auto;
+  padding: 10px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -20,7 +42,7 @@ export const CardBottomSection = styled.section`
   }
 `;
 
-export const CardBottomSectionTitle = styled.div`
+export const CardBackSectionTitle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,7 +62,7 @@ export const CardBottomSectionTitle = styled.div`
   }
 `;
 
-export const CardBottomSectionDescribe = styled.div`
+export const CardBackSectionDescribe = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,7 +80,7 @@ export const CardBottomSectionDescribe = styled.div`
   }
 `;
 
-export const CardBottomSectionCard = styled.div`
+export const CardBackSectionCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -77,7 +99,7 @@ export const CardBottomSectionCard = styled.div`
   @media (max-width: 600px) {
   }
 `;
-export const CardBottomSectionCardTop = styled.div`
+export const CardBackSectionCardTop = styled.div`
   display: flex;
   justify-content: space-between;
   align-content: space-between;
@@ -92,7 +114,7 @@ export const CardBottomSectionCardTop = styled.div`
   }
 `;
 
-export const CardBottomSectionCardTopTitle = styled.div`
+export const CardBackSectionCardTopTitle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -108,7 +130,7 @@ export const CardBottomSectionCardTopTitle = styled.div`
   }
 `;
 
-export const CardBottomSectionCardTopPrice = styled.div`
+export const CardBackSectionCardTopPrice = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -123,7 +145,7 @@ export const CardBottomSectionCardTopPrice = styled.div`
   }
 `;
 
-export const CardBottomSectionCardDescribe = styled.div`
+export const CardBackSectionCardDescribe = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -139,34 +161,7 @@ export const CardBottomSectionCardDescribe = styled.div`
   }
 `;
 
-export const CardBottomSectionCardBottom = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-
-  @media (max-width: 1024px) {
-    width: auto;
-  }
-
-  @media (max-width: 600px) {
-  }
-`;
-
-export const CardBottomSectionCardBottomLeft = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (max-width: 1024px) {
-    width: auto;
-  }
-
-  @media (max-width: 600px) {
-  }
-`;
-
-export const CardBottomSectionCardBottomLeftNumber = styled.div`
+export const CardBackSectionCardNumber = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -182,72 +177,14 @@ export const CardBottomSectionCardBottomLeftNumber = styled.div`
   }
 `;
 
-export const CardBottomSectionCardBottomLeftDescribe = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--neutral-dark-gray);
-  padding-left: 10px;
-
-  @media (max-width: 1024px) {
-    width: auto;
-  }
-
-  @media (max-width: 600px) {
-  }
-`;
-
-export const CardBottomSectionCardBottomButtonSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (max-width: 1024px) {
-    width: auto;
-  }
-
-  @media (max-width: 600px) {
-  }
-`;
-
-export const CardBottomSectionCardBottomGreenButton = styled.button`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary-moderate-cyan);
+export const CloseButton = styled.button`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
   color: white;
-  border: 0;
-  border-radius: 30px;
-  width: 150px;
-  height: 50px;
-
-  @media (max-width: 1024px) {
-    width: auto;
-  }
-
-  @media (max-width: 600px) {
-  }
-`;
-
-export const CardBottomSectionCardBottomGreyButton = styled.button`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--neutral-dark-gray);
-  color: white;
-  border: 0;
-  border-radius: 30px;
-  width: 150px;
-  height: 50px;
-
-  @media (max-width: 1024px) {
-    width: auto;
-  }
-
-  @media (max-width: 600px) {
-  }
+  z-index: 999;
 `;

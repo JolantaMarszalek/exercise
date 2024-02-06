@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   CardTopSection,
   CardTopSectionButtons,
@@ -7,8 +8,15 @@ import {
   CardTopSectionRightButton,
   CardTopSectionTitle,
 } from "./CardTop.styled";
+import { CardBack } from "../CardBack/CardBack.component";
 
 export const CardTop = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleLeftButtonClick = () => {
+    setIsExpanded(true);
+  };
+
   return (
     <>
       <CardTopSection>
@@ -36,7 +44,9 @@ export const CardTop = () => {
           A beautiful & handcrafted monitor stand to reduce neck and eye strain.
         </CardTopSectionDescribe>
         <CardTopSectionButtons>
-          <CardTopSectionLeftButton>Back this project</CardTopSectionLeftButton>
+          <CardTopSectionLeftButton onClick={handleLeftButtonClick}>
+            Back this project
+          </CardTopSectionLeftButton>
           <CardTopSectionRightButton>
             <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
               <g fill="none" fill-rule="evenodd">
@@ -48,6 +58,7 @@ export const CardTop = () => {
           </CardTopSectionRightButton>
         </CardTopSectionButtons>
       </CardTopSection>
+      {isExpanded && <CardBack />}
     </>
   );
 };
