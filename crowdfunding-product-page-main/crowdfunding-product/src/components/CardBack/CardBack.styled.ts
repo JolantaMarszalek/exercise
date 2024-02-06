@@ -5,9 +5,10 @@ export const CardBackContainer = styled.section`
   left: 0;
   right: 0;
   bottom: 0;
+  /* display: grid; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
   gap: 20px;
   z-index: 9999;
@@ -15,8 +16,7 @@ export const CardBackContainer = styled.section`
   background-color: hsla(0, 0%, 0%, 0.75);
   position: fixed;
   width: 100%;
-  /* height: 100%; */
-  height: 100vh;
+  height: auto;
   overflow-y: auto;
 `;
 
@@ -26,7 +26,6 @@ export const CardBackSection = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 50%;
-  height: auto;
   border-radius: 10px;
   margin: 10px;
   border: 1px solid lightgray;
@@ -82,7 +81,7 @@ export const CardBackSectionDescribe = styled.div`
 
 export const CardBackSectionCard = styled.div`
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: space-around;
   align-items: center;
   border: 1px solid var(--neutral-dark-gray);
@@ -99,6 +98,52 @@ export const CardBackSectionCard = styled.div`
   @media (max-width: 600px) {
   }
 `;
+
+export const CardBackSectionCardLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 50%; */
+  height: auto;
+  /* width: 30px; */
+  /* border-radius: 10px; */
+  margin: 10px;
+  /* border: 1px solid lightgray; */
+  /* background-color: white;
+  overflow-y: auto; */
+  padding: 10px;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const CardBackSectionCardRight = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 50%; */
+  height: auto;
+  /* border-radius: 10px; */
+  margin: 10px;
+  /* border: 1px solid lightgray; */
+  /* background-color: white;
+  overflow-y: auto; */
+  /* padding: 10px; */
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
 export const CardBackSectionCardTop = styled.div`
   display: flex;
   justify-content: space-between;
@@ -240,4 +285,17 @@ export const CloseButton = styled.button`
   border: none;
   color: black;
   z-index: 999;
+`;
+
+interface CardBackSectionCardCheckboxProps {
+  isChecked: boolean;
+}
+
+export const CardBackSectionCardCheckbox = styled.button<CardBackSectionCardCheckboxProps>`
+  width: 24px;
+  height: 24px;
+  border: 2px solid #555;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: ${(props) => (props.isChecked ? "#555" : "transparent")};
 `;
