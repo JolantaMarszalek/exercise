@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   CardBottomSection,
   CardBottomSectionCard,
@@ -15,8 +16,15 @@ import {
   CardBottomSectionDescribe,
   CardBottomSectionTitle,
 } from "./CardBottom.styled";
+import { CardThanks } from "../CardThanks/CardThanks.component";
 
 export const CardBottom = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleLeftButtonClick = () => {
+    setIsExpanded(true);
+  };
+
   return (
     <>
       <CardBottomSection>
@@ -57,7 +65,8 @@ export const CardBottom = () => {
               </CardBottomSectionCardBottomLeftDescribe>
             </CardBottomSectionCardBottomLeft>
             <CardBottomSectionCardBottomButtonSection>
-              <CardBottomSectionCardBottomGreenButton>
+              <CardBottomSectionCardBottomGreenButton
+                onClick={handleLeftButtonClick}>
                 Select Reward
               </CardBottomSectionCardBottomGreenButton>
             </CardBottomSectionCardBottomButtonSection>
@@ -87,7 +96,8 @@ export const CardBottom = () => {
               </CardBottomSectionCardBottomLeftDescribe>
             </CardBottomSectionCardBottomLeft>
             <CardBottomSectionCardBottomButtonSection>
-              <CardBottomSectionCardBottomGreenButton>
+              <CardBottomSectionCardBottomGreenButton
+                onClick={handleLeftButtonClick}>
                 Select Reward
               </CardBottomSectionCardBottomGreenButton>
             </CardBottomSectionCardBottomButtonSection>
@@ -117,13 +127,15 @@ export const CardBottom = () => {
               </CardBottomSectionCardBottomLeftDescribe>
             </CardBottomSectionCardBottomLeft>
             <CardBottomSectionCardBottomButtonSection>
-              <CardBottomSectionCardBottomGreyButton>
+              <CardBottomSectionCardBottomGreyButton
+                onClick={handleLeftButtonClick}>
                 Out of Stock
               </CardBottomSectionCardBottomGreyButton>
             </CardBottomSectionCardBottomButtonSection>
           </CardBottomSectionCardBottom>
         </CardBottomSectionCard>
       </CardBottomSection>
+      {isExpanded && <CardThanks />}
     </>
   );
 };
