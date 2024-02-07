@@ -30,7 +30,7 @@ export const CardBackSection = styled.div`
   margin: 10px;
   border: 1px solid lightgray;
   background-color: white;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   padding: 10px;
 
   @media (max-width: 1024px) {
@@ -81,11 +81,31 @@ export const CardBackSectionDescribe = styled.div`
 
 export const CardBackSectionCard = styled.div`
   display: flex;
-  // flex-direction: column;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   border: 1px solid var(--neutral-dark-gray);
   border-radius: 10px;
+  width: 90%;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const CardBackSectionCardSectionTop = styled.div`
+  display: flex;
+  // flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid var(--neutral-dark-gray); */
+  /* border-radius: 10px; */
   width: 90%;
   height: 200px;
   margin-top: 20px;
@@ -298,4 +318,68 @@ export const CardBackSectionCardCheckbox = styled.button<CardBackSectionCardChec
   border-radius: 50%;
   cursor: pointer;
   background-color: ${(props) => (props.isChecked ? "#555" : "transparent")};
+`;
+
+export const CardBackSectionCardBottom = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  /* width: 50%; */
+  height: auto;
+  /* border-radius: 10px; */
+  margin: 10px;
+  /* border: 1px solid lightgray; */
+  /* background-color: white;
+  overflow-y: auto; */
+  /* padding: 10px; */
+  border-top: 1px solid grey;
+  width: 90%;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const CardBackSectionButtonPrice = styled.button`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  width: 150px;
+  height: 50px;
+  font-size: 13px;
+  /* background-color: var(--primary-moderate-cyan); */
+  color: black;
+  border: 0;
+  font-weight: bold;
+
+  @media (max-width: 700px) {
+    font-size: 11px;
+    margin-bottom: 20px;
+  }
+`;
+
+export const CardBackSectionButtonContinue = styled.button`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  width: 150px;
+  height: 50px;
+  font-size: 13px;
+  background-color: var(--primary-moderate-cyan);
+  color: white;
+  border: 0;
+  font-weight: bold;
+
+  @media (max-width: 700px) {
+    font-size: 11px;
+    margin-bottom: 20px;
+  }
 `;

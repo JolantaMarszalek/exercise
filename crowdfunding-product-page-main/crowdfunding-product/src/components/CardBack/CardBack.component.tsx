@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   CardBackContainer,
   CardBackSection,
   CardBackSectionButton,
+  CardBackSectionButtonContinue,
+  CardBackSectionButtonPrice,
   CardBackSectionCard,
+  CardBackSectionCardBottom,
   CardBackSectionCardCheckbox,
   CardBackSectionCardDescribe,
   CardBackSectionCardLeft,
   CardBackSectionCardNumber,
   CardBackSectionCardRight,
+  CardBackSectionCardSectionTop,
   CardBackSectionCardTop,
   CardBackSectionCardTopLeft,
   CardBackSectionCardTopPrice,
@@ -32,7 +36,7 @@ export const CardBack = () => {
     setIsOpen(false);
   };
 
-  const handleCheckboxClick = (index) => {
+  const handleCheckboxClick = (index: number) => {
     const newCheckedArray = [...isCheckedArray];
     const newExpandedArray = [...isExpandedArray];
     newCheckedArray[index] = !newCheckedArray[index];
@@ -55,139 +59,171 @@ export const CardBack = () => {
           </CardBackSectionDescribe>
 
           <CardBackSectionCard>
-            <CardBackSectionCardLeft>
-              <CardBackSectionCardCheckbox
-                onClick={() => handleCheckboxClick(0)}
-                isChecked={isCheckedArray[0]}
-              />
-            </CardBackSectionCardLeft>
-            <CardBackSectionCardRight>
-              <CardBackSectionCardTop>
-                <CardBackSectionCardTopTitle>
-                  Pledge with no reward
-                </CardBackSectionCardTopTitle>
-              </CardBackSectionCardTop>
-              <CardBackSectionCardDescribe>
-                Choose to support us without a reward if you simply believe in
-                our project. As a backer, you will be signed up to receive
-                product updates via email.
-              </CardBackSectionCardDescribe>
-              {isCheckedArray[0] && (
+            <CardBackSectionCardSectionTop>
+              <CardBackSectionCardLeft>
+                <CardBackSectionCardCheckbox
+                  onClick={() => handleCheckboxClick(0)}
+                  isChecked={isCheckedArray[0]}
+                />
+              </CardBackSectionCardLeft>
+              <CardBackSectionCardRight>
+                <CardBackSectionCardTop>
+                  <CardBackSectionCardTopTitle>
+                    Pledge with no reward
+                  </CardBackSectionCardTopTitle>
+                </CardBackSectionCardTop>
+                <CardBackSectionCardDescribe>
+                  Choose to support us without a reward if you simply believe in
+                  our project. As a backer, you will be signed up to receive
+                  product updates via email.
+                </CardBackSectionCardDescribe>
+                {/* {isCheckedArray[0] && (
                 <CardBackSectionCardDescribe>
                   Dodatkowy tekst po zaznaczeniu checkboxa
                 </CardBackSectionCardDescribe>
-              )}
-            </CardBackSectionCardRight>
+              )} */}
+              </CardBackSectionCardRight>
+            </CardBackSectionCardSectionTop>
           </CardBackSectionCard>
           <CardBackSectionCard>
-            <CardBackSectionCardLeft>
-              <CardBackSectionCardCheckbox
-                onClick={() => handleCheckboxClick(1)}
-                isChecked={isCheckedArray[1]}
-              />
-            </CardBackSectionCardLeft>
-            <CardBackSectionCardRight>
-              <CardBackSectionCardTop>
-                <CardBackSectionCardTopLeft>
-                  <CardBackSectionCardTopTitle>
-                    Bamboo Stand
-                  </CardBackSectionCardTopTitle>
-                  <CardBackSectionCardTopPrice>
-                    Pledge $25 or more
-                  </CardBackSectionCardTopPrice>
-                </CardBackSectionCardTopLeft>
-                <CardBackSectionCardTopRight>
-                  <CardBackSectionCardNumber>101</CardBackSectionCardNumber>
-                  <CardBackSectionCardDescribe>
-                    left
-                  </CardBackSectionCardDescribe>
-                </CardBackSectionCardTopRight>
-              </CardBackSectionCardTop>
-              <CardBackSectionCardDescribe>
-                You get an ergonomic stand made of natural bamboo. You've helped
-                us launch our promotional campaign, and you’ll be added to a
-                special Backer member list.
-              </CardBackSectionCardDescribe>
-              {isCheckedArray[1] && (
+            <CardBackSectionCardSectionTop>
+              <CardBackSectionCardLeft>
+                <CardBackSectionCardCheckbox
+                  onClick={() => handleCheckboxClick(1)}
+                  isChecked={isCheckedArray[1]}
+                />
+              </CardBackSectionCardLeft>
+              <CardBackSectionCardRight>
+                <CardBackSectionCardTop>
+                  <CardBackSectionCardTopLeft>
+                    <CardBackSectionCardTopTitle>
+                      Bamboo Stand
+                    </CardBackSectionCardTopTitle>
+                    <CardBackSectionCardTopPrice>
+                      Pledge $25 or more
+                    </CardBackSectionCardTopPrice>
+                  </CardBackSectionCardTopLeft>
+                  <CardBackSectionCardTopRight>
+                    <CardBackSectionCardNumber>101</CardBackSectionCardNumber>
+                    <CardBackSectionCardDescribe>
+                      left
+                    </CardBackSectionCardDescribe>
+                  </CardBackSectionCardTopRight>
+                </CardBackSectionCardTop>
                 <CardBackSectionCardDescribe>
-                  Dodatkowy tekst po zaznaczeniu checkboxa
+                  You get an ergonomic stand made of natural bamboo. You've
+                  helped us launch our promotional campaign, and you’ll be added
+                  to a special Backer member list.
                 </CardBackSectionCardDescribe>
-              )}
-            </CardBackSectionCardRight>
-          </CardBackSectionCard>
-
-          <CardBackSectionCard>
-            <CardBackSectionCardLeft>
-              <CardBackSectionCardCheckbox
-                onClick={() => handleCheckboxClick(2)}
-                isChecked={isCheckedArray[2]}
-              />
-            </CardBackSectionCardLeft>
-            <CardBackSectionCardRight>
-              <CardBackSectionCardTop>
-                <CardBackSectionCardTopLeft>
-                  <CardBackSectionCardTopTitle>
-                    Black Edition Stand
-                  </CardBackSectionCardTopTitle>
-                  <CardBackSectionCardTopPrice>
-                    Pledge $75 or more
-                  </CardBackSectionCardTopPrice>
-                </CardBackSectionCardTopLeft>
-                <CardBackSectionCardTopRight>
-                  <CardBackSectionCardNumber>64</CardBackSectionCardNumber>
+              </CardBackSectionCardRight>
+            </CardBackSectionCardSectionTop>
+            {isCheckedArray[1] && (
+              <>
+                <CardBackSectionCardBottom>
                   <CardBackSectionCardDescribe>
-                    left
+                    Enter your pledge
                   </CardBackSectionCardDescribe>
-                </CardBackSectionCardTopRight>
-              </CardBackSectionCardTop>
-              <CardBackSectionCardDescribe>
-                You get a Black Special Edition computer stand and a personal
-                thank you. You’ll be added to our Backer member list. Shipping
-                is included.
-              </CardBackSectionCardDescribe>
-              {isCheckedArray[2] && (
-                <CardBackSectionCardDescribe>
-                  Dodatkowy tekst po zaznaczeniu checkboxa
-                </CardBackSectionCardDescribe>
-              )}
-            </CardBackSectionCardRight>
+                  <CardBackSectionButtonPrice>$ 25</CardBackSectionButtonPrice>
+                  <CardBackSectionButtonContinue>
+                    Continue
+                  </CardBackSectionButtonContinue>
+                </CardBackSectionCardBottom>
+              </>
+            )}
           </CardBackSectionCard>
 
           <CardBackSectionCard>
-            <CardBackSectionCardLeft>
-              <CardBackSectionCardCheckbox
-                onClick={() => handleCheckboxClick(3)}
-                isChecked={isCheckedArray[3]}
-              />
-            </CardBackSectionCardLeft>
-            <CardBackSectionCardRight>
-              <CardBackSectionCardTop>
-                <CardBackSectionCardTopLeft>
-                  <CardBackSectionCardTopTitle>
-                    Mahogany Special Edition
-                  </CardBackSectionCardTopTitle>
-                  <CardBackSectionCardTopPrice>
-                    Pledge $200 or more
-                  </CardBackSectionCardTopPrice>
-                </CardBackSectionCardTopLeft>
-                <CardBackSectionCardTopRight>
-                  <CardBackSectionCardNumber>0</CardBackSectionCardNumber>
-                  <CardBackSectionCardDescribe>
-                    left
-                  </CardBackSectionCardDescribe>
-                </CardBackSectionCardTopRight>
-              </CardBackSectionCardTop>
-              <CardBackSectionCardDescribe>
-                You get two Special Edition Mahogany stands, a Backer T-Shirt,
-                and a personal thank you. You’ll be added to our Backer member
-                list. Shipping is included.
-              </CardBackSectionCardDescribe>{" "}
-              {isCheckedArray[3] && (
+            <CardBackSectionCardSectionTop>
+              <CardBackSectionCardLeft>
+                <CardBackSectionCardCheckbox
+                  onClick={() => handleCheckboxClick(2)}
+                  isChecked={isCheckedArray[2]}
+                />
+              </CardBackSectionCardLeft>
+              <CardBackSectionCardRight>
+                <CardBackSectionCardTop>
+                  <CardBackSectionCardTopLeft>
+                    <CardBackSectionCardTopTitle>
+                      Black Edition Stand
+                    </CardBackSectionCardTopTitle>
+                    <CardBackSectionCardTopPrice>
+                      Pledge $75 or more
+                    </CardBackSectionCardTopPrice>
+                  </CardBackSectionCardTopLeft>
+                  <CardBackSectionCardTopRight>
+                    <CardBackSectionCardNumber>64</CardBackSectionCardNumber>
+                    <CardBackSectionCardDescribe>
+                      left
+                    </CardBackSectionCardDescribe>
+                  </CardBackSectionCardTopRight>
+                </CardBackSectionCardTop>
                 <CardBackSectionCardDescribe>
-                  Dodatkowy tekst po zaznaczeniu checkboxa
+                  You get a Black Special Edition computer stand and a personal
+                  thank you. You’ll be added to our Backer member list. Shipping
+                  is included.
                 </CardBackSectionCardDescribe>
-              )}
-            </CardBackSectionCardRight>
+              </CardBackSectionCardRight>
+            </CardBackSectionCardSectionTop>
+            {isCheckedArray[2] && (
+              <>
+                <CardBackSectionCardBottom>
+                  <CardBackSectionCardDescribe>
+                    Enter your pledge
+                  </CardBackSectionCardDescribe>
+                  <CardBackSectionButtonPrice>$ 25</CardBackSectionButtonPrice>
+                  <CardBackSectionButtonContinue>
+                    Continue
+                  </CardBackSectionButtonContinue>
+                </CardBackSectionCardBottom>
+              </>
+            )}
+          </CardBackSectionCard>
+
+          <CardBackSectionCard>
+            <CardBackSectionCardSectionTop>
+              <CardBackSectionCardLeft>
+                <CardBackSectionCardCheckbox
+                  onClick={() => handleCheckboxClick(3)}
+                  isChecked={isCheckedArray[3]}
+                />
+              </CardBackSectionCardLeft>
+              <CardBackSectionCardRight>
+                <CardBackSectionCardTop>
+                  <CardBackSectionCardTopLeft>
+                    <CardBackSectionCardTopTitle>
+                      Mahogany Special Edition
+                    </CardBackSectionCardTopTitle>
+                    <CardBackSectionCardTopPrice>
+                      Pledge $200 or more
+                    </CardBackSectionCardTopPrice>
+                  </CardBackSectionCardTopLeft>
+                  <CardBackSectionCardTopRight>
+                    <CardBackSectionCardNumber>0</CardBackSectionCardNumber>
+                    <CardBackSectionCardDescribe>
+                      left
+                    </CardBackSectionCardDescribe>
+                  </CardBackSectionCardTopRight>
+                </CardBackSectionCardTop>
+                <CardBackSectionCardDescribe>
+                  You get two Special Edition Mahogany stands, a Backer T-Shirt,
+                  and a personal thank you. You’ll be added to our Backer member
+                  list. Shipping is included.
+                </CardBackSectionCardDescribe>{" "}
+              </CardBackSectionCardRight>
+            </CardBackSectionCardSectionTop>
+            {isCheckedArray[3] && (
+              <>
+                <CardBackSectionCardBottom>
+                  <CardBackSectionCardDescribe>
+                    Enter your pledge
+                  </CardBackSectionCardDescribe>
+                  <CardBackSectionButtonPrice>$ 25</CardBackSectionButtonPrice>
+                  <CardBackSectionButtonContinue>
+                    Continue
+                  </CardBackSectionButtonContinue>
+                </CardBackSectionCardBottom>
+              </>
+            )}
           </CardBackSectionCard>
         </CardBackSection>
       </CardBackContainer>
