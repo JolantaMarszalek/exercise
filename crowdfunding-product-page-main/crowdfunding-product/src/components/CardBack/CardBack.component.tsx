@@ -170,7 +170,7 @@ export const CardBack = () => {
                   <CardBackSectionCardDescribe>
                     Enter your pledge
                   </CardBackSectionCardDescribe>
-                  <CardBackSectionButtonPrice>$ 25</CardBackSectionButtonPrice>
+                  <CardBackSectionButtonPrice>$ 75</CardBackSectionButtonPrice>
                   <CardBackSectionButtonContinue>
                     Continue
                   </CardBackSectionButtonContinue>
@@ -217,7 +217,7 @@ export const CardBack = () => {
                   <CardBackSectionCardDescribe>
                     Enter your pledge
                   </CardBackSectionCardDescribe>
-                  <CardBackSectionButtonPrice>$ 25</CardBackSectionButtonPrice>
+                  <CardBackSectionButtonPrice>$ 200</CardBackSectionButtonPrice>
                   <CardBackSectionButtonContinue>
                     Continue
                   </CardBackSectionButtonContinue>
