@@ -23,18 +23,17 @@ import {
   CloseButton,
 } from "./CardBack.styled";
 
-export const CardBack = () => {
-  const [isOpen, setIsOpen] = useState(false);
+interface CardBackProps {
+  setIsCardBackOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export const CardBack: React.FC<CardBackProps> = ({ setIsCardBackOpen }) => {
+  const closeLightbox = () => {
+    setIsCardBackOpen(false);
+  };
+
   const [isCheckedArray, setIsCheckedArray] = useState([false, false, false]);
   const [isExpandedArray, setIsExpandedArray] = useState([false, false, false]);
-
-  const openLightbox = () => {
-    setIsOpen(true);
-  };
-
-  const closeLightbox = () => {
-    setIsOpen(false);
-  };
 
   const handleCheckboxClick = (index: number) => {
     const newCheckedArray = [...isCheckedArray];
@@ -57,7 +56,6 @@ export const CardBack = () => {
             Want to support us in bringing Mastercraft Bamboo Monitor Riser out
             in the world?
           </CardBackSectionDescribe>
-
           <CardBackSectionCard>
             <CardBackSectionCardSectionTop>
               <CardBackSectionCardLeft>
@@ -131,7 +129,6 @@ export const CardBack = () => {
               </>
             )}
           </CardBackSectionCard>
-
           <CardBackSectionCard>
             <CardBackSectionCardSectionTop>
               <CardBackSectionCardLeft>
@@ -178,7 +175,6 @@ export const CardBack = () => {
               </>
             )}
           </CardBackSectionCard>
-
           <CardBackSectionCard>
             <CardBackSectionCardSectionTop>
               <CardBackSectionCardLeft>

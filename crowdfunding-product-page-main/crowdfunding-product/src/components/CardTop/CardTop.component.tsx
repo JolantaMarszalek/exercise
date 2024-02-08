@@ -11,10 +11,10 @@ import {
 import { CardBack } from "../CardBack/CardBack.component";
 
 export const CardTop = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isCardBackOpen, setIsCardBackOpen] = useState(false);
 
-  const handleLeftButtonClick = () => {
-    setIsExpanded(true);
+  const handleCardBackClick = () => {
+    setIsCardBackOpen(!isCardBackOpen);
   };
 
   return (
@@ -44,7 +44,7 @@ export const CardTop = () => {
           A beautiful & handcrafted monitor stand to reduce neck and eye strain.
         </CardTopSectionDescribe>
         <CardTopSectionButtons>
-          <CardTopSectionLeftButton onClick={handleLeftButtonClick}>
+          <CardTopSectionLeftButton onClick={handleCardBackClick}>
             Back this project
           </CardTopSectionLeftButton>
           <CardTopSectionRightButton>
@@ -58,7 +58,7 @@ export const CardTop = () => {
           </CardTopSectionRightButton>
         </CardTopSectionButtons>
       </CardTopSection>
-      {isExpanded && <CardBack />}
+      {isCardBackOpen && <CardBack setIsCardBackOpen={setIsCardBackOpen} />}
     </>
   );
 };
