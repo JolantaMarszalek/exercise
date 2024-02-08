@@ -42,7 +42,23 @@ export const CardMiddleSectionTopSinglePart = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 200px;
-  align-items: flex-start;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const CardMiddleSectionTopSinglePartMiddle = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  border-left: 1px solid var(--neutral-dark-gray);
+  border-right: 1px solid var(--neutral-dark-gray);
 
   @media (max-width: 1024px) {
     width: auto;
@@ -60,6 +76,7 @@ export const CardMiddleSectionTopSinglePartTitle = styled.div`
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
+  /* margin-left: 30px; */
 
   @media (max-width: 1024px) {
     width: auto;
@@ -75,6 +92,7 @@ export const CardMiddleSectionTopSinglePartDescribe = styled.div`
   justify-content: space-between;
   align-items: center;
   color: var(--neutral-dark-gray);
+  /* margin-left: 30px; */
 
   @media (max-width: 1024px) {
     width: auto;

@@ -4,6 +4,7 @@ import {
   CardMiddleSectionTop,
   CardMiddleSectionTopSinglePart,
   CardMiddleSectionTopSinglePartDescribe,
+  CardMiddleSectionTopSinglePartMiddle,
   CardMiddleSectionTopSinglePartTitle,
 } from "./CardMiddle.styled";
 
@@ -20,14 +21,14 @@ export const CardMiddle = () => {
               of $100,000 backed
             </CardMiddleSectionTopSinglePartDescribe>
           </CardMiddleSectionTopSinglePart>
-          <CardMiddleSectionTopSinglePart>
+          <CardMiddleSectionTopSinglePartMiddle>
             <CardMiddleSectionTopSinglePartTitle>
               5,007
             </CardMiddleSectionTopSinglePartTitle>
             <CardMiddleSectionTopSinglePartDescribe>
               total backers
             </CardMiddleSectionTopSinglePartDescribe>
-          </CardMiddleSectionTopSinglePart>
+          </CardMiddleSectionTopSinglePartMiddle>
           <CardMiddleSectionTopSinglePart>
             <CardMiddleSectionTopSinglePartTitle>
               56
