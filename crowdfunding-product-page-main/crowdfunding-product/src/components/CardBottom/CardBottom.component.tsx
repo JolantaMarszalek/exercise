@@ -19,10 +19,10 @@ import {
 import { CardThanks } from "../CardThanks/CardThanks.component";
 
 export const CardBottom = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isCardThanksOpen, setIsCardThanksOpen] = useState(false);
 
   const handleLeftButtonClick = () => {
-    setIsExpanded(true);
+    setIsCardThanksOpen(!isCardThanksOpen);
   };
 
   return (
@@ -135,7 +135,7 @@ export const CardBottom = () => {
           </CardBottomSectionCardBottom>
         </CardBottomSectionCard>
       </CardBottomSection>
-      {isExpanded && <CardThanks />}
+      {isCardThanksOpen && <CardThanks />}
     </>
   );
 };
