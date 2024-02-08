@@ -135,7 +135,9 @@ export const CardBottom = () => {
           </CardBottomSectionCardBottom>
         </CardBottomSectionCard>
       </CardBottomSection>
-      {isCardThanksOpen && <CardThanks />}
+      {isCardThanksOpen && (
+        <CardThanks setIsCardThanksOpen={setIsCardThanksOpen} />
+      )}
     </>
   );
 };
