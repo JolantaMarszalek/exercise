@@ -16,10 +16,6 @@ export const CardThanks = () => {
     setIsCardOpen(false);
   };
 
-  const handleOpenCard = () => {
-    setIsCardOpen(true);
-  };
-
   return (
     <>
       {isCardOpen && (
@@ -52,9 +48,6 @@ export const CardThanks = () => {
             </CardThanksSectionButtons>
           </CardThanksSection>
         </CardThanksContainer>
-      )}
-      {!isCardOpen && (
-        <button onClick={handleOpenCard}>Open Card Thanks</button>
       )}
     </>
   );
