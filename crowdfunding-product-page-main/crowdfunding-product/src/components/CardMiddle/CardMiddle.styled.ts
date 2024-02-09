@@ -57,8 +57,8 @@ export const CardMiddleSectionTopSinglePartMiddle = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 250px;
-  border-left: 1px solid var(--neutral-dark-gray);
-  border-right: 1px solid var(--neutral-dark-gray);
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
 
   @media (max-width: 1024px) {
     width: auto;

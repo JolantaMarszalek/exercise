@@ -63,7 +63,7 @@ export const CardBottomSectionCard = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid var(--neutral-dark-gray);
+  border: 1px solid lightgrey;
   border-radius: 10px;
   width: 90%;
   height: 200px;

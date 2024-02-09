@@ -81,7 +81,7 @@ export const CardBackSectionCard = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid var(--neutral-dark-gray);
+  border: 1px solid lightgrey;
   border-radius: 10px;
   width: 90%;
   height: 200px;
@@ -294,7 +294,7 @@ interface CardBackSectionCardCheckboxProps {
 export const CardBackSectionCardCheckbox = styled.button<CardBackSectionCardCheckboxProps>`
   width: 24px;
   height: 24px;
-  border: 2px solid var(--neutral-dark-gray);
+  border: 2px solid lightgrey;
   border-radius: 50%;
   cursor: pointer;
   background-color: ${(props) =>
@@ -307,7 +307,7 @@ export const CardBackSectionCardBottom = styled.div`
   align-items: center;
   height: auto;
   padding: 10px;
-  border-top: 1px solid grey;
+  border-top: 1px solid lightgrey;
   width: 90%;
 
   @media (max-width: 1024px) {
