@@ -1,12 +1,31 @@
 import styled from "styled-components";
 
-export const CardTopSection = styled.section`
+export const CardThanksContainer = styled.section`
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-items: center;
   align-items: center;
-  width: 50%;
-  height: 300px;
+  justify-content: center;
+  gap: 20px;
+  z-index: 9999;
+  background-color: hsla(0, 0%, 0%, 0.75);
+  position: fixed;
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+`;
+
+export const CardThanksSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 600px;
+  height: 500px;
   border-radius: 10px;
   margin: 10px;
   background-color: white;
@@ -20,12 +39,12 @@ export const CardTopSection = styled.section`
   }
 `;
 
-export const CardTopSectionLogo = styled.div`
+export const CardThanksSectionLogo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: -50px;
+  margin-top: 50px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -35,13 +54,14 @@ export const CardTopSectionLogo = styled.div`
   }
 `;
 
-export const CardTopSectionTitle = styled.div`
+export const CardThanksSectionTitle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   font-size: 30px;
   font-weight: bold;
+  width: 90%;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -51,12 +71,14 @@ export const CardTopSectionTitle = styled.div`
   }
 `;
 
-export const CardTopSectionDescribe = styled.div`
+export const CardThanksSectionDescribe = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: var(--neutral-dark-gray);
+  width: 90%;
+  text-align: center;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -66,9 +88,9 @@ export const CardTopSectionDescribe = styled.div`
   }
 `;
 
-export const CardTopSectionButtons = styled.div`
+export const CardThanksSectionButtons = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 90%;
 
@@ -80,37 +102,17 @@ export const CardTopSectionButtons = styled.div`
   }
 `;
 
-export const CardTopSectionLeftButton = styled.button`
+export const CardThanksSectionButton = styled.button`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 180px;
-  height: 55px;
+  width: 120px;
+  height: 50px;
   border-radius: 30px;
   font-size: 13px;
   background-color: var(--primary-moderate-cyan);
   color: white;
-  border: 0;
-  font-weight: bold;
-
-  @media (max-width: 700px) {
-    font-size: 11px;
-    margin-bottom: 20px;
-  }
-`;
-
-export const CardTopSectionRightButton = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 5px;
-  width: 180px;
-  height: 55px;
-  border-radius: 50px;
-  font-size: 13px;
-  background-color: hsl(0, 0%, 96%);
-  color: var(--neutral-dark-gray);
   border: 0;
   font-weight: bold;
 

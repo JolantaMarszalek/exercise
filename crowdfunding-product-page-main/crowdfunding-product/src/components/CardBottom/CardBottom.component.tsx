@@ -1,9 +1,11 @@
+import { useState } from "react";
 import {
   CardBottomSection,
   CardBottomSectionCard,
   CardBottomSectionCardBottom,
-  CardBottomSectionCardBottomButton,
   CardBottomSectionCardBottomButtonSection,
+  CardBottomSectionCardBottomGreenButton,
+  CardBottomSectionCardBottomGreyButton,
   CardBottomSectionCardBottomLeft,
   CardBottomSectionCardBottomLeftDescribe,
   CardBottomSectionCardBottomLeftNumber,
@@ -14,8 +16,15 @@ import {
   CardBottomSectionDescribe,
   CardBottomSectionTitle,
 } from "./CardBottom.styled";
+import { CardThanks } from "../CardThanks/CardThanks.component";
 
 export const CardBottom = () => {
+  const [isCardThanksOpen, setIsCardThanksOpen] = useState(false);
+
+  const handleLeftButtonClick = () => {
+    setIsCardThanksOpen(!isCardThanksOpen);
+  };
+
   return (
     <>
       <CardBottomSection>
@@ -56,9 +65,10 @@ export const CardBottom = () => {
               </CardBottomSectionCardBottomLeftDescribe>
             </CardBottomSectionCardBottomLeft>
             <CardBottomSectionCardBottomButtonSection>
-              <CardBottomSectionCardBottomButton>
+              <CardBottomSectionCardBottomGreenButton
+                onClick={handleLeftButtonClick}>
                 Select Reward
-              </CardBottomSectionCardBottomButton>
+              </CardBottomSectionCardBottomGreenButton>
             </CardBottomSectionCardBottomButtonSection>
           </CardBottomSectionCardBottom>
         </CardBottomSectionCard>
@@ -86,9 +96,10 @@ export const CardBottom = () => {
               </CardBottomSectionCardBottomLeftDescribe>
             </CardBottomSectionCardBottomLeft>
             <CardBottomSectionCardBottomButtonSection>
-              <CardBottomSectionCardBottomButton>
+              <CardBottomSectionCardBottomGreenButton
+                onClick={handleLeftButtonClick}>
                 Select Reward
-              </CardBottomSectionCardBottomButton>
+              </CardBottomSectionCardBottomGreenButton>
             </CardBottomSectionCardBottomButtonSection>
           </CardBottomSectionCardBottom>
         </CardBottomSectionCard>
@@ -116,13 +127,17 @@ export const CardBottom = () => {
               </CardBottomSectionCardBottomLeftDescribe>
             </CardBottomSectionCardBottomLeft>
             <CardBottomSectionCardBottomButtonSection>
-              <CardBottomSectionCardBottomButton>
+              <CardBottomSectionCardBottomGreyButton
+                onClick={handleLeftButtonClick}>
                 Out of Stock
-              </CardBottomSectionCardBottomButton>
+              </CardBottomSectionCardBottomGreyButton>
             </CardBottomSectionCardBottomButtonSection>
           </CardBottomSectionCardBottom>
         </CardBottomSectionCard>
       </CardBottomSection>
+      {isCardThanksOpen && (
+        <CardThanks setIsCardThanksOpen={setIsCardThanksOpen} />
+      )}
     </>
   );
 };
