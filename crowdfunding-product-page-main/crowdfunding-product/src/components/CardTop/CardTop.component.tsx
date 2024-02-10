@@ -19,15 +19,9 @@ export const CardTop = () => {
     console.log("Pledge updated to:", amount);
   };
 
-  // const handleCardBackClick = () => {
-  //   setIsCardBackOpen(!isCardBackOpen);
-  // };
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleCardBackClick = () => {
     setIsCardBackOpen(true);
     console.log("Button clicked");
-    // console.log("Event:", event);
   };
   return (
     <>

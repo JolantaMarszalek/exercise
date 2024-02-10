@@ -8,6 +8,7 @@ export const Cards: React.FC = () => {
   const [pledgedAmount, setPledgedAmount] = useState(89914);
 
   const updatePledge = (amount: number) => {
+    console.log("New pledge amount:", amount);
     setPledgedAmount(amount);
   };
   return (
