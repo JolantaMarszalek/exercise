@@ -103,11 +103,12 @@ export const CardMiddleSectionTopSinglePartDescribe = styled.div`
 `;
 
 export const CardMiddleSectionBottom = styled.div`
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
+  width: 90%;
 
   @media (max-width: 1024px) {
     width: auto;

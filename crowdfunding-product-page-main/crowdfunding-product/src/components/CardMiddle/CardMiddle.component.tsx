@@ -1,3 +1,4 @@
+import { ProgressBar } from "../ProgressBar/ProgressBar.component";
 import {
   CardMiddleSection,
   CardMiddleSectionBottom,
@@ -9,6 +10,10 @@ import {
 } from "./CardMiddle.styled";
 
 export const CardMiddle = () => {
+  const pledgedAmount = 89914;
+  const goalAmount = 100000;
+  const pledgePercentage = (pledgedAmount / goalAmount) * 100;
+
   return (
     <>
       <CardMiddleSection>
@@ -38,8 +43,10 @@ export const CardMiddle = () => {
             </CardMiddleSectionTopSinglePartDescribe>
           </CardMiddleSectionTopSinglePart>
         </CardMiddleSectionTop>
+        <CardMiddleSectionBottom>
+          <ProgressBar percentage={pledgePercentage} />
+        </CardMiddleSectionBottom>
       </CardMiddleSection>
-      <CardMiddleSectionBottom></CardMiddleSectionBottom>
     </>
   );
 };
