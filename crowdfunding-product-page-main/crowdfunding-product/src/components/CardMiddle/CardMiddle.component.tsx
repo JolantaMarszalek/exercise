@@ -1,3 +1,4 @@
+// import { useState } from "react";
 import { ProgressBar } from "../ProgressBar/ProgressBar.component";
 import {
   CardMiddleSection,
@@ -9,10 +10,26 @@ import {
   CardMiddleSectionTopSinglePartTitle,
 } from "./CardMiddle.styled";
 
-export const CardMiddle = () => {
-  const pledgedAmount = 89914;
+interface CardMiddleProps {
+  pledgedAmount: number;
+  updatePledge: (amount: number) => void;
+}
+
+export const CardMiddle: React.FC<CardMiddleProps> = ({
+  pledgedAmount,
+  updatePledge,
+}) => {
+  console.log("Pledged amount in CardMiddle:", pledgedAmount);
+
+  // const [pledgedAmount, setPledgedAmount] = useState(89914);
   const goalAmount = 100000;
   const pledgePercentage = (pledgedAmount / goalAmount) * 100;
+  // const [currentPledgedAmount, setCurrentPledgedAmount] =
+  //   useState(pledgedAmount);
+
+  // const updatePledge = (amount: number) => {
+  //   setPledgedAmount(amount);
+  // };
 
   return (
     <>
@@ -20,7 +37,7 @@ export const CardMiddle = () => {
         <CardMiddleSectionTop>
           <CardMiddleSectionTopSinglePart>
             <CardMiddleSectionTopSinglePartTitle>
-              $89,914
+              {/* $89,914 */} ${pledgedAmount.toLocaleString()}
             </CardMiddleSectionTopSinglePartTitle>
             <CardMiddleSectionTopSinglePartDescribe>
               of $100,000 backed

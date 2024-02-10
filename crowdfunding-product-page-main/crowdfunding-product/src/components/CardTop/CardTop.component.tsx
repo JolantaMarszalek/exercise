@@ -12,11 +12,23 @@ import { CardBack } from "../CardBack/CardBack.component";
 
 export const CardTop = () => {
   const [isCardBackOpen, setIsCardBackOpen] = useState(false);
+  const [pledgedAmount, setPledgedAmount] = useState(89914);
 
-  const handleCardBackClick = () => {
-    setIsCardBackOpen(!isCardBackOpen);
+  const updatePledge = (amount: number) => {
+    setPledgedAmount(amount);
+    console.log("Pledge updated to:", amount);
   };
 
+  // const handleCardBackClick = () => {
+  //   setIsCardBackOpen(!isCardBackOpen);
+  // };
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const handleCardBackClick = () => {
+    setIsCardBackOpen(true);
+    console.log("Button clicked");
+    // console.log("Event:", event);
+  };
   return (
     <>
       <CardTopSection>
@@ -49,7 +61,7 @@ export const CardTop = () => {
           </CardTopSectionLeftButton>
           <CardTopSectionRightButton>
             <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
-              <g fill="none" fill-rule="evenodd">
+              <g fill="none" fillRule="evenodd">
                 <circle fill="#2F2F2F" cx="28" cy="28" r="28" />
                 <path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z" />
               </g>
@@ -58,7 +70,12 @@ export const CardTop = () => {
           </CardTopSectionRightButton>
         </CardTopSectionButtons>
       </CardTopSection>
-      {isCardBackOpen && <CardBack setIsCardBackOpen={setIsCardBackOpen} />}
+      {isCardBackOpen && (
+        <CardBack
+          setIsCardBackOpen={setIsCardBackOpen}
+          updatePledge={updatePledge}
+        />
+      )}
     </>
   );
 };
