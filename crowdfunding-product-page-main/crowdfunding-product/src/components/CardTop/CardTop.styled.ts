@@ -73,7 +73,9 @@ export const CardTopSectionButtons = styled.div`
   width: 90%;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
   }
 
   @media (max-width: 600px) {

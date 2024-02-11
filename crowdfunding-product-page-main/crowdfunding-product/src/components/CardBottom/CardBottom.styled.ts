@@ -34,6 +34,8 @@ export const CardBottomSectionTitle = styled.div`
 
   @media (max-width: 1024px) {
     width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 600px) {
@@ -52,6 +54,8 @@ export const CardBottomSectionDescribe = styled.div`
 
   @media (max-width: 1024px) {
     width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 600px) {
@@ -72,6 +76,7 @@ export const CardBottomSectionCard = styled.div`
 
   @media (max-width: 1024px) {
     width: 90%;
+    height: auto;
   }
 
   @media (max-width: 600px) {
@@ -89,6 +94,8 @@ export const CardBottomSectionCardTop = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 600px) {
@@ -105,6 +112,8 @@ export const CardBottomSectionCardTopTitle = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 600px) {
@@ -120,6 +129,8 @@ export const CardBottomSectionCardTopPrice = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 600px) {
@@ -136,6 +147,8 @@ export const CardBottomSectionCardDescribe = styled.div`
 
   @media (max-width: 1024px) {
     width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 600px) {
@@ -153,6 +166,8 @@ export const CardBottomSectionCardBottom = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 600px) {
@@ -166,6 +181,8 @@ export const CardBottomSectionCardBottomLeft = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 600px) {
@@ -182,6 +199,8 @@ export const CardBottomSectionCardBottomLeftNumber = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 600px) {
@@ -231,7 +250,8 @@ export const CardBottomSectionCardBottomGreenButton = styled.button`
   height: 50px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 600px) {
@@ -251,7 +271,8 @@ export const CardBottomSectionCardBottomGreyButton = styled.button`
   height: 50px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 600px) {

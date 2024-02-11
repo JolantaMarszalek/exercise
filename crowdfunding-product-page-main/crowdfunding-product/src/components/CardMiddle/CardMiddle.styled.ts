@@ -7,7 +7,6 @@ export const CardMiddleSection = styled.section`
   align-items: center;
   width: 50%;
   height: 200px;
-  background-color: blue;
   margin: 10px;
   border: 1px solid lightgray;
   background-color: white;
@@ -37,6 +36,7 @@ export const CardMiddleSectionTop = styled.div`
     width: auto;
     gap: 10px;
     height: auto;
+    margin-top: 20px;
   }
 
   @media (max-width: 600px) {
@@ -126,6 +126,7 @@ export const CardMiddleSectionBottom = styled.div`
     width: 90%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
   }
 
   @media (max-width: 600px) {
