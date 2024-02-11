@@ -14,7 +14,10 @@ export const CardMiddleSection = styled.section`
   border-radius: 10px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
   }
 
   @media (max-width: 600px) {
@@ -29,7 +32,11 @@ export const CardMiddleSectionTop = styled.div`
   grid-template-columns: repeat(3, 1fr);
 
   @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
     width: auto;
+    gap: 10px;
+    height: auto;
   }
 
   @media (max-width: 600px) {
@@ -62,6 +69,10 @@ export const CardMiddleSectionTopSinglePartMiddle = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
   }
 
   @media (max-width: 600px) {
@@ -96,6 +107,7 @@ export const CardMiddleSectionTopSinglePartDescribe = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 600px) {
@@ -103,15 +115,17 @@ export const CardMiddleSectionTopSinglePartDescribe = styled.div`
 `;
 
 export const CardMiddleSectionBottom = styled.div`
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
   width: 90%;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (max-width: 600px) {

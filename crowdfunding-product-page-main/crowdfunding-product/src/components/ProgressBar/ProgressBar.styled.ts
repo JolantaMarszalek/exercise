@@ -5,13 +5,15 @@ interface ProgressBarStyledProps {
 }
 
 export const ProgressBarSection = styled.section`
+  display: flex;
   width: 100%;
   background-color: lightgrey;
   border-radius: 10px;
   margin-top: 20px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
+    margin-bottom: 20px;
   }
 
   @media (max-width: 600px) {
@@ -25,7 +27,7 @@ export const ProgressBarStyled = styled.div<ProgressBarStyledProps>`
   border-radius: 10px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
   }
 
   @media (max-width: 600px) {

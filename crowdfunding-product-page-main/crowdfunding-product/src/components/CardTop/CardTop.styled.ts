@@ -13,7 +13,7 @@ export const CardTopSection = styled.section`
   border: 1px solid lightgray;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
   }
 
   @media (max-width: 600px) {
