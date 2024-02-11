@@ -5,17 +5,25 @@ import {
   HeaderSectionSingleLink,
   HeaderSectionBackground,
   BackgroundImage,
+  HeaderSectionMobileMenu,
 } from "./Header.styled";
 import imageHeroDesktop from "../../../../images/image-hero-desktop.jpg";
+import MediaQuery from "react-responsive";
+import { useState } from "react";
+import { MobileMenu } from "../MobileMenu/MobileMenu.component";
 
 export const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <>
       <HeaderSection className="my-component">
         <HeaderSectionBackground>
           <BackgroundImage src={imageHeroDesktop} alt="Header Background" />
-
-          {/* <img src={imageHeroDesktop} alt="Header Background" /> */}
         </HeaderSectionBackground>
         <HeaderSectionLogo>
           <svg width="128" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -26,12 +34,46 @@ export const Header = () => {
             />
           </svg>
         </HeaderSectionLogo>
-        <HeaderSectionLink>
+        {/* <HeaderSectionLink>
           <HeaderSectionSingleLink>About</HeaderSectionSingleLink>
           <HeaderSectionSingleLink>Discover</HeaderSectionSingleLink>
           <HeaderSectionSingleLink>Get Started</HeaderSectionSingleLink>
-        </HeaderSectionLink>
+        </HeaderSectionLink> */}
+        <MediaQuery minWidth={1024}>
+          {(matches) =>
+            matches ? null : (
+              <HeaderSectionMobileMenu onClick={toggleMobileMenu}>
+                <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="#FFF" fill-rule="evenodd">
+                    <path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z" />
+                  </g>
+                </svg>
+              </HeaderSectionMobileMenu>
+            )
+          }
+        </MediaQuery>
+        <MediaQuery minWidth={1024}>
+          {(matches) =>
+            matches && (
+              <>
+                <HeaderSectionLink
+                  className={isMobileMenuOpen ? "mobile-menu-open" : ""}>
+                  <HeaderSectionSingleLink>About</HeaderSectionSingleLink>
+                  <HeaderSectionSingleLink>Discover</HeaderSectionSingleLink>
+                  <HeaderSectionSingleLink>Get Started</HeaderSectionSingleLink>
+                </HeaderSectionLink>
+              </>
+            )
+          }
+        </MediaQuery>
       </HeaderSection>
+
+      {isMobileMenuOpen && (
+        <MobileMenu
+          isOpen={isMobileMenuOpen}
+          setIsCardMobileOpen={setIsMobileMenuOpen}
+        />
+      )}
     </>
   );
 };

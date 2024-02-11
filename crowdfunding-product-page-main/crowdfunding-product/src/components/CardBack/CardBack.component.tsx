@@ -25,23 +25,45 @@ import {
 
 interface CardBackProps {
   setIsCardBackOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  updatePledge: (amount: number) => void;
 }
+export const CardBack: React.FC<CardBackProps> = ({
+  updatePledge,
+  setIsCardBackOpen,
+}) => {
+  // const handlePledge = (amount: number) => {
+  //   updatePledge(amount);
+  //   setIsCardBackOpen(false);
+  //   closeLightbox();
+  // };
 
-export const CardBack: React.FC<CardBackProps> = ({ setIsCardBackOpen }) => {
   const closeLightbox = () => {
     setIsCardBackOpen(false);
   };
 
+  // export const CardBack: React.FC<CardBackProps> = ({
+  //   setIsCardBackOpen,
+  //   updatePledge,
+  // }) => {
+  //   const closeLightbox = () => {
+  //     setIsCardBackOpen(false);
+  //   };
+
   const [isCheckedArray, setIsCheckedArray] = useState([false, false, false]);
-  const [isExpandedArray, setIsExpandedArray] = useState([false, false, false]);
+  // const [isExpandedArray, setIsExpandedArray] = useState([false, false, false]);
 
   const handleCheckboxClick = (index: number) => {
     const newCheckedArray = [...isCheckedArray];
-    const newExpandedArray = [...isExpandedArray];
+    // const newExpandedArray = [...isExpandedArray];
     newCheckedArray[index] = !newCheckedArray[index];
-    newExpandedArray[index] = !newExpandedArray[index];
+    // newExpandedArray[index] = !newExpandedArray[index];
     setIsCheckedArray(newCheckedArray);
-    setIsExpandedArray(newExpandedArray);
+    // setIsExpandedArray(newExpandedArray);
+  };
+
+  const handlePledgeClick = (amount: number) => {
+    updatePledge(amount);
+    setIsCardBackOpen(false);
   };
 
   return (
@@ -121,8 +143,12 @@ export const CardBack: React.FC<CardBackProps> = ({ setIsCardBackOpen }) => {
                   <CardBackSectionCardDescribe>
                     Enter your pledge
                   </CardBackSectionCardDescribe>
-                  <CardBackSectionButtonPrice>$ 25</CardBackSectionButtonPrice>
-                  <CardBackSectionButtonContinue>
+                  <CardBackSectionButtonPrice
+                    onClick={() => handlePledgeClick(25)}>
+                    $ 25
+                  </CardBackSectionButtonPrice>
+                  <CardBackSectionButtonContinue
+                    onClick={() => handlePledgeClick(25)}>
                     Continue
                   </CardBackSectionButtonContinue>
                 </CardBackSectionCardBottom>
@@ -167,7 +193,10 @@ export const CardBack: React.FC<CardBackProps> = ({ setIsCardBackOpen }) => {
                   <CardBackSectionCardDescribe>
                     Enter your pledge
                   </CardBackSectionCardDescribe>
-                  <CardBackSectionButtonPrice>$ 75</CardBackSectionButtonPrice>
+                  <CardBackSectionButtonPrice
+                    onClick={() => handlePledgeClick(75)}>
+                    $ 75
+                  </CardBackSectionButtonPrice>
                   <CardBackSectionButtonContinue>
                     Continue
                   </CardBackSectionButtonContinue>
@@ -213,7 +242,10 @@ export const CardBack: React.FC<CardBackProps> = ({ setIsCardBackOpen }) => {
                   <CardBackSectionCardDescribe>
                     Enter your pledge
                   </CardBackSectionCardDescribe>
-                  <CardBackSectionButtonPrice>$ 200</CardBackSectionButtonPrice>
+                  <CardBackSectionButtonPrice
+                    onClick={() => handlePledgeClick(200)}>
+                    $ 200
+                  </CardBackSectionButtonPrice>
                   <CardBackSectionButtonContinue>
                     Continue
                   </CardBackSectionButtonContinue>

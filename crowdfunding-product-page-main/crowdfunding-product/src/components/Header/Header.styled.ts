@@ -66,3 +66,13 @@ export const HeaderSectionSingleLink = styled.div`
   margin: 10px;
   width: auto;
 `;
+
+export const HeaderSectionMobileMenu = styled.div`
+  display: none;
+  position: static;
+  flex-direction: column;
+  display: flex;
+  padding: 15px;
+  width: 200px;
+  align-items: center;
+`;

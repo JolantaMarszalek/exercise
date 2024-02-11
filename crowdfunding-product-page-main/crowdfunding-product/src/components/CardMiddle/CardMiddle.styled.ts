@@ -7,14 +7,16 @@ export const CardMiddleSection = styled.section`
   align-items: center;
   width: 50%;
   height: 200px;
-  background-color: blue;
   margin: 10px;
   border: 1px solid lightgray;
   background-color: white;
   border-radius: 10px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
   }
 
   @media (max-width: 600px) {
@@ -29,7 +31,12 @@ export const CardMiddleSectionTop = styled.div`
   grid-template-columns: repeat(3, 1fr);
 
   @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
     width: auto;
+    gap: 10px;
+    height: auto;
+    margin-top: 20px;
   }
 
   @media (max-width: 600px) {
@@ -57,11 +64,15 @@ export const CardMiddleSectionTopSinglePartMiddle = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 250px;
-  border-left: 1px solid var(--neutral-dark-gray);
-  border-right: 1px solid var(--neutral-dark-gray);
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
 
   @media (max-width: 1024px) {
     width: auto;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
   }
 
   @media (max-width: 600px) {
@@ -96,6 +107,7 @@ export const CardMiddleSectionTopSinglePartDescribe = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 600px) {
@@ -108,9 +120,13 @@ export const CardMiddleSectionBottom = styled.div`
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
+  width: 90%;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
   }
 
   @media (max-width: 600px) {
