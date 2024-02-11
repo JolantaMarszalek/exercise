@@ -31,7 +31,7 @@ export const CardBackSection = styled.div`
   padding: 10px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
   }
 
   @media (max-width: 600px) {
@@ -51,7 +51,7 @@ export const CardBackSectionTitle = styled.div`
   margin-bottom: 10px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
   }
 
   @media (max-width: 600px) {
@@ -69,7 +69,7 @@ export const CardBackSectionDescribe = styled.div`
   margin-bottom: 10px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
   }
 
   @media (max-width: 600px) {
@@ -89,7 +89,7 @@ export const CardBackSectionCard = styled.div`
   margin-bottom: 10px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
   }
 
   @media (max-width: 600px) {
@@ -106,7 +106,7 @@ export const CardBackSectionCardSectionTop = styled.div`
   margin-bottom: 10px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
   }
 
   @media (max-width: 600px) {
@@ -154,7 +154,7 @@ export const CardBackSectionCardTop = styled.div`
   width: 90%;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
   }
 
   @media (max-width: 600px) {
@@ -234,7 +234,7 @@ export const CardBackSectionCardDescribe = styled.div`
   padding: 5px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
   }
 
   @media (max-width: 600px) {
@@ -311,7 +311,7 @@ export const CardBackSectionCardBottom = styled.div`
   width: 90%;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
   }
 
   @media (max-width: 600px) {

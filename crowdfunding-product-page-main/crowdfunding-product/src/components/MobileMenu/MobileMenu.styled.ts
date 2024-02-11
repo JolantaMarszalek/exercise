@@ -24,8 +24,8 @@ export const HeaderSectionLink = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 200px;
+  width: auto;
+  height: auto;
   padding-top: 10px;
   background-color: white;
   border-radius: 10px;
@@ -33,17 +33,18 @@ export const HeaderSectionLink = styled.section`
 
 export const MobileMenuSingleLink = styled.section`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 300px;
   height: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 20px;
 `;
 
 export const MobileMenuSingleMiddleLink = styled.section`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 300px;
   height: 30px;
@@ -51,6 +52,7 @@ export const MobileMenuSingleMiddleLink = styled.section`
   padding-bottom: 10px;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
+  padding-left: 20px;
 `;
 
 export const HeaderMobileButton = styled.div`
@@ -80,10 +82,10 @@ export const CardMobileSectionButton = styled.div`
   align-items: flex-end;
   font-weight: bold;
   font-size: 20px;
-  width: 100%;
+  width: 90%;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 80%;
   }
 
   @media (max-width: 600px) {
