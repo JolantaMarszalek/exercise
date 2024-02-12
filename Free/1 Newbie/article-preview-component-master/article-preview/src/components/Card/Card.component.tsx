@@ -118,7 +118,7 @@ export const Card = () => {
                     </svg>
                   </CardSectionRightBottomRightInfoSingle>
 
-                  {windowWidth <= 1120 && (
+                  {windowWidth <= 1024 && (
                     <CardSectionRightBottomRightArrow
                       onClick={handleArrowClick}>
                       <svg
