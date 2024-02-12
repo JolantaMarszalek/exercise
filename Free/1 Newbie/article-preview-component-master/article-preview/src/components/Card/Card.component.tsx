@@ -17,14 +17,27 @@ import {
 } from "./Card.styled";
 import drawersImage from "../../../../images/drawers.jpg";
 import avatarImage from "../../../../images/avatar-michelle.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Card = () => {
   const [showAdditionalInfo, setShowAdditionalInfo] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleArrowClick = () => {
     setShowAdditionalInfo(!showAdditionalInfo);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
@@ -104,6 +117,21 @@ export const Card = () => {
                       />
                     </svg>
                   </CardSectionRightBottomRightInfoSingle>
+
+                  {windowWidth <= 1120 && (
+                    <CardSectionRightBottomRightArrow
+                      onClick={handleArrowClick}>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="13">
+                        <path
+                          fill="#6E8098"
+                          d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                        />
+                      </svg>
+                    </CardSectionRightBottomRightArrow>
+                  )}
                 </CardSectionRightBottomRightInfo>
               )}
             </CardSectionRightBottomRight>

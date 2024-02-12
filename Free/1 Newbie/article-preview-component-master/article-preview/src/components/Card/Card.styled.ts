@@ -2,13 +2,10 @@ import styled from "styled-components";
 
 export const CardSection = styled.section`
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
-  /* padding: 2px; */
-  /* border-radius: 50px; */
   line-height: 1.5;
 
   @media (max-width: 1024px) {
@@ -41,6 +38,14 @@ export const CardSectionLeft = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    width: 400px;
+    height: 275px;
+
+    img {
+      width: auto;
+      height: 100%;
+      border-radius: 20px 20px 0 0;
+    }
   }
 
   @media (max-width: 375px) {
@@ -63,6 +68,7 @@ export const CardSectionRight = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    border-radius: 0 0 20px 20px;
   }
 
   @media (max-width: 375px) {
@@ -84,6 +90,7 @@ export const CardSectionRightTitle = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
   }
 
   @media (max-width: 375px) {
@@ -120,7 +127,7 @@ export const CardSectionRightBottom = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   @media (max-width: 375px) {
@@ -137,7 +144,7 @@ export const CardSectionRightBottomLeft = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   @media (max-width: 375px) {
@@ -251,14 +258,6 @@ export const CardSectionRightBottomRightArrow = styled.div`
   height: 30px;
   border-radius: 50px;
 
-  .additional-info {
-    display: none;
-  }
-
-  .CardSectionRightBottomRightArrow:hover + .additional-info {
-    display: block;
-  }
-
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
@@ -270,12 +269,7 @@ export const CardSectionRightBottomRightArrow = styled.div`
 `;
 
 export const CardSectionRightBottomRightInfo = styled.div`
-  /* top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; */
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-evenly;
   justify-items: center;
   align-items: center;
@@ -294,7 +288,13 @@ export const CardSectionRightBottomRightInfo = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    width: 400px;
+    height: 80px;
+    margin-left: -345px;
+    margin-bottom: 0;
+    /* flex-direction: column; */
+    border-radius: 0 0 20px 20px;
+    margin-top: 15px;
   }
 
   @media (max-width: 375px) {
@@ -304,7 +304,6 @@ export const CardSectionRightBottomRightInfo = styled.div`
 
 export const CardSectionRightBottomRightInfoSingle = styled.div`
   display: flex;
-
   justify-items: center;
   align-items: center;
   gap: 20px;
@@ -317,7 +316,7 @@ export const CardSectionRightBottomRightInfoSingle = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   @media (max-width: 375px) {
