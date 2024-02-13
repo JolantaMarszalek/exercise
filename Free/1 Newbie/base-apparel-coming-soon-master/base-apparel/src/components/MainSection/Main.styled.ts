@@ -175,6 +175,7 @@ export const MainSectionLeftInput = styled.input`
   height: 50px;
   border-radius: 30px;
   border: 1px solid var(--primary-desaturated-red);
+  padding-left: 10px;
 
   @media (max-width: 1024px) {
     display: flex;
