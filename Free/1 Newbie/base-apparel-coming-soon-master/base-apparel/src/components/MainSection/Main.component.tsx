@@ -3,8 +3,11 @@ import {
   MainSectionLeft,
   MainSectionLeftDescribe,
   MainSectionLeftInput,
+  MainSectionLeftInputAndError,
   MainSectionLeftInputButton,
   MainSectionLeftInputSection,
+  MainSectionLeftInputSectionErrorMessage,
+  MainSectionLeftInputSectionForm,
   MainSectionLeftLogo,
   MainSectionLeftText,
   MainSectionLeftTitle,
@@ -13,8 +16,27 @@ import {
   MainSectionRight,
 } from "./Main.styled";
 import heroDesktopImage from "../../../../images/hero-desktop.jpg";
+import { useState } from "react";
 
 export const Main = () => {
+  const [email, setEmail] = useState("");
+  const [validEmail, setValidEmail] = useState(true);
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
+  const validateEmail = (email: string) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
+  const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const isValid = validateEmail(email);
+    setValidEmail(isValid);
+  };
+
   return (
     <>
       <MainSection>
@@ -89,17 +111,34 @@ export const Main = () => {
               and our launch deals.
             </MainSectionLeftDescribe>
             <MainSectionLeftInputSection>
-              <MainSectionLeftInput placeholder="Email Address"></MainSectionLeftInput>
-              <MainSectionLeftInputButton>
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
-                  <path
-                    fill="none"
-                    stroke="#FFF"
-                    strokeWidth="2"
-                    d="M1 1l8.836 8.836L1 18.671"
+              <MainSectionLeftInputSectionForm onSubmit={handleFormSubmit}>
+                <MainSectionLeftInputAndError>
+                  <MainSectionLeftInput
+                    placeholder="Email Address"
+                    value={email}
+                    onChange={handleInputChange}
+                    className={!validEmail ? "invalid" : ""}
                   />
-                </svg>
-              </MainSectionLeftInputButton>
+                  {!validEmail && (
+                    <MainSectionLeftInputSectionErrorMessage className="error-message">
+                      Please provide a valid email
+                    </MainSectionLeftInputSectionErrorMessage>
+                  )}
+                </MainSectionLeftInputAndError>
+                <MainSectionLeftInputButton type="submit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="20">
+                    <path
+                      fill="none"
+                      stroke="#FFF"
+                      strokeWidth="2"
+                      d="M1 1l8.836 8.836L1 18.671"
+                    />
+                  </svg>
+                </MainSectionLeftInputButton>{" "}
+              </MainSectionLeftInputSectionForm>
             </MainSectionLeftInputSection>
           </MainSectionLeftText>
         </MainSectionLeft>

@@ -168,6 +168,18 @@ export const MainSectionLeftInputSection = styled.div`
   }
 `;
 
+export const MainSectionLeftInputSectionForm = styled.form`
+  display: flex;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
 export const MainSectionLeftInput = styled.input`
   display: flex;
   flex-direction: column;
@@ -175,7 +187,20 @@ export const MainSectionLeftInput = styled.input`
   height: 50px;
   border-radius: 30px;
   border: 1px solid var(--primary-desaturated-red);
-  padding-left: 10px;
+  /* padding-left: 10px; */
+  outline: none;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+export const MainSectionLeftInputAndError = styled.div`
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -192,11 +217,25 @@ export const MainSectionLeftInputButton = styled.button`
   width: 100px;
   height: 55px;
   border-radius: 30px;
-  margin-left: -50px;
+  margin-left: -100px;
+
   border: none;
   background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const MainSectionLeftInputSectionErrorMessage = styled.div`
+  display: flex;
+  color: var(--primary-soft-red);
 
   @media (max-width: 1024px) {
     display: flex;
