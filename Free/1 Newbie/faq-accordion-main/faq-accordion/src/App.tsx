@@ -25,9 +25,9 @@ function App() {
               <path fill="#fff" d="M0 0h1440v320H0z" />
             </clipPath>
           </defs>
-        </svg>
+        </svg>{" "}
+        <Card></Card>
       </Layout>
-      <Card></Card>
     </>
   );
 }

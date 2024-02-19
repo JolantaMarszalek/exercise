@@ -4,9 +4,12 @@ export const CardSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100vh;
-  line-height: 1.5;
+  width: 600px;
+  height: 600px;
+  background-color: var(--white);
+  margin-top: -200px;
+  z-index: 9999;
+  border-radius: 20px;
 
   @media (max-width: 1024px) {
     display: flex;

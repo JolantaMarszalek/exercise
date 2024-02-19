@@ -8,7 +8,7 @@ export const Card = () => {
   return (
     <>
       <CardSection>
-        <CardSectionRightTitle></CardSectionRightTitle>
+        <CardSectionRightTitle>FAQs</CardSectionRightTitle>
         <CardSectionRightDescribe></CardSectionRightDescribe>
       </CardSection>
     </>
