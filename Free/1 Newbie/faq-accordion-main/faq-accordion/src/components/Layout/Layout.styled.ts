@@ -13,7 +13,8 @@ export const LayoutSection = styled.section`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 100vh;
   }
 
   @media (max-width: 375px) {

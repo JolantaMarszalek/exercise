@@ -13,6 +13,6 @@ export const GlobalStyle = createGlobalStyle`
 --white: hsl(0, 0%, 100%);
 --light-pink: hsl(275, 100%, 97%);
 --grayish-purple: hsl(292, 16%, 49%);
---darl-purple: hsl(292, 42%, 14%);
+--dark-purple: hsl(292, 42%, 14%);
   }
 `;

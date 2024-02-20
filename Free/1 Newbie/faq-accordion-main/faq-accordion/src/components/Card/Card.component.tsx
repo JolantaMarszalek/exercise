@@ -72,10 +72,13 @@ export const Card = () => {
         </CardSectionRightTitle>
         {faqData.map((faq, index) => (
           <CardSectionRightSingleLine key={index}>
-            <CardSectionRightSingleLineQuestion>
+            <CardSectionRightSingleLineQuestion
+              className="question"
+              onClick={() => toggleAnswer(index)}>
               {faq.question}
               <CardSectionRightSingleLineQuestionImage
-                onClick={() => toggleAnswer(index)}>
+              // onClick={() => toggleAnswer(index)}
+              >
                 {faq.isOpen ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
