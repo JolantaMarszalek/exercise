@@ -26,7 +26,7 @@ function App() {
             </clipPath>
           </defs>
         </svg>{" "}
-        <Card></Card>
+        <Card />
       </Layout>
     </>
   );
