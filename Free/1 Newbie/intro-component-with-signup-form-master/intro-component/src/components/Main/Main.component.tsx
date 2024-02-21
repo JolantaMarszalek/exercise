@@ -5,6 +5,9 @@ import {
   MainSectionLeftTitle,
   MainSectionRight,
   MainSectionRightBottom,
+  MainSectionRightBottomButton,
+  MainSectionRightBottomDescribe,
+  MainSectionRightBottomInput,
   MainSectionRightTop,
 } from "./Main.styled";
 
@@ -26,7 +29,16 @@ export const Main = () => {
           <MainSectionRightTop>
             Try it free 7 days then $20/mo. thereafter
           </MainSectionRightTop>
-          <MainSectionRightBottom></MainSectionRightBottom>
+          <MainSectionRightBottom>
+            <MainSectionRightBottomInput></MainSectionRightBottomInput>
+            <MainSectionRightBottomInput></MainSectionRightBottomInput>
+            <MainSectionRightBottomInput></MainSectionRightBottomInput>
+            <MainSectionRightBottomInput></MainSectionRightBottomInput>
+            <MainSectionRightBottomButton></MainSectionRightBottomButton>
+            <MainSectionRightBottomDescribe>
+              By clicking the button, you are agreeing to our Terms and Services
+            </MainSectionRightBottomDescribe>
+          </MainSectionRightBottom>
         </MainSectionRight>
       </MainSection>
     </>

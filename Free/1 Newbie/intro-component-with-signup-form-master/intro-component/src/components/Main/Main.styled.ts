@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const MainSection = styled.section`
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-evenly;
   align-items: center;
   width: 80%;
@@ -18,7 +17,6 @@ export const MainSection = styled.section`
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
-    /* width: auto; */
   }
 
   @media (max-width: 375px) {
@@ -36,9 +34,7 @@ export const MainSectionLeft = styled.div`
   width: 90%;
   height: 90%;
   padding: 2px;
-  /* font-size: 50px; */
-  /* color: var(--dark-purple); */
-  /* font-weight: bold; */
+  color: white;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -54,16 +50,12 @@ export const MainSectionLeft = styled.div`
 
 export const MainSectionLeftTitle = styled.div`
   display: flex;
-  /* flex-direction: column; */
   align-content: flex-start;
   justify-content: flex-start;
   align-items: center;
   width: 90%;
   height: 90%;
   padding: 2px;
-  /* font-size: 50px; */
-  /* color: var(--dark-purple); */
-  /* font-weight: bold; */
 
   @media (max-width: 1024px) {
     display: flex;
@@ -79,16 +71,12 @@ export const MainSectionLeftTitle = styled.div`
 
 export const MainSectionLeftDescribe = styled.div`
   display: flex;
-  /* flex-direction: column; */
   align-content: flex-start;
   justify-content: flex-start;
   align-items: center;
   width: 90%;
   height: 90%;
   padding: 2px;
-  /* font-size: 50px; */
-  /* color: var(--dark-purple); */
-  /* font-weight: bold; */
 
   @media (max-width: 1024px) {
     display: flex;
@@ -111,10 +99,6 @@ export const MainSectionRight = styled.div`
   width: 90%;
   padding: 2px;
   height: 90%;
-  /* font-size: 50px; */
-  /* color: var(--dark-purple); */
-  /* background-color: white; */
-  /* font-weight: bold; */
   gap: 10px;
 
   @media (max-width: 1024px) {
@@ -131,17 +115,14 @@ export const MainSectionRight = styled.div`
 
 export const MainSectionRightTop = styled.div`
   display: flex;
-  /* flex-direction: column; */
   align-content: flex-start;
   justify-content: flex-start;
   align-items: center;
   width: 90%;
   height: 80px;
   padding: 2px;
-  /* font-size: 50px; */
-  /* color: var(--dark-purple); */
+  color: white;
   background-color: blue;
-  /* font-weight: bold; */
   border-radius: 10px;
 
   @media (max-width: 1024px) {
@@ -158,17 +139,14 @@ export const MainSectionRightTop = styled.div`
 
 export const MainSectionRightBottom = styled.div`
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-content: flex-start;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   width: 90%;
   padding: 2px;
   height: 500px;
-  /* font-size: 50px; */
-  /* color: var(--dark-purple); */
   background-color: white;
-  /* font-weight: bold; */
   border-radius: 10px;
 
   @media (max-width: 1024px) {
@@ -183,17 +161,16 @@ export const MainSectionRightBottom = styled.div`
   }
 `;
 
-export const MainSectionRightTitle = styled.div`
+export const MainSectionRightBottomInput = styled.input`
   display: flex;
-  /* flex-direction: column; */
   align-content: flex-start;
   justify-content: flex-start;
   align-items: center;
-  width: 90%;
+  height: 40px;
   padding: 2px;
-  font-size: 50px;
-  /* color: var(--dark-purple); */
-  font-weight: bold;
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -207,40 +184,22 @@ export const MainSectionRightTitle = styled.div`
   }
 `;
 
-export const MainSectionRightTitleImage = styled.div`
+export const MainSectionRightBottomButton = styled.button`
   display: flex;
-  /* flex-direction: column; */
   align-content: flex-start;
   justify-content: flex-start;
   align-items: center;
-  width: auto;
-  padding: 2px;
-  font-size: 20px;
-  font-weight: bold;
-
-  @media (max-width: 1024px) {
-    display: flex;
-  }
-
-  @media (max-width: 375px) {
-    padding: 2px;
-  }
-`;
-
-export const MainSectionRightSingleLine = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  justify-content: space-evenly;
   width: 90%;
   padding: 2px;
-  /* border-top: 2px solid var(--light-pink); */
+  height: 40px;
+  background-color: white;
+  border-radius: 10px;
 
   @media (max-width: 1024px) {
     display: flex;
-    /* width: auto; */
     align-content: flex-start;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   @media (max-width: 375px) {
@@ -248,65 +207,19 @@ export const MainSectionRightSingleLine = styled.div`
   }
 `;
 
-export const MainSectionRightSingleLineQuestion = styled.div`
+export const MainSectionRightBottomDescribe = styled.div`
   display: flex;
-  /* flex-direction: column; */
+  align-content: flex-start;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: space-between;
-  /* width: 90%; */
-  padding: 2px;
-  /* color: var(--dark-purple); */
-  font-weight: bold;
-
-  .question {
-    cursor: pointer;
-  }
-
-  .question:hover {
-    color: var(--grayish-purple);
-    background-color: #f0f0f0;
-  }
-
-  @media (max-width: 1024px) {
-    display: flex;
-    width: auto;
-  }
-
-  @media (max-width: 375px) {
-    padding: 2px;
-  }
-`;
-
-export const MainSectionRightSingleLineQuestionImage = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  justify-content: space-evenly;
-  width: auto;
-  padding: 2px;
-
-  @media (max-width: 1024px) {
-    display: flex;
-    flex-direction: column;
-  }
-
-  @media (max-width: 375px) {
-    padding: 2px;
-  }
-`;
-
-export const MainSectionRightSingleLineAnswer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  justify-content: space-evenly;
   width: 90%;
   padding: 2px;
-  /* color: var(--grayish-purple); */
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   @media (max-width: 375px) {
