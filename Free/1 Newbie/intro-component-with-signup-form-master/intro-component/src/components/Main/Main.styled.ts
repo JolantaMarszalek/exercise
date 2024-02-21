@@ -194,6 +194,8 @@ export const MainSectionRightBottomButton = styled.button`
   height: 40px;
   background-color: white;
   border-radius: 10px;
+  color: black;
+  text-transform: uppercase;
 
   @media (max-width: 1024px) {
     display: flex;

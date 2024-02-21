@@ -30,11 +30,13 @@ export const Main = () => {
             Try it free 7 days then $20/mo. thereafter
           </MainSectionRightTop>
           <MainSectionRightBottom>
-            <MainSectionRightBottomInput></MainSectionRightBottomInput>
-            <MainSectionRightBottomInput></MainSectionRightBottomInput>
-            <MainSectionRightBottomInput></MainSectionRightBottomInput>
-            <MainSectionRightBottomInput></MainSectionRightBottomInput>
-            <MainSectionRightBottomButton></MainSectionRightBottomButton>
+            <MainSectionRightBottomInput placeholder="First Name"></MainSectionRightBottomInput>
+            <MainSectionRightBottomInput placeholder="Last Name"></MainSectionRightBottomInput>
+            <MainSectionRightBottomInput placeholder="Email Address"></MainSectionRightBottomInput>
+            <MainSectionRightBottomInput placeholder="Password"></MainSectionRightBottomInput>
+            <MainSectionRightBottomButton>
+              Claim your free trial
+            </MainSectionRightBottomButton>
             <MainSectionRightBottomDescribe>
               By clicking the button, you are agreeing to our Terms and Services
             </MainSectionRightBottomDescribe>
