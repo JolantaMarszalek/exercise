@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const MainSection = styled.section`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-evenly;
   align-items: center;
-  width: 400px;
-  height: 400px;
+  width: 80%;
+  height: 80%;
   background-color: green;
 
   z-index: 9999;
@@ -29,15 +29,66 @@ export const MainSection = styled.section`
 
 export const MainSectionLeft = styled.div`
   display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  padding: 2px;
+  /* font-size: 50px; */
+  /* color: var(--dark-purple); */
+  /* font-weight: bold; */
+
+  @media (max-width: 1024px) {
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    padding: 2px;
+  }
+`;
+
+export const MainSectionLeftTitle = styled.div`
+  display: flex;
   /* flex-direction: column; */
   align-content: flex-start;
   justify-content: flex-start;
   align-items: center;
   width: 90%;
+  height: 90%;
   padding: 2px;
-  font-size: 50px;
-  color: var(--dark-purple);
-  font-weight: bold;
+  /* font-size: 50px; */
+  /* color: var(--dark-purple); */
+  /* font-weight: bold; */
+
+  @media (max-width: 1024px) {
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    padding: 2px;
+  }
+`;
+
+export const MainSectionLeftDescribe = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  padding: 2px;
+  /* font-size: 50px; */
+  /* color: var(--dark-purple); */
+  /* font-weight: bold; */
 
   @media (max-width: 1024px) {
     display: flex;
@@ -53,15 +104,18 @@ export const MainSectionLeft = styled.div`
 
 export const MainSectionRight = styled.div`
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-content: flex-start;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   width: 90%;
   padding: 2px;
-  font-size: 50px;
-  color: var(--dark-purple);
-  font-weight: bold;
+  height: 90%;
+  /* font-size: 50px; */
+  /* color: var(--dark-purple); */
+  /* background-color: white; */
+  /* font-weight: bold; */
+  gap: 10px;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -82,10 +136,13 @@ export const MainSectionRightTop = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 90%;
+  height: 80px;
   padding: 2px;
-  font-size: 50px;
-  color: var(--dark-purple);
-  font-weight: bold;
+  /* font-size: 50px; */
+  /* color: var(--dark-purple); */
+  background-color: blue;
+  /* font-weight: bold; */
+  border-radius: 10px;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -107,9 +164,12 @@ export const MainSectionRightBottom = styled.div`
   align-items: center;
   width: 90%;
   padding: 2px;
-  font-size: 50px;
-  color: var(--dark-purple);
-  font-weight: bold;
+  height: 500px;
+  /* font-size: 50px; */
+  /* color: var(--dark-purple); */
+  background-color: white;
+  /* font-weight: bold; */
+  border-radius: 10px;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -132,7 +192,7 @@ export const MainSectionRightTitle = styled.div`
   width: 90%;
   padding: 2px;
   font-size: 50px;
-  color: var(--dark-purple);
+  /* color: var(--dark-purple); */
   font-weight: bold;
 
   @media (max-width: 1024px) {
@@ -174,7 +234,7 @@ export const MainSectionRightSingleLine = styled.div`
   justify-content: space-evenly;
   width: 90%;
   padding: 2px;
-  border-top: 2px solid var(--light-pink);
+  /* border-top: 2px solid var(--light-pink); */
 
   @media (max-width: 1024px) {
     display: flex;
@@ -195,7 +255,7 @@ export const MainSectionRightSingleLineQuestion = styled.div`
   justify-content: space-between;
   /* width: 90%; */
   padding: 2px;
-  color: var(--dark-purple);
+  /* color: var(--dark-purple); */
   font-weight: bold;
 
   .question {
@@ -242,7 +302,7 @@ export const MainSectionRightSingleLineAnswer = styled.div`
   justify-content: space-evenly;
   width: 90%;
   padding: 2px;
-  color: var(--grayish-purple);
+  /* color: var(--grayish-purple); */
 
   @media (max-width: 1024px) {
     display: flex;
