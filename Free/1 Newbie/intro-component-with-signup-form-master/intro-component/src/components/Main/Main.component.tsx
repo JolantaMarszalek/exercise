@@ -10,6 +10,7 @@ import {
   MainSectionRightBottomDescribe,
   MainSectionRightBottomDescribeLeft,
   MainSectionRightBottomDescribeRight,
+  MainSectionRightBottomError,
   MainSectionRightBottomInput,
   MainSectionRightTop,
   MainSectionRightTopLeft,
@@ -37,7 +38,9 @@ export const Main = () => {
     const newEmail = e.target.value;
     setEmail(newEmail);
 
-    if (emailError) {
+    if (!validateEmail(newEmail)) {
+      setEmailError("Proszę podać prawidłowy adres email");
+    } else {
       setEmailError("");
     }
   };
@@ -89,29 +92,49 @@ export const Main = () => {
               onChange={(e) =>
                 setFirstName(e.target.value)
               }></MainSectionRightBottomInput>
-            {!firstName && formError && <div>{formError}</div>}
+            {!firstName && formError && (
+              <MainSectionRightBottomError>
+                {formError}
+              </MainSectionRightBottomError>
+            )}
             <MainSectionRightBottomInput
               placeholder="Last Name"
               value={lastName}
               onChange={(e) =>
                 setLastName(e.target.value)
               }></MainSectionRightBottomInput>
-            {!lastName && formError && <div>{formError}</div>}
+            {!lastName && formError && (
+              <MainSectionRightBottomError>
+                {formError}
+              </MainSectionRightBottomError>
+            )}
             <MainSectionRightBottomInput
               placeholder="Email Address"
               value={email}
               onChange={handleEmailChange}
               // onChange={(e) => setEmail(e.target.value)}
               autoComplete="username"></MainSectionRightBottomInput>
-            {!email && formError && <div>{formError}</div>}
-            {emailError && <div>{emailError}</div>}
+            {!email && formError && (
+              <MainSectionRightBottomError>
+                {formError}
+              </MainSectionRightBottomError>
+            )}
+            {emailError && (
+              <MainSectionRightBottomError>
+                {emailError}
+              </MainSectionRightBottomError>
+            )}
             <MainSectionRightBottomInput
               placeholder="Password"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               autoComplete="current-password"></MainSectionRightBottomInput>
-            {!password && formError && <div>{formError}</div>}
+            {!password && formError && (
+              <MainSectionRightBottomError>
+                {formError}
+              </MainSectionRightBottomError>
+            )}
             <MainSectionRightBottomButton onClick={handleClaimFreeTrial}>
               Claim your free trial
             </MainSectionRightBottomButton>

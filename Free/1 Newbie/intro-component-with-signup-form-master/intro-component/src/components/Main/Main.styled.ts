@@ -288,6 +288,29 @@ export const MainSectionRightBottomDescribe = styled.div`
   }
 `;
 
+export const MainSectionRightBottomError = styled.div`
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+  padding: 2px;
+  font-style: italic;
+  font-size: 12px;
+  color: var(--primary-red);
+
+  @media (max-width: 1024px) {
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  @media (max-width: 375px) {
+    padding: 2px;
+  }
+`;
+
 export const MainSectionRightBottomDescribeLeft = styled.div`
   display: flex;
   align-content: flex-start;
