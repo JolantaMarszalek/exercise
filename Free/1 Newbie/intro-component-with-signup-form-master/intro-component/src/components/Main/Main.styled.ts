@@ -14,7 +14,7 @@ export const MainSection = styled.section`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%;
+    width: 90%;
   }
 
   @media (max-width: 375px) {
@@ -39,6 +39,7 @@ export const MainSectionLeft = styled.div`
     align-content: flex-start;
     justify-content: flex-start;
     align-items: center;
+    width: 90%;
   }
 
   @media (max-width: 375px) {
@@ -63,6 +64,8 @@ export const MainSectionLeftTitle = styled.div`
     align-content: flex-start;
     justify-content: flex-start;
     align-items: center;
+    width: 90%;
+    text-align: center;
   }
 
   @media (max-width: 375px) {
@@ -85,6 +88,8 @@ export const MainSectionLeftDescribe = styled.div`
     align-content: flex-start;
     justify-content: flex-start;
     align-items: center;
+    width: 90%;
+    text-align: center;
   }
 
   @media (max-width: 375px) {
@@ -108,6 +113,7 @@ export const MainSectionRight = styled.div`
     align-content: flex-start;
     justify-content: flex-start;
     align-items: center;
+    width: 90%;
   }
 
   @media (max-width: 375px) {
@@ -130,8 +136,9 @@ export const MainSectionRightTop = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     align-content: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    width: 90%;
   }
 
   @media (max-width: 375px) {
@@ -195,7 +202,6 @@ export const MainSectionRightBottom = styled.form`
   justify-content: space-evenly;
   align-items: center;
   width: 75%;
-
   padding: 2px;
   height: 500px;
   background-color: white;
@@ -204,8 +210,9 @@ export const MainSectionRightBottom = styled.form`
   @media (max-width: 1024px) {
     display: flex;
     align-content: flex-start;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
+    width: 90%;
   }
 
   @media (max-width: 375px) {
@@ -219,7 +226,6 @@ export const MainSectionRightBottomInput = styled.input`
   justify-content: flex-start;
   align-items: center;
   height: 50px;
-
   width: 80%;
   background-color: white;
   border-radius: 5px;
@@ -232,6 +238,7 @@ export const MainSectionRightBottomInput = styled.input`
     align-content: flex-start;
     justify-content: flex-start;
     align-items: center;
+    width: 85%;
   }
 
   @media (max-width: 375px) {
@@ -258,8 +265,9 @@ export const MainSectionRightBottomButton = styled.button`
   @media (max-width: 1024px) {
     display: flex;
     align-content: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    width: 90%;
   }
 
   @media (max-width: 375px) {
@@ -279,8 +287,9 @@ export const MainSectionRightBottomDescribe = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     align-content: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    width: 90%;
   }
 
   @media (max-width: 375px) {
@@ -294,7 +303,7 @@ export const MainSectionRightBottomError = styled.div`
   justify-content: flex-end;
   align-items: center;
   width: 80%;
-  padding: 2px;
+  //   padding: 2px;
   font-style: italic;
   font-size: 12px;
   color: var(--primary-red);
@@ -302,8 +311,9 @@ export const MainSectionRightBottomError = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     align-content: flex-start;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
+    width: 90%;
   }
 
   @media (max-width: 375px) {
