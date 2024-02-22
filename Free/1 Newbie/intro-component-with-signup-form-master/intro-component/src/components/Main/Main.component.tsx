@@ -7,8 +7,12 @@ import {
   MainSectionRightBottom,
   MainSectionRightBottomButton,
   MainSectionRightBottomDescribe,
+  MainSectionRightBottomDescribeLeft,
+  MainSectionRightBottomDescribeRight,
   MainSectionRightBottomInput,
   MainSectionRightTop,
+  MainSectionRightTopLeft,
+  MainSectionRightTopRight,
 } from "./Main.styled";
 
 export const Main = () => {
@@ -27,7 +31,12 @@ export const Main = () => {
         </MainSectionLeft>
         <MainSectionRight>
           <MainSectionRightTop>
-            Try it free 7 days then $20/mo. thereafter
+            <MainSectionRightTopLeft>
+              Try it free 7 days
+            </MainSectionRightTopLeft>
+            <MainSectionRightTopRight>
+              then $20/mo. thereafter
+            </MainSectionRightTopRight>
           </MainSectionRightTop>
           <MainSectionRightBottom>
             <MainSectionRightBottomInput placeholder="First Name"></MainSectionRightBottomInput>
@@ -38,7 +47,12 @@ export const Main = () => {
               Claim your free trial
             </MainSectionRightBottomButton>
             <MainSectionRightBottomDescribe>
-              By clicking the button, you are agreeing to our Terms and Services
+              <MainSectionRightBottomDescribeLeft>
+                By clicking the button, you are agreeing to our
+              </MainSectionRightBottomDescribeLeft>
+              <MainSectionRightBottomDescribeRight>
+                Terms and Services
+              </MainSectionRightBottomDescribeRight>
             </MainSectionRightBottomDescribe>
           </MainSectionRightBottom>
         </MainSectionRight>
