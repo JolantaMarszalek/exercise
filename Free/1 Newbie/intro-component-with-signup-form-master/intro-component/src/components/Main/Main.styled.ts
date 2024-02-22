@@ -219,12 +219,13 @@ export const MainSectionRightBottomInput = styled.input`
   justify-content: flex-start;
   align-items: center;
   height: 50px;
-  padding: 2px;
-  width: 90%;
+
+  width: 80%;
   background-color: white;
   border-radius: 5px;
   border: 1px solid var(--neutral-grayish-blue);
   font-weight: bold;
+  padding-left: 20px;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -243,7 +244,7 @@ export const MainSectionRightBottomButton = styled.button`
   align-content: flex-start;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 85%;
   padding: 2px;
   height: 55px;
   background-color: var(--primary-green);
@@ -320,6 +321,7 @@ export const MainSectionRightBottomDescribeRight = styled.div`
   text-align: center;
   font-size: 12px;
   color: var(--primary-red);
+  font-weight: bold;
 
   @media (max-width: 1024px) {
     display: flex;
