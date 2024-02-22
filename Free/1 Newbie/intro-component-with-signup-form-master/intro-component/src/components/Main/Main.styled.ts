@@ -188,7 +188,7 @@ export const MainSectionRightTopRight = styled.div`
   }
 `;
 
-export const MainSectionRightBottom = styled.div`
+export const MainSectionRightBottom = styled.form`
   display: flex;
   flex-direction: column;
   align-content: center;

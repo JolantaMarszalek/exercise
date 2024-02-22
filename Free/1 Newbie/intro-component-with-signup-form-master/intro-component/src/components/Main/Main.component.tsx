@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   MainSection,
   MainSectionLeft,
@@ -16,6 +17,49 @@ import {
 } from "./Main.styled";
 
 export const Main = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [formError, setFormError] = useState("");
+
+  const validateEmail = (email: string) => {
+    const re = /\S+@\S+\.\S+/;
+    const isValid = re.test(email);
+    console.log(
+      `Adres email ${email} jest ${isValid ? "poprawny" : "niepoprawny"}`
+    );
+    return isValid;
+  };
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newEmail = e.target.value;
+    setEmail(newEmail);
+
+    if (emailError) {
+      setEmailError("");
+    }
+  };
+
+  const handleClaimFreeTrial = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+    console.log("Próba rejestracji");
+    if (!firstName || !lastName || !email || !password) {
+      console.log("Brak wymaganych danych");
+      setFormError("Proszę wypełnić wszystkie pola");
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      console.log("Nieprawidłowy adres email");
+      setEmailError("Proszę podać prawidłowy adres email");
+      return;
+    }
+
+    console.log("Formularz poprawny, można wysłać dane");
+  };
+
   return (
     <>
       <MainSection>
@@ -39,11 +83,36 @@ export const Main = () => {
             </MainSectionRightTopRight>
           </MainSectionRightTop>
           <MainSectionRightBottom>
-            <MainSectionRightBottomInput placeholder="First Name"></MainSectionRightBottomInput>
-            <MainSectionRightBottomInput placeholder="Last Name"></MainSectionRightBottomInput>
-            <MainSectionRightBottomInput placeholder="Email Address"></MainSectionRightBottomInput>
-            <MainSectionRightBottomInput placeholder="Password"></MainSectionRightBottomInput>
-            <MainSectionRightBottomButton>
+            <MainSectionRightBottomInput
+              placeholder="First Name"
+              value={firstName}
+              onChange={(e) =>
+                setFirstName(e.target.value)
+              }></MainSectionRightBottomInput>
+            {!firstName && formError && <div>{formError}</div>}
+            <MainSectionRightBottomInput
+              placeholder="Last Name"
+              value={lastName}
+              onChange={(e) =>
+                setLastName(e.target.value)
+              }></MainSectionRightBottomInput>
+            {!lastName && formError && <div>{formError}</div>}
+            <MainSectionRightBottomInput
+              placeholder="Email Address"
+              value={email}
+              onChange={handleEmailChange}
+              // onChange={(e) => setEmail(e.target.value)}
+              autoComplete="username"></MainSectionRightBottomInput>
+            {!email && formError && <div>{formError}</div>}
+            {emailError && <div>{emailError}</div>}
+            <MainSectionRightBottomInput
+              placeholder="Password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              autoComplete="current-password"></MainSectionRightBottomInput>
+            {!password && formError && <div>{formError}</div>}
+            <MainSectionRightBottomButton onClick={handleClaimFreeTrial}>
               Claim your free trial
             </MainSectionRightBottomButton>
             <MainSectionRightBottomDescribe>
