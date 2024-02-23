@@ -25,6 +25,9 @@ export const Main = () => {
   const [emailError, setEmailError] = useState("");
   const [formError, setFormError] = useState("");
 
+  const [isEmpty, setIsEmpty] = useState(false);
+  const [isInvalidEmail, setIsInvalidEmail] = useState(false);
+
   const validateEmail = (email: string) => {
     const re = /\S+@\S+\.\S+/;
     const isValid = re.test(email);
@@ -38,6 +41,18 @@ export const Main = () => {
     const newEmail = e.target.value;
     setEmail(newEmail);
 
+    // if (!newEmail.trim()) {
+    //   setIsEmpty(true);
+    // } else {
+    //   setIsEmpty(false);
+    // }
+
+    // if (!validateEmail(newEmail)) {
+    //   setIsInvalidEmail(true);
+    // } else {
+    //   setIsInvalidEmail(false);
+    // }
+
     if (!validateEmail(newEmail)) {
       setEmailError("Proszę podać prawidłowy adres email");
     } else {
@@ -47,20 +62,16 @@ export const Main = () => {
 
   const handleClaimFreeTrial = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
-    console.log("Próba rejestracji");
+
     if (!firstName || !lastName || !email || !password) {
-      console.log("Brak wymaganych danych");
       setFormError("Proszę wypełnić wszystkie pola");
       return;
     }
 
     if (!validateEmail(email)) {
-      console.log("Nieprawidłowy adres email");
       setEmailError("Proszę podać prawidłowy adres email");
       return;
     }
-
-    console.log("Formularz poprawny, można wysłać dane");
   };
 
   return (
@@ -94,7 +105,7 @@ export const Main = () => {
               }></MainSectionRightBottomInput>
             {!firstName && formError && (
               <MainSectionRightBottomError>
-                {formError}
+                First Name cannot be empty
               </MainSectionRightBottomError>
             )}
             <MainSectionRightBottomInput
@@ -105,23 +116,38 @@ export const Main = () => {
               }></MainSectionRightBottomInput>
             {!lastName && formError && (
               <MainSectionRightBottomError>
-                {formError}
+                Last Name cannot be empty
               </MainSectionRightBottomError>
             )}
             <MainSectionRightBottomInput
+              // className={emailError ? "invalid" : ""}
+              className={isEmpty || isInvalidEmail ? "invalid" : ""}
               placeholder="Email Address"
               value={email}
               onChange={handleEmailChange}
               // onChange={(e) => setEmail(e.target.value)}
-              autoComplete="username"></MainSectionRightBottomInput>
+              autoComplete="username"></MainSectionRightBottomInput>{" "}
+            {/* {(isEmpty || isInvalidEmail) && (
+              <svg
+                className="icon"
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                  <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                  <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                </g>
+              </svg>
+            )} */}
             {!email && formError && (
               <MainSectionRightBottomError>
-                {formError}
+                Email cannot be empty
               </MainSectionRightBottomError>
             )}
             {emailError && (
               <MainSectionRightBottomError>
-                {emailError}
+                Looks like this is not an email
               </MainSectionRightBottomError>
             )}
             <MainSectionRightBottomInput
@@ -132,7 +158,7 @@ export const Main = () => {
               autoComplete="current-password"></MainSectionRightBottomInput>
             {!password && formError && (
               <MainSectionRightBottomError>
-                {formError}
+                Password cannot be empty
               </MainSectionRightBottomError>
             )}
             <MainSectionRightBottomButton onClick={handleClaimFreeTrial}>

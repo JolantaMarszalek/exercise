@@ -233,6 +233,18 @@ export const MainSectionRightBottomInput = styled.input`
   font-weight: bold;
   padding-left: 20px;
 
+  .invalid {
+    border-color: red;
+    color: red;
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
   @media (max-width: 1024px) {
     display: flex;
     align-content: flex-start;
