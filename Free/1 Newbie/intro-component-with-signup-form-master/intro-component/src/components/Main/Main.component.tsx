@@ -100,9 +100,8 @@ export const Main = () => {
             <MainSectionRightBottomInput
               placeholder="First Name"
               value={firstName}
-              onChange={(e) =>
-                setFirstName(e.target.value)
-              }></MainSectionRightBottomInput>
+              onChange={(e) => setFirstName(e.target.value)}
+              error={!firstName && !!formError}></MainSectionRightBottomInput>
             {!firstName && formError && (
               <MainSectionRightBottomError>
                 First Name cannot be empty
@@ -111,9 +110,8 @@ export const Main = () => {
             <MainSectionRightBottomInput
               placeholder="Last Name"
               value={lastName}
-              onChange={(e) =>
-                setLastName(e.target.value)
-              }></MainSectionRightBottomInput>
+              onChange={(e) => setLastName(e.target.value)}
+              error={!firstName && !!formError}></MainSectionRightBottomInput>
             {!lastName && formError && (
               <MainSectionRightBottomError>
                 Last Name cannot be empty
@@ -126,7 +124,10 @@ export const Main = () => {
               value={email}
               onChange={handleEmailChange}
               // onChange={(e) => setEmail(e.target.value)}
-              autoComplete="username"></MainSectionRightBottomInput>{" "}
+              autoComplete="username"
+              error={
+                !firstName && !!formError
+              }></MainSectionRightBottomInput>{" "}
             {/* {(isEmpty || isInvalidEmail) && (
               <svg
                 className="icon"
@@ -155,7 +156,8 @@ export const Main = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              autoComplete="current-password"></MainSectionRightBottomInput>
+              autoComplete="current-password"
+              error={!firstName && !!formError}></MainSectionRightBottomInput>
             {!password && formError && (
               <MainSectionRightBottomError>
                 Password cannot be empty

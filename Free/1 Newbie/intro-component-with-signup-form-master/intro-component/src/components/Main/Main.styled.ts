@@ -220,7 +220,11 @@ export const MainSectionRightBottom = styled.form`
   }
 `;
 
-export const MainSectionRightBottomInput = styled.input`
+interface InputProps {
+  error: boolean;
+}
+
+export const MainSectionRightBottomInput = styled.input<InputProps>`
   display: flex;
   align-content: flex-start;
   justify-content: flex-start;
@@ -232,6 +236,9 @@ export const MainSectionRightBottomInput = styled.input`
   border: 1px solid var(--neutral-grayish-blue);
   font-weight: bold;
   padding-left: 20px;
+  border: 1px solid
+    ${(props) =>
+      props.error ? "var(--primary-red)" : "var(--neutral-grayish-blue)"};
 
   .invalid {
     border-color: red;
