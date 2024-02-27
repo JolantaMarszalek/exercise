@@ -2,6 +2,9 @@ import {
   MainSection,
   MainSectionDescribe,
   MainSectionLogo,
+  MainSectionSearchBar,
+  MainSectionSearchBarButton,
+  MainSectionSearchBarInput,
   MainSectionTitle,
 } from "./Main.styled";
 
@@ -27,6 +30,11 @@ export const Main = () => {
           We are launching <b style={{ color: "black" }}> soon!</b>
         </MainSectionTitle>
         <MainSectionDescribe>Subscribe and get notified</MainSectionDescribe>
+
+        <MainSectionSearchBar>
+          <MainSectionSearchBarInput placeholder="Your email address..."></MainSectionSearchBarInput>
+          <MainSectionSearchBarButton>Notify Me</MainSectionSearchBarButton>
+        </MainSectionSearchBar>
       </MainSection>
     </>
   );

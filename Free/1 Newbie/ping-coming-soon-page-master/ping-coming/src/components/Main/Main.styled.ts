@@ -33,6 +33,8 @@ export const MainSectionTitle = styled.div`
   font-size: 45px;
   color: var(--neutral-gray);
   height: 75px;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 1024px) {
   }
@@ -42,6 +44,51 @@ export const MainSectionDescribe = styled.div`
   display: flex;
   flex-direction: column;
   height: 75px;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+  }
+`;
+
+export const MainSectionSearchBar = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  height: 100px;
+  gap: 20px;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+  }
+`;
+
+export const MainSectionSearchBarInput = styled.input`
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 350px;
+  border-radius: 30px;
+  border: 1px solid var(--neutral-gray);
+  padding-left: 15px;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 15px;
+
+  @media (max-width: 1024px) {
+  }
+`;
+
+export const MainSectionSearchBarButton = styled.button`
+  display: flex;
+  flex-direction: column;
+  height: 55px;
+  width: 200px;
+  border-radius: 30px;
+  background-color: var(--primary-blue);
+  border: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 15px;
 
   @media (max-width: 1024px) {
   }
