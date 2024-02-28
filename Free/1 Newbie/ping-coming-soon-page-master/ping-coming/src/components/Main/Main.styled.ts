@@ -93,3 +93,70 @@ export const MainSectionSearchBarButton = styled.button`
   @media (max-width: 1024px) {
   }
 `;
+
+export const MainSectionImage = styled.div`
+  /* background-image: url("../../../../images/illustration-dashboard.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 400px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 1024px) {
+  }
+`;
+
+export const MainSectionFooter = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 375px) {
+  }
+`;
+
+export const MainSectionFooterImage = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+  }
+`;
+
+export const MainSectionFooterSingleImage = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  padding: 10px;
+
+  @media (max-width: 1024px) {
+  }
+`;
+
+export const MainSectionFooterText = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--neutral-gray);
+  font-size: 13px;
+
+  @media (max-width: 1024px) {
+  }
+`;
