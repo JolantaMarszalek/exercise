@@ -50,7 +50,7 @@ export const MainSectionDescribe = styled.div`
   }
 `;
 
-export const MainSectionSearchBar = styled.div`
+export const MainSectionSearchBar = styled.form`
   display: flex;
   /* flex-direction: column; */
   height: 100px;
@@ -94,6 +94,20 @@ export const MainSectionSearchBarButton = styled.button`
   }
 `;
 
+export const MainSectionSearchBarError = styled.form`
+  display: flex;
+  /* flex-direction: column; */
+  height: 50px;
+
+  align-items: center;
+  color: var(--secondary-light-red);
+  font-size: 15px;
+  font-style: italic;
+
+  @media (max-width: 1024px) {
+  }
+`;
+
 export const MainSectionImage = styled.div`
   /* background-image: url("../../../../images/illustration-dashboard.png");
   background-size: cover;
@@ -101,8 +115,8 @@ export const MainSectionImage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 800px;
-  height: 400px;
+  width: 400px;
+  height: 200px;
 
   img {
     width: 100%;
@@ -145,6 +159,10 @@ export const MainSectionFooterSingleImage = styled.div`
   height: 25px;
   width: 25px;
   padding: 10px;
+
+  svg path {
+    fill: var(--primary-blue);
+  }
 
   @media (max-width: 1024px) {
   }

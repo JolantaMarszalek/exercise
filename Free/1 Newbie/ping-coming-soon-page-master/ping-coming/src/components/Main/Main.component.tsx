@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   MainSection,
   MainSectionDescribe,
@@ -9,11 +10,31 @@ import {
   MainSectionLogo,
   MainSectionSearchBar,
   MainSectionSearchBarButton,
+  MainSectionSearchBarError,
   MainSectionSearchBarInput,
   MainSectionTitle,
 } from "./Main.styled";
 
 export const Main = () => {
+  const [email, setEmail] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (email.trim() === "") {
+      setErrorMessage("Whoops! It looks like you forgot to add your email");
+      return;
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setErrorMessage("Please provide a valid email address");
+      return;
+    }
+
+    setEmail("");
+    setErrorMessage("");
+  };
+
   return (
     <>
       <MainSection>
@@ -35,10 +56,20 @@ export const Main = () => {
           We are launching <b style={{ color: "black" }}> soon!</b>
         </MainSectionTitle>
         <MainSectionDescribe>Subscribe and get notified</MainSectionDescribe>
-        <MainSectionSearchBar>
-          <MainSectionSearchBarInput placeholder="Your email address..."></MainSectionSearchBarInput>
-          <MainSectionSearchBarButton>Notify Me</MainSectionSearchBarButton>
+        <MainSectionSearchBar onSubmit={handleSubmit}>
+          <MainSectionSearchBarInput
+            placeholder="Your email address..."
+            value={email}
+            onChange={(e) =>
+              setEmail(e.target.value)
+            }></MainSectionSearchBarInput>
+          <MainSectionSearchBarButton type="submit">
+            Notify Me
+          </MainSectionSearchBarButton>
         </MainSectionSearchBar>
+        <MainSectionSearchBarError>
+          {errorMessage && <p>{errorMessage}</p>}
+        </MainSectionSearchBarError>
         <MainSectionImage>
           <img
             src="../../../../images/illustration-dashboard.png"
