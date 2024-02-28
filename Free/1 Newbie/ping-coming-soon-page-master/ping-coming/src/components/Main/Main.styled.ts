@@ -72,6 +72,10 @@ export const MainSectionSearchBarInput = styled.input`
   font-family: "Libre Franklin", sans-serif;
   font-size: 15px;
 
+  &.error {
+    border-color: var(--secondary-light-red);
+  }
+
   @media (max-width: 1024px) {
   }
 `;

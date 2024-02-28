@@ -18,21 +18,25 @@ import {
 export const Main = () => {
   const [email, setEmail] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [emailError, setEmailError] = useState(false);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (email.trim() === "") {
       setErrorMessage("Whoops! It looks like you forgot to add your email");
+      setEmailError(true);
       return;
     }
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       setErrorMessage("Please provide a valid email address");
+      setEmailError(true);
       return;
     }
 
     setEmail("");
     setErrorMessage("");
+    setEmailError(false);
   };
 
   return (
@@ -58,6 +62,7 @@ export const Main = () => {
         <MainSectionDescribe>Subscribe and get notified</MainSectionDescribe>
         <MainSectionSearchBar onSubmit={handleSubmit}>
           <MainSectionSearchBarInput
+            className={emailError ? "error" : ""}
             placeholder="Your email address..."
             value={email}
             onChange={(e) =>
