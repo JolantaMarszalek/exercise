@@ -5,7 +5,9 @@ export const HeaderSection = styled.section`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 200px;
   position: relative;
+  background-color: red;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -24,4 +26,19 @@ export const HeaderSectionBackground = styled.div`
   left: 0;
   width: 100%;
   z-index: -1;
+  background-color: red;
 `;
+
+export const HeaderSectionLogo = styled.div``;
+
+export const HeaderSectionMenu = styled.div``;
+
+export const HeaderSectionMenuSingle = styled.div`
+  color: white;
+`;
+
+export const HeaderSectionLogin = styled.div``;
+export const HeaderSectionLoginSingle = styled.div`
+  color: white;
+`;
+export const HeaderSectionLoginButton = styled.button``;
