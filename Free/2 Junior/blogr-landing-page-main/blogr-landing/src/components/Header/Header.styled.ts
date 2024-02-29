@@ -29,16 +29,28 @@ export const HeaderSectionBackground = styled.div`
   background-color: red;
 `;
 
-export const HeaderSectionLogo = styled.div``;
+export const HeaderSectionLogo = styled.div`
+  margin-left: 50px;
+`;
 
-export const HeaderSectionMenu = styled.div``;
+export const HeaderSectionMenu = styled.div`
+  display: flex;
+  gap: 20px;
+`;
 
 export const HeaderSectionMenuSingle = styled.div`
   color: white;
 `;
 
-export const HeaderSectionLogin = styled.div``;
+export const HeaderSectionLogin = styled.div`
+  display: flex;
+  gap: 20px;
+  margin-right: 50px;
+`;
 export const HeaderSectionLoginSingle = styled.div`
   color: white;
 `;
-export const HeaderSectionLoginButton = styled.button``;
+export const HeaderSectionLoginButton = styled.button`
+  border-radius: 10px;
+  border: none;
+`;
