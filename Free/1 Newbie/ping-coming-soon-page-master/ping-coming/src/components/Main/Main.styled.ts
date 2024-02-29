@@ -53,11 +53,14 @@ export const MainSectionDescribe = styled.div`
 export const MainSectionSearchBar = styled.form`
   display: flex;
   /* flex-direction: column; */
-  height: 100px;
+  height: 120px;
   gap: 20px;
-  align-items: center;
+  align-items: flex-start;
 
   @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
   }
 `;
 
@@ -67,7 +70,7 @@ export const MainSectionSearchBarInput = styled.input`
   height: 50px;
   width: 350px;
   border-radius: 30px;
-  border: 1px solid var(--neutral-gray);
+  border: 1px solid var(--primary-blue);
   padding-left: 15px;
   font-family: "Libre Franklin", sans-serif;
   font-size: 15px;
@@ -75,6 +78,16 @@ export const MainSectionSearchBarInput = styled.input`
   &.error {
     border-color: var(--secondary-light-red);
   }
+
+  @media (max-width: 1024px) {
+  }
+`;
+
+export const MainSectionSearchBarInputAndError = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
 
   @media (max-width: 1024px) {
   }
@@ -95,6 +108,7 @@ export const MainSectionSearchBarButton = styled.button`
   font-size: 15px;
 
   @media (max-width: 1024px) {
+    width: 370px;
   }
 `;
 

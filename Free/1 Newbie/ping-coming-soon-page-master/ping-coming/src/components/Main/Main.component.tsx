@@ -12,6 +12,7 @@ import {
   MainSectionSearchBarButton,
   MainSectionSearchBarError,
   MainSectionSearchBarInput,
+  MainSectionSearchBarInputAndError,
   MainSectionTitle,
 } from "./Main.styled";
 
@@ -61,19 +62,24 @@ export const Main = () => {
         </MainSectionTitle>
         <MainSectionDescribe>Subscribe and get notified</MainSectionDescribe>
         <MainSectionSearchBar onSubmit={handleSubmit}>
-          <MainSectionSearchBarInput
-            className={emailError ? "error" : ""}
-            placeholder="Your email address..."
-            value={email}
-            onChange={(e) =>
-              setEmail(e.target.value)
-            }></MainSectionSearchBarInput>
+          <MainSectionSearchBarInputAndError>
+            <MainSectionSearchBarInput
+              className={emailError ? "error" : ""}
+              placeholder="Your email address..."
+              value={email}
+              onChange={(e) =>
+                setEmail(e.target.value)
+              }></MainSectionSearchBarInput>{" "}
+            <MainSectionSearchBarError>
+              {errorMessage && <p>{errorMessage}</p>}
+            </MainSectionSearchBarError>
+          </MainSectionSearchBarInputAndError>
           <MainSectionSearchBarButton type="submit">
             Notify Me
           </MainSectionSearchBarButton>
         </MainSectionSearchBar>
         <MainSectionSearchBarError>
-          {errorMessage && <p>{errorMessage}</p>}
+          {/* {errorMessage && <p>{errorMessage}</p>} */}
         </MainSectionSearchBarError>
         <MainSectionImage>
           <img
