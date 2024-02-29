@@ -78,9 +78,7 @@ export const Main = () => {
             Notify Me
           </MainSectionSearchBarButton>
         </MainSectionSearchBar>
-        <MainSectionSearchBarError>
-          {/* {errorMessage && <p>{errorMessage}</p>} */}
-        </MainSectionSearchBarError>
+        <MainSectionSearchBarError></MainSectionSearchBarError>
         <MainSectionImage>
           <img
             src="../../../../images/illustration-dashboard.png"

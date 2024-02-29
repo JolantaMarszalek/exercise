@@ -7,12 +7,6 @@ export const MainSection = styled.section`
   width: 100%;
   justify-content: center;
   align-items: center;
-
-  @media (max-width: 1024px) {
-  }
-
-  @media (max-width: 375px) {
-  }
 `;
 
 export const MainSectionLogo = styled.div`
@@ -21,23 +15,16 @@ export const MainSectionLogo = styled.div`
   height: 150px;
   align-items: center;
   justify-content: center;
-
-  @media (max-width: 1024px) {
-  }
 `;
 
 export const MainSectionTitle = styled.div`
   display: flex;
-  /* flex-direction: column; */
   gap: 5px;
   font-size: 45px;
   color: var(--neutral-gray);
   height: 75px;
   justify-content: center;
   align-items: center;
-
-  @media (max-width: 1024px) {
-  }
 `;
 
 export const MainSectionDescribe = styled.div`
@@ -45,14 +32,10 @@ export const MainSectionDescribe = styled.div`
   flex-direction: column;
   height: 75px;
   justify-content: center;
-
-  @media (max-width: 1024px) {
-  }
 `;
 
 export const MainSectionSearchBar = styled.form`
   display: flex;
-  /* flex-direction: column; */
   height: 120px;
   gap: 20px;
   align-items: flex-start;
@@ -78,19 +61,12 @@ export const MainSectionSearchBarInput = styled.input`
   &.error {
     border-color: var(--secondary-light-red);
   }
-
-  @media (max-width: 1024px) {
-  }
 `;
 
 export const MainSectionSearchBarInputAndError = styled.div`
   display: flex;
   flex-direction: column;
-
   align-items: center;
-
-  @media (max-width: 1024px) {
-  }
 `;
 
 export const MainSectionSearchBarButton = styled.button`
@@ -114,16 +90,11 @@ export const MainSectionSearchBarButton = styled.button`
 
 export const MainSectionSearchBarError = styled.form`
   display: flex;
-  /* flex-direction: column; */
   height: 50px;
-
   align-items: center;
   color: var(--secondary-light-red);
   font-size: 15px;
   font-style: italic;
-
-  @media (max-width: 1024px) {
-  }
 `;
 
 export const MainSectionImage = styled.div`
@@ -141,9 +112,6 @@ export const MainSectionImage = styled.div`
     height: 100%;
     object-fit: cover;
   }
-
-  @media (max-width: 1024px) {
-  }
 `;
 
 export const MainSectionFooter = styled.div`
@@ -153,21 +121,12 @@ export const MainSectionFooter = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
-
-  @media (max-width: 1024px) {
-  }
-
-  @media (max-width: 375px) {
-  }
 `;
 
 export const MainSectionFooterImage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media (max-width: 1024px) {
-  }
 `;
 
 export const MainSectionFooterSingleImage = styled.div`
@@ -181,9 +140,6 @@ export const MainSectionFooterSingleImage = styled.div`
   svg path {
     fill: var(--primary-blue);
   }
-
-  @media (max-width: 1024px) {
-  }
 `;
 
 export const MainSectionFooterText = styled.div`
@@ -192,7 +148,4 @@ export const MainSectionFooterText = styled.div`
   align-items: center;
   color: var(--neutral-gray);
   font-size: 13px;
-
-  @media (max-width: 1024px) {
-  }
 `;
