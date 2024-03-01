@@ -39,18 +39,121 @@ export const HeaderSectionMenu = styled.div`
 `;
 
 export const HeaderSectionMenuSingle = styled.div`
-  color: white;
+  color: var(--neutral-white--text);
 `;
 
 export const HeaderSectionLogin = styled.div`
   display: flex;
   gap: 20px;
   margin-right: 50px;
+  align-items: center;
 `;
 export const HeaderSectionLoginSingle = styled.div`
-  color: white;
+  color: var(--neutral-white--text);
 `;
 export const HeaderSectionLoginButton = styled.button`
-  border-radius: 10px;
+  height: 40px;
+  width: 120px;
+  background-color: var(--neutral-white--text);
+  color: var(--primary-light-red--CTA-text);
+  border-radius: 30px;
   border: none;
+  font-weight: bold;
+`;
+
+export const HeaderSectionBottom = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background-color: red;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const HeaderSectionBottomTitle = styled.section`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--neutral-white--text);
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const HeaderSectionBottomDescribe = styled.section`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--neutral-white--text);
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const HeaderSectionBottomButtons = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  gap: 20px;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const HeaderSectionBottomButtonStart = styled.button`
+  height: 40px;
+  width: 120px;
+  background-color: var(--neutral-white--text);
+  color: var(--primary-light-red--CTA-text);
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const HeaderSectionBottomButtonLearn = styled.button`
+  height: 40px;
+  width: 120px;
+  background-color: var(--neutral-white--text);
+  color: var(--primary-light-red--CTA-text);
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
 `;

@@ -1,6 +1,12 @@
 import {
   HeaderSection,
   HeaderSectionBackground,
+  HeaderSectionBottom,
+  HeaderSectionBottomButtonLearn,
+  HeaderSectionBottomButtonStart,
+  HeaderSectionBottomButtons,
+  HeaderSectionBottomDescribe,
+  HeaderSectionBottomTitle,
   HeaderSectionLogin,
   HeaderSectionLoginButton,
   HeaderSectionLoginSingle,
@@ -37,6 +43,22 @@ export const Header = () =>
             <HeaderSectionLoginButton>Sign Up</HeaderSectionLoginButton>
           </HeaderSectionLogin>
         </HeaderSection>
+        <HeaderSectionBottom>
+          <HeaderSectionBottomTitle>
+            A modern publishing platform
+          </HeaderSectionBottomTitle>
+          <HeaderSectionBottomDescribe>
+            Grow your audience and build your online brand
+          </HeaderSectionBottomDescribe>
+          <HeaderSectionBottomButtons>
+            <HeaderSectionBottomButtonStart>
+              Start for Free
+            </HeaderSectionBottomButtonStart>
+            <HeaderSectionBottomButtonLearn>
+              Learn More
+            </HeaderSectionBottomButtonLearn>
+          </HeaderSectionBottomButtons>
+        </HeaderSectionBottom>
       </>
     );
   };
