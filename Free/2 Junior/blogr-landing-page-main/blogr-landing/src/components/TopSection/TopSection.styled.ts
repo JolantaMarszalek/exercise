@@ -2,10 +2,12 @@ import styled from "styled-components";
 
 export const TopSectionStyled = styled.section`
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   position: relative;
+  color: var(--primary-very-dark-blue--headingh);
 
   @media (max-width: 1024px) {
     width: auto;
@@ -24,4 +26,113 @@ export const TopSectionBackground = styled.div`
   left: 0;
   width: 100%;
   z-index: -1;
+`;
+
+export const TopSectionStyledTitle = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  font-size: 35px;
+  margin-top: 55px;
+  margin-bottom: 35px;
+  color: var(--primary-very-dark-blue--headingh);
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const TopSectionStyledBottom = styled.section`
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  position: relative;
+  margin-left: 200px;
+  margin-right: -200px;
+  gap: 200px;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const TopSectionStyledBottomLeftSide = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  /* margin-left: 100px; */
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const TopSectionStyledBottomLeftSideTitle = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  font-size: 25px;
+  margin-top: 55px;
+  margin-bottom: 25px;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const TopSectionStyledBottomLeftSideDescribe = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  line-height: 30px;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const TopSectionStyledBottomRightSide = styled.section`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  position: relative;
+  /* margin-right: 100px; */
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
 `;
