@@ -7,7 +7,7 @@ import { TopSection } from "./components/TopSection/TopSection.component";
 function App() {
   return (
     <>
-      <Header>{/* Header */}</Header>
+      <Header />
       <TopSection>TopSection</TopSection>
       <MiddleSection>MiddleSection</MiddleSection>
       <BottomSection>BottonSection</BottomSection>
