@@ -8,9 +8,14 @@ export const HeaderSectionBackground = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 400px;
+  height: 500px;
   z-index: -1;
-  background-color: pink;
+  background: linear-gradient(
+    to right,
+    var(--gradient-bg-intro-CTA-mobile--very-light-red),
+    var(--gradient-bg-intro-CTA-mobile--light-red)
+  );
+  border-radius: 0 0 0 30px;
 `;
 
 export const HeaderSVG = styled.svg`
@@ -39,7 +44,7 @@ export const HeaderSectionTop = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 80%;
   height: 200px;
   position: relative;
   z-index: 1;
@@ -97,10 +102,10 @@ export const HeaderSectionTopLoginButton = styled.button`
 export const HeaderSectionBottom = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  height: 200px;
+  height: 300px;
   position: relative;
   /* background-color: red; */
   z-index: 1;
@@ -119,6 +124,7 @@ export const HeaderSectionBottomTitle = styled.div`
   align-items: center;
   color: var(--neutral-white--text);
   z-index: 1;
+  font-size: 55px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -148,7 +154,7 @@ export const HeaderSectionBottomButtons = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 00px;
   position: relative;
   gap: 20px;
   z-index: 1;
