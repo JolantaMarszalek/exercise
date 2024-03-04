@@ -15,6 +15,7 @@ import {
   HeaderSection,
   HeaderSectionBackground,
   HeaderSVG,
+  HeaderSectionTopMenuSingleImage,
 } from "./Header.styled";
 
 export const Header = () => {
@@ -53,9 +54,48 @@ export const Header = () => {
             </svg>
           </HeaderSectionTopLogo>
           <HeaderSectionTopMenu>
-            <HeaderSectionTopMenuSingle>Product</HeaderSectionTopMenuSingle>
-            <HeaderSectionTopMenuSingle>Company</HeaderSectionTopMenuSingle>
-            <HeaderSectionTopMenuSingle>Connect</HeaderSectionTopMenuSingle>
+            <HeaderSectionTopMenuSingle>
+              Product
+              <HeaderSectionTopMenuSingleImage>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    stroke-width="2"
+                    opacity=".75"
+                    d="M1 1l4 4 4-4"
+                  />
+                </svg>
+              </HeaderSectionTopMenuSingleImage>
+            </HeaderSectionTopMenuSingle>
+            <HeaderSectionTopMenuSingle>
+              Company
+              <HeaderSectionTopMenuSingleImage>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    stroke-width="2"
+                    opacity=".75"
+                    d="M1 1l4 4 4-4"
+                  />
+                </svg>
+              </HeaderSectionTopMenuSingleImage>
+            </HeaderSectionTopMenuSingle>
+            <HeaderSectionTopMenuSingle>
+              Connect
+              <HeaderSectionTopMenuSingleImage>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    stroke-width="2"
+                    opacity=".75"
+                    d="M1 1l4 4 4-4"
+                  />
+                </svg>
+              </HeaderSectionTopMenuSingleImage>
+            </HeaderSectionTopMenuSingle>
           </HeaderSectionTopMenu>
           <HeaderSectionTopLogin>
             <HeaderSectionTopLoginSingle>Login</HeaderSectionTopLoginSingle>

@@ -71,6 +71,13 @@ export const HeaderSectionTopMenu = styled.div`
 `;
 
 export const HeaderSectionTopMenuSingle = styled.div`
+  display: flex;
+  color: var(--neutral-white--text);
+  z-index: 1;
+  gap: 10px;
+`;
+
+export const HeaderSectionTopMenuSingleImage = styled.div`
   color: var(--neutral-white--text);
   z-index: 1;
 `;
