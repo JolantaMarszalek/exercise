@@ -35,10 +35,12 @@ export const TopSectionStyledTitle = styled.section`
   align-items: center;
   width: 100%;
   position: relative;
-  font-size: 35px;
-  margin-top: 55px;
-  margin-bottom: 35px;
+  font-size: 40px;
+  margin-top: 150px;
+  /* margin-bottom: 35px; */
   color: var(--primary-very-dark-blue--headingh);
+  z-index: 1;
+  font-weight: 500;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -91,9 +93,10 @@ export const TopSectionStyledBottomLeftSideTitle = styled.section`
   align-items: flex-start;
   width: 100%;
   position: relative;
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 55px;
   margin-bottom: 25px;
+  font-weight: 500;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -125,6 +128,7 @@ export const TopSectionStyledBottomRightSide = styled.section`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  z-index: -1;
 
   position: relative;
   /* margin-right: 100px; */
