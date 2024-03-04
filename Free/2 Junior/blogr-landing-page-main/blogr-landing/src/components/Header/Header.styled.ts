@@ -31,6 +31,7 @@ export const HeaderSection = styled.section`
   width: 100%;
   position: relative;
   /* z-index: 1; */
+  font-family: "Overpass", sans-serif;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -104,6 +105,7 @@ export const HeaderSectionTopLoginButton = styled.button`
   border: none;
   font-weight: bold;
   z-index: 1;
+  font-family: "Overpass", sans-serif;
 `;
 
 export const HeaderSectionBottom = styled.div`
@@ -132,6 +134,8 @@ export const HeaderSectionBottomTitle = styled.div`
   color: var(--neutral-white--text);
   z-index: 1;
   font-size: 55px;
+  font-weight: 500;
+  font-family: "Overpass", sans-serif;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -147,6 +151,7 @@ export const HeaderSectionBottomDescribe = styled.div`
   align-items: center;
   color: var(--neutral-white--text);
   z-index: 1;
+  font-size: 18px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -183,6 +188,7 @@ export const HeaderSectionBottomButtonStart = styled.button`
   border: none;
   font-weight: bold;
   z-index: 1;
+  font-family: "Overpass", sans-serif;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -201,6 +207,7 @@ export const HeaderSectionBottomButtonLearn = styled.button`
   border: none;
   font-weight: bold;
   z-index: 1;
+  font-family: "Overpass", sans-serif;
 
   @media (max-width: 1024px) {
     width: auto;
