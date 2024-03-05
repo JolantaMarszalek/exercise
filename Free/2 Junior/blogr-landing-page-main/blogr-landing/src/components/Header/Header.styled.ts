@@ -16,6 +16,7 @@ export const HeaderSectionBackground = styled.div`
     var(--gradient-bg-intro-CTA-mobile--light-red)
   );
   border-radius: 0 0 0 100px;
+  font-family: "Overpass", sans-serif;
 `;
 
 export const HeaderSVG = styled.svg`
@@ -98,7 +99,7 @@ export const HeaderSectionTopLoginSingle = styled.div`
 
 export const HeaderSectionTopLoginButton = styled.button`
   height: 45px;
-  width: 120px;
+  width: 130px;
   background-color: var(--neutral-white--text);
   color: var(--primary-light-red--CTA-text);
   border-radius: 30px;
@@ -106,6 +107,7 @@ export const HeaderSectionTopLoginButton = styled.button`
   font-weight: bold;
   z-index: 1;
   font-family: "Overpass", sans-serif;
+  font-size: 16px;
 `;
 
 export const HeaderSectionBottom = styled.div`
@@ -152,6 +154,7 @@ export const HeaderSectionBottomDescribe = styled.div`
   color: var(--neutral-white--text);
   z-index: 1;
   font-size: 18px;
+  margin-top: 15px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -170,6 +173,7 @@ export const HeaderSectionBottomButtons = styled.div`
   position: relative;
   gap: 20px;
   z-index: 1;
+  margin-top: 15px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -181,7 +185,7 @@ export const HeaderSectionBottomButtons = styled.div`
 
 export const HeaderSectionBottomButtonStart = styled.button`
   height: 45px;
-  width: 120px;
+  width: 130px;
   background-color: var(--neutral-white--text);
   color: var(--primary-light-red--CTA-text);
   border-radius: 30px;
@@ -189,6 +193,7 @@ export const HeaderSectionBottomButtonStart = styled.button`
   font-weight: bold;
   z-index: 1;
   font-family: "Overpass", sans-serif;
+  font-size: 16px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -200,7 +205,7 @@ export const HeaderSectionBottomButtonStart = styled.button`
 
 export const HeaderSectionBottomButtonLearn = styled.button`
   height: 45px;
-  width: 120px;
+  width: 130px;
   background-color: var(--primary-light-red--CTA-text);
   color: var(--neutral-white--text);
   border-radius: 30px;
@@ -208,6 +213,7 @@ export const HeaderSectionBottomButtonLearn = styled.button`
   font-weight: bold;
   z-index: 1;
   font-family: "Overpass", sans-serif;
+  font-size: 16px;
 
   @media (max-width: 1024px) {
     width: auto;

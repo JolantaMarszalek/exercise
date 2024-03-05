@@ -8,6 +8,7 @@ export const TopSectionStyled = styled.section`
   width: 100%;
   position: relative;
   color: var(--primary-very-dark-blue--headingh);
+  font-family: "Overpass", sans-serif;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -15,17 +16,6 @@ export const TopSectionStyled = styled.section`
 
   @media (max-width: 600px) {
   }
-`;
-
-export const TopSectionBackground = styled.div`
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
 `;
 
 export const TopSectionStyledTitle = styled.div`
@@ -37,10 +27,9 @@ export const TopSectionStyledTitle = styled.div`
   position: relative;
   font-size: 40px;
   margin-top: 150px;
-  /* margin-bottom: 35px; */
   color: var(--primary-very-dark-blue--headingh);
   z-index: 1;
-  font-weight: 500;
+  font-weight: 600;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -52,7 +41,6 @@ export const TopSectionStyledTitle = styled.div`
 
 export const TopSectionStyledBottom = styled.div`
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
   width: auto;
@@ -97,7 +85,7 @@ export const TopSectionStyledBottomLeftSideTitle = styled.div`
   font-size: 30px;
   margin-top: 55px;
   margin-bottom: 25px;
-  font-weight: 500;
+  font-weight: 600;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -130,9 +118,7 @@ export const TopSectionStyledBottomRightSide = styled.div`
   align-items: center;
   width: 100%;
   z-index: -1;
-
   position: relative;
-  /* margin-right: 100px; */
 
   @media (max-width: 1024px) {
     width: auto;

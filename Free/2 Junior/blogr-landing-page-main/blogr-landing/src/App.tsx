@@ -10,7 +10,7 @@ function App() {
       <Header />
       <TopSection />
       <MiddleSection />
-      <BottomSection>BottomSection</BottomSection>
+      <BottomSection />
       <Footer>Footer</Footer>
     </>
   );

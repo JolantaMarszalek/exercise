@@ -14,6 +14,7 @@ export const MiddleSectionStyled = styled.section`
     var(--gradient-bg-body--very-dark-desaturated-blue)
   );
   border-radius: 0 100px 0 100px;
+  font-family: "Overpass", sans-serif;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -21,17 +22,6 @@ export const MiddleSectionStyled = styled.section`
 
   @media (max-width: 600px) {
   }
-`;
-
-export const MiddleSectionBackground = styled.div`
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
 `;
 
 export const MiddleSectionStyledLeftSide = styled.div`
@@ -43,9 +33,6 @@ export const MiddleSectionStyledLeftSide = styled.div`
   height: 400px;
   position: relative;
   line-height: 30px;
-  /* margin-top: 100px; */
-
-  /* z-index: -1; */
 
   @media (max-width: 1024px) {
     width: auto;
@@ -57,7 +44,6 @@ export const MiddleSectionStyledLeftSide = styled.div`
 
 export const MySVG = styled.svg`
   display: flex;
-
   position: absolute;
   width: 100%;
   height: 600px;
@@ -75,8 +61,6 @@ export const MiddleSectionStyledRightSide = styled.div`
   height: 400px;
   position: relative;
   line-height: 30px;
-  /* background-color: var(--gradient-bg-body--very-dark-desaturated-blue); */
-  /* margin-top: 100px; */
 
   @media (max-width: 1024px) {
     width: auto;
@@ -92,15 +76,11 @@ export const MiddleSectionStyledRightSideTitle = styled.div`
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  /* height: 100px; */
   position: relative;
   font-size: 40px;
-  /* margin-top: 150px; */
-  /* margin-bottom: 35px; */
   color: var(--neutral-white--text);
   z-index: 1;
-  font-weight: 500;
-  /* margin-top: 35px; */
+  font-weight: 600;
   margin-bottom: 25px;
 
   @media (max-width: 1024px) {
@@ -117,7 +97,6 @@ export const MiddleSectionStyledRightSideDescribe = styled.div`
   justify-content: space-between;
   align-items: center;
   width: auto;
-  /* height: 200px; */
   position: relative;
   line-height: 30px;
   color: var(--neutral-white--text);
