@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   HeaderSectionTop,
   HeaderSectionBottom,
@@ -16,9 +17,20 @@ import {
   HeaderSectionBackground,
   HeaderSVG,
   HeaderSectionTopMenuSingleImage,
+  HeaderSectionTopMenuAdditionalOptions,
+  HeaderSectionTopMenuSingleFirstLine,
+  HeaderSectionTopMenuAdditionalOptionsSingle,
 } from "./Header.styled";
 
 export const Header = () => {
+  const [showAdditionalOptions, setShowAdditionalOptions] = useState<
+    number | null
+  >(null);
+
+  const toggleAdditionalOptions = (index: number) => {
+    setShowAdditionalOptions(showAdditionalOptions === index ? null : index);
+  };
+
   return (
     <>
       <HeaderSection>
@@ -55,46 +67,103 @@ export const Header = () => {
           </HeaderSectionTopLogo>
           <HeaderSectionTopMenu>
             <HeaderSectionTopMenuSingle>
-              Product
-              <HeaderSectionTopMenuSingleImage>
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
-                  <path
-                    fill="none"
-                    stroke="#FFF"
-                    stroke-width="2"
-                    opacity=".75"
-                    d="M1 1l4 4 4-4"
-                  />
-                </svg>
-              </HeaderSectionTopMenuSingleImage>
+              <HeaderSectionTopMenuSingleFirstLine>
+                Product
+                <HeaderSectionTopMenuSingleImage
+                  onClick={() => toggleAdditionalOptions(0)}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                    <path
+                      fill="none"
+                      stroke="#FFF"
+                      stroke-width="2"
+                      opacity=".75"
+                      d="M1 1l4 4 4-4"
+                    />
+                  </svg>
+                </HeaderSectionTopMenuSingleImage>
+              </HeaderSectionTopMenuSingleFirstLine>
+              {showAdditionalOptions === 0 && (
+                <HeaderSectionTopMenuAdditionalOptions>
+                  <HeaderSectionTopMenuAdditionalOptionsSingle>
+                    Overview
+                  </HeaderSectionTopMenuAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAdditionalOptionsSingle>
+                    Pricing
+                  </HeaderSectionTopMenuAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAdditionalOptionsSingle>
+                    Marketplace
+                  </HeaderSectionTopMenuAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAdditionalOptionsSingle>
+                    Features
+                  </HeaderSectionTopMenuAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAdditionalOptionsSingle>
+                    Integrations
+                  </HeaderSectionTopMenuAdditionalOptionsSingle>
+                </HeaderSectionTopMenuAdditionalOptions>
+              )}
             </HeaderSectionTopMenuSingle>
             <HeaderSectionTopMenuSingle>
-              Company
-              <HeaderSectionTopMenuSingleImage>
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
-                  <path
-                    fill="none"
-                    stroke="#FFF"
-                    stroke-width="2"
-                    opacity=".75"
-                    d="M1 1l4 4 4-4"
-                  />
-                </svg>
-              </HeaderSectionTopMenuSingleImage>
+              <HeaderSectionTopMenuSingleFirstLine>
+                Company
+                <HeaderSectionTopMenuSingleImage
+                  onClick={() => toggleAdditionalOptions(1)}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                    <path
+                      fill="none"
+                      stroke="#FFF"
+                      stroke-width="2"
+                      opacity=".75"
+                      d="M1 1l4 4 4-4"
+                    />
+                  </svg>
+                </HeaderSectionTopMenuSingleImage>
+              </HeaderSectionTopMenuSingleFirstLine>
+              {showAdditionalOptions === 1 && (
+                <HeaderSectionTopMenuAdditionalOptions>
+                  <HeaderSectionTopMenuAdditionalOptionsSingle>
+                    About
+                  </HeaderSectionTopMenuAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAdditionalOptionsSingle>
+                    Team
+                  </HeaderSectionTopMenuAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAdditionalOptionsSingle>
+                    Blog
+                  </HeaderSectionTopMenuAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAdditionalOptionsSingle>
+                    Careers
+                  </HeaderSectionTopMenuAdditionalOptionsSingle>
+                </HeaderSectionTopMenuAdditionalOptions>
+              )}
             </HeaderSectionTopMenuSingle>
             <HeaderSectionTopMenuSingle>
-              Connect
-              <HeaderSectionTopMenuSingleImage>
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
-                  <path
-                    fill="none"
-                    stroke="#FFF"
-                    stroke-width="2"
-                    opacity=".75"
-                    d="M1 1l4 4 4-4"
-                  />
-                </svg>
-              </HeaderSectionTopMenuSingleImage>
+              <HeaderSectionTopMenuSingleFirstLine>
+                Connect
+                <HeaderSectionTopMenuSingleImage
+                  onClick={() => toggleAdditionalOptions(2)}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                    <path
+                      fill="none"
+                      stroke="#FFF"
+                      stroke-width="2"
+                      opacity=".75"
+                      d="M1 1l4 4 4-4"
+                    />
+                  </svg>
+                </HeaderSectionTopMenuSingleImage>
+              </HeaderSectionTopMenuSingleFirstLine>
+              {showAdditionalOptions === 2 && (
+                <HeaderSectionTopMenuAdditionalOptions>
+                  <HeaderSectionTopMenuAdditionalOptionsSingle>
+                    Contact
+                  </HeaderSectionTopMenuAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAdditionalOptionsSingle>
+                    Newsletter
+                  </HeaderSectionTopMenuAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAdditionalOptionsSingle>
+                    LinkedIn
+                  </HeaderSectionTopMenuAdditionalOptionsSingle>
+                </HeaderSectionTopMenuAdditionalOptions>
+              )}
             </HeaderSectionTopMenuSingle>
           </HeaderSectionTopMenu>
           <HeaderSectionTopLogin>

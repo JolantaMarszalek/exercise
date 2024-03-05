@@ -69,19 +69,50 @@ export const HeaderSectionTopLogo = styled.div`
 export const HeaderSectionTopMenu = styled.div`
   display: flex;
   gap: 20px;
-  z-index: 1;
+  z-index: 2;
+  margin-top: 200px;
+  height: 100%;
 `;
 
 export const HeaderSectionTopMenuSingle = styled.div`
   display: flex;
+  flex-direction: column;
   color: var(--neutral-white--text);
-  z-index: 1;
+  z-index: 2;
+  gap: 10px;
+  width: 100px;
+`;
+
+export const HeaderSectionTopMenuSingleFirstLine = styled.div`
+  display: flex;
+  color: var(--neutral-white--text);
+  z-index: 2;
   gap: 10px;
 `;
 
 export const HeaderSectionTopMenuSingleImage = styled.div`
   color: var(--neutral-white--text);
-  z-index: 1;
+  z-index: 2;
+`;
+
+export const HeaderSectionTopMenuAdditionalOptions = styled.div`
+  display: flex;
+  flex-direction: column;
+  color: var(--neutral-dark-black-blue--footer-background);
+  background-color: var(--neutral-white--text);
+  z-index: 2;
+  border-radius: 10px;
+  width: 150px;
+`;
+
+export const HeaderSectionTopMenuAdditionalOptionsSingle = styled.div`
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 `;
 
 export const HeaderSectionTopLogin = styled.div`
@@ -108,6 +139,11 @@ export const HeaderSectionTopLoginButton = styled.button`
   z-index: 1;
   font-family: "Overpass", sans-serif;
   font-size: 16px;
+
+  &:hover {
+    background-color: var(--primary-very-light-red--CTA-hover-bg);
+    color: var(--neutral-white--text);
+  }
 `;
 
 export const HeaderSectionBottom = styled.div`
@@ -119,7 +155,7 @@ export const HeaderSectionBottom = styled.div`
   height: 300px;
   position: relative;
   /* background-color: red; */
-  z-index: 1;
+  z-index: 0;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -195,6 +231,11 @@ export const HeaderSectionBottomButtonStart = styled.button`
   font-family: "Overpass", sans-serif;
   font-size: 16px;
 
+  &:hover {
+    background-color: var(--primary-very-light-red--CTA-hover-bg);
+    color: var(--neutral-white--text);
+  }
+
   @media (max-width: 1024px) {
     width: auto;
   }
@@ -214,6 +255,11 @@ export const HeaderSectionBottomButtonLearn = styled.button`
   z-index: 1;
   font-family: "Overpass", sans-serif;
   font-size: 16px;
+
+  &:hover {
+    background-color: var(--neutral-white--text);
+    color: var(--primary-light-red--CTA-text);
+  }
 
   @media (max-width: 1024px) {
     width: auto;
