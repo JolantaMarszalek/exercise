@@ -26,14 +26,18 @@ export const MiddleSectionBackground = styled.div`
   z-index: -1;
 `;
 
-export const MiddleSectionStyledLeftSide = styled.section`
+export const MiddleSectionStyledLeftSide = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 400px;
   position: relative;
   line-height: 30px;
+  margin-top: 100px;
+  background-color: var(--gradient-bg-body--very-dark-desaturated-blue);
+  /* z-index: -1; */
 
   @media (max-width: 1024px) {
     width: auto;
@@ -43,37 +47,28 @@ export const MiddleSectionStyledLeftSide = styled.section`
   }
 `;
 
-export const MiddleSectionStyledRightSide = styled.section`
+export const MySVG = styled.svg`
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+
+  position: absolute;
   width: 100%;
-  position: relative;
-  line-height: 30px;
-
-  @media (max-width: 1024px) {
-    width: auto;
-  }
-
-  @media (max-width: 600px) {
-  }
+  height: 600px;
+  top: 0;
+  left: 150px;
+  margin-top: -65px;
 `;
 
-export const MiddleSectionStyledRightSideTitle = styled.section`
+export const MiddleSectionStyledRightSide = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 400px;
   position: relative;
-  font-size: 40px;
-  margin-top: 150px;
-  /* margin-bottom: 35px; */
-  color: var(--primary-very-dark-blue--headingh);
-  z-index: 1;
-  font-weight: 500;
+  line-height: 30px;
+  background-color: var(--gradient-bg-body--very-dark-desaturated-blue);
+  margin-top: 100px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -83,15 +78,42 @@ export const MiddleSectionStyledRightSideTitle = styled.section`
   }
 `;
 
-export const MiddleSectionStyledRightSideDescribe = styled.section`
+export const MiddleSectionStyledRightSideTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  /* height: 100px; */
+  position: relative;
+  font-size: 40px;
+  /* margin-top: 150px; */
+  /* margin-bottom: 35px; */
+  color: var(--neutral-white--text);
+  z-index: 1;
+  font-weight: 500;
+  /* margin-top: 35px; */
+  margin-bottom: 25px;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const MiddleSectionStyledRightSideDescribe = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: auto;
   /* height: 200px; */
   position: relative;
   line-height: 30px;
+  color: var(--neutral-white--text);
+  margin-right: 300px;
 
   @media (max-width: 1024px) {
     width: auto;

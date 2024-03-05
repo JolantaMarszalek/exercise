@@ -59,8 +59,8 @@ export const TopSectionStyledBottom = styled.div`
   height: 600px;
   position: relative;
   margin-left: 200px;
-  margin-right: -200px;
-  gap: 200px;
+  margin-right: -100px;
+  gap: 100px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -77,7 +77,7 @@ export const TopSectionStyledBottomLeftSide = styled.div`
   align-items: center;
   width: 100%;
   position: relative;
-  /* margin-left: 100px; */
+  margin-right: 200px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -112,7 +112,7 @@ export const TopSectionStyledBottomLeftSideDescribe = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: auto;
   position: relative;
   line-height: 30px;
 
