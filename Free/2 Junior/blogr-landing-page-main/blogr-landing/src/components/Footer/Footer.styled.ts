@@ -5,7 +5,12 @@ export const FooterSection = styled.section`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 400px;
   position: relative;
+  background-color: var(--neutral-dark-black-blue--footer-background);
+  border-radius: 0 100px 0 0;
+  color: var(--primary-very-dark-blue--headingh);
+  font-family: "Overpass", sans-serif;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -15,13 +20,44 @@ export const FooterSection = styled.section`
   }
 `;
 
-export const FooterSectionBackground = styled.div`
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: fixed;
-  top: 0;
-  left: 0;
+export const FooterSectionLogo = styled.div`
+  display: flex;
+  height: 200px;
+  margin-left: 200px;
+  z-index: 2;
+`;
+
+export const FooterSectionMenu = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  gap: 20px;
+  z-index: 1;
+  margin-right: 200px;
   width: 100%;
-  z-index: -1;
+  height: 200px;
+  justify-content: space-evenly;
+  margin-top: 10px;
+`;
+
+export const FooterSectionMenuSingle = styled.div`
+  display: flex;
+  flex-direction: column;
+  color: var(--neutral-white--text);
+  z-index: 1;
+  gap: 10px;
+`;
+
+export const FooterSectionMenuSingleTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  color: var(--neutral-white--text);
+  z-index: 1;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+`;
+
+export const FooterSectionMenuSingleLine = styled.div`
+  color: var(--neutral-grayish-blue--footer-text);
+  z-index: 1;
 `;

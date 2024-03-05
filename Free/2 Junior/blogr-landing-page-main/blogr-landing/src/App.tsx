@@ -11,7 +11,7 @@ function App() {
       <TopSection />
       <MiddleSection />
       <BottomSection />
-      <Footer>Footer</Footer>
+      <Footer />
     </>
   );
 }
