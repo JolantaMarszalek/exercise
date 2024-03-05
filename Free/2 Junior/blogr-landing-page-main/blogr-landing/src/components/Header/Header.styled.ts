@@ -97,7 +97,7 @@ export const HeaderSectionTopLoginSingle = styled.div`
 `;
 
 export const HeaderSectionTopLoginButton = styled.button`
-  height: 40px;
+  height: 45px;
   width: 120px;
   background-color: var(--neutral-white--text);
   color: var(--primary-light-red--CTA-text);
@@ -111,7 +111,7 @@ export const HeaderSectionTopLoginButton = styled.button`
 export const HeaderSectionBottom = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   height: 300px;
@@ -166,7 +166,7 @@ export const HeaderSectionBottomButtons = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 00px;
+  height: 100px;
   position: relative;
   gap: 20px;
   z-index: 1;
@@ -180,7 +180,7 @@ export const HeaderSectionBottomButtons = styled.div`
 `;
 
 export const HeaderSectionBottomButtonStart = styled.button`
-  height: 40px;
+  height: 45px;
   width: 120px;
   background-color: var(--neutral-white--text);
   color: var(--primary-light-red--CTA-text);
@@ -199,12 +199,12 @@ export const HeaderSectionBottomButtonStart = styled.button`
 `;
 
 export const HeaderSectionBottomButtonLearn = styled.button`
-  height: 40px;
+  height: 45px;
   width: 120px;
-  background-color: var(--neutral-white--text);
-  color: var(--primary-light-red--CTA-text);
+  background-color: var(--primary-light-red--CTA-text);
+  color: var(--neutral-white--text);
   border-radius: 30px;
-  border: none;
+  border: 1px solid white;
   font-weight: bold;
   z-index: 1;
   font-family: "Overpass", sans-serif;

@@ -56,6 +56,7 @@ export const TopSectionStyledBottom = styled.section`
   justify-content: space-between;
   align-items: center;
   width: auto;
+  height: 600px;
   position: relative;
   margin-left: 200px;
   margin-right: -200px;
