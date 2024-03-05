@@ -15,7 +15,7 @@ export const HeaderSectionBackground = styled.div`
     var(--gradient-bg-intro-CTA-mobile--very-light-red),
     var(--gradient-bg-intro-CTA-mobile--light-red)
   );
-  border-radius: 0 0 0 30px;
+  border-radius: 0 0 0 100px;
 `;
 
 export const HeaderSVG = styled.svg`

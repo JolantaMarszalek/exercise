@@ -5,7 +5,15 @@ export const MiddleSectionStyled = styled.section`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 400px;
   position: relative;
+  margin-top: 200px;
+  background: linear-gradient(
+    to right,
+    var(--gradient-bg-body--very-dark-gray-blue),
+    var(--gradient-bg-body--very-dark-desaturated-blue)
+  );
+  border-radius: 0 100px 0 100px;
 
   @media (max-width: 1024px) {
     width: auto;
@@ -35,8 +43,8 @@ export const MiddleSectionStyledLeftSide = styled.div`
   height: 400px;
   position: relative;
   line-height: 30px;
-  margin-top: 100px;
-  background-color: var(--gradient-bg-body--very-dark-desaturated-blue);
+  /* margin-top: 100px; */
+
   /* z-index: -1; */
 
   @media (max-width: 1024px) {
@@ -67,8 +75,8 @@ export const MiddleSectionStyledRightSide = styled.div`
   height: 400px;
   position: relative;
   line-height: 30px;
-  background-color: var(--gradient-bg-body--very-dark-desaturated-blue);
-  margin-top: 100px;
+  /* background-color: var(--gradient-bg-body--very-dark-desaturated-blue); */
+  /* margin-top: 100px; */
 
   @media (max-width: 1024px) {
     width: auto;
