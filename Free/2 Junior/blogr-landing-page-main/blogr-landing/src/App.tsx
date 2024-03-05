@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <Header />
-      <TopSection>TopSection</TopSection>
-      <MiddleSection>MiddleSection</MiddleSection>
-      <BottomSection>BottonSection</BottomSection>
+      <TopSection />
+      <MiddleSection />
+      <BottomSection>BottomSection</BottomSection>
       <Footer>Footer</Footer>
     </>
   );

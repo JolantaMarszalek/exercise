@@ -28,7 +28,7 @@ export const TopSectionBackground = styled.div`
   z-index: -1;
 `;
 
-export const TopSectionStyledTitle = styled.section`
+export const TopSectionStyledTitle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,7 +50,7 @@ export const TopSectionStyledTitle = styled.section`
   }
 `;
 
-export const TopSectionStyledBottom = styled.section`
+export const TopSectionStyledBottom = styled.div`
   display: flex;
   /* flex-direction: column; */
   justify-content: space-between;
@@ -70,7 +70,7 @@ export const TopSectionStyledBottom = styled.section`
   }
 `;
 
-export const TopSectionStyledBottomLeftSide = styled.section`
+export const TopSectionStyledBottomLeftSide = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,7 +87,7 @@ export const TopSectionStyledBottomLeftSide = styled.section`
   }
 `;
 
-export const TopSectionStyledBottomLeftSideTitle = styled.section`
+export const TopSectionStyledBottomLeftSideTitle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -107,7 +107,7 @@ export const TopSectionStyledBottomLeftSideTitle = styled.section`
   }
 `;
 
-export const TopSectionStyledBottomLeftSideDescribe = styled.section`
+export const TopSectionStyledBottomLeftSideDescribe = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -124,7 +124,7 @@ export const TopSectionStyledBottomLeftSideDescribe = styled.section`
   }
 `;
 
-export const TopSectionStyledBottomRightSide = styled.section`
+export const TopSectionStyledBottomRightSide = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
