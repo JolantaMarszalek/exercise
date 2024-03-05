@@ -60,4 +60,9 @@ export const FooterSectionMenuSingleTitle = styled.div`
 export const FooterSectionMenuSingleLine = styled.div`
   color: var(--neutral-grayish-blue--footer-text);
   z-index: 1;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 `;
