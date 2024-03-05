@@ -88,6 +88,11 @@ export const HeaderSectionTopMenuSingleFirstLine = styled.div`
   color: var(--neutral-white--text);
   z-index: 2;
   gap: 10px;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 `;
 
 export const HeaderSectionTopMenuSingleImage = styled.div`
@@ -113,6 +118,11 @@ export const HeaderSectionTopMenuAdditionalOptionsSingle = styled.div`
   padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
+
+  &:hover {
+    font-weight: bold;
+    cursor: pointer;
+  }
 `;
 
 export const HeaderSectionTopLogin = styled.div`
@@ -143,6 +153,7 @@ export const HeaderSectionTopLoginButton = styled.button`
   &:hover {
     background-color: var(--primary-very-light-red--CTA-hover-bg);
     color: var(--neutral-white--text);
+    cursor: pointer;
   }
 `;
 
@@ -234,6 +245,7 @@ export const HeaderSectionBottomButtonStart = styled.button`
   &:hover {
     background-color: var(--primary-very-light-red--CTA-hover-bg);
     color: var(--neutral-white--text);
+    cursor: pointer;
   }
 
   @media (max-width: 1024px) {
@@ -259,6 +271,7 @@ export const HeaderSectionBottomButtonLearn = styled.button`
   &:hover {
     background-color: var(--neutral-white--text);
     color: var(--primary-light-red--CTA-text);
+    cursor: pointer;
   }
 
   @media (max-width: 1024px) {

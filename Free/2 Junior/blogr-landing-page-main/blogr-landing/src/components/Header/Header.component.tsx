@@ -67,19 +67,36 @@ export const Header = () => {
           </HeaderSectionTopLogo>
           <HeaderSectionTopMenu>
             <HeaderSectionTopMenuSingle>
-              <HeaderSectionTopMenuSingleFirstLine>
+              <HeaderSectionTopMenuSingleFirstLine
+                onClick={() => toggleAdditionalOptions(0)}>
                 Product
-                <HeaderSectionTopMenuSingleImage
-                  onClick={() => toggleAdditionalOptions(0)}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
-                    <path
-                      fill="none"
-                      stroke="#FFF"
-                      stroke-width="2"
-                      opacity=".75"
-                      d="M1 1l4 4 4-4"
-                    />
-                  </svg>
+                <HeaderSectionTopMenuSingleImage>
+                  {showAdditionalOptions === 0 ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="7">
+                      <path
+                        fill="none"
+                        stroke="#FF7B86"
+                        stroke-width="2"
+                        d="M1 1l4 4 4-4"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="7">
+                      <path
+                        fill="none"
+                        stroke="#FFF"
+                        stroke-width="2"
+                        opacity=".75"
+                        d="M1 1l4 4 4-4"
+                      />
+                    </svg>
+                  )}
                 </HeaderSectionTopMenuSingleImage>
               </HeaderSectionTopMenuSingleFirstLine>
               {showAdditionalOptions === 0 && (
@@ -103,19 +120,36 @@ export const Header = () => {
               )}
             </HeaderSectionTopMenuSingle>
             <HeaderSectionTopMenuSingle>
-              <HeaderSectionTopMenuSingleFirstLine>
+              <HeaderSectionTopMenuSingleFirstLine
+                onClick={() => toggleAdditionalOptions(1)}>
                 Company
-                <HeaderSectionTopMenuSingleImage
-                  onClick={() => toggleAdditionalOptions(1)}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
-                    <path
-                      fill="none"
-                      stroke="#FFF"
-                      stroke-width="2"
-                      opacity=".75"
-                      d="M1 1l4 4 4-4"
-                    />
-                  </svg>
+                <HeaderSectionTopMenuSingleImage>
+                  {showAdditionalOptions === 1 ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="7">
+                      <path
+                        fill="none"
+                        stroke="#FF7B86"
+                        stroke-width="2"
+                        d="M1 1l4 4 4-4"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="7">
+                      <path
+                        fill="none"
+                        stroke="#FFF"
+                        stroke-width="2"
+                        opacity=".75"
+                        d="M1 1l4 4 4-4"
+                      />
+                    </svg>
+                  )}
                 </HeaderSectionTopMenuSingleImage>
               </HeaderSectionTopMenuSingleFirstLine>
               {showAdditionalOptions === 1 && (
@@ -136,19 +170,36 @@ export const Header = () => {
               )}
             </HeaderSectionTopMenuSingle>
             <HeaderSectionTopMenuSingle>
-              <HeaderSectionTopMenuSingleFirstLine>
+              <HeaderSectionTopMenuSingleFirstLine
+                onClick={() => toggleAdditionalOptions(2)}>
                 Connect
-                <HeaderSectionTopMenuSingleImage
-                  onClick={() => toggleAdditionalOptions(2)}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
-                    <path
-                      fill="none"
-                      stroke="#FFF"
-                      stroke-width="2"
-                      opacity=".75"
-                      d="M1 1l4 4 4-4"
-                    />
-                  </svg>
+                <HeaderSectionTopMenuSingleImage>
+                  {showAdditionalOptions === 2 ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="7">
+                      <path
+                        fill="none"
+                        stroke="#FF7B86"
+                        stroke-width="2"
+                        d="M1 1l4 4 4-4"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="7">
+                      <path
+                        fill="none"
+                        stroke="#FFF"
+                        stroke-width="2"
+                        opacity=".75"
+                        d="M1 1l4 4 4-4"
+                      />
+                    </svg>
+                  )}
                 </HeaderSectionTopMenuSingleImage>
               </HeaderSectionTopMenuSingleFirstLine>
               {showAdditionalOptions === 2 && (
