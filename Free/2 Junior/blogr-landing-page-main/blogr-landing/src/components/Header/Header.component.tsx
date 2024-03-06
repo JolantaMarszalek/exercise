@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   HeaderSectionTop,
   HeaderSectionBottom,
@@ -15,9 +16,46 @@ import {
   HeaderSection,
   HeaderSectionBackground,
   HeaderSVG,
+  HeaderSectionTopMenuSingleImage,
+  HeaderSectionTopMenuAdditionalOptions,
+  HeaderSectionTopMenuSingleFirstLine,
+  HeaderSectionTopMenuAdditionalOptionsSingle,
+  HeaderSectionTopMenuAndLogin,
+  HeaderSectionTopMenuAndLoginMobile,
+  HeaderSectionTopMenuAndLoginMobileSingle,
+  HeaderSectionTopMenuAndLoginMobileSingleLine,
+  HeaderSectionTopMenuAndLoginMobileSingleImage,
+  HeaderSectionTopMenuAndLoginMobileAdditionalOptions,
+  HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle,
+  HeaderSectionTopMenuAndLoginMobileLogin,
+  HeaderSectionTopMenuAndLoginMobileLoginSingle,
+  HeaderSectionTopMenuAndLoginMobileLoginButton,
 } from "./Header.styled";
 
 export const Header = () => {
+  const [showAdditionalOptions, setShowAdditionalOptions] = useState<
+    number | null
+  >(null);
+  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const toggleAdditionalOptions = (index: number) => {
+    setShowAdditionalOptions(showAdditionalOptions === index ? null : index);
+  };
+
+  const handleMenuToggle = () => {
+    console.log("Menu clicked");
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
       <HeaderSection>
@@ -52,15 +90,351 @@ export const Header = () => {
               />
             </svg>
           </HeaderSectionTopLogo>
-          <HeaderSectionTopMenu>
-            <HeaderSectionTopMenuSingle>Product</HeaderSectionTopMenuSingle>
-            <HeaderSectionTopMenuSingle>Company</HeaderSectionTopMenuSingle>
-            <HeaderSectionTopMenuSingle>Connect</HeaderSectionTopMenuSingle>
-          </HeaderSectionTopMenu>
-          <HeaderSectionTopLogin>
-            <HeaderSectionTopLoginSingle>Login</HeaderSectionTopLoginSingle>
-            <HeaderSectionTopLoginButton>Sign Up</HeaderSectionTopLoginButton>
-          </HeaderSectionTopLogin>
+
+          {screenWidth < 1024 ? (
+            <>
+              <div onClick={handleMenuToggle}>
+                <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="#FFF" fill-rule="evenodd">
+                    <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
+                  </g>
+                </svg>
+              </div>
+            </>
+          ) : (
+            <HeaderSectionTopMenuAndLogin>
+              <HeaderSectionTopMenu>
+                <HeaderSectionTopMenuSingle>
+                  <HeaderSectionTopMenuSingleFirstLine
+                    onClick={() => toggleAdditionalOptions(0)}>
+                    Product
+                    <HeaderSectionTopMenuSingleImage>
+                      {showAdditionalOptions === 0 ? (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="10"
+                          height="7">
+                          <path
+                            fill="none"
+                            stroke="#FF7B86"
+                            stroke-width="2"
+                            d="M1 1l4 4 4-4"
+                          />
+                        </svg>
+                      ) : (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="10"
+                          height="7">
+                          <path
+                            fill="none"
+                            stroke="#FFF"
+                            stroke-width="2"
+                            opacity=".75"
+                            d="M1 1l4 4 4-4"
+                          />
+                        </svg>
+                      )}
+                    </HeaderSectionTopMenuSingleImage>
+                  </HeaderSectionTopMenuSingleFirstLine>
+                  {showAdditionalOptions === 0 && (
+                    <HeaderSectionTopMenuAdditionalOptions>
+                      <HeaderSectionTopMenuAdditionalOptionsSingle>
+                        Overview
+                      </HeaderSectionTopMenuAdditionalOptionsSingle>
+                      <HeaderSectionTopMenuAdditionalOptionsSingle>
+                        Pricing
+                      </HeaderSectionTopMenuAdditionalOptionsSingle>
+                      <HeaderSectionTopMenuAdditionalOptionsSingle>
+                        Marketplace
+                      </HeaderSectionTopMenuAdditionalOptionsSingle>
+                      <HeaderSectionTopMenuAdditionalOptionsSingle>
+                        Features
+                      </HeaderSectionTopMenuAdditionalOptionsSingle>
+                      <HeaderSectionTopMenuAdditionalOptionsSingle>
+                        Integrations
+                      </HeaderSectionTopMenuAdditionalOptionsSingle>
+                    </HeaderSectionTopMenuAdditionalOptions>
+                  )}
+                </HeaderSectionTopMenuSingle>
+                <HeaderSectionTopMenuSingle>
+                  <HeaderSectionTopMenuSingleFirstLine
+                    onClick={() => toggleAdditionalOptions(1)}>
+                    Company
+                    <HeaderSectionTopMenuSingleImage>
+                      {showAdditionalOptions === 1 ? (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="10"
+                          height="7">
+                          <path
+                            fill="none"
+                            stroke="#FF7B86"
+                            stroke-width="2"
+                            d="M1 1l4 4 4-4"
+                          />
+                        </svg>
+                      ) : (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="10"
+                          height="7">
+                          <path
+                            fill="none"
+                            stroke="#FFF"
+                            stroke-width="2"
+                            opacity=".75"
+                            d="M1 1l4 4 4-4"
+                          />
+                        </svg>
+                      )}
+                    </HeaderSectionTopMenuSingleImage>
+                  </HeaderSectionTopMenuSingleFirstLine>
+                  {showAdditionalOptions === 1 && (
+                    <HeaderSectionTopMenuAdditionalOptions>
+                      <HeaderSectionTopMenuAdditionalOptionsSingle>
+                        About
+                      </HeaderSectionTopMenuAdditionalOptionsSingle>
+                      <HeaderSectionTopMenuAdditionalOptionsSingle>
+                        Team
+                      </HeaderSectionTopMenuAdditionalOptionsSingle>
+                      <HeaderSectionTopMenuAdditionalOptionsSingle>
+                        Blog
+                      </HeaderSectionTopMenuAdditionalOptionsSingle>
+                      <HeaderSectionTopMenuAdditionalOptionsSingle>
+                        Careers
+                      </HeaderSectionTopMenuAdditionalOptionsSingle>
+                    </HeaderSectionTopMenuAdditionalOptions>
+                  )}
+                </HeaderSectionTopMenuSingle>
+                <HeaderSectionTopMenuSingle>
+                  <HeaderSectionTopMenuSingleFirstLine
+                    onClick={() => toggleAdditionalOptions(2)}>
+                    Connect
+                    <HeaderSectionTopMenuSingleImage>
+                      {showAdditionalOptions === 2 ? (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="10"
+                          height="7">
+                          <path
+                            fill="none"
+                            stroke="#FF7B86"
+                            stroke-width="2"
+                            d="M1 1l4 4 4-4"
+                          />
+                        </svg>
+                      ) : (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="10"
+                          height="7">
+                          <path
+                            fill="none"
+                            stroke="#FFF"
+                            stroke-width="2"
+                            opacity=".75"
+                            d="M1 1l4 4 4-4"
+                          />
+                        </svg>
+                      )}
+                    </HeaderSectionTopMenuSingleImage>
+                  </HeaderSectionTopMenuSingleFirstLine>
+                  {showAdditionalOptions === 2 && (
+                    <HeaderSectionTopMenuAdditionalOptions>
+                      <HeaderSectionTopMenuAdditionalOptionsSingle>
+                        Contact
+                      </HeaderSectionTopMenuAdditionalOptionsSingle>
+                      <HeaderSectionTopMenuAdditionalOptionsSingle>
+                        Newsletter
+                      </HeaderSectionTopMenuAdditionalOptionsSingle>
+                      <HeaderSectionTopMenuAdditionalOptionsSingle>
+                        LinkedIn
+                      </HeaderSectionTopMenuAdditionalOptionsSingle>
+                    </HeaderSectionTopMenuAdditionalOptions>
+                  )}
+                </HeaderSectionTopMenuSingle>
+              </HeaderSectionTopMenu>
+              <HeaderSectionTopLogin>
+                <HeaderSectionTopLoginSingle>Login</HeaderSectionTopLoginSingle>
+                <HeaderSectionTopLoginButton>
+                  Sign Up
+                </HeaderSectionTopLoginButton>
+              </HeaderSectionTopLogin>
+            </HeaderSectionTopMenuAndLogin>
+          )}
+          {screenWidth <= 1024 && isMenuOpen && (
+            <HeaderSectionTopMenuAndLoginMobile>
+              <div onClick={() => setIsMenuOpen(false)}>
+                <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M23.607.98l1.414 1.413L14.414 13l10.607 10.607-1.414 1.414L13 14.414 2.393 25.021.98 23.607 11.586 13 .98 2.393 2.393.98 13 11.586 23.607.98z"
+                    fill="grey"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <HeaderSectionTopMenuAndLoginMobileSingle>
+                <HeaderSectionTopMenuAndLoginMobileSingleLine
+                  onClick={() => toggleAdditionalOptions(0)}>
+                  Product
+                </HeaderSectionTopMenuAndLoginMobileSingleLine>
+                <HeaderSectionTopMenuAndLoginMobileSingleImage>
+                  {showAdditionalOptions === 0 ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="7">
+                      <path
+                        fill="none"
+                        stroke="#FFF"
+                        stroke-width="2"
+                        opacity=".75"
+                        d="M1 1l4 4 4-4"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="7">
+                      <path
+                        fill="none"
+                        stroke="#FF7B86"
+                        stroke-width="2"
+                        d="M1 1l4 4 4-4"
+                      />
+                    </svg>
+                  )}
+                </HeaderSectionTopMenuAndLoginMobileSingleImage>
+              </HeaderSectionTopMenuAndLoginMobileSingle>
+              <HeaderSectionTopMenuAndLoginMobileSingle>
+                <HeaderSectionTopMenuAndLoginMobileSingleLine
+                  onClick={() => toggleAdditionalOptions(1)}>
+                  Company
+                </HeaderSectionTopMenuAndLoginMobileSingleLine>
+                <HeaderSectionTopMenuAndLoginMobileSingleImage>
+                  {showAdditionalOptions === 1 ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="7">
+                      <path
+                        fill="none"
+                        stroke="#FFF"
+                        stroke-width="2"
+                        opacity=".75"
+                        d="M1 1l4 4 4-4"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="7">
+                      <path
+                        fill="none"
+                        stroke="#FF7B86"
+                        stroke-width="2"
+                        d="M1 1l4 4 4-4"
+                      />
+                    </svg>
+                  )}
+                </HeaderSectionTopMenuAndLoginMobileSingleImage>
+              </HeaderSectionTopMenuAndLoginMobileSingle>
+              <HeaderSectionTopMenuAndLoginMobileSingle>
+                <HeaderSectionTopMenuAndLoginMobileSingleLine
+                  onClick={() => toggleAdditionalOptions(2)}>
+                  Connect
+                </HeaderSectionTopMenuAndLoginMobileSingleLine>
+                <HeaderSectionTopMenuAndLoginMobileSingleImage>
+                  {showAdditionalOptions === 2 ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="7">
+                      <path
+                        fill="none"
+                        stroke="#FFF"
+                        stroke-width="2"
+                        opacity=".75"
+                        d="M1 1l4 4 4-4"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="7">
+                      <path
+                        fill="none"
+                        stroke="#FF7B86"
+                        stroke-width="2"
+                        d="M1 1l4 4 4-4"
+                      />
+                    </svg>
+                  )}
+                </HeaderSectionTopMenuAndLoginMobileSingleImage>
+              </HeaderSectionTopMenuAndLoginMobileSingle>
+              {showAdditionalOptions === 0 && (
+                <HeaderSectionTopMenuAndLoginMobileAdditionalOptions>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Overview
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Pricing
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Marketplace
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Features
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Integrations
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                </HeaderSectionTopMenuAndLoginMobileAdditionalOptions>
+              )}
+              {showAdditionalOptions === 1 && (
+                <HeaderSectionTopMenuAndLoginMobileAdditionalOptions>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    About
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Team
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Blog
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Careers
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                </HeaderSectionTopMenuAndLoginMobileAdditionalOptions>
+              )}
+              {showAdditionalOptions === 2 && (
+                <HeaderSectionTopMenuAndLoginMobileAdditionalOptions>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Contact
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Newsletter
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    LinkedIn
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                </HeaderSectionTopMenuAndLoginMobileAdditionalOptions>
+              )}
+
+              <HeaderSectionTopMenuAndLoginMobileLogin>
+                <HeaderSectionTopMenuAndLoginMobileLoginSingle>
+                  Login
+                </HeaderSectionTopMenuAndLoginMobileLoginSingle>
+                <HeaderSectionTopMenuAndLoginMobileLoginButton>
+                  Sign Up
+                </HeaderSectionTopMenuAndLoginMobileLoginButton>
+              </HeaderSectionTopMenuAndLoginMobileLogin>
+            </HeaderSectionTopMenuAndLoginMobile>
+          )}
         </HeaderSectionTop>
         <HeaderSectionBottom>
           <HeaderSectionBottomTitle>

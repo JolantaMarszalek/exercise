@@ -8,10 +8,10 @@ function App() {
   return (
     <>
       <Header />
-      <TopSection>TopSection</TopSection>
-      <MiddleSection>MiddleSection</MiddleSection>
-      <BottomSection>BottonSection</BottomSection>
-      <Footer>Footer</Footer>
+      <TopSection />
+      <MiddleSection />
+      <BottomSection />
+      <Footer />
     </>
   );
 }
