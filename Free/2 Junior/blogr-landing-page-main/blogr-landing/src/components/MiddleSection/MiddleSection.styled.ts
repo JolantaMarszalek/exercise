@@ -17,6 +17,7 @@ export const MiddleSectionStyled = styled.section`
   font-family: "Overpass", sans-serif;
 
   @media (max-width: 1024px) {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -64,7 +65,9 @@ export const MiddleSectionStyledRightSide = styled.div`
   line-height: 30px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
+    margin: 0;
+    text-align: center;
   }
 
   @media (max-width: 600px) {
@@ -85,7 +88,12 @@ export const MiddleSectionStyledRightSideTitle = styled.div`
   margin-bottom: 25px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   @media (max-width: 600px) {
@@ -104,7 +112,10 @@ export const MiddleSectionStyledRightSideDescribe = styled.div`
   margin-right: 300px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
   }
 
   @media (max-width: 600px) {
