@@ -25,6 +25,11 @@ import {
   HeaderSectionTopMenuAndLoginMobileSingle,
   HeaderSectionTopMenuAndLoginMobileSingleLine,
   HeaderSectionTopMenuAndLoginMobileSingleImage,
+  HeaderSectionTopMenuAndLoginMobileAdditionalOptions,
+  HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle,
+  HeaderSectionTopMenuAndLoginMobileLogin,
+  HeaderSectionTopMenuAndLoginMobileLoginSingle,
+  HeaderSectionTopMenuAndLoginMobileLoginButton,
 } from "./Header.styled";
 
 // function useWindowWidth() {
@@ -275,7 +280,8 @@ export const Header = () => {
           {screenWidth <= 1024 && isMenuOpen && (
             <HeaderSectionTopMenuAndLoginMobile>
               <HeaderSectionTopMenuAndLoginMobileSingle>
-                <HeaderSectionTopMenuAndLoginMobileSingleLine>
+                <HeaderSectionTopMenuAndLoginMobileSingleLine
+                  onClick={() => toggleAdditionalOptions(0)}>
                   Product
                 </HeaderSectionTopMenuAndLoginMobileSingleLine>
                 <HeaderSectionTopMenuAndLoginMobileSingleImage>
@@ -290,7 +296,8 @@ export const Header = () => {
                 </HeaderSectionTopMenuAndLoginMobileSingleImage>
               </HeaderSectionTopMenuAndLoginMobileSingle>
               <HeaderSectionTopMenuAndLoginMobileSingle>
-                <HeaderSectionTopMenuAndLoginMobileSingleLine>
+                <HeaderSectionTopMenuAndLoginMobileSingleLine
+                  onClick={() => toggleAdditionalOptions(1)}>
                   Company
                 </HeaderSectionTopMenuAndLoginMobileSingleLine>
                 <HeaderSectionTopMenuAndLoginMobileSingleImage>
@@ -305,7 +312,8 @@ export const Header = () => {
                 </HeaderSectionTopMenuAndLoginMobileSingleImage>
               </HeaderSectionTopMenuAndLoginMobileSingle>
               <HeaderSectionTopMenuAndLoginMobileSingle>
-                <HeaderSectionTopMenuAndLoginMobileSingleLine>
+                <HeaderSectionTopMenuAndLoginMobileSingleLine
+                  onClick={() => toggleAdditionalOptions(2)}>
                   Connect
                 </HeaderSectionTopMenuAndLoginMobileSingleLine>
                 <HeaderSectionTopMenuAndLoginMobileSingleImage>
@@ -319,6 +327,63 @@ export const Header = () => {
                   </svg>
                 </HeaderSectionTopMenuAndLoginMobileSingleImage>
               </HeaderSectionTopMenuAndLoginMobileSingle>
+              {showAdditionalOptions === 0 && (
+                <HeaderSectionTopMenuAndLoginMobileAdditionalOptions>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Overview
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Pricing
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Marketplace
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Features
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Integrations
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                </HeaderSectionTopMenuAndLoginMobileAdditionalOptions>
+              )}
+              {showAdditionalOptions === 1 && (
+                <HeaderSectionTopMenuAndLoginMobileAdditionalOptions>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    About
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Team
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Blog
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Careers
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                </HeaderSectionTopMenuAndLoginMobileAdditionalOptions>
+              )}
+              {showAdditionalOptions === 2 && (
+                <HeaderSectionTopMenuAndLoginMobileAdditionalOptions>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Contact
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    Newsletter
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                  <HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                    LinkedIn
+                  </HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle>
+                </HeaderSectionTopMenuAndLoginMobileAdditionalOptions>
+              )}
+
+              <HeaderSectionTopMenuAndLoginMobileLogin>
+                <HeaderSectionTopMenuAndLoginMobileLoginSingle>
+                  Login
+                </HeaderSectionTopMenuAndLoginMobileLoginSingle>
+                <HeaderSectionTopMenuAndLoginMobileLoginButton>
+                  Sign Up
+                </HeaderSectionTopMenuAndLoginMobileLoginButton>
+              </HeaderSectionTopMenuAndLoginMobileLogin>
             </HeaderSectionTopMenuAndLoginMobile>
           )}
         </HeaderSectionTop>
