@@ -14,8 +14,10 @@ export const FooterSection = styled.section`
 
   @media (max-width: 1024px) {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
+    align-content: center;
   }
 
   @media (max-width: 600px) {
@@ -27,6 +29,15 @@ export const FooterSectionLogo = styled.div`
   height: 200px;
   margin-left: 200px;
   z-index: 2;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    height: 100px;
+  }
 `;
 
 export const FooterSectionMenu = styled.div`
@@ -45,6 +56,8 @@ export const FooterSectionMenu = styled.div`
     flex-direction: column;
     width: auto;
     height: auto;
+    margin: 0;
+    text-align: center;
   }
 
   @media (max-width: 600px) {
