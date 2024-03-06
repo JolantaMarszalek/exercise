@@ -180,7 +180,7 @@ export const HeaderSectionTopMenuAndLoginMobileSingle = styled.div`
 
 export const HeaderSectionTopMenuAndLoginMobileSingleLine = styled.div`
   display: flex;
-  /* color: var(--neutral-white--text); */
+  color: var(--neutral-dark-black-blue--footer-background);
   z-index: 2;
   gap: 10px;
   padding-top: 5px;
@@ -257,7 +257,7 @@ export const HeaderSectionTopMenuAndLoginMobileLogin = styled.div`
 `;
 
 export const HeaderSectionTopMenuAndLoginMobileLoginSingle = styled.div`
-  color: var(--primary-very-dark-blue--headingh);
+  color: var(--neutral-dark-black-blue--footer-background);
   z-index: 1;
 `;
 
