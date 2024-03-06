@@ -17,6 +17,13 @@ export const HeaderSectionBackground = styled.div`
   );
   border-radius: 0 0 0 100px;
   font-family: "Overpass", sans-serif;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+  }
 `;
 
 export const HeaderSVG = styled.svg`
@@ -35,7 +42,7 @@ export const HeaderSection = styled.section`
   font-family: "Overpass", sans-serif;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 100%;
   }
 
   @media (max-width: 600px) {
@@ -54,7 +61,7 @@ export const HeaderSectionTop = styled.div`
   /* background-color: red; */
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 80%;
   }
 
   @media (max-width: 600px) {
@@ -70,7 +77,7 @@ export const HeaderSectionTopMenu = styled.div`
   display: flex;
   gap: 20px;
   z-index: 2;
-  margin-top: 200px;
+  /* margin-top: 180px; */
   height: 100%;
 `;
 
@@ -98,6 +105,7 @@ export const HeaderSectionTopMenuSingleFirstLine = styled.div`
 export const HeaderSectionTopMenuSingleImage = styled.div`
   color: var(--neutral-white--text);
   z-index: 2;
+  font-size: 16px;
 `;
 
 export const HeaderSectionTopMenuAdditionalOptions = styled.div`
@@ -125,11 +133,19 @@ export const HeaderSectionTopMenuAdditionalOptionsSingle = styled.div`
   }
 `;
 
+export const HeaderSectionTopMenuAndLogin = styled.div`
+  display: flex;
+  gap: 20px;
+  z-index: 2;
+  margin-top: 180px;
+  height: 100%;
+`;
+
 export const HeaderSectionTopLogin = styled.div`
   display: flex;
   gap: 20px;
   margin-right: 50px;
-  align-items: center;
+  align-items: flex-start;
   z-index: 1;
 `;
 
@@ -149,6 +165,7 @@ export const HeaderSectionTopLoginButton = styled.button`
   z-index: 1;
   font-family: "Overpass", sans-serif;
   font-size: 16px;
+  margin-top: -10px;
 
   &:hover {
     background-color: var(--primary-very-light-red--CTA-hover-bg);

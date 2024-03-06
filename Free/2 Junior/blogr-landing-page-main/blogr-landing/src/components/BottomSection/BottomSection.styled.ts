@@ -11,7 +11,9 @@ export const BottomSectionStyled = styled.section`
   font-family: "Overpass", sans-serif;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (max-width: 600px) {

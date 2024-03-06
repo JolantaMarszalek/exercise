@@ -17,7 +17,8 @@ export const MiddleSectionStyled = styled.section`
   font-family: "Overpass", sans-serif;
 
   @media (max-width: 1024px) {
-    width: auto;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (max-width: 600px) {

@@ -13,7 +13,9 @@ export const FooterSection = styled.section`
   font-family: "Overpass", sans-serif;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (max-width: 600px) {
@@ -37,6 +39,16 @@ export const FooterSectionMenu = styled.div`
   height: 200px;
   justify-content: space-evenly;
   margin-top: 10px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+
+  @media (max-width: 600px) {
+  }
 `;
 
 export const FooterSectionMenuSingle = styled.div`

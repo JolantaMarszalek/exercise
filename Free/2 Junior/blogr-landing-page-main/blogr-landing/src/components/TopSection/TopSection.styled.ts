@@ -11,7 +11,7 @@ export const TopSectionStyled = styled.section`
   font-family: "Overpass", sans-serif;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 100%;
   }
 
   @media (max-width: 600px) {
@@ -51,7 +51,8 @@ export const TopSectionStyledBottom = styled.div`
   gap: 100px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (max-width: 600px) {
