@@ -38,6 +38,7 @@ export const MiddleSectionStyledLeftSide = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
+    margin: 0;
   }
 
   @media (max-width: 600px) {

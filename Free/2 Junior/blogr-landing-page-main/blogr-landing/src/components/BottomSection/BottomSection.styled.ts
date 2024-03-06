@@ -30,7 +30,8 @@ export const BottomSectionStyledLeftSide = styled.div`
   margin-left: -100px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 100%;
+    margin: 0;
   }
 
   @media (max-width: 600px) {
@@ -47,6 +48,8 @@ export const BottomSectionStyledRightSide = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
+    margin: 0;
+    margin-bottom: 30px;
   }
 
   @media (max-width: 600px) {
@@ -66,7 +69,12 @@ export const BottomSectionStyledRightSideTitle = styled.div`
   font-weight: 600;
 
   @media (max-width: 1024px) {
-    width: auto;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   @media (max-width: 600px) {
@@ -84,7 +92,9 @@ export const BottomSectionStyledRightSideDescribe = styled.div`
   margin-right: 300px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
+    margin: 0;
+    text-align: center;
   }
 
   @media (max-width: 600px) {
