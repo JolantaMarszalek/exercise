@@ -141,6 +141,56 @@ export const HeaderSectionTopMenuAndLogin = styled.div`
   height: 100%;
 `;
 
+export const HeaderSectionTopMenuAndLoginMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  justify-content: center;
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: auto;
+    background-color: var(--neutral-white--text);
+    border-radius: 10px;
+    margin-top: 150px;
+  }
+`;
+
+export const HeaderSectionTopMenuAndLoginMobileSingle = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  /* color: var(--neutral-white--text); */
+  z-index: 2;
+  justify-content: center;
+  gap: 10px;
+  width: 100px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: auto;
+  }
+`;
+
+export const HeaderSectionTopMenuAndLoginMobileSingleLine = styled.div`
+  display: flex;
+  /* color: var(--neutral-white--text); */
+  z-index: 2;
+  gap: 10px;
+
+  &:hover {
+    /* text-decoration: underline; */
+    cursor: pointer;
+  }
+`;
+
+export const HeaderSectionTopMenuAndLoginMobileSingleImage = styled.div`
+  color: var(--neutral-white--text);
+  z-index: 2;
+  font-size: 16px;
+`;
+
 export const HeaderSectionTopLogin = styled.div`
   display: flex;
   gap: 20px;
@@ -186,6 +236,9 @@ export const HeaderSectionBottom = styled.div`
   z-index: 0;
 
   @media (max-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: auto;
   }
 
@@ -205,6 +258,10 @@ export const HeaderSectionBottomTitle = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   @media (max-width: 600px) {
@@ -264,13 +321,6 @@ export const HeaderSectionBottomButtonStart = styled.button`
     color: var(--neutral-white--text);
     cursor: pointer;
   }
-
-  @media (max-width: 1024px) {
-    width: auto;
-  }
-
-  @media (max-width: 600px) {
-  }
 `;
 
 export const HeaderSectionBottomButtonLearn = styled.button`
@@ -289,12 +339,5 @@ export const HeaderSectionBottomButtonLearn = styled.button`
     background-color: var(--neutral-white--text);
     color: var(--primary-light-red--CTA-text);
     cursor: pointer;
-  }
-
-  @media (max-width: 1024px) {
-    width: auto;
-  }
-
-  @media (max-width: 600px) {
   }
 `;

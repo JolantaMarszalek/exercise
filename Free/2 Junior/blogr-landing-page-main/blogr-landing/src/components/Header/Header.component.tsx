@@ -21,30 +21,48 @@ import {
   HeaderSectionTopMenuSingleFirstLine,
   HeaderSectionTopMenuAdditionalOptionsSingle,
   HeaderSectionTopMenuAndLogin,
+  HeaderSectionTopMenuAndLoginMobile,
+  HeaderSectionTopMenuAndLoginMobileSingle,
+  HeaderSectionTopMenuAndLoginMobileSingleLine,
+  HeaderSectionTopMenuAndLoginMobileSingleImage,
 } from "./Header.styled";
 
-function useWindowWidth() {
-  const [width, setWidth] = useState(window.innerWidth);
+// function useWindowWidth() {
+//   const [width, setWidth] = useState(window.innerWidth);
+
+//   useEffect(() => {
+//     const handleResize = () => setWidth(window.innerWidth);
+//     window.addEventListener("resize", handleResize);
+//     return () => {
+//       window.removeEventListener("resize", handleResize);
+//     };
+//   }, []);
+
+//   return width;
+// }
+
+export const Header = () => {
+  const [showAdditionalOptions, setShowAdditionalOptions] = useState<
+    number | null
+  >(null);
+  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
+    const handleResize = () => setScreenWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
 
-  return width;
-}
-
-export const Header = () => {
-  const [showAdditionalOptions, setShowAdditionalOptions] = useState<
-    number | null
-  >(null);
-  const screenWidth = useWindowWidth();
-
   const toggleAdditionalOptions = (index: number) => {
     setShowAdditionalOptions(showAdditionalOptions === index ? null : index);
+  };
+
+  const handleMenuToggle = () => {
+    console.log("Menu clicked");
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -84,11 +102,13 @@ export const Header = () => {
 
           {screenWidth < 1024 ? (
             <>
-              <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
-                <g fill="#FFF" fill-rule="evenodd">
-                  <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
-                </g>
-              </svg>
+              <div onClick={handleMenuToggle}>
+                <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="#FFF" fill-rule="evenodd">
+                    <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
+                  </g>
+                </svg>
+              </div>
             </>
           ) : (
             <HeaderSectionTopMenuAndLogin>
@@ -243,7 +263,7 @@ export const Header = () => {
                     </HeaderSectionTopMenuAdditionalOptions>
                   )}
                 </HeaderSectionTopMenuSingle>
-              </HeaderSectionTopMenu>{" "}
+              </HeaderSectionTopMenu>
               <HeaderSectionTopLogin>
                 <HeaderSectionTopLoginSingle>Login</HeaderSectionTopLoginSingle>
                 <HeaderSectionTopLoginButton>
@@ -251,6 +271,55 @@ export const Header = () => {
                 </HeaderSectionTopLoginButton>
               </HeaderSectionTopLogin>
             </HeaderSectionTopMenuAndLogin>
+          )}
+          {screenWidth <= 1024 && isMenuOpen && (
+            <HeaderSectionTopMenuAndLoginMobile>
+              <HeaderSectionTopMenuAndLoginMobileSingle>
+                <HeaderSectionTopMenuAndLoginMobileSingleLine>
+                  Product
+                </HeaderSectionTopMenuAndLoginMobileSingleLine>
+                <HeaderSectionTopMenuAndLoginMobileSingleImage>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                    <path
+                      fill="none"
+                      stroke="#FF7B86"
+                      stroke-width="2"
+                      d="M1 1l4 4 4-4"
+                    />
+                  </svg>
+                </HeaderSectionTopMenuAndLoginMobileSingleImage>
+              </HeaderSectionTopMenuAndLoginMobileSingle>
+              <HeaderSectionTopMenuAndLoginMobileSingle>
+                <HeaderSectionTopMenuAndLoginMobileSingleLine>
+                  Company
+                </HeaderSectionTopMenuAndLoginMobileSingleLine>
+                <HeaderSectionTopMenuAndLoginMobileSingleImage>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                    <path
+                      fill="none"
+                      stroke="#FF7B86"
+                      stroke-width="2"
+                      d="M1 1l4 4 4-4"
+                    />
+                  </svg>
+                </HeaderSectionTopMenuAndLoginMobileSingleImage>
+              </HeaderSectionTopMenuAndLoginMobileSingle>
+              <HeaderSectionTopMenuAndLoginMobileSingle>
+                <HeaderSectionTopMenuAndLoginMobileSingleLine>
+                  Connect
+                </HeaderSectionTopMenuAndLoginMobileSingleLine>
+                <HeaderSectionTopMenuAndLoginMobileSingleImage>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7">
+                    <path
+                      fill="none"
+                      stroke="#FF7B86"
+                      stroke-width="2"
+                      d="M1 1l4 4 4-4"
+                    />
+                  </svg>
+                </HeaderSectionTopMenuAndLoginMobileSingleImage>
+              </HeaderSectionTopMenuAndLoginMobileSingle>
+            </HeaderSectionTopMenuAndLoginMobile>
           )}
         </HeaderSectionTop>
         <HeaderSectionBottom>
