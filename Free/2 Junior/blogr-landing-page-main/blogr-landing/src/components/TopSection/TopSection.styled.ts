@@ -32,7 +32,8 @@ export const TopSectionStyledTitle = styled.div`
   font-weight: 600;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 100%;
+    margin-top: 100px;
   }
 
   @media (max-width: 600px) {
@@ -53,6 +54,9 @@ export const TopSectionStyledBottom = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    width: 90%;
+    margin: 0;
+    margin-top: 20px;
   }
 
   @media (max-width: 600px) {
@@ -69,7 +73,9 @@ export const TopSectionStyledBottomLeftSide = styled.div`
   margin-right: 200px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 90%;
+    margin: 0;
+    text-align: center;
   }
 
   @media (max-width: 600px) {
@@ -89,7 +95,12 @@ export const TopSectionStyledBottomLeftSideTitle = styled.div`
   font-weight: 600;
 
   @media (max-width: 1024px) {
-    width: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   @media (max-width: 600px) {
@@ -106,7 +117,9 @@ export const TopSectionStyledBottomLeftSideDescribe = styled.div`
   line-height: 30px;
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 100%;
+    margin: 0;
+    text-align: center;
   }
 
   @media (max-width: 600px) {
@@ -123,6 +136,7 @@ export const TopSectionStyledBottomRightSide = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
+    margin: 0;
   }
 
   @media (max-width: 600px) {
