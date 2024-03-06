@@ -38,7 +38,6 @@ export const HeaderSection = styled.section`
   align-items: center;
   width: 100%;
   position: relative;
-  /* z-index: 1; */
   font-family: "Overpass", sans-serif;
 
   @media (max-width: 1024px) {
@@ -58,8 +57,6 @@ export const HeaderSectionTop = styled.div`
   position: relative;
   z-index: 1;
 
-  /* background-color: red; */
-
   @media (max-width: 1024px) {
     width: 80%;
   }
@@ -77,7 +74,6 @@ export const HeaderSectionTopMenu = styled.div`
   display: flex;
   gap: 20px;
   z-index: 2;
-  /* margin-top: 180px; */
   height: 100%;
 `;
 
@@ -164,8 +160,6 @@ export const HeaderSectionTopMenuAndLoginMobile = styled.div`
 
 export const HeaderSectionTopMenuAndLoginMobileSingle = styled.div`
   display: flex;
-  /* flex-direction: column; */
-  /* color: var(--neutral-white--text); */
   z-index: 2;
   justify-content: center;
   gap: 10px;
@@ -187,7 +181,6 @@ export const HeaderSectionTopMenuAndLoginMobileSingleLine = styled.div`
   padding-bottom: 5px;
 
   &:hover {
-    /* text-decoration: underline; */
     cursor: pointer;
   }
 `;
@@ -203,11 +196,7 @@ export const HeaderSectionTopMenuAndLoginMobileAdditionalOptions = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 80%;
-  /* color: var(--neutral-dark-black-blue--footer-background); */
-  /* background-color: var(--neutral-white--text); */
   z-index: 2;
-  /* border-radius: 10px; */
-  /* width: 150px; */
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: var(--neutral-grayish-blue--footer-text);
@@ -220,8 +209,6 @@ export const HeaderSectionTopMenuAndLoginMobileAdditionalOptionsSingle = styled.
   justify-content: center;
   width: 100%;
   z-index: 2;
-  /* padding-left: 15px; */
-  /* padding-right: 15px; */
   padding-top: 5px;
   padding-bottom: 5px;
 
@@ -245,7 +232,6 @@ export const HeaderSectionTopMenuAndLoginMobileLogin = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* margin-right: 50px; */
   align-items: center;
   z-index: 1;
   padding-top: 10px;
@@ -322,7 +308,6 @@ export const HeaderSectionBottom = styled.div`
   width: 100%;
   height: 300px;
   position: relative;
-  /* background-color: red; */
   z-index: 0;
 
   @media (max-width: 1024px) {

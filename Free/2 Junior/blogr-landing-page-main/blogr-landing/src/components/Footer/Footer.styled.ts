@@ -42,7 +42,6 @@ export const FooterSectionLogo = styled.div`
 
 export const FooterSectionMenu = styled.div`
   display: flex;
-  /* flex-direction: column; */
   gap: 20px;
   z-index: 1;
   margin-right: 200px;

@@ -32,20 +32,6 @@ import {
   HeaderSectionTopMenuAndLoginMobileLoginButton,
 } from "./Header.styled";
 
-// function useWindowWidth() {
-//   const [width, setWidth] = useState(window.innerWidth);
-
-//   useEffect(() => {
-//     const handleResize = () => setWidth(window.innerWidth);
-//     window.addEventListener("resize", handleResize);
-//     return () => {
-//       window.removeEventListener("resize", handleResize);
-//     };
-//   }, []);
-
-//   return width;
-// }
-
 export const Header = () => {
   const [showAdditionalOptions, setShowAdditionalOptions] = useState<
     number | null
