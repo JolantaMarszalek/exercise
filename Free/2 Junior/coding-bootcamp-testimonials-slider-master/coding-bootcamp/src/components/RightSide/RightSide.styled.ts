@@ -34,10 +34,11 @@ export const RightSideImage = styled.div`
 
 export const RightSideSlider = styled.button`
   display: flex;
-  flex-direction: column;
-  width: 150px;
-  height: 50px;
-  border-radius: 30px;
+  width: 140px;
+  height: 60px;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-around;
 
   @media (max-width: 1024px) {
     width: 100%;
