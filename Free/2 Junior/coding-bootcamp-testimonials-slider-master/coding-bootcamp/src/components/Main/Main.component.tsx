@@ -14,12 +14,23 @@ export const Main = () => {
   const [profession, setProfession] = useState("UX Engineer");
 
   const handleClick = () => {
-    setImage(imageJohn);
-    setQuote(
-      "“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”"
+    setImage((prevImage) =>
+      prevImage === imageTanya ? imageJohn : imageTanya
     );
-    setName("John Tarkpor");
-    setProfession("Junior Front-end Developer");
+    setQuote((prevQuote) =>
+      prevQuote ===
+      "“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”"
+        ? "“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”"
+        : "“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”"
+    );
+    setName((prevName) =>
+      prevName === "Tanya Sinclair" ? "John Tarkpor" : "Tanya Sinclair"
+    );
+    setProfession((prevProfession) =>
+      prevProfession === "UX Engineer"
+        ? "Junior Front-end Developer"
+        : "UX Engineer"
+    );
   };
 
   return (
