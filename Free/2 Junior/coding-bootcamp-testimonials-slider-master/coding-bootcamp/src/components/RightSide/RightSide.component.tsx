@@ -3,16 +3,20 @@ import {
   RightSideSlider,
   RightSideStyled,
 } from "./RightSide.styled";
-import myImage from "../../../../images/image-tanya.jpg";
 
-export const RightSide = () => {
+interface RightSideProps {
+  image: string;
+  handleClick: () => void;
+}
+
+export const RightSide: React.FC<RightSideProps> = ({ image, handleClick }) => {
   return (
     <>
       <RightSideStyled>
         <RightSideImage>
-          <img src={myImage} alt="image-tanya" />
+          <img src={image} alt="image-person" />
         </RightSideImage>
-        <RightSideSlider></RightSideSlider>
+        <RightSideSlider onClick={handleClick}></RightSideSlider>
       </RightSideStyled>
     </>
   );
