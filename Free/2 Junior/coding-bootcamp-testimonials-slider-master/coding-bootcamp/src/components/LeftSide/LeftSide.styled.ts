@@ -6,6 +6,46 @@ export const LeftSideStyled = styled.section`
   width: 100%;
   height: 100vh;
   justify-content: center;
+  z-index: 1;
+  position: relative;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const LeftSideBackgroundTop = styled.div`
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-image: url("../../../../images/pattern-quotes.svg"); */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  margin-top: 525px;
+  margin-left: 350px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
+export const LeftSideBackgroundBottom = styled.div`
+  display: flex;
+  position: absolute;
+  width: auto;
+  height: auto;
+  background-size: cover;
+  background-position: bottom;
+  z-index: -1;
+  bottom: 0;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -22,6 +62,8 @@ export const LeftSideQuoteText = styled.div`
   color: var(--primary-dark-blue);
   margin-top: 25px;
   margin-bottom: 25px;
+  margin-right: -30px;
+  z-index: 1;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -37,6 +79,7 @@ export const LeftSidePersonText = styled.div`
   gap: 20px;
   margin-top: 25px;
   margin-bottom: 25px;
+  z-index: 1;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -51,6 +94,7 @@ export const LeftSidePersonTextName = styled.div`
   flex-direction: column;
   font-weight: bold;
   color: var(--primary-dark-blue);
+  z-index: 1;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -64,6 +108,7 @@ export const LeftSidePersonTextProfession = styled.div`
   display: flex;
   flex-direction: column;
   color: var(--primary-grayish-blue);
+  z-index: 1;
 
   @media (max-width: 1024px) {
     width: 100%;

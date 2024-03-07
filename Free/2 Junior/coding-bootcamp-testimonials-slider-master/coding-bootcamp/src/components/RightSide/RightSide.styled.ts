@@ -16,6 +16,24 @@ export const RightSideStyled = styled.section`
   }
 `;
 
+export const RightSideBackground = styled.div`
+  display: flex;
+  position: absolute;
+  width: auto;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  margin-top: 200px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+  }
+`;
+
 export const RightSideImage = styled.div`
   display: flex;
   flex-direction: column;
