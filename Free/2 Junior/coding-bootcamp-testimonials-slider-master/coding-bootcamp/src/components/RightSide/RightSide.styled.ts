@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const RightSideStyled = styled.section`
   display: flex;
   flex-direction: column;
-  background-color: grey;
   width: 100%;
   height: 100vh;
   align-items: center;
@@ -39,6 +38,9 @@ export const RightSideSlider = styled.button`
   border-radius: 50px;
   align-items: center;
   justify-content: space-around;
+  border: none;
+  margin-top: -30px;
+  margin-right: 300px;
 
   @media (max-width: 1024px) {
     width: 100%;

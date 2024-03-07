@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const LeftSideStyled = styled.section`
   display: flex;
   flex-direction: column;
-  background-color: pink;
   width: 100%;
   height: 100vh;
   justify-content: center;
@@ -21,6 +20,8 @@ export const LeftSideQuoteText = styled.div`
   flex-direction: column;
   margin-left: 250px;
   color: var(--primary-dark-blue);
+  margin-top: 25px;
+  margin-bottom: 25px;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -34,6 +35,8 @@ export const LeftSidePersonText = styled.div`
   display: flex;
   margin-left: 250px;
   gap: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 
   @media (max-width: 1024px) {
     width: 100%;
