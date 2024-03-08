@@ -7,6 +7,8 @@ export const MainStyled = styled.section`
 
   @media (max-width: 1024px) {
     width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   @media (max-width: 600px) {

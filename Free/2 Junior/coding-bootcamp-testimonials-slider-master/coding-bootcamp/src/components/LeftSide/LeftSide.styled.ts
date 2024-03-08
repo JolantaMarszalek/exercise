@@ -11,6 +11,8 @@ export const LeftSideStyled = styled.section`
 
   @media (max-width: 1024px) {
     width: 100%;
+    display: flex;
+    align-items: center;
   }
 
   @media (max-width: 600px) {
@@ -49,6 +51,7 @@ export const LeftSideBackgroundBottom = styled.div`
 
   @media (max-width: 1024px) {
     width: 100%;
+    bottom: 0;
   }
 
   @media (max-width: 600px) {
@@ -64,9 +67,14 @@ export const LeftSideQuoteText = styled.div`
   margin-bottom: 25px;
   margin-right: -30px;
   z-index: 1;
+  line-height: 1.5;
 
   @media (max-width: 1024px) {
-    width: 100%;
+    display: flex;
+    width: 80%;
+    text-align: center;
+    margin: 0;
+    line-height: 1.5;
   }
 
   @media (max-width: 600px) {
@@ -82,7 +90,11 @@ export const LeftSidePersonText = styled.div`
   z-index: 1;
 
   @media (max-width: 1024px) {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0;
+    margin-top: 30px;
   }
 
   @media (max-width: 600px) {
@@ -97,7 +109,8 @@ export const LeftSidePersonTextName = styled.div`
   z-index: 1;
 
   @media (max-width: 1024px) {
-    width: 100%;
+    width: auto;
+    margin: auto;
   }
 
   @media (max-width: 600px) {
@@ -111,7 +124,8 @@ export const LeftSidePersonTextProfession = styled.div`
   z-index: 1;
 
   @media (max-width: 1024px) {
-    width: 100%;
+    width: auto;
+    margin: auto;
   }
 
   @media (max-width: 600px) {
