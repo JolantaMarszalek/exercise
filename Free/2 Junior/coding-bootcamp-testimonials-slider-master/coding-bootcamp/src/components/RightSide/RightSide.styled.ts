@@ -28,6 +28,7 @@ export const RightSideBackground = styled.div`
 
   @media (max-width: 1024px) {
     width: 100%;
+    margin-top: 400px;
   }
 
   @media (max-width: 600px) {
@@ -43,6 +44,7 @@ export const RightSideImage = styled.div`
 
   @media (max-width: 1024px) {
     width: 100%;
+    margin: auto;
   }
 
   @media (max-width: 600px) {
@@ -62,6 +64,10 @@ export const RightSideSlider = styled.button`
 
   @media (max-width: 1024px) {
     width: 100%;
+    margin: 0;
+    width: 140px;
+    height: 60px;
+    margin-top: -30px;
   }
 
   @media (max-width: 600px) {
