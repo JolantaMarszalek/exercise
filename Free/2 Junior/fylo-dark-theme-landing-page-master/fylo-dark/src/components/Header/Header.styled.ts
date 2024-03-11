@@ -35,6 +35,7 @@ export const HeaderSectionTextSingle = styled.div`
 
   &:hover {
     text-decoration: underline;
+    font-weight: bold;
     cursor: pointer;
   }
 `;
