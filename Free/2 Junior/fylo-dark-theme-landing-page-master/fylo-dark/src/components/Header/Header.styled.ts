@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderSection = styled.section`
   display: flex;
-  background-color: var(--primary-dark-blue--main-background);
+  background-color: var(--primary-dark-blue--testimonials-background);
   justify-content: space-between;
   align-items: center;
 
