@@ -71,6 +71,10 @@ export const OpinionSectionTextPerson = styled.div`
   z-index: 1;
   margin-top: 5px;
   margin-bottom: 5px;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  /* margin: 25px; */
 `;
 
 export const OpinionSectionTextPersonImage = styled.img`
@@ -78,21 +82,24 @@ export const OpinionSectionTextPersonImage = styled.img`
   flex-direction: column;
   font-family: "Raleway", sans-serif;
   gap: 20px;
-  font-size: 20px;
+  /* font-size: 20px; */
   text-align: center;
-  font-weight: 700;
+  /* font-weight: 700; */
   z-index: 1;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  /* margin-top: 5px;
+  margin-bottom: 5px; */
   border-radius: 100px;
+  height: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
 `;
 
 export const OpinionSectionTextPersonText = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
-  gap: 20px;
-  font-size: 15px;
+  /* gap: 20px; */
+  /* font-size: 12px; */
   /* text-align: center; */
   font-weight: 700;
   z-index: 1;
@@ -100,14 +107,15 @@ export const OpinionSectionTextPersonText = styled.div`
   margin-bottom: 5px;
   align-items: flex-start;
   justify-content: center;
+  /* height: 80px; */
 `;
 
 export const OpinionSectionTextPersonTextName = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
-  gap: 20px;
-  font-size: 15px;
+  /* gap: 20px; */
+  font-size: 13px;
   /* text-align: center; */
   /* font-weight: 700; */
   z-index: 1;
@@ -120,7 +128,7 @@ export const OpinionSectionTextPersonTextOccupationalTitle = styled.div`
   flex-direction: column;
   font-family: "Raleway", sans-serif;
   gap: 20px;
-  font-size: 15px;
+  font-size: 10px;
   /* text-align: center; */
   /* font-weight: 700; */
   z-index: 1;
