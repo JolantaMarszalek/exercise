@@ -5,6 +5,7 @@ export const HeaderSection = styled.section`
   background-color: var(--primary-dark-blue--testimonials-background);
   justify-content: space-between;
   align-items: center;
+  height: auto;
 
   @media (max-width: 1024px) {
     margin: auto;

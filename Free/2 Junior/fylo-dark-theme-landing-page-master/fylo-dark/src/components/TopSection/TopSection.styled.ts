@@ -6,7 +6,7 @@ export const TopSectionStyled = styled.section`
   background-color: var(--primary-dark-blue--testimonials-background);
   justify-content: space-between;
   align-items: center;
-  width: auto;
+  width: 100%;
   height: auto;
 
   @media (max-width: 1024px) {
@@ -18,18 +18,24 @@ export const TopSectionImage = styled.img`
   display: flex;
   flex-direction: column;
   position: static;
-  /* margin: 50px; */
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 `;
 
 export const TopSectionBackground = styled.div`
   display: flex;
   flex-direction: column;
-  position: static;
   position: absolute;
-  /* margin: 50px; */
+  width: 100vw;
   z-index: -1;
+  margin: 0;
+  padding: 0;
+`;
+
+export const FullWidthSVG = styled.svg`
+  width: 100%;
+  height: auto;
 `;
 
 export const TopSectionText = styled.div`
@@ -39,9 +45,10 @@ export const TopSectionText = styled.div`
   position: relative;
   color: var(--neutral-white);
   gap: 20px;
-  margin: 50px;
+  margin-top: 25px;
   align-items: center;
   z-index: 1;
+  height: 600px;
 `;
 
 export const TopSectionTextTitle = styled.div`
@@ -55,8 +62,8 @@ export const TopSectionTextTitle = styled.div`
   font-weight: 700;
   z-index: 1;
   width: 50%;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 `;
 
 export const TopSectionTextDescribe = styled.div`
@@ -69,8 +76,8 @@ export const TopSectionTextDescribe = styled.div`
   font-weight: 400;
   z-index: 1;
   width: 40%;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 `;
 
 export const TopSectionTextButton = styled.button`

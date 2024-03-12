@@ -1,4 +1,5 @@
 import {
+  FullWidthSVG,
   TopSectionBackground,
   TopSectionImage,
   TopSectionStyled,
@@ -18,11 +19,11 @@ export const TopSection: React.FC = () => {
         alt="Image TopSection"></TopSectionImage>
       <TopSectionText>
         <TopSectionBackground>
-          <svg
-            width="1440"
-            height="449"
+          <FullWidthSVG
             xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink">
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 1454 449"
+            preserveAspectRatio="none">
             <defs>
               <path id="a" d="M0 0h1454v449H0z" />
             </defs>
@@ -36,7 +37,7 @@ export const TopSection: React.FC = () => {
                 mask="url(#b)"
               />
             </g>
-          </svg>
+          </FullWidthSVG>
         </TopSectionBackground>
         <TopSectionTextTitle>
           All your files in one secure location, accessible anywhere.
