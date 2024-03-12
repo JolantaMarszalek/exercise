@@ -33,6 +33,7 @@ export const HeaderSectionTextSingle = styled.div`
   flex-direction: column;
   position: static;
   gap: 20px;
+  width: 100px;
 
   &:hover {
     text-decoration: underline;
