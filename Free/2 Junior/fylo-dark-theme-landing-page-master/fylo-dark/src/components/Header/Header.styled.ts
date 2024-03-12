@@ -21,7 +21,6 @@ export const HeaderSectionLogo = styled.div`
 
 export const HeaderSectionText = styled.div`
   display: flex;
-  /* flex-direction: column; */
   position: static;
   color: var(--neutral-white);
   gap: 20px;

@@ -41,7 +41,6 @@ export const FullWidthSVG = styled.svg`
 export const TopSectionText = styled.div`
   display: flex;
   flex-direction: column;
-  /* position: static; */
   position: relative;
   color: var(--neutral-white);
   gap: 20px;
@@ -55,7 +54,6 @@ export const TopSectionTextTitle = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
-  /* position: static; */
   gap: 20px;
   font-size: 45px;
   text-align: center;
@@ -69,7 +67,6 @@ export const TopSectionTextTitle = styled.div`
 export const TopSectionTextDescribe = styled.div`
   display: flex;
   flex-direction: column;
-  /* position: static; */
   gap: 20px;
   font-size: 25px;
   text-align: center;
@@ -83,7 +80,6 @@ export const TopSectionTextDescribe = styled.div`
 export const TopSectionTextButton = styled.button`
   display: flex;
   flex-direction: column;
-  /* position: static; */
   gap: 20px;
   width: 250px;
   height: 50px;

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const BottomSectionStyled = styled.section`
   display: flex;
-  /* flex-direction: column; */
   background-color: var(--primary-dark-blue--main-background);
   justify-content: space-between;
   align-items: center;
@@ -17,10 +16,7 @@ export const BottomSectionStyled = styled.section`
 export const BottomSectionImage = styled.img`
   display: flex;
   flex-direction: column;
-  /* position: static; */
   margin: 50px;
-  /* margin-top: 10px;
-  margin-bottom: 10px; */
   width: auto;
   height: auto;
   width: 50%;
@@ -29,8 +25,6 @@ export const BottomSectionImage = styled.img`
 export const BottomSectionText = styled.div`
   display: flex;
   flex-direction: column;
-  /* position: static; */
-  /* position: relative; */
   color: var(--neutral-white);
   gap: 20px;
   margin-top: 25px;
@@ -46,10 +40,8 @@ export const BottomSectionTextTitle = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
-  /* position: static; */
   gap: 20px;
   font-size: 45px;
-  /* text-align: center; */
   font-weight: 700;
   z-index: 1;
   width: 50%;
@@ -60,27 +52,21 @@ export const BottomSectionTextTitle = styled.div`
 export const BottomSectionTextDescribe = styled.div`
   display: flex;
   flex-direction: column;
-  /* position: static; */
   gap: 20px;
   font-size: 25px;
-  /* text-align: center; */
   font-weight: 400;
   z-index: 1;
-  /* width: 40%; */
   margin-top: 15px;
   margin-bottom: 15px;
 `;
 
 export const BottomSectionTextLink = styled.div`
   display: flex;
-  flex-direction: column;
-  /* position: static; */
   gap: 20px;
   font-size: 25px;
   text-align: center;
   font-weight: 400;
   z-index: 1;
-  /* width: 40%; */
   margin-top: 15px;
   margin-bottom: 15px;
   color: var(--accent-cyan--inside-call-to-action-gradient);

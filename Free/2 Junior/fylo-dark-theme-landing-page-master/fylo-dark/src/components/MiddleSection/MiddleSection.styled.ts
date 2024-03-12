@@ -41,7 +41,6 @@ export const MiddleSectionImage = styled.img`
 export const MiddleSectionText = styled.div`
   display: flex;
   flex-direction: column;
-  /* position: static; */
   position: relative;
   color: var(--neutral-white);
   gap: 20px;
@@ -57,13 +56,11 @@ export const MiddleSectionTextTitle = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
-  /* position: static; */
   gap: 20px;
   font-size: 20px;
   text-align: center;
   font-weight: 700;
   z-index: 1;
-  /* width: 50%; */
   margin-top: 15px;
   margin-bottom: 15px;
 `;
@@ -71,13 +68,11 @@ export const MiddleSectionTextTitle = styled.div`
 export const MiddleSectionTextDescribe = styled.div`
   display: flex;
   flex-direction: column;
-  /* position: static; */
   gap: 20px;
   font-size: 20px;
   text-align: center;
   font-weight: 400;
   z-index: 1;
-  /* width: 40%; */
   margin-top: 15px;
   margin-bottom: 15px;
 `;
