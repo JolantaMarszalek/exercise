@@ -29,15 +29,6 @@ export const MiddleSectionStyledSingle = styled.div`
   }
 `;
 
-export const MiddleSectionImage = styled.img`
-  display: flex;
-  flex-direction: column;
-  position: static;
-  margin: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-`;
-
 export const MiddleSectionText = styled.div`
   display: flex;
   flex-direction: column;
@@ -61,8 +52,8 @@ export const MiddleSectionTextTitle = styled.div`
   text-align: center;
   font-weight: 700;
   z-index: 1;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 `;
 
 export const MiddleSectionTextDescribe = styled.div`
@@ -73,6 +64,6 @@ export const MiddleSectionTextDescribe = styled.div`
   text-align: center;
   font-weight: 400;
   z-index: 1;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 `;

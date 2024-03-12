@@ -27,7 +27,7 @@ export const TopSection: React.FC = () => {
             <defs>
               <path id="a" d="M0 0h1454v449H0z" />
             </defs>
-            <g transform="translate(-14)" fill="none" fill-rule="evenodd">
+            <g transform="translate(-14)" fill="none" fillRule="evenodd">
               <mask id="b" fill="#fff">
                 <use xlinkHref="#a" />
               </mask>

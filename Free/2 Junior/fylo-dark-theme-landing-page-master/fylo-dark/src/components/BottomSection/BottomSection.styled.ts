@@ -53,11 +53,12 @@ export const BottomSectionTextDescribe = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
   z-index: 1;
   margin-top: 15px;
   margin-bottom: 15px;
+  width: 90%;
 `;
 
 export const BottomSectionTextLink = styled.div`
