@@ -5,7 +5,7 @@ export const MiddleSectionStyled = styled.section`
   grid-template-columns: 1fr 1fr;
   flex-direction: column;
   background-color: var(--primary-dark-blue--main-background);
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
@@ -19,7 +19,7 @@ export const MiddleSectionStyled = styled.section`
 export const MiddleSectionStyledSingle = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 55%;
   height: auto;
@@ -45,10 +45,12 @@ export const MiddleSectionText = styled.div`
   position: relative;
   color: var(--neutral-white);
   gap: 20px;
-  margin-top: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   align-items: center;
   z-index: 1;
-  height: 600px;
+  height: auto;
+  justify-content: center;
 `;
 
 export const MiddleSectionTextTitle = styled.div`
