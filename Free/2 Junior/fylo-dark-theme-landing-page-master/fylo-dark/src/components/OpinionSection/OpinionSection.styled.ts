@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const OpinionSectionStyled = styled.section`
   display: flex;
-
   background-color: var(--primary-dark-blue--main-background);
   justify-content: center;
   align-items: center;
@@ -53,16 +52,13 @@ export const OpinionSectionTextDescribe = styled.div`
   flex-direction: column;
   gap: 20px;
   font-size: 15px;
-  /* text-align: center; */
   font-weight: 400;
   z-index: 1;
-
   margin: 25px;
 `;
 
 export const OpinionSectionTextPerson = styled.div`
   display: flex;
-  /* flex-direction: column; */
   font-family: "Raleway", sans-serif;
   gap: 20px;
   font-size: 20px;
@@ -74,7 +70,6 @@ export const OpinionSectionTextPerson = styled.div`
   width: 100%;
   height: auto;
   align-items: center;
-  /* margin: 25px; */
 `;
 
 export const OpinionSectionTextPersonImage = styled.img`
@@ -82,12 +77,8 @@ export const OpinionSectionTextPersonImage = styled.img`
   flex-direction: column;
   font-family: "Raleway", sans-serif;
   gap: 20px;
-  /* font-size: 20px; */
   text-align: center;
-  /* font-weight: 700; */
   z-index: 1;
-  /* margin-top: 5px;
-  margin-bottom: 5px; */
   border-radius: 100px;
   height: 50px;
   margin-left: 25px;
@@ -98,26 +89,19 @@ export const OpinionSectionTextPersonText = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
-  /* gap: 20px; */
-  /* font-size: 12px; */
-  /* text-align: center; */
   font-weight: 700;
   z-index: 1;
   margin-top: 5px;
   margin-bottom: 5px;
   align-items: flex-start;
   justify-content: center;
-  /* height: 80px; */
 `;
 
 export const OpinionSectionTextPersonTextName = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
-  /* gap: 20px; */
   font-size: 13px;
-  /* text-align: center; */
-  /* font-weight: 700; */
   z-index: 1;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -129,8 +113,6 @@ export const OpinionSectionTextPersonTextOccupationalTitle = styled.div`
   font-family: "Raleway", sans-serif;
   gap: 20px;
   font-size: 10px;
-  /* text-align: center; */
-  /* font-weight: 700; */
   z-index: 1;
   margin-top: 5px;
   margin-bottom: 5px;
