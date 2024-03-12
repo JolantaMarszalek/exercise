@@ -48,7 +48,7 @@ export const TopSectionText = styled.div`
   margin-top: 25px;
   align-items: center;
   z-index: 1;
-  height: 600px;
+  height: 550px;
 `;
 
 export const TopSectionTextTitle = styled.div`
