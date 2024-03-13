@@ -13,6 +13,8 @@ export const MiddleSectionStyled = styled.section`
 
   @media (max-width: 1024px) {
     margin: auto;
+    display: flex;
+    flex-direction: column;
   }
 `;
 
