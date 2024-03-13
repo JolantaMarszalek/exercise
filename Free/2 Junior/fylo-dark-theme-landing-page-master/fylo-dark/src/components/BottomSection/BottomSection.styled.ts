@@ -10,6 +10,8 @@ export const BottomSectionStyled = styled.section`
 
   @media (max-width: 1024px) {
     margin: auto;
+    display: flex;
+    flex-direction: column;
   }
 `;
 
@@ -30,10 +32,14 @@ export const BottomSectionText = styled.div`
   margin-top: 25px;
   align-items: center;
   z-index: 1;
-  width: 50%;
+  width: 80%;
   height: auto;
   align-items: flex-start;
   margin: 50px;
+
+  @media (max-width: 1024px) {
+    width: 80%;
+  }
 `;
 
 export const BottomSectionTextTitle = styled.div`
@@ -47,6 +53,10 @@ export const BottomSectionTextTitle = styled.div`
   width: 50%;
   margin-top: 15px;
   margin-bottom: 15px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const BottomSectionTextDescribe = styled.div`
@@ -59,6 +69,10 @@ export const BottomSectionTextDescribe = styled.div`
   margin-top: 15px;
   margin-bottom: 15px;
   width: 90%;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const BottomSectionTextLink = styled.div`
