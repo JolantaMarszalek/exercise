@@ -12,6 +12,10 @@ export const OpinionSectionStyled = styled.section`
 
   @media (max-width: 1024px) {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 `;
 
