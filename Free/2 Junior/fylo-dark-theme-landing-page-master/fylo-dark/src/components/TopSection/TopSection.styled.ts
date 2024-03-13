@@ -88,7 +88,7 @@ export const TopSectionTextButton = styled.button`
   justify-content: center;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--neutral-white);
   border: none;
   background-image: linear-gradient(

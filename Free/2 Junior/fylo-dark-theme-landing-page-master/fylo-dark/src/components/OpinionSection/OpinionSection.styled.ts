@@ -26,7 +26,7 @@ export const OpinionSectionStyledSingle = styled.div`
   background-color: var(
     --primary-dark-blue--intro-and-email-sign-up-background
   );
-  margin-bottom: 250px;
+  margin-bottom: 350px;
   z-index: 1;
 
   @media (max-width: 1024px) {

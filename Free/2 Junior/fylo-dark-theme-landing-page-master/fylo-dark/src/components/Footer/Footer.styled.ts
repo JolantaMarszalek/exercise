@@ -20,6 +20,7 @@ export const FooterSectionLogo = styled.div`
   position: static;
   margin: 50px;
   width: 95%;
+  margin-top: 250px;
 `;
 
 export const FooterSectionBottomText = styled.div`
