@@ -14,6 +14,7 @@ export const EmailSectionStyled = styled.section`
 
   @media (max-width: 1024px) {
     margin: auto;
+    margin-top: -200px;
   }
 `;
 
@@ -56,6 +57,11 @@ export const EmailSectionDescribe = styled.div`
   width: auto;
   justify-content: space-evenly;
   text-align: center;
+
+  @media (max-width: 1024px) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 `;
 
 export const EmailSectionInputSection = styled.div`
@@ -67,6 +73,12 @@ export const EmailSectionInputSection = styled.div`
   margin-bottom: 20px;
   width: 100%;
   justify-content: center;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const EmailSectionInput = styled.input`
@@ -80,6 +92,13 @@ export const EmailSectionInput = styled.input`
   justify-content: center;
   border-radius: 30px;
   padding-left: 30px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 50px;
+  }
 `;
 
 export const EmailSectionButton = styled.button`
@@ -104,4 +123,11 @@ export const EmailSectionButton = styled.button`
   font-weight: 700;
   color: var(--neutral-white);
   border: none;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 55px;
+  }
 `;

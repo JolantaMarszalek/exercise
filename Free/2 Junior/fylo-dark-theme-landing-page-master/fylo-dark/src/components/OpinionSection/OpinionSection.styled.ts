@@ -15,7 +15,7 @@ export const OpinionSectionStyled = styled.section`
     display: flex;
     flex-direction: column;
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 300px;
   }
 `;
 
