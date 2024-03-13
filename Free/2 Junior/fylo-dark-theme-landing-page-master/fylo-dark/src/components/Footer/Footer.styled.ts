@@ -94,24 +94,41 @@ export const FooterSectionBottomTextSectionThird = styled.div`
   /* margin: 50px; */
 `;
 
-export const FooterSectionBottomTextSectionFourth = styled.div`
+export const FooterSectionBottomTextSectionThirdSingleBar = styled.div`
   display: flex;
+  flex-direction: column;
   position: static;
   color: var(--neutral-white);
   gap: 20px;
   /* margin: 50px; */
 `;
 
-export const FooterSectionTextSingle = styled.div`
+export const FooterSectionBottomTextSectionThirdSingleBarSingleLine = styled.div`
   display: flex;
-  flex-direction: column;
   position: static;
+  color: var(--neutral-white);
   gap: 20px;
-  width: 100px;
+  /* margin: 50px; */
 
   &:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight: bold;
     cursor: pointer;
   }
+`;
+
+export const FooterSectionBottomTextSectionFourth = styled.div`
+  display: flex;
+  position: static;
+  /* color: var(--neutral-white); */
+  gap: 20px;
+  /* margin: 50px; */
+`;
+
+export const FooterSectionBottomTextSectionFourthImage = styled.div`
+  display: flex;
+  position: static;
+  /* color: var(--neutral-white); */
+  gap: 20px;
+  /* margin: 50px; */
 `;
