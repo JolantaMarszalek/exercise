@@ -31,6 +31,10 @@ export const TopSectionBackground = styled.div`
   z-index: -1;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 1024px) {
+    bottom: 0;
+  }
 `;
 
 export const FullWidthSVG = styled.svg`
