@@ -26,6 +26,8 @@ export const OpinionSectionStyledSingle = styled.div`
   background-color: var(
     --primary-dark-blue--intro-and-email-sign-up-background
   );
+  margin-bottom: 250px;
+  z-index: 1;
 
   @media (max-width: 1024px) {
     margin: auto;
@@ -38,8 +40,8 @@ export const OpinionSectionText = styled.div`
   position: relative;
   color: var(--neutral-white);
   gap: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   align-items: center;
   z-index: 1;
   height: auto;
@@ -54,7 +56,8 @@ export const OpinionSectionTextDescribe = styled.div`
   font-size: 15px;
   font-weight: 400;
   z-index: 1;
-  margin: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
 `;
 
 export const OpinionSectionTextPerson = styled.div`

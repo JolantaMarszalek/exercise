@@ -1,4 +1,5 @@
 import { BottomSection } from "./components/BottomSection/BottomSection.component";
+import { EmailSection } from "./components/EmailSection/EmailSection.component";
 import { Footer } from "./components/Footer/Footer.component";
 import { Header } from "./components/Header/Header.component";
 import { MiddleSection } from "./components/MiddleSection/MiddleSection.component";
@@ -13,6 +14,7 @@ function App() {
       <MiddleSection />
       <BottomSection />
       <OpinionSection />
+      <EmailSection />
       <Footer />
     </>
   );

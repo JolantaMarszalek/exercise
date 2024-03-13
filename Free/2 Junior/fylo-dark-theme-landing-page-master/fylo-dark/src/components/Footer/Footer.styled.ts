@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const FooterSection = styled.section`
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-dark-blue--testimonials-background);
+  background-color: var(--primary-dark-blue--footer-background);
   justify-content: space-between;
   align-items: center;
   height: auto;
+  z-index: 1;
 
   @media (max-width: 1024px) {
     margin: auto;
@@ -27,6 +28,8 @@ export const FooterSectionBottomText = styled.div`
   color: var(--neutral-white);
   gap: 20px;
   margin: 50px;
+  width: 100%;
+  justify-content: space-evenly;
 `;
 
 export const FooterSectionBottomTextSectionFirst = styled.div`
@@ -34,6 +37,7 @@ export const FooterSectionBottomTextSectionFirst = styled.div`
   position: static;
   color: var(--neutral-white);
   gap: 20px;
+  width: 400px;
 `;
 
 export const FooterSectionBottomTextSectionFirstImage = styled.div`
@@ -56,6 +60,7 @@ export const FooterSectionBottomTextSectionSecond = styled.div`
   position: static;
   color: var(--neutral-white);
   gap: 20px;
+  width: 400px;
 `;
 
 export const FooterSectionBottomTextSectionSecondSingleLine = styled.div`
@@ -63,6 +68,7 @@ export const FooterSectionBottomTextSectionSecondSingleLine = styled.div`
   position: static;
   color: var(--neutral-white);
   gap: 20px;
+  margin-left: 25px;
 `;
 
 export const FooterSectionBottomTextSectionSecondSingleLineImage = styled.div`
@@ -84,6 +90,7 @@ export const FooterSectionBottomTextSectionThird = styled.div`
   position: static;
   color: var(--neutral-white);
   gap: 20px;
+  width: 400px;
 `;
 
 export const FooterSectionBottomTextSectionThirdSingleBar = styled.div`
@@ -92,6 +99,7 @@ export const FooterSectionBottomTextSectionThirdSingleBar = styled.div`
   position: static;
   color: var(--neutral-white);
   gap: 20px;
+  margin-left: 25px;
 `;
 
 export const FooterSectionBottomTextSectionThirdSingleBarSingleLine = styled.div`
@@ -110,6 +118,7 @@ export const FooterSectionBottomTextSectionThirdSingleBarSingleLine = styled.div
 export const FooterSectionBottomTextSectionFourth = styled.div`
   display: flex;
   gap: 20px;
+  width: 400px;
 `;
 
 export const FooterSectionBottomTextSectionFourthImage = styled.div`
