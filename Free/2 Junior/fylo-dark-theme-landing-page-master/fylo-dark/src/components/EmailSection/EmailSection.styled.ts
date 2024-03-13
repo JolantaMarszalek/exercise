@@ -31,6 +31,10 @@ export const EmailSectionCard = styled.div`
   align-items: center;
   z-index: -1;
   border-radius: 10px;
+
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
 `;
 
 export const EmailSectionTitle = styled.div`

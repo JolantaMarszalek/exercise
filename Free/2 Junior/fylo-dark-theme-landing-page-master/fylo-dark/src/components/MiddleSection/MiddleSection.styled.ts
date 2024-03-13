@@ -15,6 +15,7 @@ export const MiddleSectionStyled = styled.section`
     margin: auto;
     display: flex;
     flex-direction: column;
+    padding-top: 150px;
   }
 `;
 
@@ -27,7 +28,7 @@ export const MiddleSectionStyledSingle = styled.div`
   height: auto;
 
   @media (max-width: 1024px) {
-    margin: auto;
+    margin-top: auto;
   }
 `;
 

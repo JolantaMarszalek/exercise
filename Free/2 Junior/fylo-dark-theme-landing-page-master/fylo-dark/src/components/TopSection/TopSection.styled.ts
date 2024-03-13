@@ -11,6 +11,7 @@ export const TopSectionStyled = styled.section`
 
   @media (max-width: 1024px) {
     margin: auto;
+    /* padding-bottom: 250px; */
   }
 `;
 
@@ -34,6 +35,7 @@ export const TopSectionBackground = styled.div`
 
   @media (max-width: 1024px) {
     bottom: 0;
+    /* padding-bottom: 0; */
   }
 `;
 
@@ -101,4 +103,11 @@ export const TopSectionTextButton = styled.button`
     var(--accent-blue--inside-call-to-action-gradient)
   );
   z-index: 1;
+
+  @media (max-width: 1024px) {
+    width: 250px;
+    height: 50px;
+
+    /* margin-bottom: 250px; */
+  }
 `;

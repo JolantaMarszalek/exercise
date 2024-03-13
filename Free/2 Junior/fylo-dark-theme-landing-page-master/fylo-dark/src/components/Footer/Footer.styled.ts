@@ -10,7 +10,7 @@ export const FooterSection = styled.section`
   z-index: 1;
 
   @media (max-width: 1024px) {
-    margin: auto;
+    margin-top: auto;
   }
 `;
 
@@ -21,6 +21,11 @@ export const FooterSectionLogo = styled.div`
   margin: 50px;
   width: 95%;
   margin-top: 250px;
+
+  @media (max-width: 1024px) {
+    margin-top: 350px;
+    width: 80%;
+  }
 `;
 
 export const FooterSectionBottomText = styled.div`
@@ -31,6 +36,12 @@ export const FooterSectionBottomText = styled.div`
   margin: 50px;
   width: 100%;
   justify-content: space-evenly;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
 `;
 
 export const FooterSectionBottomTextSectionFirst = styled.div`
@@ -39,6 +50,10 @@ export const FooterSectionBottomTextSectionFirst = styled.div`
   color: var(--neutral-white);
   gap: 20px;
   width: 400px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const FooterSectionBottomTextSectionFirstImage = styled.div`
@@ -70,6 +85,10 @@ export const FooterSectionBottomTextSectionSecondSingleLine = styled.div`
   color: var(--neutral-white);
   gap: 20px;
   margin-left: 25px;
+
+  @media (max-width: 1024px) {
+    margin: 0;
+  }
 `;
 
 export const FooterSectionBottomTextSectionSecondSingleLineImage = styled.div`
@@ -92,6 +111,12 @@ export const FooterSectionBottomTextSectionThird = styled.div`
   color: var(--neutral-white);
   gap: 20px;
   width: 400px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
 `;
 
 export const FooterSectionBottomTextSectionThirdSingleBar = styled.div`
@@ -101,6 +126,11 @@ export const FooterSectionBottomTextSectionThirdSingleBar = styled.div`
   color: var(--neutral-white);
   gap: 20px;
   margin-left: 25px;
+
+  @media (max-width: 1024px) {
+    margin-top: 10px;
+    margin-left: 0;
+  }
 `;
 
 export const FooterSectionBottomTextSectionThirdSingleBarSingleLine = styled.div`
