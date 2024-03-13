@@ -101,9 +101,7 @@ export const EmailSectionButton = styled.button`
   height: 50px;
   border-radius: 30px;
   align-items: center;
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
-
   color: var(--neutral-white);
   border: none;
 `;
