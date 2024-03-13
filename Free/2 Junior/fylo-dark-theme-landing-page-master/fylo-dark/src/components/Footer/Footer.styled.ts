@@ -34,7 +34,6 @@ export const FooterSectionBottomTextSectionFirst = styled.div`
   position: static;
   color: var(--neutral-white);
   gap: 20px;
-  /* margin: 50px; */
 `;
 
 export const FooterSectionBottomTextSectionFirstImage = styled.div`
@@ -42,7 +41,6 @@ export const FooterSectionBottomTextSectionFirstImage = styled.div`
   position: static;
   color: var(--neutral-white);
   gap: 20px;
-  /* margin: 50px; */
 `;
 
 export const FooterSectionBottomTextSectionFirstText = styled.div`
@@ -50,7 +48,6 @@ export const FooterSectionBottomTextSectionFirstText = styled.div`
   position: static;
   color: var(--neutral-white);
   gap: 20px;
-  /* margin: 50px; */
 `;
 
 export const FooterSectionBottomTextSectionSecond = styled.div`
@@ -59,15 +56,13 @@ export const FooterSectionBottomTextSectionSecond = styled.div`
   position: static;
   color: var(--neutral-white);
   gap: 20px;
-  /* margin: 50px; */
 `;
+
 export const FooterSectionBottomTextSectionSecondSingleLine = styled.div`
   display: flex;
-
   position: static;
   color: var(--neutral-white);
   gap: 20px;
-  /* margin: 50px; */
 `;
 
 export const FooterSectionBottomTextSectionSecondSingleLineImage = styled.div`
@@ -75,7 +70,6 @@ export const FooterSectionBottomTextSectionSecondSingleLineImage = styled.div`
   position: static;
   color: var(--neutral-white);
   gap: 20px;
-  /* margin: 50px; */
 `;
 
 export const FooterSectionBottomTextSectionSecondSingleLineText = styled.div`
@@ -83,7 +77,6 @@ export const FooterSectionBottomTextSectionSecondSingleLineText = styled.div`
   position: static;
   color: var(--neutral-white);
   gap: 20px;
-  /* margin: 50px; */
 `;
 
 export const FooterSectionBottomTextSectionThird = styled.div`
@@ -91,7 +84,6 @@ export const FooterSectionBottomTextSectionThird = styled.div`
   position: static;
   color: var(--neutral-white);
   gap: 20px;
-  /* margin: 50px; */
 `;
 
 export const FooterSectionBottomTextSectionThirdSingleBar = styled.div`
@@ -100,7 +92,6 @@ export const FooterSectionBottomTextSectionThirdSingleBar = styled.div`
   position: static;
   color: var(--neutral-white);
   gap: 20px;
-  /* margin: 50px; */
 `;
 
 export const FooterSectionBottomTextSectionThirdSingleBarSingleLine = styled.div`
@@ -108,7 +99,6 @@ export const FooterSectionBottomTextSectionThirdSingleBarSingleLine = styled.div
   position: static;
   color: var(--neutral-white);
   gap: 20px;
-  /* margin: 50px; */
 
   &:hover {
     /* text-decoration: underline; */
@@ -119,16 +109,10 @@ export const FooterSectionBottomTextSectionThirdSingleBarSingleLine = styled.div
 
 export const FooterSectionBottomTextSectionFourth = styled.div`
   display: flex;
-  position: static;
-  /* color: var(--neutral-white); */
   gap: 20px;
-  /* margin: 50px; */
 `;
 
 export const FooterSectionBottomTextSectionFourthImage = styled.div`
   display: flex;
-  position: static;
-  /* color: var(--neutral-white); */
   gap: 20px;
-  /* margin: 50px; */
 `;
