@@ -11,11 +11,21 @@ export const TopSection = styled.section`
 export const TopSectionLeft = styled.div`
   display: flex;
   flex-direction: column;
-
   color: var(--neutral-very-light-gray);
   padding-left: 100px;
   width: 50%;
   justify-content: center;
+  gap: 25px;
+
+  @media (max-width: 1024px) {
+  }
+`;
+
+export const TopSectionLeftText = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 100px;
   gap: 25px;
 
   @media (max-width: 1024px) {
@@ -60,12 +70,26 @@ export const TopSectionLeftButton = styled.button`
   }
 `;
 
-export const TopSectionRight = styled.img`
+export const TopSectionRight = styled.div`
   display: flex;
   flex-direction: column;
   padding-right: 100px;
   width: 50%;
   height: auto;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+  }
+`;
+
+export const TopSectionRightImage = styled.img`
+  display: flex;
+  flex-direction: column;
+  /* padding-right: 100px; */
+  width: 70%;
+  height: auto;
+  padding-left: 100px;
+  padding-right: 100px;
 
   @media (max-width: 1024px) {
   }
