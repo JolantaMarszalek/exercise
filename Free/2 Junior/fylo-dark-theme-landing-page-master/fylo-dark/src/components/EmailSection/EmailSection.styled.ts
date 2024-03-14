@@ -68,15 +68,38 @@ export const EmailSectionDescribe = styled.div`
   }
 `;
 
-export const EmailSectionInputSection = styled.div`
+export const EmailSectionInputSection = styled.form`
   display: flex;
   position: static;
   color: var(--neutral-white);
   gap: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 100%;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+  /* width: 100%; */
+  height: 100px;
   justify-content: center;
+  align-items: flex-start;
+  margin-top: 25px;
+  width: 80%;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+`;
+
+export const EmailSectionInputAndError = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: static;
+  width: auto;
+  justify-content: center;
+  width: 100%;
+  align-items: flex-start;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -89,10 +112,11 @@ export const EmailSectionInput = styled.input`
   display: flex;
   position: static;
   color: var(--primary-dark-blue--intro-and-email-sign-up-background);
-  gap: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* gap: 20px; */
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
   width: 500px;
+  height: 50px;
   justify-content: center;
   border-radius: 30px;
   padding-left: 30px;
@@ -108,8 +132,8 @@ export const EmailSectionInput = styled.input`
 export const EmailSectionButton = styled.button`
   display: flex;
   position: static;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
   justify-content: space-evenly;
   background-image: linear-gradient(
     to right,
@@ -121,7 +145,7 @@ export const EmailSectionButton = styled.button`
   font-size: 16px;
   gap: 20px;
   width: 250px;
-  height: 50px;
+  height: 55px;
   border-radius: 30px;
   align-items: center;
   font-weight: 700;
