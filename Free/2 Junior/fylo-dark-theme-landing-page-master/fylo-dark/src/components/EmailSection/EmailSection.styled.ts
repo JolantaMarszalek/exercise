@@ -128,6 +128,15 @@ export const EmailSectionButton = styled.button`
   color: var(--neutral-white);
   border: none;
 
+  &:hover {
+    cursor: pointer;
+    background: var(--accent-cyan--inside-call-to-action-gradient);
+  }
+
+  /* &:focus {
+    outline: none;
+  } */
+
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;

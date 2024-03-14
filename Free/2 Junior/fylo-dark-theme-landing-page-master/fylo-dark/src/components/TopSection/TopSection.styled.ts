@@ -104,6 +104,11 @@ export const TopSectionTextButton = styled.button`
   );
   z-index: 1;
 
+  &:hover {
+    cursor: pointer;
+    background: var(--accent-cyan--inside-call-to-action-gradient);
+  }
+
   @media (max-width: 1024px) {
     width: 250px;
     height: 50px;
