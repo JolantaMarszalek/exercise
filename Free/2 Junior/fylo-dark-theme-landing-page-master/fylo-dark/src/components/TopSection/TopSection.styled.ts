@@ -31,6 +31,10 @@ export const TopSectionBackground = styled.div`
   z-index: -1;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 1024px) {
+    bottom: 0;
+  }
 `;
 
 export const FullWidthSVG = styled.svg`
@@ -97,4 +101,14 @@ export const TopSectionTextButton = styled.button`
     var(--accent-blue--inside-call-to-action-gradient)
   );
   z-index: 1;
+
+  &:hover {
+    cursor: pointer;
+    background: var(--accent-cyan--inside-call-to-action-gradient);
+  }
+
+  @media (max-width: 1024px) {
+    width: 250px;
+    height: 50px;
+  }
 `;
