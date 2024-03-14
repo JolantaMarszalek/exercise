@@ -22,7 +22,6 @@ export const EmailSectionCard = styled.div`
   display: flex;
   flex-direction: column;
   position: static;
-  /* margin: 50px; */
   width: 60%;
   color: var(--neutral-white);
   background-color: var(
@@ -73,9 +72,6 @@ export const EmailSectionInputSection = styled.form`
   position: static;
   color: var(--neutral-white);
   gap: 20px;
-  /* margin-top: 20px;
-  margin-bottom: 20px; */
-  /* width: 100%; */
   height: 100px;
   justify-content: center;
   align-items: flex-start;
@@ -112,9 +108,6 @@ export const EmailSectionInput = styled.input`
   display: flex;
   position: static;
   color: var(--primary-dark-blue--intro-and-email-sign-up-background);
-  /* gap: 20px; */
-  /* margin-top: 20px;
-  margin-bottom: 20px; */
   width: 500px;
   height: 50px;
   justify-content: center;
@@ -132,8 +125,6 @@ export const EmailSectionInput = styled.input`
 export const EmailSectionButton = styled.button`
   display: flex;
   position: static;
-  /* margin-top: 20px;
-  margin-bottom: 20px; */
   justify-content: space-evenly;
   background-image: linear-gradient(
     to right,
