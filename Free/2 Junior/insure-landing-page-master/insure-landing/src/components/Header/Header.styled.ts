@@ -14,6 +14,7 @@ export const HeaderSectionLogo = styled.div`
   display: flex;
   flex-direction: column;
   padding-left: 100px;
+  justify-content: center;
 
   @media (max-width: 1024px) {
   }
@@ -48,11 +49,12 @@ export const HeaderSectionAboutButton = styled.button`
   flex-direction: column;
   text-transform: uppercase;
   height: 40px;
-  width: 120px;
+  width: 150px;
   justify-content: center;
-  background-color: white;
+  background-color: var(--neutral-very-light-gray);
   align-items: center;
   color: var(--primary-dark-violet);
+  border: 2px solid var(--primary-dark-violet);
   font-weight: 700;
   letter-spacing: 1px;
 
