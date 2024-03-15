@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const TopSection = styled.section`
   display: flex;
-  /* flex-direction: column; */
   background-color: var(--primary-dark-violet);
   @media (max-width: 1024px) {
   }
@@ -85,7 +84,6 @@ export const TopSectionRight = styled.div`
 export const TopSectionRightImage = styled.img`
   display: flex;
   flex-direction: column;
-  /* padding-right: 100px; */
   width: 70%;
   height: auto;
   padding-left: 100px;

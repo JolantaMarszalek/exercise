@@ -2,9 +2,7 @@ import styled from "styled-components";
 
 export const HeaderSection = styled.section`
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
-  /* padding: 20px; */
 
   @media (max-width: 1024px) {
   }
@@ -22,7 +20,6 @@ export const HeaderSectionLogo = styled.div`
 
 export const HeaderSectionAbout = styled.div`
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   padding-right: 200px;
   font-family: "Karla", sans-serif;

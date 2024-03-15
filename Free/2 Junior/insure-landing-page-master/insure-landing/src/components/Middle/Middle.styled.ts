@@ -25,7 +25,6 @@ export const MiddleSectionTitle = styled.div`
 
 export const MiddleSectionBottom = styled.div`
   display: flex;
-  /* flex-direction: column; */
   padding-left: 200px;
   padding-right: 200px;
   gap: 50px;

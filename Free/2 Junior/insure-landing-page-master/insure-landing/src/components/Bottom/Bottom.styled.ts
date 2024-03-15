@@ -14,7 +14,6 @@ export const BottomSection = styled.section`
 
 export const BottomSectionCard = styled.div`
   display: flex;
-  /* flex-direction: column; */
   background-color: var(--primary-dark-violet);
   justify-content: space-between;
   width: 100%;
@@ -38,8 +37,6 @@ export const BottomSectionCardLeftTitle = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "DM Serif Display", serif;
-  /* padding-left: 100px;
-  padding-right: 100px; */
   font-size: 50px;
   color: var(--neutral-very-light-gray);
 
@@ -51,8 +48,6 @@ export const BottomSectionCardRight = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* padding-left: 100px;
-  padding-right: 100px; */
 
   @media (max-width: 1024px) {
   }
