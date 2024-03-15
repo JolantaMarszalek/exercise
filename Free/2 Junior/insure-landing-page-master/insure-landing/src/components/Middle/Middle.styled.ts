@@ -7,6 +7,8 @@ export const MiddleSection = styled.section`
   justify-content: space-evenly;
 
   @media (max-width: 1024px) {
+    height: auto;
+    align-items: center;
   }
 `;
 
@@ -30,6 +32,9 @@ export const MiddleSectionBottom = styled.div`
   gap: 50px;
 
   @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    height: auto;
   }
 `;
 
@@ -39,6 +44,7 @@ export const MiddleSectionBottomSingle = styled.div`
   gap: 20px;
 
   @media (max-width: 1024px) {
+    align-items: center;
   }
 `;
 
@@ -70,5 +76,6 @@ export const MiddleSectionBottomSingleDescribe = styled.div`
   line-height: 1.5;
 
   @media (max-width: 1024px) {
+    text-align: center;
   }
 `;

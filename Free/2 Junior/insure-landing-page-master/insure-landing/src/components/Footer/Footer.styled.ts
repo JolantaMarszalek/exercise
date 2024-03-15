@@ -6,6 +6,8 @@ export const FooterSection = styled.section`
   background-color: var(--neutral-very-light-gray);
 
   @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
   }
 `;
 
@@ -17,6 +19,8 @@ export const FooterSectionTop = styled.div`
   /* border-bottom: 1px solid var(--primary-grayish-blue); */
 
   @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
   }
 `;
 
@@ -27,6 +31,7 @@ export const FooterSectionTopLogo = styled.div`
   gap: 20px;
 
   @media (max-width: 1024px) {
+    align-items: center;
   }
 `;
 
@@ -36,6 +41,8 @@ export const FooterSectionTopSocialMedia = styled.div`
   justify-content: center;
 
   @media (max-width: 1024px) {
+    align-items: center;
+    padding: 0;
   }
 `;
 
@@ -61,6 +68,8 @@ export const FooterSectionBottom = styled.div`
   padding-bottom: 100px;
 
   @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
   }
 `;
 
@@ -71,6 +80,9 @@ export const FooterSectionBottomAbout = styled.div`
   letter-spacing: 1px;
 
   @media (max-width: 1024px) {
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
   }
 `;
 

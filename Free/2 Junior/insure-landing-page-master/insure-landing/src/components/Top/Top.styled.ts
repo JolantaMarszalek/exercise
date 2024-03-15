@@ -3,7 +3,12 @@ import styled from "styled-components";
 export const TopSection = styled.section`
   display: flex;
   background-color: var(--primary-dark-violet);
+
   @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
   }
 `;
 
@@ -17,6 +22,9 @@ export const TopSectionLeft = styled.div`
   gap: 25px;
 
   @media (max-width: 1024px) {
+    padding: 0;
+    text-align: center;
+    height: auto;
   }
 `;
 
@@ -28,6 +36,9 @@ export const TopSectionLeftText = styled.div`
   gap: 25px;
 
   @media (max-width: 1024px) {
+    padding: 0;
+    align-items: center;
+    height: auto;
   }
 `;
 
@@ -38,6 +49,7 @@ export const TopSectionLeftTitle = styled.div`
   font-family: "DM Serif Display", serif;
 
   @media (max-width: 1024px) {
+    height: auto;
   }
 `;
 
@@ -49,6 +61,7 @@ export const TopSectionLeftDescribe = styled.div`
   line-height: 1.5;
 
   @media (max-width: 1024px) {
+    height: auto;
   }
 `;
 
@@ -75,6 +88,8 @@ export const TopSectionLeftButton = styled.button`
   }
 
   @media (max-width: 1024px) {
+    align-items: center;
+    /* height: auto; */
   }
 `;
 
@@ -87,6 +102,9 @@ export const TopSectionRight = styled.div`
   align-items: center;
 
   @media (max-width: 1024px) {
+    display: flex;
+    padding: 0;
+    height: auto;
   }
 `;
 
@@ -99,5 +117,7 @@ export const TopSectionRightImage = styled.img`
   padding-right: 100px;
 
   @media (max-width: 1024px) {
+    padding: 0;
+    height: auto;
   }
 `;
