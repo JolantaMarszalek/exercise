@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const MiddleSection = styled.section`
   display: flex;
   flex-direction: column;
+  height: 400px;
 
   @media (max-width: 1024px) {
   }
