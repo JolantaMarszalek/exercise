@@ -4,7 +4,7 @@ export const HeaderSection = styled.section`
   display: flex;
   /* flex-direction: column; */
   justify-content: space-between;
-  padding: 20px;
+  /* padding: 20px; */
 
   @media (max-width: 1024px) {
   }
@@ -13,7 +13,7 @@ export const HeaderSection = styled.section`
 export const HeaderSectionLogo = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 100px;
+  padding-left: 200px;
   justify-content: center;
 
   @media (max-width: 1024px) {
@@ -24,7 +24,7 @@ export const HeaderSectionAbout = styled.div`
   display: flex;
   /* flex-direction: column; */
   align-items: center;
-  padding-right: 100px;
+  padding-right: 200px;
   font-family: "Karla", sans-serif;
   letter-spacing: 1px;
 
@@ -36,7 +36,10 @@ export const HeaderSectionAboutSingle = styled.div`
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: var(--neutral-dark-grayish-violet);
   font-weight: 700;
 
