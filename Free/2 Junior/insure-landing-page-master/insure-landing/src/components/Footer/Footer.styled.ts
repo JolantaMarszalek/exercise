@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const FooterSection = styled.section`
   display: flex;
   flex-direction: column;
+  background-color: var(--neutral-very-light-gray);
 
   @media (max-width: 1024px) {
   }
@@ -13,6 +14,7 @@ export const FooterSectionTop = styled.div`
   padding-left: 200px;
   padding-right: 200px;
   justify-content: space-between;
+  /* border-bottom: 1px solid var(--primary-grayish-blue); */
 
   @media (max-width: 1024px) {
   }
@@ -55,6 +57,8 @@ export const FooterSectionBottom = styled.div`
   justify-content: space-between;
   padding-left: 200px;
   padding-right: 200px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 
   @media (max-width: 1024px) {
   }
@@ -62,7 +66,6 @@ export const FooterSectionBottom = styled.div`
 
 export const FooterSectionBottomAbout = styled.div`
   display: flex;
-
   align-items: center;
   font-family: "Karla", sans-serif;
   letter-spacing: 1px;

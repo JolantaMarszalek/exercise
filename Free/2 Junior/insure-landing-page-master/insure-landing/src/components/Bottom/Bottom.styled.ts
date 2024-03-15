@@ -6,6 +6,8 @@ export const BottomSection = styled.section`
   align-items: center;
   margin-left: 200px;
   margin-right: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   background-color: var(--primary-dark-violet);
 
   @media (max-width: 1024px) {

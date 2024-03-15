@@ -67,6 +67,7 @@ export const MiddleSectionBottomSingleDescribe = styled.div`
   font-family: "Karla", sans-serif;
   font-size: 20px;
   color: var(--neutral-dark-grayish-violet);
+  line-height: 1.5;
 
   @media (max-width: 1024px) {
   }

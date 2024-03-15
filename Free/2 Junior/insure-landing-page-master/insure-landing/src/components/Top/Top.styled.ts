@@ -46,6 +46,7 @@ export const TopSectionLeftDescribe = styled.div`
   flex-direction: column;
   font-size: 20px;
   font-family: "Karla", sans-serif;
+  line-height: 1.5;
 
   @media (max-width: 1024px) {
   }
