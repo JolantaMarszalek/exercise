@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const MiddleSection = styled.section`
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: 500px;
+  justify-content: space-evenly;
 
   @media (max-width: 1024px) {
   }
@@ -36,6 +37,7 @@ export const MiddleSectionBottom = styled.div`
 export const MiddleSectionBottomSingle = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 20px;
 
   @media (max-width: 1024px) {
   }
