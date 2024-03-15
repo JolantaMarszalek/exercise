@@ -103,6 +103,12 @@ export const FooterSectionBottomAboutSingleBarSingle = styled.div`
   font-weight: 700;
   color: var(--primary-dark-violet);
 
+  &:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
   @media (max-width: 1024px) {
   }
 `;

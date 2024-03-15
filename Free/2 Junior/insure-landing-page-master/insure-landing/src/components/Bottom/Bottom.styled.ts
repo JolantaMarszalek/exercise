@@ -67,6 +67,14 @@ export const BottomSectionCardRightButton = styled.button`
   font-weight: 700;
   letter-spacing: 1px;
 
+  &:hover {
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--neutral-very-light-gray);
+    color: var(--primary-dark-violet);
+    border: 2px solid var(--primary-dark-violet);
+  }
+
   @media (max-width: 1024px) {
   }
 `;

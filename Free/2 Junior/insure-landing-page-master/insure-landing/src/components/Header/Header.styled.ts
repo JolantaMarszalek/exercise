@@ -40,6 +40,12 @@ export const HeaderSectionAboutSingle = styled.div`
   color: var(--neutral-dark-grayish-violet);
   font-weight: 700;
 
+  &:hover {
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--primary-dark-violet);
+  }
+
   @media (max-width: 1024px) {
   }
 `;
@@ -57,6 +63,14 @@ export const HeaderSectionAboutButton = styled.button`
   border: 2px solid var(--primary-dark-violet);
   font-weight: 700;
   letter-spacing: 1px;
+
+  &:hover {
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--primary-dark-violet);
+    color: var(--neutral-very-light-gray);
+    border: 2px solid var(--neutral-very-light-gray);
+  }
 
   @media (max-width: 1024px) {
   }
