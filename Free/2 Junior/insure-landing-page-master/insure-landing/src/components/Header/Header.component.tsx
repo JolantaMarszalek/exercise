@@ -1,12 +1,38 @@
+import { useEffect, useState } from "react";
 import {
   HeaderSection,
   HeaderSectionAbout,
   HeaderSectionAboutButton,
+  HeaderSectionAboutButtonMedia,
   HeaderSectionAboutSingle,
   HeaderSectionLogo,
 } from "./Header.styled";
 
 export const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [showMenuButton, setShowMenuButton] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const checkScreenWidth = () => {
+    if (window.innerWidth < 1024) {
+      setShowMenuButton(true);
+      setMenuOpen(false);
+    } else {
+      setShowMenuButton(false);
+    }
+  };
+
+  useEffect(() => {
+    checkScreenWidth();
+    window.addEventListener("resize", checkScreenWidth);
+    return () => {
+      window.removeEventListener("resize", checkScreenWidth);
+    };
+  }, []);
+
   return (
     <HeaderSection>
       <HeaderSectionLogo>
@@ -17,12 +43,31 @@ export const Header = () => {
           />
         </svg>
       </HeaderSectionLogo>
-      <HeaderSectionAbout>
-        <HeaderSectionAboutSingle>How we work</HeaderSectionAboutSingle>
-        <HeaderSectionAboutSingle>Blog</HeaderSectionAboutSingle>
-        <HeaderSectionAboutSingle>Account</HeaderSectionAboutSingle>
-        <HeaderSectionAboutButton>View plans</HeaderSectionAboutButton>
-      </HeaderSectionAbout>
+      {showMenuButton && (
+        <HeaderSectionAboutButtonMedia onClick={toggleMenu}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+            <g fill="none" fill-rule="evenodd">
+              <path
+                fill="#FFF"
+                stroke="#2C2830"
+                stroke-width="1.5"
+                d="M.75.75h30.5v30.5H.75z"
+              />
+              <g fill="#2C2830">
+                <path d="M8 10h16v1.5H8zM8 15h16v1.5H8zM8 20h16v1.5H8z" />
+              </g>
+            </g>
+          </svg>
+        </HeaderSectionAboutButtonMedia>
+      )}
+      {window.innerWidth >= 1024 || menuOpen ? (
+        <HeaderSectionAbout>
+          <HeaderSectionAboutSingle>How we work</HeaderSectionAboutSingle>
+          <HeaderSectionAboutSingle>Blog</HeaderSectionAboutSingle>
+          <HeaderSectionAboutSingle>Account</HeaderSectionAboutSingle>
+          <HeaderSectionAboutButton>View plans</HeaderSectionAboutButton>
+        </HeaderSectionAbout>
+      ) : null}
     </HeaderSection>
   );
 };

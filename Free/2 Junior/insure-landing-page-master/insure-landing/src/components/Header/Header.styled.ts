@@ -75,3 +75,10 @@ export const HeaderSectionAboutButton = styled.button`
   @media (max-width: 1024px) {
   }
 `;
+
+export const HeaderSectionAboutButtonMedia = styled.button`
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-color: var(--neutral-very-light-gray);
+`;
