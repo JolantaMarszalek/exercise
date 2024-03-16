@@ -95,7 +95,7 @@ export const HeaderSectionAboutMedia = styled.div`
   left: 0;
   transform: translateY(-100%);
   width: 100%;
-  max-width: 400px;
+  /* max-width: 400px; */
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 999;
@@ -113,6 +113,7 @@ export const HeaderSectionAboutMedia = styled.div`
     left: auto;
     visibility: visible;
     transform: translateY(0);
+    background-color: var(--neutral-very-dark-violet);
   }
 `;
 
@@ -130,10 +131,11 @@ export const HeaderSectionAboutSingleMedia = styled.div`
   &:hover {
     font-weight: bold;
     cursor: pointer;
-    color: var(--primary-dark-violet);
+    /* color: var(--primary-dark-violet); */
   }
 
   @media (max-width: 1024px) {
+    color: var(--neutral-very-light-gray);
   }
 `;
 
@@ -160,6 +162,9 @@ export const HeaderSectionAboutButtonMedia = styled.button`
   }
 
   @media (max-width: 1024px) {
+    background-color: var(--neutral-very-dark-violet);
+    color: var(--neutral-very-light-gray);
+    border: 2px solid var(--neutral-very-light-gray);
   }
 `;
 
