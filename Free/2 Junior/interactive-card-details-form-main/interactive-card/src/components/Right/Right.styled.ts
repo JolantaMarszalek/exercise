@@ -5,7 +5,6 @@ export const RightSection = styled.section`
   flex-direction: column;
   height: 100%;
   width: 50%;
-  background-color: green;
   justify-content: center;
   align-items: center;
 
@@ -16,6 +15,7 @@ export const RightSection = styled.section`
 export const RightSectionCard = styled.div`
   display: flex;
   flex-direction: column;
+  width: 60%;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -36,6 +36,10 @@ export const RightSectionCardForm = styled.form`
 export const RightSectionCardText = styled.div`
   display: flex;
   text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+  color: var(--neutral-very-dark-violet);
 
   @media (max-width: 1024px) {
     display: flex;
@@ -47,6 +51,11 @@ export const RightSectionCardInput = styled.input`
   display: flex;
   height: 50px;
   border-radius: 10px;
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  border: 1px solid var(--neutral-light-grayish-violet);
 
   @media (max-width: 1024px) {
     display: flex;
@@ -58,6 +67,12 @@ export const RightSectionCardInputDate = styled.input`
   display: flex;
   height: 50px;
   border-radius: 10px;
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  padding-left: 20px;
+  width: 60px;
+  letter-spacing: 1px;
+  border: 1px solid var(--neutral-light-grayish-violet);
 
   @media (max-width: 1024px) {
     display: flex;
@@ -69,6 +84,11 @@ export const RightSectionCardInputCVC = styled.input`
   display: flex;
   height: 50px;
   border-radius: 10px;
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  border: 1px solid var(--neutral-light-grayish-violet);
 
   @media (max-width: 1024px) {
     display: flex;
@@ -79,6 +99,8 @@ export const RightSectionCardInputCVC = styled.input`
 export const RightSectionCardSmallerSection = styled.div`
   display: flex;
   /* flex-direction: column; */
+  /* width: 80%; */
+  gap: 20px;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -99,6 +121,7 @@ export const RightSectionCardDateSection = styled.div`
 export const RightSectionCardDateSectionInputs = styled.div`
   display: flex;
   /* flex-direction: column; */
+  gap: 10px;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -118,11 +141,18 @@ export const RightSectionCardCVCSection = styled.div`
 
 export const RightSectionCardButton = styled.button`
   display: flex;
-  text-transform: uppercase;
-  height: 55px;
+  /* text-transform: uppercase; */
+  height: 60px;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
+  font-size: 20px;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: var(--neutral-white);
+  background-color: var(--neutral-very-dark-violet);
+  border: 1px solid var(--neutral-very-dark-violet);
 
   @media (max-width: 1024px) {
     display: flex;
