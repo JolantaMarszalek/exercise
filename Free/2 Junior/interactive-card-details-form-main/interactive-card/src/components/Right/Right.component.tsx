@@ -24,7 +24,7 @@ export const Right = () => {
           <RightSectionCardInput placeholder="e.g. 1234 5678 9123 0000"></RightSectionCardInput>
           <RightSectionCardSmallerSection>
             <RightSectionCardDateSection>
-              <RightSectionCardText> Exp. Date (MM/YY)</RightSectionCardText>
+              <RightSectionCardText>Exp. Date (MM/YY)</RightSectionCardText>
               <RightSectionCardDateSectionInputs>
                 <RightSectionCardInputDate placeholder="MM"></RightSectionCardInputDate>
                 <RightSectionCardInputDate placeholder="YY"></RightSectionCardInputDate>

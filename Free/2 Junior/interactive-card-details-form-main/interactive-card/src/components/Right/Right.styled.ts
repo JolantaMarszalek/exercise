@@ -98,9 +98,8 @@ export const RightSectionCardInputCVC = styled.input`
 
 export const RightSectionCardSmallerSection = styled.div`
   display: flex;
-  /* flex-direction: column; */
-  /* width: 80%; */
   gap: 20px;
+  justify-content: space-between;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -120,7 +119,6 @@ export const RightSectionCardDateSection = styled.div`
 
 export const RightSectionCardDateSectionInputs = styled.div`
   display: flex;
-  /* flex-direction: column; */
   gap: 10px;
 
   @media (max-width: 1024px) {
@@ -141,7 +139,6 @@ export const RightSectionCardCVCSection = styled.div`
 
 export const RightSectionCardButton = styled.button`
   display: flex;
-  /* text-transform: uppercase; */
   height: 60px;
   border-radius: 10px;
   align-items: center;
