@@ -5,7 +5,6 @@ export const LeftSection = styled.section`
   flex-direction: column;
   height: 100%;
   width: 50%;
-  background-color: pink;
 
   @media (max-width: 1024px) {
   }
