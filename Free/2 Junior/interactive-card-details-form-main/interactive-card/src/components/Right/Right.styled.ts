@@ -13,6 +13,94 @@ export const RightSection = styled.section`
 
 export const RightSectionCard = styled.div`
   display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const RightSectionCardForm = styled.form`
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const RightSectionCardText = styled.div`
+  display: flex;
+  text-transform: uppercase;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const RightSectionCardInput = styled.input`
+  display: flex;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const RightSectionCardInputDate = styled.input`
+  display: flex;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const RightSectionCardInputCVC = styled.input`
+  display: flex;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const RightSectionCardSmallerSection = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const RightSectionCardDateSection = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const RightSectionCardCVCSection = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const RightSectionCardButton = styled.button`
+  display: flex;
+  text-transform: uppercase;
 
   @media (max-width: 1024px) {
     display: flex;
