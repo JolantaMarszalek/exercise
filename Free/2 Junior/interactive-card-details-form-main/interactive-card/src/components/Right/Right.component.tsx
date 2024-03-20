@@ -4,6 +4,7 @@ import {
   RightSectionCardButton,
   RightSectionCardCVCSection,
   RightSectionCardDateSection,
+  RightSectionCardDateSectionInputs,
   RightSectionCardForm,
   RightSectionCardInput,
   RightSectionCardInputCVC,
@@ -24,8 +25,10 @@ export const Right = () => {
           <RightSectionCardSmallerSection>
             <RightSectionCardDateSection>
               <RightSectionCardText> Exp. Date (MM/YY)</RightSectionCardText>
-              <RightSectionCardInputDate placeholder="MM"></RightSectionCardInputDate>
-              <RightSectionCardInputDate placeholder="YY"></RightSectionCardInputDate>
+              <RightSectionCardDateSectionInputs>
+                <RightSectionCardInputDate placeholder="MM"></RightSectionCardInputDate>
+                <RightSectionCardInputDate placeholder="YY"></RightSectionCardInputDate>
+              </RightSectionCardDateSectionInputs>
               <RightSectionCardText></RightSectionCardText>
             </RightSectionCardDateSection>
             <RightSectionCardCVCSection>
