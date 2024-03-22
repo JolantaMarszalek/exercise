@@ -132,6 +132,7 @@ export const RightSectionCardDateInputsError = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 15px;
+  padding-top: 5px;
 
   @media (max-width: 1024px) {
     display: flex;
