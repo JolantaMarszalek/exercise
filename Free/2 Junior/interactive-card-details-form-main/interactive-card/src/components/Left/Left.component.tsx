@@ -4,15 +4,15 @@ import {
   LeftSectionCardBottom,
   LeftSectionCardTop,
 } from "./Left.styled";
-import imageCardBackground from "./../../../../images/bg-main-desktop.png";
 
+import imageCardBackground from "./../../../../images/bg-main-desktop.png";
 import imageCardFront from "./../../../../images/bg-card-front.png";
 import imageCardBack from "./../../../../images/bg-card-back.png";
 
 export const Left = () => {
   return (
     <LeftSection>
-      <img src={imageCardBackground} alt="Card front" />
+      <img src={imageCardBackground} alt="Card background" />
       <LeftSectionCard>
         <LeftSectionCardTop>
           <img src={imageCardFront} alt="Card front" />
