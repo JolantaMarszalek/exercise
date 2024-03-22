@@ -70,7 +70,7 @@ export const RightSectionCardInputDate = styled.input`
   font-size: 18px;
   font-family: "Space Grotesk", sans-serif;
   padding-left: 20px;
-  width: 60px;
+  width: 80px;
   letter-spacing: 1px;
   border: 1px solid var(--neutral-light-grayish-violet);
 
@@ -88,6 +88,7 @@ export const RightSectionCardInputCVC = styled.input`
   font-family: "Space Grotesk", sans-serif;
   padding-left: 20px;
   letter-spacing: 1px;
+  width: auto;
   border: 1px solid var(--neutral-light-grayish-violet);
 
   @media (max-width: 1024px) {
@@ -117,9 +118,30 @@ export const RightSectionCardDateSection = styled.div`
   }
 `;
 
+export const RightSectionCardDateSectionError = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const RightSectionCardDateInputsError = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
 export const RightSectionCardDateSectionInputs = styled.div`
   display: flex;
-  gap: 10px;
+  gap: 20px;
 
   @media (max-width: 1024px) {
     display: flex;
