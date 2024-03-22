@@ -4,11 +4,12 @@ export const CompleteSection = styled.section`
   display: flex;
   /* flex-direction: column; */
   height: 100%;
-  width: 50%;
+  width: 100%;
   justify-content: flex-start;
   align-items: center;
   position: static;
   z-index: -1;
+  justify-content: center;
 
   @media (max-width: 1024px) {
   }
@@ -18,8 +19,9 @@ export const CompleteSectionCard = styled.div`
   display: flex;
   flex-direction: column;
   position: absolute;
-
+  align-items: center;
   gap: 50px;
+  /* width: 60%; */
 
   @media (max-width: 1024px) {
     display: flex;
@@ -39,6 +41,7 @@ export const CompleteSectionCardImage = styled.div`
 export const CompleteSectionCardTop = styled.div`
   display: flex;
   text-transform: uppercase;
+  font-size: 35px;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -48,6 +51,7 @@ export const CompleteSectionCardTop = styled.div`
 
 export const CompleteSectionCardBottom = styled.div`
   display: flex;
+  color: var(--neutral-dark-grayish-violet);
 
   @media (max-width: 1024px) {
     display: flex;
@@ -68,6 +72,7 @@ export const CompleteSectionCardButton = styled.button`
   color: var(--neutral-white);
   background-color: var(--neutral-very-dark-violet);
   border: 1px solid var(--neutral-very-dark-violet);
+  width: 100%;
 
   @media (max-width: 1024px) {
     display: flex;

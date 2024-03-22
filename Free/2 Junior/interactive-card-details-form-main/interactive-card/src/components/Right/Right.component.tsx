@@ -16,7 +16,11 @@ import {
   RightSectionCardText,
 } from "./Right.styled";
 
-export const Right = () => {
+interface RightProps {
+  onFormSubmit: () => void;
+}
+
+export const Right: React.FC<RightProps> = ({ onFormSubmit }) => {
   const [creditCardNumber, setCreditCardNumber] = useState("");
   const [creditCardError, setCreditCardError] = useState("");
   const [cardholderName, setCardholderName] = useState("");
@@ -80,6 +84,7 @@ export const Right = () => {
       // alert("Can't be blank");
       return;
     }
+    onFormSubmit();
   };
 
   return (
