@@ -174,6 +174,8 @@ export const RightSectionCardButton = styled.button`
   color: var(--neutral-white);
   background-color: var(--neutral-very-dark-violet);
   border: 1px solid var(--neutral-very-dark-violet);
+  margin-top: 20px;
+  margin-bottom: 50px;
 
   @media (max-width: 1024px) {
     display: flex;
