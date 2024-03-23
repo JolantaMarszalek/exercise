@@ -31,12 +31,12 @@ export const Left = () => {
       <img
         src={imageCardBackground}
         alt="Card background"
-        style={{ display: isMobile ? "none" : "block" }}
+        style={{ display: isMobile ? "none" : "block", height: "100%" }}
       />
       <img
         src={imageCardBackgroundMobile}
         alt="Card background mobile"
-        style={{ display: isMobile ? "block" : "none" }}
+        style={{ display: isMobile ? "block" : "none", width: "100%" }}
       />
       <LeftSectionCard>
         <LeftSectionCardTop>
