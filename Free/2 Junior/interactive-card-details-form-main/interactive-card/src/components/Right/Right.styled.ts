@@ -20,6 +20,7 @@ export const RightSectionCard = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    width: 90%;
   }
 `;
 
@@ -44,6 +45,7 @@ export const RightSectionCardText = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    width: 90%;
   }
 `;
 
@@ -60,6 +62,7 @@ export const RightSectionCardInput = styled.input`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    width: auto;
   }
 `;
 
@@ -76,7 +79,7 @@ export const RightSectionCardInputDate = styled.input`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    width: 90%;
   }
 `;
 
@@ -88,12 +91,11 @@ export const RightSectionCardInputCVC = styled.input`
   font-family: "Space Grotesk", sans-serif;
   padding-left: 20px;
   letter-spacing: 1px;
-  width: auto;
   border: 1px solid var(--neutral-light-grayish-violet);
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    width: auto;
   }
 `;
 
@@ -101,10 +103,11 @@ export const RightSectionCardSmallerSection = styled.div`
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  width: auto;
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    width: 100%;
   }
 `;
 
@@ -114,7 +117,7 @@ export const RightSectionCardDateSection = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    width: 50%;
   }
 `;
 
@@ -124,7 +127,6 @@ export const RightSectionCardDateSectionError = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
   }
 `;
 
@@ -136,7 +138,6 @@ export const RightSectionCardDateInputsError = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
   }
 `;
 
@@ -146,7 +147,7 @@ export const RightSectionCardDateSectionInputs = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    width: 100%;
   }
 `;
 
@@ -156,7 +157,7 @@ export const RightSectionCardCVCSection = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    width: 50%;
   }
 `;
 
@@ -177,5 +178,7 @@ export const RightSectionCardButton = styled.button`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
 `;

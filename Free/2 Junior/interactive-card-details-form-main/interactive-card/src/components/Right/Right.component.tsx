@@ -146,7 +146,6 @@ export const Right: React.FC<RightProps> = ({ onFormSubmit }) => {
                   )}{" "}
                 </RightSectionCardDateSectionError>
               </RightSectionCardDateSectionInputs>
-              <RightSectionCardText></RightSectionCardText>
             </RightSectionCardDateSection>
             <RightSectionCardCVCSection>
               <RightSectionCardText>CVC</RightSectionCardText>
