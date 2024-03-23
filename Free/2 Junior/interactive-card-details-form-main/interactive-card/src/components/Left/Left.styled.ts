@@ -10,6 +10,9 @@ export const LeftSection = styled.section`
   z-index: -1;
 
   @media (max-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 `;
 
@@ -23,6 +26,8 @@ export const LeftSectionCard = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 0;
   }
 `;
 
@@ -30,20 +35,28 @@ export const LeftSectionCardTop = styled.div`
   display: flex;
   padding-left: 150px;
   position: static;
-  z-index: 1;
+  z-index: 2;
 
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    width: 80%;
+    margin-bottom: -350px;
+    margin-left: -50px;
   }
 `;
 
 export const LeftSectionCardBottom = styled.div`
   display: flex;
-  padding-left: 100px;
+  padding-left: 250px;
+  z-index: 1;
 
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    width: 80%;
+    margin-left: 50px;
   }
 `;

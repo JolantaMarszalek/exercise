@@ -43,9 +43,7 @@ export const Left = () => {
           <img src={imageCardFront} alt="Card front" />
         </LeftSectionCardTop>
         <LeftSectionCardBottom>
-          <LeftSectionCardTop>
-            <img src={imageCardBack} alt="Card back" />
-          </LeftSectionCardTop>
+          <img src={imageCardBack} alt="Card back" />
         </LeftSectionCardBottom>
       </LeftSectionCard>
     </LeftSection>

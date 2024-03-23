@@ -9,6 +9,7 @@ export const RightSection = styled.section`
   align-items: center;
 
   @media (max-width: 1024px) {
+    width: auto;
   }
 `;
 
