@@ -36,7 +36,11 @@ export const Left = () => {
       <img
         src={imageCardBackgroundMobile}
         alt="Card background mobile"
-        style={{ display: isMobile ? "block" : "none", width: "100%" }}
+        style={{
+          display: isMobile ? "block" : "none",
+          width: "100%",
+          height: "100%",
+        }}
       />
       <LeftSectionCard>
         <LeftSectionCardTop>
