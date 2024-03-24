@@ -1,5 +1,11 @@
+import { Main } from "./components/Main/Main.component";
+
 function App() {
-  return <>Interactive card details form</>;
+  return (
+    <>
+      <Main></Main>
+    </>
+  );
 }
 
 export default App;
