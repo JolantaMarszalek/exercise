@@ -1,5 +1,11 @@
+import { Header } from "./components/Header/Header.component";
+
 function App() {
-  return <h1>Intro section with dropdown navigation</h1>;
+  return (
+    <>
+      <Header></Header>
+    </>
+  );
 }
 
 export default App;
