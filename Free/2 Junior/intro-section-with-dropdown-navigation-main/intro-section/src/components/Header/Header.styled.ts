@@ -35,7 +35,9 @@ export const HeaderSectionMenu = styled.div`
   gap: 20px;
   z-index: 2;
   height: 100%;
+  width: 100%;
   align-items: center;
+  margin-left: 50px;
 `;
 
 export const HeaderSectionMenuSingle = styled.div`
