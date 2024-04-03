@@ -57,8 +57,9 @@ export const HeaderSectionMenuSingleFirstLine = styled.div`
   gap: 10px;
 
   &:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     cursor: pointer;
+    font-weight: bold;
   }
 `;
 
@@ -115,6 +116,11 @@ export const HeaderSectionLoginSingle = styled.div`
   color: var(--neutral-medium-gray);
   z-index: 1;
   font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }
 `;
 
 export const HeaderSectionLoginButton = styled.button`
@@ -132,8 +138,7 @@ export const HeaderSectionLoginButton = styled.button`
   font-weight: 500;
 
   &:hover {
-    background-color: var(--neutral-almost-white);
-    color: var(--neutral-medium-gray);
     cursor: pointer;
+    font-weight: bold;
   }
 `;
