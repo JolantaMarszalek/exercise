@@ -27,25 +27,43 @@ export const Header = () => {
             <HeaderSectionMenuSingleFirstLine>
               Features
             </HeaderSectionMenuSingleFirstLine>
-            <HeaderSectionMenuSingleImage></HeaderSectionMenuSingleImage>{" "}
+            <HeaderSectionMenuSingleImage>
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </HeaderSectionMenuSingleImage>{" "}
           </HeaderSectionMenuSingle>{" "}
           <HeaderSectionMenuSingle>
             <HeaderSectionMenuSingleFirstLine>
               Company
             </HeaderSectionMenuSingleFirstLine>
-            <HeaderSectionMenuSingleImage></HeaderSectionMenuSingleImage>{" "}
+            <HeaderSectionMenuSingleImage>
+              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </HeaderSectionMenuSingleImage>{" "}
           </HeaderSectionMenuSingle>{" "}
           <HeaderSectionMenuSingle>
             <HeaderSectionMenuSingleFirstLine>
               Careers
             </HeaderSectionMenuSingleFirstLine>
-            <HeaderSectionMenuSingleImage></HeaderSectionMenuSingleImage>{" "}
+            {/* <HeaderSectionMenuSingleImage></HeaderSectionMenuSingleImage>{" "} */}
           </HeaderSectionMenuSingle>{" "}
           <HeaderSectionMenuSingle>
             <HeaderSectionMenuSingleFirstLine>
               About
             </HeaderSectionMenuSingleFirstLine>
-            <HeaderSectionMenuSingleImage></HeaderSectionMenuSingleImage>{" "}
+            {/* <HeaderSectionMenuSingleImage></HeaderSectionMenuSingleImage>{" "} */}
           </HeaderSectionMenuSingle>
         </HeaderSectionMenu>
         {/* <HeaderSectionMenuAndLogin> */}

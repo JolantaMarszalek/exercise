@@ -42,12 +42,13 @@ export const HeaderSectionMenu = styled.div`
 
 export const HeaderSectionMenuSingle = styled.div`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   color: var(--neutral-medium-gray);
   z-index: 2;
   /* gap: 10px; */
   width: 100px;
   align-items: center;
+  padding: 10px;
 `;
 
 export const HeaderSectionMenuSingleFirstLine = styled.div`
@@ -66,7 +67,7 @@ export const HeaderSectionMenuSingleFirstLine = styled.div`
 export const HeaderSectionMenuSingleImage = styled.div`
   color: var(--neutral-medium-gray);
   z-index: 2;
-  font-size: 16px;
+  padding-left: 10px;
 `;
 
 export const HeaderSectionMenuAdditionalOptions = styled.div`
