@@ -36,8 +36,8 @@ export const Header = () => {
                   d="m1 1 4 4 4-4"
                 />
               </svg>
-            </HeaderSectionMenuSingleImage>{" "}
-          </HeaderSectionMenuSingle>{" "}
+            </HeaderSectionMenuSingleImage>
+          </HeaderSectionMenuSingle>
           <HeaderSectionMenuSingle>
             <HeaderSectionMenuSingleFirstLine>
               Company
@@ -51,14 +51,14 @@ export const Header = () => {
                   d="m1 1 4 4 4-4"
                 />
               </svg>
-            </HeaderSectionMenuSingleImage>{" "}
-          </HeaderSectionMenuSingle>{" "}
+            </HeaderSectionMenuSingleImage>
+          </HeaderSectionMenuSingle>
           <HeaderSectionMenuSingle>
             <HeaderSectionMenuSingleFirstLine>
               Careers
             </HeaderSectionMenuSingleFirstLine>
             {/* <HeaderSectionMenuSingleImage></HeaderSectionMenuSingleImage>{" "} */}
-          </HeaderSectionMenuSingle>{" "}
+          </HeaderSectionMenuSingle>
           <HeaderSectionMenuSingle>
             <HeaderSectionMenuSingleFirstLine>
               About
