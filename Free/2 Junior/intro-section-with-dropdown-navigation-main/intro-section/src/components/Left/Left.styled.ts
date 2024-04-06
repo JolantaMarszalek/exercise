@@ -30,7 +30,6 @@ export const LeftSectionCardTitle = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 80px;
-  /* font-weight: 500; */
   font-weight: 700;
   line-height: 1;
   color: var(--neutral-almost-black);
@@ -63,16 +62,16 @@ export const LeftSectionCardButton = styled.button`
   color: var(--neutral-almost-white);
   border-radius: 15px;
   border: 2px solid var(--neutral-almost-black);
-  /* font-weight: bold; */
   z-index: 1;
   font-family: "Epilogue", sans-serif;
   font-size: 20px;
-  /* margin-top: -10px; */
   font-weight: 500;
 
   &:hover {
     cursor: pointer;
     font-weight: bold;
+    background-color: var(--neutral-almost-white);
+    color: var(--neutral-almost-black);
   }
 `;
 

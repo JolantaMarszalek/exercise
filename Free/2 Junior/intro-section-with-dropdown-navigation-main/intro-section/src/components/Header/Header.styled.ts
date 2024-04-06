@@ -42,10 +42,8 @@ export const HeaderSectionMenu = styled.div`
 
 export const HeaderSectionMenuSingle = styled.div`
   display: flex;
-  /* flex-direction: column; */
   color: var(--neutral-medium-gray);
   z-index: 2;
-  /* gap: 10px; */
   width: 100px;
   align-items: center;
   padding: 10px;
@@ -58,7 +56,6 @@ export const HeaderSectionMenuSingleFirstLine = styled.div`
   gap: 10px;
 
   &:hover {
-    /* text-decoration: underline; */
     cursor: pointer;
     font-weight: bold;
   }
@@ -131,11 +128,9 @@ export const HeaderSectionLoginButton = styled.button`
   color: var(--neutral-medium-gray);
   border-radius: 15px;
   border: 2px solid var(--neutral-medium-gray);
-  /* font-weight: bold; */
   z-index: 1;
   font-family: "Epilogue", sans-serif;
   font-size: 18px;
-  /* margin-top: -10px; */
   font-weight: 500;
 
   &:hover {
