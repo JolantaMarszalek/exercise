@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const HeaderSection = styled.section`
   display: flex;
-  /* justify-content: center; */
   height: 200px;
   justify-content: space-between;
   font-weight: 500;
   position: relative;
+  background-color: var(--neutral-almost-white);
 
   @media (max-width: 1024px) {
     display: flex;
@@ -56,10 +56,12 @@ export const HeaderSectionMenuSingleFirstLine = styled.div`
   z-index: 2;
   gap: 10px;
   height: auto;
+  font-weight: 500;
 
   &:hover {
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 500;
+    color: var(--neutral-almost-black);
   }
 `;
 
@@ -77,15 +79,39 @@ export const HeaderSectionMenuAdditionalInfo = styled.div<AdditionalInfoProps>`
   display: ${({ visible }) => (visible ? "flex" : "none")};
   position: absolute;
   top: 100%;
-  left: 0;
-  background-color: #fff;
-  color: black;
+  background-color: white;
+  color: var(--neutral-medium-gray);
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--neutral-almost-white);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 999;
+  flex-direction: column;
+  margin-top: -50px;
+`;
+
+export const HeaderSectionMenuAdditionalInfoSingleLine = styled.div`
+  background-color: white;
+  color: var(--neutral-medium-gray);
+  padding: 10px;
+  z-index: 999;
+  display: flex;
+  height: auto;
+`;
+
+export const HeaderSectionMenuAdditionalInfoSingleLineImage = styled.div`
+  color: var(--neutral-medium-gray);
+  padding-right: 10px;
   z-index: 999;
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+`;
+
+export const HeaderSectionMenuAdditionalInfoSingleLineText = styled.div`
+  color: var(--neutral-medium-gray);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
 `;
 
 // export const HeaderSectionMenuAdditionalOptions = styled.div`
@@ -138,7 +164,8 @@ export const HeaderSectionLoginSingle = styled.div`
 
   &:hover {
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 500;
+    color: var(--neutral-almost-black);
   }
 `;
 
@@ -156,6 +183,7 @@ export const HeaderSectionLoginButton = styled.button`
 
   &:hover {
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 500;
+    color: var(--neutral-almost-black);
   }
 `;

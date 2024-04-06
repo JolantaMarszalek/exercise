@@ -29,8 +29,9 @@ export const LeftSectionCard = styled.div`
 export const LeftSectionCardTitle = styled.div`
   display: flex;
   flex-direction: column;
-  font-size: 80px;
+  font-size: 90px;
   font-weight: 700;
+  margin-right: 150px;
   line-height: 1;
   color: var(--neutral-almost-black);
 
@@ -65,11 +66,11 @@ export const LeftSectionCardButton = styled.button`
   z-index: 1;
   font-family: "Epilogue", sans-serif;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
 
   &:hover {
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 700;
     background-color: var(--neutral-almost-white);
     color: var(--neutral-almost-black);
   }
