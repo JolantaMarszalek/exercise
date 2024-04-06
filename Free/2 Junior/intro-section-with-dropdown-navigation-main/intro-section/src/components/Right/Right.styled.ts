@@ -14,6 +14,8 @@ export const RightSection = styled.section`
 export const RightSectionCard = styled.div`
   display: flex;
   flex-direction: column;
+  margin-right: 150px;
+  margin-left: 50px;
 
   @media (max-width: 1024px) {
     display: flex;
