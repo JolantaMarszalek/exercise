@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const HeaderSection = styled.section`
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   height: 200px;
   justify-content: space-between;
   font-weight: 500;
+  position: relative;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -42,6 +43,7 @@ export const HeaderSectionMenu = styled.div`
 
 export const HeaderSectionMenuSingle = styled.div`
   display: flex;
+  height: auto;
   color: var(--neutral-medium-gray);
   z-index: 2;
   width: 100px;
@@ -50,10 +52,10 @@ export const HeaderSectionMenuSingle = styled.div`
 `;
 
 export const HeaderSectionMenuSingleFirstLine = styled.div`
-  display: flex;
   color: var(--neutral-medium-gray);
   z-index: 2;
   gap: 10px;
+  height: auto;
 
   &:hover {
     cursor: pointer;
@@ -67,30 +69,49 @@ export const HeaderSectionMenuSingleImage = styled.div`
   padding-left: 10px;
 `;
 
-export const HeaderSectionMenuAdditionalOptions = styled.div`
+interface AdditionalInfoProps {
+  visible: boolean;
+}
+
+export const HeaderSectionMenuAdditionalInfo = styled.div<AdditionalInfoProps>`
+  display: ${({ visible }) => (visible ? "flex" : "none")};
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+  border: 1px solid #ccc;
+  z-index: 999;
   display: flex;
   flex-direction: column;
-  color: var(--neutral-medium-gray);
-  background-color: var(--neutral-almost-black);
-  z-index: 2;
-  border-radius: 10px;
-  width: 150px;
+  margin-top: 10px;
 `;
 
-export const HeaderSectionMenuAdditionalOptionsSingle = styled.div`
-  display: flex;
-  flex-direction: column;
-  z-index: 2;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+// export const HeaderSectionMenuAdditionalOptions = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   color: var(--neutral-medium-gray);
+//   background-color: var(--neutral-almost-black);
+//   z-index: 2;
+//   border-radius: 10px;
+//   width: 150px;
+// `;
 
-  &:hover {
-    font-weight: bold;
-    cursor: pointer;
-  }
-`;
+// export const HeaderSectionMenuAdditionalOptionsSingle = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   z-index: 2;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   padding-top: 5px;
+//   padding-bottom: 5px;
+
+//   &:hover {
+//     font-weight: bold;
+//     cursor: pointer;
+//   }
+// `;
 
 export const HeaderSectionMenuAndLogin = styled.div`
   display: flex;

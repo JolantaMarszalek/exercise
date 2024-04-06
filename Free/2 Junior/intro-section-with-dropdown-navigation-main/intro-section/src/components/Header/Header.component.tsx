@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   HeaderSection,
   HeaderSectionLogin,
@@ -5,12 +6,36 @@ import {
   HeaderSectionLoginSingle,
   HeaderSectionLogo,
   HeaderSectionMenu,
+  HeaderSectionMenuAdditionalInfo,
   HeaderSectionMenuSingle,
   HeaderSectionMenuSingleFirstLine,
   HeaderSectionMenuSingleImage,
 } from "./Header.styled";
 
 export const Header = () => {
+  // const [featuresInfoVisible, setFeaturesInfoVisible] = useState(false);
+  // const [companyInfoVisible, setCompanyInfoVisible] = useState(false);
+
+  // const toggleFeaturesInfo = () => {
+  //   setFeaturesInfoVisible(!featuresInfoVisible);
+  // };
+
+  // const toggleCompanyInfo = () => {
+  //   setCompanyInfoVisible(!companyInfoVisible);
+  // };
+
+  const [menuOptions, setMenuOptions] = useState({
+    features: false,
+    company: false,
+  });
+
+  const toggleMenuOption = (option: keyof typeof menuOptions) => {
+    setMenuOptions((prevOptions) => ({
+      ...prevOptions,
+      [option]: !prevOptions[option],
+    }));
+  };
+
   return (
     <>
       <HeaderSection>
@@ -23,7 +48,8 @@ export const Header = () => {
           </svg>
         </HeaderSectionLogo>
         <HeaderSectionMenu>
-          <HeaderSectionMenuSingle>
+          {/* <HeaderSectionMenuSingle onClick={toggleFeaturesInfo}> */}
+          <HeaderSectionMenuSingle onClick={() => toggleMenuOption("features")}>
             <HeaderSectionMenuSingleFirstLine>
               Features
             </HeaderSectionMenuSingleFirstLine>
@@ -37,8 +63,19 @@ export const Header = () => {
                 />
               </svg>
             </HeaderSectionMenuSingleImage>
+            {/* {featuresInfoVisible && (
+              <HeaderSectionMenuAdditionalInfo>
+                Additional Info for Features
+              </HeaderSectionMenuAdditionalInfo>
+            )} */}
+            {menuOptions.features && (
+              <HeaderSectionMenuAdditionalInfo visible={menuOptions.features}>
+                Additional Info for Features
+              </HeaderSectionMenuAdditionalInfo>
+            )}
           </HeaderSectionMenuSingle>
-          <HeaderSectionMenuSingle>
+          {/* <HeaderSectionMenuSingle onClick={toggleCompanyInfo}> */}
+          <HeaderSectionMenuSingle onClick={() => toggleMenuOption("company")}>
             <HeaderSectionMenuSingleFirstLine>
               Company
             </HeaderSectionMenuSingleFirstLine>
@@ -52,26 +89,32 @@ export const Header = () => {
                 />
               </svg>
             </HeaderSectionMenuSingleImage>
+            {/* {companyInfoVisible && (
+              <HeaderSectionMenuAdditionalInfo>
+                Additional Info for Company
+              </HeaderSectionMenuAdditionalInfo>
+            )} */}
+            {menuOptions.company && (
+              <HeaderSectionMenuAdditionalInfo visible={menuOptions.company}>
+                Additional Info for Company
+              </HeaderSectionMenuAdditionalInfo>
+            )}
           </HeaderSectionMenuSingle>
           <HeaderSectionMenuSingle>
             <HeaderSectionMenuSingleFirstLine>
               Careers
             </HeaderSectionMenuSingleFirstLine>
-            {/* <HeaderSectionMenuSingleImage></HeaderSectionMenuSingleImage>{" "} */}
           </HeaderSectionMenuSingle>
           <HeaderSectionMenuSingle>
             <HeaderSectionMenuSingleFirstLine>
               About
             </HeaderSectionMenuSingleFirstLine>
-            {/* <HeaderSectionMenuSingleImage></HeaderSectionMenuSingleImage>{" "} */}
           </HeaderSectionMenuSingle>
         </HeaderSectionMenu>
-        {/* <HeaderSectionMenuAndLogin> */}
         <HeaderSectionLogin>
           <HeaderSectionLoginSingle>Login</HeaderSectionLoginSingle>
           <HeaderSectionLoginButton>Sign Up</HeaderSectionLoginButton>
         </HeaderSectionLogin>
-        {/* </HeaderSectionMenuAndLogin> */}
       </HeaderSection>
     </>
   );
