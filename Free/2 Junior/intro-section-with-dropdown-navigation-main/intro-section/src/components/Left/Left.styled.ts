@@ -77,7 +77,8 @@ export const LeftSectionCardButton = styled.button`
 
 export const LeftSectionCardImages = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 100px;
 
   @media (max-width: 1024px) {
     display: flex;
