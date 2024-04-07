@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const HeaderSection = styled.section`
   display: flex;
-  justify-content: center;
   height: 200px;
   justify-content: space-between;
   font-weight: 500;
+  position: relative;
+  background-color: var(--neutral-almost-white);
 
   @media (max-width: 1024px) {
     display: flex;
@@ -35,61 +36,108 @@ export const HeaderSectionMenu = styled.div`
   gap: 20px;
   z-index: 2;
   height: 100%;
+  width: 100%;
   align-items: center;
+  margin-left: 50px;
 `;
 
 export const HeaderSectionMenuSingle = styled.div`
   display: flex;
-  flex-direction: column;
+  height: auto;
   color: var(--neutral-medium-gray);
   z-index: 2;
-  /* gap: 10px; */
   width: 100px;
   align-items: center;
+  padding: 10px;
 `;
 
 export const HeaderSectionMenuSingleFirstLine = styled.div`
-  display: flex;
   color: var(--neutral-medium-gray);
   z-index: 2;
   gap: 10px;
+  height: auto;
+  font-weight: 500;
 
   &:hover {
-    text-decoration: underline;
     cursor: pointer;
+    font-weight: 500;
+    color: var(--neutral-almost-black);
   }
 `;
 
 export const HeaderSectionMenuSingleImage = styled.div`
   color: var(--neutral-medium-gray);
   z-index: 2;
-  font-size: 16px;
+  padding-left: 10px;
 `;
 
-export const HeaderSectionMenuAdditionalOptions = styled.div`
-  display: flex;
-  flex-direction: column;
+interface AdditionalInfoProps {
+  visible: boolean;
+}
+
+export const HeaderSectionMenuAdditionalInfo = styled.div<AdditionalInfoProps>`
+  display: ${({ visible }) => (visible ? "flex" : "none")};
+  position: absolute;
+  top: 100%;
+  background-color: white;
   color: var(--neutral-medium-gray);
-  background-color: var(--neutral-almost-black);
-  z-index: 2;
+  padding: 10px;
+  border: 1px solid var(--neutral-almost-white);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  width: 150px;
+  z-index: 999;
+  flex-direction: column;
+  margin-top: -50px;
 `;
 
-export const HeaderSectionMenuAdditionalOptionsSingle = styled.div`
+export const HeaderSectionMenuAdditionalInfoSingleLine = styled.div`
+  background-color: white;
+  color: var(--neutral-medium-gray);
+  padding: 10px;
+  z-index: 999;
+  display: flex;
+  height: auto;
+`;
+
+export const HeaderSectionMenuAdditionalInfoSingleLineImage = styled.div`
+  color: var(--neutral-medium-gray);
+  padding-right: 10px;
+  z-index: 999;
   display: flex;
   flex-direction: column;
-  z-index: 2;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
-  &:hover {
-    font-weight: bold;
-    cursor: pointer;
-  }
 `;
+
+export const HeaderSectionMenuAdditionalInfoSingleLineText = styled.div`
+  color: var(--neutral-medium-gray);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+`;
+
+// export const HeaderSectionMenuAdditionalOptions = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   color: var(--neutral-medium-gray);
+//   background-color: var(--neutral-almost-black);
+//   z-index: 2;
+//   border-radius: 10px;
+//   width: 150px;
+// `;
+
+// export const HeaderSectionMenuAdditionalOptionsSingle = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   z-index: 2;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   padding-top: 5px;
+//   padding-bottom: 5px;
+
+//   &:hover {
+//     font-weight: bold;
+//     cursor: pointer;
+//   }
+// `;
 
 export const HeaderSectionMenuAndLogin = styled.div`
   display: flex;
@@ -113,6 +161,12 @@ export const HeaderSectionLoginSingle = styled.div`
   color: var(--neutral-medium-gray);
   z-index: 1;
   font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--neutral-almost-black);
+  }
 `;
 
 export const HeaderSectionLoginButton = styled.button`
@@ -122,16 +176,14 @@ export const HeaderSectionLoginButton = styled.button`
   color: var(--neutral-medium-gray);
   border-radius: 15px;
   border: 2px solid var(--neutral-medium-gray);
-  /* font-weight: bold; */
   z-index: 1;
   font-family: "Epilogue", sans-serif;
   font-size: 18px;
-  /* margin-top: -10px; */
   font-weight: 500;
 
   &:hover {
-    background-color: var(--neutral-almost-white);
-    color: var(--neutral-medium-gray);
     cursor: pointer;
+    font-weight: 500;
+    color: var(--neutral-almost-black);
   }
 `;
