@@ -8,6 +8,7 @@ export const RightSection = styled.section`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    width: auto;
   }
 `;
 
@@ -27,8 +28,15 @@ export const RightSectionCardImage = styled.img`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 1024px) {
-    display: flex;
-    flex-direction: column;
+  @media screen and (min-width: 1025px) {
+    &.image-hero-mobile {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &.image-hero-desktop {
+      display: none;
+    }
   }
 `;

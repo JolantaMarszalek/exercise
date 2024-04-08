@@ -9,6 +9,7 @@ export const LeftSection = styled.section`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    width: auto;
   }
 `;
 
@@ -23,6 +24,9 @@ export const LeftSectionCard = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    width: 100%;
+    align-items: center;
   }
 `;
 
@@ -38,6 +42,8 @@ export const LeftSectionCardTitle = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    text-align: center;
   }
 `;
 
@@ -53,6 +59,8 @@ export const LeftSectionCardDescribe = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    text-align: center;
   }
 `;
 
@@ -83,7 +91,9 @@ export const LeftSectionCardImages = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    width: 100%;
+    margin: 0;
   }
 `;
 
@@ -93,6 +103,6 @@ export const LeftSectionCardSingleImage = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 `;
