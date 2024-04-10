@@ -29,6 +29,11 @@ export const HeaderSectionLogo = styled.div`
   z-index: 2;
   align-items: center;
   display: flex;
+
+  @media (max-width: 1024px) {
+    width: auto;
+    margin: 0;
+  }
 `;
 
 export const HeaderSectionMenu = styled.div<{ open: boolean }>`
@@ -60,6 +65,11 @@ export const HeaderSectionMenuPartSecond = styled.div`
   width: auto;
   align-items: center;
   padding: 10px;
+`;
+
+export const HeaderSectionMenuIcon = styled.div`
+  width: auto;
+  margin: 0;
 `;
 
 export const HeaderSectionMenuSingle = styled.div`

@@ -10,6 +10,7 @@ import {
   HeaderSectionMenuAdditionalInfoSingleLine,
   HeaderSectionMenuAdditionalInfoSingleLineImage,
   HeaderSectionMenuAdditionalInfoSingleLineText,
+  HeaderSectionMenuIcon,
   HeaderSectionMenuPartFirst,
   HeaderSectionMenuPartSecond,
   HeaderSectionMenuSingle,
@@ -57,14 +58,15 @@ export const Header = () => {
             />
           </svg>
         </HeaderSectionLogo>
-        {isMobile ? (
-          <div className="icon-menu" onClick={toggleMenu}>
+        {isMobile && (windowWidth <= 1024 || menuOpen) && (
+          <HeaderSectionMenuIcon className="icon-menu" onClick={toggleMenu}>
             <svg
               width="32"
               height="18"
               xmlns="http://www.w3.org/2000/svg"></svg>
-          </div>
-        ) : (
+          </HeaderSectionMenuIcon>
+        )}
+        {!isMobile && (
           <HeaderSectionMenu open={menuOpen}>
             <HeaderSectionMenuPartFirst>
               <HeaderSectionMenuSingle
@@ -82,7 +84,6 @@ export const Header = () => {
                     />
                   </svg>
                 </HeaderSectionMenuSingleImage>
-
                 {menuOptions.features && (
                   <HeaderSectionMenuAdditionalInfo
                     visible={menuOptions.features}>
@@ -208,14 +209,6 @@ export const Header = () => {
             </HeaderSectionMenuPartSecond>
           </HeaderSectionMenu>
         )}
-        {isMobile ? (
-          <div className="icon-menu" onClick={toggleMenu}>
-            <svg
-              width="32"
-              height="18"
-              xmlns="http://www.w3.org/2000/svg"></svg>
-          </div>
-        ) : null}{" "}
       </HeaderSection>
     </>
   );
