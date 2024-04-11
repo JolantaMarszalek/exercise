@@ -58,7 +58,8 @@ export const Header = () => {
             />
           </svg>
         </HeaderSectionLogo>
-        {isMobile && (windowWidth <= 1024 || menuOpen) && (
+        {/* {isMobile && (windowWidth <= 1024 || menuOpen) && ( */}
+        {isMobile && windowWidth <= 1024 && (
           <HeaderSectionMenuIcon className="icon-menu" onClick={toggleMenu}>
             <svg
               width="32"
