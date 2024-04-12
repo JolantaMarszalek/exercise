@@ -10,7 +10,7 @@ export const HeaderSection = styled.section`
 
   @media (max-width: 1024px) {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 `;
 
@@ -69,6 +69,7 @@ export const HeaderSectionMenuPartSecond = styled.div`
 
 export const HeaderSectionMenuIcon = styled.div`
   width: auto;
+  height: auto;
   margin: 0;
 `;
 
