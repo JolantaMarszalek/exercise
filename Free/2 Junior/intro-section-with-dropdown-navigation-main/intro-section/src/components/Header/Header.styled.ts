@@ -32,7 +32,8 @@ export const HeaderSectionLogo = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
-    margin: 0;
+    /* margin: 0; */
+    margin-left: 50px;
   }
 `;
 
@@ -68,9 +69,15 @@ export const HeaderSectionMenuPartSecond = styled.div`
 `;
 
 export const HeaderSectionMenuIcon = styled.div`
-  width: auto;
-  height: auto;
-  margin: 0;
+  z-index: 2;
+  align-items: center;
+  display: flex;
+
+  @media (max-width: 1024px) {
+    width: auto;
+    margin-right: 50px;
+    /* margin: 0; */
+  }
 `;
 
 export const HeaderSectionMenuSingle = styled.div`
