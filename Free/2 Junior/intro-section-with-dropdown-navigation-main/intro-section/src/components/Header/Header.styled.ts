@@ -10,7 +10,7 @@ export const HeaderSection = styled.section`
 
   @media (max-width: 1024px) {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 `;
 
@@ -29,9 +29,15 @@ export const HeaderSectionLogo = styled.div`
   z-index: 2;
   align-items: center;
   display: flex;
+
+  @media (max-width: 1024px) {
+    width: auto;
+    /* margin: 0; */
+    margin-left: 50px;
+  }
 `;
 
-export const HeaderSectionMenu = styled.div`
+export const HeaderSectionMenu = styled.div<{ open: boolean }>`
   display: flex;
   gap: 20px;
   z-index: 2;
@@ -39,6 +45,39 @@ export const HeaderSectionMenu = styled.div`
   width: 100%;
   align-items: center;
   margin-left: 50px;
+  justify-content: space-between;
+`;
+
+export const HeaderSectionMenuPartFirst = styled.div`
+  display: flex;
+  height: auto;
+  color: var(--neutral-medium-gray);
+  z-index: 2;
+  width: auto;
+  align-items: center;
+  padding: 10px;
+`;
+
+export const HeaderSectionMenuPartSecond = styled.div`
+  display: flex;
+  height: auto;
+  color: var(--neutral-medium-gray);
+  z-index: 2;
+  width: auto;
+  align-items: center;
+  padding: 10px;
+`;
+
+export const HeaderSectionMenuIcon = styled.div`
+  z-index: 2;
+  align-items: center;
+  display: flex;
+
+  @media (max-width: 1024px) {
+    width: auto;
+    margin-right: 50px;
+    /* margin: 0; */
+  }
 `;
 
 export const HeaderSectionMenuSingle = styled.div`
@@ -113,31 +152,6 @@ export const HeaderSectionMenuAdditionalInfoSingleLineText = styled.div`
   display: flex;
   flex-direction: column;
 `;
-
-// export const HeaderSectionMenuAdditionalOptions = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   color: var(--neutral-medium-gray);
-//   background-color: var(--neutral-almost-black);
-//   z-index: 2;
-//   border-radius: 10px;
-//   width: 150px;
-// `;
-
-// export const HeaderSectionMenuAdditionalOptionsSingle = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   z-index: 2;
-//   padding-left: 15px;
-//   padding-right: 15px;
-//   padding-top: 5px;
-//   padding-bottom: 5px;
-
-//   &:hover {
-//     font-weight: bold;
-//     cursor: pointer;
-//   }
-// `;
 
 export const HeaderSectionMenuAndLogin = styled.div`
   display: flex;

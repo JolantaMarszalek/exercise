@@ -7,7 +7,7 @@ export const MainSection = styled.section`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column-reverse; */
   }
 `;
 
@@ -17,6 +17,6 @@ export const MainSectionCard = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 `;
