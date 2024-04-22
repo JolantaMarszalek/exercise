@@ -21,6 +21,9 @@ export const RightSectionCard = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
   }
 `;
 
