@@ -25,6 +25,7 @@ export const Header = () => {
     company: false,
   });
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -34,8 +35,15 @@ export const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // const toggleMenu = () => {
+  //   setMenuOpen(!menuOpen);
+  // };
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    if (isMobile) {
+      setMobileMenuOpen(!mobileMenuOpen);
+    }
   };
 
   const toggleMenuOption = (option: keyof typeof menuOptions) => {
@@ -62,7 +70,7 @@ export const Header = () => {
         {isMobile && windowWidth <= 1024 && (
           <HeaderSectionMenuIcon className="icon-menu" onClick={toggleMenu}>
             <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
-              <g fill="#151515" fill-rule="evenodd">
+              <g fill="#151515" fillRule="evenodd">
                 <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
               </g>
             </svg>
@@ -211,7 +219,16 @@ export const Header = () => {
             </HeaderSectionMenuPartSecond>
           </HeaderSectionMenu>
         )}
-      </HeaderSection>
+      </HeaderSection>{" "}
+      {isMobile && windowWidth <= 1024 && mobileMenuOpen && (
+        <HeaderSectionMenu open={menuOpen}>
+          <HeaderSectionMenuSingle onClick={() => toggleMenuOption("features")}>
+            <HeaderSectionMenuSingleFirstLine>
+              test
+            </HeaderSectionMenuSingleFirstLine>
+          </HeaderSectionMenuSingle>
+        </HeaderSectionMenu>
+      )}
     </>
   );
 };
