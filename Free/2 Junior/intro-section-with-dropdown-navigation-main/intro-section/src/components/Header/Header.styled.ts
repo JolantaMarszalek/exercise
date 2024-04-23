@@ -201,3 +201,16 @@ export const HeaderSectionLoginButton = styled.button`
     color: var(--neutral-almost-black);
   }
 `;
+
+export const HeaderSectionMenuMobile = styled.div<{ open: boolean }>`
+  display: flex;
+  gap: 20px;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  /* margin-left: 50px; */
+  justify-content: flex-end;
+
+  position: absolute;
+`;

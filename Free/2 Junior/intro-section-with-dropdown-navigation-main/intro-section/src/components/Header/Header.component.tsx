@@ -11,6 +11,7 @@ import {
   HeaderSectionMenuAdditionalInfoSingleLineImage,
   HeaderSectionMenuAdditionalInfoSingleLineText,
   HeaderSectionMenuIcon,
+  HeaderSectionMenuMobile,
   HeaderSectionMenuPartFirst,
   HeaderSectionMenuPartSecond,
   HeaderSectionMenuSingle,
@@ -221,13 +222,13 @@ export const Header = () => {
         )}
       </HeaderSection>{" "}
       {isMobile && windowWidth <= 1024 && mobileMenuOpen && (
-        <HeaderSectionMenu open={menuOpen}>
+        <HeaderSectionMenuMobile open={menuOpen}>
           <HeaderSectionMenuSingle onClick={() => toggleMenuOption("features")}>
             <HeaderSectionMenuSingleFirstLine>
               test
             </HeaderSectionMenuSingleFirstLine>
           </HeaderSectionMenuSingle>
-        </HeaderSectionMenu>
+        </HeaderSectionMenuMobile>
       )}
     </>
   );
