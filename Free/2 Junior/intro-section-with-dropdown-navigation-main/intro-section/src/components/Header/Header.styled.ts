@@ -32,7 +32,6 @@ export const HeaderSectionLogo = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
-    /* margin: 0; */
     margin-left: 50px;
   }
 `;
@@ -209,8 +208,6 @@ export const HeaderSectionMenuMobile = styled.div<{ open: boolean }>`
   height: 100%;
   width: 100%;
   align-items: center;
-  /* margin-left: 50px; */
   justify-content: flex-end;
-
   position: absolute;
 `;
