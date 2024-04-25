@@ -241,9 +241,7 @@ export const Header = () => {
       </HeaderSection>{" "}
       {isMobile && windowWidth <= 1024 && mobileMenuOpen && (
         <HeaderSectionMenuMobileSection open={menuOpen}>
-          <HeaderSectionMenuMobile
-          // onClick={() => toggleMenuOption("features")}
-          >
+          <HeaderSectionMenuMobile>
             <HeaderSectionMenuSingleMobile
               onClick={() => toggleMenuOption("features")}>
               <HeaderSectionMenuSingleMobileFirstLine>
@@ -263,8 +261,6 @@ export const Header = () => {
               </HeaderSectionMenuSingleMobileFirstLine>
               {menuOptions.features && (
                 <HeaderSectionMenuAdditionalInfoMenuMobile>
-                  {/* <HeaderSectionMenuAdditionalInfoMobile
-                    visible={menuOptions.features}> */}
                   <HeaderSectionMenuAdditionalInfoSingleLine>
                     <HeaderSectionMenuAdditionalInfoSingleLineImage>
                       <svg
@@ -280,7 +276,7 @@ export const Header = () => {
                     <HeaderSectionMenuAdditionalInfoSingleLineText>
                       Todo List
                     </HeaderSectionMenuAdditionalInfoSingleLineText>
-                  </HeaderSectionMenuAdditionalInfoSingleLine>{" "}
+                  </HeaderSectionMenuAdditionalInfoSingleLine>
                   <HeaderSectionMenuAdditionalInfoSingleLine>
                     <HeaderSectionMenuAdditionalInfoSingleLineImage>
                       <svg
@@ -296,7 +292,7 @@ export const Header = () => {
                     <HeaderSectionMenuAdditionalInfoSingleLineText>
                       Calendar
                     </HeaderSectionMenuAdditionalInfoSingleLineText>
-                  </HeaderSectionMenuAdditionalInfoSingleLine>{" "}
+                  </HeaderSectionMenuAdditionalInfoSingleLine>
                   <HeaderSectionMenuAdditionalInfoSingleLine>
                     <HeaderSectionMenuAdditionalInfoSingleLineImage>
                       <svg
@@ -329,31 +325,48 @@ export const Header = () => {
                       Planning
                     </HeaderSectionMenuAdditionalInfoSingleLineText>
                   </HeaderSectionMenuAdditionalInfoSingleLine>{" "}
-                  {/* </HeaderSectionMenuAdditionalInfoMobile> */}
                 </HeaderSectionMenuAdditionalInfoMenuMobile>
               )}
             </HeaderSectionMenuSingleMobile>
 
-            {/* <HeaderSectionMenuSingleFirstLineMobile>
-              Company
-            </HeaderSectionMenuSingleFirstLineMobile>
-            {menuOptions.company && (
-              <HeaderSectionMenuAdditionalInfoMobile
-                visible={menuOptions.company}>
-                <HeaderSectionMenuAdditionalInfoSingleLineMobile>
-                  <HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
-                    History
-                  </HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
-                </HeaderSectionMenuAdditionalInfoSingleLineMobile>
-              </HeaderSectionMenuAdditionalInfoMobile>
-            )} */}
+            <HeaderSectionMenuSingleMobile
+              onClick={() => toggleMenuOption("company")}>
+              <HeaderSectionMenuSingleMobileFirstLine>
+                <HeaderSectionMenuSingleFirstLineMobile>
+                  Company
+                </HeaderSectionMenuSingleFirstLineMobile>
+                <HeaderSectionMenuSingleImageMobile>
+                  <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      stroke="#686868"
+                      stroke-width="1.5"
+                      fill="none"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </HeaderSectionMenuSingleImageMobile>
+              </HeaderSectionMenuSingleMobileFirstLine>
+              {menuOptions.company && (
+                <HeaderSectionMenuAdditionalInfoMenuMobile>
+                  <HeaderSectionMenuAdditionalInfoSingleLine>
+                    <HeaderSectionMenuAdditionalInfoSingleLineText>
+                      History
+                    </HeaderSectionMenuAdditionalInfoSingleLineText>
+                  </HeaderSectionMenuAdditionalInfoSingleLine>{" "}
+                  <HeaderSectionMenuAdditionalInfoSingleLine>
+                    <HeaderSectionMenuAdditionalInfoSingleLineText>
+                      Careers
+                    </HeaderSectionMenuAdditionalInfoSingleLineText>
+                  </HeaderSectionMenuAdditionalInfoSingleLine>{" "}
+                  <HeaderSectionMenuAdditionalInfoSingleLine>
+                    <HeaderSectionMenuAdditionalInfoSingleLineText>
+                      About
+                    </HeaderSectionMenuAdditionalInfoSingleLineText>
+                  </HeaderSectionMenuAdditionalInfoSingleLine>
+                </HeaderSectionMenuAdditionalInfoMenuMobile>
+              )}
+            </HeaderSectionMenuSingleMobile>
 
-            {/* <HeaderSectionMenuSingleFirstLineMobile>
-              Careers
-            </HeaderSectionMenuSingleFirstLineMobile>
-            <HeaderSectionMenuSingleFirstLineMobile>
-              About
-            </HeaderSectionMenuSingleFirstLineMobile>
             <HeaderSectionLoginMobile>
               <HeaderSectionLoginSingleMobile>
                 Login
@@ -361,7 +374,7 @@ export const Header = () => {
               <HeaderSectionLoginButtonMobile>
                 Sign Up
               </HeaderSectionLoginButtonMobile>
-            </HeaderSectionLoginMobile> */}
+            </HeaderSectionLoginMobile>
           </HeaderSectionMenuMobile>
         </HeaderSectionMenuMobileSection>
       )}
