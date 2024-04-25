@@ -75,7 +75,6 @@ export const HeaderSectionMenuIcon = styled.div`
   @media (max-width: 1024px) {
     width: auto;
     margin-right: 50px;
-    /* margin: 0; */
   }
 `;
 
@@ -313,7 +312,6 @@ export const HeaderSectionLoginButtonMobile = styled.button`
 export const HeaderSectionMenuAdditionalInfoMobile = styled.div<AdditionalInfoProps>`
   display: ${({ visible }) => (visible ? "flex" : "none")};
   position: absolute;
-  /* top: 100%; */
   background-color: white;
   color: var(--neutral-medium-gray);
   padding: 10px;
@@ -322,7 +320,6 @@ export const HeaderSectionMenuAdditionalInfoMobile = styled.div<AdditionalInfoPr
   border-radius: 10px;
   z-index: 999;
   flex-direction: column;
-  /* margin-top: -50px; */
 `;
 
 export const HeaderSectionMenuAdditionalInfoMenuMobile = styled.div`

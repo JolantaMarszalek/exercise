@@ -47,10 +47,6 @@ export const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // const toggleMenu = () => {
-  //   setMenuOpen(!menuOpen);
-  // };
-
   const isMobile = windowWidth <= 1024;
 
   const toggleMenu = () => {
@@ -68,8 +64,6 @@ export const Header = () => {
     }));
   };
 
-  // const isMobile = windowWidth <= 1024;
-
   return (
     <>
       <HeaderSection>
@@ -81,7 +75,6 @@ export const Header = () => {
             />
           </svg>
         </HeaderSectionLogo>
-        {/* {isMobile && (windowWidth <= 1024 || menuOpen) && ( */}
         {isMobile && windowWidth <= 1024 && (
           <HeaderSectionMenuIcon className="icon-menu" onClick={toggleMenu}>
             <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
