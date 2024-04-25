@@ -129,7 +129,7 @@ export const HeaderSectionMenuAdditionalInfo = styled.div<AdditionalInfoProps>`
 `;
 
 export const HeaderSectionMenuAdditionalInfoSingleLine = styled.div`
-  background-color: white;
+  background-color: var(--neutral-almost-white);
   color: var(--neutral-medium-gray);
   padding: 10px;
   z-index: 999;
@@ -326,14 +326,14 @@ export const HeaderSectionMenuAdditionalInfoMobile = styled.div<AdditionalInfoPr
 `;
 
 export const HeaderSectionMenuAdditionalInfoMenuMobile = styled.div`
-  background-color: white;
+  background-color: var(--neutral-almost-white);
   color: var(--neutral-medium-gray);
   z-index: 999;
   flex-direction: column;
 `;
 
 export const HeaderSectionMenuAdditionalInfoSingleLineMobile = styled.div`
-  background-color: white;
+  background-color: var(--neutral-almost-white);
   color: var(--neutral-medium-gray);
   padding: 10px;
   z-index: 999;

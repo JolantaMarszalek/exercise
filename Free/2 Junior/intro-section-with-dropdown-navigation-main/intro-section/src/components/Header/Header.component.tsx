@@ -11,14 +11,9 @@ import {
   HeaderSectionMenu,
   HeaderSectionMenuAdditionalInfo,
   HeaderSectionMenuAdditionalInfoMenuMobile,
-  HeaderSectionMenuAdditionalInfoMobile,
   HeaderSectionMenuAdditionalInfoSingleLine,
   HeaderSectionMenuAdditionalInfoSingleLineImage,
-  HeaderSectionMenuAdditionalInfoSingleLineImageMobile,
-  HeaderSectionMenuAdditionalInfoSingleLineMobile,
   HeaderSectionMenuAdditionalInfoSingleLineText,
-  HeaderSectionMenuAdditionalInfoSingleLineTextMobile,
-  HeaderSectionMenuAdditionalInfomenuMobile,
   HeaderSectionMenuIcon,
   HeaderSectionMenuMobile,
   HeaderSectionMenuMobileSection,
@@ -29,7 +24,6 @@ import {
   HeaderSectionMenuSingleFirstLineMobile,
   HeaderSectionMenuSingleImage,
   HeaderSectionMenuSingleImageMobile,
-  HeaderSectionMenuSingleImagemobile,
   HeaderSectionMenuSingleMobile,
   HeaderSectionMenuSingleMobileFirstLine,
 } from "./Header.styled";
@@ -324,11 +318,10 @@ export const Header = () => {
                     <HeaderSectionMenuAdditionalInfoSingleLineText>
                       Planning
                     </HeaderSectionMenuAdditionalInfoSingleLineText>
-                  </HeaderSectionMenuAdditionalInfoSingleLine>{" "}
+                  </HeaderSectionMenuAdditionalInfoSingleLine>
                 </HeaderSectionMenuAdditionalInfoMenuMobile>
               )}
             </HeaderSectionMenuSingleMobile>
-
             <HeaderSectionMenuSingleMobile
               onClick={() => toggleMenuOption("company")}>
               <HeaderSectionMenuSingleMobileFirstLine>
@@ -352,21 +345,34 @@ export const Header = () => {
                     <HeaderSectionMenuAdditionalInfoSingleLineText>
                       History
                     </HeaderSectionMenuAdditionalInfoSingleLineText>
-                  </HeaderSectionMenuAdditionalInfoSingleLine>{" "}
+                  </HeaderSectionMenuAdditionalInfoSingleLine>
                   <HeaderSectionMenuAdditionalInfoSingleLine>
                     <HeaderSectionMenuAdditionalInfoSingleLineText>
-                      Careers
+                      our Team
                     </HeaderSectionMenuAdditionalInfoSingleLineText>
-                  </HeaderSectionMenuAdditionalInfoSingleLine>{" "}
+                  </HeaderSectionMenuAdditionalInfoSingleLine>
                   <HeaderSectionMenuAdditionalInfoSingleLine>
                     <HeaderSectionMenuAdditionalInfoSingleLineText>
-                      About
+                      Blog
                     </HeaderSectionMenuAdditionalInfoSingleLineText>
                   </HeaderSectionMenuAdditionalInfoSingleLine>
                 </HeaderSectionMenuAdditionalInfoMenuMobile>
               )}
             </HeaderSectionMenuSingleMobile>
-
+            <HeaderSectionMenuSingleMobile>
+              <HeaderSectionMenuSingleMobileFirstLine>
+                <HeaderSectionMenuSingleFirstLineMobile>
+                  Careers
+                </HeaderSectionMenuSingleFirstLineMobile>
+              </HeaderSectionMenuSingleMobileFirstLine>
+            </HeaderSectionMenuSingleMobile>
+            <HeaderSectionMenuSingleMobile>
+              <HeaderSectionMenuSingleMobileFirstLine>
+                <HeaderSectionMenuSingleFirstLineMobile>
+                  About
+                </HeaderSectionMenuSingleFirstLineMobile>
+              </HeaderSectionMenuSingleMobileFirstLine>
+            </HeaderSectionMenuSingleMobile>
             <HeaderSectionLoginMobile>
               <HeaderSectionLoginSingleMobile>
                 Login
