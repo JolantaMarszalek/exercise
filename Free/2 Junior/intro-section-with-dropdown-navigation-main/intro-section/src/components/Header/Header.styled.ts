@@ -235,6 +235,18 @@ export const HeaderSectionMenuSingleMobile = styled.div`
   padding: 10px;
   flex-direction: row;
   align-items: flex-start;
+  flex-direction: column;
+`;
+
+export const HeaderSectionMenuSingleMobileFirstLine = styled.div`
+  display: flex;
+  height: auto;
+  color: var(--neutral-medium-gray);
+  z-index: 2;
+  width: 100%;
+  padding: 10px;
+  flex-direction: row;
+  align-items: flex-start;
 `;
 
 export const HeaderSectionMenuSingleFirstLineMobile = styled.div`
@@ -311,6 +323,13 @@ export const HeaderSectionMenuAdditionalInfoMobile = styled.div<AdditionalInfoPr
   z-index: 999;
   flex-direction: column;
   /* margin-top: -50px; */
+`;
+
+export const HeaderSectionMenuAdditionalInfoMenuMobile = styled.div`
+  background-color: white;
+  color: var(--neutral-medium-gray);
+  z-index: 999;
+  flex-direction: column;
 `;
 
 export const HeaderSectionMenuAdditionalInfoSingleLineMobile = styled.div`

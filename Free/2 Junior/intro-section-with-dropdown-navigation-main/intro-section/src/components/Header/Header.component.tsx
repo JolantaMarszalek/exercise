@@ -10,6 +10,7 @@ import {
   HeaderSectionLogo,
   HeaderSectionMenu,
   HeaderSectionMenuAdditionalInfo,
+  HeaderSectionMenuAdditionalInfoMenuMobile,
   HeaderSectionMenuAdditionalInfoMobile,
   HeaderSectionMenuAdditionalInfoSingleLine,
   HeaderSectionMenuAdditionalInfoSingleLineImage,
@@ -17,6 +18,7 @@ import {
   HeaderSectionMenuAdditionalInfoSingleLineMobile,
   HeaderSectionMenuAdditionalInfoSingleLineText,
   HeaderSectionMenuAdditionalInfoSingleLineTextMobile,
+  HeaderSectionMenuAdditionalInfomenuMobile,
   HeaderSectionMenuIcon,
   HeaderSectionMenuMobile,
   HeaderSectionMenuMobileSection,
@@ -29,6 +31,7 @@ import {
   HeaderSectionMenuSingleImageMobile,
   HeaderSectionMenuSingleImagemobile,
   HeaderSectionMenuSingleMobile,
+  HeaderSectionMenuSingleMobileFirstLine,
 } from "./Header.styled";
 
 export const Header = () => {
@@ -243,22 +246,25 @@ export const Header = () => {
           >
             <HeaderSectionMenuSingleMobile
               onClick={() => toggleMenuOption("features")}>
-              <HeaderSectionMenuSingleFirstLineMobile>
-                Features
-              </HeaderSectionMenuSingleFirstLineMobile>
-              <HeaderSectionMenuSingleImageMobile>
-                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    stroke="#686868"
-                    stroke-width="1.5"
-                    fill="none"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
-              </HeaderSectionMenuSingleImageMobile>
+              <HeaderSectionMenuSingleMobileFirstLine>
+                <HeaderSectionMenuSingleFirstLineMobile>
+                  Features
+                </HeaderSectionMenuSingleFirstLineMobile>
+                <HeaderSectionMenuSingleImageMobile>
+                  <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      stroke="#686868"
+                      stroke-width="1.5"
+                      fill="none"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </HeaderSectionMenuSingleImageMobile>
+              </HeaderSectionMenuSingleMobileFirstLine>
               {menuOptions.features && (
-                <HeaderSectionMenuAdditionalInfoMobile
-                  visible={menuOptions.features}>
+                <HeaderSectionMenuAdditionalInfoMenuMobile>
+                  {/* <HeaderSectionMenuAdditionalInfoMobile
+                    visible={menuOptions.features}> */}
                   <HeaderSectionMenuAdditionalInfoSingleLine>
                     <HeaderSectionMenuAdditionalInfoSingleLineImage>
                       <svg
@@ -323,11 +329,12 @@ export const Header = () => {
                       Planning
                     </HeaderSectionMenuAdditionalInfoSingleLineText>
                   </HeaderSectionMenuAdditionalInfoSingleLine>{" "}
-                </HeaderSectionMenuAdditionalInfoMobile>
+                  {/* </HeaderSectionMenuAdditionalInfoMobile> */}
+                </HeaderSectionMenuAdditionalInfoMenuMobile>
               )}
             </HeaderSectionMenuSingleMobile>
 
-            <HeaderSectionMenuSingleFirstLineMobile>
+            {/* <HeaderSectionMenuSingleFirstLineMobile>
               Company
             </HeaderSectionMenuSingleFirstLineMobile>
             {menuOptions.company && (
@@ -339,9 +346,9 @@ export const Header = () => {
                   </HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
                 </HeaderSectionMenuAdditionalInfoSingleLineMobile>
               </HeaderSectionMenuAdditionalInfoMobile>
-            )}
+            )} */}
 
-            <HeaderSectionMenuSingleFirstLineMobile>
+            {/* <HeaderSectionMenuSingleFirstLineMobile>
               Careers
             </HeaderSectionMenuSingleFirstLineMobile>
             <HeaderSectionMenuSingleFirstLineMobile>
@@ -354,7 +361,7 @@ export const Header = () => {
               <HeaderSectionLoginButtonMobile>
                 Sign Up
               </HeaderSectionLoginButtonMobile>
-            </HeaderSectionLoginMobile>
+            </HeaderSectionLoginMobile> */}
           </HeaderSectionMenuMobile>
         </HeaderSectionMenuMobileSection>
       )}
