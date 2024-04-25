@@ -343,7 +343,7 @@ export const Header = () => {
                   </HeaderSectionMenuAdditionalInfoSingleLineMobile>
                   <HeaderSectionMenuAdditionalInfoSingleLineMobile>
                     <HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
-                      our Team
+                      Our Team
                     </HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
                   </HeaderSectionMenuAdditionalInfoSingleLineMobile>
                   <HeaderSectionMenuAdditionalInfoSingleLineMobile>
