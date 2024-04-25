@@ -201,7 +201,7 @@ export const HeaderSectionLoginButton = styled.button`
   }
 `;
 
-export const HeaderSectionMenuMobile = styled.div<{ open: boolean }>`
+export const HeaderSectionMenuMobileSection = styled.div<{ open: boolean }>`
   display: flex;
   gap: 20px;
   z-index: 3;
@@ -210,4 +210,85 @@ export const HeaderSectionMenuMobile = styled.div<{ open: boolean }>`
   align-items: center;
   justify-content: flex-end;
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+`;
+
+export const HeaderSectionMenuMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 3;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  background-color: var(--neutral-almost-white);
+`;
+
+export const HeaderSectionMenuSingleMobie = styled.div`
+  display: flex;
+  height: auto;
+  color: var(--neutral-medium-gray);
+  z-index: 2;
+  width: 100px;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+`;
+
+export const HeaderSectionMenuSingleFirstLineMobile = styled.div`
+  color: var(--neutral-medium-gray);
+  z-index: 2;
+  gap: 10px;
+  height: auto;
+  font-weight: 500;
+  display: flex;
+
+  &:hover {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--neutral-almost-black);
+  }
+`;
+
+export const HeaderSectionLoginMobile = styled.div`
+  display: flex;
+  gap: 20px;
+  margin-right: 50px;
+  align-items: flex-start;
+  z-index: 1;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const HeaderSectionLoginSingleMobile = styled.div`
+  color: var(--neutral-medium-gray);
+  z-index: 1;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--neutral-almost-black);
+  }
+`;
+
+export const HeaderSectionLoginButtonMobile = styled.button`
+  height: 45px;
+  width: 130px;
+  background-color: var(--neutral-almost-white);
+  color: var(--neutral-medium-gray);
+  border-radius: 15px;
+  border: 2px solid var(--neutral-medium-gray);
+  z-index: 1;
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--neutral-almost-black);
+  }
 `;

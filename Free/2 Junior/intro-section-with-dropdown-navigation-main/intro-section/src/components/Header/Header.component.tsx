@@ -3,7 +3,10 @@ import {
   HeaderSection,
   HeaderSectionLogin,
   HeaderSectionLoginButton,
+  HeaderSectionLoginButtonMobile,
+  HeaderSectionLoginMobile,
   HeaderSectionLoginSingle,
+  HeaderSectionLoginSingleMobile,
   HeaderSectionLogo,
   HeaderSectionMenu,
   HeaderSectionMenuAdditionalInfo,
@@ -12,11 +15,14 @@ import {
   HeaderSectionMenuAdditionalInfoSingleLineText,
   HeaderSectionMenuIcon,
   HeaderSectionMenuMobile,
+  HeaderSectionMenuMobileSection,
   HeaderSectionMenuPartFirst,
   HeaderSectionMenuPartSecond,
   HeaderSectionMenuSingle,
   HeaderSectionMenuSingleFirstLine,
+  HeaderSectionMenuSingleFirstLineMobile,
   HeaderSectionMenuSingleImage,
+  HeaderSectionMenuSingleMobie,
 } from "./Header.styled";
 
 export const Header = () => {
@@ -222,13 +228,33 @@ export const Header = () => {
         )}
       </HeaderSection>{" "}
       {isMobile && windowWidth <= 1024 && mobileMenuOpen && (
-        <HeaderSectionMenuMobile open={menuOpen}>
-          <HeaderSectionMenuSingle onClick={() => toggleMenuOption("features")}>
-            <HeaderSectionMenuSingleFirstLine>
-              test
-            </HeaderSectionMenuSingleFirstLine>
-          </HeaderSectionMenuSingle>
-        </HeaderSectionMenuMobile>
+        <HeaderSectionMenuMobileSection open={menuOpen}>
+          <HeaderSectionMenuMobile>
+            <HeaderSectionMenuSingleMobie
+              onClick={() => toggleMenuOption("features")}>
+              <HeaderSectionMenuSingleFirstLineMobile>
+                Features
+              </HeaderSectionMenuSingleFirstLineMobile>
+              <HeaderSectionMenuSingleFirstLineMobile>
+                Company
+              </HeaderSectionMenuSingleFirstLineMobile>
+              <HeaderSectionMenuSingleFirstLineMobile>
+                Careers
+              </HeaderSectionMenuSingleFirstLineMobile>
+              <HeaderSectionMenuSingleFirstLineMobile>
+                About
+              </HeaderSectionMenuSingleFirstLineMobile>
+              <HeaderSectionLoginMobile>
+                <HeaderSectionLoginSingleMobile>
+                  Login
+                </HeaderSectionLoginSingleMobile>
+                <HeaderSectionLoginButtonMobile>
+                  Sign Up
+                </HeaderSectionLoginButtonMobile>
+              </HeaderSectionLoginMobile>
+            </HeaderSectionMenuSingleMobie>
+          </HeaderSectionMenuMobile>
+        </HeaderSectionMenuMobileSection>
       )}
     </>
   );
