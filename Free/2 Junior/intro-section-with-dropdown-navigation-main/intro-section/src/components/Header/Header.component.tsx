@@ -229,7 +229,7 @@ export const Header = () => {
             <HeaderSectionMenuPartSecond>
               <HeaderSectionLogin>
                 <HeaderSectionLoginSingle>Login</HeaderSectionLoginSingle>
-                <HeaderSectionLoginButton>Sign Up</HeaderSectionLoginButton>
+                <HeaderSectionLoginButton>Register</HeaderSectionLoginButton>
               </HeaderSectionLogin>
             </HeaderSectionMenuPartSecond>
           </HeaderSectionMenu>
@@ -380,7 +380,7 @@ export const Header = () => {
                 Login
               </HeaderSectionLoginSingleMobile>
               <HeaderSectionLoginButtonMobile>
-                Sign Up
+                Register
               </HeaderSectionLoginButtonMobile>
             </HeaderSectionLoginMobile>
           </HeaderSectionMenuMobile>
