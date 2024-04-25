@@ -13,7 +13,9 @@ import {
   HeaderSectionMenuAdditionalInfoMenuMobile,
   HeaderSectionMenuAdditionalInfoSingleLine,
   HeaderSectionMenuAdditionalInfoSingleLineImage,
+  HeaderSectionMenuAdditionalInfoSingleLineMobile,
   HeaderSectionMenuAdditionalInfoSingleLineText,
+  HeaderSectionMenuAdditionalInfoSingleLineTextMobile,
   HeaderSectionMenuIcon,
   HeaderSectionMenuMobile,
   HeaderSectionMenuMobileSection,
@@ -255,7 +257,7 @@ export const Header = () => {
               </HeaderSectionMenuSingleMobileFirstLine>
               {menuOptions.features && (
                 <HeaderSectionMenuAdditionalInfoMenuMobile>
-                  <HeaderSectionMenuAdditionalInfoSingleLine>
+                  <HeaderSectionMenuAdditionalInfoSingleLineMobile>
                     <HeaderSectionMenuAdditionalInfoSingleLineImage>
                       <svg
                         width="14"
@@ -267,11 +269,11 @@ export const Header = () => {
                         />
                       </svg>
                     </HeaderSectionMenuAdditionalInfoSingleLineImage>
-                    <HeaderSectionMenuAdditionalInfoSingleLineText>
+                    <HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
                       Todo List
-                    </HeaderSectionMenuAdditionalInfoSingleLineText>
-                  </HeaderSectionMenuAdditionalInfoSingleLine>
-                  <HeaderSectionMenuAdditionalInfoSingleLine>
+                    </HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
+                  </HeaderSectionMenuAdditionalInfoSingleLineMobile>
+                  <HeaderSectionMenuAdditionalInfoSingleLineMobile>
                     <HeaderSectionMenuAdditionalInfoSingleLineImage>
                       <svg
                         width="16"
@@ -283,11 +285,11 @@ export const Header = () => {
                         />
                       </svg>
                     </HeaderSectionMenuAdditionalInfoSingleLineImage>
-                    <HeaderSectionMenuAdditionalInfoSingleLineText>
+                    <HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
                       Calendar
-                    </HeaderSectionMenuAdditionalInfoSingleLineText>
-                  </HeaderSectionMenuAdditionalInfoSingleLine>
-                  <HeaderSectionMenuAdditionalInfoSingleLine>
+                    </HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
+                  </HeaderSectionMenuAdditionalInfoSingleLineMobile>
+                  <HeaderSectionMenuAdditionalInfoSingleLineMobile>
                     <HeaderSectionMenuAdditionalInfoSingleLineImage>
                       <svg
                         width="13"
@@ -299,11 +301,11 @@ export const Header = () => {
                         />
                       </svg>
                     </HeaderSectionMenuAdditionalInfoSingleLineImage>
-                    <HeaderSectionMenuAdditionalInfoSingleLineText>
+                    <HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
                       Reminders
-                    </HeaderSectionMenuAdditionalInfoSingleLineText>
-                  </HeaderSectionMenuAdditionalInfoSingleLine>
-                  <HeaderSectionMenuAdditionalInfoSingleLine>
+                    </HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
+                  </HeaderSectionMenuAdditionalInfoSingleLineMobile>
+                  <HeaderSectionMenuAdditionalInfoSingleLineMobile>
                     <HeaderSectionMenuAdditionalInfoSingleLineImage>
                       <svg
                         width="16"
@@ -315,10 +317,10 @@ export const Header = () => {
                         />
                       </svg>
                     </HeaderSectionMenuAdditionalInfoSingleLineImage>
-                    <HeaderSectionMenuAdditionalInfoSingleLineText>
+                    <HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
                       Planning
-                    </HeaderSectionMenuAdditionalInfoSingleLineText>
-                  </HeaderSectionMenuAdditionalInfoSingleLine>
+                    </HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
+                  </HeaderSectionMenuAdditionalInfoSingleLineMobile>
                 </HeaderSectionMenuAdditionalInfoMenuMobile>
               )}
             </HeaderSectionMenuSingleMobile>
@@ -341,21 +343,21 @@ export const Header = () => {
               </HeaderSectionMenuSingleMobileFirstLine>
               {menuOptions.company && (
                 <HeaderSectionMenuAdditionalInfoMenuMobile>
-                  <HeaderSectionMenuAdditionalInfoSingleLine>
-                    <HeaderSectionMenuAdditionalInfoSingleLineText>
+                  <HeaderSectionMenuAdditionalInfoSingleLineMobile>
+                    <HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
                       History
-                    </HeaderSectionMenuAdditionalInfoSingleLineText>
-                  </HeaderSectionMenuAdditionalInfoSingleLine>
-                  <HeaderSectionMenuAdditionalInfoSingleLine>
-                    <HeaderSectionMenuAdditionalInfoSingleLineText>
+                    </HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
+                  </HeaderSectionMenuAdditionalInfoSingleLineMobile>
+                  <HeaderSectionMenuAdditionalInfoSingleLineMobile>
+                    <HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
                       our Team
-                    </HeaderSectionMenuAdditionalInfoSingleLineText>
-                  </HeaderSectionMenuAdditionalInfoSingleLine>
-                  <HeaderSectionMenuAdditionalInfoSingleLine>
-                    <HeaderSectionMenuAdditionalInfoSingleLineText>
+                    </HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
+                  </HeaderSectionMenuAdditionalInfoSingleLineMobile>
+                  <HeaderSectionMenuAdditionalInfoSingleLineMobile>
+                    <HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
                       Blog
-                    </HeaderSectionMenuAdditionalInfoSingleLineText>
-                  </HeaderSectionMenuAdditionalInfoSingleLine>
+                    </HeaderSectionMenuAdditionalInfoSingleLineTextMobile>
+                  </HeaderSectionMenuAdditionalInfoSingleLineMobile>
                 </HeaderSectionMenuAdditionalInfoMenuMobile>
               )}
             </HeaderSectionMenuSingleMobile>

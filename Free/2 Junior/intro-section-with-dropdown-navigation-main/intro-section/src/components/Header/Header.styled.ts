@@ -129,7 +129,7 @@ export const HeaderSectionMenuAdditionalInfo = styled.div<AdditionalInfoProps>`
 `;
 
 export const HeaderSectionMenuAdditionalInfoSingleLine = styled.div`
-  background-color: var(--neutral-almost-white);
+  background-color: white;
   color: var(--neutral-medium-gray);
   padding: 10px;
   z-index: 999;
