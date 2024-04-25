@@ -220,21 +220,21 @@ export const HeaderSectionMenuMobile = styled.div`
   z-index: 3;
   height: 100%;
   width: 50%;
-  align-items: center;
   justify-content: flex-start;
   position: absolute;
   background-color: var(--neutral-almost-white);
+  align-items: flex-start;
 `;
 
-export const HeaderSectionMenuSingleMobie = styled.div`
+export const HeaderSectionMenuSingleMobile = styled.div`
   display: flex;
   height: auto;
   color: var(--neutral-medium-gray);
   z-index: 2;
-  width: 100px;
-  align-items: center;
+  width: 100%;
   padding: 10px;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-start;
 `;
 
 export const HeaderSectionMenuSingleFirstLineMobile = styled.div`
@@ -252,12 +252,17 @@ export const HeaderSectionMenuSingleFirstLineMobile = styled.div`
   }
 `;
 
+export const HeaderSectionMenuSingleImageMobile = styled.div`
+  color: var(--neutral-medium-gray);
+  z-index: 2;
+  padding-left: 10px;
+`;
+
 export const HeaderSectionLoginMobile = styled.div`
   display: flex;
   gap: 20px;
-  margin-right: 50px;
-  align-items: flex-start;
   z-index: 1;
+  width: 100%;
   align-items: center;
   flex-direction: column;
 `;
@@ -291,4 +296,43 @@ export const HeaderSectionLoginButtonMobile = styled.button`
     font-weight: 500;
     color: var(--neutral-almost-black);
   }
+`;
+
+export const HeaderSectionMenuAdditionalInfoMobile = styled.div<AdditionalInfoProps>`
+  display: ${({ visible }) => (visible ? "flex" : "none")};
+  position: absolute;
+  /* top: 100%; */
+  background-color: white;
+  color: var(--neutral-medium-gray);
+  padding: 10px;
+  border: 1px solid var(--neutral-almost-white);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 999;
+  flex-direction: column;
+  /* margin-top: -50px; */
+`;
+
+export const HeaderSectionMenuAdditionalInfoSingleLineMobile = styled.div`
+  background-color: white;
+  color: var(--neutral-medium-gray);
+  padding: 10px;
+  z-index: 999;
+  display: flex;
+  height: auto;
+`;
+
+export const HeaderSectionMenuAdditionalInfoSingleLineImageMobile = styled.div`
+  color: var(--neutral-medium-gray);
+  padding-right: 10px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const HeaderSectionMenuAdditionalInfoSingleLineTextMobile = styled.div`
+  color: var(--neutral-medium-gray);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
 `;
