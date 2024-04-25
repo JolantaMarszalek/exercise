@@ -127,7 +127,7 @@ export const Header = () => {
                       <HeaderSectionMenuAdditionalInfoSingleLineText>
                         Todo List
                       </HeaderSectionMenuAdditionalInfoSingleLineText>
-                    </HeaderSectionMenuAdditionalInfoSingleLine>{" "}
+                    </HeaderSectionMenuAdditionalInfoSingleLine>
                     <HeaderSectionMenuAdditionalInfoSingleLine>
                       <HeaderSectionMenuAdditionalInfoSingleLineImage>
                         <svg
@@ -143,7 +143,7 @@ export const Header = () => {
                       <HeaderSectionMenuAdditionalInfoSingleLineText>
                         Calendar
                       </HeaderSectionMenuAdditionalInfoSingleLineText>
-                    </HeaderSectionMenuAdditionalInfoSingleLine>{" "}
+                    </HeaderSectionMenuAdditionalInfoSingleLine>
                     <HeaderSectionMenuAdditionalInfoSingleLine>
                       <HeaderSectionMenuAdditionalInfoSingleLineImage>
                         <svg
@@ -175,7 +175,7 @@ export const Header = () => {
                       <HeaderSectionMenuAdditionalInfoSingleLineText>
                         Planning
                       </HeaderSectionMenuAdditionalInfoSingleLineText>
-                    </HeaderSectionMenuAdditionalInfoSingleLine>{" "}
+                    </HeaderSectionMenuAdditionalInfoSingleLine>
                   </HeaderSectionMenuAdditionalInfo>
                 )}
               </HeaderSectionMenuSingle>
@@ -224,7 +224,7 @@ export const Header = () => {
                 <HeaderSectionMenuSingleFirstLine>
                   About
                 </HeaderSectionMenuSingleFirstLine>
-              </HeaderSectionMenuSingle>{" "}
+              </HeaderSectionMenuSingle>
             </HeaderSectionMenuPartFirst>
             <HeaderSectionMenuPartSecond>
               <HeaderSectionLogin>
@@ -234,7 +234,7 @@ export const Header = () => {
             </HeaderSectionMenuPartSecond>
           </HeaderSectionMenu>
         )}
-      </HeaderSection>{" "}
+      </HeaderSection>
       {isMobile && windowWidth <= 1024 && mobileMenuOpen && (
         <HeaderSectionMenuMobileSection open={menuOpen}>
           <HeaderSectionMenuMobile>
