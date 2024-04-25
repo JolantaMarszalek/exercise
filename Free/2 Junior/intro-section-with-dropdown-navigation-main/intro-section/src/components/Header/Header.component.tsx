@@ -238,10 +238,11 @@ export const Header = () => {
       </HeaderSection>{" "}
       {isMobile && windowWidth <= 1024 && mobileMenuOpen && (
         <HeaderSectionMenuMobileSection open={menuOpen}>
-          <HeaderSectionMenuMobile onClick={() => toggleMenuOption("features")}>
+          <HeaderSectionMenuMobile
+          // onClick={() => toggleMenuOption("features")}
+          >
             <HeaderSectionMenuSingleMobile
-            // onClick={() => toggleMenuOption("features")}
-            >
+              onClick={() => toggleMenuOption("features")}>
               <HeaderSectionMenuSingleFirstLineMobile>
                 Features
               </HeaderSectionMenuSingleFirstLineMobile>
@@ -256,7 +257,8 @@ export const Header = () => {
                 </svg>
               </HeaderSectionMenuSingleImageMobile>
               {menuOptions.features && (
-                <HeaderSectionMenuAdditionalInfo visible={menuOptions.features}>
+                <HeaderSectionMenuAdditionalInfoMobile
+                  visible={menuOptions.features}>
                   <HeaderSectionMenuAdditionalInfoSingleLine>
                     <HeaderSectionMenuAdditionalInfoSingleLineImage>
                       <svg
@@ -321,7 +323,7 @@ export const Header = () => {
                       Planning
                     </HeaderSectionMenuAdditionalInfoSingleLineText>
                   </HeaderSectionMenuAdditionalInfoSingleLine>{" "}
-                </HeaderSectionMenuAdditionalInfo>
+                </HeaderSectionMenuAdditionalInfoMobile>
               )}
             </HeaderSectionMenuSingleMobile>
 
