@@ -32,7 +32,6 @@ export const HeaderSectionLogo = styled.div`
 
   @media (max-width: 1024px) {
     width: auto;
-    /* margin: 0; */
     margin-left: 50px;
   }
 `;
@@ -76,7 +75,6 @@ export const HeaderSectionMenuIcon = styled.div`
   @media (max-width: 1024px) {
     width: auto;
     margin-right: 50px;
-    /* margin: 0; */
   }
 `;
 
@@ -200,4 +198,157 @@ export const HeaderSectionLoginButton = styled.button`
     font-weight: 500;
     color: var(--neutral-almost-black);
   }
+`;
+
+export const HeaderSectionMenuMobileSection = styled.div<{ open: boolean }>`
+  display: flex;
+  gap: 20px;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+`;
+
+export const HeaderSectionMenuMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 3;
+  height: 100%;
+  width: 50%;
+  justify-content: flex-start;
+  position: absolute;
+  background-color: var(--neutral-almost-white);
+  align-items: flex-start;
+`;
+
+export const HeaderSectionMenuSingleMobile = styled.div`
+  display: flex;
+  height: auto;
+  color: var(--neutral-medium-gray);
+  z-index: 2;
+  width: 100%;
+  padding: 10px;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-direction: column;
+`;
+
+export const HeaderSectionMenuSingleMobileFirstLine = styled.div`
+  display: flex;
+  height: auto;
+  color: var(--neutral-medium-gray);
+  z-index: 2;
+  width: 100%;
+  padding: 10px;
+  flex-direction: row;
+  align-items: flex-start;
+`;
+
+export const HeaderSectionMenuSingleFirstLineMobile = styled.div`
+  color: var(--neutral-medium-gray);
+  z-index: 2;
+  gap: 10px;
+  height: auto;
+  font-weight: 500;
+  display: flex;
+
+  &:hover {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--neutral-almost-black);
+  }
+`;
+
+export const HeaderSectionMenuSingleImageMobile = styled.div`
+  color: var(--neutral-medium-gray);
+  z-index: 2;
+  padding-left: 10px;
+`;
+
+export const HeaderSectionLoginMobile = styled.div`
+  display: flex;
+  gap: 20px;
+  z-index: 1;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const HeaderSectionLoginSingleMobile = styled.div`
+  color: var(--neutral-medium-gray);
+  z-index: 1;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--neutral-almost-black);
+  }
+`;
+
+export const HeaderSectionLoginButtonMobile = styled.button`
+  height: 45px;
+  width: 130px;
+  background-color: var(--neutral-almost-white);
+  color: var(--neutral-medium-gray);
+  border-radius: 15px;
+  border: 2px solid var(--neutral-medium-gray);
+  z-index: 1;
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--neutral-almost-black);
+  }
+`;
+
+export const HeaderSectionMenuAdditionalInfoMobile = styled.div<AdditionalInfoProps>`
+  display: ${({ visible }) => (visible ? "flex" : "none")};
+  position: absolute;
+  background-color: white;
+  color: var(--neutral-medium-gray);
+  padding: 10px;
+  border: 1px solid var(--neutral-almost-white);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 999;
+  flex-direction: column;
+`;
+
+export const HeaderSectionMenuAdditionalInfoMenuMobile = styled.div`
+  background-color: var(--neutral-almost-white);
+  color: var(--neutral-medium-gray);
+  z-index: 999;
+  flex-direction: column;
+`;
+
+export const HeaderSectionMenuAdditionalInfoSingleLineMobile = styled.div`
+  background-color: var(--neutral-almost-white);
+  color: var(--neutral-medium-gray);
+  padding: 10px;
+  z-index: 999;
+  display: flex;
+  height: auto;
+`;
+
+export const HeaderSectionMenuAdditionalInfoSingleLineImageMobile = styled.div`
+  color: var(--neutral-medium-gray);
+  padding-right: 10px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const HeaderSectionMenuAdditionalInfoSingleLineTextMobile = styled.div`
+  color: var(--neutral-medium-gray);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
 `;

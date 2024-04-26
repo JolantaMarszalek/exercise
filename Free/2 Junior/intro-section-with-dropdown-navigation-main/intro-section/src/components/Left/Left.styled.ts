@@ -9,7 +9,7 @@ export const LeftSection = styled.section`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 100%;
   }
 `;
 
@@ -44,7 +44,7 @@ export const LeftSectionCardTitle = styled.div`
     flex-direction: column;
     margin: 0;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
   }
 `;
