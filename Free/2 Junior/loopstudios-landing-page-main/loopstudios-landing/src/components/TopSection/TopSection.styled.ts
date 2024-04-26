@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const TopStyled = styled.section`
   display: flex;
   justify-content: space-between;
+  color: black;
+  background-color: yellow;
+  height: 200px;
+  width: 100%;
 
   @media (max-width: 1024px) {
     display: flex;

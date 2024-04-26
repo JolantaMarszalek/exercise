@@ -5,11 +5,10 @@ import { TopSection } from "./components/TopSection/TopSection.component";
 function App() {
   return (
     <>
-      <TopSection></TopSection>
-      <MiddleSection></MiddleSection>
-      <BottomSection></BottomSection>
+      <TopSection />
+      <MiddleSection />
+      <BottomSection />
     </>
   );
 }
-
 export default App;
