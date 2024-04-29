@@ -1,6 +1,6 @@
 import { FooterStyled, FooterStyledHeader } from "./Footer.styled";
 
-export const Header = () => {
+export const Footer = () => {
   return (
     <>
       <FooterStyled>
