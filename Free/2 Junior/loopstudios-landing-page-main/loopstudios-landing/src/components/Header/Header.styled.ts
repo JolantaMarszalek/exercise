@@ -42,10 +42,23 @@ export const HeaderStyledMenuSingle = styled.div`
   display: flex;
   flex-direction: column;
   color: var(--primary-white);
-  padding-left: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
 
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+  }
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    width: 40%;
+    height: 2px;
+    background-color: var(--primary-white);
   }
 `;
