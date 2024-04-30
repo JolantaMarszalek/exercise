@@ -1,10 +1,21 @@
-import { MiddleStyled, MiddleStyledHeader } from "./MiddleSection.styled";
+import {
+  MiddleStyled,
+  MiddleStyledCardLeft,
+  MiddleStyledCardRight,
+} from "./MiddleSection.styled";
+import React from "react";
 
-export const MiddleSection = () => {
+import interactiveImage from "./../../../../images/desktop/image-interactive.jpg";
+
+export const MiddleSection: React.FC = () => {
   return (
     <>
       <MiddleStyled>
-        <MiddleStyledHeader></MiddleStyledHeader>
+        <MiddleStyledCardLeft
+          style={{
+            backgroundImage: `url(${interactiveImage})`,
+          }}></MiddleStyledCardLeft>
+        <MiddleStyledCardRight></MiddleStyledCardRight>
       </MiddleStyled>
     </>
   );
