@@ -26,7 +26,6 @@ export const BottomSection = () => {
         <BottomStyledHeader>
           <BottomStyledHeaderTitle>Our creations</BottomStyledHeaderTitle>
           <BottomStyledHeaderButtonSection>
-            {" "}
             <BottomStyledHeaderButton>See all</BottomStyledHeaderButton>
           </BottomStyledHeaderButtonSection>
         </BottomStyledHeader>

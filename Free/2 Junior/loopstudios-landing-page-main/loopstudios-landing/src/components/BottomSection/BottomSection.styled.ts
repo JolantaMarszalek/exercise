@@ -133,10 +133,17 @@ export const BottomStyledGallerySingleCard2 = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  overflow: hidden;
+  transition: filter 0.3s;
 
   @media (max-width: 1024px) {
     display: flex;
     justify-content: space-between;
+  }
+
+  &:hover {
+    filter: opacity(0.4);
+    /* color: var(--primary-black); */
   }
 `;
 
@@ -148,9 +155,14 @@ export const BottomStyledGallerySingleCardText2 = styled.div`
   font-weight: 300;
   font-size: 40px;
   padding: 55px;
+  transition: opacity 0.3s;
 
   @media (max-width: 1024px) {
     display: flex;
     justify-content: space-between;
+  }
+
+  &:hover {
+    color: var(--primary-black);
   }
 `;
