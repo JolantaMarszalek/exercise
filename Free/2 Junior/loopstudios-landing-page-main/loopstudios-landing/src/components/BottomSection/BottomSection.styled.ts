@@ -120,6 +120,24 @@ export const BottomStyledGallerySingleCard2 = styled.div`
   background-size: cover;
   background-position: center;
   position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+  }
+`;
+
+export const BottomStyledGallerySingleCardText2 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: var(--primary-white);
+  font-weight: 300;
+  font-size: 35px;
+  padding: 30px;
 
   @media (max-width: 1024px) {
     display: flex;

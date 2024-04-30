@@ -4,6 +4,7 @@ import {
   BottomStyledGallery2,
   // BottomStyledGallerySingleCard,
   BottomStyledGallerySingleCard2,
+  BottomStyledGallerySingleCardText2,
   BottomStyledHeader,
   BottomStyledHeaderButton,
   BottomStyledHeaderTitle,
@@ -64,37 +65,69 @@ export const BottomSection = () => {
           <BottomStyledGallerySingleCard2
             style={{
               backgroundImage: `url(${deepEarthImage})`,
-            }}></BottomStyledGallerySingleCard2>
+            }}>
+            <BottomStyledGallerySingleCardText2>
+              Deep earth
+            </BottomStyledGallerySingleCardText2>
+          </BottomStyledGallerySingleCard2>
           <BottomStyledGallerySingleCard2
             style={{
               backgroundImage: `url(${nightArcadeImage})`,
-            }}></BottomStyledGallerySingleCard2>
+            }}>
+            <BottomStyledGallerySingleCardText2>
+              Night arcade
+            </BottomStyledGallerySingleCardText2>
+          </BottomStyledGallerySingleCard2>
           <BottomStyledGallerySingleCard2
             style={{
               backgroundImage: `url(${socerTeamVrImage})`,
-            }}></BottomStyledGallerySingleCard2>
+            }}>
+            <BottomStyledGallerySingleCardText2>
+              Soccer team VR
+            </BottomStyledGallerySingleCardText2>
+          </BottomStyledGallerySingleCard2>
           <BottomStyledGallerySingleCard2
             style={{
               backgroundImage: `url(${theGridImage})`,
-            }}></BottomStyledGallerySingleCard2>
+            }}>
+            <BottomStyledGallerySingleCardText2>
+              The grid
+            </BottomStyledGallerySingleCardText2>
+          </BottomStyledGallerySingleCard2>
         </BottomStyledGallery2>
         <BottomStyledGallery2>
           <BottomStyledGallerySingleCard2
             style={{
               backgroundImage: `url(${fromUpAboveVrImage})`,
-            }}></BottomStyledGallerySingleCard2>
+            }}>
+            <BottomStyledGallerySingleCardText2>
+              From up above VR
+            </BottomStyledGallerySingleCardText2>
+          </BottomStyledGallerySingleCard2>
           <BottomStyledGallerySingleCard2
             style={{
               backgroundImage: `url(${pocketBorealisImage})`,
-            }}></BottomStyledGallerySingleCard2>
+            }}>
+            <BottomStyledGallerySingleCardText2>
+              Pocket borealis
+            </BottomStyledGallerySingleCardText2>
+          </BottomStyledGallerySingleCard2>
           <BottomStyledGallerySingleCard2
             style={{
               backgroundImage: `url(${theCuriosityImage})`,
-            }}></BottomStyledGallerySingleCard2>
+            }}>
+            <BottomStyledGallerySingleCardText2>
+              The curiosity
+            </BottomStyledGallerySingleCardText2>
+          </BottomStyledGallerySingleCard2>
           <BottomStyledGallerySingleCard2
             style={{
               backgroundImage: `url(${makeItFisheyeImage})`,
-            }}></BottomStyledGallerySingleCard2>
+            }}>
+            <BottomStyledGallerySingleCardText2>
+              Make it fisheye
+            </BottomStyledGallerySingleCardText2>
+          </BottomStyledGallerySingleCard2>
         </BottomStyledGallery2>
       </BottomStyled>
     </>
