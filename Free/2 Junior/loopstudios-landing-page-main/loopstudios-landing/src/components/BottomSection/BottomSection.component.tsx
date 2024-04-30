@@ -18,6 +18,7 @@ import fromUpAboveVrImage from "./../../../../images/desktop/image-from-above.jp
 import pocketBorealisImage from "./../../../../images/desktop/image-pocket-borealis.jpg";
 import theCuriosityImage from "./../../../../images/desktop/image-curiosity.jpg";
 import makeItFisheyeImage from "./../../../../images/desktop/image-fisheye.jpg";
+import { Footer } from "../Footer/Footer.component";
 
 export const BottomSection = () => {
   return (
@@ -129,6 +130,7 @@ export const BottomSection = () => {
             </BottomStyledGallerySingleCardText2>
           </BottomStyledGallerySingleCard2>
         </BottomStyledGallery2>
+        <Footer></Footer>
       </BottomStyled>
     </>
   );
