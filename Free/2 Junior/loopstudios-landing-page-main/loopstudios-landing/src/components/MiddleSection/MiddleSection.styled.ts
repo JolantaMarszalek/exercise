@@ -25,11 +25,11 @@ export const MiddleStyledCardLeft = styled.div`
   height: 600px;
   width: 50%;
   z-index: 1;
-  margin-left: 100px;
+
   position: absolute;
-  top: 0;
+  top: 50;
   left: 0;
-  margin-left: 100px;
+  margin-left: 150px;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -40,17 +40,17 @@ export const MiddleStyledCardLeft = styled.div`
 export const MiddleStyledCardRight = styled.div`
   display: flex;
   flex-direction: column;
-  height: 600px;
-  width: 50%;
+  height: 500px;
+  width: 45%;
   justify-content: center;
-  padding: 50px;
+
   z-index: 2;
   margin-right: 100px;
   background-color: var(--primary-white);
   position: absolute;
   bottom: -50px;
   right: 0;
-  margin-right: 100px;
+  margin-right: 150px;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -64,7 +64,10 @@ export const MiddleStyledCardRightTitle = styled.div`
   text-transform: uppercase;
   font-size: 50px;
   font-weight: 300;
-
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-right: 100px;
+  padding-bottom: 10px;
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
@@ -75,6 +78,12 @@ export const MiddleStyledCardRightDescribe = styled.div`
   display: flex;
   flex-direction: column;
   color: var(--primary-dark-gray);
+  padding: 50px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  line-height: 1.5;
 
   @media (max-width: 1024px) {
     display: flex;
