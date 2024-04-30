@@ -5,7 +5,6 @@ export const BottomStyled = styled.section`
   flex-direction: column;
   justify-content: space-between;
   color: black;
-  /* background-color: pink; */
   height: 200px;
   width: 100%;
   margin-top: 100px;
@@ -18,7 +17,6 @@ export const BottomStyled = styled.section`
 
 export const BottomStyledHeader = styled.div`
   display: flex;
-  /* flex-direction: column; */
   width: 100%;
   justify-content: space-between;
   padding: 50px;
@@ -33,7 +31,6 @@ export const BottomStyledHeader = styled.div`
 export const BottomStyledHeaderTitle = styled.div`
   display: flex;
   flex-direction: column;
-  /* padding: 50px; */
   margin-left: 100px;
   text-transform: uppercase;
   font-size: 50px;
@@ -100,7 +97,6 @@ export const BottomStyledGallerySingleCard = styled.div`
 export const BottomStyledGallery2 = styled.div`
   justify-content: space-between;
   width: 100%;
-  /* margin-top: 100px; */
   display: flex;
   justify-content: center;
   gap: 30px;

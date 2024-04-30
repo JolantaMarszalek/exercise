@@ -14,7 +14,6 @@ export const FooterStyled = styled.section`
 
 export const FooterStyledHeader = styled.div`
   display: flex;
-  /* flex-direction: column; */
   width: 100%;
   justify-content: space-between;
 
@@ -26,7 +25,6 @@ export const FooterStyledHeader = styled.div`
 
 export const FooterStyledHeaderLogo = styled.div`
   display: flex;
-  /* flex-direction: column; */
   padding: 50px;
   margin-left: 100px;
 
@@ -38,7 +36,6 @@ export const FooterStyledHeaderLogo = styled.div`
 
 export const FooterStyledHeaderImages = styled.div`
   display: flex;
-  /* flex-direction: column; */
   padding: 50px;
   margin-right: 100px;
   align-items: center;
@@ -53,7 +50,6 @@ export const FooterStyledHeaderImageSingle = styled.div`
   flex-direction: column;
   padding-left: 10px;
   padding-right: 10px;
-  /* padding-right: 10px; */
   position: relative;
 
   @media (max-width: 1024px) {
@@ -75,7 +71,6 @@ export const FooterStyledHeaderImageSingle = styled.div`
 
 export const FooterStyledBottom = styled.div`
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
 
   @media (max-width: 1024px) {
@@ -86,7 +81,6 @@ export const FooterStyledBottom = styled.div`
 
 export const FooterStyledBottomMenu = styled.div`
   display: flex;
-  /* flex-direction: column; */
   padding: 50px;
   margin-left: 100px;
 

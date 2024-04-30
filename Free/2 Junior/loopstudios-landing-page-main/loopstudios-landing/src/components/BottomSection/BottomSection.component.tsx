@@ -1,8 +1,6 @@
 import {
   BottomStyled,
-  // BottomStyledGallery,
   BottomStyledGallery2,
-  // BottomStyledGallerySingleCard,
   BottomStyledGallerySingleCard2,
   BottomStyledGallerySingleCardText2,
   BottomStyledHeader,
@@ -28,40 +26,6 @@ export const BottomSection = () => {
           <BottomStyledHeaderTitle>Our creations</BottomStyledHeaderTitle>
           <BottomStyledHeaderButton>See all</BottomStyledHeaderButton>
         </BottomStyledHeader>
-        {/* <BottomStyledGallery>
-          <BottomStyledGallerySingleCard
-            style={{
-              backgroundImage: `url(${deepEarthImage})`,
-            }}></BottomStyledGallerySingleCard>
-          <BottomStyledGallerySingleCard
-            style={{
-              backgroundImage: `url(${nightArcadeImage})`,
-            }}></BottomStyledGallerySingleCard>
-          <BottomStyledGallerySingleCard
-            style={{
-              backgroundImage: `url(${socerTeamVrImage})`,
-            }}></BottomStyledGallerySingleCard>
-          <BottomStyledGallerySingleCard
-            style={{
-              backgroundImage: `url(${theGridImage})`,
-            }}></BottomStyledGallerySingleCard>
-          <BottomStyledGallerySingleCard
-            style={{
-              backgroundImage: `url(${fromUpAboveVrImage})`,
-            }}></BottomStyledGallerySingleCard>
-          <BottomStyledGallerySingleCard
-            style={{
-              backgroundImage: `url(${pocketBorealisImage})`,
-            }}></BottomStyledGallerySingleCard>
-          <BottomStyledGallerySingleCard
-            style={{
-              backgroundImage: `url(${theCuriosityImage})`,
-            }}></BottomStyledGallerySingleCard>
-          <BottomStyledGallerySingleCard
-            style={{
-              backgroundImage: `url(${makeItFisheyeImage})`,
-            }}></BottomStyledGallerySingleCard>
-        </BottomStyledGallery> */}
         <BottomStyledGallery2>
           <BottomStyledGallerySingleCard2
             style={{

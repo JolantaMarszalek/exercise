@@ -4,7 +4,6 @@ export const MiddleStyled = styled.section`
   display: flex;
   justify-content: space-between;
   color: black;
-  /* background-color: green; */
   height: 800px;
   width: 100%;
   align-items: center;
@@ -25,7 +24,6 @@ export const MiddleStyledCardLeft = styled.div`
   height: 600px;
   width: 50%;
   z-index: 1;
-
   position: absolute;
   top: 50;
   left: 0;
@@ -43,7 +41,6 @@ export const MiddleStyledCardRight = styled.div`
   height: 500px;
   width: 45%;
   justify-content: center;
-
   z-index: 2;
   margin-right: 100px;
   background-color: var(--primary-white);

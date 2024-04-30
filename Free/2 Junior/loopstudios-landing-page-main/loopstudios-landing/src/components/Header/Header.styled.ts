@@ -16,7 +16,6 @@ export const HeaderStyledLogo = styled.div`
   flex-direction: column;
   padding: 50px;
   margin-left: 100px;
-  /* margin-right: 100px; */
 
   @media (max-width: 1024px) {
     display: flex;
@@ -29,7 +28,6 @@ export const HeaderStyledMenu = styled.div`
   flex-direction: row;
   gap: 10px;
   padding: 50px;
-  /* margin-left: 100px; */
   margin-right: 100px;
   align-items: center;
 

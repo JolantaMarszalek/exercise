@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const TopStyled = styled.section`
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   color: black;
   background-size: cover;
   background-position: center;
@@ -20,7 +19,6 @@ export const TopStyledBottom = styled.div`
   flex-direction: column;
   padding: 50px;
   margin-left: 100px;
-  /* margin-right: 100px; */
 
   @media (max-width: 1024px) {
     display: flex;
@@ -48,7 +46,6 @@ export const TopStyledBottomText = styled.div`
   color: var(--primary-white);
   text-transform: uppercase;
   height: 100%;
-
   justify-content: center;
   align-items: center;
   font-size: 80px;
