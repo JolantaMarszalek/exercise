@@ -57,7 +57,7 @@ export const HeaderStyledMenuSingle = styled.div`
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -5px;
+    bottom: -10px;
     width: 40%;
     height: 2px;
     background-color: var(--primary-white);

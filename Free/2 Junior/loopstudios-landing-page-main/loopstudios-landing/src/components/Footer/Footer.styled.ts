@@ -51,12 +51,25 @@ export const FooterStyledHeaderImages = styled.div`
 export const FooterStyledHeaderImageSingle = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   /* padding-right: 10px; */
+  position: relative;
 
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+  }
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 40%;
+    height: 2px;
+    background-color: var(--primary-white);
   }
 `;
 
@@ -101,7 +114,7 @@ export const FooterStyledBottomMenuSingle = styled.div`
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -5px;
+    bottom: -10px;
     width: 40%;
     height: 2px;
     background-color: var(--primary-white);
