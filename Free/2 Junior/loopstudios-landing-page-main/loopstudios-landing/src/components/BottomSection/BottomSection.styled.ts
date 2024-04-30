@@ -123,6 +123,23 @@ export const BottomStyledGallery2 = styled.div`
   }
 `;
 
+export const BottomStyledGallerySingleCardText2 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: var(--primary-white);
+  font-weight: 300;
+  font-size: 40px;
+  padding: 55px;
+  transition: color 0.3s;
+  /* opacity 0.3s; */
+
+  @media (max-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+  }
+`;
+
 export const BottomStyledGallerySingleCard2 = styled.div`
   justify-content: space-between;
   width: 350px;
@@ -134,7 +151,7 @@ export const BottomStyledGallerySingleCard2 = styled.div`
   align-items: flex-end;
   justify-content: center;
   overflow: hidden;
-  transition: filter 0.3s;
+  transition: background-color 0.3s, opacity 0.3s;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -142,27 +159,11 @@ export const BottomStyledGallerySingleCard2 = styled.div`
   }
 
   &:hover {
-    filter: opacity(0.4);
-    /* color: var(--primary-black); */
-  }
-`;
-
-export const BottomStyledGallerySingleCardText2 = styled.div`
-  display: flex;
-  justify-content: space-between;
-  text-transform: uppercase;
-  color: var(--primary-white);
-  font-weight: 300;
-  font-size: 40px;
-  padding: 55px;
-  transition: opacity 0.3s;
-
-  @media (max-width: 1024px) {
-    display: flex;
-    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0.5;
   }
 
-  &:hover {
-    color: var(--primary-black);
+  &:hover ${BottomStyledGallerySingleCardText2} {
+    color: black;
   }
 `;
