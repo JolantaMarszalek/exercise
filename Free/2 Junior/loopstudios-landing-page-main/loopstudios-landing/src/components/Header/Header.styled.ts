@@ -31,6 +31,7 @@ export const HeaderStyledMenu = styled.div`
   padding: 50px;
   /* margin-left: 100px; */
   margin-right: 100px;
+  align-items: center;
 
   @media (max-width: 1024px) {
     display: flex;
@@ -56,7 +57,7 @@ export const HeaderStyledMenuSingle = styled.div`
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -3px;
+    bottom: -5px;
     width: 40%;
     height: 2px;
     background-color: var(--primary-white);
