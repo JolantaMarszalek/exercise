@@ -19,7 +19,6 @@ export const BottomStyledHeader = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  /* padding: 50px; */
   align-items: center;
 
   @media (max-width: 1024px) {
@@ -62,7 +61,6 @@ export const BottomStyledHeaderButton = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
@@ -132,7 +130,6 @@ export const BottomStyledGallerySingleCardText2 = styled.div`
   font-size: 40px;
   padding: 55px;
   transition: color 0.3s;
-  /* opacity 0.3s; */
 
   @media (max-width: 1024px) {
     display: flex;
@@ -152,7 +149,6 @@ export const BottomStyledGallerySingleCard2 = styled.div`
   justify-content: center;
   overflow: hidden;
   transition: background-color 0.3s;
-  /* opacity 0.3s; */
 
   @media (max-width: 1024px) {
     display: flex;
