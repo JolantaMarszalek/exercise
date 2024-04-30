@@ -151,7 +151,8 @@ export const BottomStyledGallerySingleCard2 = styled.div`
   align-items: flex-end;
   justify-content: center;
   overflow: hidden;
-  transition: background-color 0.3s, opacity 0.3s;
+  transition: background-color 0.3s;
+  /* opacity 0.3s; */
 
   @media (max-width: 1024px) {
     display: flex;
@@ -159,11 +160,19 @@ export const BottomStyledGallerySingleCard2 = styled.div`
   }
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    opacity: 0.5;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      transition: opacity 0.3s;
+      z-index: 1;
+    }
   }
 
   &:hover ${BottomStyledGallerySingleCardText2} {
     color: black;
+    z-index: 2;
   }
 `;
