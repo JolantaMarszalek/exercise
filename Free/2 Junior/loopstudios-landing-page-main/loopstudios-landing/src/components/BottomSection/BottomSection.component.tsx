@@ -5,6 +5,7 @@ import {
   BottomStyledGallerySingleCardText2,
   BottomStyledHeader,
   BottomStyledHeaderButton,
+  BottomStyledHeaderButtonSection,
   BottomStyledHeaderTitle,
 } from "./BottomSection.styled";
 
@@ -24,7 +25,10 @@ export const BottomSection = () => {
       <BottomStyled>
         <BottomStyledHeader>
           <BottomStyledHeaderTitle>Our creations</BottomStyledHeaderTitle>
-          <BottomStyledHeaderButton>See all</BottomStyledHeaderButton>
+          <BottomStyledHeaderButtonSection>
+            {" "}
+            <BottomStyledHeaderButton>See all</BottomStyledHeaderButton>
+          </BottomStyledHeaderButtonSection>
         </BottomStyledHeader>
         <BottomStyledGallery2>
           <BottomStyledGallerySingleCard2
