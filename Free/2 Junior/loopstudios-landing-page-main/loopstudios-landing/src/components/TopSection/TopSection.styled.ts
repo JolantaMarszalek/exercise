@@ -20,7 +20,7 @@ export const TopStyledBottom = styled.div`
   flex-direction: column;
   padding: 50px;
   margin-left: 100px;
-  margin-right: 100px;
+  /* margin-right: 100px; */
 
   @media (max-width: 1024px) {
     display: flex;
