@@ -68,6 +68,7 @@ export const MiddleStyledCardRightTitle = styled.div`
   padding-top: 50px;
   padding-right: 100px;
   padding-bottom: 10px;
+
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
