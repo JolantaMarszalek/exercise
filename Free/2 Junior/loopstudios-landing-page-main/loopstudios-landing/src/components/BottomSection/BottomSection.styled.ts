@@ -96,3 +96,33 @@ export const BottomStyledGallerySingleCard = styled.div`
     justify-content: space-between;
   }
 `;
+
+export const BottomStyledGallery2 = styled.div`
+  justify-content: space-between;
+  width: 100%;
+  /* margin-top: 100px; */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  justify-items: center;
+  padding-bottom: 30px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+  }
+`;
+
+export const BottomStyledGallerySingleCard2 = styled.div`
+  justify-content: space-between;
+  width: 250px;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+  }
+`;

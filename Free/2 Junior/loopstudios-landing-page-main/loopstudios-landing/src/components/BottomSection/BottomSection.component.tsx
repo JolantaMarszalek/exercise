@@ -1,7 +1,9 @@
 import {
   BottomStyled,
-  BottomStyledGallery,
-  BottomStyledGallerySingleCard,
+  // BottomStyledGallery,
+  BottomStyledGallery2,
+  // BottomStyledGallerySingleCard,
+  BottomStyledGallerySingleCard2,
   BottomStyledHeader,
   BottomStyledHeaderButton,
   BottomStyledHeaderTitle,
@@ -24,7 +26,7 @@ export const BottomSection = () => {
           <BottomStyledHeaderTitle>Our creations</BottomStyledHeaderTitle>
           <BottomStyledHeaderButton>See all</BottomStyledHeaderButton>
         </BottomStyledHeader>
-        <BottomStyledGallery>
+        {/* <BottomStyledGallery>
           <BottomStyledGallerySingleCard
             style={{
               backgroundImage: `url(${deepEarthImage})`,
@@ -57,7 +59,43 @@ export const BottomSection = () => {
             style={{
               backgroundImage: `url(${makeItFisheyeImage})`,
             }}></BottomStyledGallerySingleCard>
-        </BottomStyledGallery>
+        </BottomStyledGallery> */}
+        <BottomStyledGallery2>
+          <BottomStyledGallerySingleCard2
+            style={{
+              backgroundImage: `url(${deepEarthImage})`,
+            }}></BottomStyledGallerySingleCard2>
+          <BottomStyledGallerySingleCard2
+            style={{
+              backgroundImage: `url(${nightArcadeImage})`,
+            }}></BottomStyledGallerySingleCard2>
+          <BottomStyledGallerySingleCard2
+            style={{
+              backgroundImage: `url(${socerTeamVrImage})`,
+            }}></BottomStyledGallerySingleCard2>
+          <BottomStyledGallerySingleCard2
+            style={{
+              backgroundImage: `url(${theGridImage})`,
+            }}></BottomStyledGallerySingleCard2>
+        </BottomStyledGallery2>
+        <BottomStyledGallery2>
+          <BottomStyledGallerySingleCard2
+            style={{
+              backgroundImage: `url(${fromUpAboveVrImage})`,
+            }}></BottomStyledGallerySingleCard2>
+          <BottomStyledGallerySingleCard2
+            style={{
+              backgroundImage: `url(${pocketBorealisImage})`,
+            }}></BottomStyledGallerySingleCard2>
+          <BottomStyledGallerySingleCard2
+            style={{
+              backgroundImage: `url(${theCuriosityImage})`,
+            }}></BottomStyledGallerySingleCard2>
+          <BottomStyledGallerySingleCard2
+            style={{
+              backgroundImage: `url(${makeItFisheyeImage})`,
+            }}></BottomStyledGallerySingleCard2>
+        </BottomStyledGallery2>
       </BottomStyled>
     </>
   );
