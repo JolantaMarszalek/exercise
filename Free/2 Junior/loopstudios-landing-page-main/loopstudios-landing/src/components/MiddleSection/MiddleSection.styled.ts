@@ -11,8 +11,11 @@ export const MiddleStyled = styled.section`
 
   @media (max-width: 1024px) {
     display: flex;
-
-    justify-content: space-between;
+    flex-direction: column;
+    /* position: relative; */
+    /* height: auto; */
+    /* width: 100%; */
+    align-items: center;
   }
 `;
 
@@ -32,6 +35,10 @@ export const MiddleStyledCardLeft = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    position: relative;
+    width: 80%;
+    margin-top: 50px;
   }
 `;
 
@@ -52,6 +59,9 @@ export const MiddleStyledCardRight = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    position: relative;
+    width: 80%;
   }
 `;
 
@@ -69,6 +79,8 @@ export const MiddleStyledCardRightTitle = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    text-align: center;
   }
 `;
 
@@ -86,5 +98,7 @@ export const MiddleStyledCardRightDescribe = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    text-align: center;
   }
 `;
