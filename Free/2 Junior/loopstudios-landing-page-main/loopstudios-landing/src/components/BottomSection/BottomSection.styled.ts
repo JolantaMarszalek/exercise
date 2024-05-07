@@ -41,6 +41,8 @@ export const BottomStyledHeaderTitle = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    margin: 0;
   }
 `;
 
@@ -54,6 +56,8 @@ export const BottomStyledHeaderButtonSection = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    margin: 0;
   }
 `;
 
@@ -118,6 +122,8 @@ export const BottomStyledGallery2 = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -153,6 +159,8 @@ export const BottomStyledGallerySingleCard2 = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     justify-content: space-between;
+    height: 350px;
+    width: 80%;
   }
 
   &:hover {
