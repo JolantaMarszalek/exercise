@@ -113,7 +113,8 @@ export const BottomStyledGallerySingleCard = styled.div`
 export const BottomStyledGallery2 = styled.div`
   justify-content: space-between;
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   gap: 30px;
   justify-items: center;
