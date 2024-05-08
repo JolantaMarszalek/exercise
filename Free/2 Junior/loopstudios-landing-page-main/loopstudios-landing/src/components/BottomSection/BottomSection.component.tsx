@@ -9,7 +9,7 @@ import {
   BottomStyledHeaderTitle,
 } from "./BottomSection.styled";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import deepEarthImage from "./../../../../images/desktop/image-deep-earth.jpg";
 import deepEarthImageMobile from "./../../../../images/mobile/image-deep-earth.jpg";
