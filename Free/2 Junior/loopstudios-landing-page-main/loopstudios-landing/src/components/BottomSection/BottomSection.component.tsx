@@ -85,18 +85,20 @@ export const BottomSection = () => {
     },
   ];
 
+  console.log("isMobile:", isMobile);
+
   return (
     <>
       <BottomStyled>
         <BottomStyledHeader>
           <BottomStyledHeaderTitle>Our creations</BottomStyledHeaderTitle>
-          <BottomStyledHeaderButtonSection>
-            <BottomStyledHeaderButton>See all</BottomStyledHeaderButton>
-          </BottomStyledHeaderButtonSection>
+          {!isMobile && (
+            <BottomStyledHeaderButtonSection>
+              <BottomStyledHeaderButton>See all</BottomStyledHeaderButton>
+            </BottomStyledHeaderButtonSection>
+          )}
         </BottomStyledHeader>
-        <BottomStyledGallery2
-        // className={isMobile ? "mobileGallery" : "desktopGallery"}
-        >
+        <BottomStyledGallery2>
           {cards.map((card, index) => (
             <BottomStyledGallerySingleCard2
               key={index}
@@ -106,66 +108,13 @@ export const BottomSection = () => {
               </BottomStyledGallerySingleCardText2>
             </BottomStyledGallerySingleCard2>
           ))}
-          {/* <BottomStyledGallerySingleCard2
-            style={{
-              backgroundImage: `url(${nightArcadeImage})`,
-            }}>
-            <BottomStyledGallerySingleCardText2>
-              Night arcade
-            </BottomStyledGallerySingleCardText2>
-          </BottomStyledGallerySingleCard2>
-          <BottomStyledGallerySingleCard2
-            style={{
-              backgroundImage: `url(${socerTeamVrImage})`,
-            }}>
-            <BottomStyledGallerySingleCardText2>
-              Soccer team VR
-            </BottomStyledGallerySingleCardText2>
-          </BottomStyledGallerySingleCard2>
-          <BottomStyledGallerySingleCard2
-            style={{
-              backgroundImage: `url(${theGridImage})`,
-            }}>
-            <BottomStyledGallerySingleCardText2>
-              The grid
-            </BottomStyledGallerySingleCardText2>
-          </BottomStyledGallerySingleCard2>
         </BottomStyledGallery2>
-        <BottomStyledGallery2>
-          <BottomStyledGallerySingleCard2
-            style={{
-              backgroundImage: `url(${fromUpAboveVrImage})`,
-            }}>
-            <BottomStyledGallerySingleCardText2>
-              From up above VR
-            </BottomStyledGallerySingleCardText2>
-          </BottomStyledGallerySingleCard2>
-          <BottomStyledGallerySingleCard2
-            style={{
-              backgroundImage: `url(${pocketBorealisImage})`,
-            }}>
-            <BottomStyledGallerySingleCardText2>
-              Pocket borealis
-            </BottomStyledGallerySingleCardText2>
-          </BottomStyledGallerySingleCard2>
-          <BottomStyledGallerySingleCard2
-            style={{
-              backgroundImage: `url(${theCuriosityImage})`,
-            }}>
-            <BottomStyledGallerySingleCardText2>
-              The curiosity
-            </BottomStyledGallerySingleCardText2>
-          </BottomStyledGallerySingleCard2>
-          <BottomStyledGallerySingleCard2
-            style={{
-              backgroundImage: `url(${makeItFisheyeImage})`,
-            }}>
-            <BottomStyledGallerySingleCardText2>
-              Make it fisheye
-            </BottomStyledGallerySingleCardText2>
-          </BottomStyledGallerySingleCard2> */}
-        </BottomStyledGallery2>
-        <Footer></Footer>
+        {isMobile && (
+          <BottomStyledHeaderButtonSection>
+            <BottomStyledHeaderButton>See all</BottomStyledHeaderButton>
+          </BottomStyledHeaderButtonSection>
+        )}
+        <Footer />
       </BottomStyled>
     </>
   );

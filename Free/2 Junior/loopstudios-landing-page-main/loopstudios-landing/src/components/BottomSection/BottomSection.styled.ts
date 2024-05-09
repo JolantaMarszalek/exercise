@@ -58,6 +58,7 @@ export const BottomStyledHeaderButtonSection = styled.div`
     flex-direction: column;
     padding: 10px;
     margin: 0;
+    align-items: center;
   }
 `;
 
@@ -77,6 +78,7 @@ export const BottomStyledHeaderButton = styled.button`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
   }
 `;
 
