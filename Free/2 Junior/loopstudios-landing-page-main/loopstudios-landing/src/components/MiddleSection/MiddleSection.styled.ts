@@ -12,9 +12,6 @@ export const MiddleStyled = styled.section`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
-    /* position: relative; */
-    /* height: auto; */
-    /* width: 100%; */
     align-items: center;
   }
 `;
