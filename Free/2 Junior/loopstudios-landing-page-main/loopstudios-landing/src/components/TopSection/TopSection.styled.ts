@@ -23,6 +23,8 @@ export const TopStyledBottom = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    align-items: center;
   }
 `;
 
@@ -37,6 +39,7 @@ export const TopStyledBottomCard = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     flex-direction: column;
+    width: 80%;
   }
 `;
 

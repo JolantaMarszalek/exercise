@@ -1,20 +1,20 @@
 import {
   FooterStyled,
-  FooterStyledBottom,
   FooterStyledBottomMenu,
   FooterStyledBottomMenuSingle,
   FooterStyledBottomText,
-  FooterStyledHeader,
   FooterStyledHeaderImageSingle,
   FooterStyledHeaderImages,
   FooterStyledHeaderLogo,
+  FooterStyledLeft,
+  FooterStyledRight,
 } from "./Footer.styled";
 
 export const Footer = () => {
   return (
     <>
       <FooterStyled>
-        <FooterStyledHeader>
+        <FooterStyledLeft>
           <FooterStyledHeaderLogo>
             <svg width="192" height="32" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -24,6 +24,17 @@ export const Footer = () => {
               />
             </svg>
           </FooterStyledHeaderLogo>
+          <FooterStyledBottomMenu>
+            <FooterStyledBottomMenuSingle>About</FooterStyledBottomMenuSingle>
+            <FooterStyledBottomMenuSingle>Careers</FooterStyledBottomMenuSingle>
+            <FooterStyledBottomMenuSingle>Events</FooterStyledBottomMenuSingle>
+            <FooterStyledBottomMenuSingle>
+              Products
+            </FooterStyledBottomMenuSingle>
+            <FooterStyledBottomMenuSingle>Support</FooterStyledBottomMenuSingle>
+          </FooterStyledBottomMenu>
+        </FooterStyledLeft>
+        <FooterStyledRight>
           <FooterStyledHeaderImages>
             <FooterStyledHeaderImageSingle>
               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
@@ -62,21 +73,10 @@ export const Footer = () => {
               </svg>
             </FooterStyledHeaderImageSingle>
           </FooterStyledHeaderImages>
-        </FooterStyledHeader>
-        <FooterStyledBottom>
-          <FooterStyledBottomMenu>
-            <FooterStyledBottomMenuSingle>About</FooterStyledBottomMenuSingle>
-            <FooterStyledBottomMenuSingle>Careers</FooterStyledBottomMenuSingle>
-            <FooterStyledBottomMenuSingle>Events</FooterStyledBottomMenuSingle>
-            <FooterStyledBottomMenuSingle>
-              Products
-            </FooterStyledBottomMenuSingle>
-            <FooterStyledBottomMenuSingle>Support</FooterStyledBottomMenuSingle>
-          </FooterStyledBottomMenu>
           <FooterStyledBottomText>
             © 2021 Loopstudios. All rights reserved.
           </FooterStyledBottomText>
-        </FooterStyledBottom>
+        </FooterStyledRight>
       </FooterStyled>
     </>
   );
