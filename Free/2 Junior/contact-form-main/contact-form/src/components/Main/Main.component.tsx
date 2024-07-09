@@ -1,5 +1,9 @@
-import { MainStyled } from "./Main.styled";
+import { MainCard, MainStyled } from "./Main.styled";
 
 export const Main = () => {
-  return <MainStyled>Contact form</MainStyled>;
+  return (
+    <MainStyled>
+      <MainCard>Contact form</MainCard>
+    </MainStyled>
+  );
 };
