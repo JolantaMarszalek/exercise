@@ -11,10 +11,11 @@ export const MainStyled = styled.section`
 
 export const MainCard = styled.section`
   display: flex;
-  width: 40%;
-  height: 60%;
+  width: 30%;
+  height: 70%;
   align-content: center;
   justify-content: center;
   align-items: center;
   background-color: var(--neutral-white);
+  border-radius: 10px;
 `;
