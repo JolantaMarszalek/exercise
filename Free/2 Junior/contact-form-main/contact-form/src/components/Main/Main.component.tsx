@@ -3,7 +3,7 @@ import { MainCard, MainStyled } from "./Main.styled";
 export const Main = () => {
   return (
     <MainStyled>
-      <MainCard>Contact form</MainCard>
+      <MainCard>Contact us</MainCard>
     </MainStyled>
   );
 };
