@@ -19,3 +19,5 @@ export const MainCard = styled.section`
   background-color: var(--neutral-white);
   border-radius: 10px;
 `;
+
+export const MainCardTitle = styled.section``;
