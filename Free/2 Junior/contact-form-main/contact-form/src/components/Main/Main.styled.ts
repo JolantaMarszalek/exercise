@@ -13,11 +13,15 @@ export const MainCard = styled.section`
   display: flex;
   width: 30%;
   height: 70%;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+  /* align-content: center; */
+  /* justify-content: center; */
+  /* align-items: center; */
   background-color: var(--neutral-white);
   border-radius: 10px;
 `;
 
-export const MainCardTitle = styled.section``;
+export const MainCardTitle = styled.section`
+  font-size: 25px;
+  font-weight: bold;
+  padding: 25px;
+`;
