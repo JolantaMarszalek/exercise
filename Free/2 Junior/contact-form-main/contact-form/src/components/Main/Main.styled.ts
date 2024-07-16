@@ -10,7 +10,7 @@ export const MainStyled = styled.section`
   align-items: center;
 `;
 
-export const MainCard = styled.section`
+export const MainCard = styled.div`
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -22,27 +22,38 @@ export const MainCard = styled.section`
   border-radius: 10px;
 `;
 
-export const MainCardTitle = styled.section`
+export const MainCardTitle = styled.div`
   font-size: 25px;
   font-weight: bold;
   padding: 25px;
 `;
 
-export const MainCardLineNarrow = styled.section`
+export const MainCardLineText = styled.div`
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  width: 100%;
+`;
+
+export const MainCardLineNarrow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
 `;
 
-export const MainCardLineNarrowS = styled.section`
+export const MainCardLineNarrowS = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  justify-content: flex-end;
 `;
 
-export const MainCardLineWide = styled.section`
+export const MainCardLineWide = styled.div`
   justify-content: center;
+  display: flex;
+  flex-direction: column;
   width: 100%;
 `;
 

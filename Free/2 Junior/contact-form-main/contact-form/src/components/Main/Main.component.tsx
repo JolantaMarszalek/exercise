@@ -1,9 +1,11 @@
 import {
   MainCard,
+  MainCardInputL,
   MainCardInputM,
   MainCardInputS,
   MainCardLineNarrow,
   MainCardLineNarrowS,
+  MainCardLineText,
   MainCardLineWide,
   MainCardTitle,
   MainStyled,
@@ -16,25 +18,34 @@ export const Main = () => {
         <MainCardTitle>Contact us</MainCardTitle>
         <MainCardLineNarrow>
           <MainCardLineNarrowS>
+            <MainCardLineText>First Name *</MainCardLineText>
             <MainCardInputS></MainCardInputS>
           </MainCardLineNarrowS>
           <MainCardLineNarrowS>
+            <MainCardLineText>Last Name *</MainCardLineText>
             <MainCardInputS></MainCardInputS>
           </MainCardLineNarrowS>
         </MainCardLineNarrow>
         <MainCardLineNarrow>
-          <MainCardInputM></MainCardInputM>
+          <MainCardLineNarrowS>
+            <MainCardLineText>Email Address *</MainCardLineText>
+            <MainCardInputM></MainCardInputM>
+          </MainCardLineNarrowS>
         </MainCardLineNarrow>
         <MainCardLineNarrow>
           <MainCardLineNarrowS>
+            <MainCardLineText>Query Type *</MainCardLineText>
             <MainCardInputS></MainCardInputS>
           </MainCardLineNarrowS>
           <MainCardLineNarrowS>
+            {/* <MainCardLineText> </MainCardLineText> */}
             <MainCardInputS></MainCardInputS>
           </MainCardLineNarrowS>
         </MainCardLineNarrow>
-
-        <MainCardLineWide></MainCardLineWide>
+        <MainCardLineText>Message *</MainCardLineText>
+        <MainCardLineWide>
+          <MainCardInputL></MainCardInputL>
+        </MainCardLineWide>
       </MainCard>
     </MainStyled>
   );
