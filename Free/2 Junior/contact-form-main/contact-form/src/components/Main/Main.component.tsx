@@ -1,6 +1,9 @@
 import {
   MainCard,
+  MainCardInputM,
+  MainCardInputS,
   MainCardLineNarrow,
+  MainCardLineNarrowS,
   MainCardLineWide,
   MainCardTitle,
   MainStyled,
@@ -11,9 +14,26 @@ export const Main = () => {
     <MainStyled>
       <MainCard>
         <MainCardTitle>Contact us</MainCardTitle>
-        <MainCardLineNarrow></MainCardLineNarrow>
-        <MainCardLineNarrow></MainCardLineNarrow>
-        <MainCardLineNarrow></MainCardLineNarrow>
+        <MainCardLineNarrow>
+          <MainCardLineNarrowS>
+            <MainCardInputS></MainCardInputS>
+          </MainCardLineNarrowS>
+          <MainCardLineNarrowS>
+            <MainCardInputS></MainCardInputS>
+          </MainCardLineNarrowS>
+        </MainCardLineNarrow>
+        <MainCardLineNarrow>
+          <MainCardInputM></MainCardInputM>
+        </MainCardLineNarrow>
+        <MainCardLineNarrow>
+          <MainCardLineNarrowS>
+            <MainCardInputS></MainCardInputS>
+          </MainCardLineNarrowS>
+          <MainCardLineNarrowS>
+            <MainCardInputS></MainCardInputS>
+          </MainCardLineNarrowS>
+        </MainCardLineNarrow>
+
         <MainCardLineWide></MainCardLineWide>
       </MainCard>
     </MainStyled>
