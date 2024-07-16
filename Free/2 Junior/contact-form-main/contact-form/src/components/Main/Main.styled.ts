@@ -29,3 +29,7 @@ export const MainCardTitle = styled.section`
 export const MainCardLineNarrow = styled.section``;
 
 export const MainCardLineWide = styled.section``;
+
+export const MainCardInputS = styled.input``;
+export const MainCardInputM = styled.input``;
+export const MainCardInputL = styled.input``;
