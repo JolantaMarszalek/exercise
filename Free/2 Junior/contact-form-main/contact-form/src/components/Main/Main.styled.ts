@@ -25,3 +25,7 @@ export const MainCardTitle = styled.section`
   font-weight: bold;
   padding: 25px;
 `;
+
+export const MainCardLineNarrow = styled.section``;
+
+export const MainCardLineWide = styled.section``;
