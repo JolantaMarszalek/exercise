@@ -58,9 +58,11 @@ export const MainCardLineWide = styled.div`
 `;
 
 export const MainCardInputS = styled.input`
-  width: 100%;
+  width: auto;
 `;
 export const MainCardInputM = styled.input`
-  width: 100%;
+  width: auto;
 `;
-export const MainCardInputL = styled.input``;
+export const MainCardInputL = styled.input`
+  width: auto;
+`;
