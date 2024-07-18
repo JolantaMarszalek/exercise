@@ -39,7 +39,8 @@ export const MainCardLineNarrow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  width: auto;
+  padding: 10px;
 `;
 
 export const MainCardLineNarrowS = styled.div`
@@ -48,13 +49,15 @@ export const MainCardLineNarrowS = styled.div`
   flex-direction: column;
   justify-content: center;
   justify-content: flex-end;
+  padding: 10px;
 `;
 
 export const MainCardLineWide = styled.div`
   justify-content: center;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
+  padding: 10px;
 `;
 
 export const MainCardInputS = styled.input`

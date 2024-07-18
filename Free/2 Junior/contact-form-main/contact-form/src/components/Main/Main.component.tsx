@@ -42,8 +42,8 @@ export const Main = () => {
             <MainCardInputS></MainCardInputS>
           </MainCardLineNarrowS>
         </MainCardLineNarrow>
-        <MainCardLineText>Message *</MainCardLineText>
         <MainCardLineWide>
+          <MainCardLineText>Message *</MainCardLineText>
           <MainCardInputL></MainCardInputL>
         </MainCardLineWide>
       </MainCard>
