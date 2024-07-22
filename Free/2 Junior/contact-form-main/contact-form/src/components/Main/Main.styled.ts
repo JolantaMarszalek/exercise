@@ -49,6 +49,7 @@ export const MainCardLineNarrowS = styled.div`
   flex-direction: column;
   justify-content: center;
   justify-content: flex-end;
+  gap: 10px;
 `;
 
 export const MainCardLineWide = styled.div`
