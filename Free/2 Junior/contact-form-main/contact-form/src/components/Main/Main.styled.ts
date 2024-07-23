@@ -15,9 +15,6 @@ export const MainCard = styled.div`
   flex-direction: column;
   width: 30%;
   height: 70%;
-  /* align-content: center; */
-  /* justify-content: center; */
-  /* align-items: center; */
   background-color: var(--neutral-white);
   border-radius: 10px;
 `;
@@ -31,7 +28,6 @@ export const MainCardTitle = styled.div`
 export const MainCardLineText = styled.div`
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   width: 100%;
 `;
 
