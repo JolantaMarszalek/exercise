@@ -38,7 +38,6 @@ export const Main = () => {
             <MainCardInputS></MainCardInputS>
           </MainCardLineNarrowS>
           <MainCardLineNarrowS>
-            {/* <MainCardLineText> </MainCardLineText> */}
             <MainCardInputS></MainCardInputS>
           </MainCardLineNarrowS>
         </MainCardLineNarrow>
