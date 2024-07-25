@@ -65,3 +65,7 @@ export const MainCardInputM = styled.input`
 export const MainCardInputL = styled.input`
   width: auto;
 `;
+
+export const MainCardButton = styled.button`
+  width: auto;
+`;
