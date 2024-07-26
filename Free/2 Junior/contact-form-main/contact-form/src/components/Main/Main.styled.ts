@@ -68,4 +68,5 @@ export const MainCardInputL = styled.input`
 
 export const MainCardButton = styled.button`
   width: auto;
+  height: 25px;
 `;
