@@ -1,4 +1,5 @@
 import {
+  Button,
   MainCard,
   MainCardButton,
   MainCardInputL,
@@ -46,7 +47,9 @@ export const Main = () => {
           <MainCardLineText>Message *</MainCardLineText>
           <MainCardInputL></MainCardInputL>
         </MainCardLineWide>
-        <MainCardButton></MainCardButton>
+        <MainCardButton>
+          <Button></Button>
+        </MainCardButton>
       </MainCard>
     </MainStyled>
   );

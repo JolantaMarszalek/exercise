@@ -66,7 +66,13 @@ export const MainCardInputL = styled.input`
   width: auto;
 `;
 
-export const MainCardButton = styled.button`
+export const MainCardButton = styled.div`
   width: auto;
+  padding: 10px;
+`;
+
+export const Button = styled.button`
+  width: 100%;
   height: 25px;
+  padding: 10px;
 `;
