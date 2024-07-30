@@ -48,7 +48,7 @@ export const Main = () => {
           <MainCardInputL></MainCardInputL>
         </MainCardLineWide>
         <MainCardButton>
-          <Button></Button>
+          <Button>Submit</Button>
         </MainCardButton>
       </MainCard>
     </MainStyled>
