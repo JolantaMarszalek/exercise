@@ -73,6 +73,6 @@ export const MainCardButton = styled.div`
 
 export const Button = styled.button`
   width: 100%;
-  height: 25px;
+  height: 45px;
   padding: 10px;
 `;
