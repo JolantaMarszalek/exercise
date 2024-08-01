@@ -58,12 +58,15 @@ export const MainCardLineWide = styled.div`
 
 export const MainCardInputS = styled.input`
   width: auto;
+  height: 25px;
 `;
 export const MainCardInputM = styled.input`
   width: auto;
+  height: 25px;
 `;
 export const MainCardInputL = styled.input`
   width: auto;
+  height: 65px;
 `;
 
 export const MainCardButton = styled.div`
@@ -73,6 +76,6 @@ export const MainCardButton = styled.div`
 
 export const Button = styled.button`
   width: 100%;
-  height: 45px;
+  height: 35px;
   padding: 10px;
 `;
