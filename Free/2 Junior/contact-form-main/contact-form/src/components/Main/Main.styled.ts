@@ -59,18 +59,25 @@ export const MainCardLineWide = styled.div`
 export const MainCardInputS = styled.input`
   width: auto;
   height: 25px;
+  border-radius: 5px;
+  border: 1px solid grey;
 `;
 export const MainCardInputM = styled.input`
   width: auto;
   height: 25px;
+  border-radius: 5px;
+  border: 1px solid grey;
 `;
 export const MainCardInputL = styled.input`
   width: auto;
   height: 65px;
+  border-radius: 5px;
+  border: 1px solid grey;
 `;
 
 export const MainCardButton = styled.div`
   width: auto;
+  /* border: 1px solid grey; */
   padding: 10px;
 `;
 
