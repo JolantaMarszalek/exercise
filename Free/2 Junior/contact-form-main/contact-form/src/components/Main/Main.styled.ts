@@ -87,4 +87,5 @@ export const Button = styled.button`
   padding: 10px;
   background-color: var(--primary-green-600-medium);
   color: white;
+  border-radius: 5px;
 `;
