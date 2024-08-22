@@ -77,7 +77,6 @@ export const MainCardInputL = styled.input`
 
 export const MainCardButton = styled.div`
   width: auto;
-  /* border: 1px solid grey; */
   padding: 10px;
 `;
 
