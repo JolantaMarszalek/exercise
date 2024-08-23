@@ -58,19 +58,19 @@ export const MainCardLineWide = styled.div`
 
 export const MainCardInputS = styled.input`
   width: auto;
-  height: 25px;
+  height: 30px;
   border-radius: 5px;
   border: 1px solid grey;
 `;
 export const MainCardInputM = styled.input`
   width: auto;
-  height: 25px;
+  height: 30px;
   border-radius: 5px;
   border: 1px solid grey;
 `;
 export const MainCardInputL = styled.input`
   width: auto;
-  height: 65px;
+  height: 80px;
   border-radius: 5px;
   border: 1px solid grey;
 `;
@@ -82,7 +82,7 @@ export const MainCardButton = styled.div`
 
 export const Button = styled.button`
   width: 100%;
-  height: 35px;
+  height: 40px;
   padding: 10px;
   background-color: var(--primary-green-600-medium);
   color: white;
