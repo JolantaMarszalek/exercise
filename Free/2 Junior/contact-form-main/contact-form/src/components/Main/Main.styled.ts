@@ -37,6 +37,7 @@ export const MainCardLineNarrow = styled.div`
   justify-content: center;
   width: auto;
   padding: 10px;
+  gap: 10px;
 `;
 
 export const MainCardLineNarrowS = styled.div`
